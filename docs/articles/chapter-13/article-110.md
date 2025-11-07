@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (49)](../../recitals/recital-049.md)
+
 ## Official Text
 
 In Annex I to Directive (EU) 2020/1828 of the European Parliament and of the Council (58), the following point is added:

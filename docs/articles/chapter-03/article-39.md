@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (127)](../../recitals/recital-127.md)
+
 ## Official Text
 
 Conformity assessment bodies established under the law of a third country with which the Union has concluded an

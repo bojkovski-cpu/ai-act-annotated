@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (164)](../../recitals/recital-164.md)
+
 ## Official Text
 
 Article 18 of Regulation (EU) 2019/1020 shall apply mutatis mutandis to the providers of the general-purpose AI model,

@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (149)](../../recitals/recital-149.md)
+
 ## Official Text
 
 The Board shall advise and assist the Commission and the Member States in order to facilitate the consistent and effective

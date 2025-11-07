@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (49)](../../recitals/recital-049.md)
+
 ## Official Text
 
 In Article 11 of Regulation (EU) 2019/2144, the following paragraph is added:

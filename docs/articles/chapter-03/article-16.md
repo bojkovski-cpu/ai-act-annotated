@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (79)](../../recitals/recital-079.md), [Recital (80)](../../recitals/recital-080.md), [Recital (81)](../../recitals/recital-081.md), [Recital (145)](../../recitals/recital-145.md)
+
 ## Official Text
 
 Providers of high-risk AI systems shall:

@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (49)](../../recitals/recital-049.md)
+
 ## Official Text
 
 In Article 5 of Directive (EU) 2016/797, the following paragraph is added:

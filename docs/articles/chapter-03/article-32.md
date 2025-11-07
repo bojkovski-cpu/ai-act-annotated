@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    No specific recitals identified in Kai Zenner's mapping
+
 ## Official Text
 
 Where a conformity assessment body demonstrates its conformity with the criteria laid down in the relevant harmonised

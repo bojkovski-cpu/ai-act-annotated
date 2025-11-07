@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (170)](../../recitals/recital-170.md)
+
 ## Official Text
 
 Without prejudice to other administrative or judicial remedies, any natural or legal person having grounds to consider that

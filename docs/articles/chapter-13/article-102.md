@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (49)](../../recitals/recital-049.md)
+
 ## Official Text
 
 In Article 4(3) of Regulation (EC) No 300/2008, the following subparagraph is added:

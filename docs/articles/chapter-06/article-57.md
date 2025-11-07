@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (138)](../../recitals/recital-138.md), [Recital (139)](../../recitals/recital-139.md)
+
 ## Official Text
 
 1.

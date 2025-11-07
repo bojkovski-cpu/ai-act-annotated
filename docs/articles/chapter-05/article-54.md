@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    No specific recitals identified in Kai Zenner's mapping
+
 ## Official Text
 
 1.

@@ -181,8 +181,8 @@ Use your browser's bookmarks to save:
 ### AI Providers & Developers
 
 Focus on:
-1. [Chapter III - High-Risk Requirements](../articles/chapter-03/)
-2. [Chapter V - General-Purpose AI](../articles/chapter-05/)
+1. [Chapter III - High-Risk Requirements](../articles/chapter-03/index.md)
+2. [Chapter V - General-Purpose AI](../articles/chapter-05/index.md)
 3. [Article 3 - Definitions](../articles/chapter-01/article-03.md)
 4. [Compliance Checklist](../guidance/compliance-checklist.md)
 
@@ -190,21 +190,21 @@ Focus on:
 
 Focus on:
 1. [Article 26 - Deployer obligations](../articles/chapter-03/article-26.md)
-2. [Chapter IV - Transparency](../articles/chapter-04/)
+2. [Chapter IV - Transparency](../articles/chapter-04/index.md)
 3. [Implementation Timeline](../guidance/implementation-timeline.md)
 
 ### Legal & Compliance
 
 Focus on:
-1. [Cross-References](../cross-references/) - See regulatory intersections
-2. [Chapter XII - Penalties](../articles/chapter-12/)
+1. [Cross-References](../cross-references/index.md) - See regulatory intersections
+2. [Chapter XII - Penalties](../articles/chapter-12/index.md)
 3. All commentary boxes for legal analysis
 
 ### Policy Makers
 
 Focus on:
-1. [Recitals](../recitals/) - Legislative intent
-2. [Chapter VII - Governance](../articles/chapter-07/)
+1. [Recitals](../recitals/index.md) - Legislative intent
+2. [Chapter VII - Governance](../articles/chapter-07/index.md)
 3. Implementation guidance
 
 ## 🌙 Dark Mode
@@ -262,4 +262,4 @@ Check the homepage for the last update date.
 
 ---
 
-**Ready to start?** → [Return to Home](../index.md) | [View Chapter I](../articles/chapter-01/)
+**Ready to start?** → [Return to Home](index.md) | [View Chapter I](../articles/chapter-01/index.md)

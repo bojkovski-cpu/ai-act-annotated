@@ -165,8 +165,8 @@ Use the search bar at the top of this site to find:
 ## Navigation
 
 - **Next:** [Recital (1) →](recital-001.md)
-- **Articles:** [View all articles](../articles/chapter-01/)
-- **Home:** [Return to homepage](../index.md)
+- **Articles:** [View all articles](../articles/chapter-01/index.md)
+- **Home:** [Return to homepage](index.md)
 
 ---
 

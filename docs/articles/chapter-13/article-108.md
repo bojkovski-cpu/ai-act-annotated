@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (49)](../../recitals/recital-049.md)
+
 ## Official Text
 
 Regulation (EU) 2018/1139 is amended as follows:

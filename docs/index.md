@@ -56,13 +56,13 @@ The **EU Artificial Intelligence Act** is the world's first comprehensive legal 
 
 | Chapter | Focus Area | Articles |
 |---------|------------|----------|
-| **[Chapter I](articles/chapter-01/)** | General Provisions | 1-4 |
-| **[Chapter II](articles/chapter-02/)** | Prohibited AI Practices | 5 |
-| **[Chapter III](articles/chapter-03/)** | High-Risk AI Systems | 6-51 |
-| **[Chapter V](articles/chapter-05/)** | General-Purpose AI Models | 53-56 |
-| **[Chapter XII](articles/chapter-12/)** | Penalties and Enforcement | 99-103 |
+| **[Chapter I](articles/chapter-01/index.md)** | General Provisions | 1-4 |
+| **[Chapter II](articles/chapter-02/index.md)** | Prohibited AI Practices | 5 |
+| **[Chapter III](articles/chapter-03/index.md)** | High-Risk AI Systems | 6-51 |
+| **[Chapter V](articles/chapter-05/index.md)** | General-Purpose AI Models | 53-56 |
+| **[Chapter XII](articles/chapter-12/index.md)** | Penalties and Enforcement | 99-103 |
 
-[View all chapters →](articles/chapter-01/)
+[View all chapters →](articles/chapter-01/index.md)
 
 ## Important Dates
 

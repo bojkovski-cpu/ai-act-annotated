@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (140)](../../recitals/recital-140.md)
+
 ## Official Text
 
 sandbox

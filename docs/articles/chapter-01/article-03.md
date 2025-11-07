@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (12)](../../recitals/recital-012.md), [Recital (13)](../../recitals/recital-013.md), [Recital (14)](../../recitals/recital-014.md), [Recital (15)](../../recitals/recital-015.md), [Recital (16)](../../recitals/recital-016.md), [Recital (17)](../../recitals/recital-017.md), [Recital (18)](../../recitals/recital-018.md), [Recital (19)](../../recitals/recital-019.md), [Recital (97)](../../recitals/recital-097.md), [Recital (98)](../../recitals/recital-098.md), [Recital (99)](../../recitals/recital-099.md), [Recital (100)](../../recitals/recital-100.md), [Recital (110)](../../recitals/recital-110.md), [Recital (128)](../../recitals/recital-128.md)
+
 ## Official Text
 
 For the purposes of this Regulation, the following definitions apply:

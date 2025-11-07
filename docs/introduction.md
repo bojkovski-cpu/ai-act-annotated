@@ -239,8 +239,8 @@ The AI Act is part of a broader digital regulatory framework:
 - **[How to Use](how-to-use.md)** - Navigate this site effectively
 - **[Key Concepts](key-concepts.md)** - Understand fundamental terms
 - **[Compliance Checklist](guidance/compliance-checklist.md)** - Step-by-step guide
-- **[Articles](articles/chapter-01/)** - Full regulatory text
-- **[Cross-References](cross-references/)** - Connections to other laws
+- **[Articles](articles/chapter-01/index.md)** - Full regulatory text
+- **[Cross-References](cross-references/index.md)** - Connections to other laws
 
 ## About This Annotated Edition
 
@@ -255,4 +255,4 @@ This site provides:
 
 ---
 
-**Ready to explore?** → [View Articles](articles/chapter-01/) | [Browse Recitals](recitals/) | [Compliance Guide](guidance/compliance-checklist.md)
+**Ready to explore?** → [View Articles](articles/chapter-01/index.md) | [Browse Recitals](recitals/index.md) | [Compliance Guide](guidance/compliance-checklist.md)

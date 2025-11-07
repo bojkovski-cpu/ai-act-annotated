@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (3)](../../recitals/recital-003.md), [Recital (28)](../../recitals/recital-028.md), [Recital (29)](../../recitals/recital-029.md), [Recital (30)](../../recitals/recital-030.md), [Recital (31)](../../recitals/recital-031.md), [Recital (32)](../../recitals/recital-032.md), [Recital (33)](../../recitals/recital-033.md), [Recital (34)](../../recitals/recital-034.md), [Recital (35)](../../recitals/recital-035.md), [Recital (36)](../../recitals/recital-036.md), [Recital (37)](../../recitals/recital-037.md), [Recital (38)](../../recitals/recital-038.md), [Recital (39)](../../recitals/recital-039.md), [Recital (40)](../../recitals/recital-040.md), [Recital (41)](../../recitals/recital-041.md), [Recital (42)](../../recitals/recital-042.md), [Recital (43)](../../recitals/recital-043.md), [Recital (44)](../../recitals/recital-044.md), [Recital (45)](../../recitals/recital-045.md)
+
 ## Official Text
 
 1.

@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (172)](../../recitals/recital-172.md)
+
 ## Official Text
 
 Directive (EU) 2019/1937 shall apply to the reporting of infringements of this Regulation and the protection of persons

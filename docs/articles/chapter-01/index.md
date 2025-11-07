@@ -125,4 +125,4 @@ Establishes the European Artificial Intelligence Office within the Commission.
 
 ---
 
-**Navigation:** [← Home](../../index.md) | [Chapter II →](../chapter-02/)
+**Navigation:** [← Home](../index.md) | [Chapter II →](../chapter-02/)

@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (178)](../../recitals/recital-178.md), [Recital (179)](../../recitals/recital-179.md)
+
 ## Official Text
 
 This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the

@@ -18,6 +18,10 @@ tags: []
 !!! info "Supporting Recitals"
     - [To be identified based on content analysis]
 
+
+!!! info "Related Recitals"
+    [Recital (20)](../../recitals/recital-020.md)
+
 ## Official Text
 
 Providers and deployers of AI systems shall take measures to ensure, to their best extent, a sufficient level of AI literacy of
