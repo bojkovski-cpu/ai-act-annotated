@@ -72,6 +72,12 @@ Commission may, by decision, make those commitments binding and declare that the
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-93.md)
+
 ---
 
 *Navigate:* 

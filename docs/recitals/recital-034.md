@@ -32,6 +32,14 @@ In order to ensure that those systems are used in a responsible and proportionat
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../history/commission-2021/recitals/recital-34.md)
+    - [Parliament Position (June 2023)](../history/parliament-2023/recitals/recital-34.md)
+    - [Final Adopted Text (June 2024)](../history/final-2024/recitals/recital-34.md)
+
 ---
 
 *Navigate:* 

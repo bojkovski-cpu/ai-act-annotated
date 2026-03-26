@@ -116,6 +116,13 @@ Notifying authorities and notified bodies
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../../history/commission-2021/articles/article-27.md)
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-27.md)
+
 ---
 
 *Navigate:* 

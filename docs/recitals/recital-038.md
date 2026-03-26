@@ -32,6 +32,13 @@ Directive (EU) 2016/2102 of the European Parliament and of the Council of 26 Oct
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../history/commission-2021/recitals/recital-38.md)
+    - [Parliament Position (June 2023)](../history/parliament-2023/recitals/recital-38.md)
+
 ---
 
 *Navigate:* 

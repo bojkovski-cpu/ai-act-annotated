@@ -58,6 +58,12 @@ rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU)
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-104.md)
+
 ---
 
 *Navigate:* 

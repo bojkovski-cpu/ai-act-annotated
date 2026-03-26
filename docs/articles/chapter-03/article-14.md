@@ -118,6 +118,14 @@ application of this requirement to be disproportionate.
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../../history/commission-2021/articles/article-14.md)
+    - [Parliament Position (June 2023)](../../history/parliament-2023/articles/article-14.md)
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-14.md)
+
 ---
 
 *Navigate:* 

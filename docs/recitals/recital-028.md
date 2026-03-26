@@ -32,6 +32,12 @@ Aside from the many beneficial uses of AI, it can also be misused and provide no
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../history/final-2024/recitals/recital-28.md)
+
 ---
 
 *Navigate:* 

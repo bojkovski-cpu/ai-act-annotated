@@ -32,6 +32,13 @@ Regulation (EU) No 575/2013 of the European Parliament and of the Council of 26 
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../history/commission-2021/recitals/recital-48.md)
+    - [Final Adopted Text (June 2024)](../history/final-2024/recitals/recital-48.md)
+
 ---
 
 *Navigate:* 

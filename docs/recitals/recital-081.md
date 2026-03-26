@@ -32,6 +32,13 @@ The provider should establish a sound quality management system, ensure the acco
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../history/commission-2021/recitals/recital-81.md)
+    - [Final Adopted Text (June 2024)](../history/final-2024/recitals/recital-81.md)
+
 ---
 
 *Navigate:* 

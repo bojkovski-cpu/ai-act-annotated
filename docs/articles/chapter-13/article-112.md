@@ -188,6 +188,12 @@ a Union agency to resolve any identified shortcomings.
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-112.md)
+
 ---
 
 *Navigate:* 

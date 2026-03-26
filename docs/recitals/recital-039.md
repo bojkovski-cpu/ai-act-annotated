@@ -32,6 +32,12 @@ Directive 2002/14/EC of the European Parliament and of the Council of 11 March 2
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Parliament Position (June 2023)](../history/parliament-2023/recitals/recital-39.md)
+
 ---
 
 *Navigate:* 

@@ -48,6 +48,12 @@ Where reference is made to this paragraph, Article 5 of Regulation (EU) No 182/2
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-98.md)
+
 ---
 
 *Navigate:* 
