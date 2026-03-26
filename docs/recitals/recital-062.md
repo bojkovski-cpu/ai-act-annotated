@@ -32,6 +32,13 @@ Without prejudice to the rules provided for in Regulation (EU) 2024/900 of the E
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../history/commission-2021/recitals/recital-62.md)
+    - [Parliament Position (June 2023)](../history/parliament-2023/recitals/recital-62.md)
+
 ---
 
 *Navigate:* 

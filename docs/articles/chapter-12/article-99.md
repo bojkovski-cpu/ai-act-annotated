@@ -182,6 +182,12 @@ during that year, in accordance with this Article, and about any related litigat
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-99.md)
+
 ---
 
 *Navigate:* 

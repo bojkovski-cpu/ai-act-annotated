@@ -32,6 +32,12 @@ Large generative AI models are a typical example for a general-purpose AI model,
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../history/final-2024/recitals/recital-99.md)
+
 ---
 
 *Navigate:* 

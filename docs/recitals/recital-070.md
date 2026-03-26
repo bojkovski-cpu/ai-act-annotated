@@ -32,6 +32,12 @@ In order to protect the right of others from the discrimination that might resul
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../history/commission-2021/recitals/recital-70.md)
+
 ---
 
 *Navigate:* 

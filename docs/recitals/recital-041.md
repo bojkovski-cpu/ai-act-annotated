@@ -32,6 +32,14 @@ Regulation (EU) No 1025/2012 of the European Parliament and of the Council of 25
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../history/commission-2021/recitals/recital-41.md)
+    - [Parliament Position (June 2023)](../history/parliament-2023/recitals/recital-41.md)
+    - [Final Adopted Text (June 2024)](../history/final-2024/recitals/recital-41.md)
+
 ---
 
 *Navigate:* 

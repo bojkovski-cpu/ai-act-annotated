@@ -32,6 +32,13 @@ This Regulation should also apply to Union institutions, bodies, offices and age
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Parliament Position (June 2023)](../history/parliament-2023/recitals/recital-23.md)
+    - [Final Adopted Text (June 2024)](../history/final-2024/recitals/recital-23.md)
+
 ---
 
 *Navigate:* 

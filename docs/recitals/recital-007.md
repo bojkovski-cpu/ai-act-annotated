@@ -32,6 +32,13 @@ Regulation (EC) No 765/2008 of the European Parliament and of the Council of 9 J
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../history/commission-2021/recitals/recital-7.md)
+    - [Parliament Position (June 2023)](../history/parliament-2023/recitals/recital-7.md)
+
 ---
 
 *Navigate:* 

@@ -64,6 +64,12 @@ OJ L, 12.7.2024
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-88.md)
+
 ---
 
 *Navigate:* 

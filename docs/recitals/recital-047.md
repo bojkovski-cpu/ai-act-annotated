@@ -32,6 +32,13 @@ AI systems could have an adverse impact on the health and safety of persons, in 
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../history/commission-2021/recitals/recital-47.md)
+    - [Final Adopted Text (June 2024)](../history/final-2024/recitals/recital-47.md)
+
 ---
 
 *Navigate:* 

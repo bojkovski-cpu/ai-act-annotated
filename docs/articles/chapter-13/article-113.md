@@ -1010,6 +1010,12 @@ Information to be submitted upon the registration of high-risk AI systems in acc
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-113.md)
+
 ---
 
 *Navigate:* 

@@ -102,6 +102,12 @@ shall be adopted in accordance with the examination procedure referred to in Art
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-101.md)
+
 ---
 
 *Navigate:* 

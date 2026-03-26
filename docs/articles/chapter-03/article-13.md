@@ -118,6 +118,14 @@ properly collect, store and interpret the logs in accordance with Article 12.
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../../history/commission-2021/articles/article-13.md)
+    - [Parliament Position (June 2023)](../../history/parliament-2023/articles/article-13.md)
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-13.md)
+
 ---
 
 *Navigate:* 

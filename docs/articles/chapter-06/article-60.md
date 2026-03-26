@@ -220,6 +220,14 @@ OJ L, 12.7.2024
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../../history/commission-2021/articles/article-60.md)
+    - [Parliament Position (June 2023)](../../history/parliament-2023/articles/article-60.md)
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-60.md)
+
 ---
 
 *Navigate:* 

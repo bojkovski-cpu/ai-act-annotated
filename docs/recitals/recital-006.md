@@ -32,6 +32,12 @@ Given the major impact that AI can have on society and the need to build trust, 
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Parliament Position (June 2023)](../history/parliament-2023/recitals/recital-6.md)
+
 ---
 
 *Navigate:* 

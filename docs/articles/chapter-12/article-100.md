@@ -128,6 +128,12 @@ it has imposed pursuant to this Article and of any litigation or judicial procee
 
 - [Add relevant links, guidance documents, case studies]
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-100.md)
+
 ---
 
 *Navigate:* 

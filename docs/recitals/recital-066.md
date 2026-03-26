@@ -32,6 +32,12 @@ Requirements should apply to high-risk AI systems as regards risk management, th
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../history/final-2024/recitals/recital-66.md)
+
 ---
 
 *Navigate:* 

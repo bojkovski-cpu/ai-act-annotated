@@ -156,6 +156,21 @@ nav:
       - "Employment AI": guidance/industry-guides/employment.md
       - "Law Enforcement": guidance/industry-guides/law-enforcement.md
   
+  - Drafting History:
+      - Overview: history/index.md
+      - Commission Proposal (April 2021):
+          - Overview: history/commission-2021/index.md
+          - Articles: history/commission-2021/articles/
+          - Recitals: history/commission-2021/recitals/
+      - Parliament Position (June 2023):
+          - Overview: history/parliament-2023/index.md
+          - Articles: history/parliament-2023/articles/
+          - Recitals: history/parliament-2023/recitals/
+      - Final Adopted Text (June 2024):
+          - Overview: history/final-2024/index.md
+          - Articles: history/final-2024/articles/
+          - Recitals: history/final-2024/recitals/
+
   - Resources:
     - "Glossary": resources/glossary.md
     - "FAQ": resources/faq.md

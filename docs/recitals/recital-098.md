@@ -32,6 +32,12 @@ Whereas the generality of a model could, inter alia, also be determined by a num
 !!! note "Your Commentary"
     Add your analysis and interpretation here.
 
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../history/final-2024/recitals/recital-98.md)
+
 ---
 
 *Navigate:* 
