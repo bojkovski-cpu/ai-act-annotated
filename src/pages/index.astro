@@ -1,0 +1,97 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import data from '@data/ai_act_structured.json';
+
+const base = import.meta.env.BASE_URL;
+
+function titleCase(str: string) {
+  return str
+    .toLowerCase()
+    .replace(/\b\w/g, c => c.toUpperCase())
+    .replace(/\bAi\b/g, 'AI')
+    .replace(/\bEu\b/g, 'EU')
+    .replace(/\bGpai\b/g, 'GPAI');
+}
+
+// Build chapter overview data
+const chapters = data.chapters.map(ch => {
+  const articles = data.articles.filter(a => a.chapter === ch.number);
+  const artNums = articles.map(a => a.number);
+  const withRecitals = articles.filter(a => a.related_recitals && a.related_recitals.length > 0).length;
+  const withHistory = articles.filter(a => a.drafting_history && Object.values(a.drafting_history).some(v => v)).length;
+  const withOmnibus = articles.filter(a => a.omnibus_amendments && a.omnibus_amendments.length > 0).length;
+
+  return {
+    number: ch.number,
+    roman: ch.roman,
+    title: titleCase(ch.title),
+    articleCount: articles.length,
+    rangeText: artNums.length > 0
+      ? artNums.length === 1
+        ? `Article ${artNums[0]}`
+        : `Articles ${artNums[0]}–${artNums[artNums.length - 1]}`
+      : '',
+    withRecitals,
+    withHistory,
+    withOmnibus,
+    href: `${base}/chapter/${ch.roman.toLowerCase()}/`,
+  };
+});
+
+// Stats
+const totalArticles = data.articles.length;
+const totalRecitals = data.recitals.length;
+const totalWithRecitals = data.articles.filter(a => a.related_recitals?.length > 0).length;
+const totalWithHistory = data.articles.filter(a => a.drafting_history && Object.values(a.drafting_history).some(v => v)).length;
+const totalWithOmnibus = data.articles.filter(a => a.omnibus_amendments?.length > 0).length;
+---
+
+<BaseLayout title="EU AI Act — Annotated Edition">
+  <Sidebar slot="sidebar" />
+
+  <div class="chapter-bar" style="margin-bottom: 24px;">
+    <h1>EU AI Act — Annotated Edition</h1>
+  </div>
+
+  <div style="font-family: var(--sans); margin-bottom: 32px; padding: 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px;">
+    <p style="font-size: 15px; color: var(--gray-700); line-height: 1.6; margin-bottom: 16px;">
+      Regulation (EU) 2024/1689 — the Artificial Intelligence Act — annotated with recital cross-references,
+      legislative drafting history, and AI Omnibus (COM(2025) 836) amendment tracking.
+    </p>
+    <div style="display: flex; gap: 24px; flex-wrap: wrap; font-size: 13px; color: var(--gray-600);">
+      <div><strong style="font-size: 20px; color: var(--red-accent);">{totalArticles}</strong> articles</div>
+      <div><strong style="font-size: 20px; color: #2563eb;">{totalRecitals}</strong> recitals</div>
+      <div><strong style="font-size: 20px; color: #2563eb;">{totalWithRecitals}</strong> with recital links</div>
+      <div><strong style="font-size: 20px; color: #d97706;">{totalWithHistory}</strong> with drafting history</div>
+      <div><strong style="font-size: 20px; color: #92400e;">{totalWithOmnibus}</strong> with Omnibus amendments</div>
+    </div>
+  </div>
+
+  <div style="font-family: var(--sans);">
+    {chapters.map(ch => (
+      <a href={ch.href} style="display: block; text-decoration: none; color: inherit; margin-bottom: 12px; padding: 16px 20px; background: #fff; border: 1px solid var(--gray-200); border-left: 4px solid var(--red-accent); border-radius: 0 6px 6px 0; transition: all 0.15s;"
+         class="chapter-index-card">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <div>
+            <span style="font-weight: 700; color: var(--red-accent); font-size: 15px;">Chapter {ch.roman}</span>
+            <span style="color: var(--gray-600); font-size: 14px; margin-left: 12px;">{ch.title}</span>
+          </div>
+          <span style="font-size: 13px; color: var(--gray-500);">{ch.articleCount} article{ch.articleCount !== 1 ? 's' : ''}</span>
+        </div>
+        <div style="font-size: 12px; color: var(--gray-400); margin-top: 4px;">{ch.rangeText}</div>
+        <div style="display: flex; gap: 16px; margin-top: 8px; font-size: 12px;">
+          {ch.withRecitals > 0 && <span style="color: #2563eb;">{ch.withRecitals} with recitals</span>}
+          {ch.withHistory > 0 && <span style="color: #d97706;">{ch.withHistory} with drafting history</span>}
+          {ch.withOmnibus > 0 && <span style="color: #92400e;">{ch.withOmnibus} with Omnibus amendments</span>}
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <div style="font-family: var(--sans); margin-top: 40px; padding-top: 20px; border-top: 2px solid #111; font-size: 13px; color: var(--gray-500);">
+    <p>Built by <a href="https://abacuslegal.nl" target="_blank" rel="noopener" style="color: var(--blue-accent);">Abacus Legal</a> (Amsterdam).
+    Data sourced from EUR-Lex, Kai Zenner article-recital mapping, and four-column mandate comparison documents.</p>
+    <p style="margin-top: 4px;">This is a research and reference tool, not legal advice.</p>
+  </div>
+</BaseLayout>

@@ -1,0 +1,72 @@
+---
+import data from '@data/ai_act_structured.json';
+
+interface Props {
+  activeChapter?: number;
+}
+
+const { activeChapter } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+// Build chapter nav from data
+const chapters = data.chapters.map(ch => {
+  const articles = data.articles
+    .filter(a => a.chapter === ch.number)
+    .map(a => ({
+      number: a.number,
+      title: a.title,
+    }));
+
+  // Determine article range text
+  const artNums = articles.map(a => a.number);
+  const rangeText = artNums.length > 0
+    ? artNums.length === 1
+      ? `Art. ${artNums[0]}`
+      : `Art. ${artNums[0]}–${artNums[artNums.length - 1]}`
+    : '';
+
+  return {
+    number: ch.number,
+    roman: ch.roman,
+    title: ch.title,
+    rangeText,
+    articles,
+    isActive: ch.number === activeChapter,
+  };
+});
+---
+
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <h2>Regulation (EU) 2024/1689</h2>
+    <p>Artificial Intelligence Act</p>
+  </div>
+  <div class="sidebar-controls">
+    <a class="sidebar-expand-all">&#x229e; Expand all</a>
+    <a class="sidebar-collapse-all">&#x229f; Collapse all</a>
+  </div>
+
+  {chapters.map(ch => (
+    <div class={`nav-chapter${ch.isActive ? ' open' : ''}`}>
+      <div class={`nav-chapter-header${ch.isActive ? ' active' : ''}`}>
+        <div class="nav-toggle">&#x25b8;</div>
+        <div>
+          <div class="nav-chapter-title">Chapter {ch.roman}</div>
+          <span class="nav-chapter-subtitle">
+            {ch.title.charAt(0) + ch.title.slice(1).toLowerCase()} ({ch.rangeText})
+          </span>
+        </div>
+      </div>
+      <div class="nav-articles">
+        {ch.articles.map(art => (
+          <a
+            class="nav-article-link"
+            href={`${base}/chapter/${ch.roman.toLowerCase()}/#article-${art.number}`}
+          >
+            Art. {art.number} – {art.title}
+          </a>
+        ))}
+      </div>
+    </div>
+  ))}
+</nav>

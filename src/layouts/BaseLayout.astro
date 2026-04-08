@@ -1,0 +1,161 @@
+---
+import '@/styles/global.css';
+
+interface Props {
+  title: string;
+  activeChapter?: number;
+}
+
+const { title, activeChapter } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} — EU AI Act Annotated</title>
+  <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
+  <meta name="description" content="Annotated EU AI Act (Regulation 2024/1689) with recitals, drafting history, cross-references, and AI Omnibus amendments." />
+</head>
+<body>
+
+<!-- ── Top bar ── -->
+<div class="topbar">
+  <div class="topbar-upper">
+    <div class="topbar-brand">EU AI Act<span>Annotated Edition</span></div>
+    <div class="topbar-search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" placeholder="Search articles, recitals…" id="search-input" />
+      <button class="topbar-search-btn">SEARCH</button>
+    </div>
+  </div>
+  <nav class="topbar-nav">
+    <a href={`${base}/`} class="active">ARTICLES</a>
+    <span class="topbar-nav-sep">|</span>
+    <a href={`${base}/`}>RECITALS</a>
+    <span class="topbar-nav-sep">|</span>
+    <a href={`${base}/`}>ANNEXES</a>
+    <span class="topbar-nav-sep">|</span>
+    <a href={`${base}/`}>TIMELINE</a>
+    <span class="topbar-nav-sep">|</span>
+    <a href={`${base}/`}>ABOUT</a>
+  </nav>
+</div>
+
+<!-- ── Layout ── -->
+<div class="layout">
+
+<!-- ── Sidebar ── -->
+<slot name="sidebar" />
+
+<!-- ── Main content ── -->
+<div class="main-wrapper">
+  <main class="main">
+    <slot />
+  </main>
+
+  <!-- ── Right sidebar ── -->
+  <aside class="right-sidebar">
+    <div class="rs-section">
+      <h3>About This Resource</h3>
+      <div class="rs-meta">Regulation (EU) 2024/1689</div>
+      <div class="rs-meta">OJ L, 12.7.2024</div>
+      <div class="rs-meta">Entry into force: 1 August 2024</div>
+      <div class="rs-meta" style="margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--gray-100);">Last updated: April 2026</div>
+    </div>
+    <div class="rs-section">
+      <h3>Quick Links</h3>
+      <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">Full text on EUR-Lex</a>
+      <a href="https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence" target="_blank" rel="noopener">EU AI Office</a>
+      <a href="https://ec.europa.eu/ai-act-service-desk" target="_blank" rel="noopener">AI Act Service Desk</a>
+    </div>
+    <div class="rs-section">
+      <h3>Application Dates</h3>
+      <div class="rs-meta"><strong style="color: var(--green-badge);">2 Feb 2025</strong> — Prohibited practices</div>
+      <div class="rs-meta"><strong style="color: var(--green-badge);">2 Aug 2025</strong> — GPAI obligations</div>
+      <div class="rs-meta"><strong style="color: var(--amber-badge);">2 Aug 2026</strong> — High-risk systems</div>
+      <div class="rs-meta"><strong style="color: var(--gray-500);">2 Aug 2027</strong> — Annex I systems</div>
+    </div>
+    <div class="rs-section">
+      <h3>Related Legislation</h3>
+      <a href="#">GDPR (2016/679)</a>
+      <a href="#">DSA (2022/2065)</a>
+      <a href="#">DMA (2022/1925)</a>
+      <a href="#">NIS2 (2022/2555)</a>
+      <a href="#">DORA (2022/2554)</a>
+      <a href="#">Product Liability Dir.</a>
+    </div>
+    <div class="rs-section">
+      <h3>Contact</h3>
+      <a href="https://abacuslegal.nl" target="_blank" rel="noopener">Abacus Legal</a>
+      <a href="#">Suggest a correction</a>
+    </div>
+  </aside>
+</div><!-- /main-wrapper -->
+
+</div><!-- /layout -->
+
+<script is:inline>
+function switchTab(tabEl) {
+  const tabBar = tabEl.parentElement;
+  const articleId = tabBar.dataset.article;
+  const tabName = tabEl.dataset.tab;
+
+  // If clicking active tab, collapse it
+  if (tabEl.classList.contains('active')) {
+    tabEl.classList.remove('active');
+    document.querySelectorAll(`.tab-panel[data-article="${articleId}"]`).forEach(p => p.classList.remove('active'));
+    return;
+  }
+
+  // Deactivate siblings
+  tabBar.querySelectorAll('.article-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll(`.tab-panel[data-article="${articleId}"]`).forEach(p => p.classList.remove('active'));
+
+  // Activate clicked
+  tabEl.classList.add('active');
+  const panel = document.querySelector(`.tab-panel[data-panel="${tabName}"][data-article="${articleId}"]`);
+  if (panel) panel.classList.add('active');
+}
+
+// Sidebar chapter toggle
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.nav-chapter-header').forEach(header => {
+    header.addEventListener('click', () => {
+      header.parentElement.classList.toggle('open');
+    });
+  });
+
+  // Expand/Collapse all
+  document.querySelectorAll('.sidebar-expand-all').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.nav-chapter').forEach(c => c.classList.add('open'));
+    });
+  });
+  document.querySelectorAll('.sidebar-collapse-all').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.nav-chapter').forEach(c => c.classList.remove('open'));
+    });
+  });
+
+  // Timeline card expand
+  document.querySelectorAll('.timeline-card').forEach(card => {
+    card.addEventListener('click', () => card.classList.toggle('expanded'));
+  });
+
+  // Diff view toggle
+  document.querySelectorAll('.timeline-compare-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const diffView = btn.nextElementSibling;
+      if (diffView && diffView.classList.contains('diff-view')) {
+        diffView.classList.toggle('active');
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

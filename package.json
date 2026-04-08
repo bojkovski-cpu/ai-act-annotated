@@ -1,0 +1,15 @@
+{
+  "name": "ai-act-annotated",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Annotated EU AI Act (Regulation 2024/1689)",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  }
+}

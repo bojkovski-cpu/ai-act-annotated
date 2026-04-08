@@ -1,0 +1,214 @@
+---
+import data from '@data/ai_act_structured.json';
+
+interface Props {
+  article: any;
+}
+
+const { article } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+// Resolve related recitals
+const relatedRecitals = (article.related_recitals || [])
+  .map((rNum: number) => data.recitals.find(r => r.number === rNum))
+  .filter(Boolean);
+
+// Drafting history entries
+const draftingHistory = article.drafting_history || {};
+const draftingVersions = Object.entries(draftingHistory).filter(([_, text]) => text);
+
+// Omnibus amendments
+const omnibusAmendments = article.omnibus_amendments || [];
+
+// Tab counts
+const recitalCount = relatedRecitals.length;
+const historyCount = draftingVersions.length;
+const omnibusCount = omnibusAmendments.length;
+
+// Parse paragraph text into sub-points
+function parseSubPoints(text: string) {
+  // Split on (a), (b), etc. patterns at start of line
+  const parts: { marker?: string; text: string }[] = [];
+  const lines = text.split('\n');
+  let currentText = '';
+  let currentMarker: string | undefined;
+
+  for (const line of lines) {
+    const subMatch = line.match(/^\(([a-z])\)\s*/);
+    if (subMatch) {
+      if (currentText.trim()) {
+        parts.push({ marker: currentMarker, text: currentText.trim() });
+      }
+      currentMarker = `(${subMatch[1]})`;
+      currentText = line.replace(/^\([a-z]\)\s*/, '');
+    } else {
+      currentText += (currentText ? '\n' : '') + line;
+    }
+  }
+  if (currentText.trim()) {
+    parts.push({ marker: currentMarker, text: currentText.trim() });
+  }
+  return parts;
+}
+
+// Timeline ordering for drafting history
+const timelineOrder = [
+  { key: 'Commission Proposal (2021)', year: 'April 2021', label: 'European Commission Proposal — COM(2021) 206', isCurrent: false },
+  { key: 'Council General Approach (2022)', year: 'November 2022', label: 'Council General Approach — ST 14954/2022', isCurrent: false },
+  { key: 'EP Mandate (2023)', year: 'June 2023', label: 'European Parliament Position', isCurrent: false },
+];
+---
+
+<div class="article-block" id={`article-${article.number}`}>
+  <div class="article-header">
+    <div>
+      <span class="article-id">Article {article.number}</span>
+      <span class="article-title-text">{article.title}</span>
+    </div>
+    <div class="article-badges">
+      <div class="article-tools">
+        <button class="article-tool-btn" title="Permalink" onclick={`navigator.clipboard.writeText(window.location.origin + '${base}/chapter/${article.chapter_roman?.toLowerCase()}/#article-${article.number}')`}>&#x1f517;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article body -->
+  <div class="article-body">
+    {article.paragraphs.map((para: any) => {
+      const parts = parseSubPoints(para.text);
+      const hasNumber = para.number && para.number !== '0';
+
+      return (
+        <div class="para-row">
+          {hasNumber && <div class="para-num">{para.number}.</div>}
+          <div class={`para-text${!hasNumber ? ' para-text-full' : ''}`}>
+            {parts.map((part, i) => (
+              part.marker ? (
+                <div class="sub-para">
+                  <div class="sub-para-marker">{part.marker}</div>
+                  <div set:html={part.text.replace(/\n/g, '<br/>')} />
+                </div>
+              ) : (
+                <span set:html={part.text.replace(/\n/g, '<br/>')} />
+              )
+            ))}
+          </div>
+        </div>
+      );
+    })}
+  </div>
+
+  <!-- Per-article tab bar -->
+  {(recitalCount > 0 || historyCount > 0 || omnibusCount > 0) && (
+    <div class="article-tabs" data-article={String(article.number)}>
+      {recitalCount > 0 && (
+        <div class="article-tab" data-tab="recitals" onclick="switchTab(this)">
+          Recitals <span class="tab-count">{recitalCount}</span> <span class="tab-chevron">&#x25be;</span>
+        </div>
+      )}
+      {historyCount > 0 && (
+        <div class="article-tab" data-tab="history" onclick="switchTab(this)">
+          Drafting History <span class="tab-count">{historyCount}</span> <span class="tab-chevron">&#x25be;</span>
+        </div>
+      )}
+      {omnibusCount > 0 && (
+        <div class="article-tab" data-tab="omnibus" onclick="switchTab(this)">
+          AI Omnibus <span class="tab-count">{omnibusCount}</span> <span class="tab-chevron">&#x25be;</span>
+        </div>
+      )}
+      <div class="article-tab" data-tab="caselaw" onclick="switchTab(this)">
+        Case Law <span class="tab-count">0</span> <span class="tab-chevron">&#x25be;</span>
+      </div>
+      <div class="article-tab" data-tab="guidance" onclick="switchTab(this)">
+        Guidance <span class="tab-count">0</span> <span class="tab-chevron">&#x25be;</span>
+      </div>
+    </div>
+  )}
+
+  <!-- Recitals panel -->
+  {recitalCount > 0 && (
+    <div class="tab-panel" data-panel="recitals" data-article={String(article.number)}>
+      {relatedRecitals.map((rec: any) => (
+        <div class="recital-card">
+          <div class="recital-card-header">
+            <a href={`#recital-${rec.number}`}>Recital {rec.number}</a>
+          </div>
+          <p>{rec.text.length > 300 ? rec.text.substring(0, 300) + '…' : rec.text}</p>
+        </div>
+      ))}
+    </div>
+  )}
+
+  <!-- Drafting History panel -->
+  {historyCount > 0 && (
+    <div class="tab-panel" data-panel="history" data-article={String(article.number)}>
+      <div class="timeline">
+        {timelineOrder.map(entry => {
+          const text = draftingHistory[entry.key];
+          if (!text) return null;
+          const preview = text.length > 200 ? text.substring(0, 200) + '…' : text;
+          const paraCount = (text.match(/\n\d+\.\s/g) || []).length || 1;
+          return (
+            <div class="timeline-entry">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">{entry.year}</div>
+              <div class="timeline-label">{entry.label}</div>
+              <div class="timeline-card">
+                <div class="timeline-card-title">Article {article.number} — {article.title}</div>
+                <div class="timeline-card-meta">~{paraCount} paragraph(s) · Click to expand</div>
+                <div class="timeline-card-text">
+                  <pre style="white-space: pre-wrap; font-family: inherit; font-size: 13px; line-height: 1.55; margin: 0;">{text}</pre>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+
+        <!-- Final text marker -->
+        <div class="timeline-entry current">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">July 2024</div>
+          <div class="timeline-label">Final Adopted Text — Regulation (EU) 2024/1689</div>
+          <div class="timeline-card" style="border-color: #d97706; background: #fffbeb;">
+            <div class="timeline-card-title">Article {article.number} — {article.title}</div>
+            <div class="timeline-card-meta">{article.paragraphs.length} paragraph(s) · Current text shown above</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )}
+
+  <!-- Omnibus amendments panel -->
+  {omnibusCount > 0 && (
+    <div class="tab-panel" data-panel="omnibus" data-article={String(article.number)}>
+      {omnibusAmendments.map((amend: any) => (
+        <div class="recital-card" style="border-left-color: #d97706;">
+          <div class="recital-card-header" style="color: #92400e;">
+            Paragraph {amend.paragraph} — {amend.action}
+            {amend.sub_provision && <span style="color: var(--gray-500);"> ({amend.sub_provision})</span>}
+          </div>
+          <p>{amend.summary}</p>
+          <div class="relevance" style="color: #d97706;">COM(2025) 836 final — AI Omnibus Regulation</div>
+        </div>
+      ))}
+    </div>
+  )}
+
+  <!-- Case Law panel (placeholder) -->
+  <div class="tab-panel" data-panel="caselaw" data-article={String(article.number)}>
+    <div class="caselaw-empty">
+      <div class="caselaw-empty-icon">&#x2696;</div>
+      No case law referencing Article {article.number} yet.
+      <p>As courts and enforcement authorities produce decisions interpreting this provision, they will appear here.</p>
+    </div>
+  </div>
+
+  <!-- Guidance panel (placeholder) -->
+  <div class="tab-panel" data-panel="guidance" data-article={String(article.number)}>
+    <div class="caselaw-empty">
+      <div class="caselaw-empty-icon">&#x1f4d6;</div>
+      No guidance documents linked to Article {article.number} yet.
+      <p>Commission guidelines, AI Office FAQs, and standardisation references will appear here as they are published.</p>
+    </div>
+  </div>
+</div>
