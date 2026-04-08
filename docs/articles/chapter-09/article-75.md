@@ -1,0 +1,91 @@
+---
+title: Article 75
+description: Mutual assistance, market surveillance and control of general-purpose AI systems
+tags: []
+---
+
+# Article 75 - Mutual assistance, market surveillance and control of general-purpose AI systems
+
+## Cross-References
+
+!!! info "Internal (AI Act)"
+    - [Article 1 - Subject Matter](../chapter-01/article-01.md)
+    - [To be identified based on content analysis]
+
+!!! info "Related Regulations"
+    - [To be identified based on content analysis]
+
+!!! info "Supporting Recitals"
+    - [To be identified based on content analysis]
+
+
+!!! info "Related Recitals"
+    [Recital (161)](../../recitals/recital-161.md)
+
+## Official Text
+
+1.
+
+Where an AI system is based on a general-purpose AI model, and the model and the system are developed by the
+
+same provider, the AI Office shall have powers to monitor and supervise compliance of that AI system with obligations
+
+under this Regulation. To carry out its monitoring and supervision tasks, the AI Office shall have all the powers of a market
+
+surveillance authority provided for in this Section and Regulation (EU) 2019/1020.
+
+2.
+
+Where the relevant market surveillance authorities have sufficient reason to consider general-purpose AI systems that
+
+can be used directly by deployers for at least one purpose that is classified as high-risk pursuant to this Regulation to be
+
+non-compliant with the requirements laid down in this Regulation, they shall cooperate with the AI Office to carry out
+
+compliance evaluations, and shall inform the Board and other market surveillance authorities accordingly.
+
+3.
+
+Where a market surveillance authority is unable to conclude its investigation of the high-risk AI system because of its
+
+inability to access certain information related to the general-purpose AI model despite having made all appropriate efforts
+
+to obtain that information, it may submit a reasoned request to the AI Office, by which access to that information shall be
+
+enforced. In that case, the AI Office shall supply to the applicant authority without delay, and in any event within 30 days,
+
+any information that the AI Office considers to be relevant in order to establish whether a high-risk AI system is
+
+non-compliant. Market surveillance authorities shall safeguard the confidentiality of the information that they obtain in
+
+accordance with Article 78 of this Regulation. The procedure provided for in Chapter VI of Regulation (EU) 2019/1020
+
+shall apply mutatis mutandis.
+
+## Commentary
+
+!!! note "Your Commentary"
+    Add your legal analysis, compliance guidance, and practical insights here.
+
+## Implementation Notes
+
+!!! tip "Practical Guidance"
+    Add practical implementation guidance here.
+
+## Related Resources
+
+- [Add relevant links, guidance documents, case studies]
+
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../../history/commission-2021/articles/article-75.md)
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-75.md)
+
+---
+
+*Navigate:* 
+[← Previous](article-74.md) | 
+[Chapter IX Index](index.md) | 
+[Next →](article-76.md)

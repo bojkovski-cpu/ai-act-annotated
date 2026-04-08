@@ -1,0 +1,47 @@
+---
+title: Recital (55)
+tags: []
+---
+
+# Recital (55)
+
+## Official Text
+
+As regards the management and operation of critical infrastructure, it is appropriate to classify as high-risk the AI systems intended to be used as safety components in the management and operation of critical digital infrastructure as listed in point (8) of the Annex to Directive (EU) 2022/2557, road traffic and the supply of water, gas, heating and electricity, since their failure or malfunctioning may put at risk the life and health of persons at large scale and lead to appreciable disruptions in the ordinary conduct of social and economic activities. Safety components of critical infrastructure, including critical digital infrastructure, are systems used to directly protect the physical integrity of critical infrastructure or the health and safety of persons and property but which are not necessary in order for the ELI: http://data.europa.eu/eli/reg/2024/1689/oj 15/144 EN OJ L, 12.7.2024 system to function. The failure or malfunctioning of such components might directly lead to risks to the physical integrity of critical infrastructure and thus to risks to health and safety of persons and property. Components intended to be used solely for cybersecurity purposes should not qualify as safety components. Examples of safety components of such critical infrastructure may include systems for monitoring water pressure or fire alarm controlling systems in cloud computing centres.
+
+## Key Points
+
+[To be added based on analysis]
+
+## Cross-References
+
+### Related Articles
+
+[To be identified]
+
+### Related Recitals
+
+[To be identified]
+
+### External References
+
+[To be identified]
+
+## Commentary
+
+!!! note "Your Commentary"
+    Add your analysis and interpretation here.
+
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../history/commission-2021/recitals/recital-55.md)
+    - [Final Adopted Text (June 2024)](../history/final-2024/recitals/recital-55.md)
+
+---
+
+*Navigate:* 
+[← Previous](recital-054.md) | 
+[Recitals Index](index.md) | 
+[Next →](recital-056.md)

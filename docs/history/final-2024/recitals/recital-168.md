@@ -1,0 +1,16 @@
+# Recital 168
+
+Compliance with this Regulation should be enforceable by means of the imposition of penalties and other enforcement measures. Member States should take all necessary measures to ensure that the provisions of this Regulation are implemented, including by laying down effective, proportionate and dissuasive penalties for their infringement, and to respect the ne bis in idem principle. In order to strengthen and harmonise administrative penalties for infringement of this Regulation, the upper limits for setting the administrative fines for certain specific infringements should be laid down. When assessing the amount of the fines, Member States should, in each individual case, take into account all relevant circumstances of the specific situation, with due regard in particular to the nature, gravity and duration of the infringement and of its consequences and to the size of the provider, in particular if the provider is an SME, including a start-up. The European Data Protection Supervisor should have the power to impose fines on Union institutions, agencies and bodies falling within the scope of this Regulation.
+
+
+## Internal Cross-References
+
+**Current version:** [Recital (168) (Final)](../../../recitals/recital-168.md)
+
+**Compare versions:**
+
+
+---
+
+**Version:** Final Adopted Text (June 2024)  
+**Source:** [Final Adopted Text](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)

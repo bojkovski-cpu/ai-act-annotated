@@ -1,0 +1,116 @@
+---
+title: Article 101
+description: Fines for providers of general-purpose AI models
+tags: []
+---
+
+# Article 101 - Fines for providers of general-purpose AI models
+
+## Cross-References
+
+!!! info "Internal (AI Act)"
+    - [Article 1 - Subject Matter](../chapter-01/article-01.md)
+    - [To be identified based on content analysis]
+
+!!! info "Related Regulations"
+    - [To be identified based on content analysis]
+
+!!! info "Supporting Recitals"
+    - [To be identified based on content analysis]
+
+
+!!! info "Related Recitals"
+    [Recital (169)](../../recitals/recital-169.md)
+
+## Official Text
+
+1.
+
+The Commission may impose on providers of general-purpose AI models fines not exceeding 3 % of their annual total
+
+worldwide turnover in the preceding financial year or EUR 15 000 000, whichever is higher., when the Commission finds
+
+that the provider intentionally or negligently:
+
+(a) infringed the relevant provisions of this Regulation;
+
+(b) failed to comply with a request for a document or for information pursuant to Article 91, or supplied incorrect,
+
+incomplete or misleading information;
+
+(c) failed to comply with a measure requested under Article 93;
+
+ELI: http://data.europa.eu/eli/reg/2024/1689/oj
+
+117/144
+
+EN
+
+OJ L, 12.7.2024
+
+(d) failed to make available to the Commission access to the general-purpose AI model or general-purpose AI model with
+
+systemic risk with a view to conducting an evaluation pursuant to Article 92.
+
+In fixing the amount of the fine or periodic penalty payment, regard shall be had to the nature, gravity and duration of the
+
+infringement, taking due account of the principles of proportionality and appropriateness. The Commission shall also into
+
+account commitments made in accordance with Article 93(3) or made in relevant codes of practice in accordance with
+
+Article 56.
+
+2.
+
+Before adopting the decision pursuant to paragraph 1, the Commission shall communicate its preliminary findings to
+
+the provider of the general-purpose AI model and give it an opportunity to be heard.
+
+3.
+
+Fines imposed in accordance with this Article shall be effective, proportionate and dissuasive.
+
+4.
+
+Information on fines imposed under this Article shall also be communicated to the Board as appropriate.
+
+5.
+
+The Court of Justice of the European Union shall have unlimited jurisdiction to review decisions of the Commission
+
+fixing a fine under this Article. It may cancel, reduce or increase the fine imposed.
+
+6.
+
+The Commission shall adopt implementing acts containing detailed arrangements and procedural safeguards for
+
+proceedings in view of the possible adoption of decisions pursuant to paragraph 1 of this Article. Those implementing acts
+
+shall be adopted in accordance with the examination procedure referred to in Article 98(2).
+
+## Commentary
+
+!!! note "Your Commentary"
+    Add your legal analysis, compliance guidance, and practical insights here.
+
+## Implementation Notes
+
+!!! tip "Practical Guidance"
+    Add practical implementation guidance here.
+
+## Related Resources
+
+- [Add relevant links, guidance documents, case studies]
+
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Final Adopted Text (June 2024)](../../history/final-2024/articles/article-101.md)
+
+---
+
+*Navigate:* 
+[← Previous](article-100.md) | 
+[Chapter XII Index](index.md) | 
+[Next →](article-102.md)

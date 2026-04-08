@@ -1,0 +1,48 @@
+---
+title: Recital (68)
+tags: []
+---
+
+# Recital (68)
+
+## Official Text
+
+For the development and assessment of high-risk AI systems, certain actors, such as providers, notified bodies and other relevant entities, such as European Digital Innovation Hubs, testing experimentation facilities and researchers, should be able to access and use high-quality data sets within the fields of activities of those actors which are related to this Regulation. European common data spaces established by the Commission and the facilitation of data sharing between businesses and with government in the public interest will be instrumental to provide trustful, accountable and non-discriminatory access to high-quality data for the training, validation and testing of AI systems. For example, in health, the European health data space will facilitate non-discriminatory access to health data and the training of AI algorithms on those data sets, in a privacy-preserving, secure, timely, transparent and trustworthy manner, and with an appropriate institutional governance. Relevant competent authorities, including sectoral ones, providing or supporting the access to data may also support the provision of high-quality data for the training, validation and testing of AI systems.
+
+## Key Points
+
+[To be added based on analysis]
+
+## Cross-References
+
+### Related Articles
+
+[To be identified]
+
+### Related Recitals
+
+[To be identified]
+
+### External References
+
+[To be identified]
+
+## Commentary
+
+!!! note "Your Commentary"
+    Add your analysis and interpretation here.
+
+
+??? info "Drafting History"
+    See how this provision evolved through the legislative process:
+
+    - [Commission Proposal (April 2021)](../history/commission-2021/recitals/recital-68.md)
+    - [Parliament Position (June 2023)](../history/parliament-2023/recitals/recital-68.md)
+    - [Final Adopted Text (June 2024)](../history/final-2024/recitals/recital-68.md)
+
+---
+
+*Navigate:* 
+[← Previous](recital-067.md) | 
+[Recitals Index](index.md) | 
+[Next →](recital-069.md)

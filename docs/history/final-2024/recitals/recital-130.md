@@ -1,0 +1,16 @@
+# Recital 130
+
+Under certain conditions, rapid availability of innovative technologies may be crucial for health and safety of persons, the protection of the environment and climate change and for society as a whole. It is thus appropriate that under exceptional reasons of public security or protection of life and health of natural persons, environmental protection and the protection of key industrial and infrastructural assets, market surveillance authorities could authorise the placing on the market or the putting into service of AI systems which have not undergone a conformity assessment. In duly justified situations, as provided for in this Regulation, law enforcement authorities or civil protection authorities may put a specific high-risk AI system into service without the authorisation of the market surveillance authority, provided that such authorisation is requested during or after the use without undue delay.
+
+
+## Internal Cross-References
+
+**Current version:** [Recital (130) (Final)](../../../recitals/recital-130.md)
+
+**Compare versions:**
+
+
+---
+
+**Version:** Final Adopted Text (June 2024)  
+**Source:** [Final Adopted Text](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
