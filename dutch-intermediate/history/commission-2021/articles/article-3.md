@@ -1,0 +1,42 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+article_number: "3"
+article_title: "Definities"
+titel_number_roman: "I"
+titel_number: "1"
+titel_title: "ALGEMENE BEPALINGEN"
+hoofdstuk_number: null
+hoofdstuk_title: null
+---
+
+# Artikel 3 — Definities
+
+Voor de toepassing van deze verordening gelden de volgende definities:
+
+- (1) “artificiële-intelligentiesysteem” (AI-systeem): software die is ontwikkeld aan de hand van een of meer van de technieken en benaderingen die zijn opgenomen in de lijst van bijlage I en die voor een bepaalde reeks door mensen gedefinieerde doelstellingen output kan genereren, zoals inhoud, voorspellingen, aanbevelingen of beslissingen die van invloed zijn op de omgeving waarmee wordt geïnterageerd;
+
+- (2) “aanbieder”: een natuurlijke of rechtspersoon, overheidsinstantie, agentschap of ander orgaan die/dat een AI-systeem ontwikkelt of beschikt over een AI-systeem dat is ontwikkeld met het oog op het al dan niet tegen betaling in de handel brengen of in gebruik stellen ervan onder de eigen naam of merknaam;
+
+- (3) “kleine aanbieder”: een aanbieder die een micro- of kleine onderneming is in de zin van Aanbeveling 2003/361/EG van de Commissie 61 ;
+
+- (4) “gebruiker”: een natuurlijke of rechtspersoon, overheidsinstantie, agentschap of ander orgaan die/dat een AI-systeem onder eigen verantwoordelijkheid gebruikt, tenzij het AI-systeem wordt gebruikt in het kader van een persoonlijke niet-beroepsactiviteit;
+
+- (5) “gemachtigde”: een in de Unie gevestigde natuurlijke of rechtspersoon die een schriftelijke machtiging heeft gekregen van een aanbieder van een AI-systeem om namens hem de verplichtingen en procedures van deze verordening respectievelijk na te komen en uit te voeren;
+
+- (6) “importeur”: een in de Unie gevestigde natuurlijke of rechtspersoon die een AI-systeem in de handel brengt of in gebruik stelt dat de naam of merknaam van een buiten de Unie gevestigde natuurlijke of rechtspersoon draagt;
+
+- (7) “distributeur”: een andere natuurlijke persoon of rechtspersoon in de toeleveringsketen dan de aanbieder of de importeur, die een AI-systeem in de Unie in de handel brengt zonder de eigenschappen hiervan te beïnvloeden;
+
+- (8) “exploitant”: de aanbieder, gebruiker, gemachtigde, importeur en distributeur;
+
+- (9) “in de handel brengen”: het voor het eerst in de Unie op de markt aanbieden van een AI-systeem;
+
+- (10) “op de markt aanbieden”: het in het kader van een handelsactiviteit, al dan niet tegen betaling, verstrekken van een AI-systeem met het oog op distributie of gebruik op de markt van de Unie;
+
+- (11) “in gebruik stellen”: de directe levering van een AI-systeem aan de gebruiker voor het eerste gebruik of voor eigen gebruik op de markt van de Unie voor het beoogde doel;
+
+- (12) “beoogd doel”: het gebruik waarvoor een AI-systeem door de aanbieder is bedoeld, met inbegrip van de specifieke context en voorwaarden van het gebruik, zoals gespecificeerd in de informatie die door de aanbieder in de gebruiksinstructies, reclame- of verkoopmaterialen en verklaringen, alsook in de technische documentatie is verstrekt;

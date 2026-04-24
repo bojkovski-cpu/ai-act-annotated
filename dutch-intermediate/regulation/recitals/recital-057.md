@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "57"
+anchor: "rct_57"
+---
+
+# Overweging (57)
+
+AI-systemen die worden gebruikt op het gebied van werkgelegenheid, personeelsbeheer en toegang tot zelfstandige arbeid, met name voor de werving en selectie van personen, voor het nemen van besluiten die van invloed zijn op de voorwaarden van arbeidsgerelateerde betrekkingen, de bevordering en beëindiging van arbeidsgerelateerde contractuele betrekkingen, voor het toewijzen van taken op basis van individueel gedrag of persoonlijke eigenschappen of kenmerken, en voor monitoring of evaluatie van personen in arbeidsgerelateerde contractuele betrekkingen, moeten ook als systemen met een hoog risico worden geclassificeerd, aangezien deze systemen aanzienlijke gevolgen kunnen hebben voor de toekomstige carrièrekansen en het levensonderhoud van deze personen, alsook voor de rechten van werknemers. Relevante arbeidsgerelateerde contractuele betrekkingen moeten, op betekenisvolle wijze, werknemers en personen omvatten die via platforms diensten verlenen, zoals bedoeld in het werkprogramma van de Commissie voor 2021. Dergelijke systemen kunnen er in het wervingsproces en bij de evaluatie, de promotie of het behoud van personen in arbeidsgerelateerde contractuele betrekkingen toe leiden dat historische patronen van discriminatie blijven bestaan, bijvoorbeeld ten aanzien van vrouwen, bepaalde leeftijdsgroepen, personen met een handicap of personen met een bepaalde raciale of etnische afkomst of seksuele gerichtheid. AI-systemen die worden gebruikt om de prestaties en het gedrag van deze personen te monitoren, kunnen ook afbreuk doen aan hun grondrechten inzake gegevensbescherming en privacy.

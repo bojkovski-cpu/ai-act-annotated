@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "289"
+amendment_target: "Voorstel voor een verordening — Artikel 10 — lid 4"
+---
+
+# Amendement 289
+
+**Doel:** Voorstel voor een verordening — Artikel 10 — lid 4
+
+## Door de Commissie voorgestelde tekst
+
+4. Ten aanzien van datareeksen voor training, validatie en tests wordt, voor zover vereist gezien het beoogde doel hiervan , rekening gehouden met de eigenschappen of elementen die specifiek zijn voor een bepaalde geografische, functionele of gedragsomgeving waarin het AI-systeem moet worden gebruikt.
+
+## Amendement van het Europees Parlement
+
+4. Ten aanzien van datareeksen wordt, voor zover vereist gezien het beoogde doel of het redelijkerwijs te voorziene misbruik van het AI-systeem , rekening gehouden met de eigenschappen of elementen die specifiek zijn voor een bepaalde geografische , contextuele , functionele of gedragsomgeving waarin het AI-systeem moet worden gebruikt.

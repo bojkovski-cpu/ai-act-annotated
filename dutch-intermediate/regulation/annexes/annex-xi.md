@@ -1,0 +1,52 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+annex_number_roman: "XI"
+annex_number: "11"
+annex_title: "Technische documentatie als bedoeld in artikel 53, lid 1, punt a) — technische documentatie voor aanbieders van AI-modellen voor algemene doeleinden"
+anchor: "d1e38-141-1"
+---
+
+# Bijlage XI — Technische documentatie als bedoeld in artikel 53, lid 1, punt a) — technische documentatie voor aanbieders van AI-modellen voor algemene doeleinden
+
+## Technische documentatie als bedoeld in artikel 53, lid 1, punt a) — technische documentatie voor aanbieders van AI-modellen voor algemene doeleinden
+
+### Afdeling 1
+
+### Informatie die moet worden verstrekt door alle aanbieders van AI-modellen voor algemene doeleinden
+
+De technische documentatie als bedoeld in artikel 53, lid 1, punt a), bevat ten minste de volgende informatie, naargelang van de omvang en het risicoprofiel van het model:
+
+- 1. Een algemene beschrijving van het AI-model voor algemene doeleinden, met daarin:
+
+  - a) de taken die het model moet uitvoeren en het type en de aard van AI-systemen waarin het kan worden geïntegreerd;
+
+  - b) de “acceptable use policies” die van toepassing zijn;
+
+  - c) de releasedatum en de wijze van verspreiding;
+
+  - d) de architectuur en het aantal parameters;
+
+  - e) de modaliteit (bv. tekst, afbeelding) en het formaat van de input en output;
+
+  - f) de licentie.
+
+- 2. Een gedetailleerde beschrijving van de elementen van het in punt 1 bedoelde model en relevante informatie over het ontwikkelingsproces, met inbegrip van de volgende elementen:
+
+  - a) de technische middelen (bv. gebruiksinstructies, infrastructuur, instrumenten) die nodig zijn voor de integratie van het AI-model voor algemene doeleinden in AI-systemen;
+
+  - b) de specificaties van het ontwerp van het model en het trainingsproces, met inbegrip van trainingsmethoden en -technieken, de belangrijkste ontwerpkeuzes, met inbegrip van de motivering en de gemaakte aannames; voor welke optimalisatie het model is ontworpen en de relevantie van de verschillende parameters, naargelang van het geval;
+
+  - c) informatie over de data die zijn gebruikt voor training, tests en validatie, indien van toepassing, met inbegrip van het type en de herkomst van de data en curatiemethoden (bv. schoonmaken, filteren enz.), het aantal datapunten, hun bereik en belangrijkste kenmerken; de wijze waarop de data zijn verkregen en geselecteerd, alsmede alle andere maatregelen om de ongeschiktheid van databronnen te detecteren, en methoden voor het opsporen van identificeerbare vooroordelen, indien van toepassing;
+
+  - d) de rekenhulpmiddelen die zijn gebruikt om het model te trainen (bv. aantal zwevendekommabewerkingen), de duur en andere relevante bijzonderheden over de training;
+
+  - e) bekend of geraamd energieverbruik van het model.
+
+  Met betrekking tot punt e) kan, indien het energieverbruik van het model onbekend is, het energieverbruik gebaseerd zijn op informatie over de gebruikte rekenhulpmiddelen.
+
+### Afdeling 2
+
+### Aanvullende informatie die moet worden verstrekt door aanbieders van AI-modellen met een systeemrisico

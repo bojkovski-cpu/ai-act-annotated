@@ -1,0 +1,38 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "101"
+article_title: "Geldboeten voor aanbieders van AI-systemen voor algemene doeleinden"
+chapter_number: "12"
+chapter_number_roman: "XII"
+chapter_title: "SANCTIES"
+section_number: null
+section_title: null
+anchor: "art_101"
+---
+
+# Artikel 101 — Geldboeten voor aanbieders van AI-systemen voor algemene doeleinden
+
+**1.** De Commissie kan aanbieders van AI-modellen voor algemene doeleinden geldboeten opleggen van ten hoogste 3 % van hun jaarlijkse totale wereldwijde omzet in het voorgaande boekjaar of 15 000 000 EUR, indien dat hoger is, wanneer de Commissie vaststelt dat de aanbieder opzettelijk of uit onachtzaamheid:
+
+- a) inbreuk heeft gepleegd op de desbetreffende bepalingen van deze verordening;
+
+- b) niet heeft voldaan aan een verzoek om een document of om informatie op grond van artikel 91, of onjuiste, onvolledige of misleidende informatie heeft verstrekt;
+
+- c) een op grond van artikel 93 gevraagde maatregel niet heeft nageleefd;
+
+- d) de Commissie geen toegang tot het AI-model voor algemene doeleinden of het AI-model voor algemene doeleinden met een systeemrisico heeft gegeven voor de doeleinden van de evaluatie op grond van artikel 92.
+
+Bij de vaststelling van het bedrag van de geldboete of de dwangsom wordt met de aard, de ernst en de duur van de inbreuk rekening gehouden, met inachtneming van de beginselen van evenredigheid en redelijkheid. De Commissie houdt ook rekening met verbintenissen die zijn aangegaan overeenkomstig artikel 93, lid 3, of die zijn aangegaan in relevante praktijkcodes overeenkomstig artikel 56.
+
+**2.** Alvorens het besluit op grond van lid 1 vast te stellen, deelt de Commissie haar voorlopige bevindingen mee aan de aanbieder van het AI-model voor algemene doeleinden, en stelt zij hem in de gelegenheid te worden gehoord.
+
+**3.** De overeenkomstig dit artikel opgelegde geldboeten zijn doeltreffend, evenredig en afschrikkend.
+
+**4.** Informatie over geldboeten die uit hoofde van dit artikel zijn opgelegd, wordt in voorkomend geval ook aan de AI-board meegedeeld.
+
+**5.** Het Hof van Justitie van de Europese Unie heeft volledige rechtsmacht ter zake van beroep tegen besluiten waarbij de Commissie krachtens dit artikel een geldboete vaststelt. Het kan de opgelegde geldboete vernietigen, verlagen of verhogen.
+
+**6.** De Commissie stelt uitvoeringshandelingen vast met gedetailleerde regelingen en procedurele waarborgen voor procedures met het oog op de eventuele vaststelling van besluiten op grond van lid 1 van dit artikel. Die uitvoeringshandelingen worden vastgesteld volgens de in artikel 98, lid 2, bedoelde onderzoeksprocedure.

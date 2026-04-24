@@ -1,0 +1,34 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "95"
+article_title: "Gedragscodes voor vrijwillige toepassing van specifieke voorschriften"
+chapter_number: "10"
+chapter_number_roman: "X"
+chapter_title: "GEDRAGSCODES EN RICHTSNOEREN"
+section_number: null
+section_title: null
+anchor: "art_95"
+---
+
+# Artikel 95 — Gedragscodes voor vrijwillige toepassing van specifieke voorschriften
+
+**1.** Het AI-bureau en de lidstaten stimuleren en faciliteren de opstelling van gedragscodes, met inbegrip van gerelateerde governancemechanismen, die bedoeld zijn om de vrijwillige toepassing van sommige of alle voorschriften van hoofdstuk III, afdeling 2, op andere AI-systemen dan AI-systemen met een hoog risico te bevorderen, rekening houdend met de beschikbare technische oplossingen en beste praktijken van de sector die de toepassing van dergelijke voorschriften mogelijk maken.
+
+**2.** Het AI-bureau en de lidstaten faciliteren de opstelling van gedragscodes met betrekking tot de vrijwillige toepassing, onder meer door gebruiksverantwoordelijken, van specifieke voorschriften voor alle AI-systemen, op basis van duidelijke doelstellingen en kernprestatie-indicatoren om de verwezenlijking van die doelstellingen te meten, met inbegrip van elementen zoals, maar niet beperkt tot:
+
+- a) toepasselijke elementen waarin de ethische richtsnoeren van de Unie voor betrouwbare AI voorzien;
+
+- b) het beoordelen en tot een minimum beperken van het effect van AI-systemen op de milieuduurzaamheid, onder meer wat betreft energie-efficiënte programmering en technieken voor het op efficiënte wijze ontwerpen, trainen en gebruiken van AI;
+
+- c) het bevorderen van AI-geletterdheid, met name die van personen die te maken hebben met de ontwikkeling, de werking en het gebruik van AI;
+
+- d) het faciliteren van een inclusief en divers ontwerp van AI-systemen, onder meer door de oprichting van inclusieve en diverse ontwikkelingsteams en de bevordering van de deelname van belanghebbenden aan dat proces;
+
+- e) het beoordelen en voorkomen van de negatieve gevolgen van AI-systemen voor kwetsbare personen of groepen van kwetsbare personen, ook wat betreft de toegankelijkheid voor personen met een handicap, en voor gendergelijkheid.
+
+**3.** Gedragscodes kunnen door individuele aanbieders of gebruiksverantwoordelijken van AI-systemen of door organisaties die hen vertegenwoordigen, of allebei, worden opgesteld, ook met betrokkenheid van geïnteresseerde belanghebbenden en hun representatieve organisaties, met inbegrip van maatschappelijke organisaties en de academische wereld. Gedragscodes kunnen betrekking hebben op een of meer AI-systemen, gelet op de gelijkenis qua beoogd doel van de betrokken systemen.
+
+**4.** Het AI-bureau en de lidstaten houden rekening met de specifieke belangen en behoeften van kmo’s, waaronder start-ups, bij het stimuleren en faciliteren van het opstellen van gedragscodes.

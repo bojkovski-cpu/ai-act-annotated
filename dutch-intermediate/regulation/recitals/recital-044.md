@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "44"
+anchor: "rct_44"
+---
+
+# Overweging (44)
+
+Er bestaat ernstige bezorgdheid over de wetenschappelijke basis van AI-systemen die gericht zijn op het identificeren of afleiden van emoties, met name omdat emoties sterk uiteenlopen tussen culturen en situaties, en zelfs bij één persoon. Tot de belangrijkste tekortkomingen van dergelijke systemen behoren de beperkte betrouwbaarheid, het gebrek aan specificiteit en de beperkte veralgemeenbaarheid. Daarom kunnen AI-systemen die emoties of intenties van natuurlijke personen identificeren of afleiden op basis van hun biometrische gegevens, tot discriminerende resultaten leiden en inbreuk maken op de rechten en vrijheden van de betrokken personen. Gezien de ongelijke machtsverhoudingen in de context van werk of onderwijs, in combinatie met het ingrijpende karakter van deze systemen, kunnen dergelijke systemen leiden tot een nadelige of ongunstige behandeling van bepaalde natuurlijke personen of hele groepen personen. Daarom moeten het in de handel brengen, in gebruik stellen en gebruiken van AI-systemen die bedoeld zijn om te worden gebruikt om de emotionele toestand van natuurlijke personen in situaties die verband houden met de werkplek en het onderwijs te detecteren, worden verboden. Dat verbod mag geen betrekking hebben op AI-systemen die uitsluitend om medische of veiligheidsredenen in de handel worden gebracht, zoals systemen die bedoeld zijn voor therapeutisch gebruik.

@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "112"
+anchor: "rct_112"
+---
+
+# Overweging (112)
+
+Het is tevens noodzakelijk tot een procedure te komen voor de classificatie van AI-modellen voor algemene doeleinden met een systeemrisico. Een AI-model voor algemeen gebruik dat aan de toepasselijke drempel voor capaciteiten met een grote impact voldoet, dient als AI-model voor algemene doeleinden met een systeemrisico te worden aangemerkt. De aanbieder behoort uiterlijk twee weken nadat aan de vereisten is voldaan of nadat bekend is geworden dat een AI-model voor algemene doeleinden voldoet aan de vereisten die tot het vermoeden leiden, het AI-bureau daarvan in kennis te stellen. Dit is met name relevant met betrekking tot de drempel van zwevendekommabewerkingen, omdat de training van AI-modellen voor algemene doeleinden uitgebreide planning vergt met onder meer voorafgaande toewijzing van rekeninputmiddelen, waardoor aanbieders van AI-modellen voor algemene doeleinden reeds vóór voltooiing van de training weten kunnen of hun model aan de drempel zal voldoen. In het kader van die kennisgeving moet de aanbieder kunnen aantonen dat een AI-model voor algemene doeleinden dankzij zijn specifieke kenmerken bij wijze van uitzondering geen systeemrisico’s meebrengt en dat het dus niet als AI-model voor algemene doeleinden met systeemrisico’s mag worden aangemerkt. Het AI-bureau kan dankzij die informatie anticiperen op het in de handel brengen van AI-modellen voor algemene doeleinden met systeemrisico’s, en de aanbieders kunnen reeds in een vroeg stadium met het AI-bureau in contact treden. Die informatie is met name van belang met betrekking tot AI-modellen voor algemene doeleinden waarvan het de bedoeling is deze als open source vrij te geven, want eenmaal als het opensourcemodel is vrijgegeven, kan het moeilijker zijn de nodige maatregelen ter naleving van de verplichtingen uit hoofde van deze verordening te treffen.

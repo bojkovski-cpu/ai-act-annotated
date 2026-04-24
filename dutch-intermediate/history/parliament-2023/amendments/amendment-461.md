@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "461"
+amendment_target: "Voorstel voor een verordening — Artikel 44 — lid 3"
+---
+
+# Amendement 461
+
+**Doel:** Voorstel voor een verordening — Artikel 44 — lid 3
+
+## Door de Commissie voorgestelde tekst
+
+3. Indien een aangemelde instantie vaststelt dat een AI-systeem niet meer aan de in hoofdstuk 2 van deze titel beschreven voorschriften voldoet, gaat zij , rekening houdend met het evenredigheidsbeginsel, over tot schorsing of intrekking van het afgegeven certificaat of legt zij beperkingen op, tenzij de aanbieder van het systeem, met het oog op de naleving van deze voorschriften, binnen een door de aangemelde instantie vastgestelde passende termijn adequate corrigerende actie onderneemt. De aangemelde instantie geeft de redenen voor haar besluit op.
+
+## Amendement van het Europees Parlement
+
+3. Indien een aangemelde instantie vaststelt dat een AI-systeem niet meer aan de in hoofdstuk 2 van deze titel beschreven voorschriften voldoet, gaat zij over tot schorsing of intrekking van het afgegeven certificaat of legt zij beperkingen op, tenzij de aanbieder van het systeem, met het oog op de naleving van deze voorschriften, binnen een door de aangemelde instantie vastgestelde passende termijn adequate corrigerende actie onderneemt. De aangemelde instantie geeft de redenen voor haar besluit op.

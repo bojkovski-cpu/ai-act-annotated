@@ -1,0 +1,44 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "108"
+article_title: "Wijzigingen van Verordening (EU) 2018/1139"
+chapter_number: "13"
+chapter_number_roman: "XIII"
+chapter_title: "SLOTBEPALINGEN"
+section_number: null
+section_title: null
+anchor: "art_108"
+---
+
+# Artikel 108 — Wijzigingen van Verordening (EU) 2018/1139
+
+Verordening (EU) 2018/1139 wordt als volgt gewijzigd:
+
+- 1) Aan artikel 17 wordt het volgende lid toegevoegd:
+
+  “3. Onverminderd lid 2 worden bij het vaststellen van uitvoeringshandelingen krachtens lid 1 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689 van het Europees Parlement en de Raad ( * ) , de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen.
+
+  ( * ) Verordening (EU) 2024/1689 van het Europees Parlement en de Raad van 13 juni 2024 tot vaststelling van geharmoniseerde regels betreffende artificiële intelligentie en tot wijziging van de Verordeningen (EG) nr. 300/2008, (EU) nr. 167/2013, (EU) nr. 168/2013, (EU) 2018/858, (EU) 2018/1139 en (EU) 2019/2144 en de Richtlijnen 2014/90/EU, (EU) 2016/797 en (EU) 2020/1828 (verordening artificiële intelligentie) ( PB L, 2024/1689, 12.7.2024, ELI: http://data.europa.eu/eli/reg/2024/1689/oj ).”."
+
+- 2) Aan artikel 19 wordt het volgende lid toegevoegd:
+
+  “4. Bij het vaststellen van gedelegeerde handelingen krachtens de leden 1 en 2 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689, worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen.”.
+
+- 3) Aan artikel 43 wordt het volgende lid toegevoegd:
+
+  “4. Bij het vaststellen van uitvoeringshandelingen krachtens lid 1 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689, worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen.”.
+
+- 4) Aan artikel 47 wordt het volgende lid toegevoegd:
+
+  “3. Bij het vaststellen van gedelegeerde handelingen krachtens de leden 1 en 2 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689, worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen.”.
+
+- 5) Aan artikel 57 wordt de volgende alinea toegevoegd:
+
+  “Bij het vaststellen van die uitvoeringshandelingen betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689, worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen.”.
+
+- 6) Aan artikel 58 wordt het volgende lid toegevoegd:
+
+  “3. Bij het vaststellen van gedelegeerde handelingen krachtens de leden 1 en 2 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689, worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen.”.

@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "61"
+---
+
+# Overweging (61)
+
+Normalisatie moet een belangrijke rol spelen bij de levering van technische oplossingen aan aanbieders om de naleving van deze verordening te waarborgen. De naleving van geharmoniseerde normen, zoals gedefinieerd in Verordening (EU) nr. 1025/2012 van het Europees Parlement en de Raad 54 , moet een middel zijn voor aanbieders om de overeenstemming met de voorschriften van deze verordening aan te tonen. De Commissie zou echter gemeenschappelijke technische specificaties kunnen vaststellen op gebieden waarop geen geharmoniseerde normen bestaan of waarop deze ontoereikend zijn.

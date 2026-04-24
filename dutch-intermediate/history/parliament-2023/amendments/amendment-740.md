@@ -1,0 +1,25 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "740"
+amendment_target: "Voorstel voor een verordening — Bijlage III — alinea 1 — punt 8 — a ter (nieuw)"
+---
+
+# Amendement 740
+
+**Doel:** Voorstel voor een verordening — Bijlage III — alinea 1 — punt 8 — a ter (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+
+
+a ter)
+
+## Amendement van het Europees Parlement
+
+a ter) AI-systemen die bedoeld zijn om te worden gebruikt door socialemediaplatforms die zijn aangemerkt als zeer grote onlineplatforms in de zin van artikel 33 van Verordening (EU) 2022/2065, in hun aanbevelingssystemen om de afnemer van de dienst door gebruikers gegenereerde inhoud aan te bevelen die op het platform beschikbaar is.
+
+AI-systemen die bedoeld zijn om te worden gebruikt door socialemediaplatforms die zijn aangemerkt als zeer grote onlineplatforms in de zin van artikel 33 van Verordening (EU) 2022/2065, in hun aanbevelingssystemen om de afnemer van de dienst door gebruikers gegenereerde inhoud aan te bevelen die op het platform beschikbaar is.

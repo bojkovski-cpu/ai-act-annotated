@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "359"
+amendment_target: "Voorstel voor een verordening — Artikel 22 — alinea 1"
+---
+
+# Amendement 359
+
+**Doel:** Voorstel voor een verordening — Artikel 22 — alinea 1
+
+## Door de Commissie voorgestelde tekst
+
+Wanneer het AI-systeem met een hoog risico een risico vormt in de zin van artikel 65, lid 1, en dat risico bekend is bij de aanbieder van dat systeem , informeert deze aanbieder de nationale bevoegde autoriteiten van de lidstaten waarin hij het systeem beschikbaar heeft gemaakt en, waar van toepassing, de aangemelde instantie die een certificaat voor het AI-systeem met een hoog risico heeft afgegeven, met name over de non-conformiteit en over eventuele getroffen corrigerende maatregelen.
+
+## Amendement van het Europees Parlement
+
+Wanneer het AI-systeem met een hoog risico een risico vormt in de zin van artikel 65, lid 1, en de aanbieder van dat systeem zich bewust wordt van dat risico , informeert deze aanbieder onmiddellijk de nationale toezichthoudende autoriteiten van de lidstaten waarin hij het systeem beschikbaar heeft gemaakt en, waar van toepassing, de aangemelde instantie die een certificaat voor het AI-systeem met een hoog risico heeft afgegeven, met name over de aard van de non-conformiteit en over eventuele relevante getroffen corrigerende maatregelen.

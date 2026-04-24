@@ -1,0 +1,26 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "72"
+article_title: "Monitoring door aanbieders na het in de handel brengen en plan voor monitoring na het in de handel brengen voor AI-systemen met een hoog risico"
+chapter_number: "9"
+chapter_number_roman: "IX"
+chapter_title: "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+section_number: "1"
+section_title: "Monitoring na het in de handel brengen"
+anchor: "art_72"
+---
+
+# Artikel 72 — Monitoring door aanbieders na het in de handel brengen en plan voor monitoring na het in de handel brengen voor AI-systemen met een hoog risico
+
+**1.** Aanbieders moeten een systeem voor monitoring na het in de handel brengen vaststellen en documenteren op een manier die evenredig is aan de aard van de AI-technologieën en de risico’s van het AI-systeem met een hoog risico.
+
+**2.** Het systeem voor monitoring na het in de handel brengen verzamelt, documenteert en analyseert actief en systematisch relevante data die door gebruiksverantwoordelijken kunnen zijn verstrekt of via andere bronnen kunnen zijn verzameld, over de prestaties van AI-systemen met een hoog risico gedurende hun hele levensduur, en die de aanbieder in staat stellen na te gaan of AI-systemen blijvend voldoen aan de in hoofdstuk III, afdeling 2, vermelde voorschriften. In voorkomend geval omvat de monitoring na het in de handel brengen een analyse van de interactie met andere AI-systemen. Deze verplichting geldt niet voor gevoelige operationele gegevens van gebruiksverantwoordelijken die rechtshandhavingsinstanties zijn.
+
+**3.** Het systeem voor monitoring na het in de handel brengen is gebaseerd op een plan voor monitoring na het in de handel brengen. Het plan voor monitoring na het in de handel brengen maakt deel uit van de in bijlage IV bedoelde technische documentatie. De Commissie stelt uiterlijk op 2 februari 2026 een uitvoeringshandeling vast met gedetailleerde bepalingen voor het opstellen van een model voor het plan voor monitoring na het in de handel brengen en de lijst van elementen die in het plan moeten worden opgenomen. De uitvoeringshandeling wordt volgens de in artikel 98, lid 2, bedoelde onderzoeksprocedure vastgesteld.
+
+**4.** Voor AI-systemen met een hoog risico die onder de in afdeling A van bijlage I vermelde harmonisatiewetgeving van de Unie vallen, hebben aanbieders, indien er krachtens die wetgeving reeds een systeem en een plan voor monitoring na het in de handel brengen zijn vastgesteld, ten behoeve van de consistentie, ter vermijding van doublures en om extra lasten tot een minimum te beperken, de keuze om de noodzakelijke in de leden 1, 2 en 3 beschreven elementen te integreren, met gebruikmaking van het in lid 3 bedoelde model, in systemen en plannen die reeds bestaan op grond van die wetgeving, mits dat een gelijkwaardig beschermingsniveau garandeert.
+
+De eerste alinea van dit lid is ook van toepassing op in punt 5 van bijlage III bedoelde aI-systemen met een hoog risico die in de handel worden gebracht of in gebruik worden gesteld door financiële instellingen waarvoor krachtens het Unierecht inzake financiële diensten vereisten met betrekking tot hun interne governance, regelingen of processen gelden.

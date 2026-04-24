@@ -1,0 +1,20 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "63"
+article_title: "Afwijkingen voor specifieke operatoren"
+chapter_number: "6"
+chapter_number_roman: "VI"
+chapter_title: "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE"
+section_number: null
+section_title: null
+anchor: "art_63"
+---
+
+# Artikel 63 — Afwijkingen voor specifieke operatoren
+
+**1.** Micro-ondernemingen in de zin van Aanbeveling 2003/361/EG kunnen op vereenvoudigde wijze voldoen aan bepaalde elementen van het bij artikel 17 van deze verordening vereiste systeem voor kwaliteitsbeheer, mits zij geen partnerondernemingen of verbonden ondernemingen in de zin van die aanbeveling hebben. Daartoe ontwikkelt de Commissie richtsnoeren over de elementen van het systeem voor kwaliteitsbeheer waaraan op vereenvoudigde wijze kan worden voldaan, rekening houdend met de behoeften van micro-ondernemingen, zonder afbreuk te doen aan het beschermingsniveau of de noodzaak om de verplichtingen voor AI-systemen met een hoog risico na te leven.
+
+**2.** Lid 1 van dit artikel wordt niet zodanig geïnterpreteerd dat die operatoren worden vrijgesteld van de naleving van andere in deze verordening vastgelegde eisen of verplichtingen, met inbegrip van die welke zijn vastgelegd in de artikelen 9, 10, 11, 12, 13, 14, 15, 72 en 73.

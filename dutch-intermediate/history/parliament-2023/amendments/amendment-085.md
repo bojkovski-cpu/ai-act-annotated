@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "85"
+amendment_target: "Voorstel voor een verordening — Overweging 49"
+---
+
+# Amendement 85
+
+**Doel:** Voorstel voor een verordening — Overweging 49
+
+## Door de Commissie voorgestelde tekst
+
+(49) AI-systemen met een hoog risico moeten gedurende hun levenscyclus consistent presteren en een passend niveau van nauwkeurigheid, robuustheid en cyberbeveiliging behalen in overeenstemming met de algemeen erkende stand van de techniek. De mate van nauwkeurigheid en de maatstaven voor de nauwkeurigheid moeten aan de gebruikers worden meegedeeld.
+
+(49)
+
+(49)
+
+## Amendement van het Europees Parlement
+
+(49) AI-systemen met een hoog risico moeten gedurende hun levenscyclus consistent presteren en een passend niveau van nauwkeurigheid, robuustheid en cyberbeveiliging behalen in overeenstemming met de algemeen erkende stand van de techniek. De prestatiestatistieken en het verwachte niveau ervan moeten worden gedefinieerd, met als voornaamste doel de risico’s en de negatieve gevolgen van het AI-systeem te beperken. Het verwachte niveau van de prestatiestatistieken moet op een duidelijke, transparante, gemakkelijk begrijpelijke en inzichtelijke manier aan de exploitanten worden meegedeeld. Het opgeven van prestatiestatistieken mag niet worden beschouwd als bewijs van toekomstige niveaus. Er moeten relevante methoden worden gebruikt om ervoor te zorgen dat de niveaus tijdens het gebruik consistent blijven. Er bestaan weliswaar normalisatieorganisaties om normen vast te stellen, maar er is niettemin behoefte aan coördinatie inzake benchmarking om te bepalen hoe deze genormaliseerde voorschriften en kenmerken van AI-systemen moeten worden gemeten. Het Europees Bureau voor artificiële intelligentie (hierna “het AI-bureau”) moet nationale en internationale metrologie- en benchmarkingautoriteiten samenbrengen en niet-bindende richtsnoeren verstrekken inzake de technische aspecten van het meten van het juiste prestatieniveau en de juiste mate van robuustheid.
+
+AI-systemen met een hoog risico moeten gedurende hun levenscyclus consistent presteren en een passend niveau van nauwkeurigheid, robuustheid en cyberbeveiliging behalen in overeenstemming met de algemeen erkende stand van de techniek. De mate van nauwkeurigheid en de maatstaven voor de nauwkeurigheid moeten aan de gebruikers worden meegedeeld.
+
+AI-systemen met een hoog risico moeten gedurende hun levenscyclus consistent presteren en een passend niveau van nauwkeurigheid, robuustheid en cyberbeveiliging behalen in overeenstemming met de algemeen erkende stand van de techniek. De prestatiestatistieken en het verwachte niveau ervan moeten worden gedefinieerd, met als voornaamste doel de risico’s en de negatieve gevolgen van het AI-systeem te beperken. Het verwachte niveau van de prestatiestatistieken moet op een duidelijke, transparante, gemakkelijk begrijpelijke en inzichtelijke manier aan de exploitanten worden meegedeeld. Het opgeven van prestatiestatistieken mag niet worden beschouwd als bewijs van toekomstige niveaus. Er moeten relevante methoden worden gebruikt om ervoor te zorgen dat de niveaus tijdens het gebruik consistent blijven. Er bestaan weliswaar normalisatieorganisaties om normen vast te stellen, maar er is niettemin behoefte aan coördinatie inzake benchmarking om te bepalen hoe deze genormaliseerde voorschriften en kenmerken van AI-systemen moeten worden gemeten. Het Europees Bureau voor artificiële intelligentie (hierna “het AI-bureau”) moet nationale en internationale metrologie- en benchmarkingautoriteiten samenbrengen en niet-bindende richtsnoeren verstrekken inzake de technische aspecten van het meten van het juiste prestatieniveau en de juiste mate van robuustheid.

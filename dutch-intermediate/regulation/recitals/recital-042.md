@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "42"
+anchor: "rct_42"
+---
+
+# Overweging (42)
+
+In overeenstemming met het vermoeden van onschuld moeten natuurlijke personen in de Unie altijd worden beoordeeld op hun feitelijke gedrag. Natuurlijke personen mogen nooit worden beoordeeld op basis van door AI voorspeld gedrag dat uitsluitend gebaseerd is op hun profilering, persoonlijkheidskenmerken of kenmerken, zoals nationaliteit, geboorteplaats, verblijfplaats, aantal kinderen, schuldniveau of type auto, zonder een redelijk vermoeden dat die persoon betrokken is bij een criminele activiteit op basis van objectieve, verifieerbare feiten en zonder menselijke beoordeling daarvan. Daarom moeten risicobeoordelingen die met betrekking tot natuurlijke personen worden uitgevoerd, uitsluitend op basis van profilering of beoordeling van hun persoonlijkheidskenmerken en kenmerken, om de waarschijnlijkheid dat zij strafbare feiten plegen, te beoordelen, of om te voorspellen dat er een feitelijk of potentieel strafbaar feit zal plaatsvinden, worden verboden. In elk geval heeft dat verbod geen betrekking op risicoanalyses die niet zijn gebaseerd op de profilering van natuurlijke personen of op de persoonlijkheidskenmerken en kenmerken van natuurlijke personen, zoals AI-systemen die gebruikmaken van risicoanalyses om de waarschijnlijkheid van financiële fraude door ondernemingen te beoordelen op basis van verdachte transacties, of van risicoanalyse-instrumenten om de waarschijnlijkheid van vondsten van verdovende middelen of illegale goederen door douaneautoriteiten te voorspellen, bijvoorbeeld op basis van bekende smokkelroutes.

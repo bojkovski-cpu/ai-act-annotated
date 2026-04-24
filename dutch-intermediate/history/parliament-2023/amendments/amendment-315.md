@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "315"
+amendment_target: "Voorstel voor een verordening — Artikel 14 — lid 2"
+---
+
+# Amendement 315
+
+**Doel:** Voorstel voor een verordening — Artikel 14 — lid 2
+
+## Door de Commissie voorgestelde tekst
+
+2. Het menselijk toezicht is gericht op het voorkomen of beperken van de risico’s voor de gezondheid, veiligheid of grondrechten die zich kunnen voordoen wanneer een AI-systeem met een hoog risico wordt gebruikt in overeenstemming met het beoogde doel ervan of in een situatie van redelijkerwijs te voorzien misbruik, met name wanneer dergelijke risico’s blijven bestaan ondanks de toepassing van andere voorschriften van dit hoofdstuk.
+
+## Amendement van het Europees Parlement
+
+2. Het menselijk toezicht is gericht op het voorkomen of beperken van de risico’s voor de gezondheid, veiligheid , de grondrechten of het milieu die zich kunnen voordoen wanneer een AI-systeem met een hoog risico wordt gebruikt in overeenstemming met het beoogde doel ervan of in een situatie van redelijkerwijs te voorzien misbruik, met name wanneer dergelijke risico’s blijven bestaan ondanks de toepassing van andere voorschriften van dit hoofdstuk en wanneer uitsluitend op geautomatiseerde verwerking door AI-systemen gebaseerde besluiten rechtsgevolgen of anderszins significante gevolgen hebben voor de personen of groepen personen voor wie het systeem moet worden gebruikt .

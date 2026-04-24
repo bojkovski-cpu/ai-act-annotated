@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "120"
+anchor: "rct_120"
+---
+
+# Overweging (120)
+
+Voorts zijn de verplichtingen die in deze verordening aan aanbieders en gebruiksverantwoordelijken van bepaalde AI-systemen worden opgelegd om opsporing mogelijk te maken, evenals de bekendmaking dat de outputs van die systemen kunstmatig worden gegenereerd of gemanipuleerd, bijzonder relevant voor het vergemakkelijken van de doeltreffende uitvoering van Verordening (EU) 2022/2065. Dit geldt met name voor de verplichtingen van aanbieders van zeer grote onlineplatforms of zeer grote onlinezoekmachines om systeemrisico’s die kunnen voortvloeien uit de verspreiding van kunstmatig gegenereerde of gemanipuleerde content te identificeren en te beperken, en dan met name het risico op feitelijke of voorzienbare negatieve effecten op democratische processen, het maatschappelijk debat en verkiezingsprocessen, onder meer van desinformatie.

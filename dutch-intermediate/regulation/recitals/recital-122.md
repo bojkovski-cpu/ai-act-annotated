@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "122"
+anchor: "rct_122"
+---
+
+# Overweging (122)
+
+Het is onverminderd het gebruik van geharmoniseerde normen en gemeenschappelijke specificaties passend dat aanbieders van een AI-systeem met een hoog risico dat getraind en getest is op data met betrekking tot de specifieke geografische, gedrags-, contextuele of functionele omgeving waarin het de bedoeling is het systeem te gebruiken, verondersteld worden aan de desbetreffende maatregel krachtens de bij deze verordening vastgestelde datagovernancevereiste te voldoen. Onverminderd de bij deze verordening vastgestelde vereisten met betrekking tot robuustheid en nauwkeurigheid, moeten overeenkomstig artikel 54, lid 3, van Verordening (EU) 2019/881, gecertificeerde AI-systemen met een hoog risico of AI-systemen met een hoog risico waarvoor in het kader van een cyberbeveiligingsregeling uit hoofde van die verordening een conformiteitsverklaring is afgegeven en waarvan de referenties in het Publicatieblad van de Europese Unie zijn bekendgemaakt, worden geacht aan het cyberbeveiligingsvereiste van deze verordening te voldoen, voor zover het cyberbeveiligingscertificaat of de conformiteitsverklaring of delen daarvan het cyberbeveiligingsvereiste van deze verordening bestrijken. Dit doet geen afbreuk aan het vrijwillige karakter van die cyberbeveiligingsregeling.

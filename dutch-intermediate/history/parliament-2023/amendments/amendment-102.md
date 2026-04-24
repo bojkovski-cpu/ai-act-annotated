@@ -1,0 +1,25 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "102"
+amendment_target: "Voorstel voor een verordening — Overweging 60 nonies (nieuw)"
+---
+
+# Amendement 102
+
+**Doel:** Voorstel voor een verordening — Overweging 60 nonies (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+
+
+(60 nonies)
+
+## Amendement van het Europees Parlement
+
+(60 nonies) Gezien de aard van basismodellen ontbreekt het aan deskundigheid op het gebied van conformiteitsbeoordeling en worden de auditmethoden voor derden nog altijd ontwikkeld. Daarom worden er in de sector zelf nieuwe manieren ontwikkeld om fundamentele modellen te beoordelen die gedeeltelijk aan de auditdoelstelling voldoen (zoals modelbeoordeling, red teaming en verificatie- en validatietechnieken voor machinaal leren). Deze interne beoordelingen voor basismodellen moeten breed toepasbaar zijn (bv. onafhankelijk van distributiekanalen, modaliteit en ontwikkelingsmethoden) om de specifieke risico’s van dergelijke modellen aan te pakken, rekening houdend met de praktijken in de sector die in overeenstemming zijn met de stand van de techniek, en moeten gericht zijn op de totstandbrenging van voldoende technisch inzicht in en controle over het model, het beheer van redelijkerwijs te voorziene risico’s, en uitgebreide analyse en toetsing van het model door middel van passende maatregelen, bijvoorbeeld met de hulp van onafhankelijke beoordelaars. Aangezien basismodellen een nieuwe en snel evoluerende ontwikkeling zijn op het gebied van artificiële intelligentie, is het passend dat de Commissie en het AI-bureau het wetgevings- en beheerskader van deze modellen periodiek monitoren en beoordelen, met name waar het generatieve AI-systemen betreft die op dergelijke modellen gebaseerd zijn, wat belangrijke vragen doet rijzen over de generatie van inhoud die in strijd is met het Unierecht, de regels inzake auteursrecht en mogelijk misbruik. Niettemin moet worden verduidelijkt dat deze verordening geen afbreuk mag doen aan wetgeving van de Unie inzake auteursrecht en aanverwante rechten, waaronder Richtlijn 2001/29/EG, Richtlijn 2004/48/EG en Richtlijn (EU) 2019/790.
+
+Gezien de aard van basismodellen ontbreekt het aan deskundigheid op het gebied van conformiteitsbeoordeling en worden de auditmethoden voor derden nog altijd ontwikkeld. Daarom worden er in de sector zelf nieuwe manieren ontwikkeld om fundamentele modellen te beoordelen die gedeeltelijk aan de auditdoelstelling voldoen (zoals modelbeoordeling, red teaming en verificatie- en validatietechnieken voor machinaal leren). Deze interne beoordelingen voor basismodellen moeten breed toepasbaar zijn (bv. onafhankelijk van distributiekanalen, modaliteit en ontwikkelingsmethoden) om de specifieke risico’s van dergelijke modellen aan te pakken, rekening houdend met de praktijken in de sector die in overeenstemming zijn met de stand van de techniek, en moeten gericht zijn op de totstandbrenging van voldoende technisch inzicht in en controle over het model, het beheer van redelijkerwijs te voorziene risico’s, en uitgebreide analyse en toetsing van het model door middel van passende maatregelen, bijvoorbeeld met de hulp van onafhankelijke beoordelaars. Aangezien basismodellen een nieuwe en snel evoluerende ontwikkeling zijn op het gebied van artificiële intelligentie, is het passend dat de Commissie en het AI-bureau het wetgevings- en beheerskader van deze modellen periodiek monitoren en beoordelen, met name waar het generatieve AI-systemen betreft die op dergelijke modellen gebaseerd zijn, wat belangrijke vragen doet rijzen over de generatie van inhoud die in strijd is met het Unierecht, de regels inzake auteursrecht en mogelijk misbruik. Niettemin moet worden verduidelijkt dat deze verordening geen afbreuk mag doen aan wetgeving van de Unie inzake auteursrecht en aanverwante rechten, waaronder Richtlijn 2001/29/EG, Richtlijn 2004/48/EG en Richtlijn (EU) 2019/790.

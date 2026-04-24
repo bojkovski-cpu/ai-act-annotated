@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "645"
+amendment_target: "Voorstel voor een verordening — Artikel 71 — lid 1"
+---
+
+# Amendement 645
+
+**Doel:** Voorstel voor een verordening — Artikel 71 — lid 1
+
+## Door de Commissie voorgestelde tekst
+
+1. Overeenkomstig de voorwaarden van deze verordening stellen de lidstaten de voorschriften voor sancties vast , waaronder administratieve geldboeten, die van toepassing zijn op inbreuken op deze verordening en nemen zij alle nodige maatregelen om ervoor te zorgen dat deze naar behoren en doeltreffend worden uitgevoerd. De vastgestelde sancties moeten doeltreffend, evenredig en afschrikkend zijn. Hierbij wordt met name rekening gehouden met de belangen van kleine aanbieders en start-ups en hun economische levensvatbaarheid.
+
+## Amendement van het Europees Parlement
+
+1. Overeenkomstig de voorwaarden van deze verordening stellen de lidstaten de voorschriften voor sancties vast die van toepassing zijn op inbreuken van operators op deze verordening en nemen zij alle nodige maatregelen om ervoor te zorgen dat deze naar behoren en doeltreffend worden uitgevoerd en afgestemd zijn op de overeenkomstig artikel 82 ter vastgestelde richtsnoeren van de Commissie en het AI-bureau . De vastgestelde sancties moeten doeltreffend, evenredig en afschrikkend zijn. Hierbij wordt rekening gehouden met de belangen van kmo’s en start-ups en hun economische levensvatbaarheid.

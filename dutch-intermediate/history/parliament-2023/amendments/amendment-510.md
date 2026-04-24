@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "510"
+amendment_target: "Voorstel voor een verordening — Artikel 54 — lid 1 — punt c"
+---
+
+# Amendement 510
+
+**Doel:** Voorstel voor een verordening — Artikel 54 — lid 1 — punt c
+
+## Door de Commissie voorgestelde tekst
+
+c) er zijn doeltreffende monitoringmechanismen om vast te stellen of zich tijdens de experimenten in de testomgeving hoge risico’s voor de grondrechten van de betrokkenen kunnen voordoen evenals responsmechanismen om die risico’s onmiddellijk te beperken en indien nodig de verwerking stop te zetten;
+
+c)
+
+c)
+
+## Amendement van het Europees Parlement
+
+c) er zijn doeltreffende monitoringmechanismen om vast te stellen of zich tijdens de experimenten in de testomgeving hoge risico’s voor de rechten en vrijheden van de betrokkenen , als bedoeld in artikel 35 van Verordening (EU) 2016/679 en in artikel 35 van Verordening (EU) 2018/1725, kunnen voordoen evenals responsmechanismen om die risico’s onmiddellijk te beperken en indien nodig de verwerking stop te zetten;
+
+er zijn doeltreffende monitoringmechanismen om vast te stellen of zich tijdens de experimenten in de testomgeving hoge risico’s voor de grondrechten van de betrokkenen kunnen voordoen evenals responsmechanismen om die risico’s onmiddellijk te beperken en indien nodig de verwerking stop te zetten;
+
+er zijn doeltreffende monitoringmechanismen om vast te stellen of zich tijdens de experimenten in de testomgeving hoge risico’s voor de rechten en vrijheden van de betrokkenen , als bedoeld in artikel 35 van Verordening (EU) 2016/679 en in artikel 35 van Verordening (EU) 2018/1725, kunnen voordoen evenals responsmechanismen om die risico’s onmiddellijk te beperken en indien nodig de verwerking stop te zetten;

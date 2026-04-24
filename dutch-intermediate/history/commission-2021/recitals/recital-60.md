@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "60"
+---
+
+# Overweging (60)
+
+Gezien de complexiteit van de waardeketen voor artificiële intelligentie moeten relevante derde partijen, en met name de partijen die zijn betrokken bij de verkoop en de levering van de software, softwarehulpmiddelen en -onderdelen, vooraf getrainde modellen en data, of aanbieders van netwerkdiensten waar passend samenwerken met aanbieders en gebruikers om hun naleving van de verplichtingen uit hoofde van deze verordening mogelijk te maken en met de bevoegde autoriteiten zoals vastgesteld in het kader van deze verordening.

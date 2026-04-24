@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "633"
+amendment_target: "Voorstel voor een verordening — Artikel 69 — lid 1"
+---
+
+# Amendement 633
+
+**Doel:** Voorstel voor een verordening — Artikel 69 — lid 1
+
+## Door de Commissie voorgestelde tekst
+
+1. De Commissie en de lidstaten stimuleren en vergemakkelijken de opstelling van gedragscodes die bedoeld zijn om de vrijwillige toepassing van de in titel III, hoofdstuk 2, beschreven voorschriften op andere AI-systemen dan AI-systemen met een hoog risico te bevorderen op basis van technische specificaties en oplossingen die passende middelen zijn om naleving van zulke voorschriften in het licht van het beoogde doel van de systemen te waarborgen.
+
+## Amendement van het Europees Parlement
+
+1. De Commissie , het AI-bureau en de lidstaten stimuleren en vergemakkelijken de opstelling van gedragscodes die bedoeld zijn om de vrijwillige toepassing van de in titel III, hoofdstuk 2, beschreven voorschriften op andere AI-systemen dan AI-systemen met een hoog risico te bevorderen op basis van technische specificaties en oplossingen die passende middelen zijn om naleving van zulke voorschriften in het licht van het beoogde doel van de systemen te waarborgen , onder meer indien deze opgesteld worden om aan te tonen dat AI-systemen in overeenstemming zijn met de in artikel 4 bis vastgelegde beginselen en derhalve als betrouwbaar kunnen worden beschouwd .

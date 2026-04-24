@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "77"
+anchor: "rct_77"
+---
+
+# Overweging (77)
+
+Onverminderd de bij deze verordening vastgestelde eisen met betrekking tot robuustheid en nauwkeurigheid kunnen AI-systemen met een hoog risico die onder het toepassingsgebied van een verordening van het Europees Parlement en de Raad betreffende horizontale cyberbeveiligingsvereisten voor producten met digitale elementen vallen, overeenkomstig die verordening de naleving van de cyberbeveiligingseisen van onderhavige verordening aantonen door te voldoen aan de essentiële cyberbeveiligingseisen van die verordening. Wanneer AI-systemen met een hoog risico voldoen aan de essentiële eisen van een verordening van het Europees Parlement en de Raad betreffende horizontale cyberbeveiligingsvereisten voor producten met digitale elementen, moeten zij worden geacht in overeenstemming te zijn met de cyberbeveiligingseisen van deze verordening, voor zover de naleving van die eisen wordt aangetoond in de EU-conformiteitsverklaring of delen daarvan die is afgegeven op grond van die verordening. Daartoe moet bij de beoordeling van de cyberbeveiligingsrisico’s die verbonden zijn aan een product met digitale elementen dat overeenkomstig deze verordening als AI-systeem met een hoog risico is geclassificeerd, welke wordt uitgevoerd uit hoofde van een verordening van het Europees Parlement en de Raad betreffende horizontale cyberbeveiligingsvereisten voor producten met digitale elementen, rekening worden gehouden met risico’s voor de cyberweerbaarheid van een AI-systeem tegen pogingen van ongeautoriseerde derden om het gebruik, het gedrag of de prestaties ervan te wijzigen, en met AI-specifieke kwetsbaarheden zoals datavervuiling of vijandige aanvallen, alsook, voor zover relevant, risico’s voor de grondrechten zoals op grond van deze verordening is vereist.

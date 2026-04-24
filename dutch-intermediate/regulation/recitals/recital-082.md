@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "82"
+anchor: "rct_82"
+---
+
+# Overweging (82)
+
+Om de handhaving van deze verordening mogelijk te maken en te zorgen voor een gelijk speelveld voor operatoren en rekening houdend met de verschillende vormen waarin digitale producten beschikbaar kunnen worden gesteld, is het van belang dat onder alle omstandigheden wordt gewaarborgd dat een persoon die in de Unie is gevestigd de autoriteiten alle noodzakelijke informatie kan verstrekken over de conformiteit van een AI-systeem. Voordat zij hun AI-systemen beschikbaar stellen in de Unie, moeten aanbieders die in derde landen zijn gevestigd derhalve per schriftelijke machtiging een gemachtigde aanwijzen die is gevestigd in de Unie. Deze gemachtigde vervult een spilfunctie bij de waarborging van de conformiteit van de door niet in de Unie gevestigde aanbieders in de handel gebrachte of in gebruik gestelde AI-systemen met een hoog risico en in zijn hoedanigheid van hun in de Unie gevestigde contactpersoon.

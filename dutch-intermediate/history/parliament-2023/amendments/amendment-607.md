@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "607"
+amendment_target: "Voorstel voor een verordening — Artikel 65 — lid 8"
+---
+
+# Amendement 607
+
+**Doel:** Voorstel voor een verordening — Artikel 65 — lid 8
+
+## Door de Commissie voorgestelde tekst
+
+8. Indien binnen drie maanden na ontvangst van de in lid 5 bedoelde informatie door een lidstaat of de Commissie geen bezwaar tegen een voorlopige maatregel van een lidstaat is ingediend, wordt die maatregel geacht gerechtvaardigd te zijn. Dit is onverminderd de procedurele rechten van de betrokken exploitant overeenkomstig artikel 18 van Verordening (EU) 2019/1020.
+
+## Amendement van het Europees Parlement
+
+8. Indien binnen drie maanden na ontvangst van de in lid 5 bedoelde informatie door een nationale toezichthoudende autoriteit van een lidstaat of de Commissie geen bezwaar tegen een voorlopige maatregel van een nationale toezichthoudende autoriteit van een andere lidstaat is ingediend, wordt die maatregel geacht gerechtvaardigd te zijn. Dit is onverminderd de procedurele rechten van de betrokken operator overeenkomstig artikel 18 van Verordening (EU) 2019/1020. De in de eerste zin van dit lid bedoelde termijn wordt verkort tot dertig dagen in geval van niet-naleving van het verbod op de in artikel 5 bedoelde praktijken op het gebied van artificiële intelligentie.

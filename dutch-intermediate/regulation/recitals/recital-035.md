@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "35"
+anchor: "rct_35"
+---
+
+# Overweging (35)
+
+Voor elk gebruik van een systeem voor biometrische identificatie op afstand in real time in openbare ruimten voor rechtshandhavingsdoeleinden moet uitdrukkelijke en specifieke toestemming vereist zijn van een gerechtelijke instantie of van een onafhankelijke administratieve instantie van een lidstaat, met bindende beslissingsbevoegdheid. Deze toestemming moet in beginsel worden verkregen voordat het AI-systeem voor de identificatie van een of meer personen wordt gebruikt. Uitzonderingen op deze regel moeten worden toegestaan in naar behoren gemotiveerde dringende situaties, namelijk in situaties waarin het wegens de noodzaak om het betrokken AI-systeem te gebruiken, feitelijk en objectief onmogelijk is om vóór het begin van het gebruik toestemming te verkrijgen. In dergelijke dringende situaties moet het gebruik van het AI-systeem worden beperkt tot het absoluut noodzakelijke minimum en onderworpen zijn aan passende waarborgen en voorwaarden, zoals bepaald in de nationale wetgeving en door de rechtshandhavingsinstantie zelf vastgesteld in de context van elk afzonderlijk dringend gebruik. In dergelijke situaties moet de rechtshandhavingsinstantie onverwijld en uiterlijk binnen 24 uur om dergelijke toestemming verzoeken, met opgave van de redenen waarom zij niet eerder een verzoek daartoe heeft kunnen indienen. Indien een dergelijke toestemming wordt geweigerd, moet het gebruik van systemen voor biometrische identificatie in real time waarop dat verzoek betrekking heeft, met onmiddellijke ingang worden stopgezet en moeten alle gegevens met betrekking tot dat gebruik worden verwijderd en gewist. Onder dergelijke gegevens wordt verstaan: inputdata die rechtstreeks door een AI-systeem zijn verkregen tijdens het gebruik van een dergelijk systeem, alsook de resultaten en output van het gebruik in verband met dat verzoek. Daaronder mag niet worden verstaan: input die rechtmatig is verkregen overeenkomstig een ander Unierecht of nationaal recht. In geen geval mag een besluit dat nadelige rechtsgevolgen heeft voor een persoon uitsluitend worden genomen op basis van de output van het systeem voor biometrische identificatie op afstand.

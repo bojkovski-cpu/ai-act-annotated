@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "78"
+anchor: "rct_78"
+---
+
+# Overweging (78)
+
+De conformiteitsbeoordelingsprocedure waarin deze verordening voorziet, moet van toepassing zijn op de essentiële cyberbeveiligingseisen van een product met digitale elementen dat onder een verordening van het Europees Parlement en de Raad betreffende horizontale cyberbeveiligingsvereisten voor producten met digitale elementen valt en op grond van deze verordening als AI-systeem met een hoog risico is geclassificeerd. Deze regel mag echter niet leiden tot een verlaging van het vereiste betrouwbaarheidsniveau voor kritieke producten met digitale elementen die onder een verordening van het Europees Parlement en de Raad betreffende horizontale cyberbeveiligingsvereisten voor producten met digitale elementen vallen. In afwijking van deze regel zijn AI-systemen met een hoog risico die onder het toepassingsgebied van deze verordening vallen en eveneens op grond van een verordening van het Europees Parlement en de Raad betreffende horizontale cyberbeveiligingsvereisten voor producten met digitale elementen als belangrijke en kritieke producten met digitale elementen zijn geclassificeerd en waarop de in een bijlage bij deze verordening vastgelegde conformiteitsbeoordelingsprocedure op basis van interne controle van toepassing is, derhalve onderworpen aan de conformiteitsbeoordelingsbepalingen van een verordening van het Europees Parlement en de Raad betreffende horizontale cyberbeveiligingsvereisten voor producten met digitale elementen voor zover het de essentiële cyberbeveiligingseisen van die verordening betreft. In dat geval moeten de in een bijlage bij deze verordening vastgelegde respectieve bepalingen inzake conformiteitsbeoordeling op basis van interne controle van toepassing zijn op alle andere aspecten die onder die verordening vallen. Voortbouwend op de kennis en deskundigheid van Enisa inzake het cyberbeveiligingsbeleid en de taken die krachtens Verordening (EU) 2019/881 van het Europees Parlement en de Raad ( 37 ) aan Enisa zijn toegewezen, moet de Commissie op het gebied van kwesties in verband met de cyberbeveiliging van AI-systemen samenwerken met Enisa.

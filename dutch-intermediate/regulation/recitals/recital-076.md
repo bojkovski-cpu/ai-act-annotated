@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "76"
+anchor: "rct_76"
+---
+
+# Overweging (76)
+
+Cyberbeveiliging is cruciaal om te waarborgen dat AI-systemen bestand zijn tegen pogingen van kwaadwillige derden die gebruikmaken van de kwetsbaarheden van het systeem om het gebruik, het gedrag of de prestaties ervan te wijzigen of de veiligheidskenmerken ervan in gevaar te brengen. Bij cyberaanvallen tegen AI-systemen kunnen AI-specifieke activa worden gebruikt, zoals trainingsdatasets (bv. datavervuiling) of getrainde modellen (bv. vijandige aanvallen of membership inference), of kwetsbaarheden in de digitale activa van het AI-systeem of de onderliggende ICT-infrastructuur worden benut. Om te zorgen voor een niveau van cyberbeveiliging dat aansluit op de risico’s, moeten aanbieders van AI-systemen met een hoog risico derhalve passende maatregelen zoals veiligheidscontroles nemen, waarbij ook op passende wijze rekening wordt gehouden met de onderliggende ICT-infrastructuur.

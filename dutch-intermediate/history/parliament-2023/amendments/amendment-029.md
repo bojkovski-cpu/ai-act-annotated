@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "29"
+amendment_target: "Voorstel voor een verordening — Overweging 10"
+---
+
+# Amendement 29
+
+**Doel:** Voorstel voor een verordening — Overweging 10
+
+## Door de Commissie voorgestelde tekst
+
+(10) Om een gelijk speelveld en een doeltreffende bescherming van de rechten en vrijheden van personen in heel de Unie te garanderen, moeten de bij deze verordening vastgestelde regels zonder discriminatie van toepassing zijn op aanbieders van AI-systemen, ongeacht of zij in de Unie of in een derde land gevestigd zijn, en op in de Unie gevestigde gebruikers van AI-systemen.
+
+(10)
+
+(10)
+
+## Amendement van het Europees Parlement
+
+(10) Om een gelijk speelveld en een doeltreffende bescherming van de rechten en vrijheden van personen in heel de Unie en op internationaal niveau te garanderen, moeten de bij deze verordening vastgestelde regels zonder discriminatie van toepassing zijn op aanbieders van AI-systemen, ongeacht of zij in de Unie of in een derde land gevestigd zijn, en op in de Unie gevestigde exploitanten van AI-systemen. Om ervoor te zorgen dat de Unie trouw is aan haar fundamentele waarden, moeten AI-systemen die bedoeld zijn om te worden gebruikt voor praktijken die bij deze verordening onaanvaardbaar worden geacht, ook buiten de Unie onaanvaardbaar worden geacht vanwege hun bijzonder schadelijke effect op de in het Handvest verankerde grondrechten. Daarom is het passend de uitvoer van dergelijke AI-systemen naar derde landen door aanbieders die in de Unie zijn gevestigd, te verbieden.
+
+Om een gelijk speelveld en een doeltreffende bescherming van de rechten en vrijheden van personen in heel de Unie te garanderen, moeten de bij deze verordening vastgestelde regels zonder discriminatie van toepassing zijn op aanbieders van AI-systemen, ongeacht of zij in de Unie of in een derde land gevestigd zijn, en op in de Unie gevestigde gebruikers van AI-systemen.
+
+Om een gelijk speelveld en een doeltreffende bescherming van de rechten en vrijheden van personen in heel de Unie en op internationaal niveau te garanderen, moeten de bij deze verordening vastgestelde regels zonder discriminatie van toepassing zijn op aanbieders van AI-systemen, ongeacht of zij in de Unie of in een derde land gevestigd zijn, en op in de Unie gevestigde exploitanten van AI-systemen. Om ervoor te zorgen dat de Unie trouw is aan haar fundamentele waarden, moeten AI-systemen die bedoeld zijn om te worden gebruikt voor praktijken die bij deze verordening onaanvaardbaar worden geacht, ook buiten de Unie onaanvaardbaar worden geacht vanwege hun bijzonder schadelijke effect op de in het Handvest verankerde grondrechten. Daarom is het passend de uitvoer van dergelijke AI-systemen naar derde landen door aanbieders die in de Unie zijn gevestigd, te verbieden.

@@ -1,0 +1,20 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+article_number: "18"
+article_title: "Verplichting om technische documentatie op te stellen"
+titel_number_roman: "III"
+titel_number: "3"
+titel_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+hoofdstuk_number: "3"
+hoofdstuk_title: "VERPLICHTINGEN VAN AANBIEDERS EN GEBRUIKERS VAN AI-SYSTEMEN MET EEN HOOG RISICO en andere partijen"
+---
+
+# Artikel 18 — Verplichting om technische documentatie op te stellen
+
+**1.** Aanbieders van AI-systemen met een hoog risico stellen de in artikel 11 bedoelde technische documentatie op in overeenstemming met bijlage IV.
+
+**2.** Aanbieders die onder Richtlijn 2013/36/EU vallende kredietinstellingen zijn, bewaren de technische documentatie als onderdeel van de documentatie met betrekking tot de interne governance, regelingen, processen en mechanismen overeenkomstig artikel 74 van die richtlijn.

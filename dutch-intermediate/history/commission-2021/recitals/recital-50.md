@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "50"
+---
+
+# Overweging (50)
+
+De technische robuustheid is een essentieel voorschrift voor AI-systemen met een hoog risico. Deze systemen moeten bestand zijn tegen risico’s in verband met de beperkingen van het systeem (bv. fouten, onregelmatigheden, onverwachte situaties) en tegen kwaadwillige acties die de beveiliging van het AI-systeem in gevaar kunnen brengen en kunnen leiden tot schadelijk of anderszins ongewenst gedrag. Wanneer niet tegen deze risico’s wordt beschermd, kan dit leiden tot veiligheidseffecten of negatieve gevolgen voor de grondrechten, bijvoorbeeld als gevolg van foutieve beslissingen of een onjuiste of vertekende output die door het AI-systeem wordt gegenereerd.

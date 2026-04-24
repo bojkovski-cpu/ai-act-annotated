@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "26"
+amendment_target: "Voorstel voor een verordening — Overweging 9"
+---
+
+# Amendement 26
+
+**Doel:** Voorstel voor een verordening — Overweging 9
+
+## Door de Commissie voorgestelde tekst
+
+(9) Voor de uitvoering van deze verordening wordt verstaan onder “openbare ruimte” elke fysieke plaats die toegankelijk is voor het publiek, ongeacht of de plaats in kwestie particulier of openbaar bezit is. Het begrip heeft derhalve geen betrekking op plaatsen die privé van aard zijn en normaliter niet vrij toegankelijk zijn voor derden, met inbegrip van de rechtshandhavingsautoriteiten, tenzij die partijen specifiek zijn uitgenodigd of gemachtigd, zoals woningen, privéclubs, kantoren, pakhuizen en fabrieken. Onlineruimten vallen evenmin onder de richtlijn, omdat het geen fysieke ruimten zijn. Louter het feit dat er voor de toegang tot een bepaalde ruimte bepaalde voorwaarden kunnen gelden, zoals een toegangsbewijs of leeftijdsbeperking, betekent echter niet dat de ruimte niet voor het publiek toegankelijk is in de zin van deze verordening. Bijgevolg zijn, naast openbare ruimten zoals straten, relevante delen van overheidsgebouwen en de meeste vervoersinfrastructuur, ook ruimten zoals bioscopen, theaters, winkels en winkelcentra normaliter voor het publiek toegankelijk. Of een bepaalde ruimte toegankelijk is voor het publiek moet echter per geval worden bepaald, rekening houdend met de specifieke kenmerken van de situatie in kwestie.
+
+(9)
+
+(9)
+
+## Amendement van het Europees Parlement
+
+(9) Voor de uitvoering van deze verordening wordt verstaan onder “openbare ruimte” elke fysieke plaats die toegankelijk is voor het publiek, ongeacht of de plaats in kwestie particulier of openbaar bezit is en ongeacht de potentieel aanwezige beperkingen op de capaciteit . Het begrip heeft derhalve geen betrekking op plaatsen die privé van aard zijn en normaliter niet vrij toegankelijk zijn voor derden, met inbegrip van de rechtshandhavingsautoriteiten, tenzij die partijen specifiek zijn uitgenodigd of gemachtigd, zoals woningen, privéclubs, kantoren, pakhuizen en fabrieken. Onlineruimten vallen evenmin onder de richtlijn, omdat het geen fysieke ruimten zijn. Louter het feit dat er voor de toegang tot een bepaalde ruimte bepaalde voorwaarden kunnen gelden, zoals een toegangsbewijs of leeftijdsbeperking, betekent echter niet dat de ruimte niet voor het publiek toegankelijk is in de zin van deze verordening. Bijgevolg zijn, naast openbare ruimten zoals straten, relevante delen van overheidsgebouwen en de meeste vervoersinfrastructuur, ook ruimten zoals bioscopen, theaters, sportterreinen, scholen, universiteiten, relevante delen van ziekenhuizen en banken, pretparken, festivals, winkels en winkelcentra normaliter voor het publiek toegankelijk. Of een bepaalde ruimte toegankelijk is voor het publiek moet echter per geval worden bepaald, rekening houdend met de specifieke kenmerken van de situatie in kwestie.
+
+Voor de uitvoering van deze verordening wordt verstaan onder “openbare ruimte” elke fysieke plaats die toegankelijk is voor het publiek, ongeacht of de plaats in kwestie particulier of openbaar bezit is. Het begrip heeft derhalve geen betrekking op plaatsen die privé van aard zijn en normaliter niet vrij toegankelijk zijn voor derden, met inbegrip van de rechtshandhavingsautoriteiten, tenzij die partijen specifiek zijn uitgenodigd of gemachtigd, zoals woningen, privéclubs, kantoren, pakhuizen en fabrieken. Onlineruimten vallen evenmin onder de richtlijn, omdat het geen fysieke ruimten zijn. Louter het feit dat er voor de toegang tot een bepaalde ruimte bepaalde voorwaarden kunnen gelden, zoals een toegangsbewijs of leeftijdsbeperking, betekent echter niet dat de ruimte niet voor het publiek toegankelijk is in de zin van deze verordening. Bijgevolg zijn, naast openbare ruimten zoals straten, relevante delen van overheidsgebouwen en de meeste vervoersinfrastructuur, ook ruimten zoals bioscopen, theaters, winkels en winkelcentra normaliter voor het publiek toegankelijk. Of een bepaalde ruimte toegankelijk is voor het publiek moet echter per geval worden bepaald, rekening houdend met de specifieke kenmerken van de situatie in kwestie.
+
+Voor de uitvoering van deze verordening wordt verstaan onder “openbare ruimte” elke fysieke plaats die toegankelijk is voor het publiek, ongeacht of de plaats in kwestie particulier of openbaar bezit is en ongeacht de potentieel aanwezige beperkingen op de capaciteit . Het begrip heeft derhalve geen betrekking op plaatsen die privé van aard zijn en normaliter niet vrij toegankelijk zijn voor derden, met inbegrip van de rechtshandhavingsautoriteiten, tenzij die partijen specifiek zijn uitgenodigd of gemachtigd, zoals woningen, privéclubs, kantoren, pakhuizen en fabrieken. Onlineruimten vallen evenmin onder de richtlijn, omdat het geen fysieke ruimten zijn. Louter het feit dat er voor de toegang tot een bepaalde ruimte bepaalde voorwaarden kunnen gelden, zoals een toegangsbewijs of leeftijdsbeperking, betekent echter niet dat de ruimte niet voor het publiek toegankelijk is in de zin van deze verordening. Bijgevolg zijn, naast openbare ruimten zoals straten, relevante delen van overheidsgebouwen en de meeste vervoersinfrastructuur, ook ruimten zoals bioscopen, theaters, sportterreinen, scholen, universiteiten, relevante delen van ziekenhuizen en banken, pretparken, festivals, winkels en winkelcentra normaliter voor het publiek toegankelijk. Of een bepaalde ruimte toegankelijk is voor het publiek moet echter per geval worden bepaald, rekening houdend met de specifieke kenmerken van de situatie in kwestie.

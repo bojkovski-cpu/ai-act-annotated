@@ -1,0 +1,44 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "41"
+article_title: "Gemeenschappelijke specificaties"
+chapter_number: "3"
+chapter_number_roman: "III"
+chapter_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+section_number: "5"
+section_title: "Normen, conformiteitsbeoordeling, certificaten, registratie"
+anchor: "art_41"
+---
+
+# Artikel 41 — Gemeenschappelijke specificaties
+
+**1.** De Commissie kan uitvoeringshandelingen vaststellen tot vaststelling van gemeenschappelijke specificaties voor de eisen van afdeling 2 van dit hoofdstuk of, in voorkomend geval, voor de verplichtingen van hoofdstuk V, afdelingen 2 en 3, indien aan de volgende voorwaarden is voldaan:
+
+- a) de Commissie heeft op grond van artikel 10, lid 1, van Verordening (EU) nr. 1025/2012 een of meer Europese normalisatieorganisaties verzocht een geharmoniseerde norm op te stellen voor de in afdeling 2 van dit hoofdstuk beschreven eisen, of, in voorkomend geval, voor de verplichtingen van hoofdstuk V, afdelingen 2 en 3, en:
+
+  - i) het verzoek is door geen enkele van de Europese normalisatieorganisaties aanvaard, of
+
+  - ii) de geharmoniseerde normen waarop dat verzoek betrekking heeft, worden niet binnen de overeenkomstig artikel 10, lid 1, van Verordening (EU) nr. 1025/2012 vastgestelde termijn geleverd, of
+
+  - iii) in de relevante geharmoniseerde normen wordt onvoldoende rekening gehouden met problemen op het gebied van de grondrechten, of
+
+  - iv) de geharmoniseerde normen voldoen niet aan het verzoek, en
+
+- b) er is geen referentie van geharmoniseerde normen overeenkomstig Verordening (EU) nr. 1025/2012 bekendgemaakt in het Publicatieblad van de Europese Unie voor de eisen van afdeling 2 van dit hoofdstuk of, in voorkomend geval, voor de verplichtingen van hoofdstuk V, afdelingen 2 en 3, en een dergelijke referentie zal naar verwachting niet binnen een redelijke termijn worden bekendgemaakt.
+
+Bij het opstellen van de gemeenschappelijke specificaties raadpleegt de Commissie het in artikel 67 bedoelde adviesforum.
+
+De in de eerste alinea van dit lid bedoelde uitvoeringshandelingen worden vastgesteld volgens de in artikel 98, lid 2, bedoelde onderzoeksprocedure.
+
+**2.** Alvorens een ontwerpuitvoeringshandeling op te stellen, stelt de Commissie het in artikel 22 van Verordening (EU) nr. 1025/2012 bedoelde comité ervan in kennis dat zij van oordeel is dat aan de voorwaarden van lid 1 van dit artikel is voldaan.
+
+**3.** AI-systemen met een hoog risico of AI-modellen voor algemene doeleinden die in overeenstemming zijn met de in lid 1 bedoelde gemeenschappelijke specificaties of delen daarvan worden geacht in overeenstemming te zijn met de in afdeling 2 van dit hoofdstuk beschreven voorschriften, of, in voorkomend geval, met de verplichtingen van hoofdstuk V, afdelingen 2 en 3, voor zover die voorschriften of die verplichtingen door die gemeenschappelijke specificaties worden bestreken.
+
+**4.** Wanneer een Europese normalisatieorganisatie een geharmoniseerde norm vaststelt en deze aan de Commissie voorstelt met het oog op de bekendmaking van de referentie ervan in het Publicatieblad van de Europese Unie , beoordeelt de Commissie de geharmoniseerde norm overeenkomstig Verordening (EU) nr. 1025/2012. Wanneer de referentie van een geharmoniseerde norm in het Publicatieblad van de Europese Unie wordt bekendgemaakt, trekt de Commissie de in lid 1 bedoelde uitvoeringshandelingen of delen daarvan die dezelfde in afdeling 2 van dit hoofdstuk vermelde eisen of, in voorkomend geval, dezelfde verplichtingen van hoofdstuk V, afdelingen 2 en 3, dekken, in.
+
+**5.** Wanneer aanbieders van AI-systemen met een hoog risico of AI-modellen voor algemene doeleinden niet voldoen aan de in lid 1 bedoelde gemeenschappelijke specificaties, moeten zij naar behoren rechtvaardigen dat zij technische oplossingen hebben gekozen die voldoen aan de in afdeling 2 van dit hoofdstuk beschreven voorschriften of, in voorkomend geval, aan de verplichtingen van hoofdstuk V, afdelingen 2 en 3, in een mate die minstens gelijkwaardig daarmee is.
+
+**6.** Wanneer een lidstaat van oordeel is dat een gemeenschappelijke specificatie niet volledig aan de eisen van afdeling 2 van dit hoofdstuk of, in voorkomend geval, de verplichtingen van hoofdstuk V, afdelingen 2 en 3, voldoet, stelt deze lidstaat de Commissie daarvan in kennis met een gedetailleerde toelichting. De Commissie beoordeelt die informatie en wijzigt de uitvoeringshandeling tot vaststelling van de betrokken gemeenschappelijke specificatie zo nodig.

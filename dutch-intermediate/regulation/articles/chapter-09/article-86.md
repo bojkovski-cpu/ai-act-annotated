@@ -1,0 +1,22 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "86"
+article_title: "Recht op uitleg bij individuele besluitvorming"
+chapter_number: "9"
+chapter_number_roman: "IX"
+chapter_title: "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+section_number: "4"
+section_title: "Rechtsmiddelen"
+anchor: "art_86"
+---
+
+# Artikel 86 — Recht op uitleg bij individuele besluitvorming
+
+**1.** Elke getroffen persoon op wie een besluit van toepassing is dat door de gebruiksverantwoordelijke wordt genomen op basis van de output van een in bijlage III vermeld AI-systeem met een hoog risico, met uitzondering van systemen die in punt 2 van die bijlage zijn vermeld, en dat rechtsgevolgen heeft voor die persoon, of op deze op vergelijkbare wijze aanzienlijke invloed heeft die hij of zij als nadelige gevolgen voor zijn of haar gezondheid, veiligheid of grondrechten beschouwt, heeft het recht om van de gebruiksverantwoordelijke duidelijke, inhoudelijke uitleg te verkrijgen bij de rol van het AI-systeem in de besluitvormingsprocedure en de voornaamste elementen van het genomen besluit.
+
+**2.** Lid 1 is niet van toepassing op het gebruik van AI-systemen waarvoor uitzonderingen op of beperkingen van de verplichting krachtens dat lid voortvloeien uit het Unierecht of het nationale recht in naleving van het Unierecht.
+
+**3.** Dit artikel is enkel van toepassing voor zover het Unierecht niet anderszins in het in lid 1 bedoelde recht voorziet.

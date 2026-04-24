@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "73"
+---
+
+# Overweging (73)
+
+Om de innovatie te bevorderen en beschermen, is het belangrijk dat de belangen van kleine aanbieders en gebruikers van AI-systemen in het bijzonder in aanmerking worden genomen. Hiertoe moeten de lidstaten initiatieven ontwikkelen die gericht zijn op deze exploitanten en die onder meer betrekking hebben op bewustmaking en informatie en communicatie. Bovendien moet rekening worden gehouden met de specifieke belangen en behoeften van kleine aanbieders wanneer aangemelde instanties bijdragen voor de conformiteitsbeoordeling vaststellen. Vertaalkosten in verband met verplichte documentatie en communicatie met autoriteiten kunnen een aanzienlijke kostenpost vormen voor met name kleine aanbieders en andere exploitanten. De lidstaten zouden ervoor kunnen zorgen dat een van de talen die door hen worden vastgesteld en aanvaard voor de documentatie van betrokken aanbieders en voor de communicatie met exploitanten breed wordt begrepen door een zo groot mogelijk aantal grensoverschrijdende gebruikers.

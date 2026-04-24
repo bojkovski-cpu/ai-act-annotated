@@ -1,0 +1,25 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "230"
+amendment_target: "Voorstel voor een verordening — Artikel 5 — lid 3"
+---
+
+# Amendement 230
+
+**Doel:** Voorstel voor een verordening — Artikel 5 — lid 3
+
+## Door de Commissie voorgestelde tekst
+
+3. Wat betreft lid 1, punt d), en lid 2, wordt elk afzonderlijk gebruik met het oog op de rechtshandhaving van biometrische systemen voor de identificatie op afstand in real time in openbare ruimten afhankelijk gesteld van een voorafgaande toestemming die wordt verleend door een gerechtelijke autoriteit of een onafhankelijke administratieve autoriteit van de lidstaat waarin het gebruik moet plaatsvinden en die wordt gegeven op verzoek en in overeenstemming met de gedetailleerde regels van het intern recht als bedoeld in lid 4. In een naar behoren gerechtvaardigde situatie van urgentie mag het gebruik van het systeem echter zonder toestemming worden gestart en mag de toestemming tijdens of na het gebruik worden aangevraagd.
+
+De bevoegde gerechtelijke of administratieve autoriteit verleent de toestemming slechts wanneer zij er op basis van objectief bewijs of duidelijke indicaties die aan haar zijn voorgelegd van overtuigd is dat het gebruik van het biometrische systeem voor de identificatie op afstand in real time noodzakelijk is voor en evenredig is aan het bereiken van een van de in lid 1, punt d), gespecificeerde doelstellingen, zoals genoemd in het verzoek. Bij haar beslissing over het verzoek houdt de bevoegde gerechtelijke of administratieve autoriteit rekening met de in lid 2 bedoelde elementen.
+
+## Amendement van het Europees Parlement
+
+Schrappen
+
+

@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "402"
+amendment_target: "Voorstel voor een verordening — Artikel 29 — lid 2"
+---
+
+# Amendement 402
+
+**Doel:** Voorstel voor een verordening — Artikel 29 — lid 2
+
+## Door de Commissie voorgestelde tekst
+
+2. De verplichtingen van lid 1 doen geen afbreuk aan de andere verplichtingen van gebruikers op grond van het Unie- of intern recht en aan de beoordelingsvrijheid van gebruikers bij het organiseren van hun eigen middelen en activiteiten voor de uitvoering van de maatregelen inzake menselijk toezicht zoals aangegeven door de aanbieder.
+
+## Amendement van het Europees Parlement
+
+2. De verplichtingen van de leden 1 en 1 bis, doen geen afbreuk aan de andere verplichtingen van de exploitant op grond van het Unie- of intern recht en aan de beoordelingsvrijheid van de exploitant bij het organiseren van hun eigen middelen en activiteiten voor de uitvoering van de maatregelen inzake menselijk toezicht zoals aangegeven door de aanbieder.

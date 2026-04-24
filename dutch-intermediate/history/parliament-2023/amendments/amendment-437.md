@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "437"
+amendment_target: "Voorstel voor een verordening — Artikel 40 — alinea 1"
+---
+
+# Amendement 437
+
+**Doel:** Voorstel voor een verordening — Artikel 40 — alinea 1
+
+## Door de Commissie voorgestelde tekst
+
+AI-systemen met een hoog risico die in overeenstemming zijn met geharmoniseerde normen of delen daarvan, waarvan de referenties in het Publicatieblad van de Europese Unie zijn bekendgemaakt, worden geacht in overeenstemming te zijn met de in hoofdstuk 2 van deze titel beschreven voorschriften, voor zover die voorschriften door die normen worden bestreken.
+
+## Amendement van het Europees Parlement
+
+AI-systemen met een hoog risico en basismodellen die in overeenstemming zijn met geharmoniseerde normen of delen daarvan, waarvan de referenties in het Publicatieblad van de Europese Unie zijn bekendgemaakt overeenkomstig Verordening (EU) 1025/2012 , worden geacht in overeenstemming te zijn met de in hoofdstuk 2 of artikel 28 ter, van deze titel beschreven voorschriften, voor zover die voorschriften door die normen worden bestreken.

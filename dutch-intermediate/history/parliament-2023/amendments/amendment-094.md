@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "94"
+amendment_target: "Voorstel voor een verordening — Overweging 60"
+---
+
+# Amendement 94
+
+**Doel:** Voorstel voor een verordening — Overweging 60
+
+## Door de Commissie voorgestelde tekst
+
+(60) Gezien de complexiteit van de waardeketen voor artificiële intelligentie moeten relevante derde partijen, en met name de partijen die zijn betrokken bij de verkoop en de levering van de software, softwarehulpmiddelen en -onderdelen, vooraf getrainde modellen en data , of aanbieders van netwerkdiensten waar passend samenwerken met aanbieders en gebruikers om hun naleving van de verplichtingen uit hoofde van deze verordening mogelijk te maken en met de bevoegde autoriteiten zoals vastgesteld in het kader van deze verordening.
+
+(60)
+
+(60)
+
+## Amendement van het Europees Parlement
+
+(60) Binnen de AI-waardeketen worden vaak door meerdere entiteiten instrumenten en diensten geleverd, alsook onderdelen of processen, die vervolgens door de aanbieder in het AI-systeem worden geïntegreerd, onder meer met betrekking tot de verzameling en de voorverwerking van gegevens, het (opnieuw) trainen, testen en evalueren van modellen, de integratie in software, of andere aspecten van modelontwikkeling. De betrokken entiteiten kunnen hun aanbod direct of indirect commercieel beschikbaar stellen via interfaces, zoals applicatieprogramma-interfaces (API’s), en distribueren in het kader van vrije en open bronlicenties, maar ook steeds vaker door middel van AI-werknemersplatforms, de doorverkoop van getrainde parameters, doe-het-zelf-pakketten voor het bouwen van modellen of het aanbieden van betaalde toegang tot architectuur voor model serving om modellen te ontwikkelen en te trainen. Gezien deze complexiteit van de AI-waardeketen moeten alle relevante derde partijen, en met name de partijen die zijn betrokken bij de ontwikkeling, de verkoop en de commerciële levering van softwarehulpmiddelen, -onderdelen, vooraf getrainde modellen of in het AI-systeem geïntegreerde gegevens , of aanbieders van netwerkdiensten , zonder afbreuk te doen aan hun eigen intellectuele-eigendomsrechten of bedrijfsgeheimen, de vereiste informatie, training of expertise verstrekken en, waar passend, samenwerken met aanbieders om hun controle over alle naleving van de desbetreffende aspecten van het AI-systeem die onder deze verordening vallen, mogelijk te maken . Om kosteneffectief beheer van de AI-waardeketen mogelijk te maken, wordt de mate van controle uitdrukkelijk bekendgemaakt door elke derde partij die instrumenten, diensten, onderdelen of processen levert aan de aanbieder die vervolgens door de aanbieder worden geïntegreerd in het AI-systeem.
+
+Gezien de complexiteit van de waardeketen voor artificiële intelligentie moeten relevante derde partijen, en met name de partijen die zijn betrokken bij de verkoop en de levering van de software, softwarehulpmiddelen en -onderdelen, vooraf getrainde modellen en data , of aanbieders van netwerkdiensten waar passend samenwerken met aanbieders en gebruikers om hun naleving van de verplichtingen uit hoofde van deze verordening mogelijk te maken en met de bevoegde autoriteiten zoals vastgesteld in het kader van deze verordening.
+
+Binnen de AI-waardeketen worden vaak door meerdere entiteiten instrumenten en diensten geleverd, alsook onderdelen of processen, die vervolgens door de aanbieder in het AI-systeem worden geïntegreerd, onder meer met betrekking tot de verzameling en de voorverwerking van gegevens, het (opnieuw) trainen, testen en evalueren van modellen, de integratie in software, of andere aspecten van modelontwikkeling. De betrokken entiteiten kunnen hun aanbod direct of indirect commercieel beschikbaar stellen via interfaces, zoals applicatieprogramma-interfaces (API’s), en distribueren in het kader van vrije en open bronlicenties, maar ook steeds vaker door middel van AI-werknemersplatforms, de doorverkoop van getrainde parameters, doe-het-zelf-pakketten voor het bouwen van modellen of het aanbieden van betaalde toegang tot architectuur voor model serving om modellen te ontwikkelen en te trainen. Gezien deze complexiteit van de AI-waardeketen moeten alle relevante derde partijen, en met name de partijen die zijn betrokken bij de ontwikkeling, de verkoop en de commerciële levering van softwarehulpmiddelen, -onderdelen, vooraf getrainde modellen of in het AI-systeem geïntegreerde gegevens , of aanbieders van netwerkdiensten , zonder afbreuk te doen aan hun eigen intellectuele-eigendomsrechten of bedrijfsgeheimen, de vereiste informatie, training of expertise verstrekken en, waar passend, samenwerken met aanbieders om hun controle over alle naleving van de desbetreffende aspecten van het AI-systeem die onder deze verordening vallen, mogelijk te maken . Om kosteneffectief beheer van de AI-waardeketen mogelijk te maken, wordt de mate van controle uitdrukkelijk bekendgemaakt door elke derde partij die instrumenten, diensten, onderdelen of processen levert aan de aanbieder die vervolgens door de aanbieder worden geïntegreerd in het AI-systeem.

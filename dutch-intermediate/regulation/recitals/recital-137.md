@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "137"
+anchor: "rct_137"
+---
+
+# Overweging (137)
+
+Naleving van de bovengenoemde transparantieverplichtingen voor AI-systemen die onder deze verordening vallen, mag niet aldus worden uitgelegd dat het gebruik van het systeem of de output ervan rechtmatig is op grond van deze verordening of andere wetgeving van de Unie en de lidstaten, en moet andere in het Unierecht of het nationale recht vastgelegde transparantieverplichtingen voor gebruiksverantwoordelijken van AI-systemen onverlet laten.

@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "15"
+anchor: "rct_15"
+---
+
+# Overweging (15)
+
+Het in deze verordening bedoelde begrip “biometrische identificatie” moet worden gedefinieerd als de automatische herkenning van fysieke, fysiologische en gedragsgerelateerde menselijke kenmerken zoals het gezicht, oogbewegingen, lichaamsvorm, stem, prosodie, gang, houding, hartslag, bloeddruk, geur, toetsaanslagen, met als doel de identiteit van een natuurlijke persoon vast te stellen door biometrische gegevens van die natuurlijke persoon te vergelijken met opgeslagen biometrische gegevens van natuurlijke personen in een referentiedatabank, ongeacht of die natuurlijke persoon daarmee heeft ingestemd. Daarvan uitgesloten zijn AI-systemen die bedoeld zijn om te worden gebruikt voor biometrische verificatie, met inbegrip van authenticatie, die er uitsluitend op gericht zijn te bevestigen dat een specifieke natuurlijke persoon daadwerkelijk de persoon is die hij of zij beweert te zijn, en de identiteit van een natuurlijke persoon te bevestigen met als enige doel toegang te verschaffen tot een dienst, een apparaat te ontgrendelen of beveiligde toegang te verschaffen tot een locatie.

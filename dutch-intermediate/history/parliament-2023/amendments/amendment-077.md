@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "77"
+amendment_target: "Voorstel voor een verordening — Overweging 43"
+---
+
+# Amendement 77
+
+**Doel:** Voorstel voor een verordening — Overweging 43
+
+## Door de Commissie voorgestelde tekst
+
+(43) Op AI-systemen met een hoog risico moeten voorschriften van toepassing zijn met betrekking tot de kwaliteit van de gebruikte datareeksen, technische documentatie en registratie, transparantie en het verstrekken van informatie aan gebruikers , menselijk toezicht en robuustheid, nauwkeurigheid en cyberbeveiliging. Deze voorschriften zijn noodzakelijk om de risico’s voor de gezondheid, veiligheid en grondrechten waarvan in het licht van het beoogde doel van het systeem sprake is, te verminderen wanneer geen andere maatregelen redelijkerwijs beschikbaar zijn die de handel in mindere mate beperken, zodat ongerechtvaardigde beperkingen van de handel worden voorkomen.
+
+(43)
+
+(43)
+
+## Amendement van het Europees Parlement
+
+(43) Op AI-systemen met een hoog risico moeten voorschriften van toepassing zijn met betrekking tot de kwaliteit en relevantie van de gebruikte datareeksen, technische documentatie en registratie, transparantie en het verstrekken van informatie aan exploitanten , menselijk toezicht en robuustheid, nauwkeurigheid en cyberbeveiliging. Deze voorschriften zijn noodzakelijk om de risico’s voor de gezondheid, veiligheid en grondrechten , alsmede voor het milieu, de democratie en de rechtsstaat, waarvan in het licht van het beoogde doel of redelijkerwijs te voorzien misbruik van het systeem sprake is, te verminderen wanneer geen andere maatregelen redelijkerwijs beschikbaar zijn die de handel in mindere mate beperken, zodat ongerechtvaardigde beperkingen van de handel worden voorkomen.
+
+Op AI-systemen met een hoog risico moeten voorschriften van toepassing zijn met betrekking tot de kwaliteit van de gebruikte datareeksen, technische documentatie en registratie, transparantie en het verstrekken van informatie aan gebruikers , menselijk toezicht en robuustheid, nauwkeurigheid en cyberbeveiliging. Deze voorschriften zijn noodzakelijk om de risico’s voor de gezondheid, veiligheid en grondrechten waarvan in het licht van het beoogde doel van het systeem sprake is, te verminderen wanneer geen andere maatregelen redelijkerwijs beschikbaar zijn die de handel in mindere mate beperken, zodat ongerechtvaardigde beperkingen van de handel worden voorkomen.
+
+Op AI-systemen met een hoog risico moeten voorschriften van toepassing zijn met betrekking tot de kwaliteit en relevantie van de gebruikte datareeksen, technische documentatie en registratie, transparantie en het verstrekken van informatie aan exploitanten , menselijk toezicht en robuustheid, nauwkeurigheid en cyberbeveiliging. Deze voorschriften zijn noodzakelijk om de risico’s voor de gezondheid, veiligheid en grondrechten , alsmede voor het milieu, de democratie en de rechtsstaat, waarvan in het licht van het beoogde doel of redelijkerwijs te voorzien misbruik van het systeem sprake is, te verminderen wanneer geen andere maatregelen redelijkerwijs beschikbaar zijn die de handel in mindere mate beperken, zodat ongerechtvaardigde beperkingen van de handel worden voorkomen.

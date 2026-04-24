@@ -1,0 +1,10 @@
+{
+  "language": "nl",
+  "source_url": "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689",
+  "source_celex": "32024R1689",
+  "scraped_at": "2026-04-24T15:21:50Z",
+  "recital_number": "114",
+  "anchor": "rct_114",
+  "body_md": "De aanbieders van AI-modellen voor algemene doeleinden die systeemrisico’s inhouden, moeten, naast de verplichtingen voor aanbieders van AI-modellen voor algemene doeleinden, onderworpen worden aan verplichtingen die gericht zijn op het identificeren en beperken van die risico’s en op waarborging van een passend niveau van cyberbeveiliging, ongeacht of het model een op zichzelf staand model is of ingebed in een AI-systeem of in een product. Aanbieders moeten met het oog op verwezenlijking van deze doelstellingen, bij deze verordening verplicht worden de nodige modelevaluaties uit te voeren, met name voordat een model voor het eerst in de handel wordt gebracht, in het kader waarvan onder meer tests gericht op het ontdekken van kwetsbaarheden in het model moeten worden uitgevoerd, alsmede, in voorkomend geval, uiteenlopende interne of onafhankelijke externe tests. Daarnaast moeten aanbieders van AI-modellen voor algemene doeleinden met systeemrisico’s die systeemrisico’s voortdurend analyseren en binnen de perken houden via onder meer beleid voor risicobeheer in de vorm van bijvoorbeeld verantwoordings- en governanceprocessen, monitoring na het in de handel brengen van het model, passende maatregelen gedurende de gehele levenscyclus, en samenwerking met relevante actoren in de AI-waardeketen.\n",
+  "char_count": 1311
+}

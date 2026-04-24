@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "162"
+anchor: "rct_162"
+---
+
+# Overweging (162)
+
+Om optimaal gebruik te maken van de gecentraliseerde Unie-expertise en van de synergieën op het niveau van de Unie, moeten de bevoegdheden voor het toezicht op en de handhaving van de verplichtingen voor aanbieders van AI-modellen voor algemene doeleinden een bevoegdheid van de Commissie zijn. Het AI-bureau moet alle nodige maatregelen kunnen nemen om toezicht te houden op de doeltreffende uitvoering van deze verordening met betrekking tot AI-modellen voor algemene doeleinden. Het moet mogelijke inbreuken op de regels inzake aanbieders van AI-modellen voor algemene doeleinden kunnen onderzoeken, zowel op eigen initiatief, op basis van de resultaten van zijn monitoring-activiteiten, hetzij op verzoek van markttoezichtautoriteiten in overeenstemming met de in deze verordening vastgestelde voorwaarden. Om een doeltreffende monitoring van het AI-bureau te ondersteunen, moet het voorzien in de mogelijkheid dat aanbieders verder in de AI-waardeketen klachten indienen over mogelijke inbreuken op de regels inzake aanbieders van AI-modellen en -systemen voor algemene doeleinden.

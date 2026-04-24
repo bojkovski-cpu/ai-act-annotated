@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "288"
+amendment_target: "Voorstel voor een verordening — Artikel 10 — lid 3"
+---
+
+# Amendement 288
+
+**Doel:** Voorstel voor een verordening — Artikel 10 — lid 3
+
+## Door de Commissie voorgestelde tekst
+
+3. Datareeksen voor training, validatie en tests zijn relevant, representatief , foutenvrij en volledig. De datareeksen hebben bovendien de passende statistische kenmerken, onder meer, waar van toepassing, met betrekking tot de personen of groepen personen waarvoor de AI-systemen met een hoog risico moeten worden gebruikt. Deze kenmerken van de datareeksen kunnen op het niveau van de afzonderlijke datareeksen of combinatie daarvan worden verwezenlijkt.
+
+## Amendement van het Europees Parlement
+
+3. Datareeksen voor training en , indien deze worden gebruikt, datareeksen voor validatie en tests , met inbegrip van de etikettering ervan, zijn relevant, voldoende representatief en zo volledig mogelijk en worden naar behoren doorgelicht op fouten met het oog op het beoogde doel . De datareeksen hebben bovendien de passende statistische kenmerken, onder meer, waar van toepassing, met betrekking tot de personen of groepen personen ten aanzien van wie de AI-systemen met een hoog risico moeten worden gebruikt. Deze kenmerken van de datareeksen worden op het niveau van de afzonderlijke datareeksen of combinatie daarvan verwezenlijkt.

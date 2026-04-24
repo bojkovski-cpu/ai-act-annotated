@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "497"
+amendment_target: "Voorstel voor een verordening — Artikel 53 — lid 2"
+---
+
+# Amendement 497
+
+**Doel:** Voorstel voor een verordening — Artikel 53 — lid 2
+
+## Door de Commissie voorgestelde tekst
+
+2. De lidstaten zorgen ervoor dat voor zover de innovatieve AI-systemen betrekking hebben op de verwerking van persoonsgegevens of anderszins onder het toezicht van andere nationale autoriteiten of bevoegde autoriteiten vallen die toegang tot data verstrekken of ondersteunen, de nationale gegevensbeschermingsautoriteiten of die andere nationale autoriteiten bij de werking van de AI-testomgeving voor regelgeving zijn betrokken .
+
+## Amendement van het Europees Parlement
+
+2. De autoriteiten die de testomgeving hebben ontwikkeld, zorgen ervoor dat voor zover de innovatieve AI-systemen betrekking hebben op de verwerking van persoonsgegevens of anderszins onder het toezicht van andere nationale autoriteiten of bevoegde autoriteiten vallen die toegang tot persoonsgegevens verstrekken of ondersteunen, de nationale gegevensbeschermingsautoriteiten , dan wel, in de in lid 1 ter bedoelde gevallen, de Europese Toezichthouder voor gegevensbescherming, of die andere nationale autoriteiten zijn betrokken bij de werking van de AI-testomgeving voor regelgeving en bij het toezicht op de aspecten die onder hun respectieve taken en bevoegdheden vallen .

@@ -1,0 +1,42 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+article_number: "43"
+article_title: "Conformiteitsbeoordeling"
+titel_number_roman: "III"
+titel_number: "3"
+titel_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+hoofdstuk_number: "5"
+hoofdstuk_title: "NORMEN, CONFORMITEITSBEOORDELING, CERTIFICATEN, REGISTRATIE"
+---
+
+# Artikel 43 — Conformiteitsbeoordeling
+
+**1.** Voor in punt 1 van bijlage III opgesomde AI-systemen met een hoog risico volgt de aanbieder, wanneer bij het aantonen van de overeenstemming met de in hoofdstuk 2 van deze titel beschreven voorschriften van een AI-systeem met een hoog risico de aanbieder geharmoniseerde normen als bedoeld in artikel 40 of in voorkomend geval gemeenschappelijke specificaties als bedoeld in artikel 41 heeft toegepast, een van de volgende procedures:
+
+- (a) de conformiteitsbeoordelingsprocedure op basis van interne controle als bedoeld in bijlage VI;
+
+- (b) de conformiteitsbeoordelingsprocedure op basis van beoordeling van het kwaliteitsbeheersysteem en beoordeling van de technische documentatie, met betrokkenheid van een aangemelde instantie, als bedoeld in bijlage VII.
+
+Wanneer bij het aantonen van de overeenstemming met de in hoofdstuk 2 van deze titel beschreven voorschriften van een AI-systeem met een hoog risico de aanbieder geharmoniseerde normen als bedoeld in artikel 40 niet of slechts ten dele heeft toegepast of wanneer zulke geharmoniseerde normen niet bestaan en gemeenschappelijke specificaties als bedoeld in artikel 41 niet voorhanden zijn, volgt de aanbieder de in bijlage VII beschreven conformiteitsbeoordelingsprocedure.
+
+Voor de conformiteitsbeoordelingsprocedure als bedoeld in bijlage VII kan de aanbieder eender welke aangemelde instantie kiezen. Wanneer het systeem echter is bedoeld om door rechtshandhavings-, immigratie- of asielautoriteiten alsook EU-instellingen, -organen of -instanties in bedrijf te worden gesteld, treedt de markttoezichtautoriteit als bedoeld in artikel 63, lid 5 of 6, naar gelang van toepassing, als aangemelde instantie op.
+
+**2.** Voor AI-systemen met een hoog risico als bedoeld in de punten 2 tot en met 8 van bijlage III volgen aanbieders de conformiteitsbeoordelingsprocedure op basis van interne controle als bedoeld in bijlage VI, waarvoor de betrokkenheid van een aangemelde instantie niet nodig is. Voor AI-systemen met een hoog risico als bedoeld in punt 5, b), van bijlage III, die in de handel worden gebracht of in bedrijf worden gesteld door onder Richtlijn 2013/36/EU vallende kredietinstellingen, wordt de conformiteitsbeoordeling uitgevoerd als onderdeel van de procedure als bedoeld in de artikelen 97 tot en met 101 van die richtlijn.
+
+**3.** Voor AI-systemen met een hoog risico waarop in bijlage II, deel A, vermelde rechtshandelingen van toepassing zijn, volgt de aanbieder de relevante conformiteitsbeoordelingsprocedure zoals vereist volgens die rechtshandelingen. De in hoofdstuk 2 van deze titel beschreven voorschriften zijn van toepassing op die AI-systemen met een hoog risico en maken deel uit van die beoordeling. De punten 4.3, 4.4, 4.5 en de vijfde alinea van punt 4.6 van bijlage VII zijn eveneens van toepassing.
+
+Voor die beoordeling hebben aangemelde instanties die volgens die rechtshandelingen zijn aangemeld het recht de conformiteit van de AI-systemen met een hoog risico met de in hoofdstuk 2 van deze titel beschreven voorschriften te controleren, mits de overeenstemming van die aangemelde instanties met voorschriften in artikel 33, leden 4, 9 en 10, in de context van de aanmeldingsprocedure volgens die rechtshandelingen is beoordeeld.
+
+Wanneer de in bijlage II, deel A, vermelde rechtshandelingen de fabrikant van het producent in staat stellen zich te onttrekken aan een conformiteitsbeoordeling door een derde, mits die fabrikant alle geharmoniseerde normen voor alle relevante voorschriften heeft toegepast, kan de fabrikant alleen van die mogelijkheid gebruikmaken als hij ook geharmoniseerde normen of in voorkomend geval gemeenschappelijke specificaties als bedoeld in artikel 41 heeft toegepast, voor de in hoofdstuk 2 van deze titel beschreven voorschriften.
+
+**4.** AI-systemen met een hoog risico ondergaan een nieuwe conformiteitsbeoordelingsprocedure telkens wanneer zij wezenlijk zijn gewijzigd, ongeacht of het gewijzigde systeem bedoeld is om verder te worden gedistribueerd of door de huidige gebruiker gebruikt blijft worden.
+
+Voor AI-systemen met een hoog risico die doorgaan met leren na in de handel te zijn gebracht of in bedrijf te zijn gesteld, vormen veranderingen van het AI-systeem met een hoog risico en de prestaties ervan die op het moment van de eerste conformiteitsbeoordeling vooraf door de aanbieder zijn bepaald en deel uitmaken van de informatie in de technische documentatie als bedoeld in punt 2, f), van bijlage IV, geen wezenlijke wijziging.
+
+**5.** De Commissie is bevoegd om gedelegeerde handelingen vast te stellen overeenkomstig artikel 73 ten behoeve van het bijwerken van de bijlagen VI en VII, teneinde elementen van de conformiteitsbeoordelingsprocedures in te voeren die noodzakelijk worden in het licht van de technische vooruitgang.
+
+**6.** De Commissie is bevoegd om gedelegeerde handelingen vast te stellen om de leden 1 en 2 te wijzigen, teneinde AI-systemen met een hoog risico als bedoeld in de punten 2 tot en met 8 van bijlage III te onderwerpen aan de conformiteitsbeoordelingsprocedure als bedoeld in bijlage VII of delen daarvan. De Commissie stelt zulke gedelegeerde handelingen vast rekening houdend met de doeltreffendheid van de conformiteitsbeoordelingsprocedure op basis van interne controle als bedoeld in bijlage VI bij het voorkomen of minimaliseren van de risico’s voor de gezondheid en veiligheid en de bescherming van grondrechten die zulke systemen inhouden alsook met de beschikbaarheid van voldoende capaciteit en personeel onder aangemelde instanties.

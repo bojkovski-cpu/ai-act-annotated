@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "16"
+---
+
+# Overweging (16)
+
+Het in de handel brengen, in bedrijf stellen of gebruiken van bepaalde AI-systemen die bedoeld zijn om het menselijk gedrag te verstoren, waardoor lichamelijke of psychische schade kan ontstaan, moet worden verboden. Dergelijke AI-systemen maken gebruik van subliminale componenten die personen niet kunnen waarnemen, of buiten kwetsbaarheden van kinderen en mensen die een gevolg zijn van hun leeftijd of hun fysieke of mentale onbekwaamheid, uit. Zij doen dit met de bedoeling het gedrag van een persoon wezenlijk te verstoren en op een manier die deze persoon of een andere persoon schade berokkent of dreigt te berokkenen. De intentie mag niet worden verondersteld indien de verstoring van het menselijk gedrag het gevolg is van factoren buiten het AI-systeem waarover de aanbieder of de gebruiker geen controle heeft. Onderzoek voor legitieme doeleinden met betrekking tot dergelijke AI-systemen mag niet door het verbod worden belemmerd, voor zover dat onderzoek niet neerkomt op het gebruik van het AI-systeem in mens-machinerelaties waardoor natuurlijke personen aan schade worden blootgesteld, en indien dat onderzoek wordt verricht met inachtneming van erkende ethische normen voor wetenschappelijk onderzoek.

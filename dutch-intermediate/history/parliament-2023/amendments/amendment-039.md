@@ -1,0 +1,25 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "39"
+amendment_target: "Voorstel voor een verordening — Overweging 16 bis (nieuw)"
+---
+
+# Amendement 39
+
+**Doel:** Voorstel voor een verordening — Overweging 16 bis (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+
+
+(16 bis)
+
+## Amendement van het Europees Parlement
+
+(16 bis) AI-systemen die natuurlijke personen categoriseren door hen in specifieke categorieën in te delen op basis van bekende of afgeleide gevoelige of beschermde kenmerken, zijn bijzonder ingrijpend, schenden de menselijke waardigheid en houden een groot risico op discriminatie in. Onder die kenmerken moet worden verstaan gender en genderidentiteit, ras, etnische achtergrond, migratie- of burgerschapsstatus, politieke voorkeur, seksuele gerichtheid, geloofsovertuiging, handicap of andere gronden waarop discriminatie verboden is krachtens artikel 21 van het Handvest van de grondrechten van de Europese Unie en krachtens artikel 9 van Verordening (EU) 2016/769. Dergelijke systemen moeten bijgevolg worden verboden.
+
+AI-systemen die natuurlijke personen categoriseren door hen in specifieke categorieën in te delen op basis van bekende of afgeleide gevoelige of beschermde kenmerken, zijn bijzonder ingrijpend, schenden de menselijke waardigheid en houden een groot risico op discriminatie in. Onder die kenmerken moet worden verstaan gender en genderidentiteit, ras, etnische achtergrond, migratie- of burgerschapsstatus, politieke voorkeur, seksuele gerichtheid, geloofsovertuiging, handicap of andere gronden waarop discriminatie verboden is krachtens artikel 21 van het Handvest van de grondrechten van de Europese Unie en krachtens artikel 9 van Verordening (EU) 2016/769. Dergelijke systemen moeten bijgevolg worden verboden.

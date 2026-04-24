@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "56"
+anchor: "rct_56"
+---
+
+# Overweging (56)
+
+Het inzetten van AI-systemen in het onderwijs is belangrijk om digitaal onderwijs en digitale opleidingen van hoge kwaliteit te bevorderen en om alle lerenden en leerkrachten in staat te stellen de nodige digitale vaardigheden en competenties te verwerven en te delen, met inbegrip van mediageletterdheid, en kritisch denken, om actief deel te nemen aan de economie, de samenleving en democratische processen. AI-systemen die in het onderwijs of voor beroepsopleidingen worden gebruikt, met name voor het bepalen van toegang of toelating, voor het toewijzen van personen aan instellingen voor onderwijs of beroepsopleidingen of programma’s op alle niveaus, voor het evalueren van leerresultaten van personen, voor de beoordeling van het passende onderwijsniveau voor een persoon en het uitoefenen van wezenlijke invloed op het niveau van onderwijs en opleiding dat aan die persoon zal worden verstrekt of waartoe die persoon toegang zal kunnen krijgen, of voor het monitoren en opsporen van ongeoorloofd gedrag van studenten tijdens tests, moeten echter als AI-systemen met een hoog risico worden geclassificeerd, aangezien ze bepalend kunnen zijn voor de onderwijs- en beroepsloopbaan van die persoon en derhalve invloed kunnen hebben op zijn vermogen om in zijn levensonderhoud te voorzien. Wanneer dergelijke systemen op ondeugdelijke wijze zijn ontworpen en worden gebruikt, kunnen zij bijzonder ingrijpend zijn en in strijd zijn met het recht op onderwijs en opleiding, alsook met het recht niet te worden gediscrimineerd, en kunnen historische patronen van discriminatie in stand worden gehouden, bijvoorbeeld ten nadele van vrouwen, bepaalde leeftijdsgroepen, personen met een handicap of personen met een bepaalde raciale of etnische afkomst of seksuele gerichtheid.

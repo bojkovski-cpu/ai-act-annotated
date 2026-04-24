@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "458"
+amendment_target: "Voorstel voor een verordening — Artikel 43 — lid 6"
+---
+
+# Amendement 458
+
+**Doel:** Voorstel voor een verordening — Artikel 43 — lid 6
+
+## Door de Commissie voorgestelde tekst
+
+6. De Commissie is bevoegd om gedelegeerde handelingen vast te stellen om de leden 1 en 2 te wijzigen, teneinde AI-systemen met een hoog risico als bedoeld in de punten 2 tot en met 8 van bijlage III te onderwerpen aan de conformiteitsbeoordelingsprocedure als bedoeld in bijlage VII of delen daarvan. De Commissie stelt zulke gedelegeerde handelingen vast rekening houdend met de doeltreffendheid van de conformiteitsbeoordelingsprocedure op basis van interne controle als bedoeld in bijlage VI bij het voorkomen of minimaliseren van de risico’s voor de gezondheid en veiligheid en de bescherming van grondrechten die zulke systemen inhouden alsook met de beschikbaarheid van voldoende capaciteit en personeel onder aangemelde instanties.
+
+## Amendement van het Europees Parlement
+
+6. De Commissie is bevoegd om gedelegeerde handelingen vast te stellen om de leden 1 en 2 te wijzigen, teneinde AI-systemen met een hoog risico als bedoeld in de punten 2 tot en met 8 van bijlage III te onderwerpen aan de conformiteitsbeoordelingsprocedure als bedoeld in bijlage VII of delen daarvan. De Commissie stelt zulke gedelegeerde handelingen vast rekening houdend met de doeltreffendheid van de conformiteitsbeoordelingsprocedure op basis van interne controle als bedoeld in bijlage VI bij het voorkomen of minimaliseren van de risico’s voor de gezondheid en veiligheid en de bescherming van grondrechten die zulke systemen inhouden alsook met de beschikbaarheid van voldoende capaciteit en personeel onder aangemelde instanties. Bij het opstellen van dergelijke gedelegeerde handelingen raadpleegt de Commissie het AI-bureau en de betrokken belanghebbenden;

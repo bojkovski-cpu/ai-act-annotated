@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "356"
+amendment_target: "Voorstel voor een verordening — Artikel 20 — lid 1"
+---
+
+# Amendement 356
+
+**Doel:** Voorstel voor een verordening — Artikel 20 — lid 1
+
+## Door de Commissie voorgestelde tekst
+
+1. Aanbieders van AI-systemen met een hoog risico bewaren de logs die automatisch worden gegenereerd door hun AI-systemen met een hoog risico, voor zover dergelijke logs op grond van een contractuele regeling met de gebruiker of anders op grond van wettelijke bepalingen onder hun controle vallen . De logs worden bewaard gedurende een periode die passend is voor het beoogde doel van het AI-systeem met een hoog risico en gezien de toepasselijke wettelijke verplichtingen op grond van het Unie- of intern recht .
+
+## Amendement van het Europees Parlement
+
+1. Aanbieders van AI-systemen met een hoog risico bewaren de logs die automatisch worden gegenereerd door hun AI-systemen met een hoog risico, voor zover dergelijke logs onder hun controle vallen. Onverminderd het toepasselijke Unie- of nationale recht worden de logs gedurende ten minste zes maanden bewaard . De bewaartermijn is in overeenstemming met de normen in de sector en is passend voor het beoogde doel van het AI-systeem met een hoog risico.

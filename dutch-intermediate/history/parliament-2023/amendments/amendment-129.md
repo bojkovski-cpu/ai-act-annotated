@@ -1,0 +1,25 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "129"
+amendment_target: "Voorstel voor een verordening — Overweging 80 bis (nieuw)"
+---
+
+# Amendement 129
+
+**Doel:** Voorstel voor een verordening — Overweging 80 bis (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+
+
+(80 bis)
+
+## Amendement van het Europees Parlement
+
+(80 bis) Gezien de doelstellingen van deze verordening, te weten het waarborgen van een gelijkwaardig niveau van bescherming van de gezondheid, de veiligheid en de grondrechten van natuurlijke personen en het garanderen van de bescherming van de rechtsstaat en de democratie, en rekening houdend met het feit dat het beperken van de risico’s van AI-systemen voor dergelijke rechten op nationaal niveau mogelijkerwijs onvoldoende kan worden gegarandeerd of verschillend kan worden geïnterpreteerd, hetgeen tot een ongelijk niveau van bescherming van natuurlijke personen en versnippering van de markt zou kunnen leiden, moet aan de nationale toezichthoudende autoriteiten de bevoegdheid worden verleend om met het oog op een doeltreffende handhaving gezamenlijke onderzoeken uit te voeren of gebruik te maken van de vrijwaringsprocedure van de Unie waarin deze verordening voorziet. Gezamenlijke onderzoeken moeten worden ingesteld in gevallen waarin de nationale toezichthoudende autoriteit voldoende reden heeft om te denken dat een inbreuk op deze verordening een wijdverbreide inbreuk of een wijdverbreide inbreuk met een Uniedimensie is, of het AI-systeem of het basismodel een risico vertegenwoordigt dat gevolgen heeft of waarschijnlijk gevolgen zal hebben voor ten minste 45 miljoen personen in meer dan één lidstaat.
+
+Gezien de doelstellingen van deze verordening, te weten het waarborgen van een gelijkwaardig niveau van bescherming van de gezondheid, de veiligheid en de grondrechten van natuurlijke personen en het garanderen van de bescherming van de rechtsstaat en de democratie, en rekening houdend met het feit dat het beperken van de risico’s van AI-systemen voor dergelijke rechten op nationaal niveau mogelijkerwijs onvoldoende kan worden gegarandeerd of verschillend kan worden geïnterpreteerd, hetgeen tot een ongelijk niveau van bescherming van natuurlijke personen en versnippering van de markt zou kunnen leiden, moet aan de nationale toezichthoudende autoriteiten de bevoegdheid worden verleend om met het oog op een doeltreffende handhaving gezamenlijke onderzoeken uit te voeren of gebruik te maken van de vrijwaringsprocedure van de Unie waarin deze verordening voorziet. Gezamenlijke onderzoeken moeten worden ingesteld in gevallen waarin de nationale toezichthoudende autoriteit voldoende reden heeft om te denken dat een inbreuk op deze verordening een wijdverbreide inbreuk of een wijdverbreide inbreuk met een Uniedimensie is, of het AI-systeem of het basismodel een risico vertegenwoordigt dat gevolgen heeft of waarschijnlijk gevolgen zal hebben voor ten minste 45 miljoen personen in meer dan één lidstaat.

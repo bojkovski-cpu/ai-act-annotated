@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "76"
+---
+
+# Overweging (76)
+
+Teneinde een soepele, doeltreffende en geharmoniseerde uitvoering van deze verordening mogelijk te maken, moet een Europees Comité voor artificiële intelligentie worden opgericht. Het Comité moet verantwoordelijk zijn voor een aantal adviestaken, met inbegrip van het opstellen van adviezen, aanbevelingen of richtsnoeren over kwesties die verband houden met de uitvoering van deze verordening, waaronder over technische specificaties of bestaande normen met betrekking tot de voorschriften van deze verordening en de adviesverlening aan en ondersteuning van de Commissie ten aanzien van specifieke vragen in verband met artificiële intelligentie.

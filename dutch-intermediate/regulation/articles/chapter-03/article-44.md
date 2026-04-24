@@ -1,0 +1,24 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "44"
+article_title: "Certificaten"
+chapter_number: "3"
+chapter_number_roman: "III"
+chapter_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+section_number: "5"
+section_title: "Normen, conformiteitsbeoordeling, certificaten, registratie"
+anchor: "art_44"
+---
+
+# Artikel 44 — Certificaten
+
+**1.** Door aangemelde instanties overeenkomstig bijlage VII afgegeven certificaten worden opgesteld in een taal die de desbetreffende autoriteiten in de lidstaat waar de aangemelde instantie is gevestigd, gemakkelijk kunnen begrijpen.
+
+**2.** Certificaten zijn geldig gedurende de daarin aangegeven periode, die niet meer dan vijf jaar mag bedragen voor AI-systemen die onder bijlage I vallen, en niet meer dan vier jaar voor AI-systemen die onder bijlage III vallen. Op verzoek van de aanbieder kan de geldigheidsduur van een certificaat op grond van een herbeoordeling volgens de toepasselijke conformiteitsbeoordelingsprocedures worden verlengd met bijkomende perioden, die elk niet meer dan vijf jaar mogen bedragen voor AI-systemen die onder bijlage I vallen en niet meer dan vier jaar voor AI-systemen die onder bijlage III vallen. Aanvullingen op een certificaat blijven geldig zolang het certificaat dat zij aanvullen geldig blijft.
+
+**3.** Indien een aangemelde instantie vaststelt dat een AI-systeem niet meer aan de in afdeling 2 beschreven voorschriften voldoet, gaat zij, rekening houdend met het evenredigheidsbeginsel, over tot schorsing of intrekking van het afgegeven certificaat of legt zij beperkingen op, tenzij de aanbieder van het systeem, met het oog op de naleving van deze voorschriften, binnen een door de aangemelde instantie vastgestelde passende termijn adequate corrigerende actie onderneemt. De aangemelde instantie geeft de redenen voor haar besluit op.
+
+Er wordt voorzien in een beroepsprocedure tegen besluiten van de aangemelde instanties, ook inzake afgegeven conformiteitscertificaten.

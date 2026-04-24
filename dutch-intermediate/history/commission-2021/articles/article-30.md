@@ -1,0 +1,22 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+article_number: "30"
+article_title: "Aanmeldende autoriteiten"
+titel_number_roman: "III"
+titel_number: "3"
+titel_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+hoofdstuk_number: "4"
+hoofdstuk_title: "AANMELDENDE AUTORITEITEN EN AANGEMELDE INSTANTIES"
+---
+
+# Artikel 30 — Aanmeldende autoriteiten
+
+**1.** Elke lidstaat wijst een aanmeldende autoriteit aan of richt een aanmeldende autoriteit op die verantwoordelijk is voor het opzetten en uitvoeren van de nodige procedures voor de beoordeling, aanwijzing en aanmelding van conformiteitsbeoordelingsinstanties en voor het toezicht erop.
+
+**2.** De lidstaten kunnen een nationale accreditatie-instantie als bedoeld in Verordening (EG) nr. 765/2008 als aanmeldende autoriteit aanwijzen.
+
+**3.** Aanmeldende autoriteiten worden zodanig opgericht en georganiseerd en functioneren zodanig dat zich geen belangenconflicten met conformiteitsbeoordelingsinstanties voordoen en de objectiviteit en onpartijdigheid van hun activiteiten gewaarborgd zijn.

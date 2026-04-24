@@ -1,0 +1,13 @@
+{
+  "language": "nl",
+  "source_url": "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-24T15:37:53Z",
+  "version": "parliament-2023",
+  "amendment_number": "295",
+  "amendment_target": "Voorstel voor een verordening — Artikel 12 — lid 1",
+  "body_md": "**Doel:** Voorstel voor een verordening — Artikel 12 — lid 1\n\n## Door de Commissie voorgestelde tekst\n\n1. AI-systemen met een hoog risico worden ontworpen en ontwikkeld met capaciteiten die de automatische registratie van gebeurtenissen (hierna “logs” genoemd) tijdens de werking van het AI-systeem mogelijk maken. Deze loggingcapaciteiten moeten in overeenstemming zijn met erkende normen of gemeenschappelijke specificaties.\n\n## Amendement van het Europees Parlement\n\n1. AI-systemen met een hoog risico worden ontworpen en ontwikkeld met capaciteiten die de automatische registratie van gebeurtenissen (hierna “logs” genoemd) tijdens de werking van het AI-systeem mogelijk maken. Deze loggingcapaciteiten moeten in overeenstemming zijn met de stand van de techniek en met erkende normen of gemeenschappelijke specificaties.\n",
+  "commission_text": "1. AI-systemen met een hoog risico worden ontworpen en ontwikkeld met capaciteiten die de automatische registratie van gebeurtenissen (hierna “logs” genoemd) tijdens de werking van het AI-systeem mogelijk maken. Deze loggingcapaciteiten moeten in overeenstemming zijn met erkende normen of gemeenschappelijke specificaties.",
+  "parliament_text": "1. AI-systemen met een hoog risico worden ontworpen en ontwikkeld met capaciteiten die de automatische registratie van gebeurtenissen (hierna “logs” genoemd) tijdens de werking van het AI-systeem mogelijk maken. Deze loggingcapaciteiten moeten in overeenstemming zijn met de stand van de techniek en met erkende normen of gemeenschappelijke specificaties.",
+  "char_count": 678
+}

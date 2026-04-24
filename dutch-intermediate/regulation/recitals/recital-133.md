@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "133"
+anchor: "rct_133"
+---
+
+# Overweging (133)
+
+Bepaalde AI-systemen kunnen grote hoeveelheden synthetische content genereren waarbij het voor de mens steeds moeilijker wordt deze te onderscheiden van door de mens gegenereerde en authentieke content. De brede beschikbaarheid en de toenemende capaciteit van deze systemen hebben een aanzienlijke impact op de integriteit van en het vertrouwen in het informatie-ecosysteem, waardoor nieuwe risico’s op desinformatie en manipulatie op grote schaal, fraude, imitatie en consumentenbedrog ontstaan. In het licht van die effecten, het snelle technologische tempo en de behoefte aan nieuwe methoden en technieken om de oorsprong van informatie te traceren, is het passend aanbieders van die systemen voor te schrijven dat zij technische oplossingen inbouwen die markering in een machineleesbaar formaat mogelijk maken en aantonen dat de output is gegenereerd of gemanipuleerd door een AI-systeem en niet door een mens. Dergelijke technieken en methoden moeten voldoende betrouwbaar, interoperabel, doeltreffend en robuust zijn, voor zover dit technisch haalbaar is, rekening houdend met de beschikbare technieken of een combinatie van dergelijke technieken, zoals watermerken, metagegevens, cryptografische methoden voor het aantonen van de herkomst en authenticiteit van inhoud, loggingmethoden, vingerafdrukken of andere technieken, naargelang het geval. Bij de uitvoering van deze verplichting moeten aanbieders ook rekening houden met de specifieke kenmerken en beperkingen van de verschillende soorten content en de relevante technologische en marktontwikkelingen op dit gebied, zoals blijkt uit de algemeen erkende stand van de techniek. Dergelijke technieken en methoden kunnen worden toegepast op het niveau van het AI-systeem of op het niveau van het AI-model, met inbegrip van AI-modellen voor algemene doeleinden die content genereren, waardoor de aanbieder verder in de AI-waardeketen van het AI-systeem gemakkelijker aan deze verplichting kan voldoen. Met het oog op de evenredigheid, moet worden overwogen dat deze markeringsverplichting niet van toepassing mag zijn op AI-systemen die in de eerste plaats een ondersteunende functie hebben voor het uitvoeren van standaardbewerkingen of op AI-systemen die de door de gebruiksverantwoordelijke verstrekte inputdata, of de semantiek ervan, niet wezenlijk wijzigen.

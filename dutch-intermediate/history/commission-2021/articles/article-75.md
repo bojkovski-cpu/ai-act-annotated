@@ -1,0 +1,24 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+article_number: "75"
+article_title: "Wijziging van Verordening (EG) nr. 300/2008"
+titel_number_roman: "XII"
+titel_number: "12"
+titel_title: "SLOTBEPALINGEN"
+hoofdstuk_number: null
+hoofdstuk_title: null
+---
+
+# Artikel 75 — Wijziging van Verordening (EG) nr. 300/2008
+
+Aan artikel 4, lid 3, van Verordening (EG) nr. 300/2008 wordt de volgende alinea toegevoegd:
+
+“Bij het vaststellen van gedetailleerde maatregelen met betrekking tot technische specificaties en procedures voor de goedkeuring en het gebruik van veiligheidsuitrusting betreffende artificiële-intelligentiesystemen in de zin van Verordening (EU) YYY/XX [betreffende artificiële intelligentie] van het Europees Parlement en de Raad*, worden de voorschriften in titel III, hoofdstuk 2, van die verordening in aanmerking genomen.
+
+__________
+
+* Verordening (EU) YYY/XX [betreffende artificiële intelligentie] (PB …).”.

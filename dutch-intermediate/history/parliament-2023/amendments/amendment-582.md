@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "582"
+amendment_target: "Voorstel voor een verordening — Artikel 62 — lid 3"
+---
+
+# Amendement 582
+
+**Doel:** Voorstel voor een verordening — Artikel 62 — lid 3
+
+## Door de Commissie voorgestelde tekst
+
+3. Voor in punt 5, b), van bijlage III vermelde AI-systemen met een hoog risico die in de handel zijn gebracht of in bedrijf zijn gesteld door onder Richtlijn 2013/36/EU vallende kredietinstellingen en voor AI-systemen met een hoog risico die veiligheidscomponenten van apparaten zijn, of die zelf apparaten zijn, als bedoeld in Verordening (EU) 2017/745 en Verordening (EU) 2017/746 , is de melding van ernstige incidenten of van storingen beperkt tot incidenten en storingen die een niet-nakoming van verplichtingen krachtens Unierecht ter bescherming van grondrechten inhouden .
+
+## Amendement van het Europees Parlement
+
+3. Voor in bijlage III vermelde AI-systemen met een hoog risico die in de handel zijn gebracht of in bedrijf zijn gesteld door aanbieders die onderworpen zijn aan wetgevingsinstrumenten van de Unie met daarin meldingsverplichtingen die gelijkwaardig zijn aan de in deze verordening vervatte meldingsverplichtingen , wordt de melding van ernstige incidenten die een schending van de grondrechten inhouden als bedoeld in het Unierecht doorgegeven aan de nationale toezichthoudende autoriteit .

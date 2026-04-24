@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "231"
+amendment_target: "Voorstel voor een verordening — Artikel 5 — lid 4"
+---
+
+# Amendement 231
+
+**Doel:** Voorstel voor een verordening — Artikel 5 — lid 4
+
+## Door de Commissie voorgestelde tekst
+
+4. Een lidstaat kan besluiten om te voorzien in de mogelijkheid om volledig of gedeeltelijk toestemming te verlenen voor het gebruik van biometrische systemen voor de identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving binnen de grenzen en onder de voorwaarden van lid 1, punt d), en de leden 2 en 3. Deze lidstaat stelt in zijn interne recht de noodzakelijke gedetailleerde regels vast voor het verzoek om en de afgifte en het gebruik van, evenals het toezicht in verband met, de in lid 3 bedoelde vergunningen. In deze regels wordt ook gespecificeerd voor welke doelstellingen van lid 1, punt d), en voor welke strafbare feiten als bedoeld in punt iii) daarvan de bevoegde autoriteiten deze systemen mogen gebruiken met het oog op de rechtshandhaving.
+
+## Amendement van het Europees Parlement
+
+Schrappen

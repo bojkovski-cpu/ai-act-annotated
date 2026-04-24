@@ -1,0 +1,20 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "19"
+article_title: "Automatisch gegenereerde logs"
+chapter_number: "3"
+chapter_number_roman: "III"
+chapter_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+section_number: "3"
+section_title: "Verplichtingen van aanbieders en gebruiksverantwoordelijken van AI-systemen met een hoog risico en andere partijen"
+anchor: "art_19"
+---
+
+# Artikel 19 — Automatisch gegenereerde logs
+
+**1.** Aanbieders van AI-systemen met een hoog risico bewaren de in artikel 12, lid 1, bedoelde logs die automatisch worden gegenereerd door hun AI-systemen met een hoog risico voor zover dergelijke logs onder hun controle vallen. Onverminderd het toepasselijke Unie- of nationale recht worden deze logs bewaard gedurende een periode, die passend is voor het beoogde doel van het AI-systeem met een hoog risico, van ten minste zes maanden, tenzij anders is bepaald in het toepasselijke Unie- of nationaal recht, met name het Unierecht inzake de bescherming van persoonsgegevens.
+
+**2.** Aanbieders die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het Unierecht inzake financiële diensten, bewaren de automatisch door hun AI-systemen met een hoog risico gegenereerde logs, als onderdeel van de documentatie die bewaard wordt krachtens het desbetreffende recht inzake financiële diensten.

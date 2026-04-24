@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "10"
+anchor: "rct_10"
+---
+
+# Overweging (10)
+
+Het grondrecht van de bescherming van persoonsgegevens wordt met name gewaarborgd door de Verordeningen (EU) 2016/679 ( 11 ) en (EU) 2018/1725 ( 12 ) van het Europees Parlement en de Raad en Richtlijn (EU) 2016/680 van het Europees Parlement en de Raad ( 13 ) . Daarnaast beschermt Richtlijn 2002/58/EG van het Europees Parlement en de Raad ( 14 ) het privéleven en de vertrouwelijkheid van communicatie, onder meer door te voorzien in voorwaarden met betrekking tot de opslag van en de toegang tot persoonsgegevens en niet-persoonsgebonden gegevens in eindapparatuur. Die rechtshandelingen van de Unie vormen de basis voor duurzame en verantwoorde dataverwerking, onder meer wanneer datasets een mix van persoonsgegevens en niet-persoonsgebonden gegevens bevatten. Deze verordening laat de toepassing van de bestaande Uniewetgeving betreffende de verwerking van persoonsgegevens, met inbegrip van de taken en bevoegdheden van de onafhankelijke toezichthoudende autoriteiten die met het toezicht op de naleving van die instrumenten belast zijn, onverlet. Deze verordening doet evenmin afbreuk aan de verplichtingen van aanbieders en gebruiksverantwoordelijken van AI-systemen in hun rol als verwerkingsverantwoordelijke of verwerker die voortvloeien uit het Unie- of nationale recht inzake de bescherming van persoonsgegevens, voor zover er in het kader van het ontwerp, de ontwikkeling of het gebruik van AI-systemen persoonsgegevens worden verwerkt. Het is ook passend te verduidelijken dat betrokkenen alle rechten en waarborgen blijven genieten die hun door dat Unierecht zijn toegekend, met inbegrip van de rechten die verband houden met uitsluitend geautomatiseerde individuele besluitvorming, waaronder profilering. De in deze verordening vastgelegde geharmoniseerde regels voor het in de handel brengen, de ingebruikstelling en het gebruik van AI-systemen moeten de doeltreffende uitvoering vergemakkelijken en de uitoefening van de rechten en andere rechtsmiddelen van betrokkenen mogelijk maken die worden gewaarborgd door het Unierecht inzake de bescherming van persoonsgegevens en andere grondrechten.

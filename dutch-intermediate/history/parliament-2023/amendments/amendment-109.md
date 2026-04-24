@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "109"
+amendment_target: "Voorstel voor een verordening — Overweging 64"
+---
+
+# Amendement 109
+
+**Doel:** Voorstel voor een verordening — Overweging 64
+
+## Door de Commissie voorgestelde tekst
+
+(64) Gezien de uitgebreidere ervaring van personen die professionele certificeringen vóór het in de handel brengen uitvoeren op het gebied van productveiligheid en de andere aard van risico’s die hiermee gepaard gaan, is het passend om, in ieder geval in een eerste fase van de toepassing van deze verordening, het toepassingsgebied van conformiteitsbeoordelingen van derden voor AI-systemen met een hoog risico die geen verband houden met producten te beperken. De conformiteitsbeoordeling van dergelijke systemen moet derhalve als algemene regel door de aanbieder onder eigen verantwoordelijkheid worden uitgevoerd, met als enige uitzondering AI-systemen die bedoeld zijn om te worden gebruikt voor de biometrische identificatie van personen op afstand, ten aanzien waarvan een aangemelde instantie moet worden betrokken bij de conformiteitsbeoordeling, voor zover deze systemen niet verboden zijn.
+
+(64)
+
+(64)
+
+## Amendement van het Europees Parlement
+
+(64) Gezien de complexiteit van AI-systemen met een hoog risico en de risico’s die daarmee gepaard gaan, is het van essentieel belang een adequatere capaciteit te ontwikkelen voor de toepassing van conformiteitsbeoordeling door derden voor AI-systemen met een hoog risico. Gezien de huidige ervaring van personen die professionele certificeringen vóór het in de handel brengen uitvoeren op het gebied van productveiligheid en de andere aard van risico’s die hiermee gepaard gaan, is het niettemin passend om, in ieder geval in een eerste fase van de toepassing van deze verordening, het toepassingsgebied van conformiteitsbeoordelingen door derden voor AI-systemen met een hoog risico die geen verband houden met producten te beperken. De conformiteitsbeoordeling van dergelijke systemen moet derhalve als algemene regel door de aanbieder onder eigen verantwoordelijkheid worden uitgevoerd, met als enige uitzondering AI-systemen die bedoeld zijn om te worden gebruikt voor de biometrische identificatie van personen op afstand of AI-systemen die bedoeld zijn om conclusies te trekken over de persoonlijke kenmerken van natuurlijke personen op basis van biometrische of op biometrie gebaseerde gegevens, waaronder systemen voor het herkennen van emoties , ten aanzien waarvan een aangemelde instantie moet worden betrokken bij de conformiteitsbeoordeling, voor zover deze systemen niet verboden zijn.
+
+Gezien de uitgebreidere ervaring van personen die professionele certificeringen vóór het in de handel brengen uitvoeren op het gebied van productveiligheid en de andere aard van risico’s die hiermee gepaard gaan, is het passend om, in ieder geval in een eerste fase van de toepassing van deze verordening, het toepassingsgebied van conformiteitsbeoordelingen van derden voor AI-systemen met een hoog risico die geen verband houden met producten te beperken. De conformiteitsbeoordeling van dergelijke systemen moet derhalve als algemene regel door de aanbieder onder eigen verantwoordelijkheid worden uitgevoerd, met als enige uitzondering AI-systemen die bedoeld zijn om te worden gebruikt voor de biometrische identificatie van personen op afstand, ten aanzien waarvan een aangemelde instantie moet worden betrokken bij de conformiteitsbeoordeling, voor zover deze systemen niet verboden zijn.
+
+Gezien de complexiteit van AI-systemen met een hoog risico en de risico’s die daarmee gepaard gaan, is het van essentieel belang een adequatere capaciteit te ontwikkelen voor de toepassing van conformiteitsbeoordeling door derden voor AI-systemen met een hoog risico. Gezien de huidige ervaring van personen die professionele certificeringen vóór het in de handel brengen uitvoeren op het gebied van productveiligheid en de andere aard van risico’s die hiermee gepaard gaan, is het niettemin passend om, in ieder geval in een eerste fase van de toepassing van deze verordening, het toepassingsgebied van conformiteitsbeoordelingen door derden voor AI-systemen met een hoog risico die geen verband houden met producten te beperken. De conformiteitsbeoordeling van dergelijke systemen moet derhalve als algemene regel door de aanbieder onder eigen verantwoordelijkheid worden uitgevoerd, met als enige uitzondering AI-systemen die bedoeld zijn om te worden gebruikt voor de biometrische identificatie van personen op afstand of AI-systemen die bedoeld zijn om conclusies te trekken over de persoonlijke kenmerken van natuurlijke personen op basis van biometrische of op biometrie gebaseerde gegevens, waaronder systemen voor het herkennen van emoties , ten aanzien waarvan een aangemelde instantie moet worden betrokken bij de conformiteitsbeoordeling, voor zover deze systemen niet verboden zijn.

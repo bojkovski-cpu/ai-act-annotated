@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "46"
+anchor: "rct_46"
+---
+
+# Overweging (46)
+
+AI-systemen met een hoog risico mogen alleen in de Unie in de handel worden gebracht, in gebruik worden gesteld of worden gebruikt als zij aan bepaalde dwingende eisen voldoen. Die eisen moeten ervoor zorgen dat AI-systemen met een hoog risico die in de Unie beschikbaar zijn of waarvan de output anderszins in de Unie wordt gebruikt, geen onaanvaardbare risico’s inhouden voor belangrijke publieke belangen in de Unie, zoals die door het recht van de Unie worden erkend en beschermd. Op basis van het nieuwe wetgevingskader, zoals verduidelijkt in de mededeling van de Commissie “De Blauwe Gids van 2022: richtlijnen voor de uitvoering van de productvoorschriften van de EU” ( 20 ) , luidt de algemene regel dat meer dan een rechtshandeling van de harmonisatiewetgeving van de Unie, zoals de Verordeningen (EU) 2017/745 ( 21 ) en (EU) 2017/746 ( 22 ) van het Europees Parlement en de Raad of Richtlijn 2006/42/EG van het Europees Parlement en de Raad ( 23 ) , op één product van toepassing kan zijn, aangezien het aanbieden of in gebruik stellen van het product alleen kan plaatsvinden wanneer het product voldoet aan alle toepasselijke harmonisatiewetgeving van de Unie. Om consistentie te waarborgen en onnodige administratieve lasten of kosten te vermijden, moeten aanbieders van een product dat een of meer AI-systemen met een hoog risico bevat waarop de eisen van deze verordening en van de harmonisatiewetgeving van de Unie zoals vermeld in een bijlage bij deze verordening van toepassing zijn, flexibel zijn met betrekking tot operationele beslissingen over hoe ervoor kan worden gezorgd dat een product dat een of meer AI-systemen bevat, op optimale wijze voldoet aan alle toepasselijke eisen van die harmonisatiewetgeving van de Unie. De aanmerking als AI-systeem met een hoog risico, moet worden beperkt tot systemen die aanzienlijke schadelijke gevolgen hebben voor de gezondheid, de veiligheid en de grondrechten van personen in de Unie, en daarbij moeten potentiële restricties voor de internationale handel tot een minimum worden beperkt.

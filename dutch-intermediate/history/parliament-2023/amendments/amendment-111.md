@@ -1,0 +1,25 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "111"
+amendment_target: "Voorstel voor een verordening — Overweging 65 bis (nieuw)"
+---
+
+# Amendement 111
+
+**Doel:** Voorstel voor een verordening — Overweging 65 bis (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+
+
+(65 bis)
+
+## Amendement van het Europees Parlement
+
+(65 bis) In overeenstemming met de verbintenissen van de Unie in het kader van de Overeenkomst inzake technische handelsbelemmeringen van de Wereldhandelsorganisatie is het goed om de aanvaarding van testresultaten die geproduceerd zijn door bevoegde conformiteitsbeoordelingsinstanties te maximaliseren, ongeacht het grondgebied waar zij gevestigd zijn, zo nodig om aan te tonen dat zij aan de toepasselijke voorschriften van de verordening voldoen. De Commissie moet actief op zoek gaan naar bruikbare internationale instrumenten die kunnen helpen dit te verwezenlijken, en moet met name streven naar de mogelijke totstandbrenging van overeenkomsten inzake wederzijdse erkenning met landen met een vergelijkbaar niveau van technische ontwikkeling die een vergelijkbare aanpak hanteren met betrekking tot AI en conformiteitsbeoordeling.
+
+In overeenstemming met de verbintenissen van de Unie in het kader van de Overeenkomst inzake technische handelsbelemmeringen van de Wereldhandelsorganisatie is het goed om de aanvaarding van testresultaten die geproduceerd zijn door bevoegde conformiteitsbeoordelingsinstanties te maximaliseren, ongeacht het grondgebied waar zij gevestigd zijn, zo nodig om aan te tonen dat zij aan de toepasselijke voorschriften van de verordening voldoen. De Commissie moet actief op zoek gaan naar bruikbare internationale instrumenten die kunnen helpen dit te verwezenlijken, en moet met name streven naar de mogelijke totstandbrenging van overeenkomsten inzake wederzijdse erkenning met landen met een vergelijkbaar niveau van technische ontwikkeling die een vergelijkbare aanpak hanteren met betrekking tot AI en conformiteitsbeoordeling.

@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "170"
+anchor: "rct_170"
+---
+
+# Overweging (170)
+
+Het Unierecht en het nationale recht voorzien reeds in doeltreffende rechtsmiddelen voor natuurlijke personen en rechtspersonen van wie de rechten en vrijheden worden geschaad door het gebruik van AI-systemen. Onverminderd die rechtsmiddelen, kan elke natuurlijke of rechtspersoon die redenen heeft om aan te nemen dat er sprake is van een inbreuk op de bepalingen van deze verordening, een met redenen omklede klacht indienen bij de betrokken markttoezichtautoriteit.

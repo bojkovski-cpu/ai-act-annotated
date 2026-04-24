@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "117"
+anchor: "rct_117"
+---
+
+# Overweging (117)
+
+De praktijkcodes moeten een centraal instrument zijn voor de correcte naleving van de verplichtingen van aanbieders van AI-modellen voor algemene doeleinden uit hoofde van deze verordening. Aanbieders moeten voor het staven van hun naleving van de verplichtingen kunnen vertrouwen op praktijkcodes. De Commissie kan bij uitvoeringshandelingen een gedragscode vaststellen en deze binnen de Unie een algemene geldigheid verlenen, of anderszins gemeenschappelijke regels vaststellen voor de uitvoering van de desbetreffende verplichtingen, indien er op het moment dat deze verordening van toepassing wordt nog geen gedragscode voorhanden is of het AI-bureau de wel reeds voorhanden zijnde gedragscode ontoereikend acht. Zodra een geharmoniseerde norm gepubliceerd is en het AI-bureau deze in het licht van de relevante verplichtingen geschikt heeft bevonden, moet naleving van een Europese geharmoniseerde norm aanbieders het vermoeden van conformiteit bieden. Aanbieders van AI-modellen voor algemene doeleinden moeten ook met alternatieve geschikte middelen kunnen aantonen dat zij aan de relevante verplichtingen voldoen in het geval er geen praktijkcodes of geharmoniseerde normen beschikbaar zijn, of wanneer zij ervoor kiezen geen beroep op die codes of normen te doen.

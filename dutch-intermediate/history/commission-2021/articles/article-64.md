@@ -1,0 +1,28 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+article_number: "64"
+article_title: "Toegang tot data en documentatie"
+titel_number_roman: "VIII"
+titel_number: "8"
+titel_title: "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING, MARKTTOEZICHT"
+hoofdstuk_number: "3"
+hoofdstuk_title: "Handhaving"
+---
+
+# Artikel 64 — Toegang tot data en documentatie
+
+**1.** In de context van hun activiteiten wordt de markttoezichtautoriteiten volledige toegang verleend tot de door de aanbieder gebruikte datareeksen voor trainings-, validatie- en testdoeleinden, onder meer via applicatieprogramma-interfaces (API’s) of andere passende technische middelen en instrumenten die toegang op afstand mogelijk maken.
+
+**2.** Indien dit nodig is om de overeenstemming van het AI-systeem met een hoog risico met de in titel III, hoofdstuk 2, beschreven voorschriften te beoordelen, wordt de markttoezichtautoriteiten na een met redenen omkleed verzoek toegang verleend tot de broncode van het AI-systeem.
+
+**3.** Nationale overheidsinstanties of -organen die de nakoming van verplichtingen krachtens Unierecht ter bescherming van grondrechten met betrekking tot het gebruik van AI-systemen met een hoog risico als bedoeld in bijlage III controleren of handhaven, zijn bevoegd om krachtens deze verordening opgestelde of bijgehouden documentatie aan te vragen en in te zien wanneer toegang tot die documentatie nodig is voor de uitoefening van de bevoegdheden onder hun mandaat binnen de grenzen van hun rechtsgebied. De relevante overheidsinstantie of het relevante overheidsorgaan stelt de markttoezichtautoriteit van de betrokken lidstaat van een dergelijke aanvraag in kennis.
+
+**4.** Uiterlijk drie maanden na de inwerkingtreding van deze verordening moet elke lidstaat de in lid 3 bedoelde overheidsinstanties of -organen identificeren en een lijst openbaar maken op de website van de nationale toezichthoudende autoriteit. De lidstaten stellen de Commissie en alle andere lidstaten in kennis van de lijst en houden deze up-to-date.
+
+**5.** Indien de in lid 3 bedoelde documentatie ontoereikend is om vast te stellen of sprake is geweest van een niet-nakoming van verplichtingen krachtens Unierecht ter bescherming van grondrechten, kunnen de in lid 3 bedoelde overheidsinstanties of -organen een met redenen omkleed verzoek bij de markttoezichtautoriteit indienen om over te gaan tot het testen van het AI-systeem met een hoog risico met technische middelen. De markttoezichtautoriteit organiseert de testprocedure binnen een redelijke termijn na het verzoek en met nauwe betrokkenheid van de verzoekende overheidsinstantie of het verzoekende overheidsorgaan.
+
+**6.** Door de in lid 3 bedoelde overheidsinstanties of -organen volgens de bepalingen van dit artikel verkregen informatie en documentatie worden verwerkt overeenkomstig de in artikel 70 beschreven geheimhoudingsverplichtingen.

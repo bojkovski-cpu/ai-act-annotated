@@ -1,0 +1,32 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+annex_number_roman: "IX"
+annex_number: "9"
+annex_title: "Uniewetgeving over grootschalige IT-systemen in de Ruimte van vrijheid, veiligheid en recht"
+---
+
+# Bijlage IX — Uniewetgeving over grootschalige IT-systemen in de Ruimte van vrijheid, veiligheid en recht
+
+**1.** Schengeninformatiesysteem
+
+  - (a) Verordening (EU) 2018/1860 van het Europees Parlement en de Raad van 28 november 2018 betreffende het gebruik van het Schengeninformatiesysteem voor de terugkeer van illegaal verblijvende onderdanen van derde landen (PB L 312 van 7.12.2018, blz. 1);
+
+  - (b) Verordening (EU) 2018/1861 van het Europees Parlement en de Raad van 28 november 2018 betreffende de instelling, de werking en het gebruik van het Schengeninformatiesysteem (SIS) op het gebied van grenscontroles, tot wijziging van de Overeenkomst ter uitvoering van het Akkoord van Schengen en tot wijziging en intrekking van Verordening (EG) nr. 1987/2006 (PB L 312 van 7.12.2018, blz. 14);
+
+  - (c) Verordening (EU) 2018/1862 van het Europees Parlement en de Raad van 28 november 2018 betreffende de instelling, de werking en het gebruik van het Schengeninformatiesysteem (SIS) op het gebied van politiële en justitiële samenwerking in strafzaken, tot wijziging en intrekking van Besluit 2007/533/JBZ van de Raad en tot intrekking van Verordening (EG) nr. 1986/2006 van het Europees Parlement en de Raad en Besluit 2010/261/EU van de Commissie (PB L 312 van 7.12.2018, blz. 56).
+
+**2.** Visuminformatiesysteem
+
+  - (a) Voorstel voor een VERORDENING VAN HET EUROPEES PARLEMENT EN DE RAAD tot wijziging van Verordening (EG) nr. 767/2008, Verordening (EG) nr. 810/2009, Verordening (EU) 2017/2226, Verordening (EU) 2016/399, Verordening XX/2018 [de interoperabiliteitsverordening] en Beschikking 2004/512/EG, en tot intrekking van Besluit 2008/633/JBZ van de Raad – COM(2018) 302 final. Bijwerken na vaststelling van de verordening (mei/april 2021) door de medewetgevers.
+
+**3.** Eurodac
+
+  - (a) Gewijzigd voorstel voor een VERORDENING VAN HET EUROPEES PARLEMENT EN DE RAAD betreffende de instelling van “Eurodac” voor de vergelijking van biometrische gegevens ten behoeve van een doeltreffende toepassing van Verordening (EU) XXX/XXX [verordening betreffende asiel- en migratiebeheer] en van Verordening (EU) XXX/XXX [hervestigingsverordening] voor de identificatie van een illegaal verblijvende onderdaan van een derde land of staatloze en betreffende verzoeken van rechtshandhavingsinstanties van de lidstaten en Europol om vergelijkingen van Eurodac-gegevens ten behoeve van rechtshandhaving, en tot wijziging van de Verordeningen (EU) 2018/1240 en (EU) 2019/ 818 – COM(2020) 614 final.
+
+**4.** Inreis-uitreissysteem
+
+  - (a) Verordening (EU) 2017/2226 van het Europees Parlement en de Raad van 30 november 2017 tot instelling van een inreis-uitreissysteem (EES) voor de registratie van inreis- en uitreisgegevens en van gegevens over weigering van toegang ten aanzien van onderdanen van derde landen die de buitengrenzen overschrijden en tot vaststelling van de voorwaarden voor toegang tot het EES voor rechtshandhavingsdoeleinden en tot wijziging van de overeenkomst ter uitvoering van het te Schengen gesloten akkoord en Verordeningen (EG) nr. 767/2008 en (EU) nr. 1077/2011 (PB L 327 van 9.12.2017, blz. 20).

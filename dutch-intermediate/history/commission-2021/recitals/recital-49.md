@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "49"
+---
+
+# Overweging (49)
+
+AI-systemen met een hoog risico moeten gedurende hun levenscyclus consistent presteren en een passend niveau van nauwkeurigheid, robuustheid en cyberbeveiliging behalen in overeenstemming met de algemeen erkende stand van de techniek. De mate van nauwkeurigheid en de maatstaven voor de nauwkeurigheid moeten aan de gebruikers worden meegedeeld.

@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "161"
+anchor: "rct_161"
+---
+
+# Overweging (161)
+
+Het is noodzakelijk de verantwoordelijkheden en bevoegdheden op het niveau van de Unie en op nationaal niveau te verduidelijken wat betreft AI-systemen die gebaseerd zijn op AI-modellen voor algemene doeleinden. Om overlappende bevoegdheden te voorkomen, moet, indien een AI-systeem gebaseerd is op een AI-model voor algemene doeleinden en het model en systeem door dezelfde aanbieder worden aangeboden, het toezicht op het niveau van de Unie plaatsvinden via het AI-bureau, dat voor dit doel de bevoegdheden moet hebben van een markttoezichtautoriteit in de zin van Verordening (EU) 2019/1020. In alle andere gevallen blijven de nationale markttoezichtautoriteiten verantwoordelijk voor het toezicht op AI-systemen. Voor AI-systemen voor algemene doeleinden die rechtstreeks door gebruiksverantwoordelijken kunnen worden gebruikt voor ten minste één doel dat als hoog risico is geclassificeerd, moeten markttoezichtautoriteiten echter samenwerken met het AI-bureau om conformiteitsbeoordelingen uit te voeren en de AI-board en andere markttoezicht-autoriteiten daarvan in kennis te stellen. Voorts moeten markttoezichtautoriteiten het AI-bureau om bijstand kunnen verzoeken indien de markttoezichtautoriteit geen onderzoek naar een AI-systeem met een hoog risico kan afronden omdat zij geen toegang heeft tot bepaalde informatie met betrekking tot het AI-model voor algemene doeleinden waarop het AI-systeem met een hoog risico is gebaseerd. In dergelijke gevallen moet de procedure betreffende wederzijdse bijstand in grensoverschrijdende zaken van hoofdstuk VI van Verordening (EU) 2019/1020 op overeenkomstige wijze van toepassing zijn.

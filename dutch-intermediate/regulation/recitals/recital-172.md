@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "172"
+anchor: "rct_172"
+---
+
+# Overweging (172)
+
+Personen die optreden als klokkenluiders bij inbreuken op deze verordening, moeten worden beschermd uit hoofde van het Unierecht. Richtlijn (EU) 2019/1937 van het Europees Parlement en de Raad ( 54 ) moet daarom van toepassing zijn op de melding van inbreuken op deze verordening en op de bescherming van personen die dergelijke inbreuken melden.

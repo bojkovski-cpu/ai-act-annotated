@@ -1,0 +1,30 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+article_number: "58"
+article_title: "Taken van het Comité"
+titel_number_roman: "VI"
+titel_number: "6"
+titel_title: "GOVERNANCE"
+hoofdstuk_number: "1"
+hoofdstuk_title: "Europees Comité voor artificiële intelligentie"
+---
+
+# Artikel 58 — Taken van het Comité
+
+Bij het verstrekken van advies en bijstand aan de Commissie in het kader van artikel 56, lid 2, heeft het Comité met name de volgende taken:
+
+- (a) expertise en beste praktijken onder de lidstaten verzamelen en delen;
+
+- (b) bijdragen aan uniforme administratieve praktijken in de lidstaten, ook voor de werking van testomgevingen voor regelgeving als bedoeld in artikel 53;
+
+- (c) adviezen, aanbevelingen of schriftelijke bijdragen afgeven over aangelegenheden met betrekking tot de uitvoering van deze verordening, met name
+
+- i) over technische specificaties of bestaande normen ten aanzien van de in titel III, hoofdstuk 2, beschreven voorschriften,
+
+- ii) over het gebruik van geharmoniseerde normen of gemeenschappelijke specificaties als bedoeld in de artikelen 40 en 41,
+
+- iii) over de opstelling van begeleidende documenten, waaronder de richtsnoeren betreffende de bepaling van administratieve boeten als bedoeld in artikel 71.

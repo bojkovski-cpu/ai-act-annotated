@@ -1,0 +1,25 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "19"
+amendment_target: "Voorstel voor een verordening — Overweging 6 bis (nieuw)"
+---
+
+# Amendement 19
+
+**Doel:** Voorstel voor een verordening — Overweging 6 bis (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+
+
+(6 bis)
+
+## Amendement van het Europees Parlement
+
+(6 bis) AI-systemen beschikken vaak over de mogelijkheid tot machinaal leren, hetgeen deze systemen in staat stelt zich autonoom aan nieuwe taken aan te passen en deze uit te voeren. Machinaal leren verwijst naar het rekenkundige proces waarbij de parameters van een model op basis van gegevens worden geoptimaliseerd; een wiskundige constructie die een output genereert op basis van inputgegevens. Voorbeelden van benaderingen voor machinaal leren zijn gecontroleerd, ongecontroleerd en versterkend leren, waarbij gebruik wordt gemaakt van diverse methoden, waaronder deep learning met behulp van neurale netwerken. Deze verordening is gericht op het aanpakken van nieuwe potentiële risico’s die kunnen ontstaan doordat controle wordt overgedragen aan AI-systemen, met name aan AI-systemen die na hun ingebruikname kunnen evolueren. De functie en output van veel van deze AI-systemen zijn gebaseerd op abstracte wiskundige relaties die voor mensen moeilijk zijn te begrijpen, monitoren en terug te herleiden naar specifieke input. Deze complexiteit en ondoorzichtigheid zijn kenmerken (“black box”-elementen) die gevolgen hebben voor de verantwoording en de verklaarbaarheid. Ook het gebruik van vergelijkbare, maar eenvoudiger technieken zoals op kennis gebaseerde benaderingen, Bayesiaanse schatting of beslisbomen kan op juridische vraagstukken stuiten die in deze verordening behandeld moeten worden, met name bij gebruik in combinatie met machinaal leren in de context van hybride systemen.
+
+AI-systemen beschikken vaak over de mogelijkheid tot machinaal leren, hetgeen deze systemen in staat stelt zich autonoom aan nieuwe taken aan te passen en deze uit te voeren. Machinaal leren verwijst naar het rekenkundige proces waarbij de parameters van een model op basis van gegevens worden geoptimaliseerd; een wiskundige constructie die een output genereert op basis van inputgegevens. Voorbeelden van benaderingen voor machinaal leren zijn gecontroleerd, ongecontroleerd en versterkend leren, waarbij gebruik wordt gemaakt van diverse methoden, waaronder deep learning met behulp van neurale netwerken. Deze verordening is gericht op het aanpakken van nieuwe potentiële risico’s die kunnen ontstaan doordat controle wordt overgedragen aan AI-systemen, met name aan AI-systemen die na hun ingebruikname kunnen evolueren. De functie en output van veel van deze AI-systemen zijn gebaseerd op abstracte wiskundige relaties die voor mensen moeilijk zijn te begrijpen, monitoren en terug te herleiden naar specifieke input. Deze complexiteit en ondoorzichtigheid zijn kenmerken (“black box”-elementen) die gevolgen hebben voor de verantwoording en de verklaarbaarheid. Ook het gebruik van vergelijkbare, maar eenvoudiger technieken zoals op kennis gebaseerde benaderingen, Bayesiaanse schatting of beslisbomen kan op juridische vraagstukken stuiten die in deze verordening behandeld moeten worden, met name bij gebruik in combinatie met machinaal leren in de context van hybride systemen.

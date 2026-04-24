@@ -1,0 +1,26 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "30"
+article_title: "Aanmeldingsprocedure"
+chapter_number: "3"
+chapter_number_roman: "III"
+chapter_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+section_number: "4"
+section_title: "Aanmeldende autoriteiten en aangemelde instanties"
+anchor: "art_30"
+---
+
+# Artikel 30 — Aanmeldingsprocedure
+
+**1.** Aanmeldende autoriteiten mogen uitsluitend conformiteitsbeoordelingsinstanties aanmelden die aan de eisen van artikel 31 voldoen.
+
+**2.** Aanmeldende autoriteiten melden elke in lid 1 bedoeld conformiteitsbeoordelingsinstantie aan bij de Commissie en de andere lidstaten door middel van het door de Commissie ontwikkelde en beheerde elektronische aanmeldingssysteem.
+
+**3.** Bij de in lid 2 van dit artikel bedoelde aanmelding worden de conformiteitsbeoordelingsactiviteiten, de conformiteitsbeoordelingsmodule(s), de soorten AI-systemen in kwestie en de desbetreffende bekwaamheidsattestatie uitvoerig beschreven. Indien een aanmelding niet gebaseerd is op een accreditatiecertificaat als bedoeld in artikel 29, lid 2, verschaft de aanmeldende autoriteit de Commissie en de andere lidstaten de bewijsstukken waaruit de bekwaamheid van de conformiteitsbeoordelingsinstantie blijkt, evenals de regeling die waarborgt dat de instantie regelmatig wordt gecontroleerd en zal blijven voldoen aan de eisen van artikel 31.
+
+**4.** De betrokken conformiteitsbeoordelingsinstantie mag de activiteiten van een aangemelde instantie alleen verrichten als de Commissie en de andere lidstaten binnen twee weken na aanmelding door een aanmeldende autoriteit indien een accreditatiecertificaat bedoeld in artikel 29, lid 2, wordt gebruikt en binnen twee maanden na aanmelding door de aanmeldende autoriteit indien de in artikel 29, lid 3, bedoelde bewijsstukken worden gebruikt, geen bezwaren hebben ingediend.
+
+**5.** Indien er bezwaar wordt ingediend, treedt de Commissie onverwijld in overleg met de betrokken lidstaten en de conformiteitsbeoordelingsinstantie. Met het oog daarop besluit de Commissie of de toelating gerechtvaardigd is. De Commissie richt haar besluit aan de betrokken lidstaat en aan de relevante conformiteitsbeoordelingsinstantie.

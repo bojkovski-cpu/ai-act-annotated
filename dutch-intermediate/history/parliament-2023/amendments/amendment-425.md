@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "425"
+amendment_target: "Voorstel voor een verordening — Artikel 33 — lid 4 bis (nieuw)"
+---
+
+# Amendement 425
+
+**Doel:** Voorstel voor een verordening — Artikel 33 — lid 4 bis (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+*(geen tekst)*
+
+## Amendement van het Europees Parlement
+
+4 bis. Een conformiteitsbeoordeling overeenkomstig lid 1 wordt uitgevoerd door werknemers van aangemelde instanties die in de periode van 12 maanden vóór de beoordeling geen andere met de beoordeling verband houdende dienst hebben verleend aan de aanbieder van een AI-systeem met een hoog risico of aan een met die aanbieder verbonden rechtspersoon en zich ertoe hebben verbonden deze diensten niet te verlenen in de periode van 12 maanden na de voltooiing van de beoordeling.

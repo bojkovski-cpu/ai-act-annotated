@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "705"
+amendment_target: "Voorstel voor een verordening — Artikel 84 — lid 7 bis (nieuw)"
+---
+
+# Amendement 705
+
+**Doel:** Voorstel voor een verordening — Artikel 84 — lid 7 bis (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+*(geen tekst)*
+
+## Amendement van het Europees Parlement
+
+7 bis. Om de evaluaties en toetsingen als bedoeld in de leden 1 tot en met 4 van dit artikel uit te voeren, ontwikkelt het AI-bureau een objectieve en participatieve methodologie voor de evaluatie van het risiconiveau, op basis van de in de desbetreffende artikelen beschreven criteria en opname van nieuwe systemen in: de lijst in bijlage III, waaronder de uitbreiding van bestaande gebiedsrubrieken of de toevoeging van nieuwe rubrieken in die bijlage; de lijst van verboden praktijken als vastgelegd in artikel 5; en de lijst van AI-systemen die aanvullende transparantieverplichtingen met zich meebrengen krachtens artikel 52.

@@ -1,0 +1,42 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+article_number: "71"
+article_title: "Sancties"
+titel_number_roman: "X"
+titel_number: "10"
+titel_title: "VERTROUWELIJKHEID EN SANCTIES"
+hoofdstuk_number: null
+hoofdstuk_title: null
+---
+
+# Artikel 71 — Sancties
+
+**1.** Overeenkomstig de voorwaarden van deze verordening stellen de lidstaten de voorschriften voor sancties vast, waaronder administratieve geldboeten, die van toepassing zijn op inbreuken op deze verordening en nemen zij alle nodige maatregelen om ervoor te zorgen dat deze naar behoren en doeltreffend worden uitgevoerd. De vastgestelde sancties moeten doeltreffend, evenredig en afschrikkend zijn. Hierbij wordt met name rekening gehouden met de belangen van kleine aanbieders en start-ups en hun economische levensvatbaarheid.
+
+**2.** De lidstaten stellen de Commissie van die voorschriften en maatregelen in kennis en delen haar onverwijld alle latere wijzigingen daarvan mee.
+
+**3.** Voor de volgende inbreuken gelden administratieve geldboeten tot 30 000 000 EUR of, als de overtreder een onderneming is, tot 6 % van haar totale wereldwijde jaarlijkse omzet voor het voorafgaande boekjaar, als dat hoger is:
+
+- (a) niet-naleving van het verbod van de in artikel 5 vermelde praktijken op het gebied van artificiële intelligentie;
+
+- (b) non-conformiteit van het AI-systeem met de in artikel 10 neergelegde voorschriften.
+
+**4.** Voor de non-conformiteit van het AI-systeem met voorschriften of verplichtingen krachtens deze verordening, uitgezonderd die bepaald in de artikelen 5 en 10, gelden administratieve geldboeten tot 20 000 000 EUR of, als de overtreder een onderneming is, tot 4 % van haar totale wereldwijde jaarlijkse omzet voor het voorafgaande boekjaar, als dat hoger is.
+
+**5.** Voor de verstrekking van onjuiste, onvolledige of misleidende informatie aan aangemelde instanties en nationale bevoegde autoriteiten naar aanleiding van een verzoek, gelden administratieve geldboeten tot 10 000 000 EUR of, als de overtreder een onderneming is, tot 2 % van haar totale wereldwijde jaarlijkse omzet voor het voorafgaande boekjaar, als dat hoger is.
+
+**6.** Bij het bepalen van het bedrag van de administratieve geldboete in elk individueel geval worden alle relevante omstandigheden van de specifieke situatie in aanmerking genomen en wordt terdege rekening gehouden met het volgende:
+
+- (a) de aard, ernst en duur van de inbreuk en de gevolgen ervan;
+
+- (b) of administratieve geldboeten reeds door andere markttoezichtautoriteiten voor dezelfde inbreuk op dezelfde exploitant zijn toegepast;
+
+- (c) de omvang en het marktaandeel van de exploitant die de inbreuk pleegt.
+
+**7.** Elke lidstaat stelt regels vast betreffende de vraag of en in hoeverre administratieve geldboeten kunnen worden opgelegd aan in die lidstaat gevestigde overheidsinstanties of -organen.
+
+**8.** Afhankelijk van het rechtssysteem van de lidstaten kunnen de regels voor administratieve geldboeten zodanig worden toegepast dat de boeten door bevoegde nationale rechters of andere instanties in voorkomend geval in die lidstaten worden opgelegd. De toepassing van zulke regels in die lidstaten heeft een gelijkwaardig effect.

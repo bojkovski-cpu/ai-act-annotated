@@ -1,0 +1,30 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "76"
+article_title: "Toezicht op tests onder reële omstandigheden door markttoezichtautoriteiten"
+chapter_number: "9"
+chapter_number_roman: "IX"
+chapter_title: "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+section_number: "3"
+section_title: "Handhaving"
+anchor: "art_76"
+---
+
+# Artikel 76 — Toezicht op tests onder reële omstandigheden door markttoezichtautoriteiten
+
+**1.** De markttoezichtautoriteiten hebben de bevoegdheden om ervoor te zorgen dat tests onder reële omstandigheden in overeenstemming zijn met deze verordening.
+
+**2.** Indien AI-systemen waarop toezicht wordt uitgeoefend binnen een AI-testomgeving voor regelgeving krachtens artikel 58, onder reële omstandigheden worden getest, controleren de markttoezichtautoriteiten of artikel 60 wordt nageleefd als onderdeel van hun toezichthoudende rol voor de AI-testomgeving voor regelgeving. Deze autoriteiten kunnen, in voorkomend geval, toestaan dat de aanbieder of potentiële aanbieder in afwijking van de voorwaarden van artikel 60, lid 4, punten f) en g), onder reële omstandigheden test.
+
+**3.** Een markttoezichtautoriteit die door de aanbieder, de potentiële aanbieder of een derde van een ernstig incident op de hoogte is gebracht of andere redenen heeft om aan te nemen dat niet aan de in de artikelen 60 en 61 bepaalde voorwaarden wordt voldaan, kan op haar grondgebied een van de volgende besluiten nemen, naargelang van het geval:
+
+- a) de tests onder reële omstandigheden opschorten of beëindigen;
+
+- b) aanbieders of potentiële aanbieders en gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken voorschrijven dat zij een aspect van de test onder reële omstandigheden wijzigen.
+
+**4.** Indien een markttoezichtautoriteit een besluit als bedoeld in lid 3 van dit artikel heeft genomen of een bezwaar in de zin van artikel 60, lid 4, punt b), heeft ingediend, worden in het besluit of het bezwaar vermeld wat de redenen daarvoor zijn en onder welke voorwaarden de aanbieder of potentiële aanbieder het besluit of het bezwaar kan aanvechten.
+
+**5.** Indien, in voorkomend geval, een markttoezichtautoriteit een besluit als bedoeld in lid 3 heeft genomen, deelt zij de redenen daarvoor mee aan de markttoezichtautoriteiten van de andere lidstaten waar het AI-systeem overeenkomstig het testplan is getest.

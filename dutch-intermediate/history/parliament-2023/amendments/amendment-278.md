@@ -1,0 +1,25 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "278"
+amendment_target: "Voorstel voor een verordening — Artikel 10 — lid 1"
+---
+
+# Amendement 278
+
+**Doel:** Voorstel voor een verordening — Artikel 10 — lid 1
+
+## Door de Commissie voorgestelde tekst
+
+1. AI-systemen met een hoog risico die technieken gebruiken die het trainen van modellen met data omvatten, worden ontwikkeld op basis van datareeksen voor training, validatie en tests die voldoen aan de kwaliteitscriteria als bedoeld in de leden 2 tot en met 5.
+
+
+
+## Amendement van het Europees Parlement
+
+1. AI-systemen met een hoog risico die technieken gebruiken die het trainen van modellen met data omvatten, worden ontwikkeld op basis van datareeksen voor training, validatie en tests die voldoen aan de kwaliteitscriteria als bedoeld in de leden 2 tot en met 5 , voor zover dit technisch haalbaar is overeenkomstig het specifieke marktsegment of toepassingsgebied .
+
+Technieken die geen geëtiketteerde inputdata vereisen, zoals ongecontroleerd leren en versterkend leren, worden ontwikkeld op basis van datareeksen zoals voor tests en verificatie die voldoen aan de in de leden 2 tot en met 5 bedoelde kwaliteitscriteria.

@@ -1,0 +1,36 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "67"
+article_title: "Adviesforum"
+chapter_number: "7"
+chapter_number_roman: "VII"
+chapter_title: "GOVERNANCE"
+section_number: "1"
+section_title: "Governance op Unieniveau"
+anchor: "art_67"
+---
+
+# Artikel 67 — Adviesforum
+
+**1.** Er wordt een adviesforum opgericht om technische expertise te verstrekken en de AI-board en de Commissie te adviseren, alsook bij te dragen aan hun taken uit hoofde van deze verordening.
+
+**2.** De samenstelling van het adviesforum vertegenwoordigt een evenwichtige selectie van belanghebbenden, waaronder het bedrijfsleven, start-ups, kmo’s, het maatschappelijk middenveld en de academische wereld. Bij de samenstelling van het adviesforum wordt een evenwicht in acht genomen tussen commerciële en niet-commerciële belangen en, binnen de categorie commerciële belangen, tussen kmo’s en andere ondernemingen.
+
+**3.** De Commissie benoemt de leden van het adviesforum, overeenkomstig de criteria van lid 2, uit belanghebbenden met erkende deskundigheid op het gebied van AI.
+
+**4.** De ambtstermijn van de leden van het adviesforum bedraagt twee jaar en kan met ten hoogste vier jaar worden verlengd.
+
+**5.** Het Bureau voor de grondrechten, Enisa, het Europees Comité voor normalisatie (CEN), het Europees Comité voor elektrotechnische normalisatie (Cenelec) en het Europees Instituut voor telecommunicatienormen (ETSI) zijn permanente leden van het adviesforum.
+
+**6.** Het adviesforum stelt zijn reglement vast. Het kiest uit zijn leden twee covoorzitters, op basis van de criteria van lid 2. De ambtstermijn van de covoorzitters bedraagt twee jaar en kan één keer worden verlengd.
+
+**7.** Het adviesforum belegt minstens twee keer per jaar een vergadering. Het adviesforum kan deskundigen en andere belanghebbenden uitnodigen om zijn vergaderingen bij te wonen.
+
+**8.** Het adviesforum kan op verzoek van de AI-board of de Commissie adviezen, aanbevelingen en schriftelijke bijdragen opstellen.
+
+**9.** Het adviesforum kan in voorkomend geval permanente of tijdelijke subgroepen oprichten om specifieke vraagstukken met betrekking tot de doelstellingen van deze verordening te onderzoeken.
+
+**10.** Het adviesforum stelt een jaarverslag over zijn activiteiten op. Dat verslag wordt openbaar gemaakt.

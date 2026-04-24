@@ -1,0 +1,25 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "135"
+amendment_target: "Voorstel voor een verordening — Overweging 84 quater (nieuw)"
+---
+
+# Amendement 135
+
+**Doel:** Voorstel voor een verordening — Overweging 84 quater (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+
+
+(84 quater)
+
+## Amendement van het Europees Parlement
+
+(84 quater) De Uniewetgeving betreffende de bescherming van klokkenluiders (Richtlijn (EU) 2019/1937) is volledig van toepassing op academici, ontwerpers, ontwikkelaars, projectcontribuanten, auditors, productmanagers, ingenieurs en marktdeelnemers die informatie verkrijgen over inbreuken op het Unierecht door een aanbieder van AI-systemen of zijn AI-systeem.
+
+De Uniewetgeving betreffende de bescherming van klokkenluiders (Richtlijn (EU) 2019/1937) is volledig van toepassing op academici, ontwerpers, ontwikkelaars, projectcontribuanten, auditors, productmanagers, ingenieurs en marktdeelnemers die informatie verkrijgen over inbreuken op het Unierecht door een aanbieder van AI-systemen of zijn AI-systeem.

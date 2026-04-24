@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "103"
+amendment_target: "Voorstel voor een verordening — Overweging 61"
+---
+
+# Amendement 103
+
+**Doel:** Voorstel voor een verordening — Overweging 61
+
+## Door de Commissie voorgestelde tekst
+
+(61) Normalisatie moet een belangrijke rol spelen bij de levering van technische oplossingen aan aanbieders om de naleving van deze verordening te waarborgen. De naleving van geharmoniseerde normen, zoals gedefinieerd in Verordening (EU) nr. 1025/2012 van het Europees Parlement en de Raad ( 54 ) , moet een middel zijn voor aanbieders om de overeenstemming met de voorschriften van deze verordening aan te tonen. De Commissie zou echter gemeenschappelijke technische specificaties kunnen vaststellen op gebieden waarop geen geharmoniseerde normen bestaan of waarop deze ontoereikend zijn .
+
+(61)
+
+(61)
+
+## Amendement van het Europees Parlement
+
+(61) Normalisatie moet een belangrijke rol spelen bij de levering van technische oplossingen aan aanbieders om de naleving van deze verordening te waarborgen. De naleving van geharmoniseerde normen, zoals gedefinieerd in Verordening (EU) nr. 1025/2012 van het Europees Parlement en de Raad ( 54 ) , moet een middel zijn voor aanbieders om de overeenstemming met de voorschriften van deze verordening aan te tonen. Om de doeltreffendheid van normen als beleidsinstrument voor de Unie te garanderen, en gezien het belang van normen voor het waarborgen van conformiteit met de voorschriften van deze verordening en voor het concurrentievermogen van ondernemingen, moet voor een evenwichtige belangenvertegenwoordiging worden gezorgd door alle belanghebbende partijen bij de vaststelling van normen te betrekken . Het normalisatieproces moet transparant zijn wat betreft de rechtspersonen en natuurlijke personen die aan de normalisatieactiviteiten deelnemen.
+
+Normalisatie moet een belangrijke rol spelen bij de levering van technische oplossingen aan aanbieders om de naleving van deze verordening te waarborgen. De naleving van geharmoniseerde normen, zoals gedefinieerd in Verordening (EU) nr. 1025/2012 van het Europees Parlement en de Raad ( 54 ) , moet een middel zijn voor aanbieders om de overeenstemming met de voorschriften van deze verordening aan te tonen. De Commissie zou echter gemeenschappelijke technische specificaties kunnen vaststellen op gebieden waarop geen geharmoniseerde normen bestaan of waarop deze ontoereikend zijn .
+
+Normalisatie moet een belangrijke rol spelen bij de levering van technische oplossingen aan aanbieders om de naleving van deze verordening te waarborgen. De naleving van geharmoniseerde normen, zoals gedefinieerd in Verordening (EU) nr. 1025/2012 van het Europees Parlement en de Raad ( 54 ) , moet een middel zijn voor aanbieders om de overeenstemming met de voorschriften van deze verordening aan te tonen. Om de doeltreffendheid van normen als beleidsinstrument voor de Unie te garanderen, en gezien het belang van normen voor het waarborgen van conformiteit met de voorschriften van deze verordening en voor het concurrentievermogen van ondernemingen, moet voor een evenwichtige belangenvertegenwoordiging worden gezorgd door alle belanghebbende partijen bij de vaststelling van normen te betrekken . Het normalisatieproces moet transparant zijn wat betreft de rechtspersonen en natuurlijke personen die aan de normalisatieactiviteiten deelnemen.

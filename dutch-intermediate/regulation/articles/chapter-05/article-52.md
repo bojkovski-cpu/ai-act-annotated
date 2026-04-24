@@ -1,0 +1,30 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "52"
+article_title: "Procedure"
+chapter_number: "5"
+chapter_number_roman: "V"
+chapter_title: "AI-MODELLEN VOOR ALGEMENE DOELEINDEN"
+section_number: "1"
+section_title: "Classificatieregels"
+anchor: "art_52"
+---
+
+# Artikel 52 — Procedure
+
+**1.** Indien een AI-model voor algemene doeleinden voldoet aan de in artikel 51, lid 1, punt a), bedoelde voorwaarde, stelt de betrokken aanbieder de Commissie daarvan onverwijld in kennis, doch in ieder geval binnen twee weken nadat aan die eis is voldaan of nadat bekend is geworden dat aan die eis zal worden voldaan. Die kennisgeving bevat de informatie die nodig is om aan te tonen dat aan de desbetreffende eis is voldaan. Als de Commissie kennis krijgt van een AI-model voor algemene doeleinden dat systeemrisico’s vertoont waarvan zij niet in kennis is gesteld, kan zij besluiten dit model aan te wijzen als een model met een systeemrisico.
+
+**2.** De aanbieder van een AI-model voor algemene doeleinden dat voldoet aan de in artikel 51, lid 1, punt a), bedoelde voorwaarden, kan bij zijn kennisgeving voldoende onderbouwde argumenten aanvoeren om aan te tonen dat het AI-model voor algemene doeleinden, hoewel het voldoet aan die eis, bij wijze van uitzondering, vanwege zijn specifieke kenmerken geen systeemrisico’s vertoont en derhalve niet zou mogen worden geclassificeerd als een AI-model voor algemene doeleinden met een systeemrisico.
+
+**3.** Indien de Commissie concludeert dat de uit hoofde van lid 2 aangevoerde argumenten niet voldoende onderbouwd zijn en de desbetreffende aanbieder niet kan aantonen dat het AI-model voor algemene doeleinden vanwege zijn specifieke kenmerken geen systeemrisico’s vertoont, verwerpt zij deze argumenten en wordt het AI-model voor algemene doeleinden beschouwd als een AI-model voor algemene doeleinden met een systeemrisico.
+
+**4.** De Commissie kan ambtshalve of na een gekwalificeerde waarschuwing van het wetenschappelijk panel op grond van artikel 90, lid 1, punt a), op basis van de in bijlage XIII vastgestelde criteria een AI-model voor algemene doeleinden aanwijzen als een AI-model dat systeemrisico’s vertoont.
+
+De Commissie is bevoegd overeenkomstig artikel 97 gedelegeerde handelingen vast te stellen om bijlage XIII te wijzigen door de in die bijlage beschreven criteria te specificeren en te actualiseren.
+
+**5.** Als een aanbieder wiens model op grond van lid 4 is aangewezen als AI-model voor algemene doeleinden met een systeemrisico een met redenen omkleed verzoek indient, neemt de Commissie dit in overweging en kan zij besluiten om opnieuw te beoordelen of het AI-model voor algemene doeleinden op basis van de criteria van bijlage XIII nog steeds wordt beschouwd als een AI-model dat systeemrisico’s vertoont. Een dergelijk verzoek moet objectieve, gedetailleerde en nieuwe redenen bevatten die na het aanwijzingsbesluit aan het licht zijn gekomen. Aanbieders kunnen ten vroegste zes maanden na het aanwijzingsbesluit om een herbeoordeling verzoeken. Indien de Commissie na haar herbeoordeling besluit de aanwijzing als AI-model voor algemene doeleinden met een systeemrisico te handhaven, kunnen aanbieders pas na zes maanden na dat besluit opnieuw om een herbeoordeling verzoeken.
+
+**6.** De Commissie zorgt ervoor dat er een lijst met AI-modellen voor algemene doeleinden met een systeemrisico wordt gepubliceerd en houdt die lijst actueel, onverminderd de noodzaak om intellectuele-eigendomsrechten en vertrouwelijke bedrijfsinformatie of bedrijfsgeheimen te eerbiedigen en te beschermen overeenkomstig het Unierecht en het nationale recht.
