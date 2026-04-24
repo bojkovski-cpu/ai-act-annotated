@@ -1,0 +1,28 @@
+# Default: auto-detect text files, normalize to LF in the repo
+* text=auto eol=lf
+
+# Force LF for source files
+*.py    text eol=lf
+*.js    text eol=lf
+*.mjs   text eol=lf
+*.ts    text eol=lf
+*.jsx   text eol=lf
+*.tsx   text eol=lf
+*.astro text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.html  text eol=lf
+*.css   text eol=lf
+
+# Binary — keep as-is
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+*.zip   binary
+*.woff  binary
+*.woff2 binary
