@@ -1,0 +1,18 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "39"
+article_title: "Conformiteitsbeoordelingsinstanties van derde landen"
+chapter_number: "3"
+chapter_number_roman: "III"
+chapter_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+section_number: "4"
+section_title: "Aanmeldende autoriteiten en aangemelde instanties"
+anchor: "art_39"
+---
+
+# Artikel 39 — Conformiteitsbeoordelingsinstanties van derde landen
+
+Conformiteitsbeoordelingsinstanties die zijn opgericht naar het recht van een derde land waarmee de Unie een overeenkomst heeft gesloten, kunnen worden gemachtigd de activiteiten van aangemelde instanties krachtens deze verordening te verrichten, mits zij aan de in artikel 31 vastgelegde voorschriften voldoen of een gelijkwaardig nalevingsniveau waarborgen.

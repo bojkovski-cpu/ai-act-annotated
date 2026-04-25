@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "656"
+amendment_target: "Voorstel voor een verordening — Artikel 71 — lid 6 — punt c"
+---
+
+# Amendement 656
+
+**Doel:** Voorstel voor een verordening — Artikel 71 — lid 6 — punt c
+
+## Door de Commissie voorgestelde tekst
+
+c) de omvang en het marktaandeel van de exploitant die de inbreuk pleegt.
+
+c)
+
+c)
+
+## Amendement van het Europees Parlement
+
+c) de omvang en de jaaromzet van de operator die de inbreuk pleegt;
+
+de omvang en het marktaandeel van de exploitant die de inbreuk pleegt.
+
+de omvang en de jaaromzet van de operator die de inbreuk pleegt;

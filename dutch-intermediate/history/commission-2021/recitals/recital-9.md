@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "9"
+---
+
+# Overweging (9)
+
+Voor de uitvoering van deze verordening wordt verstaan onder “openbare ruimte” elke fysieke plaats die toegankelijk is voor het publiek, ongeacht of de plaats in kwestie particulier of openbaar bezit is. Het begrip heeft derhalve geen betrekking op plaatsen die privé van aard zijn en normaliter niet vrij toegankelijk zijn voor derden, met inbegrip van de rechtshandhavingsautoriteiten, tenzij die partijen specifiek zijn uitgenodigd of gemachtigd, zoals woningen, privéclubs, kantoren, pakhuizen en fabrieken. Onlineruimten vallen evenmin onder de richtlijn, omdat het geen fysieke ruimten zijn. Louter het feit dat er voor de toegang tot een bepaalde ruimte bepaalde voorwaarden kunnen gelden, zoals een toegangsbewijs of leeftijdsbeperking, betekent echter niet dat de ruimte niet voor het publiek toegankelijk is in de zin van deze verordening. Bijgevolg zijn, naast openbare ruimten zoals straten, relevante delen van overheidsgebouwen en de meeste vervoersinfrastructuur, ook ruimten zoals bioscopen, theaters, winkels en winkelcentra normaliter voor het publiek toegankelijk. Of een bepaalde ruimte toegankelijk is voor het publiek moet echter per geval worden bepaald, rekening houdend met de specifieke kenmerken van de situatie in kwestie.

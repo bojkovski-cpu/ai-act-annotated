@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "57"
+---
+
+# Overweging (57)
+
+In lijn met de beginselen van het nieuwe wetgevingskader moeten specifieke verplichtingen voor betrokken marktdeelnemers, zoals importeurs en distributeurs, worden vastgesteld om de rechtszekerheid te waarborgen en de naleving van de regelgeving door deze betrokken marktdeelnemers te vergemakkelijken.

@@ -1,0 +1,52 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "68"
+article_title: "Wetenschappelijk panel van onafhankelijke deskundigen"
+chapter_number: "7"
+chapter_number_roman: "VII"
+chapter_title: "GOVERNANCE"
+section_number: "1"
+section_title: "Governance op Unieniveau"
+anchor: "art_68"
+---
+
+# Artikel 68 — Wetenschappelijk panel van onafhankelijke deskundigen
+
+**1.** De Commissie stelt door middel van een uitvoeringshandeling bepalingen vast betreffende de oprichting van een wetenschappelijk panel van onafhankelijke deskundigen (het “wetenschappelijke panel”) ter ondersteuning van de handhavingsactiviteiten in het kader van deze verordening. Die uitvoeringshandeling wordt vastgesteld volgens de in artikel 98, lid 2, bedoelde onderzoeksprocedure.
+
+**2.** Het wetenschappelijk panel bestaat uit deskundigen die door de Commissie zijn geselecteerd op basis van de actuele wetenschappelijke of technische deskundigheid op het gebied van AI die nodig is voor de in lid 3 bedoelde taken. Het wetenschappelijk panel kan aantonen dat het voldoet aan alle volgende voorwaarden:
+
+- a) beschikken over bijzondere deskundigheid en competenties en wetenschappelijke of technische deskundigheid op het gebied van AI;
+
+- b) onafhankelijkheid van aanbieders van AI-systemen of AI-modellen voor algemene doeleinden;
+
+- c) het vermogen om activiteiten zorgvuldig, nauwkeurig en objectief uit te voeren.
+
+De Commissie bepaalt in overleg met de AI-board het aantal deskundigen in het panel in overeenstemming met de vereiste behoeften en zorgt voor een eerlijke gender- en geografische vertegenwoordiging.
+
+**3.** Het wetenschappelijk panel adviseert en ondersteunt het AI-bureau, met name op het gebied van de volgende taken:
+
+- a) het ondersteunen van de uitvoering en handhaving van deze verordening met betrekking tot AI-modellen en -systemen voor algemene doeleinden, met name door:
+
+  - i) het AI-bureau te waarschuwen voor mogelijke systeemrisico’s op Unieniveau van AI-modellen voor algemene doeleinden, overeenkomstig artikel 90;
+
+  - ii) bij te dragen aan de ontwikkeling van instrumenten en methoden voor de evaluatie van de capaciteiten van AI-modellen en -systemen voor algemene doeleinden, onder meer door middel van benchmarks;
+
+  - iii) advies te verstrekken over de classificatie van AI-modellen voor algemene doeleinden met een systeemrisico;
+
+  - iv) advies te verstrekken over de classificatie van verschillende AI-modellen en -systemen voor algemene doeleinden;
+
+  - v) bij te dragen aan de ontwikkeling van instrumenten en sjablonen;
+
+- b) het ondersteunen van de werkzaamheden van markttoezichtautoriteiten op hun verzoek;
+
+- c) het ondersteunen van in artikel 74, lid 11, bedoelde grensoverschrijdende markttoezichtactiviteiten, onverminderd de bevoegdheden van de markttoezichtautoriteiten;
+
+- d) het ondersteunen van het AI-bureau bij de uitvoering van haar taken in het kader van de vrijwaringsprocedure van de Unie uit hoofde van artikel 81.
+
+**4.** De deskundigen in het wetenschappelijk panel voeren hun taken onpartijdig en objectief uit en waarborgen de vertrouwelijkheid van de informatie en gegevens die zij bij de uitvoering van hun taken en activiteiten verkrijgen. Zij vragen noch aanvaarden instructies van wie dan ook bij de uitoefening van hun taken uit hoofde van lid 3. Elke deskundige stelt een belangenverklaring op, die openbaar wordt gemaakt. Het AI-bureau zorgt voor systemen en procedures voor het actief beheren en voorkomen van mogelijke belangenconflicten.
+
+**5.** De in lid 1 bedoelde uitvoeringshandeling bevat bepalingen over de voorwaarden, procedures en gedetailleerde regelingen voor het wetenschappelijk panel en de leden daarvan om waarschuwingen af te geven en om het AI-bureau om bijstand te verzoeken voor de uitvoering van de taken van het wetenschappelijk panel.

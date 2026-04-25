@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "80"
+---
+
+# Overweging (80)
+
+De wetgeving van de Unie inzake financiële diensten omvat regels en voorschriften met betrekking tot interne governance en risicobeheer die van toepassing zijn op gereguleerde financiële instellingen bij het verlenen van deze diensten, ook wanneer zij gebruikmaken van AI-systemen. Om te zorgen voor een coherente toepassing en handhaving van de verplichtingen uit hoofde van deze verordening en de relevante regels en voorschriften van de Uniewetgeving inzake financiële diensten, moeten de autoriteiten die verantwoordelijk zijn voor het toezicht op en de handhaving van de wetgeving inzake financiële diensten, met inbegrip van, waar van toepassing, de Europese Centrale Bank, worden aangewezen als bevoegde autoriteiten met het oog op het toezicht op de uitvoering van deze verordening, waaronder voor markttoezichtactiviteiten, met betrekking tot AI-systemen die worden geleverd of gebruikt door gereguleerde en gecontroleerde financiële instellingen. Teneinde de samenhang tussen deze verordening en de regels die van toepassing zijn op kredietinstellingen die vallen onder Richtlijn 2013/36/EU van het Europees Parlement en de Raad 56 verder te verbeteren, is het ook passend om de procedure voor de conformiteitsbeoordeling en enkele van de procedurele verplichtingen van aanbieders in verband met het risicobeheer, de monitoring na het in de handel brengen en de documentatie op te nemen in de bestaande verplichtingen en procedures in het kader van Richtlijn 2013/36/EU. Om overlappingen te voorkomen, moet ook worden voorzien in beperkte afwijkingen in verband met het systeem voor kwaliteitsbeheer van aanbieders en de monitoringsverplichting voor gebruikers van AI-systemen met een hoog risico voor zover deze van toepassing zijn op kredietinstellingen die vallen onder Richtlijn 2013/36/EU.

@@ -1,0 +1,57 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import data from '@data/ai_act_structured.json';
+
+export function getStaticPaths() {
+  return (data.annexes || []).map(a => ({
+    params: { annex: `annex-${a.id.toLowerCase()}` },
+    props: { annex: a },
+  }));
+}
+
+const { annex } = Astro.props;
+const sorted = [...(data.annexes || [])];
+const idx = sorted.findIndex(a => a.id === annex.id);
+const prev = idx > 0 ? sorted[idx - 1] : null;
+const next = idx < sorted.length - 1 ? sorted[idx + 1] : null;
+---
+
+<BaseLayout title={`${annex.title} — EU AI Act Annotated`}>
+  <Sidebar slot="sidebar" activeSection="annexes" />
+
+  <div class="chapter-bar">
+    <h1>{annex.title}</h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href="/" style="color: var(--blue-accent); text-decoration: none;">Home</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href="/annexes/" style="color: var(--blue-accent); text-decoration: none;">Annexes</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>{annex.title}</span>
+  </div>
+
+  <div class="article-block">
+    <div class="article-body">
+      <pre style="white-space: pre-wrap; font-family: var(--serif); font-size: 15px; line-height: 1.7; color: var(--gray-800); margin: 0;">{annex.text}</pre>
+    </div>
+  </div>
+
+  <nav style="display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 2px solid #111; font-family: var(--sans);">
+    {prev ? (
+      <a href={`/annexes/annex-${prev.id.toLowerCase()}/`}
+         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 3px solid var(--red-accent); border-radius: 0 6px 6px 0; text-decoration: none; color: inherit;">
+        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">&larr; Previous</div>
+        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">{prev.title}</div>
+      </a>
+    ) : <div style="flex: 1;"></div>}
+    {next ? (
+      <a href={`/annexes/annex-${next.id.toLowerCase()}/`}
+         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-right: 3px solid var(--red-accent); border-radius: 6px 0 0 6px; text-decoration: none; color: inherit; text-align: right;">
+        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">Next &rarr;</div>
+        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">{next.title}</div>
+      </a>
+    ) : <div style="flex: 1;"></div>}
+  </nav>
+</BaseLayout>

@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "114"
+amendment_target: "Voorstel voor een verordening — Overweging 68"
+---
+
+# Amendement 114
+
+**Doel:** Voorstel voor een verordening — Overweging 68
+
+## Door de Commissie voorgestelde tekst
+
+(68) In bepaalde omstandigheden kan de snelle beschikbaarheid van innovatieve technologieën cruciaal zijn voor de gezondheid en veiligheid van personen en de samenleving in haar geheel. Het is derhalve passend dat de lidstaten om uitzonderlijke redenen in verband met de openbare veiligheid of de bescherming van het leven en de gezondheid van natuurlijke personen en de bescherming van industrieel en commercieel eigendom toestemming kunnen verlenen voor het in de handel brengen of in gebruik stellen van AI-systemen die nog niet aan een conformiteitsbeoordeling zijn onderworpen.
+
+(68)
+
+(68)
+
+## Amendement van het Europees Parlement
+
+(68) In bepaalde omstandigheden kan de snelle beschikbaarheid van innovatieve technologieën cruciaal zijn voor de gezondheid en veiligheid van personen , het milieu en de klimaatverandering, en de samenleving in haar geheel. Het is derhalve passend dat de lidstaten om uitzonderlijke redenen in verband met de bescherming van het leven en de gezondheid van natuurlijke personen , de bescherming van het milieu en de bescherming van kritieke infrastructuur toestemming kunnen verlenen voor het in de handel brengen of in gebruik stellen van AI-systemen die nog niet aan een conformiteitsbeoordeling zijn onderworpen.
+
+In bepaalde omstandigheden kan de snelle beschikbaarheid van innovatieve technologieën cruciaal zijn voor de gezondheid en veiligheid van personen en de samenleving in haar geheel. Het is derhalve passend dat de lidstaten om uitzonderlijke redenen in verband met de openbare veiligheid of de bescherming van het leven en de gezondheid van natuurlijke personen en de bescherming van industrieel en commercieel eigendom toestemming kunnen verlenen voor het in de handel brengen of in gebruik stellen van AI-systemen die nog niet aan een conformiteitsbeoordeling zijn onderworpen.
+
+In bepaalde omstandigheden kan de snelle beschikbaarheid van innovatieve technologieën cruciaal zijn voor de gezondheid en veiligheid van personen , het milieu en de klimaatverandering, en de samenleving in haar geheel. Het is derhalve passend dat de lidstaten om uitzonderlijke redenen in verband met de bescherming van het leven en de gezondheid van natuurlijke personen , de bescherming van het milieu en de bescherming van kritieke infrastructuur toestemming kunnen verlenen voor het in de handel brengen of in gebruik stellen van AI-systemen die nog niet aan een conformiteitsbeoordeling zijn onderworpen.

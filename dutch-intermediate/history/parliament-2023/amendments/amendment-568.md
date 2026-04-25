@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "568"
+amendment_target: "Voorstel voor een verordening — Artikel 60 — lid 1"
+---
+
+# Amendement 568
+
+**Doel:** Voorstel voor een verordening — Artikel 60 — lid 1
+
+## Door de Commissie voorgestelde tekst
+
+1. De Commissie zorgt in samenwerking met de lidstaten voor het opzetten en onderhouden van een EU-databank met informatie als bedoeld in lid 2 betreffende AI-systemen met een hoog risico als bedoeld in artikel 6, lid 2, die overeenkomstig artikel 51 zijn geregistreerd.
+
+## Amendement van het Europees Parlement
+
+1. De Commissie zorgt in samenwerking met de lidstaten voor het opzetten en onderhouden van een publieke EU-databank met informatie als bedoeld in de leden 2 en 2 bis betreffende AI-systemen met een hoog risico als bedoeld in artikel 6, lid 2, die overeenkomstig artikel 51 zijn geregistreerd.

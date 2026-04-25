@@ -1,0 +1,25 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "746"
+amendment_target: "Voorstel voor een verordening — Bijlage IV — alinea 1 — punt 1 — f bis (nieuw)"
+---
+
+# Amendement 746
+
+**Doel:** Voorstel voor een verordening — Bijlage IV — alinea 1 — punt 1 — f bis (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+
+
+f bis)
+
+## Amendement van het Europees Parlement
+
+f bis) de omschrijving van de interface van de exploitant;
+
+de omschrijving van de interface van de exploitant;

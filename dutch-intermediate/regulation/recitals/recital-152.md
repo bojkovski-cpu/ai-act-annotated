@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "152"
+anchor: "rct_152"
+---
+
+# Overweging (152)
+
+Om een adequate handhaving van AI-systemen te ondersteunen en de capaciteiten van de lidstaten te versterken, moeten ondersteunende Uniestructuren voor AI-testen worden opgezet en ter beschikking van de lidstaten worden gesteld.

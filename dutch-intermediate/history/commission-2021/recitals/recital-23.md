@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "23"
+---
+
+# Overweging (23)
+
+Het gebruik van AI-systemen voor biometrische identificatie op afstand in real time van natuurlijke personen in openbare ruimten met het oog op de rechtshandhaving brengt noodzakelijkerwijs de verwerking van biometrische gegevens met zich mee. De regels in deze verordening die, behoudens bepaalde uitzonderingen, een dergelijk gebruik verbieden en die gebaseerd zijn op artikel 16 VWEU, moeten als lex specialis gelden ten aanzien van de regels inzake de verwerking van biometrische gegevens in artikel 10 van Richtlijn (EU) 2016/680, waardoor een dergelijk gebruik en de bijbehorende verwerking van biometrische gegevens limitatief worden geregeld. Daarom mag een dergelijk gebruik en een dergelijke verwerking alleen mogelijk zijn voor zover zij verenigbaar zijn met het door deze verordening vastgestelde kader, zonder dat er buiten dat kader ruimte is voor de bevoegde autoriteiten om, wanneer zij optreden met het oog op de rechtshandhaving, dergelijke systemen te gebruiken en dergelijke data in verband daarmee te verwerken om de in artikel 10 van Richtlijn (EU) 2016/680 genoemde redenen. In die context is deze verordening niet bedoeld om de rechtsgrondslag te bieden voor de verwerking van persoonsgegevens op grond van artikel 8 van Richtlijn 2016/680. Het gebruik van biometrische systemen voor identificatie op afstand in real time in openbare ruimten voor andere doeleinden dan rechtshandhaving, ook door bevoegde autoriteiten, mag echter niet worden opgenomen in het specifieke kader voor dergelijk gebruik ten behoeve van de rechtshandhaving dat bij deze verordening wordt vastgesteld. Dergelijk gebruik voor andere doeleinden dan rechtshandhaving is derhalve niet onderworpen aan het vereiste van een toelating uit hoofde van deze verordening en de toepasselijke specifieke regels van nationaal recht die daaraan uitvoering kunnen geven.

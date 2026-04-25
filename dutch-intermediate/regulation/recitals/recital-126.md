@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "126"
+anchor: "rct_126"
+---
+
+# Overweging (126)
+
+Met het oog op de uitvoering van conformiteitsbeoordelingen door derden, wanneer deze vereist zijn, moeten de nationale bevoegde autoriteiten aangemelde instanties aanmelden op grond van deze verordening, mits deze instanties voldoen aan een reeks voorschriften, met name met betrekking tot de onafhankelijkheid, competenties, afwezigheid van belangenconflicten en passende voorschriften inzake cyberbeveiliging. De aanmelding van die instanties moet door de nationale bevoegde autoriteiten aan de Commissie en de andere lidstaten worden gezonden via het op grond van artikel R23 van bijlage I bij Besluit 768/2008/EG door de Commissie ontwikkelde en beheerde elektronische aanmeldingssysteem.

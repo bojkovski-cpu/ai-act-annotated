@@ -1,0 +1,24 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "77"
+article_title: "Bevoegdheden van de autoriteiten voor de bescherming van de grondrechten"
+chapter_number: "9"
+chapter_number_roman: "IX"
+chapter_title: "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+section_number: "3"
+section_title: "Handhaving"
+anchor: "art_77"
+---
+
+# Artikel 77 — Bevoegdheden van de autoriteiten voor de bescherming van de grondrechten
+
+**1.** Nationale overheidsinstanties of -organen die de nakoming van verplichtingen krachtens Unierecht ter bescherming van grondrechten, waaronder het recht op non-discriminatie, met betrekking tot het gebruik van de in bijlage III vermelde AI-systemen met een hoog risico controleren of handhaven, zijn bevoegd om krachtens deze verordening opgestelde of bijgehouden documentatie in een toegankelijke taal en een toegankelijk formaat aan te vragen en in te zien wanneer toegang tot die documentatie nodig is voor het doeltreffend uitoefenen van de bevoegdheden onder hun mandaat binnen de grenzen van hun rechtsgebied. De overheidsinstantie of het overheidsorgaan in kwestie stelt de markttoezichtautoriteit van de betrokken lidstaat van een dergelijke aanvraag in kennis.
+
+**2.** Uiterlijk op 2 november 2024 stelt elke lidstaat de in lid 1 bedoelde overheidsinstanties of -organen vast en maakt de lijst openbaar. De lidstaten stellen de Commissie en de andere lidstaten in kennis van de lijst en houden deze up-to-date.
+
+**3.** Indien de in lid 1 bedoelde documentatie ontoereikend is om vast te stellen of sprake is geweest van een inbreuk op verplichtingen krachtens het Unierecht ter bescherming van grondrechten, kunnen de in lid 1 bedoelde overheidsinstanties of -organen een met redenen omkleed verzoek bij de markttoezichtautoriteit indienen om het AI-systeem met een hoog risico met technische middelen te mogen testen. De markttoezichtautoriteit organiseert de testprocedure binnen een redelijke termijn na het verzoek en met nauwe betrokkenheid van de verzoekende overheidsinstantie of het verzoekende overheidsorgaan.
+
+**4.** Informatie of documentatie die op grond van dit artikel door de in lid 1 van dit artikel bedoelde overheidsinstanties of -organen wordt verkregen, wordt verwerkt overeenkomstig de in artikel 78 beschreven vertrouwelijkheidsverplichtingen.

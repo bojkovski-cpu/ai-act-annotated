@@ -1,0 +1,40 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+article_number: "7"
+article_title: "Wijzigingen van bijlage III"
+titel_number_roman: "III"
+titel_number: "3"
+titel_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+hoofdstuk_number: "1"
+hoofdstuk_title: "CLASSIFICATIE VAN AI-SYSTEMEN ALS AI-SYSTEMEN MET EEN HOOG RISICO"
+---
+
+# Artikel 7 — Wijzigingen van bijlage III
+
+**1.** De Commissie is bevoegd om overeenkomstig artikel 73 gedelegeerde handelingen vast te stellen tot bijwerking van bijlage III door hieraan AI-systemen met een hoog risico toe te voegen wanneer aan beide van de volgende voorwaarden is voldaan:
+
+- (a) de AI-systemen zijn bedoeld om te worden gebruikt op een van de gebieden als bedoeld in bijlage III, punten 1 tot en met 8;
+
+- (b) de AI-systemen vormen een risico op schade voor de gezondheid en veiligheid, of een risico op nadelige effecten op de grondrechten, dat, gezien de ernst en waarschijnlijkheid hiervan, gelijk is aan of groter is dan het risico op schade of nadelige effecten dat wordt gevormd door de AI-systemen met een hoog risico die reeds zijn opgenomen in bijlage III.
+
+**2.** Bij de beoordeling met het oog op lid 1 van de vraag of een AI-systeem een risico vormt op schade voor de gezondheid en veiligheid of op nadelige effecten op de grondrechten dat gelijk is aan of groter is dan het risico op schade dat wordt gevormd door de AI-systemen met een hoog risico die reeds zijn opgenomen in bijlage III, houdt de Commissie rekening met de volgende criteria:
+
+- (a) het beoogde doel van het AI-systeem;
+
+- (b) de mate waarin een AI-systeem is gebruikt of waarschijnlijk zal worden gebruikt;
+
+- (c) de mate waarin het gebruik van een AI-systeem reeds schade voor de gezondheid en veiligheid of nadelige effecten op de grondrechten heeft veroorzaakt of aanleiding heeft gegeven tot aanzienlijke zorgen in verband met het ontstaan van dergelijke schade of nadelige effecten, zoals aangetoond door verslagen of gedocumenteerde beschuldigingen die zijn ingediend bij de nationale bevoegde autoriteiten;
+
+- (d) de potentiële omvang van dergelijke schade of dergelijke nadelige effecten, met name wat betreft de intensiteit ervan en de mogelijkheid dat meerdere personen worden getroffen;
+
+- (e) de mate waarin potentieel geschade of nadelig getroffen personen afhankelijk zijn van de aan de hand van een AI-systeem geproduceerde uitkomst, met name omdat het om praktische of juridische redenen niet redelijkerwijs mogelijk is om van deze uitkomst af te zien;
+
+- (f) de mate waarin potentieel geschade of nadelig getroffen personen zich in een kwetsbare positie bevinden ten opzichte van de gebruiker van een AI-systeem, met name als gevolg van onevenwichtige machtsverhoudingen, kennis, economische of sociale omstandigheden of leeftijd;
+
+- (g) de mate waarin de aan de hand van een AI-systeem geproduceerde uitkomst gemakkelijk omkeerbaar is, waarbij uitkomsten die effecten hebben op de gezondheid of veiligheid van personen niet als gemakkelijk omkeerbaar worden beschouwd;
+
+- (h) de mate waarin in bestaande Uniewetgeving is voorzien in:

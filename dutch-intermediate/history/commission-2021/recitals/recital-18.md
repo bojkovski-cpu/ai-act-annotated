@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "18"
+---
+
+# Overweging (18)
+
+Het gebruik van AI-systemen voor biometrische identificatie op afstand in real time van natuurlijke personen in openbare ruimten met het oog op de rechtshandhaving wordt als bijzonder ingrijpend beschouwd voor de rechten en vrijheden van de betrokkenen, in die mate dat het de persoonlijke levenssfeer van een groot deel van de bevolking kan aantasten, een gevoel van voortdurende bewaking kan oproepen en indirect de uitoefening van de vrijheid van vergadering en andere grondrechten kan ontmoedigen. Bovendien houden het directe karakter van de gevolgen en de beperkte mogelijkheden voor verdere controles of correcties met betrekking tot het gebruik van dergelijke realtimesystemen, verhoogde risico’s in voor de rechten en vrijheden van de personen die betrokken zijn bij de rechtshandhavingsactiviteiten.

@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "34"
+---
+
+# Overweging (34)
+
+Met betrekking tot het beheer en de exploitatie van kritieke infrastructuur is het passend om AI-systemen die moeten worden gebruikt als veiligheidscomponenten in het beheer en de exploitatie van het wegverkeer en de water-, gas-, verwarmings- en elektriciteitsvoorziening als systemen met een hoog risico te classificeren, aangezien het falen of gebrekkig functioneren hiervan een grootschalig risico kan opleveren voor het leven en de gezondheid van personen en normale sociale en economische activiteiten aanzienlijk kan verstoren.

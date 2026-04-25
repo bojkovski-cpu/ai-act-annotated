@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "426"
+amendment_target: "Voorstel voor een verordening — Artikel 33 — lid 6"
+---
+
+# Amendement 426
+
+**Doel:** Voorstel voor een verordening — Artikel 33 — lid 6
+
+## Door de Commissie voorgestelde tekst
+
+6. Aangemelde instanties beschikken over gedocumenteerde procedures die waarborgen dat hun personeel, comités, dochterondernemingen, onderaannemers, geassocieerde instanties of personeel van externe instanties de vertrouwelijkheid in acht nemen van de informatie die zij tijdens conformiteitsbeoordelingsactiviteiten in hun bezit krijgen, behalve wanneer openbaarmaking wettelijk vereist is. Het personeel van aangemelde instanties is gebonden aan het beroepsgeheim ten aanzien van alle informatie waarvan het kennis neemt bij de uitoefening van de taken uit hoofde van deze verordening, behalve ten opzichte van de aanmeldende autoriteiten van de lidstaat waar de activiteiten plaatsvinden.
+
+## Amendement van het Europees Parlement
+
+6. Aangemelde instanties beschikken over gedocumenteerde procedures die waarborgen dat hun personeel, comités, dochterondernemingen, onderaannemers, geassocieerde instanties of personeel van externe instanties de vertrouwelijkheid in acht nemen van de informatie die zij tijdens conformiteitsbeoordelingsactiviteiten in hun bezit krijgen, behalve wanneer openbaarmaking wettelijk vereist is. Het personeel van aangemelde instanties is gebonden aan het beroepsgeheim ten aanzien van alle informatie waarvan het kennis neemt bij de uitoefening van de taken uit hoofde van deze verordening, behalve ten opzichte van de aanmeldende autoriteiten van de lidstaat waar de activiteiten plaatsvinden. De door de aangemelde instanties volgens de bepalingen van dit artikel verkregen informatie en documentatie worden verwerkt met inachtneming van de in artikel 70 vastgestelde geheimhoudingsverplichtingen.

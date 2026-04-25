@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "598"
+amendment_target: "Voorstel voor een verordening — Artikel 65 — lid 2 — alinea 2"
+---
+
+# Amendement 598
+
+**Doel:** Voorstel voor een verordening — Artikel 65 — lid 2 — alinea 2
+
+## Door de Commissie voorgestelde tekst
+
+Indien de markttoezichtautoriteit bij deze beoordeling vaststelt dat het AI-systeem niet aan de eisen en verplichtingen van deze verordening voldoet, gelast zij de betrokken exploitant onverwijld passende corrigerende maatregelen te nemen om het AI-systeem binnen een door haar vast te stellen redelijke termijn, die evenredig is met de aard van het risico, conform te maken, uit de handel te nemen of terug te roepen.
+
+## Amendement van het Europees Parlement
+
+Indien de nationale toezichthoudende autoriteit of, in voorkomend geval, de nationale overheidsinstantie als bedoeld in artikel 64, lid 3, bij deze beoordeling vaststelt dat het AI-systeem niet aan de eisen en verplichtingen van deze verordening voldoet, gelast zij de betrokken operator onverwijld passende corrigerende maatregelen te nemen om het AI-systeem binnen een door haar vast te stellen redelijke termijn, die evenredig is met de aard van het risico , doch in elk geval binnen 15 werkdagen of binnen de termijn die is vastgelegd in de van toepassing zijnde relevante harmonisatiewetgeving van de Unie , conform te maken, uit de handel te nemen of terug te roepen.

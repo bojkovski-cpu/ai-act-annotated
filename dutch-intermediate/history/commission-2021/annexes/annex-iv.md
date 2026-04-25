@@ -1,0 +1,14 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+annex_number_roman: "IV"
+annex_number: "4"
+annex_title: "TECHNISCHE DOCUMENTATIE, als bedoeld in artikel 11, lid 1"
+---
+
+# Bijlage IV — TECHNISCHE DOCUMENTATIE, als bedoeld in artikel 11, lid 1
+
+De technische documentatie als bedoeld in artikel 11, lid 1, bevat ten minste de volgende informatie, zoals van toepassing op het betreffende AI-systeem:

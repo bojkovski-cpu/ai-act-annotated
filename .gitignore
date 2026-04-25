@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output (Astro)
+dist/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Office temp files (created by Word/Excel on Windows)
+~$*
+
+# Local env
+.env
+.env.local
+deployment/.env.deploy
+
+# Repair / transient docs (one-shot cleanup artifacts)
+REPAIR-ME-FIRST.md
+WINDOWS-CLEANUP-ME.ps1
+.git/HEAD.corrupt-bak

@@ -1,0 +1,42 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "53"
+article_title: "Verplichtingen voor aanbieders van AI-modellen voor algemene doeleinden"
+chapter_number: "5"
+chapter_number_roman: "V"
+chapter_title: "AI-MODELLEN VOOR ALGEMENE DOELEINDEN"
+section_number: "2"
+section_title: "Verplichtingen voor aanbieders van AI-modellen voor algemene doeleinden"
+anchor: "art_53"
+---
+
+# Artikel 53 — Verplichtingen voor aanbieders van AI-modellen voor algemene doeleinden
+
+**1.** Aanbieders van AI-modellen voor algemene doeleinden moeten:
+
+- a) de technische documentatie van het model opstellen en up-to-date houden, inclusief het trainings- en testproces en de resultaten van de evaluatie ervan, die ten minste de in bijlage XI vermelde informatie moet bevatten, zodat deze op verzoek aan het AI-bureau en de nationale bevoegde autoriteiten kunnen worden verstrekt;
+
+- b) informatie en documentatie opstellen, up-to-date houden en beschikbaar stellen voor aanbieders van AI-systemen die het AI-model voor algemene doeleinden in hun AI-systemen willen integreren. Onverminderd de noodzaak om intellectuele-eigendomsrechten en vertrouwelijke bedrijfsinformatie of bedrijfsgeheimen overeenkomstig het Unierecht en het nationale recht te eerbiedigen en te beschermen, moet de informatie en documentatie:
+
+  - i) aanbieders van AI-systemen inzicht geven in de capaciteiten en beperkingen van het AI-model voor algemene doeleinden en ze in staat te stellen aan hun verplichtingen uit hoofde van deze verordening te voldoen, en
+
+  - ii) ten minste de in bijlage XII uiteengezette elementen bevatten;
+
+- c) beleid opstellen ter naleving van het Unierecht inzake auteursrechten en naburige rechten en dan met name ter vaststelling en naleving, onder meer door middel van geavanceerde technologieën, van een op grond van artikel 4, lid 3, van Richtlijn (EU) 2019/790 tot uitdrukking gebracht voorbehoud van rechten.
+
+- d) een voldoende gedetailleerde samenvatting opstellen en openbaar maken over de voor het trainen van het AI-model voor algemene doeleinden gebruikte content, volgens een door het AI-bureau verstrekt sjabloon.
+
+**2.** De in lid 1, punten a) en b) genoemde verplichtingen gelden niet voor aanbieders van AI-modellen die worden vrijgegeven in het kader van een vrije en opensource licentie die de raadpleging, het gebruik, de wijziging en distributie van het model mogelijk maakt en waarvan de parameters, met inbegrip van de wegingen, de informatie over de modelarchitectuur en de informatie over het gebruik van het model, openbaar worden gemaakt. Deze uitzondering is niet van toepassing op AI-modellen voor algemene doeleinden met systeemrisico's.
+
+**3.** Aanbieders van AI-modellen voor algemene doeleinden werken zo nodig samen met de Commissie en de nationale bevoegde autoriteiten bij de uitoefening van hun bevoegdheden uit hoofde van deze verordening.
+
+**4.** Aanbieders van AI-modellen voor algemene doeleinden kunnen zich baseren op praktijkcodes in de zin van artikel 56 om de naleving van de in lid 1 van dit artikel vastgestelde verplichtingen aan te tonen, totdat er een geharmoniseerde norm is gepubliceerd. Door Europese geharmoniseerde normen na te leven genieten aanbieders een vermoeden van overeenstemming, voor zover die normen die verplichtingen dekken. Aanbieders van AI-modellen voor algemene doeleinden die zich niet aan een goedgekeurde praktijkcode houden of niet voldoen aan een Europese geharmoniseerde norm, tonen alternatieve passende wijzen van naleving aan die door de Commissie moeten worden beoordeeld.
+
+**5.** Om de naleving van bijlage XI, en met name punt 2, d) en e), te vergemakkelijken, is de Commissie bevoegd overeenkomstig artikel 97 gedelegeerde handelingen vast te stellen waarin de meet- en berekeningsmethoden worden gespecificeerd zodat de documentatie vergelijkbaar en verifieerbaar wordt.
+
+**6.** De Commissie is bevoegd overeenkomstig artikel 97, lid 2, gedelegeerde handelingen vast te stellen om bijlagen XI en XII te wijzigen in het licht van evoluerende technologische ontwikkelingen.
+
+**7.** Uit hoofde van dit artikel verkregen informatie of documentatie, met inbegrip van bedrijfsgeheimen, worden verwerkt overeenkomstig de in artikel 78 vastgelegde vertrouwelijkheidsverplichtingen.

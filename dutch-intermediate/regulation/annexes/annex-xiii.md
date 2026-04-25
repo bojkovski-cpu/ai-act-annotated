@@ -1,0 +1,30 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+annex_number_roman: "XIII"
+annex_number: "13"
+annex_title: "In artikel 51 bedoelde criteria voor de aanwijzing van AI-modellen voor algemene doeleinden met een systeemrisico"
+anchor: "d1e38-144-1"
+---
+
+# Bijlage XIII — In artikel 51 bedoelde criteria voor de aanwijzing van AI-modellen voor algemene doeleinden met een systeemrisico
+
+## In artikel 51 bedoelde criteria voor de aanwijzing van AI-modellen voor algemene doeleinden met een systeemrisico
+
+Om te bepalen of een AI-model voor algemene doeleinden capaciteiten of een impact heeft die vergelijkbaar zijn met die welke zijn vermeld in artikel 51, lid 1, punt a), houdt de Commissie rekening met de volgende criteria:
+
+- a) het aantal parameters van het model;
+
+- b) de kwaliteit of omvang van de dataset, bijvoorbeeld gemeten aan de hand van tokens;
+
+- c) de hoeveelheid rekenhulpmiddelen die is gebruikt om het model te trainen, gemeten in zwevendekommabewerkingen, of uitgedrukt door een combinatie van andere variabelen, zoals de geraamde kosten, tijd of energieverbruik voor de opleiding;
+
+- d) de input- en outputmodaliteiten van het model, zoals tekst-naar-tekst (grote taalmodellen), tekst-naar-beeld, multimodaliteit, en de geavanceerde drempels voor het bepalen van capaciteiten met een grote impact voor elke modaliteit, en het specifieke type input en output (bv. biologische sequenties);
+
+- e) de benchmarks en evaluaties van de capaciteiten van het model, met inbegrip van het aantal taken zonder aanvullende training, het aanpassingsvermogen om nieuwe, afzonderlijke taken te leren, de mate van autonomie en schaalbaarheid en de instrumenten waartoe het toegang heeft;
+
+- f) of het een grote impact heeft op de interne markt vanwege het bereik ervan, wat verondersteld wordt wanneer het beschikbaar is gesteld aan ten minste 10 000 geregistreerde zakelijke gebruikers die in de Unie zijn gevestigd;
+
+- g) het aantal geregistreerde eindgebruikers.

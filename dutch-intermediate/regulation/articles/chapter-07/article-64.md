@@ -1,0 +1,20 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "64"
+article_title: "AI-bureau"
+chapter_number: "7"
+chapter_number_roman: "VII"
+chapter_title: "GOVERNANCE"
+section_number: "1"
+section_title: "Governance op Unieniveau"
+anchor: "art_64"
+---
+
+# Artikel 64 — AI-bureau
+
+**1.** De Commissie ontwikkelt deskundigheid en capaciteiten op Unieniveau op het gebied van AI via het AI-bureau.
+
+**2.** De lidstaten faciliteren de aan het AI-bureau toevertrouwde taken, zoals weergegeven in deze verordening.

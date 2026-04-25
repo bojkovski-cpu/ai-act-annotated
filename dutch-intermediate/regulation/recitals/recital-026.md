@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "26"
+anchor: "rct_26"
+---
+
+# Overweging (26)
+
+Om een evenredige en doeltreffende reeks bindende regels voor AI-systemen in te voeren, moet een duidelijk omschreven, risicogebaseerde aanpak worden gevolgd. Met die aanpak moet de aard en content van dergelijke regels worden afgestemd op de intensiteit en de omvang van de risico’s die AI-systemen met zich mee kunnen brengen. Daarom is het noodzakelijk om bepaalde onaanvaardbare praktijken op het gebied van AI te verbieden, eisen voor AI-systemen met een hoog risico en verplichtingen voor de betrokken operatoren vast te stellen, en transparantieverplichtingen voor bepaalde AI-systemen in te voeren.

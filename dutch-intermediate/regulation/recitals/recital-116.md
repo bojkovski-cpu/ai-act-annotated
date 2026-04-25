@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "116"
+anchor: "rct_116"
+---
+
+# Overweging (116)
+
+Het AI-bureau moet de opstelling, evaluatie en aanpassing van praktijkcodes aanmoedigen en vergemakkelijken, rekening houdend met internationale manieren van aanpak. Alle aanbieders van AI-modellen voor algemene doeleinden kunnen worden uitgenodigd eraan deel te nemen. Om ervoor te zorgen dat de praktijkcodes aansluiten op de stand van de techniek en ze terdege rekening houden met een brede waaier aan perspectieven, moet het AI-bureau samenwerken met de relevante nationale bevoegde autoriteiten en kan het, in voorkomend geval, ter opstelling van de praktijkcodes overleg voeren met maatschappelijke organisaties en andere relevante belanghebbenden en deskundigen, waaronder het wetenschappelijk panel. De praktijkcodes moeten betrekking hebben op verplichtingen voor aanbieders van AI-modellen voor algemene doeleinden en van AI-modellen voor algemene doeleinden die systeemrisico’s inhouden. Wat systeemrisico’s betreft, moeten praktijkcodes bovendien bijdragen tot de vaststelling van een taxonomie van de soorten systeemrisico’s op het niveau van de Unie, voorzien van de kenmerken en bronnen van deze risico’s. Voorts moeten praktijkcodes gericht zijn op specifieke risicobeoordelings- en risicobeperkende maatregelen.

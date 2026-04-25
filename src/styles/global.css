@@ -384,6 +384,107 @@ body {
 .omnibus-action.amended { background: #dbeafe; color: #1e40af; }
 .omnibus-action.added { background: #dcfce7; color: #166534; }
 
+/* ── Article separator (between articles in a chapter view) ── */
+.article-separator {
+  border: none;
+  border-top: 1px solid var(--gray-200);
+  margin: 28px 0;
+}
+
+/* ── Article tool buttons (permalink icon, etc.) ── */
+.article-tool-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--gray-200);
+  background: #fff;
+  color: var(--gray-500);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.article-tool-btn:hover {
+  color: var(--red-accent);
+  border-color: var(--red-accent);
+  background: var(--red-light);
+}
+.article-tools { display: flex; gap: 6px; }
+
+/* ── Placeholder panels (case law / guidance) ── */
+.caselaw-empty {
+  font-family: var(--sans);
+  text-align: center;
+  padding: 32px 20px;
+  color: var(--gray-500);
+  font-size: 14px;
+}
+.caselaw-empty-icon { font-size: 28px; margin-bottom: 10px; opacity: 0.6; }
+.caselaw-empty p { font-size: 12px; margin-top: 8px; color: var(--gray-400); line-height: 1.5; }
+
+/* ── Sidebar section switcher ── */
+.sidebar-sections {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 10px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #111;
+  font-family: var(--sans);
+}
+.sidebar-section-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  color: var(--gray-700);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-left: 3px solid transparent;
+  transition: all 0.1s;
+}
+.sidebar-section-link:hover {
+  background: #f9e0e0;
+  color: var(--red-accent);
+}
+.sidebar-section-link.active {
+  color: var(--red-accent);
+  border-left-color: var(--red-accent);
+  background: rgba(196, 30, 30, 0.04);
+}
+.sidebar-section-link .tab-count {
+  background: var(--gray-200);
+  color: var(--gray-600);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 1px 7px;
+  border-radius: 10px;
+}
+
+.sidebar-controls {
+  padding: 6px 20px 10px;
+  display: flex;
+  gap: 14px;
+  font-size: 11px;
+  font-family: var(--sans);
+}
+.sidebar-controls a {
+  color: var(--gray-500);
+  cursor: pointer;
+  text-decoration: none;
+}
+.sidebar-controls a:hover { color: var(--red-accent); }
+
+/* ── Chapter index card hover ── */
+.chapter-index-card:hover {
+  background: var(--red-light) !important;
+  border-color: var(--red-accent) !important;
+  transform: translateX(2px);
+}
+
 /* ── Responsive ── */
 @media (max-width: 1200px) {
   .right-sidebar { display: none; }
@@ -391,4 +492,14 @@ body {
 @media (max-width: 900px) {
   .sidebar { display: none; }
   .main-wrapper { margin-left: 0; }
+  .main { padding: 20px 18px 60px; max-width: 100%; }
+  .topbar-search { display: none; }
+  .topbar-upper { padding: 8px 14px 4px; }
+  .topbar-nav { gap: 0; padding: 0 14px; overflow-x: auto; }
+  .topbar-nav a { font-size: 11px; letter-spacing: 0.5px; white-space: nowrap; }
+  .topbar-nav-sep { padding: 0 8px; }
+  .chapter-bar h1 { font-size: 15px; }
+  .article-id { font-size: 17px; }
+  .article-tabs { overflow-x: auto; }
+  .article-tab { padding: 8px 12px; font-size: 12px; }
 }

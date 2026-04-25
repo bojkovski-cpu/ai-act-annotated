@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "686"
+amendment_target: "Voorstel voor een verordening — Artikel 83 — lid 1 — alinea 1"
+---
+
+# Amendement 686
+
+**Doel:** Voorstel voor een verordening — Artikel 83 — lid 1 — alinea 1
+
+## Door de Commissie voorgestelde tekst
+
+1. Deze verordening is niet van toepassing op AI-systemen die componenten zijn van de volgens de in bijlage IX vermelde rechtshandelingen opgezette grootschalige IT-systemen die in de handel zijn gebracht of in bedrijf zijn gesteld vóór [ twaalf maanden na de in artikel 85, lid 2, vermelde datum van inwerkingtreding van deze verordening] , tenzij de vervanging of wijziging van die rechtshandelingen aanleiding geeft tot een significante wijziging in het ontwerp of het beoogde doel van het betrokken AI-systeem of de betrokken AI-systemen .
+
+## Amendement van het Europees Parlement
+
+1. Operators van AI-systemen die componenten zijn van de volgens de in bijlage IX vermelde rechtshandelingen opgezette grootschalige IT-systemen die in de handel zijn gebracht of in bedrijf zijn gesteld vóór… [de datum van inwerkingtreding van deze verordening] ondernemen uiterlijk… [vier jaar na de datum van inwerkingtreding van deze verordening] de nodige stappen om te voldoen aan de voorschriften van deze verordening .

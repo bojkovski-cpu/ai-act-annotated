@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "404"
+amendment_target: "Voorstel voor een verordening — Artikel 29 — lid 4 — alinea 1"
+---
+
+# Amendement 404
+
+**Doel:** Voorstel voor een verordening — Artikel 29 — lid 4 — alinea 1
+
+## Door de Commissie voorgestelde tekst
+
+4. Gebruikers monitoren de werking van het AI-systeem met een hoog risico op basis van de gebruiksaanwijzingen. Wanneer zij redenen hebben om aan te nemen dat het gebruik overeenkomstig de gebruiksaanwijzingen ertoe kan leiden dat het AI-systeem een risico vormt in de zin van artikel 65, lid 1, stellen zij de aanbieder of distributeur hiervan in kennis en onderbreken zij het gebruik van het systeem. Zij stellen de aanbieder of distributeur er ook van in kennis en onderbreken het gebruik van het AI-systeem wanneer zij een ernstig incident of eventuele gebrekkige werking hebben vastgesteld in de zin van artikel 62. Wanneer de gebruiker de aanbieder niet kan bereiken, is artikel 62 mutatis mutandis van toepassing.
+
+## Amendement van het Europees Parlement
+
+4. Exploitanten monitoren de werking van het AI-systeem met een hoog risico op basis van de gebruiksaanwijzingen en stellen in voorkomend geval de aanbieders in kennis overeenkomstig artikel 61 . Wanneer zij redenen hebben om aan te nemen dat het gebruik overeenkomstig de gebruiksaanwijzingen ertoe kan leiden dat het AI-systeem een risico vormt in de zin van artikel 65, lid 1, stellen zij de aanbieder of distributeur en de desbetreffende nationale toezichthoudende autoriteiten hiervan onverwijld in kennis en onderbreken zij het gebruik van het systeem. Zij stellen ook eerst de aanbieder en vervolgens de importeur en de distributeur , alsmede de desbetreffende nationale toezichthoudende autoriteiten, er onmiddellijk van in kennis en onderbreken het gebruik van het AI-systeem wanneer zij een ernstig incident of eventuele gebrekkige werking hebben vastgesteld in de zin van artikel 62. Wanneer de exploitant de aanbieder niet kan bereiken, is artikel 62 mutatis mutandis van toepassing.

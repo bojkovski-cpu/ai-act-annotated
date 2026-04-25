@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "30"
+anchor: "rct_30"
+---
+
+# Overweging (30)
+
+Systemen voor biometrische categorisering die gebaseerd zijn op biometrische gegevens van natuurlijke personen, zoals het gezicht of vingerafdrukken, om de politieke opvattingen, het lidmaatschap van een vakbond, religieuze of levensbeschouwelijke overtuigingen, ras, seksleven of seksuele gerichtheid van een persoon af te leiden of te infereren, moeten worden verboden. Dat verbod mag geen betrekking hebben op het rechtmatig labelen, filteren of categoriseren van reeksen biometrische gegevens die in overeenstemming met het Unierecht of het nationale recht met betrekking tot biometrische gegevens zijn verkregen, zoals het sorteren van beelden op basis van haar- of oogkleur, die bijvoorbeeld op het gebied van rechtshandhaving kunnen worden gebruikt.

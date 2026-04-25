@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "424"
+amendment_target: "Voorstel voor een verordening — Artikel 33 — lid 4"
+---
+
+# Amendement 424
+
+**Doel:** Voorstel voor een verordening — Artikel 33 — lid 4
+
+## Door de Commissie voorgestelde tekst
+
+4. Aangemelde instanties zijn onafhankelijk van de aanbieder van een AI-systeem met een hoog risico met betrekking waartoe de aanbieder conformiteitsbeoordelingsactiviteiten verricht. Aangemelde instanties zijn ook onafhankelijk van andere exploitanten die een economisch belang hebben in het beoordeelde AI-systeem met een hoog risico, alsook van concurrenten van de aanbieder.
+
+## Amendement van het Europees Parlement
+
+4. Aangemelde instanties zijn onafhankelijk van de aanbieder van een AI-systeem met een hoog risico met betrekking waartoe de aanbieder conformiteitsbeoordelingsactiviteiten verricht. Aangemelde instanties zijn ook onafhankelijk van andere operators die een economisch belang hebben in het beoordeelde AI-systeem met een hoog risico, alsook van concurrenten van de aanbieder. Dit belet echter niet dat de beoordeelde AI-systemen voor activiteiten van de conformiteitsbeoordelingsinstantie of voor persoonlijke doeleinden worden gebruikt.

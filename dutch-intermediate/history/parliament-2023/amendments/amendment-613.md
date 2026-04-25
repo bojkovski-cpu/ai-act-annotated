@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "613"
+amendment_target: "Voorstel voor een verordening — Artikel 67 — lid 1"
+---
+
+# Amendement 613
+
+**Doel:** Voorstel voor een verordening — Artikel 67 — lid 1
+
+## Door de Commissie voorgestelde tekst
+
+1. Indien de markttoezichtautoriteit van een lidstaat na uitvoering van een evaluatie overeenkomstig artikel 65 vaststelt dat een AI-systeem dat voldoet aan deze verordening, toch een risico inhoudt voor de gezondheid of veiligheid van personen, voor de nakoming van verplichtingen krachtens het Unie- of interne recht ter bescherming van grondrechten of voor andere aspecten van de bescherming van algemene belangen, verlangt zij van de relevante exploitant dat hij alle passende maatregelen neemt om ervoor te zorgen dat het betrokken AI-systeem dat risico niet meer inhoudt wanneer het in de handel wordt gebracht of in bedrijf wordt gesteld, of om het AI-systeem binnen een door haar vast te stellen redelijke termijn, die evenredig is met de aard van het risico, uit de handel te nemen of terug te roepen.
+
+## Amendement van het Europees Parlement
+
+1. Indien de nationale toezichthoudende autoriteit van een lidstaat na uitvoering van een evaluatie overeenkomstig artikel 65 in volledige samenwerking met de relevante nationale overheidsinstantie als bedoeld in artikel 64, lid 3, vaststelt dat een AI-systeem dat voldoet aan deze verordening, toch een ernstig risico inhoudt voor de gezondheid of veiligheid van personen, voor de nakoming van verplichtingen krachtens het Unie- of interne recht ter bescherming van grondrechten of het milieu of de democratie en de rechtsstaat, of voor andere aspecten van de bescherming van algemene belangen, verlangt zij van de relevante operator dat hij alle passende maatregelen neemt om ervoor te zorgen dat het betrokken AI-systeem dat risico niet meer inhoudt wanneer het in de handel wordt gebracht of in bedrijf wordt gesteld, of om het AI-systeem binnen een door haar vast te stellen redelijke termijn, die evenredig is met de aard van het risico, uit de handel te nemen of terug te roepen.

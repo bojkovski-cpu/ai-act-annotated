@@ -1,0 +1,20 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "42"
+article_title: "Vermoeden van conformiteit met bepaalde eisen"
+chapter_number: "3"
+chapter_number_roman: "III"
+chapter_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+section_number: "5"
+section_title: "Normen, conformiteitsbeoordeling, certificaten, registratie"
+anchor: "art_42"
+---
+
+# Artikel 42 — Vermoeden van conformiteit met bepaalde eisen
+
+**1.** AI-systemen met een hoog risico die zijn getraind en getest op data die overeenkomen met de specifieke geografische, gedragsgerelateerde, contextuele of functionele omgeving waarin zij zullen worden gebruikt, geacht te voldoen de in artikel 10, lid 4, beschreven relevante eisen.
+
+**2.** AI-systemen met een hoog risico die zijn gecertificeerd of waarvoor een conformiteitsverklaring is verstrekt volgens een cyberbeveiligingsregeling krachtens Verordening (EU) 2019/881 en waarvan de referenties in het Publicatieblad van de Europese Unie zijn bekendgemaakt, worden geacht te voldoen aan de in artikel 15 van deze verordening beschreven cyberbeveiligingseisen, voor zover die eisen door het cyberbeveiligingscertificaat of de conformiteitsverklaring of delen daarvan worden bestreken.

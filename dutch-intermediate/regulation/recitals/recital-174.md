@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "174"
+anchor: "rct_174"
+---
+
+# Overweging (174)
+
+Gezien de snelle technologische ontwikkelingen en de technische deskundigheid die vereist is om deze verordening doeltreffende toe te passen, moet de Commissie deze verordening uiterlijk op 2 augustus 2029 en vervolgens om de vier jaar evalueren en toetsen en verslag uitbrengen aan het Europees Parlement en de Raad. Daarnaast moet de Commissie, rekening houdend met de gevolgen voor het toepassingsgebied van deze verordening, eenmaal per jaar een beoordeling uitvoeren van de noodzaak om de lijst van AI-systemen met een hoog risico en de lijst van verboden praktijken te wijzigen. Bovendien moet de Commissie uiterlijk op 2 augustus 2028 en vervolgens om de vier jaar een evaluatie maken van de noodzaak om de lijst van rubrieken van gebieden met een hoog risico in de bijlage bij deze verordening te wijzigen, van de AI-systemen die onder de transparantieverplichtingen vallen en van de doeltreffendheid van het toezicht- en governancesysteem en de vooruitgang bij de ontwikkeling van normalisatieproducten met betrekking tot de energie-efficiënte ontwikkeling van AI-modellen voor algemene doeleinden, met inbegrip van de behoefte aan verdere maatregelen of acties, en hierover verslag uitbrengen aan het Europees Parlement en de Raad. Tot slot moet de Commissie uiterlijk op 2 augustus 2028 en vervolgens om de drie jaar de impact en de doeltreffendheid evalueren van vrijwillige gedragscodes om de toepassing van de eisen voor AI-systemen met een hoog risico op andere AI-systemen dan AI-systemen met een hoog risico te bevorderen, en eventuele andere aanvullende eisen voor dergelijke AI-systemen.

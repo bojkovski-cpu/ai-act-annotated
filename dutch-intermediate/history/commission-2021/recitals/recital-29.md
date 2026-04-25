@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "29"
+---
+
+# Overweging (29)
+
+Wat betreft AI-systemen met een hoog risico die veiligheidscomponenten zijn van producten of systemen, of die zelf producten of systemen zijn die onder het toepassingsgebied vallen van Verordening (EG) nr. 300/2008 van het Europees Parlement en de Raad 39 , Verordening (EU) nr. 167/2013 van het Europees Parlement en de Raad 40 , Verordening (EU) nr. 168/2013 van het Europees Parlement en de Raad 41 , Richtlijn 2014/90/EU van het Europees Parlement en de Raad 42 , Richtlijn (EU) 2016/797 van het Europees Parlement en de Raad 43 , Verordening (EU) 2018/858 van het Europees Parlement en de Raad 44 , Verordening (EU) 2018/1139 van het Europees Parlement en de Raad 45 , en Verordening (EU) 2019/2144 van het Europees Parlement en de Raad 46 , moeten die handelingen worden gewijzigd zodat de Commissie, op basis van de technische en regelgevingskenmerken van elke sector en zonder in te grijpen in de bestaande governance-, conformiteitsbeoordelings- en handhavingsmechanismen en de daarin ingestelde autoriteiten, rekening kan houden met de in deze verordening vastgestelde dwingende voorschriften voor AI-systemen met een hoog risico wanneer zij op basis van die handelingen relevante toekomstige gedelegeerde of uitvoeringshandelingen vaststelt.

@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "32"
+---
+
+# Overweging (32)
+
+Autonome AI-systemen, d.w.z. andere AI-systemen met een hoog risico dan die welke veiligheidscomponenten van producten zijn of die zelf producten zijn, moeten als AI-systemen met een hoog risico worden aangemerkt indien zij, gelet op het beoogde doel, een hoog risico inhouden op schade aan de gezondheid en de veiligheid of aan de grondrechten van personen, rekening houdend met zowel de ernst van de mogelijke schade als de waarschijnlijkheid dat deze zich voordoet, en indien zij worden gebruikt op een aantal in de verordening beschreven, specifieke en vooraf bepaalde gebieden. Dergelijk systemen worden geïdentificeerd op basis van dezelfde methode en criteria die ook voor eventuele toekomstige wijzigingen van de lijst van AI-systemen met een hoog risico worden gehanteerd.

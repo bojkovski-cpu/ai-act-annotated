@@ -1,0 +1,37 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "630"
+amendment_target: "Voorstel voor een verordening — Artikel 68 quater (nieuw)"
+---
+
+# Amendement 630
+
+**Doel:** Voorstel voor een verordening — Artikel 68 quater (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+
+
+
+
+
+
+
+
+
+
+## Amendement van het Europees Parlement
+
+Artikel 68 quater
+
+Recht op toelichting met betrekking tot individuele besluitvorming
+
+1. Elke getroffen persoon ten aanzien van wie door een exploitant een besluit is genomen op basis van de output van een AI-systeem met een hoog risico en dat rechtsgevolgen heeft voor hem of haar of hem of haar treft op een wijze die volgens deze persoon negatieve gevolgen heeft voor zijn of haar gezondheid, veiligheid, grondrechten, sociaaleconomisch welzijn of andere rechten die voortvloeien uit de in deze verordening vastgestelde verplichtingen, heeft het recht om van de exploitant een duidelijke en zinvolle toelichting te ontvangen, in overeenstemming met artikel 13, lid 1, met betrekking tot de rol van het AI-systeem in het kader van de besluitvormingsprocedure, de belangrijkste parameters van het genomen besluit en de bijbehorende inputdata.
+
+2. Lid 1 is niet van toepassing op het gebruik van AI-systemen waarvoor uitzonderingen op of beperkingen van de in lid 1 bedoelde verplichting voortvloeien uit het Unierecht of het nationale recht, voor zover dergelijke uitzonderingen of beperkingen de wezenlijke inhoud van de grondrechten en fundamentele vrijheden eerbiedigen en in een democratische samenleving een noodzakelijke en evenredige maatregel vormen.
+
+3. Dit artikel is van toepassing onverminderd de artikelen 13, 14, 15, en 22 van Verordening (EU) 2016/679.

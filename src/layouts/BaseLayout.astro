@@ -4,10 +4,19 @@ import '@/styles/global.css';
 interface Props {
   title: string;
   activeChapter?: number;
+  activeTopNav?: 'articles' | 'recitals' | 'annexes' | 'history' | 'about';
 }
 
-const { title, activeChapter } = Astro.props;
+const { title, activeChapter, activeTopNav } = Astro.props;
 const base = import.meta.env.BASE_URL;
+// Auto-detect active top nav from URL if not passed
+const path = Astro.url.pathname;
+const topNav = activeTopNav
+  ?? (path.startsWith('/recitals') ? 'recitals'
+    : path.startsWith('/annexes') ? 'annexes'
+    : path.startsWith('/history') ? 'history'
+    : path.startsWith('/about') ? 'about'
+    : 'articles');
 ---
 
 <!DOCTYPE html>
@@ -32,15 +41,15 @@ const base = import.meta.env.BASE_URL;
     </div>
   </div>
   <nav class="topbar-nav">
-    <a href={base} class="active">ARTICLES</a>
+    <a href="/articles/" class={topNav === 'articles' ? 'active' : ''}>ARTICLES</a>
     <span class="topbar-nav-sep">|</span>
-    <a href={base}>RECITALS</a>
+    <a href="/recitals/" class={topNav === 'recitals' ? 'active' : ''}>RECITALS</a>
     <span class="topbar-nav-sep">|</span>
-    <a href={base}>ANNEXES</a>
+    <a href="/annexes/" class={topNav === 'annexes' ? 'active' : ''}>ANNEXES</a>
     <span class="topbar-nav-sep">|</span>
-    <a href={base}>TIMELINE</a>
+    <a href="/history/" class={topNav === 'history' ? 'active' : ''}>DRAFTING HISTORY</a>
     <span class="topbar-nav-sep">|</span>
-    <a href={base}>ABOUT</a>
+    <a href="/about/" class={topNav === 'about' ? 'active' : ''}>ABOUT</a>
   </nav>
 </div>
 

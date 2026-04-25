@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "39"
+---
+
+# Overweging (39)
+
+AI-systemen die worden gebruikt op het gebied van migratie, asiel en grensbeheer hebben gevolgen voor personen die vaak in een bijzonder kwetsbare positie verkeren en die afhankelijk zijn van de uitkomst van de acties van de bevoegde overheidsinstanties. De nauwkeurigheid, niet-discriminerende aard en transparantie van de AI-systemen die in deze context worden gebruikt, zijn derhalve van bijzonder belang om de eerbiediging van de grondrechten van de betrokken personen te waarborgen, en met name hun recht op vrij verkeer, non-discriminatie, bescherming van het privéleven en de persoonsgegevens, internationale bescherming en goed bestuur. Het is derhalve passend om AI-systemen als systemen met een hoog risico te classificeren wanneer zij bedoeld zijn om te worden gebruikt door de bevoegde overheidsinstanties die taken op het gebied van migratie, asiel en grensbeheer uitvoeren, zoals leugendetectortests en vergelijkbare instrumenten, of om de gemoedstoestand van natuurlijke personen te bepalen, om bepaalde risico’s te beoordelen die natuurlijke personen vormen die het grondgebied van een lidstaat binnenkomen of een visum- of asielaanvraag indienen, om de echtheid te controleren van de relevante documenten van natuurlijke personen, om bevoegde overheidsinstanties bij te staan die aanvragen voor asiel, visa en verblijfsvergunningen en hieraan gerelateerde klachten behandelen teneinde vast te stellen of de natuurlijke personen die een status aanvragen, hiervoor in aanmerking komen. AI-systemen op het gebied van migratie, asiel en grensbeheer die onder deze verordening vallen, moeten in overeenstemming zijn met de desbetreffende procedurele voorschriften die zijn vastgesteld in Richtlijn 2013/32/EU van het Europees Parlement en de Raad 49 , Verordening (EG) nr. 810/2009 van het Europees Parlement en de Raad 50 en andere relevante wetgeving.

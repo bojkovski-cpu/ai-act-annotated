@@ -1,0 +1,1491 @@
+{
+  "version": "commission-2021",
+  "source_url": "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206",
+  "source_celex": "52021PC0206",
+  "source_label": "European Commission proposal (April 2021) — COM(2021) 206 final",
+  "language": "nl",
+  "scraped_at": "2026-04-24T15:35:14Z",
+  "source_file": "/sessions/eloquent-gallant-mccarthy/mnt/uploads/AI Act NL commission-2021.html",
+  "source_size_bytes": 807852,
+  "source_sha256": "51110ee11dc967f1d2b2e00bacf3ac15c7ed1f23f1c5eddbcde2e19ec9012d90",
+  "counts": {
+    "articles": 85,
+    "recitals": 89,
+    "annexes": 9
+  },
+  "files": [
+    {
+      "kind": "article",
+      "number": 1,
+      "md_path": "history/commission-2021/articles/article-1.md",
+      "json_path": "history/commission-2021/articles/article-1.json",
+      "char_count": 785,
+      "sha256_md": "232f6f61101d27e63b6be51466d447f36ff5bb829bf51a1db1b0f1bcad1f1089"
+    },
+    {
+      "kind": "article",
+      "number": 2,
+      "md_path": "history/commission-2021/articles/article-2.md",
+      "json_path": "history/commission-2021/articles/article-2.json",
+      "char_count": 819,
+      "sha256_md": "97cc625f8cb6a4f43ed56c746f25925d6026f2d1c91f88455aa91812aa145b98"
+    },
+    {
+      "kind": "article",
+      "number": 3,
+      "md_path": "history/commission-2021/articles/article-3.md",
+      "json_path": "history/commission-2021/articles/article-3.json",
+      "char_count": 2814,
+      "sha256_md": "a5080f20bfd96ed09117be571c6790d9e45aaf669cc39b3976d5d4b4bb426670"
+    },
+    {
+      "kind": "article",
+      "number": 4,
+      "md_path": "history/commission-2021/articles/article-4.md",
+      "json_path": "history/commission-2021/articles/article-4.json",
+      "char_count": 452,
+      "sha256_md": "ed56d5b044206eca8d319be2646f40b82f3abf38b54bba98d3914144b2823252"
+    },
+    {
+      "kind": "article",
+      "number": 5,
+      "md_path": "history/commission-2021/articles/article-5.md",
+      "json_path": "history/commission-2021/articles/article-5.json",
+      "char_count": 5828,
+      "sha256_md": "614e69aa0777d7868bb9dd2de8a56e73b863355e7bf5dff73566522de828a4b6"
+    },
+    {
+      "kind": "article",
+      "number": 6,
+      "md_path": "history/commission-2021/articles/article-6.md",
+      "json_path": "history/commission-2021/articles/article-6.json",
+      "char_count": 957,
+      "sha256_md": "a870e47daba1f25223b7a8ee702c3f2f5691920566dff7cffdb7d261ab58a7a1"
+    },
+    {
+      "kind": "article",
+      "number": 7,
+      "md_path": "history/commission-2021/articles/article-7.md",
+      "json_path": "history/commission-2021/articles/article-7.json",
+      "char_count": 2682,
+      "sha256_md": "3126351d07ecb10f43f61369e475ff3ef17b7183ef3ee6a76953353ca60e4117"
+    },
+    {
+      "kind": "article",
+      "number": 8,
+      "md_path": "history/commission-2021/articles/article-8.md",
+      "json_path": "history/commission-2021/articles/article-8.json",
+      "char_count": 294,
+      "sha256_md": "960c13c8754560fc42b7655a98859df53f437c5b1b506f1f034a3770670091b1"
+    },
+    {
+      "kind": "article",
+      "number": 9,
+      "md_path": "history/commission-2021/articles/article-9.md",
+      "json_path": "history/commission-2021/articles/article-9.json",
+      "char_count": 2559,
+      "sha256_md": "f720dd66247584a34f74100ee14d1853a4f6665a6061ae8f374b952512345bec"
+    },
+    {
+      "kind": "article",
+      "number": 10,
+      "md_path": "history/commission-2021/articles/article-10.md",
+      "json_path": "history/commission-2021/articles/article-10.json",
+      "char_count": 2954,
+      "sha256_md": "a34d63ac184304f2a609fc506eb103be4056b12aac922fedf7b29668a447da94"
+    },
+    {
+      "kind": "article",
+      "number": 11,
+      "md_path": "history/commission-2021/articles/article-11.md",
+      "json_path": "history/commission-2021/articles/article-11.json",
+      "char_count": 1424,
+      "sha256_md": "a39725081edaa7eb30582819834fc2d3587ae992104f8861dac1a64d99a46efe"
+    },
+    {
+      "kind": "article",
+      "number": 12,
+      "md_path": "history/commission-2021/articles/article-12.md",
+      "json_path": "history/commission-2021/articles/article-12.json",
+      "char_count": 1476,
+      "sha256_md": "95625da0f33052759e77635abaf3054fb616fa06662b865bb5b396c6feaf8e84"
+    },
+    {
+      "kind": "article",
+      "number": 13,
+      "md_path": "history/commission-2021/articles/article-13.md",
+      "json_path": "history/commission-2021/articles/article-13.json",
+      "char_count": 951,
+      "sha256_md": "c617cecf87334f4d25e64fde0385eeab6fd656d12532668e0e4f2b9c446ca76d"
+    },
+    {
+      "kind": "article",
+      "number": 14,
+      "md_path": "history/commission-2021/articles/article-14.md",
+      "json_path": "history/commission-2021/articles/article-14.json",
+      "char_count": 2613,
+      "sha256_md": "f5b1575b1ffc09442040ac7361f57c79dc6cde0335195dc16497d4774bfb5772"
+    },
+    {
+      "kind": "article",
+      "number": 15,
+      "md_path": "history/commission-2021/articles/article-15.md",
+      "json_path": "history/commission-2021/articles/article-15.json",
+      "char_count": 2235,
+      "sha256_md": "e8b4f439a582bf1df20cd74eec52e288fd87da9233a7066405aaa7e508235fb0"
+    },
+    {
+      "kind": "article",
+      "number": 16,
+      "md_path": "history/commission-2021/articles/article-16.md",
+      "json_path": "history/commission-2021/articles/article-16.json",
+      "char_count": 775,
+      "sha256_md": "221cb5926ceabdc7c27116c8bb189b09154f88e13748c17c96a9302b0bd57f7f"
+    },
+    {
+      "kind": "article",
+      "number": 17,
+      "md_path": "history/commission-2021/articles/article-17.md",
+      "json_path": "history/commission-2021/articles/article-17.json",
+      "char_count": 2915,
+      "sha256_md": "81f266f6be8f4f4bd8fb213398923b877c6e45f221f54f5ceaed930e6a2ab409"
+    },
+    {
+      "kind": "article",
+      "number": 18,
+      "md_path": "history/commission-2021/articles/article-18.md",
+      "json_path": "history/commission-2021/articles/article-18.json",
+      "char_count": 419,
+      "sha256_md": "142aca50cd363ec417ff2dafff0ed6bdbe81d80306a00eef52bd84cb3dc46aa4"
+    },
+    {
+      "kind": "article",
+      "number": 19,
+      "md_path": "history/commission-2021/articles/article-19.md",
+      "json_path": "history/commission-2021/articles/article-19.json",
+      "char_count": 943,
+      "sha256_md": "38a34c1288a6a12d2c06b637e7ba90aba2c576ecc8a444882b161173e0842b6e"
+    },
+    {
+      "kind": "article",
+      "number": 20,
+      "md_path": "history/commission-2021/articles/article-20.md",
+      "json_path": "history/commission-2021/articles/article-20.json",
+      "char_count": 765,
+      "sha256_md": "4a4a568473a6498f43a2b859591e1e2304204f45d091f7d1afc09f1f1180ddcc"
+    },
+    {
+      "kind": "article",
+      "number": 21,
+      "md_path": "history/commission-2021/articles/article-21.md",
+      "json_path": "history/commission-2021/articles/article-21.json",
+      "char_count": 570,
+      "sha256_md": "08ce0ce6d5dc08a218245e2734046ef1d751cd395a575df40c68939d864c9db1"
+    },
+    {
+      "kind": "article",
+      "number": 22,
+      "md_path": "history/commission-2021/articles/article-22.md",
+      "json_path": "history/commission-2021/articles/article-22.json",
+      "char_count": 491,
+      "sha256_md": "7bbb2ab25e0a01a91f4ae82dca24ff63d4f3a76ed7b3cb5b352348664b2ab714"
+    },
+    {
+      "kind": "article",
+      "number": 23,
+      "md_path": "history/commission-2021/articles/article-23.md",
+      "json_path": "history/commission-2021/articles/article-23.json",
+      "char_count": 728,
+      "sha256_md": "6435e08115da66c6f6dd3710953b847fc662588773a24fede14365631fb50592"
+    },
+    {
+      "kind": "article",
+      "number": 24,
+      "md_path": "history/commission-2021/articles/article-24.md",
+      "json_path": "history/commission-2021/articles/article-24.json",
+      "char_count": 607,
+      "sha256_md": "361aefc9bce27e5805b8fad6968a72cf5f435e8ee0a68a5476f13dbf253de290"
+    },
+    {
+      "kind": "article",
+      "number": 25,
+      "md_path": "history/commission-2021/articles/article-25.md",
+      "json_path": "history/commission-2021/articles/article-25.json",
+      "char_count": 238,
+      "sha256_md": "7b63c101eae65d583b75e72fb7bfed414ddbc012f6a796cf964c1dfa9941f454"
+    },
+    {
+      "kind": "article",
+      "number": 26,
+      "md_path": "history/commission-2021/articles/article-26.md",
+      "json_path": "history/commission-2021/articles/article-26.json",
+      "char_count": 2261,
+      "sha256_md": "ae0caeebeed39cbe64d56e0409788aa09150a542ad2d11e458dea544d1777166"
+    },
+    {
+      "kind": "article",
+      "number": 27,
+      "md_path": "history/commission-2021/articles/article-27.md",
+      "json_path": "history/commission-2021/articles/article-27.json",
+      "char_count": 2578,
+      "sha256_md": "e6c7d54319a7750a52f4c696bb0842b72b65134d016974773a5106bd00f24d8b"
+    },
+    {
+      "kind": "article",
+      "number": 28,
+      "md_path": "history/commission-2021/articles/article-28.md",
+      "json_path": "history/commission-2021/articles/article-28.json",
+      "char_count": 0,
+      "sha256_md": "553592b1260e21f83a9a3f970de759efff992aa6e966c72462122c4259e3624a"
+    },
+    {
+      "kind": "article",
+      "number": 29,
+      "md_path": "history/commission-2021/articles/article-29.md",
+      "json_path": "history/commission-2021/articles/article-29.json",
+      "char_count": 2798,
+      "sha256_md": "ed77137430dc6600d0e198c447fabab2a728e70db35eb04f1ef4f90c7eb5f9ab"
+    },
+    {
+      "kind": "article",
+      "number": 30,
+      "md_path": "history/commission-2021/articles/article-30.md",
+      "json_path": "history/commission-2021/articles/article-30.json",
+      "char_count": 684,
+      "sha256_md": "9ef7fc54cbe433c0c3e2f70d59a3b743c36aad0c9c483e936bcefb4ba92cb804"
+    },
+    {
+      "kind": "article",
+      "number": 31,
+      "md_path": "history/commission-2021/articles/article-31.md",
+      "json_path": "history/commission-2021/articles/article-31.json",
+      "char_count": 1386,
+      "sha256_md": "b0cce1b3da033c6dc42030a870ed155cc51457928062d798455a8f32ca4b3c03"
+    },
+    {
+      "kind": "article",
+      "number": 32,
+      "md_path": "history/commission-2021/articles/article-32.md",
+      "json_path": "history/commission-2021/articles/article-32.json",
+      "char_count": 884,
+      "sha256_md": "e77757645e92e4e18c7f6887c684214541de3235301cb2e70edaa32fcd063d60"
+    },
+    {
+      "kind": "article",
+      "number": 33,
+      "md_path": "history/commission-2021/articles/article-33.md",
+      "json_path": "history/commission-2021/articles/article-33.json",
+      "char_count": 1030,
+      "sha256_md": "b1f080701bc6ba490b22ded220798b72c72287458334a05a03e1900c5a48acfb"
+    },
+    {
+      "kind": "article",
+      "number": 34,
+      "md_path": "history/commission-2021/articles/article-34.md",
+      "json_path": "history/commission-2021/articles/article-34.json",
+      "char_count": 931,
+      "sha256_md": "6c2b5cea1a6de6d27db379db857b36c2aa3badfcc5dfb2dc7e35649af2ae9da5"
+    },
+    {
+      "kind": "article",
+      "number": 35,
+      "md_path": "history/commission-2021/articles/article-35.md",
+      "json_path": "history/commission-2021/articles/article-35.json",
+      "char_count": 463,
+      "sha256_md": "4548691f522f24b8bd6b5b4a6775e32ebc65606f7881e5d417ad23830ea2ad70"
+    },
+    {
+      "kind": "article",
+      "number": 36,
+      "md_path": "history/commission-2021/articles/article-36.md",
+      "json_path": "history/commission-2021/articles/article-36.json",
+      "char_count": 1222,
+      "sha256_md": "134f59b9d5682f97cdfeab80cd3f3721c9cc215eef656f269cf5dd652ba95faa"
+    },
+    {
+      "kind": "article",
+      "number": 37,
+      "md_path": "history/commission-2021/articles/article-37.md",
+      "json_path": "history/commission-2021/articles/article-37.json",
+      "char_count": 0,
+      "sha256_md": "69b28fa4b80f2716233f4ec210d006ebcf65a7f5eec54537fd84e4e59a5b214d"
+    },
+    {
+      "kind": "article",
+      "number": 38,
+      "md_path": "history/commission-2021/articles/article-38.md",
+      "json_path": "history/commission-2021/articles/article-38.json",
+      "char_count": 531,
+      "sha256_md": "6444ef908ac72ef99f5b8030c5e61de7b5ed574de1d0eeeef8ac518fa318a78e"
+    },
+    {
+      "kind": "article",
+      "number": 39,
+      "md_path": "history/commission-2021/articles/article-39.md",
+      "json_path": "history/commission-2021/articles/article-39.json",
+      "char_count": 320,
+      "sha256_md": "113c988de00491d96c7097c4cb215e925e4f4b7aaa3c0fcc7f59c0b1dd5a1593"
+    },
+    {
+      "kind": "article",
+      "number": 40,
+      "md_path": "history/commission-2021/articles/article-40.md",
+      "json_path": "history/commission-2021/articles/article-40.json",
+      "char_count": 357,
+      "sha256_md": "697bc3cfc6be1d10d9ca585236f108c25e9ff66499ee5437688fdc9935cfe247"
+    },
+    {
+      "kind": "article",
+      "number": 41,
+      "md_path": "history/commission-2021/articles/article-41.md",
+      "json_path": "history/commission-2021/articles/article-41.json",
+      "char_count": 1296,
+      "sha256_md": "72f70eb0bda0ef5d8b7170611d0d4b008c7f6c0ac53583ef34e50b2b62bc8a4b"
+    },
+    {
+      "kind": "article",
+      "number": 42,
+      "md_path": "history/commission-2021/articles/article-42.md",
+      "json_path": "history/commission-2021/articles/article-42.json",
+      "char_count": 300,
+      "sha256_md": "e61b4261657254793e686f9b414170a2a6e560812c1d32b69bc3f2e2be2083de"
+    },
+    {
+      "kind": "article",
+      "number": 43,
+      "md_path": "history/commission-2021/articles/article-43.md",
+      "json_path": "history/commission-2021/articles/article-43.json",
+      "char_count": 5503,
+      "sha256_md": "0f193b97d75ebf4031bd870f854a7be2094893d616c28420b09d05e2bf468333"
+    },
+    {
+      "kind": "article",
+      "number": 44,
+      "md_path": "history/commission-2021/articles/article-44.md",
+      "json_path": "history/commission-2021/articles/article-44.json",
+      "char_count": 1222,
+      "sha256_md": "62741cecac3e60214ed94dec6bb2c160bed5e4ea13892d2e3601e80209ae4eb1"
+    },
+    {
+      "kind": "article",
+      "number": 45,
+      "md_path": "history/commission-2021/articles/article-45.md",
+      "json_path": "history/commission-2021/articles/article-45.json",
+      "char_count": 0,
+      "sha256_md": "9be7c68ea17faae3a22cd14ae1b64b87910b50e3b50302b7cc99e81e2c805d87"
+    },
+    {
+      "kind": "article",
+      "number": 46,
+      "md_path": "history/commission-2021/articles/article-46.md",
+      "json_path": "history/commission-2021/articles/article-46.json",
+      "char_count": 1780,
+      "sha256_md": "f7ef8c43f62fce0dd5a2c040eb2b95f87f7b0dd91a89921d3118917f129f6c8e"
+    },
+    {
+      "kind": "article",
+      "number": 47,
+      "md_path": "history/commission-2021/articles/article-47.md",
+      "json_path": "history/commission-2021/articles/article-47.json",
+      "char_count": 2671,
+      "sha256_md": "0575d873cc51ccd9fef450c7da0a3a0fc5803b20e1193eacb50bd7dc247da4c4"
+    },
+    {
+      "kind": "article",
+      "number": 48,
+      "md_path": "history/commission-2021/articles/article-48.md",
+      "json_path": "history/commission-2021/articles/article-48.json",
+      "char_count": 0,
+      "sha256_md": "2106ea80b50883a6f16fd05d7b629bf34787e82545a048febfe0c11389bf8c9f"
+    },
+    {
+      "kind": "article",
+      "number": 49,
+      "md_path": "history/commission-2021/articles/article-49.md",
+      "json_path": "history/commission-2021/articles/article-49.json",
+      "char_count": 851,
+      "sha256_md": "da29848ee807dac7a42a39722d46cda4d5c72bf9a88a42c7e92eb2d45175191a"
+    },
+    {
+      "kind": "article",
+      "number": 50,
+      "md_path": "history/commission-2021/articles/article-50.md",
+      "json_path": "history/commission-2021/articles/article-50.json",
+      "char_count": 630,
+      "sha256_md": "7c87c5f0422d17b7c63edc57dcb22214c4bdcb84031b7c6dc8776743133c5aa0"
+    },
+    {
+      "kind": "article",
+      "number": 51,
+      "md_path": "history/commission-2021/articles/article-51.md",
+      "json_path": "history/commission-2021/articles/article-51.json",
+      "char_count": 307,
+      "sha256_md": "425f9bb0bbfecdeae15a44140fc0e2fa083f4d7479e2276db843d19b9e7a47bb"
+    },
+    {
+      "kind": "article",
+      "number": 52,
+      "md_path": "history/commission-2021/articles/article-52.md",
+      "json_path": "history/commission-2021/articles/article-52.json",
+      "char_count": 1862,
+      "sha256_md": "26e376f5a3d7c32e619adfcd65c9c93bd50df1acfc3a11936c559b94758aba6a"
+    },
+    {
+      "kind": "article",
+      "number": 53,
+      "md_path": "history/commission-2021/articles/article-53.md",
+      "json_path": "history/commission-2021/articles/article-53.json",
+      "char_count": 2791,
+      "sha256_md": "ab4f43ed18b6ec3280ded5ce7975b90ae56a4bcb4faa956658042c34ba4ac77e"
+    },
+    {
+      "kind": "article",
+      "number": 54,
+      "md_path": "history/commission-2021/articles/article-54.md",
+      "json_path": "history/commission-2021/articles/article-54.json",
+      "char_count": 855,
+      "sha256_md": "6201923953595e8b98a9f75d59f9ce52b0a0f10fb513d3d6230894df0cf0c3f5"
+    },
+    {
+      "kind": "article",
+      "number": 55,
+      "md_path": "history/commission-2021/articles/article-55.md",
+      "json_path": "history/commission-2021/articles/article-55.json",
+      "char_count": 892,
+      "sha256_md": "0b0298785c163d78373f5890f4f7df9b02c086c53ca9d46f8eb82ec8859c295a"
+    },
+    {
+      "kind": "article",
+      "number": 56,
+      "md_path": "history/commission-2021/articles/article-56.md",
+      "json_path": "history/commission-2021/articles/article-56.json",
+      "char_count": 791,
+      "sha256_md": "1a1618874762783a566de02d80c296a4e29c36a05b83ec2ee1d5f35ad5d3be66"
+    },
+    {
+      "kind": "article",
+      "number": 57,
+      "md_path": "history/commission-2021/articles/article-57.md",
+      "json_path": "history/commission-2021/articles/article-57.json",
+      "char_count": 1429,
+      "sha256_md": "73e74c5dfeef0732566f06ddb0af495088c3ce56bb0d7a588e3fb6cd85a5a548"
+    },
+    {
+      "kind": "article",
+      "number": 58,
+      "md_path": "history/commission-2021/articles/article-58.md",
+      "json_path": "history/commission-2021/articles/article-58.json",
+      "char_count": 926,
+      "sha256_md": "a5ef8a8c4c89c68380ffa6eb4b1228a827bc08fa6250a6add4633fed309ba87b"
+    },
+    {
+      "kind": "article",
+      "number": 59,
+      "md_path": "history/commission-2021/articles/article-59.md",
+      "json_path": "history/commission-2021/articles/article-59.json",
+      "char_count": 2555,
+      "sha256_md": "c4f2bf0742247e5369be4c6eaae648bb368be9ee5f7fe14f469a65e17ed9eb5f"
+    },
+    {
+      "kind": "article",
+      "number": 60,
+      "md_path": "history/commission-2021/articles/article-60.md",
+      "json_path": "history/commission-2021/articles/article-60.json",
+      "char_count": 1029,
+      "sha256_md": "dc611b2a0abcbfa639719e171db1d38d5475774197b6f4081d8df0619d44a3f0"
+    },
+    {
+      "kind": "article",
+      "number": 61,
+      "md_path": "history/commission-2021/articles/article-61.md",
+      "json_path": "history/commission-2021/articles/article-61.json",
+      "char_count": 1794,
+      "sha256_md": "bcf3e8ff1315d5f8e5bec548d5cca824a01020fd74fa75e329bab18ca1e0162d"
+    },
+    {
+      "kind": "article",
+      "number": 62,
+      "md_path": "history/commission-2021/articles/article-62.md",
+      "json_path": "history/commission-2021/articles/article-62.json",
+      "char_count": 1785,
+      "sha256_md": "3abd0bd07077c27197836f6687d3c6893f25d5ffb30fa0b85b9a5889acd97d55"
+    },
+    {
+      "kind": "article",
+      "number": 63,
+      "md_path": "history/commission-2021/articles/article-63.md",
+      "json_path": "history/commission-2021/articles/article-63.json",
+      "char_count": 178,
+      "sha256_md": "31ab1c3c7d69b2ac2c32313130ddeef0334d730320bdff9a5f1f4e44b69b512a"
+    },
+    {
+      "kind": "article",
+      "number": 64,
+      "md_path": "history/commission-2021/articles/article-64.md",
+      "json_path": "history/commission-2021/articles/article-64.json",
+      "char_count": 2498,
+      "sha256_md": "0ed93224162b1cadc7e2a8e2526eab6ee37819174037fce46c80632c7ec5a8a7"
+    },
+    {
+      "kind": "article",
+      "number": 65,
+      "md_path": "history/commission-2021/articles/article-65.md",
+      "json_path": "history/commission-2021/articles/article-65.json",
+      "char_count": 1596,
+      "sha256_md": "8d0e3f306e491e385e99c5c3416b4671b4e7d22bd46359310b168df8d4200a4b"
+    },
+    {
+      "kind": "article",
+      "number": 66,
+      "md_path": "history/commission-2021/articles/article-66.md",
+      "json_path": "history/commission-2021/articles/article-66.json",
+      "char_count": 1322,
+      "sha256_md": "5af3fa243d3fac47b95f9e79ebba7a17433659ccce21a40a4da7883331885b4d"
+    },
+    {
+      "kind": "article",
+      "number": 67,
+      "md_path": "history/commission-2021/articles/article-67.md",
+      "json_path": "history/commission-2021/articles/article-67.json",
+      "char_count": 1845,
+      "sha256_md": "3a4432530825f741c99613b7cf8c8730da7aa0f03e3bf3fc2d48e1b10be84b43"
+    },
+    {
+      "kind": "article",
+      "number": 68,
+      "md_path": "history/commission-2021/articles/article-68.md",
+      "json_path": "history/commission-2021/articles/article-68.json",
+      "char_count": 0,
+      "sha256_md": "9ef951014ed8099ca34c713f0f21478c21970eb7a61316335cb8ec3754b95cf0"
+    },
+    {
+      "kind": "article",
+      "number": 69,
+      "md_path": "history/commission-2021/articles/article-69.md",
+      "json_path": "history/commission-2021/articles/article-69.json",
+      "char_count": 1623,
+      "sha256_md": "ae0a943b6905fbfabbec9b342c99f5c7d1ace6739b08f9fd4ab3762dc489b8b9"
+    },
+    {
+      "kind": "article",
+      "number": 70,
+      "md_path": "history/commission-2021/articles/article-70.md",
+      "json_path": "history/commission-2021/articles/article-70.json",
+      "char_count": 860,
+      "sha256_md": "6e2e641cb98aef9c593286ace5e6d55422b209eec074766fc35c6f071d4f918c"
+    },
+    {
+      "kind": "article",
+      "number": 71,
+      "md_path": "history/commission-2021/articles/article-71.md",
+      "json_path": "history/commission-2021/articles/article-71.json",
+      "char_count": 2874,
+      "sha256_md": "a3fc55942f72d67806599c8f5584cf6a4926967460f300e376392d0b4e9aca9b"
+    },
+    {
+      "kind": "article",
+      "number": 72,
+      "md_path": "history/commission-2021/articles/article-72.md",
+      "json_path": "history/commission-2021/articles/article-72.json",
+      "char_count": 0,
+      "sha256_md": "45dd84cabbddcd49429e272c7a110e460b04b9ad84f1a54b4b976d10eb22c888"
+    },
+    {
+      "kind": "article",
+      "number": 73,
+      "md_path": "history/commission-2021/articles/article-73.md",
+      "json_path": "history/commission-2021/articles/article-73.json",
+      "char_count": 1709,
+      "sha256_md": "0e203ca889db2ae9c7a2c22fe832b7aaf32e908ee8fa5ba826ee3b287a8c7a7b"
+    },
+    {
+      "kind": "article",
+      "number": 74,
+      "md_path": "history/commission-2021/articles/article-74.md",
+      "json_path": "history/commission-2021/articles/article-74.json",
+      "char_count": 0,
+      "sha256_md": "7ec91568526eb5782332abe81b2da041cabf7067bab0c200b28b6f72ad3b32c7"
+    },
+    {
+      "kind": "article",
+      "number": 75,
+      "md_path": "history/commission-2021/articles/article-75.md",
+      "json_path": "history/commission-2021/articles/article-75.json",
+      "char_count": 611,
+      "sha256_md": "86239eaa3503d51bc600a9800067f8013403bf6115b76887736ad427f59cb8d2"
+    },
+    {
+      "kind": "article",
+      "number": 76,
+      "md_path": "history/commission-2021/articles/article-76.md",
+      "json_path": "history/commission-2021/articles/article-76.json",
+      "char_count": 550,
+      "sha256_md": "7d2b306f8e196f7c2170a3740255abb941e41bfd29f1d3cc120998311c7c6d9a"
+    },
+    {
+      "kind": "article",
+      "number": 77,
+      "md_path": "history/commission-2021/articles/article-77.md",
+      "json_path": "history/commission-2021/articles/article-77.json",
+      "char_count": 550,
+      "sha256_md": "3ffc72411250c92b63aa67b5a3d73b0d6ee46f61238fab13bf3a6b741b514ea3"
+    },
+    {
+      "kind": "article",
+      "number": 78,
+      "md_path": "history/commission-2021/articles/article-78.md",
+      "json_path": "history/commission-2021/articles/article-78.json",
+      "char_count": 0,
+      "sha256_md": "eeb9568690fb9f7dee2df2475e80e79634c35fb0a606d8a8c14b8e048a8757c8"
+    },
+    {
+      "kind": "article",
+      "number": 79,
+      "md_path": "history/commission-2021/articles/article-79.md",
+      "json_path": "history/commission-2021/articles/article-79.json",
+      "char_count": 569,
+      "sha256_md": "9fb4068a113adb00630502b8b0ef47d4e483a2c6a22d05bf501f76ef2fa2a4bc"
+    },
+    {
+      "kind": "article",
+      "number": 80,
+      "md_path": "history/commission-2021/articles/article-80.md",
+      "json_path": "history/commission-2021/articles/article-80.json",
+      "char_count": 527,
+      "sha256_md": "a365cc75ba08dc7b24ea1aebf437307f95eef047c52e71d0f10ad3317a9c2dd8"
+    },
+    {
+      "kind": "article",
+      "number": 81,
+      "md_path": "history/commission-2021/articles/article-81.md",
+      "json_path": "history/commission-2021/articles/article-81.json",
+      "char_count": 573,
+      "sha256_md": "a0b41a4bbff8b7996a64c8f108768057612d39872feb99e748ff5a70aa174c26"
+    },
+    {
+      "kind": "article",
+      "number": 82,
+      "md_path": "history/commission-2021/articles/article-82.md",
+      "json_path": "history/commission-2021/articles/article-82.json",
+      "char_count": 530,
+      "sha256_md": "3d73c009fb22dd852326229b28c209c1cd00e3f3b9c2ce0dc3d0f4ad65572793"
+    },
+    {
+      "kind": "article",
+      "number": 83,
+      "md_path": "history/commission-2021/articles/article-83.md",
+      "json_path": "history/commission-2021/articles/article-83.json",
+      "char_count": 1194,
+      "sha256_md": "90b36f339622f87f290701a4126a237e8ab1cd8e7539e33fdc153c27f392e7f0"
+    },
+    {
+      "kind": "article",
+      "number": 84,
+      "md_path": "history/commission-2021/articles/article-84.md",
+      "json_path": "history/commission-2021/articles/article-84.json",
+      "char_count": 0,
+      "sha256_md": "6d32a99caa35cf66adc6139038fd6278ee9e715dbc2db97ebb3259a69a0858ec"
+    },
+    {
+      "kind": "article",
+      "number": 85,
+      "md_path": "history/commission-2021/articles/article-85.md",
+      "json_path": "history/commission-2021/articles/article-85.json",
+      "char_count": 732,
+      "sha256_md": "bbaf5e4b5aa9df73744a5aa79e146f69a2d5864ce91928133b0c47cc11ff597b"
+    },
+    {
+      "kind": "recital",
+      "number": 1,
+      "md_path": "history/commission-2021/recitals/recital-1.md",
+      "json_path": "history/commission-2021/recitals/recital-1.json",
+      "char_count": 734,
+      "sha256_md": "f4035d8eb91e49d9ce8bda311ab6985df572965d4e6db332ac5b43752a7c40db"
+    },
+    {
+      "kind": "recital",
+      "number": 2,
+      "md_path": "history/commission-2021/recitals/recital-2.md",
+      "json_path": "history/commission-2021/recitals/recital-2.json",
+      "char_count": 1747,
+      "sha256_md": "bf06f4c33ec6e340e182d4548dec7fbadb198395be3f5fe2e3849ce827e7a4d8"
+    },
+    {
+      "kind": "recital",
+      "number": 3,
+      "md_path": "history/commission-2021/recitals/recital-3.md",
+      "json_path": "history/commission-2021/recitals/recital-3.json",
+      "char_count": 779,
+      "sha256_md": "d18d0226091280ca7fded3ad41d344c1afcc47b240f96ebeef6f26035b505b86"
+    },
+    {
+      "kind": "recital",
+      "number": 4,
+      "md_path": "history/commission-2021/recitals/recital-4.md",
+      "json_path": "history/commission-2021/recitals/recital-4.json",
+      "char_count": 285,
+      "sha256_md": "00bcd9fbaaa52cfbe7de3196dae1193d92ce8e21af41c8abfe7f91d324ccce91"
+    },
+    {
+      "kind": "recital",
+      "number": 5,
+      "md_path": "history/commission-2021/recitals/recital-5.md",
+      "json_path": "history/commission-2021/recitals/recital-5.json",
+      "char_count": 1101,
+      "sha256_md": "1a95d036b9c63cdde488fe8da9e7b83de2511006d91393c6ff9104982b4eb878"
+    },
+    {
+      "kind": "recital",
+      "number": 6,
+      "md_path": "history/commission-2021/recitals/recital-6.md",
+      "json_path": "history/commission-2021/recitals/recital-6.json",
+      "char_count": 1291,
+      "sha256_md": "768f1b12f43dbbd477f18ef11a3cfc8019fc26ac10d29b74886fa4eb04af16be"
+    },
+    {
+      "kind": "recital",
+      "number": 7,
+      "md_path": "history/commission-2021/recitals/recital-7.md",
+      "json_path": "history/commission-2021/recitals/recital-7.json",
+      "char_count": 455,
+      "sha256_md": "905cf2c6294380478f95e76f0fc44931c45758999d1d12741b195d4e626a2ee2"
+    },
+    {
+      "kind": "recital",
+      "number": 8,
+      "md_path": "history/commission-2021/recitals/recital-8.md",
+      "json_path": "history/commission-2021/recitals/recital-8.json",
+      "char_count": 1847,
+      "sha256_md": "a2563a46b6d33dc6e981b2ea4b0ff2f30300a4530ad8c731cd537c11a3eb4e4b"
+    },
+    {
+      "kind": "recital",
+      "number": 9,
+      "md_path": "history/commission-2021/recitals/recital-9.md",
+      "json_path": "history/commission-2021/recitals/recital-9.json",
+      "char_count": 1250,
+      "sha256_md": "4a81b898859cbd36b39b6171dbd7180f7554bfa033ec7fd226e04ca3d85c92ce"
+    },
+    {
+      "kind": "recital",
+      "number": 10,
+      "md_path": "history/commission-2021/recitals/recital-10.md",
+      "json_path": "history/commission-2021/recitals/recital-10.json",
+      "char_count": 371,
+      "sha256_md": "dd284374d92a8dbc6476283ba9b8245686f83c5a6a05a0464d775e1a2532f57b"
+    },
+    {
+      "kind": "recital",
+      "number": 11,
+      "md_path": "history/commission-2021/recitals/recital-11.md",
+      "json_path": "history/commission-2021/recitals/recital-11.json",
+      "char_count": 2149,
+      "sha256_md": "b7d9ca77c521161b157556d574b640a6ef0388a11570d357d5190893173fa75a"
+    },
+    {
+      "kind": "recital",
+      "number": 12,
+      "md_path": "history/commission-2021/recitals/recital-12.md",
+      "json_path": "history/commission-2021/recitals/recital-12.json",
+      "char_count": 782,
+      "sha256_md": "25b50f6bc76f8a3f5e620038e36133d56f34faa43c61d1cda21e60884df0c1d4"
+    },
+    {
+      "kind": "recital",
+      "number": 13,
+      "md_path": "history/commission-2021/recitals/recital-13.md",
+      "json_path": "history/commission-2021/recitals/recital-13.json",
+      "char_count": 472,
+      "sha256_md": "144fe706e0fa6b9d82d0243e8af0f10be267832fec8caeb73ac499ae09208ba1"
+    },
+    {
+      "kind": "recital",
+      "number": 14,
+      "md_path": "history/commission-2021/recitals/recital-14.md",
+      "json_path": "history/commission-2021/recitals/recital-14.json",
+      "char_count": 618,
+      "sha256_md": "fdc012ea1d063e10bd8bcc8d4618f49675fa5b716fb54be7953ac80137b39acd"
+    },
+    {
+      "kind": "recital",
+      "number": 15,
+      "md_path": "history/commission-2021/recitals/recital-15.md",
+      "json_path": "history/commission-2021/recitals/recital-15.json",
+      "char_count": 574,
+      "sha256_md": "e2304850f1b7ae9a6f11d5c6a6e7140c0a29d315f76bcab50e1583500b7c0294"
+    },
+    {
+      "kind": "recital",
+      "number": 16,
+      "md_path": "history/commission-2021/recitals/recital-16.md",
+      "json_path": "history/commission-2021/recitals/recital-16.json",
+      "char_count": 1219,
+      "sha256_md": "ef337eb833413e766fa5946421b0795868f5ad08cd5c435946a3fa187d946c9c"
+    },
+    {
+      "kind": "recital",
+      "number": 17,
+      "md_path": "history/commission-2021/recitals/recital-17.md",
+      "json_path": "history/commission-2021/recitals/recital-17.json",
+      "char_count": 1073,
+      "sha256_md": "d92f41b60f4d101c47945504ef83bb080700e249570e0fae11563304965a9397"
+    },
+    {
+      "kind": "recital",
+      "number": 18,
+      "md_path": "history/commission-2021/recitals/recital-18.md",
+      "json_path": "history/commission-2021/recitals/recital-18.json",
+      "char_count": 809,
+      "sha256_md": "01d09eed3b537a372db1f3732ee886b2b5edd4e36e412d0bb10c2292c6b68f69"
+    },
+    {
+      "kind": "recital",
+      "number": 19,
+      "md_path": "history/commission-2021/recitals/recital-19.md",
+      "json_path": "history/commission-2021/recitals/recital-19.json",
+      "char_count": 1855,
+      "sha256_md": "1fdf4a9c2a45f0755a122d35d6129f7442f7f2450166d4164f6faa6ed5806fd6"
+    },
+    {
+      "kind": "recital",
+      "number": 20,
+      "md_path": "history/commission-2021/recitals/recital-20.md",
+      "json_path": "history/commission-2021/recitals/recital-20.json",
+      "char_count": 961,
+      "sha256_md": "9f28fba36001be92742bdd26b435d788e62036e8389af6222eb166b7e75bfa2e"
+    },
+    {
+      "kind": "recital",
+      "number": 21,
+      "md_path": "history/commission-2021/recitals/recital-21.md",
+      "json_path": "history/commission-2021/recitals/recital-21.json",
+      "char_count": 1153,
+      "sha256_md": "3889dc70c87b681404ea31defa4e748750cb5d02a6205849fbe4e7cf35cddc75"
+    },
+    {
+      "kind": "recital",
+      "number": 22,
+      "md_path": "history/commission-2021/recitals/recital-22.md",
+      "json_path": "history/commission-2021/recitals/recital-22.json",
+      "char_count": 711,
+      "sha256_md": "a362b5cb601fd5e87bfb13fa630271deb2f98e2e3d15953455edd692da2a48c8"
+    },
+    {
+      "kind": "recital",
+      "number": 23,
+      "md_path": "history/commission-2021/recitals/recital-23.md",
+      "json_path": "history/commission-2021/recitals/recital-23.json",
+      "char_count": 1855,
+      "sha256_md": "0bd1815e1106d9e4dfb40e45a99fb8dfa70ae3dd1bf605371fc98b65de5be768"
+    },
+    {
+      "kind": "recital",
+      "number": 24,
+      "md_path": "history/commission-2021/recitals/recital-24.md",
+      "json_path": "history/commission-2021/recitals/recital-24.json",
+      "char_count": 710,
+      "sha256_md": "ebb06245ba35c8bb63676d9c8be1416ed8f458ca774c923cf3caf7da2a724f5e"
+    },
+    {
+      "kind": "recital",
+      "number": 25,
+      "md_path": "history/commission-2021/recitals/recital-25.md",
+      "json_path": "history/commission-2021/recitals/recital-25.json",
+      "char_count": 822,
+      "sha256_md": "f0dbaf2da256728637bbbb9be4b02c2a78bf2eff97d237c820404eebe86907ce"
+    },
+    {
+      "kind": "recital",
+      "number": 26,
+      "md_path": "history/commission-2021/recitals/recital-26.md",
+      "json_path": "history/commission-2021/recitals/recital-26.json",
+      "char_count": 529,
+      "sha256_md": "c8fd66c7773cbfd69b99dd492c2160e4bd37fdf5bf85aed4f0397150a33958af"
+    },
+    {
+      "kind": "recital",
+      "number": 27,
+      "md_path": "history/commission-2021/recitals/recital-27.md",
+      "json_path": "history/commission-2021/recitals/recital-27.json",
+      "char_count": 805,
+      "sha256_md": "032b382b24a3e4a8d6b87a30e6bcb07ebe001f045f054192dab6d2227d6a63d8"
+    },
+    {
+      "kind": "recital",
+      "number": 28,
+      "md_path": "history/commission-2021/recitals/recital-28.md",
+      "json_path": "history/commission-2021/recitals/recital-28.json",
+      "char_count": 2719,
+      "sha256_md": "417becb62c2c7b577aea0cd0466fe05d59fddee83b0f54ff6e42448b90895d7a"
+    },
+    {
+      "kind": "recital",
+      "number": 29,
+      "md_path": "history/commission-2021/recitals/recital-29.md",
+      "json_path": "history/commission-2021/recitals/recital-29.json",
+      "char_count": 1252,
+      "sha256_md": "0ffdee628367e4f999f1cdad3feecbe744a99455a82904df157ef708afd6fc14"
+    },
+    {
+      "kind": "recital",
+      "number": 30,
+      "md_path": "history/commission-2021/recitals/recital-30.md",
+      "json_path": "history/commission-2021/recitals/recital-30.json",
+      "char_count": 797,
+      "sha256_md": "d7c7d0b0bda3cb499b1b10e42c685fd2c523ea5e0ab7589f6aa7366efd7346dc"
+    },
+    {
+      "kind": "recital",
+      "number": 31,
+      "md_path": "history/commission-2021/recitals/recital-31.md",
+      "json_path": "history/commission-2021/recitals/recital-31.json",
+      "char_count": 728,
+      "sha256_md": "81fba355e8ffbe47fa8d3ef7efa91ce2e9702c0cb691fff213f50345c1e06c3f"
+    },
+    {
+      "kind": "recital",
+      "number": 32,
+      "md_path": "history/commission-2021/recitals/recital-32.md",
+      "json_path": "history/commission-2021/recitals/recital-32.json",
+      "char_count": 781,
+      "sha256_md": "784ac14b758006b85ebc5442146f7b0284da770b33913089b5b6d5ea5ad7714c"
+    },
+    {
+      "kind": "recital",
+      "number": 33,
+      "md_path": "history/commission-2021/recitals/recital-33.md",
+      "json_path": "history/commission-2021/recitals/recital-33.json",
+      "char_count": 640,
+      "sha256_md": "37d1cbc43be290445cf0985d372ae150f061c5d7c3f9ced042d589b6373bdf28"
+    },
+    {
+      "kind": "recital",
+      "number": 34,
+      "md_path": "history/commission-2021/recitals/recital-34.md",
+      "json_path": "history/commission-2021/recitals/recital-34.json",
+      "char_count": 534,
+      "sha256_md": "2473b454a9b07580e27ebef49d7cf63c63739dc4e2b2e2239ccc50c378f9db4f"
+    },
+    {
+      "kind": "recital",
+      "number": 35,
+      "md_path": "history/commission-2021/recitals/recital-35.md",
+      "json_path": "history/commission-2021/recitals/recital-35.json",
+      "char_count": 792,
+      "sha256_md": "d29ece0fb9ed9069b08aa7ee1e5881305b2be49ba9b208abcde467ec36630caf"
+    },
+    {
+      "kind": "recital",
+      "number": 36,
+      "md_path": "history/commission-2021/recitals/recital-36.md",
+      "json_path": "history/commission-2021/recitals/recital-36.json",
+      "char_count": 1416,
+      "sha256_md": "3ebd4067f5eee92a00856922f2805e4de07192f05ab1e50ce064a000c1dc7d50"
+    },
+    {
+      "kind": "recital",
+      "number": 37,
+      "md_path": "history/commission-2021/recitals/recital-37.md",
+      "json_path": "history/commission-2021/recitals/recital-37.json",
+      "char_count": 2667,
+      "sha256_md": "f74f717e8e97df9c783c8478ca6444ee42a0fb5b4834485288a8ad18eab4f02a"
+    },
+    {
+      "kind": "recital",
+      "number": 38,
+      "md_path": "history/commission-2021/recitals/recital-38.md",
+      "json_path": "history/commission-2021/recitals/recital-38.json",
+      "char_count": 2747,
+      "sha256_md": "c919f8697a5380cc0d893fab03efb86ff0011d6e14a71a5304ba301ef9e60fdf"
+    },
+    {
+      "kind": "recital",
+      "number": 39,
+      "md_path": "history/commission-2021/recitals/recital-39.md",
+      "json_path": "history/commission-2021/recitals/recital-39.json",
+      "char_count": 1865,
+      "sha256_md": "9c3b46f86d8cafbe637fa6d76d2624d99cde96618c6f49c52a4e81ea5e4158c9"
+    },
+    {
+      "kind": "recital",
+      "number": 40,
+      "md_path": "history/commission-2021/recitals/recital-40.md",
+      "json_path": "history/commission-2021/recitals/recital-40.json",
+      "char_count": 1108,
+      "sha256_md": "24b903d5bcba68d80e348a6722058cd1630b07b62f728132f4a6aa4efa222d38"
+    },
+    {
+      "kind": "recital",
+      "number": 41,
+      "md_path": "history/commission-2021/recitals/recital-41.md",
+      "json_path": "history/commission-2021/recitals/recital-41.json",
+      "char_count": 968,
+      "sha256_md": "ac19aa93ad00eb4949ff9c5addbbbf878657e0d4edf93ffb150b67bc7ce8b225"
+    },
+    {
+      "kind": "recital",
+      "number": 42,
+      "md_path": "history/commission-2021/recitals/recital-42.md",
+      "json_path": "history/commission-2021/recitals/recital-42.json",
+      "char_count": 415,
+      "sha256_md": "55d4cfbb56c07634df5a182be16d657c9289daac6dbdfc5e32321f34fd520bdd"
+    },
+    {
+      "kind": "recital",
+      "number": 43,
+      "md_path": "history/commission-2021/recitals/recital-43.md",
+      "json_path": "history/commission-2021/recitals/recital-43.json",
+      "char_count": 668,
+      "sha256_md": "29acf40439fff78f163f6447e39f5123346d5b41030ada5df6d8602b250ff2c6"
+    },
+    {
+      "kind": "recital",
+      "number": 44,
+      "md_path": "history/commission-2021/recitals/recital-44.md",
+      "json_path": "history/commission-2021/recitals/recital-44.json",
+      "char_count": 1556,
+      "sha256_md": "37e9eda53e7a7a4e8818eb56ef51f4a023cc70d9ca1289ab99e4b42348269db0"
+    },
+    {
+      "kind": "recital",
+      "number": 45,
+      "md_path": "history/commission-2021/recitals/recital-45.md",
+      "json_path": "history/commission-2021/recitals/recital-45.json",
+      "char_count": 1429,
+      "sha256_md": "546f98f29dcb92de0264d16f5dcf01044a5c8a18f02a3f622617c1bdd0686009"
+    },
+    {
+      "kind": "recital",
+      "number": 46,
+      "md_path": "history/commission-2021/recitals/recital-46.md",
+      "json_path": "history/commission-2021/recitals/recital-46.json",
+      "char_count": 754,
+      "sha256_md": "0456294a297f8fff69acccc82a531c75362df805fadbfb61765000f58c3dcca2"
+    },
+    {
+      "kind": "recital",
+      "number": 47,
+      "md_path": "history/commission-2021/recitals/recital-47.md",
+      "json_path": "history/commission-2021/recitals/recital-47.json",
+      "char_count": 606,
+      "sha256_md": "881d9d8521588d32f3028b1019e0c0f78730210420117b04f689bb26be4a123c"
+    },
+    {
+      "kind": "recital",
+      "number": 48,
+      "md_path": "history/commission-2021/recitals/recital-48.md",
+      "json_path": "history/commission-2021/recitals/recital-48.json",
+      "char_count": 770,
+      "sha256_md": "78f3092878e1df5b8f90fb1aed8e99de1077fbfef8f33e0ee148988d1ebbb958"
+    },
+    {
+      "kind": "recital",
+      "number": 49,
+      "md_path": "history/commission-2021/recitals/recital-49.md",
+      "json_path": "history/commission-2021/recitals/recital-49.json",
+      "char_count": 345,
+      "sha256_md": "eacbb968a9fa2d9adfe61f8a1e426ed2ff8a4837d20db18624c58699c69ee675"
+    },
+    {
+      "kind": "recital",
+      "number": 50,
+      "md_path": "history/commission-2021/recitals/recital-50.md",
+      "json_path": "history/commission-2021/recitals/recital-50.json",
+      "char_count": 662,
+      "sha256_md": "23555cfd3f9fda8f22f7745548962432360244f78bb1c6e825f768df9b15f4b8"
+    },
+    {
+      "kind": "recital",
+      "number": 51,
+      "md_path": "history/commission-2021/recitals/recital-51.md",
+      "json_path": "history/commission-2021/recitals/recital-51.json",
+      "char_count": 833,
+      "sha256_md": "2a8345858b20bc1c749d6e3b90b142ad8273e45e618180fe1b04cc7ece631ef5"
+    },
+    {
+      "kind": "recital",
+      "number": 52,
+      "md_path": "history/commission-2021/recitals/recital-52.md",
+      "json_path": "history/commission-2021/recitals/recital-52.json",
+      "char_count": 763,
+      "sha256_md": "09061d1a68d40860e9a9d281eb79ccfae29641091d83ba8912cda6ccbde3d8bf"
+    },
+    {
+      "kind": "recital",
+      "number": 53,
+      "md_path": "history/commission-2021/recitals/recital-53.md",
+      "json_path": "history/commission-2021/recitals/recital-53.json",
+      "char_count": 328,
+      "sha256_md": "1f1297e6b19a9e276fb50646c04b5c9fec6e368d3361911098acc68080cb012c"
+    },
+    {
+      "kind": "recital",
+      "number": 54,
+      "md_path": "history/commission-2021/recitals/recital-54.md",
+      "json_path": "history/commission-2021/recitals/recital-54.json",
+      "char_count": 698,
+      "sha256_md": "5b18b2605b62bac9f6153145e5c9fb4550c6e724b74b0227bbfff4784e1292af"
+    },
+    {
+      "kind": "recital",
+      "number": 55,
+      "md_path": "history/commission-2021/recitals/recital-55.md",
+      "json_path": "history/commission-2021/recitals/recital-55.json",
+      "char_count": 614,
+      "sha256_md": "fb10ff8ceefe982038c5a7ab7c558543748a778de6c2856365c649be9de74d6c"
+    },
+    {
+      "kind": "recital",
+      "number": 56,
+      "md_path": "history/commission-2021/recitals/recital-56.md",
+      "json_path": "history/commission-2021/recitals/recital-56.json",
+      "char_count": 688,
+      "sha256_md": "036b54c788c3c0b6698a0ae78f7e44b539a2fae128d0cb90504b8b1726720a01"
+    },
+    {
+      "kind": "recital",
+      "number": 57,
+      "md_path": "history/commission-2021/recitals/recital-57.md",
+      "json_path": "history/commission-2021/recitals/recital-57.json",
+      "char_count": 302,
+      "sha256_md": "6de1b7a7a44d6497ca41073750835c534385daed458680beac0647266b3bfd75"
+    },
+    {
+      "kind": "recital",
+      "number": 58,
+      "md_path": "history/commission-2021/recitals/recital-58.md",
+      "json_path": "history/commission-2021/recitals/recital-58.json",
+      "char_count": 658,
+      "sha256_md": "f6a10138c1f8f19e2bf9bcbabef75704125fd366dc2654219385fd9c1a1430fa"
+    },
+    {
+      "kind": "recital",
+      "number": 59,
+      "md_path": "history/commission-2021/recitals/recital-59.md",
+      "json_path": "history/commission-2021/recitals/recital-59.json",
+      "char_count": 318,
+      "sha256_md": "fbc43564fa4d6dee8eea9ee38b4185e5f3a204253838ac4190bd3b2e8f3b1cbb"
+    },
+    {
+      "kind": "recital",
+      "number": 60,
+      "md_path": "history/commission-2021/recitals/recital-60.md",
+      "json_path": "history/commission-2021/recitals/recital-60.json",
+      "char_count": 528,
+      "sha256_md": "de58e271f92d4a91408919dfe3d7b0d20e2f310cd70e65f8240fc5c1240d0108"
+    },
+    {
+      "kind": "recital",
+      "number": 61,
+      "md_path": "history/commission-2021/recitals/recital-61.md",
+      "json_path": "history/commission-2021/recitals/recital-61.json",
+      "char_count": 580,
+      "sha256_md": "e079efe7eecc7a301fda231fdce0699ddbdae219fe2603b0e35bb5d5bbe688be"
+    },
+    {
+      "kind": "recital",
+      "number": 62,
+      "md_path": "history/commission-2021/recitals/recital-62.md",
+      "json_path": "history/commission-2021/recitals/recital-62.json",
+      "char_count": 234,
+      "sha256_md": "e90055d10acef10fc16669902b47b4c9b6e2b67fd88ed0330516b4efe524253d"
+    },
+    {
+      "kind": "recital",
+      "number": 63,
+      "md_path": "history/commission-2021/recitals/recital-63.md",
+      "json_path": "history/commission-2021/recitals/recital-63.json",
+      "char_count": 1358,
+      "sha256_md": "fe0a438ad1d842c8993da14483776e2f41fa794a95a510bc6d10c3671e3153a2"
+    },
+    {
+      "kind": "recital",
+      "number": 64,
+      "md_path": "history/commission-2021/recitals/recital-64.md",
+      "json_path": "history/commission-2021/recitals/recital-64.json",
+      "char_count": 895,
+      "sha256_md": "7b1accde621b47238ea0a8853e825655a120a807fcef10fa24bfe7adf5be5c80"
+    },
+    {
+      "kind": "recital",
+      "number": 65,
+      "md_path": "history/commission-2021/recitals/recital-65.md",
+      "json_path": "history/commission-2021/recitals/recital-65.json",
+      "char_count": 442,
+      "sha256_md": "f64ef2a17bf951a8ad7dc2e9a359209ec17f9070210681edefa668bdeee74330"
+    },
+    {
+      "kind": "recital",
+      "number": 66,
+      "md_path": "history/commission-2021/recitals/recital-66.md",
+      "json_path": "history/commission-2021/recitals/recital-66.json",
+      "char_count": 871,
+      "sha256_md": "005002d3b93e032e50b4d235ebb80c8d15c55e539842585d4c17441dcf83f65b"
+    },
+    {
+      "kind": "recital",
+      "number": 67,
+      "md_path": "history/commission-2021/recitals/recital-67.md",
+      "json_path": "history/commission-2021/recitals/recital-67.json",
+      "char_count": 449,
+      "sha256_md": "f970d4ef1e95e19a43e9b8204b041e44bc62fadd9bf5ed27d2c7cc51de59cda0"
+    },
+    {
+      "kind": "recital",
+      "number": 68,
+      "md_path": "history/commission-2021/recitals/recital-68.md",
+      "json_path": "history/commission-2021/recitals/recital-68.json",
+      "char_count": 577,
+      "sha256_md": "b805e14cba05d554a81ebf75eb34b6f10dc64fe7555431c0bfbf790bff5f37fd"
+    },
+    {
+      "kind": "recital",
+      "number": 69,
+      "md_path": "history/commission-2021/recitals/recital-69.md",
+      "json_path": "history/commission-2021/recitals/recital-69.json",
+      "char_count": 922,
+      "sha256_md": "cafcc033be740ffa0facc055948beee346429edbcb0babf2baaf788c0efc5155"
+    },
+    {
+      "kind": "recital",
+      "number": 70,
+      "md_path": "history/commission-2021/recitals/recital-70.md",
+      "json_path": "history/commission-2021/recitals/recital-70.json",
+      "char_count": 1450,
+      "sha256_md": "f1742bd8c44b122e65fe6548c2f503c7d3c1adc89e739f543fe01f47b578e66f"
+    },
+    {
+      "kind": "recital",
+      "number": 71,
+      "md_path": "history/commission-2021/recitals/recital-71.md",
+      "json_path": "history/commission-2021/recitals/recital-71.json",
+      "char_count": 816,
+      "sha256_md": "4ff871d23df476b89b18765f64a63cf2d3592771d8047bf0b474af0dac1971b6"
+    },
+    {
+      "kind": "recital",
+      "number": 72,
+      "md_path": "history/commission-2021/recitals/recital-72.md",
+      "json_path": "history/commission-2021/recitals/recital-72.json",
+      "char_count": 2168,
+      "sha256_md": "60f653b13f4b88da84c19ddac3b7fbb26ad22ee93c59863ab765a777d65a7146"
+    },
+    {
+      "kind": "recital",
+      "number": 73,
+      "md_path": "history/commission-2021/recitals/recital-73.md",
+      "json_path": "history/commission-2021/recitals/recital-73.json",
+      "char_count": 1004,
+      "sha256_md": "132129e7641db0f02e3f211e7cc46892878d0ec739ed9010ba0d7c82cbbf126e"
+    },
+    {
+      "kind": "recital",
+      "number": 74,
+      "md_path": "history/commission-2021/recitals/recital-74.md",
+      "json_path": "history/commission-2021/recitals/recital-74.json",
+      "char_count": 669,
+      "sha256_md": "1e8a197aaebb93d5ab9ad60e9e2af5f29d85a30368095c44bec0776581f20486"
+    },
+    {
+      "kind": "recital",
+      "number": 75,
+      "md_path": "history/commission-2021/recitals/recital-75.md",
+      "json_path": "history/commission-2021/recitals/recital-75.json",
+      "char_count": 605,
+      "sha256_md": "7ce6691903cb94d1fc97486f3ae36bfff0aee7b2cc80ec288e1d48cae753c46b"
+    },
+    {
+      "kind": "recital",
+      "number": 76,
+      "md_path": "history/commission-2021/recitals/recital-76.md",
+      "json_path": "history/commission-2021/recitals/recital-76.json",
+      "char_count": 647,
+      "sha256_md": "91321a525bdbb07c5f7e5421c1e02d98f97ce6aace075355463f7a8830d924de"
+    },
+    {
+      "kind": "recital",
+      "number": 77,
+      "md_path": "history/commission-2021/recitals/recital-77.md",
+      "json_path": "history/commission-2021/recitals/recital-77.json",
+      "char_count": 567,
+      "sha256_md": "47c679b1dc56ecc87475d88c45f9d22fa6156cbaf73b5978ff16668909c8926f"
+    },
+    {
+      "kind": "recital",
+      "number": 78,
+      "md_path": "history/commission-2021/recitals/recital-78.md",
+      "json_path": "history/commission-2021/recitals/recital-78.json",
+      "char_count": 935,
+      "sha256_md": "763be4683bb792d035c54987ae096884a79020d239a13be5a7c56fc15b9cfecf"
+    },
+    {
+      "kind": "recital",
+      "number": 79,
+      "md_path": "history/commission-2021/recitals/recital-79.md",
+      "json_path": "history/commission-2021/recitals/recital-79.json",
+      "char_count": 666,
+      "sha256_md": "1717a1e78f0ad7daf1083012b8f2be15ac0e762014c02fe3274255ade535f27a"
+    },
+    {
+      "kind": "recital",
+      "number": 80,
+      "md_path": "history/commission-2021/recitals/recital-80.md",
+      "json_path": "history/commission-2021/recitals/recital-80.json",
+      "char_count": 1804,
+      "sha256_md": "4e232326862ecc34436d74e9f75d0621649361c6c0454db18240d72a9e8d1f79"
+    },
+    {
+      "kind": "recital",
+      "number": 81,
+      "md_path": "history/commission-2021/recitals/recital-81.md",
+      "json_path": "history/commission-2021/recitals/recital-81.json",
+      "char_count": 1189,
+      "sha256_md": "fefbf2b41ec51c023f4696e7749ffec73ced6c4718a393f6ec68c9d54c91fa6a"
+    },
+    {
+      "kind": "recital",
+      "number": 82,
+      "md_path": "history/commission-2021/recitals/recital-82.md",
+      "json_path": "history/commission-2021/recitals/recital-82.json",
+      "char_count": 450,
+      "sha256_md": "ef3e69389f3fbe3dcf9d4d6a41c2a6a774a763d808c3ceb7c2318612cbe75609"
+    },
+    {
+      "kind": "recital",
+      "number": 83,
+      "md_path": "history/commission-2021/recitals/recital-83.md",
+      "json_path": "history/commission-2021/recitals/recital-83.json",
+      "char_count": 305,
+      "sha256_md": "04e5ca7b702d513687633eeec87c0923f621b03e9f553dd0822d1659a14ccf17"
+    },
+    {
+      "kind": "recital",
+      "number": 84,
+      "md_path": "history/commission-2021/recitals/recital-84.md",
+      "json_path": "history/commission-2021/recitals/recital-84.json",
+      "char_count": 548,
+      "sha256_md": "ab25b7224792f29fd715a7d1bb6a242b5c3a4e9fa000baac92f776558d76353f"
+    },
+    {
+      "kind": "recital",
+      "number": 85,
+      "md_path": "history/commission-2021/recitals/recital-85.md",
+      "json_path": "history/commission-2021/recitals/recital-85.json",
+      "char_count": 1660,
+      "sha256_md": "7ade3511028d255f8d38ced3a78ce4b1c320be6a33cc51c4f68fa122355e9530"
+    },
+    {
+      "kind": "recital",
+      "number": 86,
+      "md_path": "history/commission-2021/recitals/recital-86.md",
+      "json_path": "history/commission-2021/recitals/recital-86.json",
+      "char_count": 285,
+      "sha256_md": "699d8cd05f12ccd4b17b88d42dbd20df2131312ae6bab05198dfbc44024776cb"
+    },
+    {
+      "kind": "recital",
+      "number": 87,
+      "md_path": "history/commission-2021/recitals/recital-87.md",
+      "json_path": "history/commission-2021/recitals/recital-87.json",
+      "char_count": 478,
+      "sha256_md": "6dffa59950e922d682f807228394c8fa27df0bf338875d4a168176fb64f1a121"
+    },
+    {
+      "kind": "recital",
+      "number": 88,
+      "md_path": "history/commission-2021/recitals/recital-88.md",
+      "json_path": "history/commission-2021/recitals/recital-88.json",
+      "char_count": 879,
+      "sha256_md": "3bbbf488c7a9fdc9b49de14b355ea81022f8d41705fa16781c3d78da04f763d7"
+    },
+    {
+      "kind": "recital",
+      "number": 89,
+      "md_path": "history/commission-2021/recitals/recital-89.md",
+      "json_path": "history/commission-2021/recitals/recital-89.json",
+      "char_count": 228,
+      "sha256_md": "1624b7642f5d3dbe519fa8e0cff37f33dfb2393ac0b625f2a8c1bc2a99c6ca0e"
+    },
+    {
+      "kind": "annex",
+      "number_roman": "I",
+      "number": 1,
+      "md_path": "history/commission-2021/annexes/annex-i.md",
+      "json_path": "history/commission-2021/annexes/annex-i.json",
+      "char_count": 483,
+      "sha256_md": "4b9a213e0a6cb2508546dc04e6d911511e7d05cd060f758867d1f06c6958ca57"
+    },
+    {
+      "kind": "annex",
+      "number_roman": "II",
+      "number": 2,
+      "md_path": "history/commission-2021/annexes/annex-ii.md",
+      "json_path": "history/commission-2021/annexes/annex-ii.json",
+      "char_count": 3147,
+      "sha256_md": "4cf2a3830fcf0c921aaa65df308fc61c4b4561f62de0beed243c969909a7ea5c"
+    },
+    {
+      "kind": "annex",
+      "number_roman": "III",
+      "number": 3,
+      "md_path": "history/commission-2021/annexes/annex-iii.md",
+      "json_path": "history/commission-2021/annexes/annex-iii.json",
+      "char_count": 2044,
+      "sha256_md": "19368d5a89c42e8596be672e564ff1ce8af1c764b854186c17d3670dae610542"
+    },
+    {
+      "kind": "annex",
+      "number_roman": "IV",
+      "number": 4,
+      "md_path": "history/commission-2021/annexes/annex-iv.md",
+      "json_path": "history/commission-2021/annexes/annex-iv.json",
+      "char_count": 153,
+      "sha256_md": "be0e3b4b8939b6a6be05419dd97cd503752c72821b7ec56d13ba3e8f61f7879b"
+    },
+    {
+      "kind": "annex",
+      "number_roman": "V",
+      "number": 5,
+      "md_path": "history/commission-2021/annexes/annex-v.md",
+      "json_path": "history/commission-2021/annexes/annex-v.json",
+      "char_count": 1292,
+      "sha256_md": "95acefec66582934300d5c1d911e50ba30d767507cfb06966d1f73309001e41a"
+    },
+    {
+      "kind": "annex",
+      "number_roman": "VI",
+      "number": 6,
+      "md_path": "history/commission-2021/annexes/annex-vi.md",
+      "json_path": "history/commission-2021/annexes/annex-vi.json",
+      "char_count": 684,
+      "sha256_md": "d2dfd845d5cd0ddd92888b002205dd6338304d43bf6e5bf0607b5b01b4aee48b"
+    },
+    {
+      "kind": "annex",
+      "number_roman": "VII",
+      "number": 7,
+      "md_path": "history/commission-2021/annexes/annex-vii.md",
+      "json_path": "history/commission-2021/annexes/annex-vii.json",
+      "char_count": 232,
+      "sha256_md": "547ff3bf7ba46baedb1e3ce2be3a45618571be133a8405386374646d10b2608f"
+    },
+    {
+      "kind": "annex",
+      "number_roman": "VIII",
+      "number": 8,
+      "md_path": "history/commission-2021/annexes/annex-viii.md",
+      "json_path": "history/commission-2021/annexes/annex-viii.json",
+      "char_count": 477,
+      "sha256_md": "1d6a006093843cdd779a904d001ac9cf50695406b987e9ae9a16830a9ccc71e1"
+    },
+    {
+      "kind": "annex",
+      "number_roman": "IX",
+      "number": 9,
+      "md_path": "history/commission-2021/annexes/annex-ix.md",
+      "json_path": "history/commission-2021/annexes/annex-ix.json",
+      "char_count": 2978,
+      "sha256_md": "b6fcdb01ec54bfc0b33bb415a094581ae7ac8664a6f6c1e72c5f0b3926cd6d26"
+    }
+  ]
+}

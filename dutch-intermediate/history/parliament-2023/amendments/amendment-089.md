@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "89"
+amendment_target: "Voorstel voor een verordening — Overweging 54"
+---
+
+# Amendement 89
+
+**Doel:** Voorstel voor een verordening — Overweging 54
+
+## Door de Commissie voorgestelde tekst
+
+(54) De aanbieder moet een gedegen systeem voor kwaliteitsbeheer vaststellen, zorgen voor het doorlopen van de vereiste conformiteitsbeoordelingsprocedure, de relevante documentatie opstellen en een robuust systeem vaststellen voor monitoring na het in de handel brengen. Overheidsinstanties die AI-systemen met een hoog risico in gebruik stellen voor eigen gebruik mogen de regels voor het systeem voor kwaliteitsbeheer goedkeuren en uitvoeren als onderdeel van het systeem voor kwaliteitsbeheer dat, naargelang het geval, op nationaal of regionaal niveau is goedgekeurd, rekening houdend met de specifieke kenmerken van de sector en de competenties en organisatie van de overheidsinstantie in kwestie.
+
+(54)
+
+(54)
+
+## Amendement van het Europees Parlement
+
+(54) De aanbieder moet een gedegen systeem voor kwaliteitsbeheer vaststellen, zorgen voor het doorlopen van de vereiste conformiteitsbeoordelingsprocedure, de relevante documentatie opstellen en een robuust systeem vaststellen voor monitoring na het in de handel brengen. Van aanbieders die reeds beschikken over systemen voor kwaliteitsbeheer die gebaseerd zijn op normen zoals ISO 9001 of andere relevante normen wordt niet verwacht dat zij een volledig tweede systeem voor kwaliteitsbeheer instellen. In plaats daarvan moeten zij hun bestaande systemen afstemmen op bepaalde aspecten die verband houden met de naleving van bepaalde specifieke voorschriften van deze verordening. Dit moet ook terugkomen in nieuwe normalisatieactiviteiten of -richtsnoeren die de Commissie in dit verband vaststelt. Overheidsinstanties die AI-systemen met een hoog risico in gebruik stellen voor eigen gebruik mogen de regels voor het systeem voor kwaliteitsbeheer goedkeuren en uitvoeren als onderdeel van het systeem voor kwaliteitsbeheer dat, naargelang het geval, op nationaal of regionaal niveau is goedgekeurd, rekening houdend met de specifieke kenmerken van de sector en de competenties en organisatie van de overheidsinstantie in kwestie.
+
+De aanbieder moet een gedegen systeem voor kwaliteitsbeheer vaststellen, zorgen voor het doorlopen van de vereiste conformiteitsbeoordelingsprocedure, de relevante documentatie opstellen en een robuust systeem vaststellen voor monitoring na het in de handel brengen. Overheidsinstanties die AI-systemen met een hoog risico in gebruik stellen voor eigen gebruik mogen de regels voor het systeem voor kwaliteitsbeheer goedkeuren en uitvoeren als onderdeel van het systeem voor kwaliteitsbeheer dat, naargelang het geval, op nationaal of regionaal niveau is goedgekeurd, rekening houdend met de specifieke kenmerken van de sector en de competenties en organisatie van de overheidsinstantie in kwestie.
+
+De aanbieder moet een gedegen systeem voor kwaliteitsbeheer vaststellen, zorgen voor het doorlopen van de vereiste conformiteitsbeoordelingsprocedure, de relevante documentatie opstellen en een robuust systeem vaststellen voor monitoring na het in de handel brengen. Van aanbieders die reeds beschikken over systemen voor kwaliteitsbeheer die gebaseerd zijn op normen zoals ISO 9001 of andere relevante normen wordt niet verwacht dat zij een volledig tweede systeem voor kwaliteitsbeheer instellen. In plaats daarvan moeten zij hun bestaande systemen afstemmen op bepaalde aspecten die verband houden met de naleving van bepaalde specifieke voorschriften van deze verordening. Dit moet ook terugkomen in nieuwe normalisatieactiviteiten of -richtsnoeren die de Commissie in dit verband vaststelt. Overheidsinstanties die AI-systemen met een hoog risico in gebruik stellen voor eigen gebruik mogen de regels voor het systeem voor kwaliteitsbeheer goedkeuren en uitvoeren als onderdeel van het systeem voor kwaliteitsbeheer dat, naargelang het geval, op nationaal of regionaal niveau is goedgekeurd, rekening houdend met de specifieke kenmerken van de sector en de competenties en organisatie van de overheidsinstantie in kwestie.

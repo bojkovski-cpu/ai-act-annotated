@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "164"
+amendment_target: "Voorstel voor een verordening — Artikel 2 — lid 5 sexies (nieuw)"
+---
+
+# Amendement 164
+
+**Doel:** Voorstel voor een verordening — Artikel 2 — lid 5 sexies (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+*(geen tekst)*
+
+## Amendement van het Europees Parlement
+
+5 sexies. Deze verordening is niet van toepassing op AI-componenten die worden aangeboden in het kader van gratis en opensourcelicenties, behalve voor zover zij in de handel worden gebracht of in gebruik worden gesteld door een aanbieder als onderdeel van een AI-systeem met een hoog risico of van een AI-systeem dat onder titel II of titel IV valt. Deze vrijstelling geldt niet voor basismodellen zoals gedefinieerd in artikel 3.

@@ -1,0 +1,30 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "61"
+article_title: "Geïnformeerde toestemming om deel te nemen aan het testen onder reële omstandigheden buiten AI-testomgevingen voor regelgeving"
+chapter_number: "6"
+chapter_number_roman: "VI"
+chapter_title: "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE"
+section_number: null
+section_title: null
+anchor: "art_61"
+---
+
+# Artikel 61 — Geïnformeerde toestemming om deel te nemen aan het testen onder reële omstandigheden buiten AI-testomgevingen voor regelgeving
+
+**1.** Met het oog op het testen onder reële omstandigheden overeenkomstig artikel 60 moet van de proefpersonen vrijwillig gegeven geïnformeerde toestemming worden verkregen voorafgaand aan hun deelname aan het testen en nadat zij naar behoren zijn geïnformeerd en beknopte, duidelijke, relevante en begrijpelijke informatie hebben gekregen over:
+
+- a) de aard en de doelstellingen van het testen onder reële omstandigheden en de mogelijke ongemakken die verband kunnen houden met hun deelname;
+
+- b) de voorwaarden waaronder in reële omstandigheden moet worden getest, met inbegrip van de verwachte duur van de deelname van de proefpersoon of proefpersonen;
+
+- c) hun rechten en de garanties met betrekking tot hun deelname, met name hun recht om te weigeren deel te nemen aan, en het recht om zich te allen tijde terug te trekken uit, het testen onder reële omstandigheden zonder daarvan enig nadeel te ondervinden en zonder zich te hoeven rechtvaardigen;
+
+- d) de afspraken met betrekking tot het aanvragen van het terugdraaien of negeren van de voorspellingen, aanbevelingen of beslissingen van het AI-systeem;
+
+- e) het Uniebrede unieke identificatienummer van het testen onder reële omstandigheden overeenkomstig artikel 60, lid 4, punt c), en de contactgegevens van de aanbieder of zijn wettelijke vertegenwoordiger bij wie nadere informatie kan worden verkregen.
+
+**2.** De geïnformeerde toestemming wordt gedateerd en gedocumenteerd en er wordt een kopie verstrekt aan de proefpersonen of hun wettelijke vertegenwoordiger.

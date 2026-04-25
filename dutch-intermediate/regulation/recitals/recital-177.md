@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "177"
+anchor: "rct_177"
+---
+
+# Overweging (177)
+
+Om rechtszekerheid te waarborgen, ervoor te zorgen dat er een passende aanpassingsperiode is voor operatoren en verstoring van de markt te voorkomen, onder meer door de continuïteit van het gebruik van AI-systemen te waarborgen, is het wenselijk dat AI-systemen met een hoog risico die vóór de algemene datum van toepassing van deze verordening in de handel zijn gebracht of in gebruik zijn gesteld, enkel onderworpen zijn aan deze verordening indien hun ontwerp of beoogde doel na die datum aanzienlijk is gewijzigd. Er moet worden verduidelijkt dat een aanzienlijke wijziging in dit verband inhoudelijk overeenkomt met het begrip substantiële wijziging, dat enkel wordt gebruikt met betrekking tot AI-systemen met een hoog risico op grond van deze verordening. Bij wijze van uitzondering en in het licht van de publieke verantwoordingsplicht moeten operatoren van AI-systemen die componenten zijn van de grootschalige IT-systemen die zijn opgezet volgens de in een bijlage bij deze verordening vermelde rechtshandelingen, en operatoren van AI-systemen met een hoog risico die bedoeld zijn om door overheidsinstanties te worden gebruikt, respectievelijk uiterlijk eind 2030 en uiterlijk op 2 augustus 2030 de nodige stappen nemen om aan de eisen ervan te voldoen.

@@ -1,0 +1,42 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "16"
+article_title: "Verplichtingen van aanbieders van AI-systemen met een hoog risico"
+chapter_number: "3"
+chapter_number_roman: "III"
+chapter_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+section_number: "3"
+section_title: "Verplichtingen van aanbieders en gebruiksverantwoordelijken van AI-systemen met een hoog risico en andere partijen"
+anchor: "art_16"
+---
+
+# Artikel 16 — Verplichtingen van aanbieders van AI-systemen met een hoog risico
+
+Aanbieders van AI-systemen met een hoog risico:
+
+- a) zorgen ervoor dat hun AI-systemen met een hoog risico in overeenstemming zijn met de eisen van afdeling 2;
+
+- b) vermelden op het AI-systeem met een hoog risico of, wanneer dit niet mogelijk is, op de verpakking of in de bij het product gevoegde documentatie, naargelang het geval, hun naam, geregistreerde handelsnaam of geregistreerd merk en hun contactadres;
+
+- c) beschikken over een systeem voor kwaliteitsbeheer dat in overeenstemming is met artikel 17;
+
+- d) bewaren de in artikel 18 bedoelde documentatie;
+
+- e) bewaren de in artikel 19 bedoelde logs die automatisch door hun AI-systemen met een hoog risico zijn gegenereerd, wanneer zij hierover de controle hebben;
+
+- f) zorgen ervoor dat voor het AI-systeem met een hoog risico de desbetreffende in artikel 43 bedoelde conformiteitsbeoordelingsprocedure wordt uitgevoerd voordat dit systeem in de handel wordt gebracht of in gebruik wordt gesteld;
+
+- g) stellen een EU-conformiteitsverklaring op, in overeenstemming met artikel 47;
+
+- h) brengen de CE-markering aan op het AI-systeem met een hoog risico of, wanneer dit niet mogelijk is, op de verpakking of in de bij het product gevoegde documentatie, om aan te geven dat aan deze verordening is voldaan, overeenkomstig artikel 48;
+
+- i) leven de registratieverplichtingen als bedoeld in artikel 49, lid 1, na;
+
+- j) nemen de noodzakelijke corrigerende maatregelen en verstrekken de uit hoofde van artikel 20 vereiste informatie;
+
+- k) tonen op een met redenen omkleed verzoek van een nationale bevoegde autoriteit de overeenstemming aan van het AI-systeem met een hoog risico met de eisen van afdeling 2;
+
+- l) zorgen ervoor dat het AI-systeem met een hoog risico voldoet aan de toegankelijkheidseisen overeenkomstig de Richtlijnen (EU) 2016/2102 en (EU) 2019/882.

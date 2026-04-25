@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "406"
+amendment_target: "Voorstel voor een verordening — Artikel 29 — lid 5 — alinea 1"
+---
+
+# Amendement 406
+
+**Doel:** Voorstel voor een verordening — Artikel 29 — lid 5 — alinea 1
+
+## Door de Commissie voorgestelde tekst
+
+5. Gebruikers van AI-systemen met een hoog risico bewaren de logs die automatisch worden gegenereerd door die AI-systemen met een hoog risico voor zover dergelijke logs onder hun controle vallen . De logs worden bewaard gedurende een periode die passend is gezien het beoogde doel van het AI-systeem met een hoog risico en de toepasselijke wettelijke verplichtingen op grond van het Unie- of intern recht.
+
+## Amendement van het Europees Parlement
+
+5. Exploitanten van AI-systemen met een hoog risico bewaren de logs die automatisch worden gegenereerd door die AI-systemen met een hoog risico voor zover dergelijke logs onder hun controle vallen en nodig zijn voor het waarborgen en aantonen van de naleving van deze verordening, voor audits achteraf van redelijkerwijs te voorziene storingen, incidenten of misbruiken van het systeem, of voor het waarborgen van en het toezicht op de goede werking van het systeem gedurende de gehele levenscyclus ervan. Onverminderd het toepasselijke Unie- of nationale recht worden de logs gedurende ten minste zes maanden bewaard. De bewaartermijn is in overeenstemming met de normen in de sector en is passend voor het beoogde doel van het AI-systeem met een hoog risico .

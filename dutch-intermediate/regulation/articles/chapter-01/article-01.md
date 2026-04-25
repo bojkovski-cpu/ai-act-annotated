@@ -1,0 +1,34 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "1"
+article_title: "Onderwerp"
+chapter_number: "1"
+chapter_number_roman: "I"
+chapter_title: "ALGEMENE BEPALINGEN"
+section_number: null
+section_title: null
+anchor: "art_1"
+---
+
+# Artikel 1 — Onderwerp
+
+**1.** Deze verordening heeft tot doel de werking van de interne markt te verbeteren en de toepassing van mensgerichte en betrouwbare artificiële intelligentie (AI) te bevorderen, en tegelijkertijd een hoog niveau van bescherming van de gezondheid, de veiligheid en de in het Handvest verankerde grondrechten te waarborgen, met inbegrip van de democratie, de rechtsstaat en de bescherming van het milieu, tegen de schadelijke gevolgen van AI-systemen in de Unie, en innovatie te ondersteunen.
+
+**2.** Bij deze verordening worden vastgesteld:
+
+- a) geharmoniseerde regels voor het in de handel brengen, in gebruik stellen en gebruiken van AI-systemen in de Unie;
+
+- b) een verbod op bepaalde AI-praktijken;
+
+- c) specifieke eisen voor AI-systemen met een hoog risico en verplichtingen voor de operatoren van dergelijke systemen;
+
+- d) geharmoniseerde transparantievoorschriften voor bepaalde AI-systemen;
+
+- e) geharmoniseerde regels voor het in de handel brengen van AI-modellen voor algemene doeleinden;
+
+- f) regels inzake marktmonitoring, markttoezicht, governance en handhaving van die regels;
+
+- g) maatregelen ter ondersteuning van innovatie, met bijzondere nadruk op kmo’s, waaronder start-ups.

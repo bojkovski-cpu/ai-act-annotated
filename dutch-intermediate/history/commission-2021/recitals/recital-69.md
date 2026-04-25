@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "69"
+---
+
+# Overweging (69)
+
+Om de werkzaamheden van de Commissie en de lidstaten op het gebied van artificiële intelligentie te vergemakkelijken en om de transparantie ten opzichte van het publiek te vergroten, moeten aanbieders van AI-systemen met een hoog risico die geen verband houden met producten die onder het toepassingsgebied van de desbetreffende bestaande harmonisatiewetgeving van de Unie vallen, worden verplicht hun AI-systemen met een hoog risico te registreren in een EU-databank, die door de Commissie moet worden vastgesteld en beheerd. De Commissie moet de verwerkingsverantwoordelijke van die databank zijn, in overeenstemming met Verordening (EU) 2018/1725 van het Europees Parlement en de Raad 55 . Teneinde de volledige functionaliteit van de databank te waarborgen, moet de procedure voor het vaststellen van de databank de uitwerking van functionele specificaties door de Commissie en een onafhankelijk auditverslag omvatten.

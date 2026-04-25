@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "163"
+anchor: "rct_163"
+---
+
+# Overweging (163)
+
+Als aanvulling op de governancesystemen voor AI-modellen voor algemene doeleinden moet het wetenschappelijk panel de monitoringactiviteiten van het AI-bureau ondersteunen en kan het in bepaalde gevallen gekwalificeerde waarschuwingen aan het AI-bureau verstrekken die eventueel aanleiding geven tot vervolgonderzoeken. Dit moet het geval zijn indien het wetenschappelijk panel redenen heeft om te vermoeden dat een AI-model voor algemene doeleinden een concreet en aanwijsbaar risico op het niveau van de Unie vormt. Voorts moet dit het geval zijn indien het wetenschappelijk panel redenen heeft om te vermoeden dat een AI-model voor algemene doeleinden voldoet aan de criteria om als AI-model voor algemene doeleinden met een systeemrisico te worden geclassificeerd. Om het wetenschappelijk panel uit te rusten met de informatie die nodig is voor de uitvoering van die taken, moet er een mechanisme zijn waarbij het wetenschappelijk panel de Commissie kan verzoeken documentatie of informatie van een Aanbieder te eisen.

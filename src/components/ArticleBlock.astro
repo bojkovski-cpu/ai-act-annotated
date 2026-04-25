@@ -67,7 +67,7 @@ const timelineOrder = [
     </div>
     <div class="article-badges">
       <div class="article-tools">
-        <button class="article-tool-btn" title="Permalink" onclick={`navigator.clipboard.writeText(window.location.origin + '${base}chapter/${article.chapter_roman?.toLowerCase()}/#article-${article.number}')`}>&#x1f517;</button>
+        <a class="article-tool-btn" href={`/articles/chapter-${article.chapter}/article-${article.number}/`} title="Permalink to Article">&#x1f517;</a>
       </div>
     </div>
   </div>
@@ -131,7 +131,7 @@ const timelineOrder = [
       {relatedRecitals.map((rec: any) => (
         <div class="recital-card">
           <div class="recital-card-header">
-            <a href={`#recital-${rec.number}`}>Recital {rec.number}</a>
+            <a href={`/recitals/recital-${rec.number}/`}>Recital {rec.number}</a>
           </div>
           <p>{rec.text.length > 300 ? rec.text.substring(0, 300) + '…' : rec.text}</p>
         </div>

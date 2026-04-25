@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "83"
+---
+
+# Overweging (83)
+
+Om een betrouwbare en constructieve samenwerking van bevoegde autoriteiten op Unie- en nationaal niveau te waarborgen, moeten alle partijen die betrokken zijn bij de toepassing van deze verordening de vertrouwelijkheid eerbiedigen van informatie en data die zij bij de uitvoering van hun taken verkrijgen.

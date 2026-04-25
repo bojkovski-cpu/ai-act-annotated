@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "128"
+anchor: "rct_128"
+---
+
+# Overweging (128)
+
+In lijn met het algemeen erkende begrip van substantiële wijziging van producten die vallen onder de harmonisatiewetgeving van de Unie, is het passend dat, indien zich een verandering voordoet die gevolgen kan hebben voor de overeenstemming van een AI-systeem met een hoog risico met deze verordening (bijvoorbeeld een verandering van het besturingssysteem of de softwarearchitectuur) of indien het beoogde doel van het systeem verandert, dat AI-systeem wordt beschouwd als een nieuw AI-systeem dat aan een nieuwe conformiteitsbeoordeling moet worden onderworpen. Wijzigingen met betrekking tot het algoritme en de prestaties van AI-systemen die blijven “leren” nadat zij in de handel zijn gebracht of in gebruik gesteld, die met name automatisch aanpassen hoe taken worden uitgevoerd, mogen echter geen substantiële wijziging vormen, mits die wijzigingen vooraf door de aanbieder zijn bepaald en op het moment van de conformiteitsbeoordeling zijn beoordeeld.

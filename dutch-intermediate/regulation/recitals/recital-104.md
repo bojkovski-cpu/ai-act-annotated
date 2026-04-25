@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "104"
+anchor: "rct_104"
+---
+
+# Overweging (104)
+
+De aanbieders van AI-modellen voor algemene doeleinden die worden vrijgegeven in het kader van een vrije en opensource-licentie en waarvan de parameters, met inbegrip van de wegingen, de informatie over de modelarchitectuur en de informatie over het gebruik van het model, openbaar worden gemaakt, moeten worden onderworpen aan uitzonderingen met betrekking tot de transparantievereisten voor AI-modellen voor algemene doeleinden, tenzij zij geacht kunnen worden een systeemrisico te vertegenwoordigen. In dat geval mag de omstandigheid dat het model transparant is en vergezeld gaat van een opensource-licentie niet als voldoende reden worden aangemerkt om de verplichtingen uit hoofde van deze verordening niet na te leven. Aangezien het geen vanzelfsprekendheid is dat er bij de beschikbaarstelling van AI-modellen voor algemene doeleinden middels vrije en opensource-licenties substantiële informatie beschikbaar komt over de voor de training of verfijning van het model gebruikte datasets of over de wijze waarop daarbij gezorgd is voor naleving van het auteursrecht, mag de uitzondering voor AI-modellen voor algemene doeleinden wat betreft de naleving van de transparantievereisten in elk geval geen betrekking hebben op de verplichting om een samenvatting op te stellen van de content die voor de training van het model is gebruikt en ook niet op de verplichting tot invoering van een beleid ter naleving van het Unierecht inzake auteursrechten en dan met name ter vaststelling en naleving van het voorbehoud van rechten op grond van artikel 4, lid 3, van Richtlijn (EU) 2019/790 van het Europees Parlement en de Raad ( 40 ) .

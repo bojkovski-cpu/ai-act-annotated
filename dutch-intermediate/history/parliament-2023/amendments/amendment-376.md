@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "376"
+amendment_target: "Voorstel voor een verordening — Artikel 25 — lid 2 ter (nieuw)"
+---
+
+# Amendement 376
+
+**Doel:** Voorstel voor een verordening — Artikel 25 — lid 2 ter (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+*(geen tekst)*
+
+## Amendement van het Europees Parlement
+
+2 ter. De gemachtigde beëindigt het mandaat indien hij van mening is of redenen heeft om aan te nemen dat de aanbieder in strijd met zijn verplichtingen uit hoofde van deze verordening handelt. In dat geval stelt hij ook de nationale toezichthoudende instantie van de lidstaat waar hij is gevestigd en, in voorkomend geval, de betrokken aangemelde instantie, onmiddellijk in kennis van de beëindiging van het mandaat en de redenen daarvoor.

@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "256"
+amendment_target: "Voorstel voor een verordening — Artikel 7 — lid 2 bis (nieuw)"
+---
+
+# Amendement 256
+
+**Doel:** Voorstel voor een verordening — Artikel 7 — lid 2 bis (nieuw)
+
+## Door de Commissie voorgestelde tekst
+
+*(geen tekst)*
+
+## Amendement van het Europees Parlement
+
+2 bis. Bij de beoordeling van een AI-systeem met het oog op de leden 1 of 1 bis raadpleegt de Commissie het AI-bureau en, waar relevant, vertegenwoordigers van groepen waarop een AI-systeem van invloed is, de industrie, onafhankelijke deskundigen, de sociale partners en maatschappelijke organisaties. De Commissie houdt in dit verband ook openbare raadplegingen en maakt de resultaten van die raadplegingen en van de eindbeoordeling openbaar.

@@ -1,0 +1,59 @@
+# Caddy site block for aiact.annotated.nl
+# Append this to /etc/caddy/Caddyfile on the Strato VPS, then:
+#   sudo caddy validate --config /etc/caddy/Caddyfile
+#   sudo systemctl reload caddy
+#
+# Prereqs: Caddy 2.x, DNS A record for aiact.annotated.nl pointing at the VPS,
+# port 80 and 443 open. Caddy will fetch a Let's Encrypt cert automatically.
+
+aiact.annotated.nl {
+    # Path on the VPS where deploy.sh rsyncs the Astro dist/.
+    # Must match VPS_PATH in deployment/.env.deploy.
+    root * /var/www/aiact.annotated.nl
+
+    # Serve static files
+    file_server
+
+    # Compress on the fly (gzip + zstd)
+    encode gzip zstd
+
+    # Cache-control: long for hashed Astro assets, short for HTML
+    @assets {
+        path /_astro/*
+    }
+    header @assets Cache-Control "public, max-age=31536000, immutable"
+    header /*.html Cache-Control "public, max-age=300"
+
+    # Redirect trailing-slash variants for consistency (Astro builds with trailingSlash: 'always')
+    # Caddy matches URL literally; file_server handles index.html lookup in directories.
+
+    # Nice-to-have: treat /sitemap.xml as XML explicitly (Astro writes it to sitemap.xml/index.html
+    # by default under trailingSlash: 'always'; if the raw /sitemap.xml path doesn't work, change the
+    # Astro sitemap route filename to emit /sitemap.xml at the root).
+
+    # Logs (optional — Phase 2 access-logging decision pending)
+    # log {
+    #     output file /var/log/caddy/aiact.annotated.nl.log {
+    #         roll_size 50mb
+    #         roll_keep 5
+    #     }
+    #     format json
+    # }
+
+    # Security headers
+    header {
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        X-Frame-Options "SAMEORIGIN"
+        Permissions-Policy "geolocation=(), microphone=(), camera=()"
+        # Tweak CSP as content evolves — this is deliberately loose for v1.
+        # Strict version to add in Phase 2: default-src 'self'; style-src 'self' 'unsafe-inline'; etc.
+    }
+
+    # 404 fallback: Astro emits a 404.html during build
+    handle_errors {
+        @404 expression {err.status_code} == 404
+        rewrite @404 /404.html
+        file_server
+    }
+}

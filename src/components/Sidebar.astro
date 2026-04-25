@@ -3,9 +3,13 @@ import data from '@data/ai_act_structured.json';
 
 interface Props {
   activeChapter?: number;
+  activeArticle?: number;
+  activeRecital?: number;
+  activeAnnex?: string;
+  activeSection?: 'articles' | 'recitals' | 'annexes' | 'history' | 'about';
 }
 
-const { activeChapter } = Astro.props;
+const { activeChapter, activeArticle, activeSection = 'articles' } = Astro.props;
 const base = import.meta.env.BASE_URL;
 
 // Build chapter nav from data
@@ -34,6 +38,9 @@ const chapters = data.chapters.map(ch => {
     isActive: ch.number === activeChapter,
   };
 });
+
+const totalRecitals = data.recitals.length;
+const totalAnnexes = (data.annexes || []).length;
 ---
 
 <nav class="sidebar">
@@ -41,32 +48,65 @@ const chapters = data.chapters.map(ch => {
     <h2>Regulation (EU) 2024/1689</h2>
     <p>Artificial Intelligence Act</p>
   </div>
-  <div class="sidebar-controls">
-    <a class="sidebar-expand-all">&#x229e; Expand all</a>
-    <a class="sidebar-collapse-all">&#x229f; Collapse all</a>
+
+  <!-- Section switcher -->
+  <div class="sidebar-sections">
+    <a href="/" class={`sidebar-section-link${activeSection === 'articles' ? ' active' : ''}`}>Articles <span class="tab-count">{data.articles.length}</span></a>
+    <a href="/recitals/" class={`sidebar-section-link${activeSection === 'recitals' ? ' active' : ''}`}>Recitals <span class="tab-count">{totalRecitals}</span></a>
+    <a href="/annexes/" class={`sidebar-section-link${activeSection === 'annexes' ? ' active' : ''}`}>Annexes <span class="tab-count">{totalAnnexes}</span></a>
+    <a href="/history/" class={`sidebar-section-link${activeSection === 'history' ? ' active' : ''}`}>Drafting History</a>
   </div>
 
-  {chapters.map(ch => (
-    <div class={`nav-chapter${ch.isActive ? ' open' : ''}`}>
-      <div class={`nav-chapter-header${ch.isActive ? ' active' : ''}`}>
-        <div class="nav-toggle">&#x25b8;</div>
-        <div>
-          <div class="nav-chapter-title">Chapter {ch.roman}</div>
-          <span class="nav-chapter-subtitle">
-            {ch.title.charAt(0) + ch.title.slice(1).toLowerCase()} ({ch.rangeText})
-          </span>
+  {activeSection === 'articles' && (
+    <>
+      <div class="sidebar-controls">
+        <a class="sidebar-expand-all">&#x229e; Expand all</a>
+        <a class="sidebar-collapse-all">&#x229f; Collapse all</a>
+      </div>
+
+      {chapters.map(ch => (
+        <div class={`nav-chapter${ch.isActive ? ' open' : ''}`}>
+          <div class={`nav-chapter-header${ch.isActive ? ' active' : ''}`}>
+            <div class="nav-toggle">&#x25b8;</div>
+            <div>
+              <div class="nav-chapter-title">Chapter {ch.roman}</div>
+              <span class="nav-chapter-subtitle">
+                {ch.title.charAt(0) + ch.title.slice(1).toLowerCase()} ({ch.rangeText})
+              </span>
+            </div>
+          </div>
+          <div class="nav-articles">
+            {ch.articles.map(art => (
+              <a
+                class={`nav-article-link${art.number === activeArticle ? ' current' : ''}`}
+                href={`/articles/chapter-${ch.number}/article-${art.number}/`}
+              >
+                Art. {art.number} – {art.title}
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-      <div class="nav-articles">
-        {ch.articles.map(art => (
-          <a
-            class="nav-article-link"
-            href={`${base}chapter/${ch.roman.toLowerCase()}/#article-${art.number}`}
-          >
-            Art. {art.number} – {art.title}
-          </a>
-        ))}
-      </div>
+      ))}
+    </>
+  )}
+
+  {activeSection === 'recitals' && (
+    <div style="padding: 12px 16px; font-family: var(--sans); font-size: 12px; color: var(--gray-500); line-height: 1.5;">
+      <a href="/recitals/" style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">All {totalRecitals} recitals &rarr;</a>
     </div>
-  ))}
+  )}
+
+  {activeSection === 'annexes' && (
+    <div style="padding: 12px 16px; font-family: var(--sans); font-size: 12px; color: var(--gray-500); line-height: 1.5;">
+      <a href="/annexes/" style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">All {totalAnnexes} annexes &rarr;</a>
+    </div>
+  )}
+
+  {activeSection === 'history' && (
+    <div style="padding: 12px 16px; font-family: var(--sans); font-size: 12px; color: var(--gray-500); line-height: 1.5;">
+      <a href="/history/commission-2021/" style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">Commission Proposal (2021)</a>
+      <a href="/history/parliament-2023/" style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">Parliament Mandate (2023)</a>
+      <a href="/history/final-2024/" style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">Final Adopted (2024)</a>
+    </div>
+  )}
 </nav>

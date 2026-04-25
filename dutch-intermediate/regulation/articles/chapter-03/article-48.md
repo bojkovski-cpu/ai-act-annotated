@@ -1,0 +1,26 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "48"
+article_title: "CE-markering"
+chapter_number: "3"
+chapter_number_roman: "III"
+chapter_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+section_number: "5"
+section_title: "Normen, conformiteitsbeoordeling, certificaten, registratie"
+anchor: "art_48"
+---
+
+# Artikel 48 — CE-markering
+
+**1.** De CE-markering is onderworpen aan de algemene beginselen die zijn neergelegd in artikel 30 van Verordening (EG) nr. 765/2008.
+
+**2.** Voor digitaal aangeboden AI-systemen met een hoog risico wordt alleen een digitale CE-markering gebruikt als deze gemakkelijk toegankelijk is via de interface waarmee toegang wordt verkregen tot dat systeem of via een gemakkelijk toegankelijke machineleesbare code of andere elektronische middelen.
+
+**3.** De CE-markering wordt zichtbaar, leesbaar en onuitwisbaar op AI-systemen met een hoog risico aangebracht. Wanneer dit gezien de aard van het AI-systeem met een hoog risico niet mogelijk of niet gerechtvaardigd is, wordt de markering naargelang het geval op de verpakking of in de begeleidende documenten aangebracht.
+
+**4.** Indien van toepassing, wordt de CE-markering gevolgd door het identificatienummer van de aangemelde instantie die verantwoordelijk is voor de in artikel 43 beschreven conformiteitsbeoordelingsprocedures. Het identificatienummer van de aangemelde instantie wordt aangebracht door die instantie zelf dan wel overeenkomstig haar instructies door de aanbieder of door diens gemachtigde. Het identificatienummer wordt ook vermeld in reclamemateriaal waarin staat dat een AI-systeem met een hoog risico aan de eisen voor de CE-markering voldoet.
+
+**5.** Indien AI-systemen met een hoog risico onder andere Uniewetgeving vallen die ook betrekking heeft op het aanbrengen van de CE-markering, vermeldt de CE-markering dat de AI-systemen met een hoog risico tevens aan de voorschriften van die andere wetgeving voldoen.

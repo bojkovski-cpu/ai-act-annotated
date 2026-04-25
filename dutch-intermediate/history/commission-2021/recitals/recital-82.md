@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "82"
+---
+
+# Overweging (82)
+
+Het is belangrijk dat AI-systemen die verband houden met producten en die overeenkomstig deze verordening geen hoog risico met zich meebrengen en derhalve niet hoeven te voldoen aan de voorschriften van deze verordening, desalniettemin veilig zijn wanneer zij in de handel worden gebracht of in gebruik worden gesteld. Met het oog op deze doelstelling zou Richtlijn 2001/95/EG van het Europees Parlement en de Raad 57 als vangnet van toepassing zijn.

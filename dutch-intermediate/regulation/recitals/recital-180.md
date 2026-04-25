@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "180"
+anchor: "rct_180"
+---
+
+# Overweging (180)
+
+Overeenkomstig artikel 42, leden 1 en 2, van Verordening (EU) 2018/1725 zijn de Europese Toezichthouder voor gegevensbescherming en het Europees Comité voor gegevensbescherming geraadpleegd, en op 18 juni 2021 hebben zij hun gezamenlijk advies uitgebracht,

@@ -1,0 +1,22 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "34"
+article_title: "Operationele verplichtingen van aangemelde instanties"
+chapter_number: "3"
+chapter_number_roman: "III"
+chapter_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+section_number: "4"
+section_title: "Aanmeldende autoriteiten en aangemelde instanties"
+anchor: "art_34"
+---
+
+# Artikel 34 — Operationele verplichtingen van aangemelde instanties
+
+**1.** Aangemelde instanties controleren de conformiteit van AI-systemen met een hoog risico overeenkomstig de conformiteitsbeoordelingsprocedures van artikel 43.
+
+**2.** Aangemelde instanties vermijden onnodige lasten voor aanbieders bij de uitvoering van hun activiteiten en houden terdege rekening met de omvang van de aanbieder, de sector waarin hij actief is, zijn structuur en de mate van complexiteit van het betrokken AI-systeem met een hoog risico, met name om de administratieve lasten en nalevingskosten voor micro- en kleine ondernemingen in de zin van Aanbeveling 2003/361/EG tot een minimum te beperken. De aangemelde instantie eerbiedigt echter de striktheid en het beschermingsniveau die nodig zijn opdat het AI-systeem met een hoog risico voldoet aan de eisen van deze verordening.
+
+**3.** Aangemelde instanties stellen alle relevante documentatie, waaronder de documentatie van de aanbieder, ter beschikking van de in artikel 28 bedoelde aanmeldende autoriteit, en verstrekken die aan haar op verzoek, teneinde haar in staat te stellen haar beoordelings-, aanwijzings-, kennisgevings- en monitoringsactiviteiten te verrichten, en de in deze afdeling beschreven beoordeling te vergemakkelijken.

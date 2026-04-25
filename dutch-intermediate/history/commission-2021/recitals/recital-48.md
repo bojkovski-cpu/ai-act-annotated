@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+recital_number: "48"
+---
+
+# Overweging (48)
+
+AI-systemen met een hoog risico moeten op zodanige wijze worden ontworpen en ontwikkeld dat natuurlijke personen toezicht kunnen houden op de werking ervan. Met het oog hierop moeten passende maatregelen voor menselijk toezicht worden bepaald door de aanbieder van het systeem voordat dit in de handel wordt gebracht of in gebruik wordt gesteld. Dergelijke maatregelen moeten, waar passend, met name waarborgen dat voor het systeem ingebouwde operationele beperkingen gelden die niet door het systeem zelf kunnen worden omzeild, dat het systeem reageert op de menselijke exploitant en dat de natuurlijke personen aan wie de taak van het menselijke toezicht is toegewezen, beschikken over de noodzakelijke competenties, opleiding en autoriteit om deze taak uit te voeren.

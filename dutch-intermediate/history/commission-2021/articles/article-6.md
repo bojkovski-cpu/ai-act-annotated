@@ -1,0 +1,24 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+article_number: "6"
+article_title: "Classificatieregels voor AI-systemen met een hoog risico"
+titel_number_roman: "III"
+titel_number: "3"
+titel_title: "AI-SYSTEMEN MET EEN HOOG RISICO"
+hoofdstuk_number: "1"
+hoofdstuk_title: "CLASSIFICATIE VAN AI-SYSTEMEN ALS AI-SYSTEMEN MET EEN HOOG RISICO"
+---
+
+# Artikel 6 — Classificatieregels voor AI-systemen met een hoog risico
+
+**1.** Ongeacht of een AI-systeem los van in de punten a) en b) bedoelde producten in de handel wordt gebracht of in gebruik wordt gesteld, wordt een AI-systeem als AI-systeem met een hoog risico beschouwd wanneer aan beide van de volgende voorwaarden is voldaan:
+
+- (a) het AI-systeem is bedoeld om te worden gebruikt als veiligheidscomponent van een product of is zelf een product dat valt onder de in bijlage II opgenomen harmonisatiewetgeving van de Unie;
+
+- (b) voor het product waarvan het AI-systeem de veiligheidscomponent vormt of voor het AI-systeem als product zelf moet een conformiteitsbeoordeling van een derde partij worden uitgevoerd met het oog op het in de handel brengen of in gebruik stellen van dat product overeenkomstig de in bijlage II opgenomen harmonisatiewetgeving van de Unie.
+
+**2.** Naast de in lid 1 bedoelde AI-systemen met een hoog risico worden ook AI-systemen zoals bedoeld in bijlage III als AI-systeem met een hoog risico beschouwd.

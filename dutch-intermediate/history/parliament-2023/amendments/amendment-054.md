@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "54"
+amendment_target: "Voorstel voor een verordening — Overweging 27"
+---
+
+# Amendement 54
+
+**Doel:** Voorstel voor een verordening — Overweging 27
+
+## Door de Commissie voorgestelde tekst
+
+(27) AI-systemen met een hoog risico mogen alleen in de Unie in de handel worden gebracht of in bedrijf worden gesteld als zij aan bepaalde dwingende eisen voldoen. Die eisen moeten ervoor zorgen dat AI-systemen met een hoog risico die in de Unie beschikbaar zijn of waarvan de output anderszins in de Unie wordt gebruikt, geen onaanvaardbare risico’s inhouden voor belangrijke publieke belangen in de Unie, zoals die door het recht van de Unie worden erkend en beschermd. AI-systemen die als AI-systemen met een hoog risico zijn aangemerkt, moeten worden beperkt tot systemen die aanzienlijke schadelijke gevolgen hebben voor de gezondheid, de veiligheid en de grondrechten van personen in de Unie, en een dergelijke beperking moet eventuele potentiële beperkingen voor de internationale handel minimaliseren.
+
+(27)
+
+(27)
+
+## Amendement van het Europees Parlement
+
+(27) AI-systemen met een hoog risico mogen alleen in de Unie in de handel worden gebracht, in gebruik worden gesteld of worden gebruikt als zij aan bepaalde dwingende eisen voldoen. Die eisen moeten ervoor zorgen dat AI-systemen met een hoog risico die in de Unie beschikbaar zijn of waarvan de output anderszins in de Unie wordt gebruikt, geen onaanvaardbare risico’s inhouden voor belangrijke publieke belangen in de Unie, met inbegrip van de grondrechten, de democratie, de rechtsstaat of het milieu, zoals die door het recht van de Unie worden erkend en beschermd. Om afstemming met sectorale wetgeving te waarborgen en overlappingen te voorkomen, zal in de eisen voor AI-systemen met een hoog risico rekening moeten worden gehouden met sectorale wetgeving tot vaststelling van eisen voor in het toepassingsgebied van deze verordening opgenomen AI-systemen met een hoog risico, zoals Verordening (EU) 2017/745 betreffende medische hulpmiddelen en Verordening (EU) 2017/746 betreffende medische hulpmiddelen voor in-vitrodiagnostiek of Richtlijn 2006/42/EG betreffende machines. AI-systemen die als AI-systemen met een hoog risico zijn aangemerkt, moeten worden beperkt tot systemen die aanzienlijke schadelijke gevolgen hebben voor de gezondheid, de veiligheid en de grondrechten van personen in de Unie, en een dergelijke beperking moet eventuele potentiële beperkingen voor de internationale handel minimaliseren. Gezien het snelle tempo van de technologische ontwikkeling en de mogelijke veranderingen in het gebruik van AI-systemen, moet de lijst van gebieden met een hoog risico en typen gebruiken in bijlage III niettemin permanent worden geëvalueerd door middel van een regelmatige beoordeling.
+
+AI-systemen met een hoog risico mogen alleen in de Unie in de handel worden gebracht of in bedrijf worden gesteld als zij aan bepaalde dwingende eisen voldoen. Die eisen moeten ervoor zorgen dat AI-systemen met een hoog risico die in de Unie beschikbaar zijn of waarvan de output anderszins in de Unie wordt gebruikt, geen onaanvaardbare risico’s inhouden voor belangrijke publieke belangen in de Unie, zoals die door het recht van de Unie worden erkend en beschermd. AI-systemen die als AI-systemen met een hoog risico zijn aangemerkt, moeten worden beperkt tot systemen die aanzienlijke schadelijke gevolgen hebben voor de gezondheid, de veiligheid en de grondrechten van personen in de Unie, en een dergelijke beperking moet eventuele potentiële beperkingen voor de internationale handel minimaliseren.
+
+AI-systemen met een hoog risico mogen alleen in de Unie in de handel worden gebracht, in gebruik worden gesteld of worden gebruikt als zij aan bepaalde dwingende eisen voldoen. Die eisen moeten ervoor zorgen dat AI-systemen met een hoog risico die in de Unie beschikbaar zijn of waarvan de output anderszins in de Unie wordt gebruikt, geen onaanvaardbare risico’s inhouden voor belangrijke publieke belangen in de Unie, met inbegrip van de grondrechten, de democratie, de rechtsstaat of het milieu, zoals die door het recht van de Unie worden erkend en beschermd. Om afstemming met sectorale wetgeving te waarborgen en overlappingen te voorkomen, zal in de eisen voor AI-systemen met een hoog risico rekening moeten worden gehouden met sectorale wetgeving tot vaststelling van eisen voor in het toepassingsgebied van deze verordening opgenomen AI-systemen met een hoog risico, zoals Verordening (EU) 2017/745 betreffende medische hulpmiddelen en Verordening (EU) 2017/746 betreffende medische hulpmiddelen voor in-vitrodiagnostiek of Richtlijn 2006/42/EG betreffende machines. AI-systemen die als AI-systemen met een hoog risico zijn aangemerkt, moeten worden beperkt tot systemen die aanzienlijke schadelijke gevolgen hebben voor de gezondheid, de veiligheid en de grondrechten van personen in de Unie, en een dergelijke beperking moet eventuele potentiële beperkingen voor de internationale handel minimaliseren. Gezien het snelle tempo van de technologische ontwikkeling en de mogelijke veranderingen in het gebruik van AI-systemen, moet de lijst van gebieden met een hoog risico en typen gebruiken in bijlage III niettemin permanent worden geëvalueerd door middel van een regelmatige beoordeling.

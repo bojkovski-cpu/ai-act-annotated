@@ -1,0 +1,17 @@
+{
+  "language": "nl",
+  "source_url": "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206",
+  "source_celex": "52021PC0206",
+  "scraped_at": "2026-04-24T15:35:14Z",
+  "version": "commission-2021",
+  "article_number": "20",
+  "article_title": "Automatisch gegenereerde logs",
+  "titel_number_roman": "III",
+  "titel_number": "3",
+  "titel_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
+  "hoofdstuk_number": "3",
+  "hoofdstuk_title": "VERPLICHTINGEN VAN AANBIEDERS EN GEBRUIKERS VAN AI-SYSTEMEN MET EEN HOOG RISICO en andere partijen",
+  "body_md": "**1.** Aanbieders van AI-systemen met een hoog risico bewaren de logs die automatisch worden gegenereerd door hun AI-systemen met een hoog risico, voor zover dergelijke logs op grond van een contractuele regeling met de gebruiker of anders op grond van wettelijke bepalingen onder hun controle vallen. De logs worden bewaard gedurende een periode die passend is voor het beoogde doel van het AI-systeem met een hoog risico en gezien de toepasselijke wettelijke verplichtingen op grond van het Unie- of intern recht.\n\n**2.** Aanbieders die onder Richtlijn 2013/36/EU vallende kredietinstellingen zijn, bewaren de logs die automatisch door hun AI-systemen met een hoog risico worden gegenereerd als onderdeel van de documentatie in het kader van artikel 74 van die richtlijn.\n",
+  "body_text": "1. Aanbieders van AI-systemen met een hoog risico bewaren de logs die automatisch worden gegenereerd door hun AI-systemen met een hoog risico, voor zover dergelijke logs op grond van een contractuele regeling met de gebruiker of anders op grond van wettelijke bepalingen onder hun controle vallen. De logs worden bewaard gedurende een periode die passend is voor het beoogde doel van het AI-systeem met een hoog risico en gezien de toepasselijke wettelijke verplichtingen op grond van het Unie- of intern recht.\n\n2. Aanbieders die onder Richtlijn 2013/36/EU vallende kredietinstellingen zijn, bewaren de logs die automatisch door hun AI-systemen met een hoog risico worden gegenereerd als onderdeel van de documentatie in het kader van artikel 74 van die richtlijn.",
+  "char_count": 765
+}

@@ -1,0 +1,36 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "54"
+article_title: "Gemachtigden van aanbieders van AI-modellen voor algemene doeleinden"
+chapter_number: "5"
+chapter_number_roman: "V"
+chapter_title: "AI-MODELLEN VOOR ALGEMENE DOELEINDEN"
+section_number: "2"
+section_title: "Verplichtingen voor aanbieders van AI-modellen voor algemene doeleinden"
+anchor: "art_54"
+---
+
+# Artikel 54 — Gemachtigden van aanbieders van AI-modellen voor algemene doeleinden
+
+**1.** Aanbieders die in derde landen zijn gevestigd, wijzen voordat zij een AI-model voor algemene doeleinden in de Unie in de handel brengen, middels een schriftelijke machtiging een gemachtigde aan die is gevestigd in de Unie.
+
+**2.** De aanbieder stelt zijn gemachtigde in staat de taken uit te voeren die staan gespecificeerd in het mandaat dat hij van de aanbieder heeft ontvangen.
+
+**3.** De gemachtigde voert de taken uit die staan gespecificeerd in het mandaat dat hij van de aanbieder heeft ontvangen. Hij legt op verzoek een kopie van het mandaat over aan het AI-bureau, in een van de officiële talen van de instellingen van de Unie. Voor de toepassing van deze verordening geeft het mandaat de gemachtigde de bevoegdheid om de volgende taken te verrichten:
+
+- a) controleren of de aanbieder de in bijlage XI gespecificeerde technische documentatie heeft opgesteld en aan alle in artikel 53 en, indien van toepassing, artikel 55 bedoelde verplichtingen heeft voldaan;
+
+- b) een kopie van de in bijlage XI gespecificeerde technische documentatie beschikbaar houden voor het AI-bureau en de nationale autoriteiten gedurende een periode van tien jaar nadat het AI-model voor algemene doeleinden in de handel is gebracht, en de contactgegevens van de aanbieder door wie de gemachtigde is aangewezen;
+
+- c) het verstrekken aan het AI-bureau, na een met redenen omkleed verzoek, van alle informatie en documentatie, waaronder die in punt b), die nodig is om aan te tonen dat de verplichtingen van dit hoofdstuk worden nageleefd;
+
+- d) samenwerken met het AI-bureau en de bevoegde autoriteiten, na een met redenen omkleed verzoek, bij alle maatregelen die de autoriteiten nemen in verband met het AI-model voor algemene doeleinden, ook indien het model wordt geïntegreerd in AI-systemen die in de Unie in de handel worden gebracht of in gebruik worden gesteld.
+
+**4.** Door het mandaat wordt de gemachtigde aangesteld als aanspreekpunt, naast of in plaats van de aanbieder, voor het AI-bureau of de bevoegde autoriteiten, met betrekking tot alle vraagstukken die verband houden met het waarborgen van de naleving van deze verordening.
+
+**5.** De gemachtigde beëindigt het mandaat indien hij van mening is of redenen heeft om aan te nemen dat de aanbieder in strijd met zijn verplichtingen op grond van deze verordening handelt. In dat geval stelt hij tevens het AI-bureau onmiddellijk in kennis van de beëindiging van het mandaat en de redenen daarvoor.
+
+**6.** De in dit artikel genoemde verplichting geldt niet voor aanbieders van AI-modellen die worden vrijgegeven in het kader van een vrije en opensource licentie die de raadpleging, het gebruik, de wijziging en distributie van het model mogelijk maakt en waarvan de parameters, met inbegrip van de wegingen, de informatie over de modelarchitectuur en de informatie over het gebruik van het model, openbaar worden gemaakt, tenzij de AI-modellen voor algemene doeleinden systeemrisico’s vertonen.

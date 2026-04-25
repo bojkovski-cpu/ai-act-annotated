@@ -1,0 +1,29 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "146"
+amendment_target: "Voorstel voor een verordening — Artikel 2 — lid 1 — punt c"
+---
+
+# Amendement 146
+
+**Doel:** Voorstel voor een verordening — Artikel 2 — lid 1 — punt c
+
+## Door de Commissie voorgestelde tekst
+
+c) aanbieders en gebruikers van AI-systemen die zich in een derde land bevinden wanneer de output van het systeem in de Unie wordt gebruikt.
+
+c)
+
+c)
+
+## Amendement van het Europees Parlement
+
+c) aanbieders en exploitanten van AI-systemen die gevestigd zijn of zich bevinden in een derde land wanneer het lidstatelijke recht van toepassing is krachtens internationaal publiekrecht of de output van het systeem bedoeld is om in de Unie te worden gebruikt;
+
+aanbieders en gebruikers van AI-systemen die zich in een derde land bevinden wanneer de output van het systeem in de Unie wordt gebruikt.
+
+aanbieders en exploitanten van AI-systemen die gevestigd zijn of zich bevinden in een derde land wanneer het lidstatelijke recht van toepassing is krachtens internationaal publiekrecht of de output van het systeem bedoeld is om in de Unie te worden gebruikt;

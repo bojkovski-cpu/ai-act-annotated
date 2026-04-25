@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "681"
+amendment_target: "Voorstel voor een verordening — Artikel 73 — lid 2"
+---
+
+# Amendement 681
+
+**Doel:** Voorstel voor een verordening — Artikel 73 — lid 2
+
+## Door de Commissie voorgestelde tekst
+
+2. De in artikel 4, artikel 7, lid 1, artikel 11, lid 3, artikel 43, leden 5 en 6, en artikel 48, lid 5, bedoelde bevoegdheidsdelegatie wordt met ingang van [datum waarop de verordening in werking treedt ] voor onbepaalde tijd aan de Commissie verleend.
+
+## Amendement van het Europees Parlement
+
+2. De in artikel 4, artikel 7, lid 1, artikel 11, lid 3, artikel 43, leden 5 en 6, en artikel 48, lid 5, bedoelde bevoegdheid om gedelegeerde handelingen vast te stellen, wordt met ingang van … [ de datum van inwerkingtreding van de verordening] voor een termijn van vijf jaar aan de Commissie toegekend. De Commissie stelt uiterlijk negen maanden voor het einde van de termijn van vijf jaar een verslag op over de bevoegdheidsdelegatie. De bevoegdheidsdelegatie wordt stilzwijgend met termijnen van dezelfde duur verlengd, tenzij het Europees Parlement of de Raad zich uiterlijk drie maanden voor het einde van elke termijn tegen deze verlenging verzet.

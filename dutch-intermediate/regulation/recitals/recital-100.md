@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "100"
+anchor: "rct_100"
+---
+
+# Overweging (100)
+
+Indien een AI-model voor algemene doeleinden is geïntegreerd in of deel uitmaakt van een AI-systeem, moet dit systeem als AI-systeem voor algemene doeleinden worden aangemerkt indien het dankzij deze integratie aangewend kan worden voor uiteenlopende doeleinden. Een AI-systeem voor algemene doeleinden kan rechtstreeks worden gebruikt of kan worden geïntegreerd in meerdere andere AI-systemen.

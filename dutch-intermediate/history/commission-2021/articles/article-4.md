@@ -1,0 +1,22 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52021PC0206"
+source_celex: "52021PC0206"
+scraped_at: "2026-04-24T15:35:14Z"
+version: "commission-2021"
+article_number: "4"
+article_title: "Wijzigingen van bijlage I"
+titel_number_roman: "I"
+titel_number: "1"
+titel_title: "ALGEMENE BEPALINGEN"
+hoofdstuk_number: null
+hoofdstuk_title: null
+---
+
+# Artikel 4 — Wijzigingen van bijlage I
+
+De Commissie is bevoegd om overeenkomstig artikel 73 gedelegeerde handelingen vast te stellen tot wijziging van de lijst van technieken en benaderingen van bijlage I, teneinde deze lijst bij te werken om rekening te houden met marktontwikkelingen en technologische ontwikkelingen op basis van kenmerken die vergelijkbaar zijn met de daarin opgenomen technieken en benaderingen.
+
+### TITEL II
+
+### VERBODEN PRAKTIJKEN OP HET GEBIED VAN ARTIFICIËLE INTELLIGENTIE

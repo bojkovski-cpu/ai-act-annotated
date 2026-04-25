@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "20"
+anchor: "rct_20"
+---
+
+# Overweging (20)
+
+Om de grootste voordelen van AI-systemen te behalen en tegelijkertijd de grondrechten, gezondheid en veiligheid te beschermen en democratische controle mogelijk te maken, moeten aanbieders, gebruiksverantwoordelijken en betrokken personen door middel van AI-geletterdheid van de nodige kennis voorzien worden om onderbouwde beslissingen te nemen met betrekking tot AI-systemen. Die kennis kan verschillen naargelang de context en kan inzicht omvatten in de correcte toepassing van technische elementen tijdens de ontwikkelingsfase van het AI-systeem, de maatregelen die moeten worden toegepast tijdens het gebruik ervan, hoe de output van het AI-systeem moet worden geïnterpreteerd, en, in het geval van betrokken personen, de kennis die nodig is om te begrijpen hoe beslissingen die met behulp van AI worden genomen, op hen van invloed zullen zijn. In het kader van de toepassing van deze verordening moet AI-geletterdheid alle relevante actoren in de AI-waardeketen de inzichten verschaffen die nodig zijn om de passende naleving en de correcte handhaving ervan te waarborgen. Voorts kunnen de brede uitvoering van maatregelen op het gebied van AI-geletterdheid en de invoering van passende vervolgmaatregelen bijdragen tot het verbeteren van de arbeidsomstandigheden en uiteindelijk de consolidatie en innovatie van betrouwbare AI in de Unie ondersteunen. De Europese raad voor artificiële intelligentie (European Artificial Intelligence Board — de “AI-board”) moet de Commissie ondersteunen bij het bevorderen van instrumenten voor AI-geletterdheid en van de bekendheid van het publiek met en hun begrip van de voordelen, risico’s, waarborgen, rechten en plichten met betrekking tot het gebruik van AI-systemen. In samenwerking met de relevante belanghebbenden moeten de Commissie en de lidstaten de opstelling van vrijwillige gedragscodes faciliteren om de AI-geletterdheid te bevorderen bij personen die zich bezighouden met de ontwikkeling, de exploitatie en het gebruik van AI.

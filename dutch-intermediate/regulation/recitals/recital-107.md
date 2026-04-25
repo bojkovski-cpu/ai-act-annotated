@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "107"
+anchor: "rct_107"
+---
+
+# Overweging (107)
+
+Voor een grotere transparantie ten aanzien van de bij de pre-training en training van AI-modellen voor algemene doeleinden gebruikte data, met inbegrip van door het auteursrecht beschermde tekst en data, is het passend dat aanbieders van dergelijke modellen een voldoende gedetailleerde samenvatting maken en publiceren van de voor de training van het AI-model voor algemene doeleinden gebruikte content. Terdege rekening houdend met de noodzaak tot bescherming van bedrijfsgeheimen en vertrouwelijke bedrijfsinformatie moet deze samenvatting breed van karakter zijn in plaats van technisch gedetailleerd, teneinde partijen met legitieme belangen, waaronder houders van auteursrechten, in staat te stellen hun rechten uit hoofde van het Unierecht uit te oefenen en te handhaven. Zo kan er bijvoorbeeld een opsomming worden gegeven van de belangrijkste gegevensverzamelingen of -reeksen waarmee het model is getraind, zoals grote particuliere of openbare databanken of gegevensarchieven, en kan een uitleg in de vorm van een relaas worden gegeven over andere gebruikte gegevensbronnen. Het is passend dat het AI-bureau een model voor die samenvatting verstrekt, dat een eenvoudig en doeltreffend model dient te zijn waarmee de aanbieder de vereiste samenvatting in de vorm van een relaas verstrekken kan.

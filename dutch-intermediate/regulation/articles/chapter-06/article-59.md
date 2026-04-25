@@ -1,0 +1,52 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "59"
+article_title: "Verdere verwerking van persoonsgegevens voor het ontwikkelen van bepaalde AI-systemen in het algemeen belang in de AI-testomgeving voor regelgeving"
+chapter_number: "6"
+chapter_number_roman: "VI"
+chapter_title: "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE"
+section_number: null
+section_title: null
+anchor: "art_59"
+---
+
+# Artikel 59 — Verdere verwerking van persoonsgegevens voor het ontwikkelen van bepaalde AI-systemen in het algemeen belang in de AI-testomgeving voor regelgeving
+
+**1.** In de aI-testomgeving voor regelgeving mogen rechtmatig voor andere doeleinden verzamelde persoonsgegevens uitsluitend worden verwerkt ten behoeve van het ontwikkelen, trainen en testen van bepaalde AI-systemen in de testomgeving indien aan alle volgende voorwaarden is voldaan:
+
+- a) Er worden AI-systemen ontwikkeld zodat een overheidsinstantie of een andere natuurlijke of rechtspersoon een aanzienlijk openbaar belang kan waarborgen op een of meer van de volgende gebieden:
+
+  - i) openbare veiligheid en volksgezondheid, met inbegrip van opsporing, diagnosticering, preventie, bestrijding en behandeling van ziekten en verbetering van gezondheidszorgstelsels;
+
+  - ii) een hoog niveau van bescherming en verbetering van de kwaliteit van het milieu, bescherming van de biodiversiteit, bescherming tegen vervuiling, maatregelen voor de groene transitie en maatregelen ter beperking van en aanpassing aan klimaatverandering;
+
+  - iii) energieduurzaamheid;
+
+  - iv) de veiligheid en veerkracht van vervoerssystemen en mobiliteit, kritieke vervoersinfrastructuur en vervoersnetwerken;
+
+  - v) doeltreffendheid en kwaliteit van het openbaar bestuur en de openbare diensten;
+
+- b) de verwerkte data zijn nodig om te voldoen aan een of meer van de in hoofdstuk III, afdeling 2, bedoelde eisen wanneer die eisen niet doeltreffend kunnen worden vervuld door het verwerken van geanonimiseerde, synthetische of andere niet persoonsgebonden data;
+
+- c) er zijn doeltreffende monitoringmechanismen om vast te stellen of zich tijdens de experimenten in de testomgeving hoge risico’s voor de rechten en vrijheden van de betrokkenen als bedoeld in artikel 35 van Verordening (EU) 2016/679 en in artikel 39 van Verordening (EU) 2018/1725 kunnen voordoen evenals responsmechanismen om die risico’s onmiddellijk te beperken en indien nodig de verwerking stop te zetten;
+
+- d) in het kader van de testomgeving te verwerken persoonsgegevens bevinden zich in een functioneel gescheiden, geïsoleerde en beschermde omgeving voor dataverwerking onder de controle van de potentiële aanbieder, waarbij alleen bevoegde personen toegang hebben tot deze data;
+
+- e) aanbieders kunnen de oorspronkelijk verzamelde gegevens alleen verder delen in overeenstemming met het Unierecht inzake gegevensbescherming; persoonsgegevens die in de testomgeving worden aangemaakt mogen niet buiten de testomgeving worden gedeeld;
+
+- f) de verwerking van persoonsgegevens in het kader van de testomgeving mag niet leiden tot maatregelen of besluiten die gevolgen hebben voor de betrokkenen, noch gevolgen hebben voor de toepassing van hun rechten die zijn vastgelegd in het Unierecht inzake de bescherming van persoonsgegevens;
+
+- g) in het kader van de testomgeving verwerkte persoonsgegevens worden beschermd met passende technische en organisatorische maatregelen en worden gewist nadat de deelname aan de testomgeving is beëindigd of de periode van bewaring van de persoonsgegevens ten einde is gekomen;
+
+- h) de logbestanden van de verwerking van persoonsgegevens in het kader van de testomgeving worden bijgehouden voor de duur van de deelname aan de testomgeving, tenzij anders is bepaald in het Unierecht of het nationale recht;
+
+- i) een volledige en gedetailleerde beschrijving van het proces en de onderbouwing van het trainen, testen en valideren van het AI-systeem wordt samen met de testresultaten bewaard als onderdeel van de in bijlage IV bedoelde technische documentatie;
+
+- j) een korte samenvatting van het in de testomgeving ontwikkelde AI-project en de doelstellingen en verwachte resultaten ervan worden op de website van de bevoegde autoriteiten gepubliceerd; deze verplichting heeft geen betrekking op gevoelige operationele gegevens in verband met de activiteiten van rechtshandhavingsinstanties en grenstoezichts-, immigratie- of asielautoriteiten.
+
+**2.** Met het oog op de voorkoming, het onderzoek, de opsporing en de vervolging van strafbare feiten of de tenuitvoerlegging van straffen, met inbegrip van de bescherming tegen en de voorkoming van bedreigingen voor de openbare veiligheid, onder de controle en de verantwoordelijkheid van rechtshandhavingsinstanties, is de verwerking van persoonsgegevens in AI-testomgevingen voor regelgeving gebaseerd op specifiek Unie- of nationaal recht en onderworpen aan dezelfde cumulatieve voorwaarden als bedoeld in lid 1.
+
+**3.** Lid 1 doet geen afbreuk aan het Unie- of nationale recht waarin verwerking voor andere doeleinden dan die uitdrukkelijk vermeld in die wetgeving wordt uitgesloten, noch aan het Unie- of nationale recht tot vaststelling van de grondslag voor de verwerking van persoonsgegevens die noodzakelijk is voor het ontwikkelen, testen of trainen van innovatieve AI-systemen of een andere rechtsgrondslag, met naleving van het Unierecht inzake de bescherming van persoonsgegevens.

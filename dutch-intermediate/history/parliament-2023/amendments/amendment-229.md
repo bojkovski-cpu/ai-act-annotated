@@ -1,0 +1,41 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "229"
+amendment_target: "Voorstel voor een verordening — Artikel 5 — lid 2"
+---
+
+# Amendement 229
+
+**Doel:** Voorstel voor een verordening — Artikel 5 — lid 2
+
+## Door de Commissie voorgestelde tekst
+
+2. Bij het gebruik van biometrische systemen voor de identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving voor de in lid 1, punt d), genoemde doelstellingen wordt rekening gehouden met het volgende:
+
+a) de aard van de situatie die aanleiding geeft tot het mogelijke gebruik van het systeem, met inbegrip van de ernst, waarschijnlijkheid en omvang van de schade die zonder het gebruik van het systeem zou worden veroorzaakt;
+
+a)
+
+b) de gevolgen van het gebruik van het systeem voor de rechten en vrijheden van alle betrokken personen, en met name de ernst, waarschijnlijkheid en omvang van deze gevolgen.
+
+b)
+
+Daarnaast moet het gebruik van biometrische systemen voor de identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving voor de in lid 1, punt d), genoemde doelstellingen in overeenstemming zijn met noodzakelijke en evenredige waarborgen en voorwaarden in verband met het gebruik, en met name ten aanzien van de beperking in de tijd en de geografische en persoonlijke beperkingen.
+
+## Amendement van het Europees Parlement
+
+Schrappen
+
+
+
+de aard van de situatie die aanleiding geeft tot het mogelijke gebruik van het systeem, met inbegrip van de ernst, waarschijnlijkheid en omvang van de schade die zonder het gebruik van het systeem zou worden veroorzaakt;
+
+
+
+de gevolgen van het gebruik van het systeem voor de rechten en vrijheden van alle betrokken personen, en met name de ernst, waarschijnlijkheid en omvang van deze gevolgen.
+
+

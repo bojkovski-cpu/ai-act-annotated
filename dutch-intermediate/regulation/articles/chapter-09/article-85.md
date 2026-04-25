@@ -1,0 +1,20 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+article_number: "85"
+article_title: "Recht om een klacht in te dienen bij een markttoezichtautoriteit"
+chapter_number: "9"
+chapter_number_roman: "IX"
+chapter_title: "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+section_number: "4"
+section_title: "Rechtsmiddelen"
+anchor: "art_85"
+---
+
+# Artikel 85 — Recht om een klacht in te dienen bij een markttoezichtautoriteit
+
+Onverminderd andere administratieve of gerechtelijke rechtsmiddelen kan elke natuurlijke of rechtspersoon die redenen heeft om van mening te zijn dat er inbreuk is gepleegd op de bepalingen van deze verordening, klachten indienen bij de relevante markttoezichtautoriteit.
+
+Overeenkomstig Verordening (EU) 2019/1020 worden dergelijke klachten in aanmerking genomen ter uitvoering van markttoezichtactiviteiten en worden zij behandeld in overeenstemming met de specifieke procedures die de markttoezichtautoriteiten daartoe hebben vastgesteld.

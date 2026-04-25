@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "156"
+anchor: "rct_156"
+---
+
+# Overweging (156)
+
+Teneinde een passende en doeltreffende handhaving te waarborgen van de eisen en verplichtingen van deze verordening, die valt onder de harmonisatiewetgeving van de Unie, moet het systeem van markttoezicht en de conformiteit van producten, zoals vastgesteld bij Verordening (EU) 2019/1020, volledig van toepassing zijn. Krachtens deze verordening aangewezen markttoezichtautoriteiten moeten over alle handhavingsbevoegdheden beschikken die in deze verordening en in Verordening (EU) 2019/1020 zijn vastgelegd, en moeten hun bevoegdheden en taken onafhankelijk, onpartijdig en onbevooroordeeld uitoefenen. Hoewel voor de meeste AI-systemen geen specifieke eisen en verplichtingen gelden krachtens deze verordening, mogen markttoezichtautoriteiten maatregelen nemen ten aanzien van alle AI-systemen indien deze een risico vormen overeenkomstig deze verordening. Gezien de specifieke aard van de instellingen, agentschappen en organen van de Unie die binnen het toepassingsgebied van deze verordening vallen, is het wenselijk de Europese Toezichthouder voor gegevensbescherming aan te wijzen als de voor hen bevoegde markttoezichtautoriteit. Dit moet de aanwijzing van nationale bevoegde autoriteiten door de lidstaten onverlet laten. Markttoezichtactiviteiten mogen geen afbreuk doen aan het vermogen van de onder toezicht staande entiteiten om hun taken onafhankelijk uit te voeren, indien het Unierecht deze onafhankelijkheid vereist.

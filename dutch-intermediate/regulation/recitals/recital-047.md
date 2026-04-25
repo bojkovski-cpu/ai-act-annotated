@@ -1,0 +1,12 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
+source_celex: "32024R1689"
+scraped_at: "2026-04-24T15:21:50Z"
+recital_number: "47"
+anchor: "rct_47"
+---
+
+# Overweging (47)
+
+AI-systemen kunnen nadelige gevolgen hebben voor de gezondheid en de veiligheid van personen, met name wanneer dergelijke systemen functioneren als veiligheidscomponenten van producten. Overeenkomstig de in de harmonisatiewetgeving van de Unie beoogde doelstellingen om het vrije verkeer van producten op de interne markt te vergemakkelijken en ervoor te zorgen dat alleen veilige en anderszins conforme producten hun weg naar de markt vinden, is het belangrijk dat de veiligheidsrisico’s die een product in zijn geheel kan genereren door zijn digitale componenten, waaronder AI-systemen, naar behoren worden voorkomen en beperkt. Zo moeten robots die alsmaar autonomer worden, of het nu in een productieomgeving is of voor persoonlijke hulp en zorg, in staat zijn op een veilige manier te werken en hun taken uit te voeren in complexe omgevingen. Ook in de gezondheidssector, waar het belang voor leven en gezondheid bijzonder hoog is, moeten de steeds geavanceerdere diagnosesystemen en systemen ter ondersteuning van menselijke beslissingen betrouwbaar en nauwkeurig zijn.

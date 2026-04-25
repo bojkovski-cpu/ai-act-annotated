@@ -1,0 +1,21 @@
+---
+language: "nl"
+source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-24T15:37:53Z"
+version: "parliament-2023"
+amendment_number: "703"
+amendment_target: "Voorstel voor een verordening — Artikel 84 — lid 6"
+---
+
+# Amendement 703
+
+**Doel:** Voorstel voor een verordening — Artikel 84 — lid 6
+
+## Door de Commissie voorgestelde tekst
+
+6. Bij de uitvoering van de in de leden 1 tot en met 4 vermelde evaluaties en toetsingen neemt de Commissie de standpunten en bevindingen van het Comité , het Europees Parlement, de Raad en van andere relevante instanties of bronnen in aanmerking.
+
+## Amendement van het Europees Parlement
+
+6. Bij de uitvoering van de in de leden 1 tot en met 4 vermelde evaluaties en toetsingen neemt de Commissie de standpunten en bevindingen van het AI-bureau , het Europees Parlement, de Raad en van andere relevante instanties of bronnen in aanmerking en raadpleegt zij belanghebbenden . Het resultaat van dit overleg wordt bij het verslag gevoegd.

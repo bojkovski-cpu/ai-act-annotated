@@ -35,9 +35,11 @@ const chapters = data.chapters.map(ch => {
     withRecitals,
     withHistory,
     withOmnibus,
-    href: `${base}chapter/${ch.roman.toLowerCase()}/`,
+    href: `/articles/chapter-${ch.number}/`,
   };
 });
+
+const totalAnnexes = (data.annexes || []).length;
 
 // Stats
 const totalArticles = data.articles.length;
@@ -68,6 +70,31 @@ const totalWithOmnibus = data.articles.filter(a => a.omnibus_amendments?.length 
     </div>
   </div>
 
+  <!-- Browse shortcuts -->
+  <div style="font-family: var(--sans); margin-bottom: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+    <a href="/articles/" style="display: block; padding: 14px 18px; background: #fff; border: 1px solid var(--gray-200); border-top: 3px solid var(--red-accent); border-radius: 0 0 6px 6px; text-decoration: none; color: inherit;">
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gray-500); font-weight: 700;">Browse</div>
+      <div style="font-size: 15px; color: var(--red-accent); font-weight: 700; margin-top: 4px;">All Articles</div>
+      <div style="font-size: 12px; color: var(--gray-500); margin-top: 2px;">{totalArticles} across 13 chapters</div>
+    </a>
+    <a href="/recitals/" style="display: block; padding: 14px 18px; background: #fff; border: 1px solid var(--gray-200); border-top: 3px solid #2563eb; border-radius: 0 0 6px 6px; text-decoration: none; color: inherit;">
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gray-500); font-weight: 700;">Browse</div>
+      <div style="font-size: 15px; color: var(--blue-dark); font-weight: 700; margin-top: 4px;">All Recitals</div>
+      <div style="font-size: 12px; color: var(--gray-500); margin-top: 2px;">{totalRecitals} interpretive recitals</div>
+    </a>
+    <a href="/annexes/" style="display: block; padding: 14px 18px; background: #fff; border: 1px solid var(--gray-200); border-top: 3px solid var(--gray-600); border-radius: 0 0 6px 6px; text-decoration: none; color: inherit;">
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gray-500); font-weight: 700;">Browse</div>
+      <div style="font-size: 15px; color: var(--gray-800); font-weight: 700; margin-top: 4px;">Annexes</div>
+      <div style="font-size: 12px; color: var(--gray-500); margin-top: 2px;">{totalAnnexes} technical annexes</div>
+    </a>
+    <a href="/history/" style="display: block; padding: 14px 18px; background: #fff; border: 1px solid var(--gray-200); border-top: 3px solid #d97706; border-radius: 0 0 6px 6px; text-decoration: none; color: inherit;">
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gray-500); font-weight: 700;">Explore</div>
+      <div style="font-size: 15px; color: #d97706; font-weight: 700; margin-top: 4px;">Drafting History</div>
+      <div style="font-size: 12px; color: var(--gray-500); margin-top: 2px;">Commission / Parliament / Final</div>
+    </a>
+  </div>
+
+  <div style="font-family: var(--sans); font-size: 13px; font-weight: 700; color: var(--gray-700); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 10px; border-bottom: 2px solid #111; padding-bottom: 6px;">Chapters</div>
   <div style="font-family: var(--sans);">
     {chapters.map(ch => (
       <a href={ch.href} style="display: block; text-decoration: none; color: inherit; margin-bottom: 12px; padding: 16px 20px; background: #fff; border: 1px solid var(--gray-200); border-left: 4px solid var(--red-accent); border-radius: 0 6px 6px 0; transition: all 0.15s;"
