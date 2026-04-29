@@ -1,0 +1,322 @@
+---
+/**
+ * Guidance index — /en/guidance/ and /nl/guidance/.
+ *
+ * Step 5.2. Per Decision 1 of guidance-design-note.md, URLs are flat
+ * (`/{lang}/guidance/<canonical_id>/`); per Decision 6, the index is a flat
+ * filterable list (no jurisdiction/issuer grouping until ~10 docs).
+ *
+ * Filters surfaced (Decision 6):
+ *   - Issuer (`source` enum)
+ *   - Document type (`document_type` enum)
+ *   - Language (default "all"; toggle to "matching current site language")
+ *
+ * Filtering happens client-side via vanilla JS — every card is rendered
+ * server-side and the data attributes drive the show/hide logic. This keeps
+ * the page static (no React, no Astro islands) and works without JS too:
+ * with JS disabled the reader sees every card.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import GuidanceCard from '@components/GuidanceCard.astro';
+import { getGuidanceDocs, getIndexPagePaths } from '@/lib/loader';
+import type { Lang, GuidanceDoc } from '@/types/aiact';
+
+export function getStaticPaths() {
+  return getIndexPagePaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const docs = getGuidanceDocs();
+
+// ─── Filter option lists (drawn from the corpus) ────────────────────────
+const sourceOptions = Array.from(new Set(docs.map(d => d.source))).sort();
+const docTypeOptions = Array.from(new Set(docs.map(d => d.document_type))).sort();
+
+// ─── Localised UI strings ───────────────────────────────────────────────
+const STR: Record<Lang, Record<string, string>> = {
+  en: {
+    pageTitle: 'Guidance — EU AI Act Annotated',
+    h1: 'Guidance',
+    breadcrumb_home: 'Home',
+    breadcrumb_self: 'Guidance',
+    intro: 'Interpretive material from the European Commission, AI Office, EDPB, and Member State authorities. Each document carries citations down to the article and paragraph level; per-article surfacing arrives in step 5.3.',
+    filter_label_source: 'Issuer',
+    filter_label_doctype: 'Document type',
+    filter_label_lang: 'Language',
+    filter_all: 'All',
+    filter_lang_all: 'All languages',
+    filter_lang_matching: 'Matching this page',
+    empty: 'No documents match the current filters.',
+    count_singular: 'document',
+    count_plural: 'documents',
+  },
+  nl: {
+    pageTitle: 'Richtsnoeren — Geannoteerde EU AI-verordening',
+    h1: 'Richtsnoeren',
+    breadcrumb_home: 'Start',
+    breadcrumb_self: 'Richtsnoeren',
+    intro: 'Interpretatief materiaal van de Europese Commissie, het AI Office, de EDPB en autoriteiten van de lidstaten. Elk document bevat verwijzingen tot op het niveau van artikel en lid; surfacing per artikel volgt in stap 5.3.',
+    filter_label_source: 'Uitgever',
+    filter_label_doctype: 'Documenttype',
+    filter_label_lang: 'Taal',
+    filter_all: 'Alle',
+    filter_lang_all: 'Alle talen',
+    filter_lang_matching: 'Overeenkomend met deze pagina',
+    empty: 'Geen documenten passen op de huidige filters.',
+    count_singular: 'document',
+    count_plural: 'documenten',
+  },
+};
+const t = STR[lang];
+
+// ─── Source / document-type label maps (must match GuidanceCard) ────────
+const SOURCE_LABEL_EN: Record<GuidanceDoc['source'], string> = {
+  commission: 'European Commission',
+  ai_office: 'AI Office',
+  edpb: 'EDPB',
+  member_state: 'Member State',
+  other: 'Other',
+};
+const SOURCE_LABEL_NL: Record<GuidanceDoc['source'], string> = {
+  commission: 'Europese Commissie',
+  ai_office: 'AI Office',
+  edpb: 'EDPB',
+  member_state: 'Lidstaat',
+  other: 'Overig',
+};
+const DOC_TYPE_LABEL_EN: Record<GuidanceDoc['document_type'], string> = {
+  guideline: 'Guidelines',
+  opinion: 'Opinion',
+  recommendation: 'Recommendation',
+  code_of_practice: 'Code of Practice',
+  guide: 'Guide',
+  faq: 'FAQ',
+  other: 'Other',
+};
+const DOC_TYPE_LABEL_NL: Record<GuidanceDoc['document_type'], string> = {
+  guideline: 'Richtsnoer',
+  opinion: 'Advies',
+  recommendation: 'Aanbeveling',
+  code_of_practice: 'Praktijkcode',
+  guide: 'Gids',
+  faq: 'FAQ',
+  other: 'Overig',
+};
+const sourceLabelMap = lang === 'nl' ? SOURCE_LABEL_NL : SOURCE_LABEL_EN;
+const docTypeLabelMap = lang === 'nl' ? DOC_TYPE_LABEL_NL : DOC_TYPE_LABEL_EN;
+
+const totalCount = docs.length;
+const countLabel = totalCount === 1 ? t.count_singular : t.count_plural;
+---
+
+<BaseLayout title={t.pageTitle} activeTopNav="guidance">
+  <Sidebar slot="sidebar" lang={lang} activeSection="guidance" />
+
+  <div class="chapter-bar">
+    <h1>{t.h1}</h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{t.breadcrumb_home}</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>{t.breadcrumb_self}</span>
+  </div>
+
+  <p style="font-family: var(--serif); color: var(--gray-700); line-height: 1.6; margin-bottom: 18px; max-width: 720px;">
+    {t.intro}
+  </p>
+
+  <div class="guidance-meta-bar">
+    <span class="guidance-count" id="guidance-count">{totalCount}</span>
+    <span class="guidance-count-label" id="guidance-count-label">{countLabel}</span>
+  </div>
+
+  <div class="guidance-filters" data-current-lang={lang}>
+    <div class="guidance-filter-group">
+      <label class="guidance-filter-label" for="filter-source">{t.filter_label_source}</label>
+      <select id="filter-source" class="guidance-filter-select" data-filter="source">
+        <option value="__all__">{t.filter_all}</option>
+        {sourceOptions.map(s => (
+          <option value={s}>{sourceLabelMap[s as GuidanceDoc['source']] ?? s}</option>
+        ))}
+      </select>
+    </div>
+    <div class="guidance-filter-group">
+      <label class="guidance-filter-label" for="filter-doctype">{t.filter_label_doctype}</label>
+      <select id="filter-doctype" class="guidance-filter-select" data-filter="doctype">
+        <option value="__all__">{t.filter_all}</option>
+        {docTypeOptions.map(d => (
+          <option value={d}>{docTypeLabelMap[d as GuidanceDoc['document_type']] ?? d}</option>
+        ))}
+      </select>
+    </div>
+    <div class="guidance-filter-group">
+      <label class="guidance-filter-label">{t.filter_label_lang}</label>
+      <div class="guidance-filter-toggle" role="group">
+        <button type="button" class="guidance-filter-btn active" data-lang-mode="all">{t.filter_lang_all}</button>
+        <button type="button" class="guidance-filter-btn" data-lang-mode="matching">{t.filter_lang_matching}</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="guidance-list" class="guidance-list">
+    {docs.map(d => (
+      <div
+        class="guidance-list-item"
+        data-source={d.source}
+        data-doctype={d.document_type}
+        data-langs={d.languages.join(',')}
+      >
+        <GuidanceCard doc={d} lang={lang} />
+      </div>
+    ))}
+  </div>
+
+  <div id="guidance-empty" class="guidance-empty" hidden>{t.empty}</div>
+</BaseLayout>
+
+<style>
+  .guidance-meta-bar {
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--gray-600);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .guidance-count {
+    font-weight: 700;
+    color: var(--gray-800);
+    font-size: 16px;
+    margin-right: 4px;
+  }
+  .guidance-count-label {
+    text-transform: lowercase;
+  }
+  .guidance-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 14px 16px;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    margin-bottom: 18px;
+    font-family: var(--sans);
+  }
+  .guidance-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .guidance-filter-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: var(--gray-500);
+    font-weight: 600;
+  }
+  .guidance-filter-select {
+    font-family: var(--sans);
+    font-size: 13px;
+    padding: 5px 8px;
+    border: 1px solid var(--gray-300);
+    background: #fff;
+    color: var(--gray-800);
+    min-width: 170px;
+  }
+  .guidance-filter-toggle {
+    display: inline-flex;
+    border: 1px solid var(--gray-300);
+    background: #fff;
+  }
+  .guidance-filter-btn {
+    font-family: var(--sans);
+    font-size: 12px;
+    padding: 6px 12px;
+    background: #fff;
+    color: var(--gray-700);
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid var(--gray-200);
+  }
+  .guidance-filter-btn:last-child {
+    border-right: none;
+  }
+  .guidance-filter-btn.active {
+    background: var(--red-accent);
+    color: #fff;
+  }
+  .guidance-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .guidance-list-item.hidden {
+    display: none;
+  }
+  .guidance-empty {
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--gray-500);
+    padding: 24px;
+    text-align: center;
+    background: var(--gray-50);
+    border: 1px dashed var(--gray-200);
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    const root = document.querySelector('.guidance-filters');
+    if (!root) return;
+    const currentLang = root.getAttribute('data-current-lang');
+    const sourceSel = document.getElementById('filter-source');
+    const doctypeSel = document.getElementById('filter-doctype');
+    const langBtns = root.querySelectorAll('[data-lang-mode]');
+    const list = document.getElementById('guidance-list');
+    const empty = document.getElementById('guidance-empty');
+    const countEl = document.getElementById('guidance-count');
+    const countLabelEl = document.getElementById('guidance-count-label');
+    const COUNT_LABEL_SINGULAR = countLabelEl ? countLabelEl.getAttribute('data-singular') || countLabelEl.textContent : '';
+
+    let langMode = 'all';
+    let sourceVal = '__all__';
+    let doctypeVal = '__all__';
+
+    function apply() {
+      const items = list.querySelectorAll('.guidance-list-item');
+      let visible = 0;
+      items.forEach((it) => {
+        const s = it.getAttribute('data-source');
+        const d = it.getAttribute('data-doctype');
+        const langs = (it.getAttribute('data-langs') || '').split(',');
+        let show = true;
+        if (sourceVal !== '__all__' && s !== sourceVal) show = false;
+        if (doctypeVal !== '__all__' && d !== doctypeVal) show = false;
+        if (langMode === 'matching' && !langs.includes(currentLang)) show = false;
+        it.classList.toggle('hidden', !show);
+        if (show) visible++;
+      });
+      if (countEl) countEl.textContent = String(visible);
+      if (empty) empty.hidden = visible !== 0;
+    }
+
+    if (sourceSel) sourceSel.addEventListener('change', (e) => {
+      sourceVal = e.target.value;
+      apply();
+    });
+    if (doctypeSel) doctypeSel.addEventListener('change', (e) => {
+      doctypeVal = e.target.value;
+      apply();
+    });
+    langBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        langBtns.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        langMode = btn.getAttribute('data-lang-mode');
+        apply();
+      });
+    });
+  })();
+</script>

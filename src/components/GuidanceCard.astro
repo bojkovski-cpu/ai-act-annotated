@@ -1,0 +1,445 @@
+---
+/**
+ * GuidanceCard — one guidance entry on the index page (and, later, inside
+ * 5.3's per-article tab).
+ *
+ * Reflects Decision 5 of guidance-design-note.md (which fields surface and
+ * which stay internal) and Decision 4-D (Brontaal: fallback labelling).
+ * Renders only with AI Act CSS variables; does NOT import GDPR styling.
+ *
+ * Props:
+ *   - doc: the GuidanceDoc (full metadata)
+ *   - lang: the locale of the page hosting this card (drives label fallback,
+ *     URL fallback, badge "matching/non-matching" detection)
+ *   - showPinCite: optional; populated when the card is rendered inside the
+ *     per-article tab in 5.3 with a SINGLE pin-cite. Kept for backwards
+ *     compatibility with the 5.2 wiring; new callers should prefer
+ *     `showPinCites` (plural) below.
+ *   - showPinCites: optional; populated by 5.3's per-article tab when the
+ *     same guidance doc cites the article more than once. Each entry pairs
+ *     a `pin_cite` block (drilling into the article) with the
+ *     `location_in_doc` block (§/p./fn. inside the guidance doc).
+ *
+ *     Rendering rule (handoff §2):
+ *       - 1 pin-cite  → inline single line: "Cites <pin> in <loc>"
+ *       - 2 pin-cites → inline two-item list: "Cites: <a>, <b>"
+ *       - 3+          → bulleted list with one row per pin-cite.
+ *
+ *     `showPinCite` (singular) and `showPinCites` (plural) are mutually
+ *     exclusive at the call site. If both are passed, `showPinCites` wins
+ *     and the singular is ignored.
+ *
+ * The card surfaces:
+ *   1. Title (in current language; "Brontaal:" / "Source language:" labelled
+ *      when fallback fired).
+ *   2. Issuer badge (e.g. "EZ" / "Member State"). Today the schema doesn't
+ *      carry an explicit `issuer_short`, so the card renders the `source`
+ *      enum value as a humanised label. When 5.6+ adds explicit issuer
+ *      fields, the helper here is the single place to update.
+ *   3. Document-type badge ("Guide" / "Guidelines" / "Opinion" / etc.).
+ *   4. Adoption date.
+ *   5. Languages-available chips (matching language solid; missing greyed).
+ *   6. Citation count (current language only — language-aware).
+ *   7. Anchor to the detail page in the current language.
+ */
+import type { GuidanceCitation, GuidanceDoc, Lang } from '@/types/aiact';
+import { getGuidanceTitleFor, getGuidanceUrlFor } from '@/lib/loader';
+
+type PinCiteEntry = {
+  pin_cite: GuidanceCitation['pin_cite'];
+  location_in_doc: GuidanceCitation['location_in_doc'];
+};
+
+interface Props {
+  doc: GuidanceDoc;
+  lang: Lang;
+  showPinCite?: { paragraph: number | string | null; letter: string | null } | undefined;
+  showPinCites?: PinCiteEntry[] | undefined;
+}
+
+const { doc, lang, showPinCite, showPinCites } = Astro.props;
+
+// ─── Title resolution with Decision 4-D fallback labelling ─────────────
+const titleResolved = getGuidanceTitleFor(doc, lang);
+const titleIsFallback = titleResolved.resolved_lang !== lang;
+
+// ─── Issuer + document-type humanised labels ───────────────────────────
+const SOURCE_LABEL_EN: Record<GuidanceDoc['source'], string> = {
+  commission: 'European Commission',
+  ai_office: 'AI Office',
+  edpb: 'EDPB',
+  member_state: 'Member State',
+  other: 'Other',
+};
+const SOURCE_LABEL_NL: Record<GuidanceDoc['source'], string> = {
+  commission: 'Europese Commissie',
+  ai_office: 'AI Office',
+  edpb: 'EDPB',
+  member_state: 'Lidstaat',
+  other: 'Overig',
+};
+const DOC_TYPE_LABEL_EN: Record<GuidanceDoc['document_type'], string> = {
+  guideline: 'Guidelines',
+  opinion: 'Opinion',
+  recommendation: 'Recommendation',
+  code_of_practice: 'Code of Practice',
+  guide: 'Guide',
+  faq: 'FAQ',
+  other: 'Other',
+};
+const DOC_TYPE_LABEL_NL: Record<GuidanceDoc['document_type'], string> = {
+  guideline: 'Richtsnoer',
+  opinion: 'Advies',
+  recommendation: 'Aanbeveling',
+  code_of_practice: 'Praktijkcode',
+  guide: 'Gids',
+  faq: 'FAQ',
+  other: 'Overig',
+};
+
+const sourceLabel = lang === 'nl' ? SOURCE_LABEL_NL[doc.source] : SOURCE_LABEL_EN[doc.source];
+const docTypeLabel = lang === 'nl' ? DOC_TYPE_LABEL_NL[doc.document_type] : DOC_TYPE_LABEL_EN[doc.document_type];
+
+// ─── Adoption date — locale-formatted ──────────────────────────────────
+function formatDate(iso: string | null | undefined, locale: Lang): string {
+  if (!iso) return '';
+  const d = new Date(iso + 'T00:00:00Z');
+  if (Number.isNaN(d.getTime())) return iso;
+  // ISO-stable explicit format to avoid environment locale variance during
+  // SSR. Astro static builds can run on Linux containers with C locale.
+  const months = locale === 'nl'
+    ? ['januari', 'februari', 'maart', 'april', 'mei', 'juni',
+       'juli', 'augustus', 'september', 'oktober', 'november', 'december']
+    : ['January', 'February', 'March', 'April', 'May', 'June',
+       'July', 'August', 'September', 'October', 'November', 'December'];
+  return `${d.getUTCDate()} ${months[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+}
+const adoptedLabel = lang === 'nl' ? 'Vastgesteld' : 'Adopted';
+const adoptedDate = formatDate(doc.adoption_date, lang);
+
+// ─── Citation count ────────────────────────────────────────────────────
+const langBlock = doc.by_language?.[lang];
+const citationsCount = langBlock?.citations_found ?? 0;
+const citationsLabel = lang === 'nl'
+  ? `${citationsCount} verwijzingen naar artikelen`
+  : `${citationsCount} article citations`;
+
+// ─── Detail-page anchor (flat URL per Decision 1 of design note) ───────
+const detailHref = `/${lang}/guidance/${doc.canonical_id}/`;
+
+// ─── Languages-available chip set ──────────────────────────────────────
+const allLangs: Lang[] = ['en', 'nl'];
+
+// ─── External-source URL ───────────────────────────────────────────────
+const externalUrl = getGuidanceUrlFor(doc, lang);
+
+// ─── Brontaal: label (Decision 4-D) ────────────────────────────────────
+const sourceLanguageNoteEn = titleIsFallback
+  ? `Source language: ${titleResolved.resolved_lang.toUpperCase()}`
+  : '';
+const sourceLanguageNoteNl = titleIsFallback
+  ? `Brontaal: ${titleResolved.resolved_lang === 'en' ? 'Engels' : 'Nederlands'}`
+  : '';
+const sourceLanguageNote = lang === 'nl' ? sourceLanguageNoteNl : sourceLanguageNoteEn;
+
+// ─── Pin-cite display (only inside 5.3 per-article tab) ────────────────
+// Two paths into this block:
+//   1. `showPinCite`  (singular)  — 5.2's original prop, still accepted.
+//   2. `showPinCites` (plural)    — 5.3's extension; preferred for the
+//      per-article tab where one guidance doc may cite the same article
+//      multiple times.
+//
+// Plural wins when both are passed.
+
+function formatParagraphPart(p: { paragraph: number | string | null; letter: string | null } | null | undefined): string {
+  if (!p) return '';
+  const parts: string[] = [];
+  if (p.paragraph !== null && p.paragraph !== undefined && p.paragraph !== '') {
+    parts.push(`(${p.paragraph})`);
+  }
+  if (p.letter) parts.push(`(${p.letter})`);
+  return parts.join('');
+}
+
+function formatLocation(loc: GuidanceCitation['location_in_doc'] | null | undefined, locale: Lang): string {
+  if (!loc) return '';
+  const parts: string[] = [];
+  if (loc.section) parts.push(`§${loc.section}`);
+  if (typeof loc.page === 'number') parts.push(`p. ${loc.page}`);
+  if (typeof loc.footnote === 'number') parts.push(locale === 'nl' ? `vn. ${loc.footnote}` : `fn. ${loc.footnote}`);
+  return parts.join(', ');
+}
+
+// Singular legacy path (5.2 callers).
+const pinCiteLabel = formatParagraphPart(showPinCite ?? null);
+
+// Plural path (5.3). Build display rows from showPinCites if populated.
+type PinRow = { paragraphPart: string; raw: string; location: string };
+const pluralRows: PinRow[] = (showPinCites ?? []).map((e) => ({
+  paragraphPart: formatParagraphPart(e.pin_cite),
+  raw: e.pin_cite?.raw ?? '',
+  location: formatLocation(e.location_in_doc, lang),
+}));
+
+const usePlural = pluralRows.length > 0;
+const pluralCount = pluralRows.length;
+const pluralCitesLabel = lang === 'nl' ? 'Verwijst naar' : 'Cites';
+const pluralFromLabel = lang === 'nl' ? 'in' : 'in';
+---
+
+<article class="guidance-card">
+  <a href={detailHref} class="guidance-card-link">
+    <div class="guidance-card-header">
+      <h3 class="guidance-card-title">{titleResolved.value}</h3>
+      {sourceLanguageNote && (
+        <div class="guidance-card-source-lang">{sourceLanguageNote}</div>
+      )}
+    </div>
+
+    <div class="guidance-card-badges">
+      <span class="gc-badge gc-badge-source">{sourceLabel}</span>
+      <span class="gc-badge gc-badge-type">{docTypeLabel}</span>
+      <span class="gc-badge gc-badge-date">{adoptedLabel} {adoptedDate}</span>
+    </div>
+
+    <div class="guidance-card-meta">
+      <div class="guidance-card-langs" aria-label="Available languages">
+        {allLangs.map((l) => (
+          <span class={`gc-lang-chip ${doc.languages.includes(l) ? 'gc-lang-on' : 'gc-lang-off'}`}>
+            {l.toUpperCase()}
+          </span>
+        ))}
+      </div>
+      <div class="guidance-card-citations">{citationsLabel}</div>
+    </div>
+
+    {!usePlural && showPinCite && pinCiteLabel && (
+      <div class="guidance-card-pincite">
+        <span class="gc-pincite-label">{lang === 'nl' ? 'Verwijst naar' : 'Cites'}</span>
+        <span class="gc-pincite-value">{pinCiteLabel}</span>
+      </div>
+    )}
+
+    {usePlural && pluralCount === 1 && (
+      <div class="guidance-card-pincite">
+        <span class="gc-pincite-label">{pluralCitesLabel}</span>
+        <span class="gc-pincite-value">
+          {pluralRows[0].paragraphPart || pluralRows[0].raw}
+        </span>
+        {pluralRows[0].location && (
+          <span class="gc-pincite-loc">{pluralFromLabel} {pluralRows[0].location}</span>
+        )}
+      </div>
+    )}
+
+    {usePlural && pluralCount === 2 && (
+      <div class="guidance-card-pincite">
+        <span class="gc-pincite-label">{pluralCitesLabel}</span>
+        <span class="gc-pincite-value">
+          {pluralRows.map((row, i) => (
+            <span>
+              {row.location || row.paragraphPart || row.raw}{i < pluralRows.length - 1 ? ', ' : ''}
+            </span>
+          ))}
+        </span>
+      </div>
+    )}
+
+    {usePlural && pluralCount >= 3 && (
+      <div class="guidance-card-pincite guidance-card-pincite-list">
+        <div class="gc-pincite-label">{pluralCitesLabel} ({pluralCount}×)</div>
+        <ul class="gc-pincite-rows">
+          {pluralRows.map((row) => (
+            <li class="gc-pincite-row">
+              <span class="gc-pincite-row-pin">
+                {row.paragraphPart || row.raw}
+              </span>
+              {row.location && (
+                <span class="gc-pincite-row-loc"> — {row.location}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </a>
+  {externalUrl && (
+    <div class="guidance-card-external">
+      <a href={externalUrl} target="_blank" rel="noopener" class="guidance-card-external-link">
+        {lang === 'nl' ? 'Bron' : 'Source'} ↗
+      </a>
+    </div>
+  )}
+</article>
+
+<style>
+  .guidance-card {
+    background: #fff;
+    border: 1px solid var(--gray-200);
+    border-left: 4px solid var(--red-accent);
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    transition: border-color 0.12s ease, box-shadow 0.12s ease;
+    position: relative;
+  }
+  .guidance-card:hover {
+    border-color: var(--gray-300);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  }
+  .guidance-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .guidance-card-header {
+    margin-bottom: 10px;
+  }
+  .guidance-card-title {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gray-800);
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+  }
+  .guidance-card-source-lang {
+    font-family: var(--sans);
+    font-size: 11px;
+    color: var(--amber-badge);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+  .guidance-card-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .gc-badge {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 3px 8px;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+  .gc-badge-source {
+    background: var(--gray-100);
+    color: var(--gray-700);
+    border: 1px solid var(--gray-200);
+  }
+  .gc-badge-type {
+    background: var(--red-accent);
+    color: #fff;
+  }
+  .gc-badge-date {
+    background: var(--gray-50);
+    color: var(--gray-600);
+    border: 1px solid var(--gray-200);
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .guidance-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--gray-600);
+  }
+  .guidance-card-langs {
+    display: inline-flex;
+    gap: 4px;
+  }
+  .gc-lang-chip {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    border: 1px solid var(--gray-200);
+    border-radius: 2px;
+  }
+  .gc-lang-on {
+    background: var(--gray-800);
+    color: #fff;
+    border-color: var(--gray-800);
+  }
+  .gc-lang-off {
+    background: transparent;
+    color: var(--gray-300);
+    border-style: dashed;
+  }
+  .guidance-card-citations {
+    color: var(--gray-500);
+  }
+  .guidance-card-pincite {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--gray-100);
+    font-family: var(--sans);
+    font-size: 12px;
+  }
+  .gc-pincite-label {
+    color: var(--gray-500);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+    margin-right: 6px;
+  }
+  .gc-pincite-value {
+    color: var(--gray-800);
+    font-weight: 600;
+  }
+  .gc-pincite-loc {
+    color: var(--gray-500);
+    font-weight: 400;
+    margin-left: 6px;
+  }
+  .guidance-card-pincite-list .gc-pincite-label {
+    display: block;
+    margin-bottom: 6px;
+  }
+  .gc-pincite-rows {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .gc-pincite-row {
+    padding: 3px 0;
+    border-bottom: 1px dotted var(--gray-100);
+    font-size: 12px;
+  }
+  .gc-pincite-row:last-child {
+    border-bottom: none;
+  }
+  .gc-pincite-row-pin {
+    color: var(--gray-800);
+    font-weight: 600;
+  }
+  .gc-pincite-row-loc {
+    color: var(--gray-500);
+    font-weight: 400;
+  }
+  .guidance-card-external {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+  }
+  .guidance-card-external-link {
+    font-family: var(--sans);
+    font-size: 11px;
+    color: var(--blue-accent);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+  }
+  .guidance-card-external-link:hover {
+    text-decoration: underline;
+  }
+</style>

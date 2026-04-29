@@ -1,0 +1,541 @@
+---
+/**
+ * Guidance detail page — /{lang}/guidance/<canonical_id>/.
+ *
+ * Step 5.2. Per Decision 1 of guidance-design-note.md, the URL is flat
+ * (no jurisdiction/issuer segments — those would just repeat what
+ * canonical_id already encodes via the slug convention from 5.5a).
+ *
+ * Static-paths cover only (lang × canonical_id) pairs where the doc has a
+ * body on disk — i.e. languages in `doc.body_paths` whose value is non-null.
+ * Per Decision 4-E, the LanguageToggle for any language NOT on disk renders
+ * greyed (the BaseLayout `availableLangs` prop drives this); we never serve
+ * a placeholder route in the unavailable language.
+ *
+ * Markdown rendering uses Astro's built-in pipeline via `import.meta.glob`
+ * (eager, no `?raw` query). Each .md under `src/content/guidance/**` is
+ * processed by remark/rehype at build time and exposed as a `<Content />`
+ * component. No new npm deps added at this step.
+ *
+ * The sidebar surfaces (per Decision 5):
+ *   - external source URL (lang-resolved via getGuidanceUrlFor)
+ *   - document type, adoption date, entry-into-force, endorsement status
+ *   - editorial note when populated (BilingualText, lang-resolved)
+ *   - citation count for this language
+ *   - cited-articles list with anchors back to /{lang}/articles/...
+ *
+ * The body section renders the matching-language markdown. If the doc is
+ * single-language and the route enumerated only its source language, the
+ * placeholder branch ("Document only available in X") doesn't fire — the
+ * route doesn't exist for the absent language. Decision 4-E's greyed
+ * toggle communicates that asymmetry to the reader.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import {
+  getGuidanceDoc,
+  getGuidancePagePaths,
+  getGuidanceTitleFor,
+  getGuidanceUrlFor,
+  getCitedArticlesForGuidance,
+  getArticles,
+} from '@/lib/loader';
+import type { Lang, GuidanceDoc, BilingualText } from '@/types/aiact';
+
+export function getStaticPaths() {
+  return getGuidancePagePaths();
+}
+
+interface PageProps {
+  doc: GuidanceDoc;
+}
+
+const lang = Astro.params.lang as Lang;
+const slug = Astro.params.slug as string;
+const { doc } = Astro.props as PageProps;
+
+if (!doc) {
+  // Should never fire — getStaticPaths only emits real (lang, slug) pairs.
+  // Defensive guard so a future routing bug raises loudly instead of
+  // 500-ing in silence.
+  throw new Error(`Guidance doc not found for slug: ${slug}`);
+}
+
+const titleResolved = getGuidanceTitleFor(doc, lang);
+const titleIsFallback = titleResolved.resolved_lang !== lang;
+
+// ─── Markdown rendering — eager glob, Astro-processed ──────────────────
+//
+// Keys are absolute project-rooted paths e.g.
+// "/src/content/guidance/en/nl_ez_aiact_guide_2025_v1_1.md".
+// The default export is { Content, frontmatter, getHeadings, ... }.
+const mdModules = import.meta.glob<{ Content: any }>(
+  '/src/content/guidance/**/*.md',
+  { eager: true },
+);
+const bodyKey = `/src/content/${doc.body_paths[lang]}`;
+const Module = doc.body_paths[lang] ? mdModules[bodyKey] : undefined;
+const Content = Module?.Content;
+
+// ─── Sidebar metadata ──────────────────────────────────────────────────
+const externalUrl = getGuidanceUrlFor(doc, lang);
+const langBlock = doc.by_language?.[lang];
+const citationsCount = langBlock?.citations_found ?? 0;
+const citedArticles = getCitedArticlesForGuidance(doc.canonical_id, lang);
+
+// Resolve article display labels (number + title) from the loader so the
+// sidebar list links to the matching-language article page.
+const allArticles = getArticles(lang);
+const articleLookup = new Map(allArticles.map(a => [a.number, a]));
+const citedArticleEntries = citedArticles.map(num => {
+  const a = articleLookup.get(num);
+  return {
+    number: num,
+    title: a?.title ?? '',
+    chapter: a?.chapter ?? null,
+    href: a
+      ? `/${lang}/articles/chapter-${a.chapter}/article-${a.number}/`
+      : `/${lang}/articles/`,
+  };
+});
+
+// ─── Editorial note (BilingualText) ────────────────────────────────────
+function resolveBilingual(text: BilingualText | null | undefined, locale: Lang): string | null {
+  if (!text) return null;
+  const direct = (text as any)[locale];
+  if (typeof direct === 'string' && direct.length > 0) return direct;
+  if (typeof text.en === 'string' && text.en.length > 0) return text.en;
+  return null;
+}
+const editorialNote = resolveBilingual(doc.editorial_note, lang);
+
+// ─── Localised UI strings ──────────────────────────────────────────────
+const STR: Record<Lang, Record<string, string>> = {
+  en: {
+    pageSuffix: 'Guidance — EU AI Act Annotated',
+    breadcrumb_home: 'Home',
+    breadcrumb_guidance: 'Guidance',
+    sb_source: 'Source',
+    sb_open: 'Open at issuer',
+    sb_doctype: 'Document type',
+    sb_adoption: 'Adoption date',
+    sb_entry: 'Entry into force',
+    sb_validity: 'End of validity',
+    sb_endorsement: 'Endorsement',
+    sb_endorsed: 'Endorsed',
+    sb_historical: 'Historical',
+    sb_citations: 'Article citations',
+    sb_citations_count: (n: number) => `${n} citation${n === 1 ? '' : 's'} in this language`,
+    sb_cited_articles: 'Cited articles',
+    sb_cited_none: 'No article citations recorded.',
+    sb_editorial: 'Editorial note',
+    sb_lang_avail: 'Languages available',
+    body_h: 'Document text',
+    no_body: 'Body not available in this language.',
+    src_lang: 'Source language',
+  },
+  nl: {
+    pageSuffix: 'Richtsnoer — Geannoteerde EU AI-verordening',
+    breadcrumb_home: 'Start',
+    breadcrumb_guidance: 'Richtsnoeren',
+    sb_source: 'Bron',
+    sb_open: 'Open bij uitgever',
+    sb_doctype: 'Documenttype',
+    sb_adoption: 'Vastgesteld op',
+    sb_entry: 'Inwerkingtreding',
+    sb_validity: 'Einde geldigheid',
+    sb_endorsement: 'Bekrachtiging',
+    sb_endorsed: 'Bekrachtigd',
+    sb_historical: 'Historisch',
+    sb_citations: 'Verwijzingen naar artikelen',
+    sb_citations_count: (n: number) => `${n} ${n === 1 ? 'verwijzing' : 'verwijzingen'} in deze taal`,
+    sb_cited_articles: 'Genoemde artikelen',
+    sb_cited_none: 'Geen verwijzingen naar artikelen geregistreerd.',
+    sb_editorial: 'Redactionele noot',
+    sb_lang_avail: 'Beschikbare talen',
+    body_h: 'Documenttekst',
+    no_body: 'Tekst niet beschikbaar in deze taal.',
+    src_lang: 'Brontaal',
+  },
+};
+const t = STR[lang];
+
+// ─── Localised label maps for source / doc-type ────────────────────────
+const SOURCE_LABEL_EN: Record<GuidanceDoc['source'], string> = {
+  commission: 'European Commission',
+  ai_office: 'AI Office',
+  edpb: 'EDPB',
+  member_state: 'Member State',
+  other: 'Other',
+};
+const SOURCE_LABEL_NL: Record<GuidanceDoc['source'], string> = {
+  commission: 'Europese Commissie',
+  ai_office: 'AI Office',
+  edpb: 'EDPB',
+  member_state: 'Lidstaat',
+  other: 'Overig',
+};
+const DOC_TYPE_LABEL_EN: Record<GuidanceDoc['document_type'], string> = {
+  guideline: 'Guidelines',
+  opinion: 'Opinion',
+  recommendation: 'Recommendation',
+  code_of_practice: 'Code of Practice',
+  guide: 'Guide',
+  faq: 'FAQ',
+  other: 'Other',
+};
+const DOC_TYPE_LABEL_NL: Record<GuidanceDoc['document_type'], string> = {
+  guideline: 'Richtsnoer',
+  opinion: 'Advies',
+  recommendation: 'Aanbeveling',
+  code_of_practice: 'Praktijkcode',
+  guide: 'Gids',
+  faq: 'FAQ',
+  other: 'Overig',
+};
+const sourceLabelMap = lang === 'nl' ? SOURCE_LABEL_NL : SOURCE_LABEL_EN;
+const docTypeLabelMap = lang === 'nl' ? DOC_TYPE_LABEL_NL : DOC_TYPE_LABEL_EN;
+
+const sourceLabel = sourceLabelMap[doc.source];
+const docTypeLabel = docTypeLabelMap[doc.document_type];
+
+function formatDate(iso: string | null | undefined): string {
+  if (!iso) return '—';
+  const d = new Date(iso + 'T00:00:00Z');
+  if (Number.isNaN(d.getTime())) return iso;
+  const months = lang === 'nl'
+    ? ['januari', 'februari', 'maart', 'april', 'mei', 'juni',
+       'juli', 'augustus', 'september', 'oktober', 'november', 'december']
+    : ['January', 'February', 'March', 'April', 'May', 'June',
+       'July', 'August', 'September', 'October', 'November', 'December'];
+  return `${d.getUTCDate()} ${months[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+}
+
+const allLangs: Lang[] = ['en', 'nl'];
+---
+
+<BaseLayout
+  title={`${titleResolved.value} — ${t.pageSuffix}`}
+  activeTopNav="guidance"
+  availableLangs={doc.languages}
+>
+  <Sidebar slot="sidebar" lang={lang} activeSection="guidance" />
+
+  <div class="chapter-bar">
+    <h1>{titleResolved.value}</h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{t.breadcrumb_home}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/guidance/`} style="color: var(--blue-accent); text-decoration: none;">{t.breadcrumb_guidance}</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>{doc.canonical_id}</span>
+  </div>
+
+  {titleIsFallback && (
+    <div class="guidance-detail-fallback-banner">
+      <strong>{t.src_lang}:</strong> {titleResolved.resolved_lang.toUpperCase()}
+    </div>
+  )}
+
+  <div class="guidance-detail">
+    <aside class="guidance-detail-sidebar">
+      <section class="gd-section">
+        <h3>{t.sb_source}</h3>
+        <div class="gd-meta">{sourceLabel}</div>
+        {externalUrl && (
+          <a class="gd-link" href={externalUrl} target="_blank" rel="noopener">{t.sb_open} ↗</a>
+        )}
+      </section>
+      <section class="gd-section">
+        <h3>{t.sb_doctype}</h3>
+        <div class="gd-meta">{docTypeLabel}</div>
+      </section>
+      <section class="gd-section">
+        <h3>{t.sb_adoption}</h3>
+        <div class="gd-meta">{formatDate(doc.adoption_date)}</div>
+      </section>
+      {doc.entry_into_force && (
+        <section class="gd-section">
+          <h3>{t.sb_entry}</h3>
+          <div class="gd-meta">{formatDate(doc.entry_into_force)}</div>
+        </section>
+      )}
+      {doc.end_of_validity && (
+        <section class="gd-section">
+          <h3>{t.sb_validity}</h3>
+          <div class="gd-meta">{formatDate(doc.end_of_validity)}</div>
+        </section>
+      )}
+      {doc.endorsement_status && (
+        <section class="gd-section">
+          <h3>{t.sb_endorsement}</h3>
+          <div class="gd-meta">{doc.endorsement_status === 'endorsed' ? t.sb_endorsed : t.sb_historical}</div>
+        </section>
+      )}
+      <section class="gd-section">
+        <h3>{t.sb_lang_avail}</h3>
+        <div class="gd-langs">
+          {allLangs.map(l => (
+            <span class={`gd-lang-chip ${doc.languages.includes(l) ? 'gd-lang-on' : 'gd-lang-off'}`}>
+              {l.toUpperCase()}
+            </span>
+          ))}
+        </div>
+      </section>
+      {editorialNote && (
+        <section class="gd-section gd-editorial">
+          <h3>{t.sb_editorial}</h3>
+          <p>{editorialNote}</p>
+        </section>
+      )}
+      <section class="gd-section">
+        <h3>{t.sb_citations}</h3>
+        <div class="gd-meta">{t.sb_citations_count(citationsCount)}</div>
+      </section>
+      <section class="gd-section">
+        <h3>{t.sb_cited_articles}</h3>
+        {citedArticleEntries.length === 0 ? (
+          <div class="gd-meta gd-meta-muted">{t.sb_cited_none}</div>
+        ) : (
+          <ul class="gd-cited-list">
+            {citedArticleEntries.map(a => (
+              <li>
+                <a href={a.href} class="gd-cited-link">
+                  <span class="gd-cited-num">Art. {a.number}</span>
+                  <span class="gd-cited-title">{a.title}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+    </aside>
+
+    <div class="guidance-detail-body">
+      <h2 class="guidance-detail-body-h">{t.body_h}</h2>
+      {Content ? (
+        <div class="markdown-body">
+          <Content />
+        </div>
+      ) : (
+        <div class="guidance-detail-no-body">{t.no_body}</div>
+      )}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .guidance-detail-fallback-banner {
+    font-family: var(--sans);
+    font-size: 12px;
+    background: var(--gray-50);
+    border: 1px solid var(--amber-badge);
+    border-left-width: 4px;
+    color: var(--gray-700);
+    padding: 8px 12px;
+    margin-bottom: 14px;
+  }
+  .guidance-detail {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 28px;
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .guidance-detail {
+      grid-template-columns: 1fr;
+    }
+  }
+  .guidance-detail-sidebar {
+    font-family: var(--sans);
+    font-size: 13px;
+    border-right: 1px solid var(--gray-200);
+    padding-right: 18px;
+  }
+  @media (max-width: 900px) {
+    .guidance-detail-sidebar {
+      border-right: none;
+      border-bottom: 1px solid var(--gray-200);
+      padding-right: 0;
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+    }
+  }
+  .gd-section {
+    margin-bottom: 18px;
+  }
+  .gd-section h3 {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--red-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin: 0 0 6px 0;
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: 3px;
+  }
+  .gd-meta {
+    color: var(--gray-700);
+    line-height: 1.5;
+  }
+  .gd-meta-muted {
+    color: var(--gray-400);
+    font-style: italic;
+  }
+  .gd-link {
+    display: inline-block;
+    margin-top: 4px;
+    color: var(--blue-accent);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .gd-link:hover {
+    text-decoration: underline;
+  }
+  .gd-langs {
+    display: inline-flex;
+    gap: 4px;
+  }
+  .gd-lang-chip {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    border: 1px solid var(--gray-200);
+    border-radius: 2px;
+  }
+  .gd-lang-on {
+    background: var(--gray-800);
+    color: #fff;
+    border-color: var(--gray-800);
+  }
+  .gd-lang-off {
+    background: transparent;
+    color: var(--gray-300);
+    border-style: dashed;
+  }
+  .gd-editorial p {
+    margin: 0;
+    color: var(--gray-700);
+    line-height: 1.55;
+    font-style: italic;
+  }
+  .gd-cited-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-height: 320px;
+    overflow-y: auto;
+  }
+  .gd-cited-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    padding: 4px 6px;
+    border-left: 2px solid transparent;
+  }
+  .gd-cited-link:hover {
+    background: var(--gray-50);
+    border-left-color: var(--red-accent);
+  }
+  .gd-cited-num {
+    font-weight: 700;
+    color: var(--blue-accent);
+    font-size: 12px;
+  }
+  .gd-cited-title {
+    color: var(--gray-700);
+    font-size: 11px;
+    line-height: 1.35;
+  }
+  .guidance-detail-body-h {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--red-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #111;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+  }
+  .markdown-body {
+    font-family: var(--serif);
+    color: var(--gray-800);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  .markdown-body :global(h1),
+  .markdown-body :global(h2),
+  .markdown-body :global(h3),
+  .markdown-body :global(h4) {
+    font-family: var(--sans);
+    color: var(--gray-800);
+    margin-top: 1.6em;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+  }
+  .markdown-body :global(h1) { font-size: 22px; color: var(--red-accent); border-bottom: 1px solid var(--gray-200); padding-bottom: 6px; }
+  .markdown-body :global(h2) { font-size: 18px; }
+  .markdown-body :global(h3) { font-size: 15px; }
+  .markdown-body :global(h4) { font-size: 14px; color: var(--gray-700); }
+  .markdown-body :global(p) {
+    margin: 0 0 14px 0;
+  }
+  .markdown-body :global(ul),
+  .markdown-body :global(ol) {
+    padding-left: 24px;
+    margin: 0 0 14px 0;
+  }
+  .markdown-body :global(li) {
+    margin-bottom: 4px;
+  }
+  .markdown-body :global(a) {
+    color: var(--blue-accent);
+    text-decoration: none;
+  }
+  .markdown-body :global(a:hover) {
+    text-decoration: underline;
+  }
+  .markdown-body :global(blockquote) {
+    border-left: 3px solid var(--gray-300);
+    padding-left: 14px;
+    margin: 14px 0;
+    color: var(--gray-600);
+  }
+  .markdown-body :global(code) {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    background: var(--gray-100);
+    padding: 1px 4px;
+    border-radius: 2px;
+    font-size: 0.9em;
+  }
+  .markdown-body :global(table) {
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 13px;
+  }
+  .markdown-body :global(th),
+  .markdown-body :global(td) {
+    border: 1px solid var(--gray-300);
+    padding: 6px 10px;
+    text-align: left;
+  }
+  .guidance-detail-no-body {
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--gray-500);
+    padding: 24px;
+    background: var(--gray-50);
+    border: 1px dashed var(--gray-200);
+  }
+</style>

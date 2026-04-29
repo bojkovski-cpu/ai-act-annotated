@@ -1,0 +1,46 @@
+[
+  {
+    "adoption_date": "2025-09-02",
+    "body_paths": {
+      "en": "guidance/en/nl_ez_aiact_guide_2025_v1_1.md",
+      "nl": "guidance/nl/nl_ez_aiact_guide_2025_v1_1.md"
+    },
+    "by_language": {
+      "en": {
+        "citations_found": 47,
+        "footnote_count": 48,
+        "page_count": 21,
+        "paragraph_count": 96,
+        "section_count": 15,
+        "source_file": "nl_ez_aiact_guide_2025_v1_1_en.pdf",
+        "source_file_checksum": "sha256:79f27f2ed5456f803dd46affb333f9068525c6d26c696691fdaae7bf47bb53b5"
+      },
+      "nl": {
+        "citations_found": 46,
+        "footnote_count": 48,
+        "page_count": 21,
+        "paragraph_count": 104,
+        "section_count": 15,
+        "source_file": "nl_ez_aiact_guide_2025_v1_1_nl.pdf",
+        "source_file_checksum": "sha256:af20ad939dab14db54a150b8013216038f797a14110152bad3aaa6a586d1ed10"
+      }
+    },
+    "canonical_id": "nl_ez_aiact_guide_2025_v1_1",
+    "document_type": "guide",
+    "editorial_note": null,
+    "end_of_validity": null,
+    "endorsement_status": null,
+    "entry_into_force": null,
+    "languages": [
+      "en",
+      "nl"
+    ],
+    "source": "member_state",
+    "supersedes": null,
+    "title": {
+      "en": "AI Act Guide",
+      "nl": "Gids AI-verordening"
+    },
+    "url": "https://www.rijksoverheid.nl/"
+  }
+]
