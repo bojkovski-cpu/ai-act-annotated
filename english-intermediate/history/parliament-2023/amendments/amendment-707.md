@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "707"
+amendment_target: "Proposal for a regulation — Article 84 — paragraph 7 c (new)"
+---
+
+# Amendment 707
+
+**Target:** Proposal for a regulation — Article 84 — paragraph 7 c (new)
+
+## Text proposed by the Commission
+
+*(no text)*
+
+## Amendment of the European Parliament
+
+7 c. By … [five years from the date of application of this Regulation], the Commission shall carry out an assessment of the enforcement of this Regulation and shall report it to the European Parliament, the Council and the European Economic and Social Committee, taking into account the first years of application of the Regulation. On the basis of the findings that report shall, where appropriate, be accompanied by a proposal for amendment of this Regulation with regard to the structure of enforcement and the need for an Union agency to resolve any identified shortcomings.

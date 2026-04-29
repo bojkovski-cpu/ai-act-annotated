@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "498"
+amendment_target: "Proposal for a regulation — Article 53 — paragraph 3"
+---
+
+# Amendment 498
+
+**Target:** Proposal for a regulation — Article 53 — paragraph 3
+
+## Text proposed by the Commission
+
+3. The AI regulatory sandboxes shall not affect the supervisory and corrective powers of the competent authorities. Any significant risks to health and safety and fundamental rights identified during the development and testing of such systems shall result in immediate mitigation and, failing that, in the suspension of the development and testing process until such mitigation takes place.
+
+## Amendment of the European Parliament
+
+3. The AI regulatory sandboxes shall not affect the supervisory and corrective powers of the competent authorities , including at regional or local level . Any significant risks to fundamental rights , democracy and rule of law, health and safety or the environment identified during the development and testing of such AI systems shall result in immediate and adequate mitigation . Competent authorities shall have the power to temporarily or permanently suspend the testing process , or participation in the sandbox if no effective mitigation is possible and inform the AI office of such decision;

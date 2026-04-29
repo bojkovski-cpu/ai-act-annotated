@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "461"
+amendment_target: "Proposal for a regulation — Article 44 — paragraph 3"
+---
+
+# Amendment 461
+
+**Target:** Proposal for a regulation — Article 44 — paragraph 3
+
+## Text proposed by the Commission
+
+3. Where a notified body finds that an AI system no longer meets the requirements set out in Chapter 2 of this Title, it shall , taking account of the principle of proportionality , suspend or withdraw the certificate issued or impose any restrictions on it, unless compliance with those requirements is ensured by appropriate corrective action taken by the provider of the system within an appropriate deadline set by the notified body. The notified body shall give reasons for its decision.
+
+## Amendment of the European Parliament
+
+3. Where a notified body finds that an AI system no longer meets the requirements set out in Chapter 2 of this Title, it shall suspend or withdraw the certificate issued or impose any restrictions on it, unless compliance with those requirements is ensured by appropriate corrective action taken by the provider of the system within an appropriate deadline set by the notified body. The notified body shall give reasons for its decision.

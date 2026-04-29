@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "319",
+  "amendment_target": "Proposal for a regulation — Article 14 — paragraph 4 — point e",
+  "body_md": "**Target:** Proposal for a regulation — Article 14 — paragraph 4 — point e\n\n## Text proposed by the Commission\n\n(e) be able to intervene on the operation of the high-risk AI system or interrupt the system through a ‘stop’ button or a similar procedure.\n\n(e)\n\n(e)\n\n## Amendment of the European Parliament\n\n(e) be able to intervene on the operation of the high-risk AI system or interrupt, the system through a ‘stop’ button or a similar procedure that allows the system to come to a halt in a safe state, except if the human interference increases the risks or would negatively impact the performance in consideration of generally acknowledged state-of-the-art .\n\nbe able to intervene on the operation of the high-risk AI system or interrupt the system through a ‘stop’ button or a similar procedure.\n\nbe able to intervene on the operation of the high-risk AI system or interrupt, the system through a ‘stop’ button or a similar procedure that allows the system to come to a halt in a safe state, except if the human interference increases the risks or would negatively impact the performance in consideration of generally acknowledged state-of-the-art .\n",
+  "commission_text": "(e) be able to intervene on the operation of the high-risk AI system or interrupt the system through a ‘stop’ button or a similar procedure.\n\n(e)\n\n(e)",
+  "parliament_text": "(e) be able to intervene on the operation of the high-risk AI system or interrupt, the system through a ‘stop’ button or a similar procedure that allows the system to come to a halt in a safe state, except if the human interference increases the risks or would negatively impact the performance in consideration of generally acknowledged state-of-the-art .\n\nbe able to intervene on the operation of the high-risk AI system or interrupt the system through a ‘stop’ button or a similar procedure.\n\nbe able to intervene on the operation of the high-risk AI system or interrupt, the system through a ‘stop’ button or a similar procedure that allows the system to come to a halt in a safe state, except if the human interference increases the risks or would negatively impact the performance in consideration of generally acknowledged state-of-the-art .",
+  "char_count": 848
+}

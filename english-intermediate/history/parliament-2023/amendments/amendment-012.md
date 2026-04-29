@@ -1,0 +1,29 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "12"
+amendment_target: "Proposal for a regulation — Recital 3"
+---
+
+# Amendment 12
+
+**Target:** Proposal for a regulation — Recital 3
+
+## Text proposed by the Commission
+
+(3) Artificial intelligence is a fast evolving family of technologies that can contribute to a wide array of economic and societal benefits across the entire spectrum of industries and social activities. By improving prediction, optimising operations and resource allocation, and personalising digital solutions available for individuals and organisations, the use of artificial intelligence can provide key competitive advantages to companies and support socially and environmentally beneficial outcomes, for example in healthcare, farming, education and training, infrastructure management, energy, transport and logistics, public services, security, justice, resource and energy efficiency, and climate change mitigation and adaptation.
+
+(3)
+
+(3)
+
+## Amendment of the European Parliament
+
+(3) Artificial intelligence is a fast evolving family of technologies that can and already contributes to a wide array of economic , environmental and societal benefits across the entire spectrum of industries and social activities if developed in accordance with relevant general principles in line with the Charter and the values on which the Union is founded . By improving prediction, optimising operations and resource allocation, and personalising digital solutions available for individuals and organisations, the use of artificial intelligence can provide key competitive advantages to companies and support socially and environmentally beneficial outcomes, for example in healthcare, farming, food safety, education and training , media, sports, culture , infrastructure management, energy, transport and logistics , crisis management , public services, security, justice, resource and energy efficiency, environmental monitoring, the conservation and restoration of biodiversity and ecosystems and climate change mitigation and adaptation.
+
+Artificial intelligence is a fast evolving family of technologies that can contribute to a wide array of economic and societal benefits across the entire spectrum of industries and social activities. By improving prediction, optimising operations and resource allocation, and personalising digital solutions available for individuals and organisations, the use of artificial intelligence can provide key competitive advantages to companies and support socially and environmentally beneficial outcomes, for example in healthcare, farming, education and training, infrastructure management, energy, transport and logistics, public services, security, justice, resource and energy efficiency, and climate change mitigation and adaptation.
+
+Artificial intelligence is a fast evolving family of technologies that can and already contributes to a wide array of economic , environmental and societal benefits across the entire spectrum of industries and social activities if developed in accordance with relevant general principles in line with the Charter and the values on which the Union is founded . By improving prediction, optimising operations and resource allocation, and personalising digital solutions available for individuals and organisations, the use of artificial intelligence can provide key competitive advantages to companies and support socially and environmentally beneficial outcomes, for example in healthcare, farming, food safety, education and training , media, sports, culture , infrastructure management, energy, transport and logistics , crisis management , public services, security, justice, resource and energy efficiency, environmental monitoring, the conservation and restoration of biodiversity and ecosystems and climate change mitigation and adaptation.

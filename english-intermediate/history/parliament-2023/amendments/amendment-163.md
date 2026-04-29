@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "163"
+amendment_target: "Proposal for a regulation — Article 2 — paragraph 5 d (new)"
+---
+
+# Amendment 163
+
+**Target:** Proposal for a regulation — Article 2 — paragraph 5 d (new)
+
+## Text proposed by the Commission
+
+*(no text)*
+
+## Amendment of the European Parliament
+
+5d. This Regulation shall not apply to research, testing and development activities regarding an AI system prior to this system being placed on the market or put into service, provided that these activities are conducted respecting fundamental rights and the applicable Union law. The testing in real world conditions shall not be covered by this exemption.The Commission is empowered to may adopt delegated acts in accordance with Article 73 that clarify the application of this paragraph to specify this exemption to prevent its existing and potential abuse. The AI Office shall provide guidance on the governance of research and development pursuant to Article 56, also aiming to coordinate its application by the national supervisory authorities;

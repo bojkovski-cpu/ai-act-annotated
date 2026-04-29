@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "440"
+amendment_target: "Proposal for a regulation — Article 40 — paragraph 1 c (new)"
+---
+
+# Amendment 440
+
+**Target:** Proposal for a regulation — Article 40 — paragraph 1 c (new)
+
+## Text proposed by the Commission
+
+*(no text)*
+
+## Amendment of the European Parliament
+
+The actors involved in the standardisation process shall take into account the general principles for trustworthy AI set out in Article 4(a), seek to promote investment and innovation in AI as well as competitiveness and growth of the Union market, and contribute to strengthening global cooperation on standardisation and taking into account existing international standards in the field of AI that are consistent with Union values, fundamental rights and interests, and ensure a balanced representation of interests and effective participation of all relevant stakeholders in accordance with Articles 5, 6, and 7 of Regulation (EU) No 1025/2012

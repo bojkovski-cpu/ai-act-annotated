@@ -1,0 +1,29 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "233"
+amendment_target: "Proposal for a regulation — Article 6 — paragraph 1 — point b"
+---
+
+# Amendment 233
+
+**Target:** Proposal for a regulation — Article 6 — paragraph 1 — point b
+
+## Text proposed by the Commission
+
+(b) the product whose safety component is the AI system, or the AI system itself as a product, is required to undergo a third-party conformity assessment with a view to the placing on the market or putting into service of that product pursuant to the Union harmonisation legislation listed in Annex II.
+
+(b)
+
+(b)
+
+## Amendment of the European Parliament
+
+(b) the product whose safety component pursuant to point (a) is the AI system, or the AI system itself as a product, is required to undergo a third-party conformity assessment related to risks for health and safety, with a view to the placing on the market or putting into service of that product pursuant to the Union harmonisation law listed in Annex II;
+
+the product whose safety component is the AI system, or the AI system itself as a product, is required to undergo a third-party conformity assessment with a view to the placing on the market or putting into service of that product pursuant to the Union harmonisation legislation listed in Annex II.
+
+the product whose safety component pursuant to point (a) is the AI system, or the AI system itself as a product, is required to undergo a third-party conformity assessment related to risks for health and safety, with a view to the placing on the market or putting into service of that product pursuant to the Union harmonisation law listed in Annex II;

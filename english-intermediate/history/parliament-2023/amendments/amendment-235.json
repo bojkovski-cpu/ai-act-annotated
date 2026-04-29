@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "235",
+  "amendment_target": "Proposal for a regulation — Article 6 — paragraph 2 a (new)",
+  "body_md": "**Target:** Proposal for a regulation — Article 6 — paragraph 2 a (new)\n\n## Text proposed by the Commission\n\n*(no text)*\n\n## Amendment of the European Parliament\n\n2 a. Where providers falling under one or more of the critical areas and use cases referred to in Annex III consider that their AI system does not pose a significant risk as described in paragraph 2, they shall submit a reasoned notification to the national supervisory authority that they are not subject to the requirements of Title III Chapter 2 of this Regulation. Where the AI system is intended to be used in two or more Member States, that notification shall be addressed to the AI Office. Without prejudice to Article 65, the national supervisory authority shall review and reply to the notification, directly or via the AI Office, within three months if they deem the AI system to be misclassified.\n",
+  "commission_text": "",
+  "parliament_text": "2 a. Where providers falling under one or more of the critical areas and use cases referred to in Annex III consider that their AI system does not pose a significant risk as described in paragraph 2, they shall submit a reasoned notification to the national supervisory authority that they are not subject to the requirements of Title III Chapter 2 of this Regulation. Where the AI system is intended to be used in two or more Member States, that notification shall be addressed to the AI Office. Without prejudice to Article 65, the national supervisory authority shall review and reply to the notification, directly or via the AI Office, within three months if they deem the AI system to be misclassified.",
+  "char_count": 707
+}

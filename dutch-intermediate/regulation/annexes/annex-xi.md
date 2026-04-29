@@ -2,7 +2,7 @@
 language: "nl"
 source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
 source_celex: "32024R1689"
-scraped_at: "2026-04-24T15:21:50Z"
+scraped_at: "2026-04-27T20:48:19Z"
 annex_number_roman: "XI"
 annex_number: "11"
 annex_title: "Technische documentatie als bedoeld in artikel 53, lid 1, punt a) — technische documentatie voor aanbieders van AI-modellen voor algemene doeleinden"
@@ -50,3 +50,9 @@ De technische documentatie als bedoeld in artikel 53, lid 1, punt a), bevat ten 
 ### Afdeling 2
 
 ### Aanvullende informatie die moet worden verstrekt door aanbieders van AI-modellen met een systeemrisico
+
+- 1. Een gedetailleerde beschrijving van de evaluatiestrategieën, met inbegrip van evaluatieresultaten, op basis van beschikbare openbare evaluatieprotocollen en -instrumenten of andere evaluatiemethoden. De evaluatiestrategieën omvatten evaluatiecriteria, maatstaven en de methoden voor het in kaart brengen van beperkingen.
+
+- 2. Indien van toepassing, een gedetailleerde beschrijving van de maatregelen die zijn genomen met het oog op het uitvoeren van interne en/of externe tests gericht op het ontdekken van kwetsbaarheden (bv. red teaming), modelaanpassingen, inclusief afstemming en verfijning.
+
+- 3. Indien van toepassing, een gedetailleerde beschrijving van de systeemarchitectuur met een toelichting bij hoe softwarecomponenten op elkaar voortbouwen of elkaar informatie aanleveren en hoe de integratie in de algemene verwerking plaatsvindt.

@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "555",
+  "amendment_target": "Proposal for a regulation — Article 59 — paragraph 2",
+  "body_md": "**Target:** Proposal for a regulation — Article 59 — paragraph 2\n\n## Text proposed by the Commission\n\n2. Each Member State shall designate a national supervisory authority among the national competent authorities. The national supervisory authority shall act as notifying authority and market surveillance authority unless a Member State has organisational and administrative reasons to designate more than one authority .\n\n## Amendment of the European Parliament\n\n2. The national supervisory authority shall ensure the application and implementation of this Regulation. With regard to high-risk AI systems, related to products to which legal acts listed in Annex II apply, the competent authorities designated under those legal acts shall continue to lead the administrative procedures. However, to the extent a case involves aspects exclusively covered by this Regulation, those competent authorities shall be bound by the measures related to those aspects issued by the national supervisory authority designated under this Regulation . The national supervisory authority shall act as market surveillance authority.\n",
+  "commission_text": "2. Each Member State shall designate a national supervisory authority among the national competent authorities. The national supervisory authority shall act as notifying authority and market surveillance authority unless a Member State has organisational and administrative reasons to designate more than one authority .",
+  "parliament_text": "2. The national supervisory authority shall ensure the application and implementation of this Regulation. With regard to high-risk AI systems, related to products to which legal acts listed in Annex II apply, the competent authorities designated under those legal acts shall continue to lead the administrative procedures. However, to the extent a case involves aspects exclusively covered by this Regulation, those competent authorities shall be bound by the measures related to those aspects issued by the national supervisory authority designated under this Regulation . The national supervisory authority shall act as market surveillance authority.",
+  "char_count": 652
+}

@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "753",
+  "amendment_target": "Proposal for a regulation — Annex IV — paragraph 1 — point 2 — point c",
+  "body_md": "**Target:** Proposal for a regulation — Annex IV — paragraph 1 — point 2 — point c\n\n## Text proposed by the Commission\n\n(c) the description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing; the computational resources used to develop, train, test and validate the AI system;\n\n(c)\n\n(c)\n\n## Amendment of the European Parliament\n\n(c) deleted\n\nthe description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing; the computational resources used to develop, train, test and validate the AI system;\n\ndeleted\n",
+  "commission_text": "(c) the description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing; the computational resources used to develop, train, test and validate the AI system;\n\n(c)\n\n(c)",
+  "parliament_text": "(c) deleted\n\nthe description of the system architecture explaining how software components build on or feed into each other and integrate into the overall processing; the computational resources used to develop, train, test and validate the AI system;\n\ndeleted",
+  "char_count": 260
+}

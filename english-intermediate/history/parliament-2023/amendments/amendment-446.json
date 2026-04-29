@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "446",
+  "amendment_target": "Proposal for a regulation — Article 41 — paragraph 3",
+  "body_md": "**Target:** Proposal for a regulation — Article 41 — paragraph 3\n\n## Text proposed by the Commission\n\n3. High-risk AI systems which are in conformity with the common specifications referred to in paragraph 1 shall be presumed to be in conformity with the requirements set out in Chapter 2 of this Title, to the extent those common specifications cover those requirements.\n\n## Amendment of the European Parliament\n\n3. High-risk AI systems which are in conformity with the common specifications referred to in paragraph 1a and 1b shall be presumed to be in conformity with the requirements set out in Chapter 2 of this Title, to the extent those common specifications cover those requirements\n",
+  "commission_text": "3. High-risk AI systems which are in conformity with the common specifications referred to in paragraph 1 shall be presumed to be in conformity with the requirements set out in Chapter 2 of this Title, to the extent those common specifications cover those requirements.",
+  "parliament_text": "3. High-risk AI systems which are in conformity with the common specifications referred to in paragraph 1a and 1b shall be presumed to be in conformity with the requirements set out in Chapter 2 of this Title, to the extent those common specifications cover those requirements",
+  "char_count": 276
+}

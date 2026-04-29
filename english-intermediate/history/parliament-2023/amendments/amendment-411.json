@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "411",
+  "amendment_target": "Proposal for a regulation — Article 29 — paragraph 6 a (new)",
+  "body_md": "**Target:** Proposal for a regulation — Article 29 — paragraph 6 a (new)\n\n## Text proposed by the Commission\n\n*(no text)*\n\n## Amendment of the European Parliament\n\n6 a. Without prejudice to Article 52, deployers of high-risk AI systems referred to in Annex III, which make decisions or assist in making decisions related to natural persons, shall inform the natural persons that they are subject to the use of the high-risk AI system. This information shall include the intended purpose and the type of decisions it makes. The deployer shall also inform the natural person about its right to an explanation referred to in Article 68c.\n",
+  "commission_text": "",
+  "parliament_text": "6 a. Without prejudice to Article 52, deployers of high-risk AI systems referred to in Annex III, which make decisions or assist in making decisions related to natural persons, shall inform the natural persons that they are subject to the use of the high-risk AI system. This information shall include the intended purpose and the type of decisions it makes. The deployer shall also inform the natural person about its right to an explanation referred to in Article 68c.",
+  "char_count": 470
+}

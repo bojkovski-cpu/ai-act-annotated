@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "557"
+amendment_target: "Proposal for a regulation — Article 59 — paragraph 4"
+---
+
+# Amendment 557
+
+**Target:** Proposal for a regulation — Article 59 — paragraph 4
+
+## Text proposed by the Commission
+
+4. Member States shall ensure that national competent authorities are provided with adequate financial and human resources to fulfil their tasks under this Regulation. In particular, national competent authorities shall have a sufficient number of personnel permanently available whose competences and expertise shall include an in-depth understanding of artificial intelligence technologies, data and data computing, fundamental rights, health and safety risks and knowledge of existing standards and legal requirements.
+
+## Amendment of the European Parliament
+
+4. Member States shall ensure that the national supervisory authority is provided with adequate technical, financial and human resources , and infrastructure to fulfil their tasks effectively under this Regulation. In particular, the national supervisory authority shall have a sufficient number of personnel permanently available whose competences and expertise shall include an in-depth understanding of artificial intelligence technologies, data and data computing, personal data protection, cybersecurity, competition law, fundamental rights, health and safety risks and knowledge of existing standards and legal requirements. Member States shall assess and, if deemed necessary, update competence and resource requirements referred to in this paragraph on an annual basis.

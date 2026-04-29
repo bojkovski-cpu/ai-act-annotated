@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "504"
+amendment_target: "Proposal for a regulation — Article 53 — paragraph 6 a (new)"
+---
+
+# Amendment 504
+
+**Target:** Proposal for a regulation — Article 53 — paragraph 6 a (new)
+
+## Text proposed by the Commission
+
+*(no text)*
+
+## Amendment of the European Parliament
+
+6 a. For the purpose of paragraph 1 and 1a, the Commission shall play a complementary role, enabling Member States to build on their expertise and, on the other hand, assisting and providing technical understanding and resources to those Member States that seek guidance on the set-up and running of these regulatory sandboxes;

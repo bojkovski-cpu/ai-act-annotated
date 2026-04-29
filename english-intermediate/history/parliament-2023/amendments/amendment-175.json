@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "175",
+  "amendment_target": "Proposal for a regulation — Article 3 — paragraph 1 — point 11",
+  "body_md": "**Target:** Proposal for a regulation — Article 3 — paragraph 1 — point 11\n\n## Text proposed by the Commission\n\n(11) ‘putting into service’ means the supply of an AI system for first use directly to the user or for own use on the Union market for its intended purpose;\n\n(11)\n\n(11)\n\n## Amendment of the European Parliament\n\n(11) ‘putting into service’ means the supply of an AI system for first use directly to the deployer or for own use on the Union market for its intended purpose;\n\n‘putting into service’ means the supply of an AI system for first use directly to the user or for own use on the Union market for its intended purpose;\n\n‘putting into service’ means the supply of an AI system for first use directly to the deployer or for own use on the Union market for its intended purpose;\n",
+  "commission_text": "(11) ‘putting into service’ means the supply of an AI system for first use directly to the user or for own use on the Union market for its intended purpose;\n\n(11)\n\n(11)",
+  "parliament_text": "(11) ‘putting into service’ means the supply of an AI system for first use directly to the deployer or for own use on the Union market for its intended purpose;\n\n‘putting into service’ means the supply of an AI system for first use directly to the user or for own use on the Union market for its intended purpose;\n\n‘putting into service’ means the supply of an AI system for first use directly to the deployer or for own use on the Union market for its intended purpose;",
+  "char_count": 470
+}

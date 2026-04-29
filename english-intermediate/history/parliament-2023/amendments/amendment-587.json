@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "587",
+  "amendment_target": "Proposal for a regulation — Article 63 — paragraph 3 a (new)",
+  "body_md": "**Target:** Proposal for a regulation — Article 63 — paragraph 3 a (new)\n\n## Text proposed by the Commission\n\n\n\n\n\n(a)\n\n\n\n(b)\n\n## Amendment of the European Parliament\n\n3 a. For the purpose of ensuring the effective enforcement of this Regulation, national supervisory authorities may:\n\n(a) carry out unannounced on-site and remote inspections of high-risk AI systems;\n\ncarry out unannounced on-site and remote inspections of high-risk AI systems;\n\n(b) acquire samples related to high-risk AI systems, including through remote inspections, to reverse-engineer the AI systems and to acquire evidence to identify non-compliance.\n\nacquire samples related to high-risk AI systems, including through remote inspections, to reverse-engineer the AI systems and to acquire evidence to identify non-compliance.\n",
+  "commission_text": "\n\n\n\n(a)\n\n\n\n(b)",
+  "parliament_text": "3 a. For the purpose of ensuring the effective enforcement of this Regulation, national supervisory authorities may:\n\n(a) carry out unannounced on-site and remote inspections of high-risk AI systems;\n\ncarry out unannounced on-site and remote inspections of high-risk AI systems;\n\n(b) acquire samples related to high-risk AI systems, including through remote inspections, to reverse-engineer the AI systems and to acquire evidence to identify non-compliance.\n\nacquire samples related to high-risk AI systems, including through remote inspections, to reverse-engineer the AI systems and to acquire evidence to identify non-compliance.",
+  "char_count": 632
+}

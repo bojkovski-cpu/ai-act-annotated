@@ -1,0 +1,25 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "202"
+amendment_target: "Proposal for a regulation — Article 3 — paragraph 1 — point 44 c (new)"
+---
+
+# Amendment 202
+
+**Target:** Proposal for a regulation — Article 3 — paragraph 1 — point 44 c (new)
+
+## Text proposed by the Commission
+
+
+
+(44c)
+
+## Amendment of the European Parliament
+
+(44c) ‘profiling’ means any form of automated processing of personal data as defined in point (4) of Article 4 of Regulation (EU) 2016/679; or in the case of law enforcement authorities — in point 4 of Article 3 of Directive (EU) 2016/680 or, in the case of Union institutions, bodies, offices or agencies, in point 5 Article 3 of Regulation (EU) 2018/1725;
+
+‘profiling’ means any form of automated processing of personal data as defined in point (4) of Article 4 of Regulation (EU) 2016/679; or in the case of law enforcement authorities — in point 4 of Article 3 of Directive (EU) 2016/680 or, in the case of Union institutions, bodies, offices or agencies, in point 5 Article 3 of Regulation (EU) 2018/1725;

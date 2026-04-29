@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "301",
+  "amendment_target": "Proposal for a regulation — Article 13 — paragraph 2",
+  "body_md": "**Target:** Proposal for a regulation — Article 13 — paragraph 2\n\n## Text proposed by the Commission\n\n2. High-risk AI systems shall be accompanied by instructions for use in an appropriate digital format or otherwise that include concise, complete , correct and clear information that is relevant, accessible and comprehensible to users.\n\n## Amendment of the European Parliament\n\n2. High-risk AI systems shall be accompanied by intelligible instructions for use in an appropriate digital format or made otherwise available in a durable medium that include concise, correct, clear and to the extent possible complete information that helps operating and maintaining the AI system as well as supporting informed decision-making by users and is reasonably relevant, accessible and comprehensible to users .\n",
+  "commission_text": "2. High-risk AI systems shall be accompanied by instructions for use in an appropriate digital format or otherwise that include concise, complete , correct and clear information that is relevant, accessible and comprehensible to users.",
+  "parliament_text": "2. High-risk AI systems shall be accompanied by intelligible instructions for use in an appropriate digital format or made otherwise available in a durable medium that include concise, correct, clear and to the extent possible complete information that helps operating and maintaining the AI system as well as supporting informed decision-making by users and is reasonably relevant, accessible and comprehensible to users .",
+  "char_count": 423
+}

@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "705"
+amendment_target: "Proposal for a regulation — Article 84 — paragraph 7 a (new)"
+---
+
+# Amendment 705
+
+**Target:** Proposal for a regulation — Article 84 — paragraph 7 a (new)
+
+## Text proposed by the Commission
+
+*(no text)*
+
+## Amendment of the European Parliament
+
+7 a. To guide the evaluations and reviews referred to in paragraphs 1 to 4 of this Article, the Office shall undertake to develop an objective and participative methodology for the evaluation of risk level based on the criteria outlined in the relevant articles and inclusion of new systems in: the list in Annex III, including the extension of existing area headings or addition of new area headings in that Annex; the list of prohibited practices laid down in Article 5; and the list of AI systems requiring additional transparency measures pursuant to Article 52.

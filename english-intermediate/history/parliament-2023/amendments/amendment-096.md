@@ -1,0 +1,25 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "96"
+amendment_target: "Proposal for a regulation — Recital 60 b (new)"
+---
+
+# Amendment 96
+
+**Target:** Proposal for a regulation — Recital 60 b (new)
+
+## Text proposed by the Commission
+
+
+
+(60b)
+
+## Amendment of the European Parliament
+
+(60b) Rules on contractual terms should take into account the principle of contractual freedom as an essential concept in business-to-business relationships. Therefore, not all contractual terms should be subject to an unfairness test, but only to those terms that are unilaterally imposed on micro, small and medium-sized enterprises and start-ups. This concerns ‘take-it-or-leave-it’ situations where one party supplies a certain contractual term and the micro, small or medium-sized enterprise and start-up cannot influence the content of that term despite an attempt to negotiate it. A contractual term that is simply provided by one party and accepted by the micro, small, medium-sized enterprise or a start-up or a term that is negotiated and subsequently agreed in an amended way between contracting parties should not be considered as unilaterally imposed.
+
+Rules on contractual terms should take into account the principle of contractual freedom as an essential concept in business-to-business relationships. Therefore, not all contractual terms should be subject to an unfairness test, but only to those terms that are unilaterally imposed on micro, small and medium-sized enterprises and start-ups. This concerns ‘take-it-or-leave-it’ situations where one party supplies a certain contractual term and the micro, small or medium-sized enterprise and start-up cannot influence the content of that term despite an attempt to negotiate it. A contractual term that is simply provided by one party and accepted by the micro, small, medium-sized enterprise or a start-up or a term that is negotiated and subsequently agreed in an amended way between contracting parties should not be considered as unilaterally imposed.

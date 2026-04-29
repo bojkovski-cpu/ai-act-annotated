@@ -1,0 +1,25 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "107"
+amendment_target: "Proposal for a regulation — Recital 61 d (new)"
+---
+
+# Amendment 107
+
+**Target:** Proposal for a regulation — Recital 61 d (new)
+
+## Text proposed by the Commission
+
+
+
+(61d)
+
+## Amendment of the European Parliament
+
+(61d) When adopting common specifications, the Commission should strive for regulatory alignment of AI with likeminded global partners, which is key to fostering innovation and cross-border partnerships within the field of AI, as coordination with likeminded partners in international standardisation bodies is of great importance.
+
+When adopting common specifications, the Commission should strive for regulatory alignment of AI with likeminded global partners, which is key to fostering innovation and cross-border partnerships within the field of AI, as coordination with likeminded partners in international standardisation bodies is of great importance.

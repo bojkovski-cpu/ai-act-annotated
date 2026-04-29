@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "665"
+amendment_target: "Proposal for a regulation — Article 71 — paragraph 7"
+---
+
+# Amendment 665
+
+**Target:** Proposal for a regulation — Article 71 — paragraph 7
+
+## Text proposed by the Commission
+
+7. Each Member State shall lay down rules on whether and to what extent administrative fines may be imposed on public authorities and bodies established in that Member State.
+
+## Amendment of the European Parliament
+
+7. each Member State shall lay down rules on administrative fines to be imposed on public authorities and bodies established in that Member State;

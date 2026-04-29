@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "261",
+  "amendment_target": "Proposal for a regulation — Article 9 — paragraph 1",
+  "body_md": "**Target:** Proposal for a regulation — Article 9 — paragraph 1\n\n## Text proposed by the Commission\n\n1. A risk management system shall be established, implemented, documented and maintained in relation to high-risk AI systems.\n\n## Amendment of the European Parliament\n\n1. A risk management system shall be established, implemented, documented and maintained in relation to high-risk AI systems , throughout the entire lifecycle of the AI system . The risk management system can be integrated into, or a part of, already existing risk management procedures relating to the relevant Union sectoral law insofar as it fulfils the requirements of this article.\n",
+  "commission_text": "1. A risk management system shall be established, implemented, documented and maintained in relation to high-risk AI systems.",
+  "parliament_text": "1. A risk management system shall be established, implemented, documented and maintained in relation to high-risk AI systems , throughout the entire lifecycle of the AI system . The risk management system can be integrated into, or a part of, already existing risk management procedures relating to the relevant Union sectoral law insofar as it fulfils the requirements of this article.",
+  "char_count": 386
+}

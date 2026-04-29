@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "608"
+amendment_target: "Proposal for a regulation — Article 65 — paragraph 9"
+---
+
+# Amendment 608
+
+**Target:** Proposal for a regulation — Article 65 — paragraph 9
+
+## Text proposed by the Commission
+
+9. The market surveillance authorities of all Member States shall ensure that appropriate restrictive measures are taken in respect of the product concerned, such as withdrawal of the product from their market, without delay.
+
+## Amendment of the European Parliament
+
+9. The national supervisory authorities of all Member States shall ensure that appropriate restrictive measures are taken in respect of the AI system concerned, such as withdrawal of the AI system from their market, without delay.

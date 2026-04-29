@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "494",
+  "amendment_target": "Proposal for a regulation — Article 53 — paragraph 1 e (new)",
+  "body_md": "**Target:** Proposal for a regulation — Article 53 — paragraph 1 e (new)\n\n## Text proposed by the Commission\n\n\n\n\n\na)\n\n\n\nb)\n\n\n\nc)\n\n## Amendment of the European Parliament\n\n1 e. The establishment of AI regulatory sandboxes shall aim to contribute to the following objectives:\n\na) for the competent authorities to provide guidance to AI systems prospective providers providers to achieve regulatory compliance with this Regulation or where relevant other applicable Union and Member States legislation;\n\nfor the competent authorities to provide guidance to AI systems prospective providers providers to achieve regulatory compliance with this Regulation or where relevant other applicable Union and Member States legislation;\n\nb) for the prospective providers to allow and facilitate the testing and development of innovative solutions related to AI systems;\n\nfor the prospective providers to allow and facilitate the testing and development of innovative solutions related to AI systems;\n\nc) regulatory learning in a controlled environment.\n\nregulatory learning in a controlled environment.\n",
+  "commission_text": "\n\n\n\na)\n\n\n\nb)\n\n\n\nc)",
+  "parliament_text": "1 e. The establishment of AI regulatory sandboxes shall aim to contribute to the following objectives:\n\na) for the competent authorities to provide guidance to AI systems prospective providers providers to achieve regulatory compliance with this Regulation or where relevant other applicable Union and Member States legislation;\n\nfor the competent authorities to provide guidance to AI systems prospective providers providers to achieve regulatory compliance with this Regulation or where relevant other applicable Union and Member States legislation;\n\nb) for the prospective providers to allow and facilitate the testing and development of innovative solutions related to AI systems;\n\nfor the prospective providers to allow and facilitate the testing and development of innovative solutions related to AI systems;\n\nc) regulatory learning in a controlled environment.\n\nregulatory learning in a controlled environment.",
+  "char_count": 917
+}

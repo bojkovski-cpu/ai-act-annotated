@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "328",
+  "amendment_target": "Proposal for a regulation — Article 15 — paragraph 4 — subparagraph 1",
+  "body_md": "**Target:** Proposal for a regulation — Article 15 — paragraph 4 — subparagraph 1\n\n## Text proposed by the Commission\n\nHigh-risk AI systems shall be resilient as regards attempts by unauthorised third parties to alter their use or performance by exploiting the system vulnerabilities.\n\n## Amendment of the European Parliament\n\nHigh-risk AI systems shall be resilient as regards to attempts by unauthorised third parties to alter their use , behaviour, outputs or performance by exploiting the system vulnerabilities.\n",
+  "commission_text": "High-risk AI systems shall be resilient as regards attempts by unauthorised third parties to alter their use or performance by exploiting the system vulnerabilities.",
+  "parliament_text": "High-risk AI systems shall be resilient as regards to attempts by unauthorised third parties to alter their use , behaviour, outputs or performance by exploiting the system vulnerabilities.",
+  "char_count": 189
+}

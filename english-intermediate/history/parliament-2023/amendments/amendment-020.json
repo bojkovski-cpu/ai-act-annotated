@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "20",
+  "amendment_target": "Proposal for a regulation — Recital 6 b (new)",
+  "body_md": "**Target:** Proposal for a regulation — Recital 6 b (new)\n\n## Text proposed by the Commission\n\n\n\n(6b)\n\n## Amendment of the European Parliament\n\n(6b) AI systems can be used as stand-alone software system, integrated into a physical product (embedded), used to serve the functionality of a physical product without being integrated therein (non-embedded) or used as an AI component of a larger system. If this larger system would not function without the AI component in question, then the entire larger system should be considered as one single AI system under this Regulation.\n\nAI systems can be used as stand-alone software system, integrated into a physical product (embedded), used to serve the functionality of a physical product without being integrated therein (non-embedded) or used as an AI component of a larger system. If this larger system would not function without the AI component in question, then the entire larger system should be considered as one single AI system under this Regulation.\n",
+  "commission_text": "\n\n(6b)",
+  "parliament_text": "(6b) AI systems can be used as stand-alone software system, integrated into a physical product (embedded), used to serve the functionality of a physical product without being integrated therein (non-embedded) or used as an AI component of a larger system. If this larger system would not function without the AI component in question, then the entire larger system should be considered as one single AI system under this Regulation.\n\nAI systems can be used as stand-alone software system, integrated into a physical product (embedded), used to serve the functionality of a physical product without being integrated therein (non-embedded) or used as an AI component of a larger system. If this larger system would not function without the AI component in question, then the entire larger system should be considered as one single AI system under this Regulation.",
+  "char_count": 861
+}

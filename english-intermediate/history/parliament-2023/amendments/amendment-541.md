@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "541"
+amendment_target: "Proposal for a regulation — Article 58 — paragraph 1 — introductory part"
+---
+
+# Amendment 541
+
+**Target:** Proposal for a regulation — Article 58 — paragraph 1 — introductory part
+
+## Text proposed by the Commission
+
+When providing advice and assistance to the Commission in the context of Article 56(2), the Board shall in particular:
+
+## Amendment of the European Parliament
+
+The advisory forum shall provide the AI Office with stakeholder input in matters relating to this Regulation, in particular with regard to the tasks set out in Article 56b point (l).

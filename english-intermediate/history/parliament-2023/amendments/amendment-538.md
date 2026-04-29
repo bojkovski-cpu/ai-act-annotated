@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "538"
+amendment_target: "Proposal for a regulation — Article 57 — paragraph 3"
+---
+
+# Amendment 538
+
+**Target:** Proposal for a regulation — Article 57 — paragraph 3
+
+## Text proposed by the Commission
+
+3. The Board shall be chaired by the Commission. The Commission shall convene the meetings and prepare the agenda in accordance with the tasks of the Board pursuant to this Regulation and with its rules of procedure. The Commission shall provide administrative and analytical support for the activities of the Board pursuant to this Regulation.
+
+## Amendment of the European Parliament
+
+3. The executive director shall represent the AI Office, including in international fora for cooperation with regard to artificial intelligence;

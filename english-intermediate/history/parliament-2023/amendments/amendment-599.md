@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "599"
+amendment_target: "Proposal for a regulation — Article 65 — paragraph 2 — subparagraph 2"
+---
+
+# Amendment 599
+
+**Target:** Proposal for a regulation — Article 65 — paragraph 2 — subparagraph 2
+
+## Text proposed by the Commission
+
+The market surveillance authority shall inform the relevant notified body accordingly. Article 18 of Regulation (EU) 2019/1020 shall apply to the measures referred to in the second subparagraph.
+
+## Amendment of the European Parliament
+
+The national supervisory authority shall inform the relevant notified body accordingly. Article 18 of Regulation (EU) 2019/1020 shall apply to the measures referred to in the second subparagraph.

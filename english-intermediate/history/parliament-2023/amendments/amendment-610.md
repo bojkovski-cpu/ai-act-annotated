@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "610"
+amendment_target: "Proposal for a regulation — Article 66 — paragraph 1"
+---
+
+# Amendment 610
+
+**Target:** Proposal for a regulation — Article 66 — paragraph 1
+
+## Text proposed by the Commission
+
+1. Where, within three months of receipt of the notification referred to in Article 65(5), objections are raised by a Member State against a measure taken by another Member State , or where the Commission considers the measure to be contrary to Union law, the Commission shall without delay enter into consultation with the relevant Member State and operator or operators and shall evaluate the national measure. On the basis of the results of that evaluation, the Commission shall decide whether the national measure is justified or not within 9 months from the notification referred to in Article 65(5) and notify such decision to the Member State concerned.
+
+## Amendment of the European Parliament
+
+1. Where, within three months of receipt of the notification referred to in Article 65(5), or 30 days in the case of non-compliance with the prohibition of the artificial intelligence practices referred to in Article 5, objections are raised by the national supervisory authority of a Member State against a measure taken by another national supervisory authority, or where the Commission considers the measure to be contrary to Union law, the Commission shall without delay enter into consultation with the national supervisory authority of the relevant Member State and operator or operators and shall evaluate the national measure. On the basis of the results of that evaluation, the Commission shall decide whether the national measure is justified or not within three months , or 60 days in the case of non-compliance with the prohibition of the artificial intelligence practices referred to in Article 5, starting from the notification referred to in Article 65(5) and notify such decision to the national supervisory authority of the Member State concerned. The Commission shall also inform all other national supervisory authorities of such decision.

@@ -2,7 +2,7 @@
 language: "nl"
 source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=OJ:L_202401689"
 source_celex: "32024R1689"
-scraped_at: "2026-04-24T15:21:50Z"
+scraped_at: "2026-04-27T20:48:19Z"
 annex_number_roman: "VII"
 annex_number: "7"
 annex_title: "Conformiteit op basis van een beoordeling van het kwaliteitsbeheersysteem en een beoordeling van de technische documentatie"
@@ -23,6 +23,68 @@ Het op grond van artikel 17 goedgekeurde kwaliteitsbeheersysteem voor het ontwer
 
 ### 3. Systeem voor kwaliteitsbeheer
 
+- 3.1. De aanvraag van de aanbieder bevat onder meer:
+
+  - a) de naam en het adres van de aanbieder en, indien de aanvraag wordt ingediend door een gemachtigde, ook diens naam en adres;
+
+  - b) de lijst met AI-systemen die vallen onder hetzelfde kwaliteitsbeheersysteem;
+
+  - c) de technische documentatie voor elk AI-systeem dat valt onder hetzelfde kwaliteitsbeheersysteem;
+
+  - d) de documentatie betreffende het kwaliteitsbeheersysteem, dat alle in artikel 17 vermelde aspecten beslaat;
+
+  - e) een beschrijving van de ingestelde procedures om te zorgen dat het kwaliteitsbeheersysteem adequaat en doeltreffend blijft;
+
+  - f) een schriftelijke verklaring dat er geen gelijkluidende aanvraag bij een andere aangemelde instantie is ingediend.
+
+- 3.2. Het kwaliteitsbeheersysteem wordt beoordeeld door de aangemelde instantie, die bepaalt of wordt voldaan aan de in artikel 17 bedoelde eisen.
+
+  Het besluit wordt meegedeeld aan de aanbieder of diens gemachtigde.
+
+  In deze kennisgeving zijn de conclusies van de beoordeling van het kwaliteitsbeheersysteem opgenomen, evenals de met redenen omklede beoordelingsbeslissing.
+
+- 3.3. Het goedgekeurde kwaliteitsbeheersysteem wordt zodanig uitgevoerd en onderhouden door de aanbieder dat het toereikend en efficiënt blijft.
+
+- 3.4. Voorgenomen wijzigingen in het goedgekeurde kwaliteitsbeheersysteem of de lijst met AI-systemen waarop het beheersysteem van toepassing is, worden door de aanbieder meegedeeld aan de aangemelde instantie.
+
+  De voorgestelde wijzigingen worden beoordeeld door de aangemelde instantie, die beslist of het gewijzigde kwaliteitsbeheersysteem blijft voldoen aan de in punt 3.2 bedoelde eisen dan wel of een nieuwe beoordeling noodzakelijk is.
+
+  De aangemelde instantie stelt de aanbieder in kennis van haar beslissing. In deze kennisgeving zijn de conclusies van de beoordeling van de wijzigingen opgenomen, evenals de met redenen omklede beoordelingsbeslissing.
+
 ### 4. Controle van de technische documentatie.
 
+- 4.1. In aanvulling op de in punt 3 bedoelde aanvraag, wordt een aanvraag bij een aangemelde instantie naar keuze ingediend door de aanbieder voor de beoordeling van de technische documentatie die betrekking heeft op het AI-systeem dat de aanbieder voornemens is in de handel te brengen of in gebruik te stellen en waarop het in punt 3 bedoelde kwaliteitsbeheersysteem van toepassing is.
+
+- 4.2. De aanvraag omvat:
+
+  - a) de naam en het adres van de aanbieder;
+
+  - b) een schriftelijke verklaring dat er geen gelijkluidende aanvraag bij een andere aangemelde instantie is ingediend;
+
+  - c) de in bijlage IV bedoelde technische documentatie.
+
+- 4.3. De technische documentatie wordt beoordeeld door de aangemelde instantie. Indien relevant en beperkt tot wat nodig is om haar taken uit te voeren, wordt aan de aangemelde instantie volledige toegang verleend tot de gebruikte reeksen trainings-, validatie- en testdata, onder meer, indien passend en met inachtneming van beveiligingswaarborgen, via API’s of andere relevante technische middelen en instrumenten die toegang op afstand mogelijk maken.
+
+- 4.4. Bij de beoordeling van de technische documentatie kan de aangemelde instantie eisen dat de aanbieder nader bewijs overlegt of nadere tests uitvoert, zodat een passende conformiteitsbeoordeling kan worden uitgevoerd om te controleren of het AI-systeem voldoet aan de eisen van hoofdstuk III, afdeling 2. Indien de aangemelde instantie niet tevreden is met de door de aanbieder uitgevoerde tests, voert de aangemelde instantie zelf toereikende tests uit, voor zover passend.
+
+- 4.5. Indien dat noodzakelijk is om te beoordelen of het AI-systeem met een hoog risico voldoet aan de eisen van hoofdstuk III, afdeling 2, nadat alle andere redelijke manieren om de conformiteit te verifiëren, zijn uitgeput of ontoereikend zijn gebleken, en na een met redenen omkleed verzoek, krijgt de aangemelde instantie eveneens toegang tot de trainings- en getrainde modellen van het AI-systeem, met inbegrip van de relevante parameters ervan. Die toegang is onderworpen aan het bestaande Unierecht inzake de bescherming van intellectuele eigendom en bedrijfsgeheimen.
+
+- 4.6. Het besluit van de aangemelde instantie wordt meegedeeld aan de aanbieder of diens gemachtigde. In deze kennisgeving zijn de conclusies van de beoordeling van de technische documentatie opgenomen, evenals de met redenen omklede beoordelingsbeslissing.
+
+  Indien het AI-systeem voldoet aan de eisen van hoofdstuk III, afdeling 2, geeft de aangemelde instantie een beoordelingscertificaat technische documentatie van de Unie af. Het certificaat bevat naam en adres van de aanbieder, de controlebevindingen, de eventuele voorwaarden voor de geldigheid van het certificaat en de noodzakelijke gegevens voor de identificatie van het AI-systeem.
+
+  Het certificaat en de bijlagen daarbij bevatten alle relevante informatie voor de evaluatie van de conformiteit van het AI-systeem en maken het mogelijk het in gebruik zijnde AI-systeem te controleren, indien van toepassing.
+
+  Indien het AI-systeem niet voldoet aan de eisen van hoofdstuk III, afdeling 2, weigert de aangemelde instantie een beoordelingscertificaat technische documentatie van de Unie te verstrekken en brengt zij de aanvrager hiervan op de hoogte met vermelding van de precieze redenen voor de weigering.
+
+  Indien het AI-systeem niet voldoet aan de eis met betrekking tot de gebruikte trainingsdata, moet het AI-systeem opnieuw worden getraind voorafgaand aan de aanvraag voor een nieuwe conformiteitsbeoordeling. In dit geval bevat de met redenen omklede beoordelingsbeslissing van de aangemelde instantie waarin het beoordelingscertificaat technische documentatie van de Unie wordt geweigerd de specifieke overwegingen ten aanzien van de kwaliteitsdata die worden gebruikt voor de training van het AI-systeem, met name over de redenen waarom deze niet voldoen.
+
+- 4.7. Eventuele wijzigingen in het AI-systeem die van invloed kunnen zijn op de naleving door het AI-systeem van de eisen of het beoogde doel, worden beoordeeld door de aangemelde instantie die het beoordelingscertificaat technische documentatie van de Unie heeft verstrekt. De aanbieder informeert die aangemelde instantie over zijn voornemen om een van voornoemde wijzigingen door te voeren of wanneer hij zich anderszins bewust wordt van het bestaan van dergelijke wijzigingen. De aangemelde instantie beoordeelt de voorgenomen wijzigingen en beslist of deze een nieuwe conformiteitsbeoordeling vereisen overeenkomstig artikel 43, lid 4, dan wel of een aanvulling op het beoordelingscertificaat technische documentatie van de Unie volstaat. In het laatste geval beoordeelt de aangemelde instantie de wijzigingen, stelt zij de aanbieder in kennis van haar besluit en verstrekt hem, indien de wijzigingen worden goedgekeurd, een aanvulling op het beoordelingscertificaat technische documentatie van de Unie.
+
 ### 5. Toezicht op het goedgekeurde kwaliteitsbeheersysteem.
+
+- 5.1. Het doel van het door de aangemelde instantie in punt 3 bedoelde uitgevoerde toezicht is te waarborgen dat de aanbieder naar behoren voldoet aan de algemene voorwaarden van het goedgekeurde kwaliteitsbeheersysteem.
+
+- 5.2. De aanbieder stelt de aangemelde instantie in staat om voor beoordelingsdoeleinden toegang te krijgen tot de locatie waar het ontwerp, de ontwikkeling en het testen van de AI-systemen plaatsvindt. De aanbieder deelt voorts alle nodige informatie met de aangemelde instantie.
+
+- 5.3. De aangemelde instantie verricht periodieke audits om te controleren of de aanbieder het kwaliteitsbeheersysteem onderhoudt en toepast en verstrekt de aanbieder een auditverslag. In het kader van deze audits kan de aangemelde instantie aanvullende tests uitvoeren van de AI-systemen waarvoor een beoordelingscertificaat technische documentatie van de Unie is verstrekt.

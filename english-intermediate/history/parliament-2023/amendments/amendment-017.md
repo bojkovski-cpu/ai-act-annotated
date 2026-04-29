@@ -1,0 +1,25 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "17"
+amendment_target: "Proposal for a regulation — Recital 5 a (new)"
+---
+
+# Amendment 17
+
+**Target:** Proposal for a regulation — Recital 5 a (new)
+
+## Text proposed by the Commission
+
+
+
+(5a)
+
+## Amendment of the European Parliament
+
+(5a) Furthermore, in order to foster the development of AI systems in line with Union values, the Union needs to address the main gaps and barriers blocking the potential of the digital transformation including the shortage of digitally skilled workers, cybersecurity concerns, lack of investment and access to investment, and existing and potential gaps between large companies, SME’s and start-ups. Special attention should be paid to ensuring that the benefits of AI and innovation in new technologies are felt across all regions of the Union and that sufficient investment and resources are provided especially to those regions that may be lagging behind in some digital indicators.
+
+Furthermore, in order to foster the development of AI systems in line with Union values, the Union needs to address the main gaps and barriers blocking the potential of the digital transformation including the shortage of digitally skilled workers, cybersecurity concerns, lack of investment and access to investment, and existing and potential gaps between large companies, SME’s and start-ups. Special attention should be paid to ensuring that the benefits of AI and innovation in new technologies are felt across all regions of the Union and that sufficient investment and resources are provided especially to those regions that may be lagging behind in some digital indicators.

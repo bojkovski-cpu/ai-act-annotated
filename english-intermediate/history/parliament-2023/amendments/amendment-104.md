@@ -1,0 +1,25 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "104"
+amendment_target: "Proposal for a regulation — Recital 61 a (new)"
+---
+
+# Amendment 104
+
+**Target:** Proposal for a regulation — Recital 61 a (new)
+
+## Text proposed by the Commission
+
+
+
+(61a)
+
+## Amendment of the European Parliament
+
+(61a) In order to facilitate compliance, the first standardisation requests should be issued by the Commission two months after the entry into force of this Regulation at the latest. This should serve to improve legal certainty, thereby promoting investment and innovation in AI, as well as competitiveness and growth of the Union market, while enhancing multistakeholder governance representing all relevant European stakeholders such as the AI Office, European standardisation organisations and bodies or experts groups established under relevant sectorial Union law as well as industry, SMEs, start-ups, civil society, researchers and social partners, and should ultimately facilitate global cooperation on standardisation in the field of AI in a manner consistent with Union values. When preparing the standardisation request, the Commission should consult the AI Office and the AI advisory Forum in order to collect relevant expertise.
+
+In order to facilitate compliance, the first standardisation requests should be issued by the Commission two months after the entry into force of this Regulation at the latest. This should serve to improve legal certainty, thereby promoting investment and innovation in AI, as well as competitiveness and growth of the Union market, while enhancing multistakeholder governance representing all relevant European stakeholders such as the AI Office, European standardisation organisations and bodies or experts groups established under relevant sectorial Union law as well as industry, SMEs, start-ups, civil society, researchers and social partners, and should ultimately facilitate global cooperation on standardisation in the field of AI in a manner consistent with Union values. When preparing the standardisation request, the Commission should consult the AI Office and the AI advisory Forum in order to collect relevant expertise.

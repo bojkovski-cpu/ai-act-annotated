@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "473",
+  "amendment_target": "Proposal for a regulation — Article 49 — paragraph 1",
+  "body_md": "**Target:** Proposal for a regulation — Article 49 — paragraph 1\n\n## Text proposed by the Commission\n\n1. The CE marking shall be affixed visibly, legibly and indelibly for high-risk AI systems. Where that is not possible or not warranted on account of the nature of the high-risk AI system, it shall be affixed to the packaging or to the accompanying documentation, as appropriate.\n\n## Amendment of the European Parliament\n\n1. The physical CE marking shall be affixed visibly, legibly and indelibly for high-risk AI systems before the high-risk AI system is placed on the market Where that is not possible or not warranted on account of the nature of the high-risk AI system, it shall be affixed to the packaging or to the accompanying documentation, as appropriate. It may be followed by a pictogram or any other marking indicating a special risk of use;\n",
+  "commission_text": "1. The CE marking shall be affixed visibly, legibly and indelibly for high-risk AI systems. Where that is not possible or not warranted on account of the nature of the high-risk AI system, it shall be affixed to the packaging or to the accompanying documentation, as appropriate.",
+  "parliament_text": "1. The physical CE marking shall be affixed visibly, legibly and indelibly for high-risk AI systems before the high-risk AI system is placed on the market Where that is not possible or not warranted on account of the nature of the high-risk AI system, it shall be affixed to the packaging or to the accompanying documentation, as appropriate. It may be followed by a pictogram or any other marking indicating a special risk of use;",
+  "char_count": 431
+}

@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "455"
+amendment_target: "Proposal for a regulation — Article 43 — paragraph 4 — introductory part"
+---
+
+# Amendment 455
+
+**Target:** Proposal for a regulation — Article 43 — paragraph 4 — introductory part
+
+## Text proposed by the Commission
+
+4. High-risk AI systems shall undergo a new conformity assessment procedure whenever they are substantially modified, regardless of whether the modified system is intended to be further distributed or continues to be used by the current user.
+
+## Amendment of the European Parliament
+
+4. High-risk AI systems that have already been subject to a conformity assessment procedure shall undergo a new conformity assessment procedure whenever they are substantially modified, regardless of whether the modified system is intended to be further distributed or continues to be used by the current deployer;

@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "497",
+  "amendment_target": "Proposal for a regulation — Article 53 — paragraph 2",
+  "body_md": "**Target:** Proposal for a regulation — Article 53 — paragraph 2\n\n## Text proposed by the Commission\n\n2. Member States shall ensure that to the extent the innovative AI systems involve the processing of personal data or otherwise fall under the supervisory remit of other national authorities or competent authorities providing or supporting access to data, the national data protection authorities and those other national authorities are associated to the operation of the AI regulatory sandbox.\n\n## Amendment of the European Parliament\n\n2. Establishing authorities shall ensure that, to the extent the innovative AI systems involve the processing of personal data or otherwise fall under the supervisory remit of other national authorities or competent authorities providing or supporting access to personal data, the national data protection authorities , or in cases referred to in paragraph 1b the EDPS, and those other national authorities are associated to the operation of the AI regulatory sandbox and involved in the supervision of those aspects to the full extent of their respective tasks and powers;\n",
+  "commission_text": "2. Member States shall ensure that to the extent the innovative AI systems involve the processing of personal data or otherwise fall under the supervisory remit of other national authorities or competent authorities providing or supporting access to data, the national data protection authorities and those other national authorities are associated to the operation of the AI regulatory sandbox.",
+  "parliament_text": "2. Establishing authorities shall ensure that, to the extent the innovative AI systems involve the processing of personal data or otherwise fall under the supervisory remit of other national authorities or competent authorities providing or supporting access to personal data, the national data protection authorities , or in cases referred to in paragraph 1b the EDPS, and those other national authorities are associated to the operation of the AI regulatory sandbox and involved in the supervision of those aspects to the full extent of their respective tasks and powers;",
+  "char_count": 573
+}

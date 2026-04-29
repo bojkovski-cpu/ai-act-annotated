@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "295",
+  "amendment_target": "Proposal for a regulation — Article 12 — paragraph 1",
+  "body_md": "**Target:** Proposal for a regulation — Article 12 — paragraph 1\n\n## Text proposed by the Commission\n\n1. High-risk AI systems shall be designed and developed with capabilities enabling the automatic recording of events (‘logs’) while the high-risk AI systems is operating. Those logging capabilities shall conform to recognised standards or common specifications.\n\n## Amendment of the European Parliament\n\n1. High-risk AI systems shall be designed and developed with capabilities enabling the automatic recording of events (‘logs’) while the high-risk AI systems is operating. Those logging capabilities shall conform to the state of the art and recognised standards or common specifications.\n",
+  "commission_text": "1. High-risk AI systems shall be designed and developed with capabilities enabling the automatic recording of events (‘logs’) while the high-risk AI systems is operating. Those logging capabilities shall conform to recognised standards or common specifications.",
+  "parliament_text": "1. High-risk AI systems shall be designed and developed with capabilities enabling the automatic recording of events (‘logs’) while the high-risk AI systems is operating. Those logging capabilities shall conform to the state of the art and recognised standards or common specifications.",
+  "char_count": 286
+}

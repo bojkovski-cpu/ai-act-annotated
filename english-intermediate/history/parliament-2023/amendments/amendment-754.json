@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "754",
+  "amendment_target": "Proposal for a regulation — Annex IV — paragraph 1 — point 2 — point e",
+  "body_md": "**Target:** Proposal for a regulation — Annex IV — paragraph 1 — point 2 — point e\n\n## Text proposed by the Commission\n\n(e) assessment of the human oversight measures needed in accordance with Article 14, including an assessment of the technical measures needed to facilitate the interpretation of the outputs of AI systems by the users , in accordance with Articles 13(3)(d);\n\n(e)\n\n(e)\n\n## Amendment of the European Parliament\n\n(e) assessment of the human oversight measures needed in accordance with Article 14, including an assessment of the technical measures needed to facilitate the interpretation of the outputs of AI systems by the deployers , in accordance with Articles 13(3)(d);\n\nassessment of the human oversight measures needed in accordance with Article 14, including an assessment of the technical measures needed to facilitate the interpretation of the outputs of AI systems by the users , in accordance with Articles 13(3)(d);\n\nassessment of the human oversight measures needed in accordance with Article 14, including an assessment of the technical measures needed to facilitate the interpretation of the outputs of AI systems by the deployers , in accordance with Articles 13(3)(d);\n",
+  "commission_text": "(e) assessment of the human oversight measures needed in accordance with Article 14, including an assessment of the technical measures needed to facilitate the interpretation of the outputs of AI systems by the users , in accordance with Articles 13(3)(d);\n\n(e)\n\n(e)",
+  "parliament_text": "(e) assessment of the human oversight measures needed in accordance with Article 14, including an assessment of the technical measures needed to facilitate the interpretation of the outputs of AI systems by the deployers , in accordance with Articles 13(3)(d);\n\nassessment of the human oversight measures needed in accordance with Article 14, including an assessment of the technical measures needed to facilitate the interpretation of the outputs of AI systems by the users , in accordance with Articles 13(3)(d);\n\nassessment of the human oversight measures needed in accordance with Article 14, including an assessment of the technical measures needed to facilitate the interpretation of the outputs of AI systems by the deployers , in accordance with Articles 13(3)(d);",
+  "char_count": 772
+}

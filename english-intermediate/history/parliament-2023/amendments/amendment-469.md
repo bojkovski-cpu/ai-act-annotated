@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "469"
+amendment_target: "Proposal for a regulation — Article 48 — paragraph 1"
+---
+
+# Amendment 469
+
+**Target:** Proposal for a regulation — Article 48 — paragraph 1
+
+## Text proposed by the Commission
+
+1. The provider shall draw up a written EU declaration of conformity for each AI system and keep it at the disposal of the national competent authorities for 10 years after the AI system has been placed on the market or put into service. The EU declaration of conformity shall identify the AI system for which it has been drawn up. A copy of the EU declaration of conformity shall be given to the relevant national competent authorities upon request.
+
+## Amendment of the European Parliament
+
+1. The provider shall draw up a written machine readable, physical or electronic EU declaration of conformity for each high-risk AI system and keep it at the disposal of the national supervisory authority and the national competent authorities for 10 years after the AI high-risk system has been placed on the market or put into service. A copy of the EU declaration of conformity shall be submitted to the national supervisory authority and the relevant national competent authorities upon request;

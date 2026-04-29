@@ -1,0 +1,205 @@
+[
+  {
+    "action": "replaced",
+    "article_number": "1",
+    "paragraph": 1,
+    "sub_provision": "1(2), point (g)",
+    "summary": "Reframes innovation support focus to include SMCs and SMEs, including start-ups"
+  },
+  {
+    "action": "replaced",
+    "article_number": "2",
+    "paragraph": 2,
+    "sub_provision": "2(2)",
+    "summary": "Limits applicability for high-risk AI in products covered by Annex I Section B harmonisation legislation to Article 6(1), Article 60a, Articles 102-109, 111, 112 only; Article 57 applies only insofar as requirements have been integrated"
+  },
+  {
+    "action": "inserted",
+    "article_number": "3",
+    "paragraph": 3,
+    "sub_provision": "3 — new points (14a) and (14b)",
+    "summary": "Adds definitions for 'SME' (per Commission Recommendation 2003/361/EC) and 'SMC' (per Commission Recommendation 2025/1099)"
+  },
+  {
+    "action": "replaced",
+    "article_number": "4",
+    "paragraph": 4,
+    "sub_provision": "Article 4 (full replacement)",
+    "summary": "AI literacy obligation changed from mandatory to 'encourage' — Commission and Member States shall encourage providers and deployers; training obligations for high-risk deployers remain"
+  },
+  {
+    "action": "replaced",
+    "article_number": "6",
+    "paragraph": 6,
+    "sub_provision": "6(4)",
+    "summary": "Providers who consider Annex III AI system is not high-risk must document assessment and provide to national authorities on request"
+  },
+  {
+    "action": "amended",
+    "article_number": "10",
+    "paragraph": 7,
+    "sub_provision": "10(1), 10(5) deleted, 10(6)",
+    "summary": "Para 1: references new Article 4a(1) for data quality; Para 5: deleted; Para 6: references Article 4a(1) for non-training-technique systems"
+  },
+  {
+    "action": "replaced",
+    "article_number": "11",
+    "paragraph": 8,
+    "sub_provision": "11(1), second subparagraph",
+    "summary": "SMCs and SMEs (including start-ups) may use simplified technical documentation form established by Commission"
+  },
+  {
+    "action": "replaced",
+    "article_number": "17",
+    "paragraph": 9,
+    "sub_provision": "17(2)",
+    "summary": "QMS implementation proportionate to provider size, especially SMCs/SMEs including start-ups"
+  },
+  {
+    "action": "added",
+    "article_number": "28",
+    "paragraph": 10,
+    "sub_provision": "28 — new paragraph 8",
+    "summary": "Single application and assessment procedure for notifying authorities under both AI Act and Union harmonisation legislation in Annex I Section A"
+  },
+  {
+    "action": "replaced",
+    "article_number": "29",
+    "paragraph": 11,
+    "sub_provision": "29(4)",
+    "summary": "Notified bodies designated under other harmonisation legislation may use documents/certificates to support AI Act designation; single assessment procedure for Annex I Section A bodies"
+  },
+  {
+    "action": "replaced",
+    "article_number": "30",
+    "paragraph": 12,
+    "sub_provision": "30(2)",
+    "summary": "Notification based on codes/categories/types in new Annex XIV; Commission delegated acts power to amend Annex XIV"
+  },
+  {
+    "action": "replaced",
+    "article_number": "43",
+    "paragraph": 13,
+    "sub_provision": "43(3)",
+    "summary": "High-risk AI systems covered by Annex I Section A follow relevant harmonisation legislation conformity assessment; notified bodies under that legislation can assess; transition period 18 months; dual-classification systems follow harmonisation legislation procedure"
+  },
+  {
+    "action": "deleted",
+    "article_number": "49",
+    "paragraph": 14,
+    "sub_provision": "49(2)",
+    "summary": "Registration obligation for Article 6(3) AI systems in EU database removed"
+  },
+  {
+    "action": "replaced",
+    "article_number": "50",
+    "paragraph": 15,
+    "sub_provision": "50(7)",
+    "summary": "AI Office codes of practice for transparency obligations; Commission may assess adequacy and adopt implementing act if inadequate"
+  },
+  {
+    "action": "replaced",
+    "article_number": "56",
+    "paragraph": 16,
+    "sub_provision": "56(6), first subparagraph",
+    "summary": "Commission publishes assessment of codes of practice adequacy"
+  },
+  {
+    "action": "amended",
+    "article_number": "57",
+    "paragraph": 17,
+    "sub_provision": "57 — new 3a, amended 5",
+    "summary": "AI Office may establish EU-level sandbox for Article 75(1) AI systems; sandbox plans incorporate real-world testing in single document"
+  },
+  {
+    "action": "replaced",
+    "article_number": "58",
+    "paragraph": 18,
+    "sub_provision": "58(1)",
+    "summary": "Commission implementing acts for detailed sandbox arrangements including governance, coordination, common principles"
+  },
+  {
+    "action": "amended",
+    "article_number": "60",
+    "paragraph": 19,
+    "sub_provision": "60(1) first subpara, 60(2)",
+    "summary": "Real-world testing scope extended to Annex I Section A covered systems; broader testing by providers/prospective providers"
+  },
+  {
+    "action": "replaced",
+    "article_number": "63",
+    "paragraph": 21,
+    "sub_provision": "63(1)",
+    "summary": "Simplified QMS compliance extended from microenterprises to all SMEs including start-ups"
+  },
+  {
+    "action": "amended",
+    "article_number": "69",
+    "paragraph": 22,
+    "sub_provision": "69(2) replaced, 69(3) deleted",
+    "summary": "Scientific panel fee structure simplified; Member States can consult experts directly without Commission involvement"
+  },
+  {
+    "action": "replaced",
+    "article_number": "70",
+    "paragraph": 23,
+    "sub_provision": "70(8)",
+    "summary": "National competent authorities guidance to SMCs/SMEs/start-ups; consultation with other competent authorities on cross-domain matters"
+  },
+  {
+    "action": "replaced",
+    "article_number": "72",
+    "paragraph": 24,
+    "sub_provision": "72(3)",
+    "summary": "Post-market monitoring plan part of technical documentation; Commission to adopt guidance (not harmonised template)"
+  },
+  {
+    "action": "amended",
+    "article_number": "75",
+    "paragraph": 25,
+    "sub_provision": "75 heading, 75(1), new 75(1a-1c)",
+    "summary": "Title changed to 'Market surveillance and control of AI systems and mutual assistance'; AI Office exclusively competent for GPAI-based AI systems on same-provider basis and VLOP/VLOSE systems; enforcement powers via implementing acts; procedural safeguards (Reg 2019/1020 Art 18 mutatis mutandis); pre-market conformity assessments by Commission"
+  },
+  {
+    "action": "amended",
+    "article_number": "77",
+    "paragraph": 26,
+    "sub_provision": "77 heading, 77(1), new 77(1a-1b)",
+    "summary": "Title changed to 'Powers of authorities protecting fundamental rights and cooperation with market surveillance authorities'; scope clarified; mutual assistance obligation added between market surveillance and fundamental rights authorities"
+  },
+  {
+    "action": "replaced",
+    "article_number": "95",
+    "paragraph": 27,
+    "sub_provision": "95(4)",
+    "summary": "Codes of conduct to account for SMC/SME/start-up needs"
+  },
+  {
+    "action": "replaced",
+    "article_number": "96",
+    "paragraph": 28,
+    "sub_provision": "96(1), second subparagraph",
+    "summary": "Commission guidelines to pay particular attention to SMC/SME/start-up needs"
+  },
+  {
+    "action": "amended",
+    "article_number": "99",
+    "paragraph": 29,
+    "sub_provision": "99(1), 99(6)",
+    "summary": "Penalties may include warnings and non-monetary measures; SMC/SME fines capped at lower of percentage or amount thresholds"
+  },
+  {
+    "action": "amended",
+    "article_number": "111",
+    "paragraph": 30,
+    "sub_provision": "111(2), new 111(4)",
+    "summary": "Grace period for existing high-risk systems clarified (type and model basis); new transitional period for Art 50(2) marking obligations (6 months for systems placed on market before 2 Aug 2026)"
+  },
+  {
+    "action": "amended",
+    "article_number": "113",
+    "paragraph": 31,
+    "sub_provision": "113, third paragraph points (d) and (e)",
+    "summary": "Chapter III application linked to Commission decision confirming adequate compliance measures; fallback dates: 2 Dec 2027 for Art 6(2)/Annex III, 2 Aug 2028 for Art 6(1)/Annex I; Articles 102-110 apply from entry into application of this amending Regulation"
+  }
+]

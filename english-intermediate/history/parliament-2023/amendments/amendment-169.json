@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "169",
+  "amendment_target": "Proposal for a regulation — Article 3 — paragraph 1 — point 1 d (new)",
+  "body_md": "**Target:** Proposal for a regulation — Article 3 — paragraph 1 — point 1 d (new)\n\n## Text proposed by the Commission\n\n\n\n(1d)\n\n## Amendment of the European Parliament\n\n(1d) ‘general purpose AI system’ means an AI system that can be used in and adapted to a wide range of applications for which it was not intentionally and specifically designed;\n\n‘general purpose AI system’ means an AI system that can be used in and adapted to a wide range of applications for which it was not intentionally and specifically designed;\n",
+  "commission_text": "\n\n(1d)",
+  "parliament_text": "(1d) ‘general purpose AI system’ means an AI system that can be used in and adapted to a wide range of applications for which it was not intentionally and specifically designed;\n\n‘general purpose AI system’ means an AI system that can be used in and adapted to a wide range of applications for which it was not intentionally and specifically designed;",
+  "char_count": 351
+}

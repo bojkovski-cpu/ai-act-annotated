@@ -79,13 +79,31 @@ def _top_level_rows(table: Tag) -> list:
 
 
 def _list_from_table(table: Tag) -> list:
+    """Convert 2-column or 3-column EUR-Lex marker-list tables to markdown list lines.
+
+    EUR-Lex uses two layouts in the Dutch corpus:
+      - 2 cells per row: [marker | body]
+      - 3 cells per row: [empty padding | marker | body]   (e.g. annexes I, VII, XI)
+    Both produce the same markdown list output.
+    """
     lines = []
     for tr in _top_level_rows(table):
         tds = tr.find_all("td", recursive=False)
-        if len(tds) != 2:
+        marker_td = body_td = None
+        if len(tds) == 2:
+            marker_td, body_td = tds[0], tds[1]
+        elif len(tds) == 3:
+            # First cell is empty alignment padding; marker is in td[1], body in td[2].
+            first_text = clean(tds[0].get_text(" ", strip=True))
+            if first_text:
+                # Unusual — fall back to treating first cell as marker
+                marker_td, body_td = tds[0], tds[1]
+            else:
+                marker_td, body_td = tds[1], tds[2]
+        else:
             continue
-        marker = clean(tds[0].get_text(" ", strip=True))
-        body   = _cell_md(tds[1])
+        marker = clean(marker_td.get_text(" ", strip=True))
+        body   = _cell_md(body_td)
         if not marker:
             if body:
                 lines.append(body)
@@ -98,6 +116,14 @@ def _list_from_table(table: Tag) -> list:
 
 
 def _cell_md(cell: Tag) -> str:
+    """Render the contents of a table body cell into markdown lines.
+
+    EUR-Lex wraps body content in different ways depending on the section:
+    - <p class="oj-normal">  inside td (typical regulation articles)
+    - <span>                 inside td (annex I — flat list of directives)
+    - mixed: <span>, <table>, <p>  siblings inside td (annex VII/XI)
+    Inline tags (span, a, em, strong, i, b, sup, sub) are rendered as plain text.
+    """
     parts = []
     for child in cell.children:
         if isinstance(child, NavigableString):
@@ -113,6 +139,15 @@ def _cell_md(cell: Tag) -> str:
                 parts.extend(_list_from_table(child))
             elif child.name == "div":
                 parts.append(_cell_md(child))
+            elif child.name in ("span", "a", "em", "strong", "i", "b", "sup", "sub"):
+                t = clean(child.get_text(" ", strip=True))
+                if t:
+                    parts.append(t)
+            else:
+                # Unknown tag — fall back to its text content rather than dropping it.
+                t = clean(child.get_text(" ", strip=True))
+                if t:
+                    parts.append(t)
     return "\n".join(p for p in parts if p != "")
 
 

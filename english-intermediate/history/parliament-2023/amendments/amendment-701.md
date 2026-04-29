@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "701"
+amendment_target: "Proposal for a regulation — Article 84 — paragraph 4"
+---
+
+# Amendment 701
+
+**Target:** Proposal for a regulation — Article 84 — paragraph 4
+
+## Text proposed by the Commission
+
+4. Within [ three years after the date of application of this Regulation referred to in Article 85(2)] and every four years thereafter, the Commission shall evaluate the impact and effectiveness of codes of conduct to foster the application of the requirements set out in Title III, Chapter 2 and possibly other additional requirements for AI systems other than high-risk AI systems.
+
+## Amendment of the European Parliament
+
+4. Within … [ one year after the date of application of this Regulation referred to in Article 85(2)] and every two years thereafter, the Commission shall evaluate the impact and effectiveness of codes of conduct to foster the application of the requirements set out in Title III, Chapter 2 and possibly other additional requirements for AI systems other than high-risk AI systems;

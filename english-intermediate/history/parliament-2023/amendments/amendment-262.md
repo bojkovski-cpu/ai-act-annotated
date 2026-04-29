@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "262"
+amendment_target: "Proposal for a regulation — Article 9 — paragraph 2 — introductory part"
+---
+
+# Amendment 262
+
+**Target:** Proposal for a regulation — Article 9 — paragraph 2 — introductory part
+
+## Text proposed by the Commission
+
+2. The risk management system shall consist of a continuous iterative process run throughout the entire lifecycle of a high-risk AI system, requiring regular systematic updating. It shall comprise the following steps:
+
+## Amendment of the European Parliament
+
+2. The risk management system shall consist of a continuous iterative process run throughout the entire lifecycle of a high-risk AI system, requiring regular review and updating of the risk management process, to ensure its continuing effectiveness, and documentation of any significant decisions and actions taken subject to this Article . It shall comprise the following steps:

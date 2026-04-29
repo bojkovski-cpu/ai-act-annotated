@@ -1,0 +1,25 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "396"
+amendment_target: "Proposal for a regulation — Article 28 — paragraph 2 a (new)"
+---
+
+# Amendment 396
+
+**Target:** Proposal for a regulation — Article 28 — paragraph 2 a (new)
+
+## Text proposed by the Commission
+
+
+
+
+
+## Amendment of the European Parliament
+
+2 a. The provider of a high risk AI system and the third party that supplies tools, services, components or processes that are used or integrated in the high risk AI system shall, by written agreement specify the information, capabilities, technical access, and or other assistance, based on the generally acknowledged state of the art, that the third party is required to provide in order to enable the provider of the high risk AI system to fully comply with the obligations under this Regulation.
+
+The Commission shall develop and recommend non-binding model contractual terms between providers of high-risk AI systems and third parties that supply tools, services, components or processes that are used or integrated in high-risk AI systems in order to assist both parties in drafting and negotiating contracts with balanced contractual rights and obligations, consistent with each party’s level of control. When developing non-binding model contractual terms, the Commission shall take into account possible contractual requirements applicable in specific sectors or business cases. The non-binding contractual terms shall be published and be available free of charge in an easily usable electronic format on the AI Office’s website.

@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "159"
+amendment_target: "Proposal for a regulation — Article 2 — paragraph 4"
+---
+
+# Amendment 159
+
+**Target:** Proposal for a regulation — Article 2 — paragraph 4
+
+## Text proposed by the Commission
+
+4. This Regulation shall not apply to public authorities in a third country nor to international organisations falling within the scope of this Regulation pursuant to paragraph 1, where those authorities or organisations use AI systems in the framework of international agreements for law enforcement and judicial cooperation with the Union or with one or more Member States.
+
+## Amendment of the European Parliament
+
+4. This Regulation shall not apply to public authorities in a third country nor to international organisations falling within the scope of this Regulation pursuant to paragraph 1, where those authorities or organisations use AI systems in the framework of international cooperation or agreements for law enforcement and judicial cooperation with the Union or with one or more Member States and are subject of a decision of the Commission adopted in accordance with Article 36 of Directive (EU)2016/680 or Article 45 of Regulation 2016/679 (adequacy decision) or are part of an international agreement concluded between the Union and that third country or international organisation pursuant to Article 218 TFUE providing adequate safeguards with respect to the protection of privacy and fundamental rights and freedoms of individuals;

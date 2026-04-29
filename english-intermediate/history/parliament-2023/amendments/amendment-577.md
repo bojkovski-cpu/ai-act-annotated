@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "577"
+amendment_target: "Proposal for a regulation — Article 62 — paragraph 1 — introductory part"
+---
+
+# Amendment 577
+
+**Target:** Proposal for a regulation — Article 62 — paragraph 1 — introductory part
+
+## Text proposed by the Commission
+
+1. Providers of high-risk AI systems placed on the Union market shall report any serious incident or any malfunctioning of those systems which constitutes a breach of obligations under Union law intended to protect fundamental rights to the market surveillance authorities of the Member States where that incident or breach occurred.
+
+## Amendment of the European Parliament
+
+1. Providers and, where deployers have identified a serious incident, deployers of high-risk AI systems placed on the Union market shall report any serious incident of those systems which constitutes a breach of obligations under Union law intended to protect fundamental rights to the national supervisory authority of the Member States where that incident or breach occurred.

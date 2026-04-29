@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "321"
+amendment_target: "Proposal for a regulation — Article 15 — paragraph 1"
+---
+
+# Amendment 321
+
+**Target:** Proposal for a regulation — Article 15 — paragraph 1
+
+## Text proposed by the Commission
+
+1. High-risk AI systems shall be designed and developed in such a way that they achieve, in the light of their intended purpose, an appropriate level of accuracy, robustness and cybersecurity, and perform consistently in those respects throughout their lifecycle.
+
+## Amendment of the European Parliament
+
+1. High-risk AI systems shall be designed and developed following the principle of security by design and by default. In the light of their intended purpose, they should achieve an appropriate level of accuracy, robustness , safety, and cybersecurity, and perform consistently in those respects throughout their lifecycle. Compliance with these requirements shall include implementation of state-of-the-art measures, according to the specific market segment or scope of application.

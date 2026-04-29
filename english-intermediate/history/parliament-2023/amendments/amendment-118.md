@@ -1,0 +1,25 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "118"
+amendment_target: "Proposal for a regulation — Recital 72 a (new)"
+---
+
+# Amendment 118
+
+**Target:** Proposal for a regulation — Recital 72 a (new)
+
+## Text proposed by the Commission
+
+
+
+(72a)
+
+## Amendment of the European Parliament
+
+(72a) This Regulation should provide the legal basis for the use of personal data collected for other purposes for developing certain AI systems in the public interest within the AI regulatory sandbox only under specified conditions in line with Article 6(4) of Regulation (EU) 2016/679, and Article 6 of Regulation (EU) 2018/1725, and without prejudice to Article 4(2) of Directive (EU) 2016/680. Prospective providers in the sandbox should ensure appropriate safeguards and cooperate with the competent authorities, including by following their guidance and acting expeditiously and in good faith to mitigate any high-risks to safety, health and the environment and fundamental rights that may arise during the development and experimentation in the sandbox. The conduct of the prospective providers in the sandbox should be taken into account when competent authorities decide over the temporary or permanent suspension of their participation in the sandbox whether to impose an administrative fine under Article 83(2) of Regulation 2016/679 and Article 57 of Directive 2016/680.
+
+This Regulation should provide the legal basis for the use of personal data collected for other purposes for developing certain AI systems in the public interest within the AI regulatory sandbox only under specified conditions in line with Article 6(4) of Regulation (EU) 2016/679, and Article 6 of Regulation (EU) 2018/1725, and without prejudice to Article 4(2) of Directive (EU) 2016/680. Prospective providers in the sandbox should ensure appropriate safeguards and cooperate with the competent authorities, including by following their guidance and acting expeditiously and in good faith to mitigate any high-risks to safety, health and the environment and fundamental rights that may arise during the development and experimentation in the sandbox. The conduct of the prospective providers in the sandbox should be taken into account when competent authorities decide over the temporary or permanent suspension of their participation in the sandbox whether to impose an administrative fine under Article 83(2) of Regulation 2016/679 and Article 57 of Directive 2016/680.

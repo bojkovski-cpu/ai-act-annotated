@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "180",
+  "amendment_target": "Proposal for a regulation — Article 3 — paragraph 1 — point 20",
+  "body_md": "**Target:** Proposal for a regulation — Article 3 — paragraph 1 — point 20\n\n## Text proposed by the Commission\n\n(20) ‘conformity assessment’ means the process of verifying whether the requirements set out in Title III, Chapter 2 of this Regulation relating to an AI system have been fulfilled;\n\n(20)\n\n(20)\n\n## Amendment of the European Parliament\n\n(20) ‘conformity assessment’ means the process of demonstrating whether the requirements set out in Title III, Chapter 2 of this Regulation relating to an AI system have been fulfilled;\n\n‘conformity assessment’ means the process of verifying whether the requirements set out in Title III, Chapter 2 of this Regulation relating to an AI system have been fulfilled;\n\n‘conformity assessment’ means the process of demonstrating whether the requirements set out in Title III, Chapter 2 of this Regulation relating to an AI system have been fulfilled;\n",
+  "commission_text": "(20) ‘conformity assessment’ means the process of verifying whether the requirements set out in Title III, Chapter 2 of this Regulation relating to an AI system have been fulfilled;\n\n(20)\n\n(20)",
+  "parliament_text": "(20) ‘conformity assessment’ means the process of demonstrating whether the requirements set out in Title III, Chapter 2 of this Regulation relating to an AI system have been fulfilled;\n\n‘conformity assessment’ means the process of verifying whether the requirements set out in Title III, Chapter 2 of this Regulation relating to an AI system have been fulfilled;\n\n‘conformity assessment’ means the process of demonstrating whether the requirements set out in Title III, Chapter 2 of this Regulation relating to an AI system have been fulfilled;",
+  "char_count": 545
+}

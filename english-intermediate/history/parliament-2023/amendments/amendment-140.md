@@ -1,0 +1,25 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "140"
+amendment_target: "Proposal for a regulation — Article 1 — paragraph 1 (new)"
+---
+
+# Amendment 140
+
+**Target:** Proposal for a regulation — Article 1 — paragraph 1 (new)
+
+## Text proposed by the Commission
+
+
+
+1.
+
+## Amendment of the European Parliament
+
+1. The purpose of this Regulation is to promote the uptake of human-centric and trustworthy artificial intelligence and to ensure a high level of protection of health, safety, fundamental rights, democracy and the rule of law, and the environment from harmful effects of artificial intelligence systems in the Union while supporting innovation;
+
+The purpose of this Regulation is to promote the uptake of human-centric and trustworthy artificial intelligence and to ensure a high level of protection of health, safety, fundamental rights, democracy and the rule of law, and the environment from harmful effects of artificial intelligence systems in the Union while supporting innovation;

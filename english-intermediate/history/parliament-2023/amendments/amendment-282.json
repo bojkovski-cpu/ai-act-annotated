@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "282",
+  "amendment_target": "Proposal for a regulation — Article 10 — paragraph 2 — point c",
+  "body_md": "**Target:** Proposal for a regulation — Article 10 — paragraph 2 — point c\n\n## Text proposed by the Commission\n\n(c) relevant data preparation processing operations, such as annotation, labelling, cleaning, enrichment and aggregation;\n\n(c)\n\n(c)\n\n## Amendment of the European Parliament\n\n(c) data preparation processing operations, such as annotation, labelling, cleaning, updating enrichment and aggregation;\n\nrelevant data preparation processing operations, such as annotation, labelling, cleaning, enrichment and aggregation;\n\ndata preparation processing operations, such as annotation, labelling, cleaning, updating enrichment and aggregation;\n",
+  "commission_text": "(c) relevant data preparation processing operations, such as annotation, labelling, cleaning, enrichment and aggregation;\n\n(c)\n\n(c)",
+  "parliament_text": "(c) data preparation processing operations, such as annotation, labelling, cleaning, updating enrichment and aggregation;\n\nrelevant data preparation processing operations, such as annotation, labelling, cleaning, enrichment and aggregation;\n\ndata preparation processing operations, such as annotation, labelling, cleaning, updating enrichment and aggregation;",
+  "char_count": 359
+}

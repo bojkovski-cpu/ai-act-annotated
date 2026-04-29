@@ -1,0 +1,25 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "133"
+amendment_target: "Proposal for a regulation — Recital 84 a (new)"
+---
+
+# Amendment 133
+
+**Target:** Proposal for a regulation — Recital 84 a (new)
+
+## Text proposed by the Commission
+
+
+
+(84a)
+
+## Amendment of the European Parliament
+
+(84a) As the rights and freedoms of natural and legal persons and groups of natural persons can be seriously undermined by AI systems, it is essential that natural and legal persons or groups of natural persons have meaningful access to reporting and redress mechanisms and to be entitled to access proportionate and effective remedies. They should be able to report infringments of this Regulation to their national supervisory authority and have the right to lodge a complaint against the providers or deployers of AI systems. Where applicable, deployers should provide internal complaints mechanisms to be used by natural and legal persons or groups of natural persons. Without prejudice to any other administrative or non-judicial remedy, natural and legal persons and groups of natural persons should also have the right to an effective judicial remedy with regard to a legally binding decision of a national supervisory authority concerning them or, where the national supervisory authority does not handle a complaint, does not inform the complainant of the progress or preliminary outcome of the complaint lodged or does not comply with its obligation to reach a final decision, with regard to the complaint.
+
+As the rights and freedoms of natural and legal persons and groups of natural persons can be seriously undermined by AI systems, it is essential that natural and legal persons or groups of natural persons have meaningful access to reporting and redress mechanisms and to be entitled to access proportionate and effective remedies. They should be able to report infringments of this Regulation to their national supervisory authority and have the right to lodge a complaint against the providers or deployers of AI systems. Where applicable, deployers should provide internal complaints mechanisms to be used by natural and legal persons or groups of natural persons. Without prejudice to any other administrative or non-judicial remedy, natural and legal persons and groups of natural persons should also have the right to an effective judicial remedy with regard to a legally binding decision of a national supervisory authority concerning them or, where the national supervisory authority does not handle a complaint, does not inform the complainant of the progress or preliminary outcome of the complaint lodged or does not comply with its obligation to reach a final decision, with regard to the complaint.

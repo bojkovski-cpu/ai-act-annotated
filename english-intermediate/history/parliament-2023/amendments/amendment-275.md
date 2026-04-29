@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "275"
+amendment_target: "Proposal for a regulation — Article 9 — paragraph 7"
+---
+
+# Amendment 275
+
+**Target:** Proposal for a regulation — Article 9 — paragraph 7
+
+## Text proposed by the Commission
+
+7. The testing of the high-risk AI systems shall be performed , as appropriate, at any point in time throughout the development process, and, in any event , prior to the placing on the market or the putting into service. Testing shall be made against preliminarily defined metrics and probabilistic thresholds that are appropriate to the intended purpose of the high-risk AI system.
+
+## Amendment of the European Parliament
+
+7. The testing of the high-risk AI systems shall be performed, prior to the placing on the market or the putting into service. Testing shall be made against prior defined metrics, and probabilistic thresholds that are appropriate to the intended purpose or reasonably foreseeable misuse of the high-risk AI system.

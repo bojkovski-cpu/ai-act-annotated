@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "612"
+amendment_target: "Proposal for a regulation — Article 66 a (new)"
+---
+
+# Amendment 612
+
+**Target:** Proposal for a regulation — Article 66 a (new)
+
+## Text proposed by the Commission
+
+*(no text)*
+
+## Amendment of the European Parliament
+
+Article 66 a Joint investigations Where a national supervisory authority has reasons to suspect that the infringement by a provider or a deployer of a high-risk AI system or foundation model to this Regulation amount to a widespread infringement with a Union dimension, or affects or is likely affect at least 45 million individuals, in more than one Member State, that national supervisory authority shall inform the AI Office and may request the national supervisory authorities of the Member States where such infringement took place to start a joint investigation. The AI Office shall provide central coordination to the joint investigation. Investigation powers shall remain within the competence of the national supervisory authorities.

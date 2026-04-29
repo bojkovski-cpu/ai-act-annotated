@@ -1,0 +1,45 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "442"
+amendment_target: "Proposal for a regulation — Article 41 — paragraph 1 a (new)"
+---
+
+# Amendment 442
+
+**Target:** Proposal for a regulation — Article 41 — paragraph 1 a (new)
+
+## Text proposed by the Commission
+
+
+
+
+
+(a)
+
+
+
+(b)
+
+
+
+(c)
+
+## Amendment of the European Parliament
+
+1 a. The Commission may, by means of implementing act adopted in accordance with the examination procedure referred to in Article 74(2) and after consulting the AI Office and the AI Advisory Forum, adopt common specifications in respect of the requirements set out in Chapter 2 of this Title or Article 28b wherein all of the following conditions are fulfilled:
+
+(a) there is no reference to harmonised standards already published in the Official Journal of the European Union related to the essential requirement(s), unless the harmonised standard in question is an existing standard that must be revised;
+
+there is no reference to harmonised standards already published in the Official Journal of the European Union related to the essential requirement(s), unless the harmonised standard in question is an existing standard that must be revised;
+
+(b) the Commission has requested one or more European standardisation organisations to draft a harmonised standard for the essential requirement(s) set out in Chapter 2;
+
+the Commission has requested one or more European standardisation organisations to draft a harmonised standard for the essential requirement(s) set out in Chapter 2;
+
+(c) the request referred to in point (b) has not been accepted by any of the European standardisation organisations; or there are undue delays in the establishment of an appropriate harmonised standard; or the standard provided does not satisfy the requirements of the relevant Union law, or does not comply with the request of the Commission.
+
+the request referred to in point (b) has not been accepted by any of the European standardisation organisations; or there are undue delays in the establishment of an appropriate harmonised standard; or the standard provided does not satisfy the requirements of the relevant Union law, or does not comply with the request of the Commission.

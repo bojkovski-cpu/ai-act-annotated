@@ -1,0 +1,21 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "425"
+amendment_target: "Proposal for a regulation — Article 33 — paragraph 4 a (new)"
+---
+
+# Amendment 425
+
+**Target:** Proposal for a regulation — Article 33 — paragraph 4 a (new)
+
+## Text proposed by the Commission
+
+*(no text)*
+
+## Amendment of the European Parliament
+
+4 a. A conformity assessment pursuant to paragraph 1 shall be performed by employees of notified bodies who have not provided any other other service related to the matter assessed than the conformity assessment to the provider of a high-risk AI system nor to any legal person connected to that provider in the 12 months’ period before the assessment and have committed to not providing them with such services in the 12 month period following the completion of the assessment.

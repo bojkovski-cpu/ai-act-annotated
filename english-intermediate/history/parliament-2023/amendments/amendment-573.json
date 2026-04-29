@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236",
+  "source_celex": "52023AP0236",
+  "scraped_at": "2026-04-28T10:45:44Z",
+  "version": "parliament-2023",
+  "amendment_number": "573",
+  "amendment_target": "Proposal for a regulation — Article 60 — paragraph 5",
+  "body_md": "**Target:** Proposal for a regulation — Article 60 — paragraph 5\n\n## Text proposed by the Commission\n\n5. The Commission shall be the controller of the EU database. It shall also ensure to providers adequate technical and administrative support.\n\n\n\n## Amendment of the European Parliament\n\n5. The Commission shall be the controller of the EU database. It shall also ensure to providers and deployers adequate technical and administrative support.\n\nThe database shall comply with the accessibility requirements of Annex I to Directive (EU) 2019/882.\n",
+  "commission_text": "5. The Commission shall be the controller of the EU database. It shall also ensure to providers adequate technical and administrative support.\n\n",
+  "parliament_text": "5. The Commission shall be the controller of the EU database. It shall also ensure to providers and deployers adequate technical and administrative support.\n\nThe database shall comply with the accessibility requirements of Annex I to Directive (EU) 2019/882.",
+  "char_count": 258
+}

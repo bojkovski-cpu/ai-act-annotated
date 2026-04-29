@@ -1,0 +1,81 @@
+---
+language: "en"
+source_url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52023AP0236"
+source_celex: "52023AP0236"
+scraped_at: "2026-04-28T10:45:44Z"
+version: "parliament-2023"
+amendment_number: "398"
+amendment_target: "Proposal for a regulation — Article 28 a (new)"
+---
+
+# Amendment 398
+
+**Target:** Proposal for a regulation — Article 28 a (new)
+
+## Text proposed by the Commission
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(a)
+
+
+
+(b)
+
+
+
+(c)
+
+
+
+
+
+
+
+
+
+## Amendment of the European Parliament
+
+Article 28 a
+
+Unfair contractual terms unilaterally imposed on an SME or startup
+
+1. A contractual term concerning the supply of tools, services, components or processes that are used or integrated in a high risk AI system or the remedies for the breach or the termination of related obligations which has been unilaterally imposed by an enterprise on a SME or startup shall not be binding on the latter enterprise if it is unfair.
+
+2. A contractual term is not to be considered unfair where it arises from applicable Union law.
+
+3. A contractual term is unfair if it is of such a nature that it objectively impairs the ability of the party upon whom the term has been unilaterally imposed to protect its legitimate commercial interest in the information in question or its use grossly deviates from good commercial practice in the supply of tools, services, components or processes that are used or integrated in a high-risk AI system, contrary to good faith and fair dealing or creates a significant imbalance between the rights and the obligations of the parties in the contract. A contractual term is also unfair if it has the effect of shifting penalties referred to in Article 71 or associated litigation costs across parties to the contract, as referred to in Article 71(8).
+
+4. A contractual term is unfair for the purposes of this Article if its object or effect is to:
+
+(a) exclude or limit the liability of the party that unilaterally imposed the term for intentional acts or gross negligence;
+
+exclude or limit the liability of the party that unilaterally imposed the term for intentional acts or gross negligence;
+
+(b) exclude the remedies available to the party upon whom the term has been unilaterally imposed in the case of non-performance of contractual obligations or the liability of the party that unilaterally imposed the term in the case of a breach of those obligations;
+
+exclude the remedies available to the party upon whom the term has been unilaterally imposed in the case of non-performance of contractual obligations or the liability of the party that unilaterally imposed the term in the case of a breach of those obligations;
+
+(c) give the party that unilaterally imposed the term the exclusive right to determine whether the technical documentation, information supplied are in conformity with the contract or to interpret any term of the contract.
+
+give the party that unilaterally imposed the term the exclusive right to determine whether the technical documentation, information supplied are in conformity with the contract or to interpret any term of the contract.
+
+5. A contractual term shall be considered to be unilaterally imposed within the meaning of this Article if it has been supplied by one contracting party and the other contracting party has not been able to influence its content despite an attempt to negotiate it. The contracting party that supplied a contractual term shall bears the burden of proving that that term has not been unilaterally imposed.
+
+6. Where the unfair contractual term is severable from the remaining terms of the contract, those remaining terms shall remain binding. The party that supplied the contested term shall not argue that the term is an unfair term.
+
+7. This Article shall apply to all new contracts entered into force after … [date of entry into force of this Regulation]. Businesses shall review existing contractual obligations that are subject to this Regulation by …[three years after the date of entry into force of this Regulation].
+
+8. Given the rapidity in which innovations occur in the markets, the list of unfair contractual terms within Article 28a shall be reviewed regularly by the Commission and be updated to new business practices if necessary.
