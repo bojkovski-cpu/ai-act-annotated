@@ -1,84 +1,32 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Sidebar from '@components/Sidebar.astro';
-import ArticleBlock from '@components/ArticleBlock.astro';
-import data from '@data/ai_act_structured.json';
+/**
+ * Legacy redirect — /articles/chapter-N/article-M/ → /en/articles/chapter-N/article-M/.
+ * One stub per article. Deleted when the Caddy redirect block ships (3.4/4.7).
+ */
+import { getArticles } from '@/lib/loader';
 
 export function getStaticPaths() {
-  const paths: any[] = [];
-  for (const article of data.articles) {
-    paths.push({
-      params: {
-        chapter: `chapter-${article.chapter}`,
-        article: `article-${article.number}`,
-      },
-      props: {
-        article,
-        chapterMeta: data.chapters.find(c => c.number === article.chapter),
-      },
-    });
-  }
-  return paths;
+  return getArticles('en').map((article) => ({
+    params: {
+      chapter: `chapter-${article.chapter}`,
+      article: `article-${article.number}`,
+    },
+    props: {
+      target: `/en/articles/chapter-${article.chapter}/article-${article.number}/`,
+    },
+  }));
 }
 
-const { article, chapterMeta } = Astro.props;
-
-function titleCase(str: string) {
-  return str
-    .toLowerCase()
-    .replace(/\b\w/g, c => c.toUpperCase())
-    .replace(/\bAi\b/g, 'AI')
-    .replace(/\bEu\b/g, 'EU')
-    .replace(/\bGpai\b/g, 'GPAI');
-}
-
-// Prev/next within the whole regulation (more useful than within-chapter for legal reading)
-const allArticles = [...data.articles].sort((a, b) => a.number - b.number);
-const idx = allArticles.findIndex(a => a.number === article.number);
-const prev = idx > 0 ? allArticles[idx - 1] : null;
-const next = idx < allArticles.length - 1 ? allArticles[idx + 1] : null;
-
-const chapterTitle = chapterMeta ? titleCase(chapterMeta.title) : '';
-const pageTitle = `Article ${article.number} — ${article.title}`;
+const { target } = Astro.props;
 ---
-
-<BaseLayout title={pageTitle} activeChapter={article.chapter}>
-  <Sidebar slot="sidebar" activeChapter={article.chapter} activeArticle={article.number} />
-
-  <!-- Breadcrumb / chapter bar -->
-  <div class="chapter-bar">
-    <h1>
-      <a href={`/articles/chapter-${article.chapter}/`} style="color: inherit; text-decoration: none; opacity: 0.85;">Chapter {chapterMeta?.roman ?? article.chapter} — {chapterTitle}</a>
-    </h1>
-  </div>
-
-  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
-    <a href="/" style="color: var(--blue-accent); text-decoration: none;">Home</a>
-    <span style="margin: 0 6px;">/</span>
-    <a href={`/articles/chapter-${article.chapter}/`} style="color: var(--blue-accent); text-decoration: none;">Chapter {chapterMeta?.roman}</a>
-    <span style="margin: 0 6px;">/</span>
-    <span>Article {article.number}</span>
-  </div>
-
-  <ArticleBlock article={article} />
-
-  <!-- Prev/next navigation -->
-  <nav style="display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 2px solid #111; font-family: var(--sans);">
-    {prev ? (
-      <a href={`/articles/chapter-${prev.chapter}/article-${prev.number}/`}
-         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 3px solid var(--red-accent); border-radius: 0 6px 6px 0; text-decoration: none; color: inherit;">
-        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">&larr; Previous</div>
-        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">Article {prev.number}</div>
-        <div style="font-size: 13px; color: var(--gray-600); margin-top: 2px;">{prev.title}</div>
-      </a>
-    ) : <div style="flex: 1;"></div>}
-    {next ? (
-      <a href={`/articles/chapter-${next.chapter}/article-${next.number}/`}
-         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-right: 3px solid var(--red-accent); border-radius: 6px 0 0 6px; text-decoration: none; color: inherit; text-align: right;">
-        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">Next &rarr;</div>
-        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">Article {next.number}</div>
-        <div style="font-size: 13px; color: var(--gray-600); margin-top: 2px;">{next.title}</div>
-      </a>
-    ) : <div style="flex: 1;"></div>}
-  </nav>
-</BaseLayout>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content={`0; url=${target}`} />
+  <link rel="canonical" href={target} />
+  <meta name="robots" content="noindex,follow" />
+  <title>Redirecting…</title>
+</head>
+<body><a href={target}>{target}</a></body>
+</html>

@@ -1,71 +1,70 @@
 ---
 import '@/styles/global.css';
+import TopBar from '@/components/TopBar.astro';
+import type { Lang } from '@/types/aiact';
 
 interface Props {
   title: string;
   activeChapter?: number;
-  activeTopNav?: 'articles' | 'recitals' | 'annexes' | 'history' | 'about';
+  activeTopNav?: 'articles' | 'recitals' | 'annexes' | 'history' | 'guidance' | 'about';
+  availableLangs?: readonly Lang[];
 }
 
-const { title, activeChapter, activeTopNav } = Astro.props;
+const { title, activeChapter, activeTopNav, availableLangs } = Astro.props;
 const base = import.meta.env.BASE_URL;
-// Auto-detect active top nav from URL if not passed
+
 const path = Astro.url.pathname;
+const lang: Lang = path.startsWith('/nl/') ? 'nl' : 'en';
+const noLang = path.replace(/^\/(en|nl)(\/|$)/, '/');
+
 const topNav = activeTopNav
-  ?? (path.startsWith('/recitals') ? 'recitals'
-    : path.startsWith('/annexes') ? 'annexes'
-    : path.startsWith('/history') ? 'history'
-    : path.startsWith('/about') ? 'about'
+  ?? (noLang.startsWith('/recitals') ? 'recitals'
+    : noLang.startsWith('/annexes') ? 'annexes'
+    : noLang.startsWith('/history') ? 'history'
+    : noLang.startsWith('/guidance') ? 'guidance'
+    : noLang.startsWith('/about') ? 'about'
     : 'articles');
+
+const siteOrigin = Astro.site ? Astro.site.origin : 'https://aiact.annotated.nl';
+const canonicalUrl = `${siteOrigin}${path}`;
+const enHref = `${siteOrigin}/en${noLang}`;
+const nlHref = `${siteOrigin}/nl${noLang}`;
+
+// Hreflang gap awareness — when the page exists in only one locale (drafting-
+// history snapshots where the alt-language equivalent is absent per the
+// catalogued asymmetry), the corresponding lang must be omitted from
+// hreflang and x-default must point at the locale that actually exists.
+// `availableLangs === undefined` means both locales render this page (the
+// regulation-text default); both hreflang links are emitted as before.
+const enAvailable = !availableLangs || availableLangs.includes('en');
+const nlAvailable = !availableLangs || availableLangs.includes('nl');
+const xDefaultHref = enAvailable ? enHref : nlHref;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title} — EU AI Act Annotated</title>
-  <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
   <meta name="description" content="Annotated EU AI Act (Regulation 2024/1689) with recitals, drafting history, cross-references, and AI Omnibus amendments." />
+  <link rel="canonical" href={canonicalUrl} />
+  {enAvailable && <link rel="alternate" hreflang="en" href={enHref} />}
+  {nlAvailable && <link rel="alternate" hreflang="nl" href={nlHref} />}
+  <link rel="alternate" hreflang="x-default" href={xDefaultHref} />
 </head>
 <body>
 
-<!-- ── Top bar ── -->
-<div class="topbar">
-  <div class="topbar-upper">
-    <div class="topbar-brand">EU AI Act<span>Annotated Edition</span></div>
-    <div class="topbar-search">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-      <input type="text" placeholder="Search articles, recitals…" id="search-input" />
-      <button class="topbar-search-btn">SEARCH</button>
-    </div>
-  </div>
-  <nav class="topbar-nav">
-    <a href="/articles/" class={topNav === 'articles' ? 'active' : ''}>ARTICLES</a>
-    <span class="topbar-nav-sep">|</span>
-    <a href="/recitals/" class={topNav === 'recitals' ? 'active' : ''}>RECITALS</a>
-    <span class="topbar-nav-sep">|</span>
-    <a href="/annexes/" class={topNav === 'annexes' ? 'active' : ''}>ANNEXES</a>
-    <span class="topbar-nav-sep">|</span>
-    <a href="/history/" class={topNav === 'history' ? 'active' : ''}>DRAFTING HISTORY</a>
-    <span class="topbar-nav-sep">|</span>
-    <a href="/about/" class={topNav === 'about' ? 'active' : ''}>ABOUT</a>
-  </nav>
-</div>
+<TopBar lang={lang} currentPath={path} activeTopNav={topNav} availableLangs={availableLangs} />
 
-<!-- ── Layout ── -->
 <div class="layout">
-
-<!-- ── Sidebar ── -->
 <slot name="sidebar" />
 
-<!-- ── Main content ── -->
 <div class="main-wrapper">
   <main class="main">
     <slot />
   </main>
 
-  <!-- ── Right sidebar ── -->
   <aside class="right-sidebar">
     <div class="rs-section">
       <h3>About This Resource</h3>
@@ -102,59 +101,45 @@ const topNav = activeTopNav
       <a href="#">Suggest a correction</a>
     </div>
   </aside>
-</div><!-- /main-wrapper -->
+</div>
 
-</div><!-- /layout -->
+</div>
 
 <script is:inline>
 function switchTab(tabEl) {
   const tabBar = tabEl.parentElement;
   const articleId = tabBar.dataset.article;
   const tabName = tabEl.dataset.tab;
-
-  // If clicking active tab, collapse it
   if (tabEl.classList.contains('active')) {
     tabEl.classList.remove('active');
     document.querySelectorAll(`.tab-panel[data-article="${articleId}"]`).forEach(p => p.classList.remove('active'));
     return;
   }
-
-  // Deactivate siblings
   tabBar.querySelectorAll('.article-tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll(`.tab-panel[data-article="${articleId}"]`).forEach(p => p.classList.remove('active'));
-
-  // Activate clicked
   tabEl.classList.add('active');
   const panel = document.querySelector(`.tab-panel[data-panel="${tabName}"][data-article="${articleId}"]`);
   if (panel) panel.classList.add('active');
 }
 
-// Sidebar chapter toggle
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.nav-chapter-header').forEach(header => {
     header.addEventListener('click', () => {
       header.parentElement.classList.toggle('open');
     });
   });
-
-  // Expand/Collapse all
   document.querySelectorAll('.sidebar-expand-all').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.nav-chapter').forEach(c => c.classList.add('open'));
     });
-  });
   document.querySelectorAll('.sidebar-collapse-all').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.nav-chapter').forEach(c => c.classList.remove('open'));
     });
   });
-
-  // Timeline card expand
   document.querySelectorAll('.timeline-card').forEach(card => {
     card.addEventListener('click', () => card.classList.toggle('expanded'));
   });
-
-  // Diff view toggle
   document.querySelectorAll('.timeline-compare-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const diffView = btn.nextElementSibling;

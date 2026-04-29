@@ -1,71 +1,31 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Sidebar from '@components/Sidebar.astro';
-import history from '@data/drafting_history.json';
+/**
+ * Legacy redirect — /history/[version]/ → /en/history/[version]/.
+ * See pages/history/index.astro for rationale.
+ */
+import { getDraftingStages } from '@/lib/loader';
 
 export function getStaticPaths() {
-  return Object.keys(history.versions).map(key => ({
-    params: { version: key },
-    props: {
-      versionKey: key,
-      meta: (history.versions as any)[key],
-      articles: (history.by_version as any)[key]?.articles ?? {},
-      recitals: (history.by_version as any)[key]?.recitals ?? {},
-    },
+  // Enumerate stages in EN (NL has the same set; either works).
+  return getDraftingStages('en').map((s) => ({
+    params: { version: s.id },
+    props: { stageId: s.id },
   }));
 }
 
-const { versionKey, meta, articles, recitals } = Astro.props;
-
-const articleEntries = Object.values(articles as Record<string, any>).sort((a, b) => a.number - b.number);
-const recitalEntries = Object.values(recitals as Record<string, any>).sort((a, b) => a.number - b.number);
+const { stageId } = Astro.props;
+const target = `/en/history/${stageId}/`;
 ---
-
-<BaseLayout title={`${meta.label} — Drafting History`}>
-  <Sidebar slot="sidebar" activeSection="history" />
-
-  <div class="chapter-bar">
-    <h1>{meta.label} <span style="font-weight: 400; opacity: 0.85; font-size: 14px; margin-left: 10px;">{meta.date}</span></h1>
-  </div>
-
-  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
-    <a href="/" style="color: var(--blue-accent); text-decoration: none;">Home</a>
-    <span style="margin: 0 6px;">/</span>
-    <a href="/history/" style="color: var(--blue-accent); text-decoration: none;">Drafting History</a>
-    <span style="margin: 0 6px;">/</span>
-    <span>{meta.label}</span>
-  </div>
-
-  <div style="font-family: var(--sans); margin-bottom: 24px; padding: 16px 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px; font-size: 13px; color: var(--gray-600);">
-    <div><strong>Source:</strong> {meta.source}</div>
-    <div style="margin-top: 4px;"><strong>Articles preserved:</strong> {articleEntries.length}</div>
-    <div><strong>Recitals preserved:</strong> {recitalEntries.length}</div>
-  </div>
-
-  {articleEntries.length > 0 && (
-    <div style="margin-bottom: 32px;">
-      <h2 style="font-family: var(--sans); font-size: 14px; font-weight: 700; color: var(--red-accent); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--gray-200);">Articles</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; font-family: var(--sans);">
-        {articleEntries.map(a => (
-          <a href={`/history/${versionKey}/articles/${a.number}/`} style="display: flex; gap: 8px; padding: 8px 12px; background: #fff; border: 1px solid var(--gray-200); border-radius: 4px; text-decoration: none; font-size: 13px;">
-            <strong style="color: #d97706; flex-shrink: 0;">Art. {a.number}</strong>
-            <span style="color: var(--gray-700);">{a.title}</span>
-          </a>
-        ))}
-      </div>
-    </div>
-  )}
-
-  {recitalEntries.length > 0 && (
-    <div>
-      <h2 style="font-family: var(--sans); font-size: 14px; font-weight: 700; color: var(--blue-dark); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--gray-200);">Recitals</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 6px; font-family: var(--sans);">
-        {recitalEntries.map(r => (
-          <a href={`/history/${versionKey}/recitals/${r.number}/`} style="padding: 6px 10px; background: #fff; border: 1px solid var(--gray-200); border-radius: 4px; text-decoration: none; font-size: 12px; color: var(--blue-dark);">
-            Recital {r.number}
-          </a>
-        ))}
-      </div>
-    </div>
-  )}
-</BaseLayout>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting…</title>
+  <meta http-equiv="refresh" content={`0; url=${target}`} />
+  <link rel="canonical" href={target} />
+  <meta name="robots" content="noindex, follow" />
+</head>
+<body>
+  <p>This page has moved. <a href={target}>Continue to the new location.</a></p>
+</body>
+</html>

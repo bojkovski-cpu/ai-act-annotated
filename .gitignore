@@ -31,3 +31,7 @@ deployment/.env.deploy
 REPAIR-ME-FIRST.md
 WINDOWS-CLEANUP-ME.ps1
 .git/HEAD.corrupt-bak
+
+# Astro build cache
+.astro/
+

@@ -1,0 +1,225 @@
+---
+/**
+ * DraftingHistory.astro — bilingual drafting-history renderer for the
+ * article and recital tabs (and recital pages once they get this tab).
+ *
+ * Step 4.4. Replaces ArticleBlock's previously-inline timeline rendering.
+ *
+ * Inputs:
+ *   snapshots          — DraftingSnapshot[] for THIS entity in THIS language,
+ *                        in stage order. May be empty if the entity has no
+ *                        snapshot in this language at any stage.
+ *   gaps               — DraftingHistoryGap[] for THIS entity, computed by
+ *                        getDraftingHistoryGaps(number, contentType). Drives
+ *                        the Decision-3 disclosure block.
+ *   stages             — All stages in render order (from getDraftingStages(lang)).
+ *   lang               — 'en' or 'nl'. Determines disclosure-block wording.
+ *   number             — The article/recital number or annex roman id, used
+ *                        to construct the alternate-language link in the
+ *                        disclosure block.
+ *   contentType        — 'articles' | 'recitals' | 'annexes'.
+ *   currentText        — The live (final-2024) regulation text for this
+ *                        entity, used to render the "Final Adopted Text"
+ *                        timeline card (Q B: read from articles_{en,nl}.json,
+ *                        not from a separate final-2024 snapshot).
+ *   currentParaCount   — Paragraph count of the live regulation text (for
+ *                        the "Current text" card meta line).
+ *   currentTitle       — Title of the live entity (article title or annex title).
+ *
+ * Visual treatment uses AI Act's existing classes (.timeline, .timeline-entry,
+ * etc.) per the house principle. New classes for drafting-history specifics
+ * use the .dh-* prefix.
+ */
+import type { DraftingSnapshot, DraftingHistoryGap, DraftingStage, Lang } from '@/types/aiact';
+
+interface Props {
+  snapshots: DraftingSnapshot[];
+  gaps: DraftingHistoryGap[];
+  stages: DraftingStage[];
+  lang: Lang;
+  number: string;
+  contentType: 'articles' | 'recitals' | 'annexes';
+  currentText: string;
+  currentParaCount: number;
+  currentTitle: string;
+}
+
+const {
+  snapshots,
+  gaps,
+  stages,
+  lang,
+  number,
+  contentType,
+  currentText,
+  currentParaCount,
+  currentTitle,
+} = Astro.props;
+
+// Map stage id → snapshot for this entity (one or zero per stage).
+const snapByStage = new Map<string, DraftingSnapshot>();
+for (const s of snapshots) snapByStage.set(s.stage, s);
+
+// Map stage id → gap (one or zero per stage). When `missing_in === lang`,
+// the disclosure block fires on this page.
+const gapByStage = new Map<string, DraftingHistoryGap>();
+for (const g of gaps) gapByStage.set(g.stage, g);
+
+// Decision-3 disclosure wording, locale-resolved.
+const disclosureText =
+  lang === 'nl'
+    ? 'Geen Nederlandse versie beschikbaar voor deze wetgevingsfase.'
+    : 'No English version available for this legislative stage.';
+const disclosureLinkLabel =
+  lang === 'nl' ? 'Bekijk de Engelse versie →' : 'View the Dutch version →';
+
+// Build the absolute href to a stage detail page in the requested language.
+// Used both for "Open full view →" links on present stages and for the
+// Decision-3 disclosure block link to the alternate-language equivalent.
+function altLangHref(stageId: string, altLang: Lang): string {
+  const slug =
+    contentType === 'annexes' ? `annex-${number.toLowerCase()}` :
+    contentType === 'articles' ? `article-${number}` :
+    `recital-${number}`;
+  const subdir =
+    contentType === 'annexes' ? 'annexes' :
+    contentType === 'articles' ? 'articles' :
+    'recitals';
+  return `/${altLang}/history/${stageId}/${subdir}/${slug}/`;
+}
+
+// Stage-label dispatcher.
+function stageLabel(stage: DraftingStage): string {
+  return lang === 'nl' ? stage.label_nl : stage.label_en;
+}
+
+// Final-stage label & date (Q B: hardcoded — there is no final-2024 snapshot).
+const finalStageLabel = lang === 'nl' ? 'Definitief vastgestelde tekst — Verordening (EU) 2024/1689' : 'Final Adopted Text — Regulation (EU) 2024/1689';
+const finalStageYear = lang === 'nl' ? 'Juli 2024' : 'July 2024';
+const finalCardMeta = lang === 'nl'
+  ? `${currentParaCount} alinea('s) · Huidige tekst hierboven`
+  : `${currentParaCount} paragraph(s) · Current text shown above`;
+
+const noContentText = lang === 'nl'
+  ? 'Geen totstandkomingsgeschiedenis beschikbaar voor dit onderdeel.'
+  : 'No drafting history available for this entity.';
+
+// True if there is at least one stage card to render (snapshot or gap-disclosure).
+const hasAnyStageContent = stages.some(
+  (s) => snapByStage.has(s.id) || (gapByStage.get(s.id)?.missing_in === lang),
+);
+---
+
+<div class="timeline">
+  {!hasAnyStageContent && (
+    <div class="dh-empty">{noContentText}</div>
+  )}
+
+  {stages.map((stage) => {
+    const snap = snapByStage.get(stage.id);
+    const gap = gapByStage.get(stage.id);
+    const isMissingHere = gap && gap.missing_in === lang;
+    const altLang: Lang = lang === 'nl' ? 'en' : 'nl';
+
+    if (snap) {
+      // Render a stage card from the snapshot in the requested language.
+      const text = snap.text;
+      // Heuristic: number of "1.", "2." paragraph leaders + 1.
+      const paraCount = (text.match(/\n\d+\.\s/g) || []).length || 1;
+      const cardTitle = stageLabel(stage);
+      const stageHref = altLangHref(stage.id, lang);
+      return (
+        <div class="timeline-entry" id={`stage-${stage.id}`}>
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">{stage.date}</div>
+          <div class="timeline-label">
+            {cardTitle} — {stage.source_label}
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-title">
+              {contentType === 'articles' && (lang === 'nl' ? 'Artikel ' : 'Article ')}
+              {contentType === 'recitals' && (lang === 'nl' ? 'Overweging ' : 'Recital ')}
+              {contentType === 'annexes' && (lang === 'nl' ? 'Bijlage ' : 'Annex ')}
+              {number}{snap.title ? ` — ${snap.title}` : ''}
+            </div>
+            <div class="timeline-card-meta">
+              ~{paraCount} {lang === 'nl' ? "alinea('s)" : 'paragraph(s)'} · <a href={stageHref}>{lang === 'nl' ? 'Open volledige weergave →' : 'Open full view →'}</a>
+            </div>
+            <div class="timeline-card-text">
+              <pre style="white-space: pre-wrap; font-family: inherit; font-size: 13px; line-height: 1.55; margin: 0;">{text}</pre>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    if (isMissingHere) {
+      // Render the Decision-3 disclosure block, with link to alt-language version.
+      const altHref = altLangHref(stage.id, altLang);
+      return (
+        <div class="timeline-entry dh-gap-entry" id={`stage-${stage.id}`}>
+          <div class="timeline-dot dh-gap-dot"></div>
+          <div class="timeline-year">{stage.date}</div>
+          <div class="timeline-label">
+            {stageLabel(stage)} — {stage.source_label}
+          </div>
+          <div class="timeline-card dh-gap-notice">
+            <div class="dh-gap-text">
+              <strong>{disclosureText}</strong>
+              {' '}
+              <a href={altHref}>{disclosureLinkLabel}</a>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // Neither snapshot nor gap — entity didn't exist at this stage. Render nothing.
+    return null;
+  })}
+
+  {/* Final stage card — read from live regulation, not from a snapshot. */}
+  <div class="timeline-entry current" id="stage-final-2024">
+    <div class="timeline-dot"></div>
+    <div class="timeline-year">{finalStageYear}</div>
+    <div class="timeline-label">{finalStageLabel}</div>
+    <div class="timeline-card" style="border-color: #d97706; background: #fffbeb;">
+      <div class="timeline-card-title">
+        {contentType === 'articles' && (lang === 'nl' ? 'Artikel ' : 'Article ')}
+        {contentType === 'recitals' && (lang === 'nl' ? 'Overweging ' : 'Recital ')}
+        {contentType === 'annexes' && (lang === 'nl' ? 'Bijlage ' : 'Annex ')}
+        {number} — {currentTitle}
+      </div>
+      <div class="timeline-card-meta">{finalCardMeta}</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .dh-empty {
+    padding: 1rem;
+    color: var(--gray-500, #888);
+    font-style: italic;
+    font-family: var(--sans, system-ui);
+    font-size: 13px;
+  }
+  .dh-gap-notice {
+    border-color: var(--gray-300, #d1d5db) !important;
+    background: var(--gray-50, #f9fafb) !important;
+    border-style: dashed !important;
+  }
+  .dh-gap-text {
+    font-family: var(--sans, system-ui);
+    font-size: 13px;
+    color: var(--gray-700, #374151);
+    line-height: 1.55;
+  }
+  .dh-gap-text a {
+    color: var(--red-accent, #c1121f);
+    text-decoration: underline;
+  }
+  .dh-gap-dot {
+    background: var(--gray-300, #d1d5db) !important;
+    border-color: var(--gray-400, #9ca3af) !important;
+  }
+</style>

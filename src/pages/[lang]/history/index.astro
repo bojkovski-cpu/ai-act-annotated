@@ -1,0 +1,104 @@
+---
+/**
+ * /[lang]/history/ — drafting history landing page.
+ *
+ * Lists the legislative stages (commission-2021, parliament-2023) with
+ * locale-resolved labels. Per Q B (4.4 paused note), the live regulation
+ * IS the final stage and is reached via the regular article/recital pages,
+ * not as a separate history index entry.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import {
+  getIndexPagePaths,
+  getDraftingStages,
+  getDraftingHistory,
+} from '@/lib/loader';
+import type { Lang } from '@/types/aiact';
+
+export const getStaticPaths = getIndexPagePaths;
+
+const { lang } = Astro.params as { lang: Lang };
+const stages = getDraftingStages(lang);
+const blob = getDraftingHistory(lang);
+
+// Per-stage counts derived from snapshots[].
+const counts: Record<string, { articles: number; recitals: number; annexes: number; amendments: number }> = {};
+for (const stage of stages) {
+  counts[stage.id] = { articles: 0, recitals: 0, annexes: 0, amendments: 0 };
+}
+for (const snap of blob.snapshots) {
+  if (counts[snap.stage]) {
+    counts[snap.stage][snap.content_type] = (counts[snap.stage][snap.content_type] ?? 0) + 1;
+  }
+}
+
+const T = lang === 'nl'
+  ? {
+      title: 'Totstandkomingsgeschiedenis',
+      pageTitle: 'Totstandkomingsgeschiedenis — EU AI-verordening Geannoteerd',
+      lead: 'De AI-verordening doorliep drie publiekelijk gedocumenteerde fases van voorstel tot vaststelling. Vergelijking van de versies laat zien waar omstreden bepalingen werden aangescherpt, verzacht of geherformuleerd.',
+      sub: 'Het mandaat van het Parlement uit 2023 vormde het oorspronkelijke voorstel materieel om; de trialoog leverde de eindtekst in december 2023 op, formeel vastgesteld in juli 2024.',
+      home: 'Home',
+      countLabels: { articles: 'artikelen', recitals: 'overwegingen', annexes: 'bijlagen', amendments: 'amendementen' },
+    }
+  : {
+      title: 'Drafting History',
+      pageTitle: 'Drafting History — EU AI Act Annotated',
+      lead: 'The AI Act went through publicly-documented stages from proposal to adoption. Comparing the versions reveals where contested provisions were strengthened, softened, or reframed.',
+      sub: "Parliament's 2023 mandate materially reshaped the original proposal; the trilogue produced the final text in December 2023, formally adopted July 2024.",
+      home: 'Home',
+      countLabels: { articles: 'articles', recitals: 'recitals', annexes: 'annexes', amendments: 'amendments' },
+    };
+
+function summaryLine(c: { articles: number; recitals: number; annexes: number; amendments: number }) {
+  const parts: string[] = [];
+  if (c.articles)   parts.push(`${c.articles} ${T.countLabels.articles}`);
+  if (c.recitals)   parts.push(`${c.recitals} ${T.countLabels.recitals}`);
+  if (c.annexes)    parts.push(`${c.annexes} ${T.countLabels.annexes}`);
+  if (c.amendments) parts.push(`${c.amendments} ${T.countLabels.amendments}`);
+  return parts.join(' · ');
+}
+---
+
+<BaseLayout title={T.pageTitle}>
+  <Sidebar slot="sidebar" lang={lang} activeSection="history" />
+
+  <div class="chapter-bar">
+    <h1>{T.title}</h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{T.home}</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>{T.title}</span>
+  </div>
+
+  <div style="font-family: var(--sans); margin-bottom: 32px; padding: 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px; font-size: 14px; color: var(--gray-700); line-height: 1.65;">
+    <p style="margin-bottom: 12px;">{T.lead}</p>
+    <p style="margin-bottom: 0; font-size: 13px; color: var(--gray-600);"><em>{T.sub}</em></p>
+  </div>
+
+  <div style="font-family: var(--sans); display: flex; flex-direction: column; gap: 14px;">
+    {stages.map((stage) => {
+      const label = lang === 'nl' ? stage.label_nl : stage.label_en;
+      return (
+        <a
+          href={`/${lang}/history/${stage.id}/`}
+          style="display: block; padding: 18px 22px; background: #fff; border: 1px solid var(--gray-200); border-left: 4px solid #d97706; border-radius: 0 6px 6px 0; text-decoration: none; color: inherit;"
+        >
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <div>
+              <span style="font-weight: 700; color: #d97706; font-size: 15px;">{label}</span>
+              <span style="color: var(--gray-500); font-size: 13px; margin-left: 10px;">{stage.date}</span>
+            </div>
+            <span style="font-size: 12px; color: var(--gray-500); font-family: var(--serif); font-style: italic;">{stage.source_label}</span>
+          </div>
+          <div style="font-size: 12px; color: var(--gray-500); margin-top: 6px;">
+            {summaryLine(counts[stage.id])}
+          </div>
+        </a>
+      );
+    })}
+  </div>
+</BaseLayout>

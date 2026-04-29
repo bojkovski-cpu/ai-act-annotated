@@ -1,0 +1,73 @@
+---
+/**
+ * EN/NL language toggle — path-based i18n with a guidance-page override.
+ *
+ * Default behaviour (canonical text — articles, recitals, annexes, drafting
+ * history, about, index): unconditional regex swap of the leading `/en/`
+ * or `/nl/` segment. The architecture (per-language blobs +
+ * getStaticPaths cross-product) guarantees both pages exist for canonical
+ * text, so 404s on switch don't occur.
+ *
+ * Step 5.2 override (per guidance-design-note.md Decision 4-E): on guidance
+ * detail pages where the target language doesn't carry a body on disk,
+ * render the alternate-language link as a disabled span with a tooltip
+ * instead of an active anchor.
+ */
+import type { Lang } from '../types/aiact';
+
+interface Props {
+  lang: Lang;
+  currentPath: string;
+  availableLangs?: readonly Lang[];
+}
+
+const { lang, currentPath, availableLangs } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+const baseNoSlash = base.endsWith('/') ? base.slice(0, -1) : base;
+let rel = currentPath.startsWith(baseNoSlash)
+  ? currentPath.slice(baseNoSlash.length)
+  : currentPath;
+if (!rel.startsWith('/')) rel = '/' + rel;
+
+const withoutLang = rel.replace(/^\/(en|nl)(\/|$)/, '/');
+const enHref = `${baseNoSlash}/en${withoutLang}`;
+const nlHref = `${baseNoSlash}/nl${withoutLang}`;
+
+function isAvailable(target: Lang): boolean {
+  if (target === lang) return true;
+  if (!availableLangs) return true;
+  return availableLangs.includes(target);
+}
+
+const enAvailable = isAvailable('en');
+const nlAvailable = isAvailable('nl');
+
+const enUnavailableTooltip = 'Not available in English';
+const nlUnavailableTooltip = 'Niet beschikbaar in het Nederlands';
+---
+
+<div class="lang-toggle" role="group" aria-label="Language">
+  {enAvailable
+    ? <a href={enHref} aria-current={lang === 'en' ? 'true' : undefined}>EN</a>
+    : <span class="lang-toggle-disabled" aria-disabled="true" title={enUnavailableTooltip}>EN</span>}
+  {nlAvailable
+    ? <a href={nlHref} aria-current={lang === 'nl' ? 'true' : undefined}>NL</a>
+    : <span class="lang-toggle-disabled" aria-disabled="true" title={nlUnavailableTooltip}>NL</span>}
+</div>
+
+<style is:global>
+  .lang-toggle .lang-toggle-disabled {
+    display: inline-block;
+    padding: 4px 10px;
+    color: var(--gray-400);
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    cursor: not-allowed;
+    user-select: none;
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+  }
+</style>

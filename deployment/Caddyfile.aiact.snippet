@@ -11,6 +11,25 @@ aiact.annotated.nl {
     # Must match VPS_PATH in deployment/.env.deploy.
     root * /var/www/aiact.annotated.nl
 
+    # ── i18n routing redirects (Step 4.7 → deployed at 3.4) ─────────
+    # Pre-i18n flat paths → /en/ equivalents. Preserves link equity
+    # from existing inbound LinkedIn / external references that point
+    # at the pre-flip URLs. Decision 1 of the i18n decision note.
+    #
+    # Caddy `{path}` resolves to the full request path (e.g.
+    # `/articles/chapter-01/article-01/`), so prepending `/en` gives
+    # the desired `/en/articles/chapter-01/article-01/`. NB this
+    # corrects the literal block in the decision note, which read
+    # `/en/articles{path}` — that would double the `/articles/` segment.
+    # See step-4.7-completion-notes.md for the deviation record.
+    redir /articles/* /en{path} 301
+    redir /chapter/* /en{path} 301
+    redir /recitals/* /en{path} 301
+    redir /annexes/* /en{path} 301
+    redir /history/* /en{path} 301
+    redir /about /en/about/ 301
+    redir /about/ /en/about/ 301
+
     # Serve static files
     file_server
 

@@ -1,27 +1,40 @@
 ---
-import data from '@data/ai_act_structured.json';
+/**
+ * Sidebar — chapter/article navigation tree.
+ *
+ * Step 4.3b: takes a `lang` prop and consumes the loader instead of the
+ * legacy ai_act_structured.json blob. Section URLs are locale-prefixed.
+ * House principle: AI Act class names + JSX structure preserved verbatim
+ * from the pre-i18n version — only data source and link prefixes change.
+ *
+ * UI chrome strings stay English on both locales per the 4.3b decision.
+ */
+import { getArticles, getChapters, getRecitals, getAnnexes } from '@/lib/loader';
+import type { Lang } from '@/types/aiact';
 
 interface Props {
+  lang: Lang;
   activeChapter?: number;
-  activeArticle?: number;
-  activeRecital?: number;
+  activeArticle?: string;
+  activeRecital?: string;
   activeAnnex?: string;
-  activeSection?: 'articles' | 'recitals' | 'annexes' | 'history' | 'about';
+  activeSection?: 'articles' | 'recitals' | 'annexes' | 'history' | 'guidance' | 'about';
 }
 
-const { activeChapter, activeArticle, activeSection = 'articles' } = Astro.props;
-const base = import.meta.env.BASE_URL;
+const { lang, activeChapter, activeArticle, activeSection = 'articles' } = Astro.props;
 
-// Build chapter nav from data
-const chapters = data.chapters.map(ch => {
-  const articles = data.articles
+// Build chapter nav from the loader. Hrefs precomputed in script.
+const allArticles = getArticles(lang);
+const chapters = getChapters(lang).map(ch => {
+  const chapterHref = '/' + lang + '/articles/chapter-' + ch.number + '/';
+  const articles = allArticles
     .filter(a => a.chapter === ch.number)
     .map(a => ({
       number: a.number,
       title: a.title,
+      href: '/' + lang + '/articles/chapter-' + ch.number + '/article-' + a.number + '/',
     }));
 
-  // Determine article range text
   const artNums = articles.map(a => a.number);
   const rangeText = artNums.length > 0
     ? artNums.length === 1
@@ -36,11 +49,18 @@ const chapters = data.chapters.map(ch => {
     rangeText,
     articles,
     isActive: ch.number === activeChapter,
+    chapterHref,
   };
 });
 
-const totalRecitals = data.recitals.length;
-const totalAnnexes = (data.annexes || []).length;
+const totalArticles = allArticles.length;
+const totalRecitals = getRecitals(lang).length;
+const totalAnnexes = getAnnexes(lang).length;
+
+const articlesHref = '/' + lang + '/articles/';
+const recitalsHref = '/' + lang + '/recitals/';
+const annexesHref = '/' + lang + '/annexes/';
+const historyHref = '/' + lang + '/history/';
 ---
 
 <nav class="sidebar">
@@ -49,12 +69,11 @@ const totalAnnexes = (data.annexes || []).length;
     <p>Artificial Intelligence Act</p>
   </div>
 
-  <!-- Section switcher -->
   <div class="sidebar-sections">
-    <a href="/" class={`sidebar-section-link${activeSection === 'articles' ? ' active' : ''}`}>Articles <span class="tab-count">{data.articles.length}</span></a>
-    <a href="/recitals/" class={`sidebar-section-link${activeSection === 'recitals' ? ' active' : ''}`}>Recitals <span class="tab-count">{totalRecitals}</span></a>
-    <a href="/annexes/" class={`sidebar-section-link${activeSection === 'annexes' ? ' active' : ''}`}>Annexes <span class="tab-count">{totalAnnexes}</span></a>
-    <a href="/history/" class={`sidebar-section-link${activeSection === 'history' ? ' active' : ''}`}>Drafting History</a>
+    <a href={articlesHref} class={`sidebar-section-link${activeSection === 'articles' ? ' active' : ''}`}>Articles <span class="tab-count">{totalArticles}</span></a>
+    <a href={recitalsHref} class={`sidebar-section-link${activeSection === 'recitals' ? ' active' : ''}`}>Recitals <span class="tab-count">{totalRecitals}</span></a>
+    <a href={annexesHref} class={`sidebar-section-link${activeSection === 'annexes' ? ' active' : ''}`}>Annexes <span class="tab-count">{totalAnnexes}</span></a>
+    <a href={historyHref} class={`sidebar-section-link${activeSection === 'history' ? ' active' : ''}`}>Drafting History</a>
   </div>
 
   {activeSection === 'articles' && (
@@ -79,7 +98,7 @@ const totalAnnexes = (data.annexes || []).length;
             {ch.articles.map(art => (
               <a
                 class={`nav-article-link${art.number === activeArticle ? ' current' : ''}`}
-                href={`/articles/chapter-${ch.number}/article-${art.number}/`}
+                href={art.href}
               >
                 Art. {art.number} – {art.title}
               </a>
@@ -92,21 +111,21 @@ const totalAnnexes = (data.annexes || []).length;
 
   {activeSection === 'recitals' && (
     <div style="padding: 12px 16px; font-family: var(--sans); font-size: 12px; color: var(--gray-500); line-height: 1.5;">
-      <a href="/recitals/" style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">All {totalRecitals} recitals &rarr;</a>
+      <a href={recitalsHref} style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">All {totalRecitals} recitals &rarr;</a>
     </div>
   )}
 
   {activeSection === 'annexes' && (
     <div style="padding: 12px 16px; font-family: var(--sans); font-size: 12px; color: var(--gray-500); line-height: 1.5;">
-      <a href="/annexes/" style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">All {totalAnnexes} annexes &rarr;</a>
+      <a href={annexesHref} style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">All {totalAnnexes} annexes &rarr;</a>
     </div>
   )}
 
   {activeSection === 'history' && (
     <div style="padding: 12px 16px; font-family: var(--sans); font-size: 12px; color: var(--gray-500); line-height: 1.5;">
-      <a href="/history/commission-2021/" style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">Commission Proposal (2021)</a>
-      <a href="/history/parliament-2023/" style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">Parliament Mandate (2023)</a>
-      <a href="/history/final-2024/" style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">Final Adopted (2024)</a>
+      <a href={`${historyHref}commission-2021/`} style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">Commission Proposal (2021)</a>
+      <a href={`${historyHref}parliament-2023/`} style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">Parliament Mandate (2023)</a>
+      {/* final-2024 deliberately omitted — see step-4.4-completion-notes.md §2 (Q B). The "Final Adopted Text" card is rendered per-page from the live regulation. */}
     </div>
   )}
 </nav>

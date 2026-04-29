@@ -1,0 +1,90 @@
+---
+/**
+ * Chapter index — /en/articles/chapter-N/ and /nl/articles/chapter-N/.
+ *
+ * Step 4.3b: ports the legacy pages/articles/chapter-[n]/index.astro and
+ * pages/chapter/[roman].astro into the [lang]/ tree under one canonical
+ * URL form (chapter-N, arabic). The legacy /chapter/I/ roman form is
+ * retired (per handoff "consider retiring") — Caddy can redirect if any
+ * inbound link uses it.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import ArticleBlock from '@components/ArticleBlock.astro';
+import { getArticles, getChapters } from '@/lib/loader';
+import type { Lang } from '@/types/aiact';
+
+export function getStaticPaths() {
+  const langs: Lang[] = ['en', 'nl'];
+  const out: Array<{
+    params: { lang: Lang; chapter: string };
+    props: { chapterNumber: number };
+  }> = [];
+  for (const lang of langs) {
+    for (const ch of getChapters(lang)) {
+      out.push({
+        params: { lang, chapter: `chapter-${ch.number}` },
+        props: { chapterNumber: ch.number },
+      });
+    }
+  }
+  return out;
+}
+
+interface Props {
+  chapterNumber: number;
+}
+
+const lang = Astro.params.lang as Lang;
+const { chapterNumber } = Astro.props;
+
+const allChapters = getChapters(lang);
+const chapter = allChapters.find((c) => c.number === chapterNumber)!;
+
+function titleCase(str: string) {
+  return str
+    .toLowerCase()
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .replace(/\bAi\b/g, 'AI')
+    .replace(/\bEu\b/g, 'EU')
+    .replace(/\bGpai\b/g, 'GPAI');
+}
+
+const articles = getArticles(lang).filter((a) => a.chapter === chapterNumber);
+const chapterTitle = titleCase(chapter.title);
+const pageTitle = `Chapter ${chapter.roman} — ${chapterTitle}`;
+---
+
+<BaseLayout title={pageTitle} activeChapter={chapter.number}>
+  <Sidebar slot="sidebar" lang={lang} activeChapter={chapter.number} />
+
+  <div class="chapter-bar">
+    <h1>Chapter {chapter.roman} — {chapterTitle}</h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">Home</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>Chapter {chapter.roman}</span>
+  </div>
+
+  <!-- Article list with per-article permalinks -->
+  <div style="font-family: var(--sans); margin-bottom: 24px; padding: 16px 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px;">
+    <div style="font-size: 12px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 10px;">Articles in this chapter</div>
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      {articles.map(a => (
+        <a href={`/${lang}/articles/chapter-${chapter.number}/article-${a.number}/`} style="color: var(--blue-accent); text-decoration: none; font-size: 14px;">
+          <strong style="color: var(--red-accent); margin-right: 8px;">Art. {a.number}</strong>{a.title}
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <!-- All articles rendered inline below (preserves chapter-reading behavior) -->
+  {articles.map((article, index) => (
+    <>
+      <ArticleBlock article={article} lang={lang} />
+      {index < articles.length - 1 && <hr class="article-separator" />}
+    </>
+  ))}
+</BaseLayout>

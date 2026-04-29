@@ -1,0 +1,160 @@
+---
+/**
+ * Locale homepage — /en/ and /nl/.
+ *
+ * Step 4.3b: replaces the legacy flat `pages/index.astro` (the chapter
+ * landing). The bare-root `pages/index.astro` is now a meta-refresh stub
+ * pointing here at `/en/` (Decision 2). House principle: AI Act
+ * card-based homepage layout preserved verbatim — only data source
+ * (loader) and per-language chapter titles change.
+ *
+ * UI chrome ("Browse", "All Articles", section-card labels) stays English
+ * on both locales per the 4.3b decision note.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import {
+  getArticles,
+  getRecitals,
+  getAnnexes,
+  getChapters,
+  getOmnibusAmendmentsForArticle,
+  getIndexPagePaths,
+} from '@/lib/loader';
+import type { Lang } from '@/types/aiact';
+
+export function getStaticPaths() {
+  return getIndexPagePaths();
+}
+
+const lang = Astro.params.lang as Lang;
+
+function titleCase(str: string) {
+  return str
+    .toLowerCase()
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .replace(/\bAi\b/g, 'AI')
+    .replace(/\bEu\b/g, 'EU')
+    .replace(/\bGpai\b/g, 'GPAI');
+}
+
+const articles = getArticles(lang);
+const recitals = getRecitals(lang);
+const annexes = getAnnexes(lang);
+const chapters = getChapters(lang);
+
+const totalArticles = articles.length;
+const totalRecitals = recitals.length;
+const totalAnnexes = annexes.length;
+const totalWithRecitals = articles.filter((a) => (a.related_recitals ?? []).length > 0).length;
+const totalWithHistory = articles.filter(
+  (a) => a.drafting_history && Object.values(a.drafting_history).some((v) => v),
+).length;
+const totalWithOmnibus = articles.filter(
+  (a) => getOmnibusAmendmentsForArticle(a.number).length > 0,
+).length;
+
+const chapterCards = chapters.map((ch) => {
+  const chArticles = articles.filter((a) => a.chapter === ch.number);
+  const artNums = chArticles.map((a) => a.number);
+  const withRecitals = chArticles.filter(
+    (a) => (a.related_recitals ?? []).length > 0,
+  ).length;
+  const withHistory = chArticles.filter(
+    (a) => a.drafting_history && Object.values(a.drafting_history).some((v) => v),
+  ).length;
+  const withOmnibus = chArticles.filter(
+    (a) => getOmnibusAmendmentsForArticle(a.number).length > 0,
+  ).length;
+  return {
+    number: ch.number,
+    roman: ch.roman,
+    title: titleCase(ch.title),
+    articleCount: chArticles.length,
+    rangeText:
+      artNums.length === 0
+        ? ''
+        : artNums.length === 1
+          ? `Article ${artNums[0]}`
+          : `Articles ${artNums[0]}–${artNums[artNums.length - 1]}`,
+    withRecitals,
+    withHistory,
+    withOmnibus,
+    href: `/${lang}/articles/chapter-${ch.number}/`,
+  };
+});
+---
+
+<BaseLayout title="EU AI Act — Annotated Edition">
+  <Sidebar slot="sidebar" lang={lang} />
+
+  <div class="chapter-bar" style="margin-bottom: 24px;">
+    <h1>EU AI Act — Annotated Edition</h1>
+  </div>
+
+  <div style="font-family: var(--sans); margin-bottom: 32px; padding: 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px;">
+    <p style="font-size: 15px; color: var(--gray-700); line-height: 1.6; margin-bottom: 16px;">
+      Regulation (EU) 2024/1689 — the Artificial Intelligence Act — annotated with recital cross-references,
+      legislative drafting history, and AI Omnibus (COM(2025) 836) amendment tracking.
+    </p>
+    <div style="display: flex; gap: 24px; flex-wrap: wrap; font-size: 13px; color: var(--gray-600);">
+      <div><strong style="font-size: 20px; color: var(--red-accent);">{totalArticles}</strong> articles</div>
+      <div><strong style="font-size: 20px; color: #2563eb;">{totalRecitals}</strong> recitals</div>
+      <div><strong style="font-size: 20px; color: #2563eb;">{totalWithRecitals}</strong> with recital links</div>
+      <div><strong style="font-size: 20px; color: #d97706;">{totalWithHistory}</strong> with drafting history</div>
+      <div><strong style="font-size: 20px; color: #92400e;">{totalWithOmnibus}</strong> with Omnibus amendments</div>
+    </div>
+  </div>
+
+  <!-- Browse shortcuts -->
+  <div style="font-family: var(--sans); margin-bottom: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+    <a href={`/${lang}/articles/`} style="display: block; padding: 14px 18px; background: #fff; border: 1px solid var(--gray-200); border-top: 3px solid var(--red-accent); border-radius: 0 0 6px 6px; text-decoration: none; color: inherit;">
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gray-500); font-weight: 700;">Browse</div>
+      <div style="font-size: 15px; color: var(--red-accent); font-weight: 700; margin-top: 4px;">All Articles</div>
+      <div style="font-size: 12px; color: var(--gray-500); margin-top: 2px;">{totalArticles} across 13 chapters</div>
+    </a>
+    <a href={`/${lang}/recitals/`} style="display: block; padding: 14px 18px; background: #fff; border: 1px solid var(--gray-200); border-top: 3px solid #2563eb; border-radius: 0 0 6px 6px; text-decoration: none; color: inherit;">
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gray-500); font-weight: 700;">Browse</div>
+      <div style="font-size: 15px; color: var(--blue-dark); font-weight: 700; margin-top: 4px;">All Recitals</div>
+      <div style="font-size: 12px; color: var(--gray-500); margin-top: 2px;">{totalRecitals} interpretive recitals</div>
+    </a>
+    <a href={`/${lang}/annexes/`} style="display: block; padding: 14px 18px; background: #fff; border: 1px solid var(--gray-200); border-top: 3px solid var(--gray-600); border-radius: 0 0 6px 6px; text-decoration: none; color: inherit;">
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gray-500); font-weight: 700;">Browse</div>
+      <div style="font-size: 15px; color: var(--gray-800); font-weight: 700; margin-top: 4px;">Annexes</div>
+      <div style="font-size: 12px; color: var(--gray-500); margin-top: 2px;">{totalAnnexes} technical annexes</div>
+    </a>
+    <a href="/history/" style="display: block; padding: 14px 18px; background: #fff; border: 1px solid var(--gray-200); border-top: 3px solid #d97706; border-radius: 0 0 6px 6px; text-decoration: none; color: inherit;">
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gray-500); font-weight: 700;">Explore</div>
+      <div style="font-size: 15px; color: #d97706; font-weight: 700; margin-top: 4px;">Drafting History</div>
+      <div style="font-size: 12px; color: var(--gray-500); margin-top: 2px;">Commission / Parliament / Final</div>
+    </a>
+  </div>
+
+  <div style="font-family: var(--sans); font-size: 13px; font-weight: 700; color: var(--gray-700); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 10px; border-bottom: 2px solid #111; padding-bottom: 6px;">Chapters</div>
+  <div style="font-family: var(--sans);">
+    {chapterCards.map(ch => (
+      <a href={ch.href} style="display: block; text-decoration: none; color: inherit; margin-bottom: 12px; padding: 16px 20px; background: #fff; border: 1px solid var(--gray-200); border-left: 4px solid var(--red-accent); border-radius: 0 6px 6px 0; transition: all 0.15s;"
+         class="chapter-index-card">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <div>
+            <span style="font-weight: 700; color: var(--red-accent); font-size: 15px;">Chapter {ch.roman}</span>
+            <span style="color: var(--gray-600); font-size: 14px; margin-left: 12px;">{ch.title}</span>
+          </div>
+          <span style="font-size: 13px; color: var(--gray-500);">{ch.articleCount} article{ch.articleCount !== 1 ? 's' : ''}</span>
+        </div>
+        <div style="font-size: 12px; color: var(--gray-400); margin-top: 4px;">{ch.rangeText}</div>
+        <div style="display: flex; gap: 16px; margin-top: 8px; font-size: 12px;">
+          {ch.withRecitals > 0 && <span style="color: #2563eb;">{ch.withRecitals} with recitals</span>}
+          {ch.withHistory > 0 && <span style="color: #d97706;">{ch.withHistory} with drafting history</span>}
+          {ch.withOmnibus > 0 && <span style="color: #92400e;">{ch.withOmnibus} with Omnibus amendments</span>}
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <div style="font-family: var(--sans); margin-top: 40px; padding-top: 20px; border-top: 2px solid #111; font-size: 13px; color: var(--gray-500);">
+    <p>Built by <a href="https://abacuslegal.nl" target="_blank" rel="noopener" style="color: var(--blue-accent);">Abacus Legal</a> (Amsterdam).
+    Data sourced from EUR-Lex, Kai Zenner article-recital mapping, and four-column mandate comparison documents.</p>
+    <p style="margin-top: 4px;">This is a research and reference tool, not legal advice.</p>
+  </div>
+</BaseLayout>

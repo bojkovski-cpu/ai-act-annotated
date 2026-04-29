@@ -1,48 +1,30 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Sidebar from '@components/Sidebar.astro';
-import ArticleBlock from '@components/ArticleBlock.astro';
-import data from '@data/ai_act_structured.json';
+/**
+ * Legacy redirect — /chapter/I/ → /en/articles/chapter-1/.
+ *
+ * The roman-numeral URL form (separate from /articles/chapter-1/) was an
+ * alternate browse path on the pre-i18n site. Step 4.3b retires it in
+ * favour of the canonical arabic form under [lang]/.
+ */
+import { getChapters } from '@/lib/loader';
 
 export function getStaticPaths() {
-  return data.chapters.map(ch => ({
+  return getChapters('en').map((ch) => ({
     params: { roman: ch.roman.toLowerCase() },
-    props: { chapter: ch },
+    props: { target: `/en/articles/chapter-${ch.number}/` },
   }));
 }
 
-const { chapter } = Astro.props;
-
-// Get all articles for this chapter
-const articles = data.articles.filter(a => a.chapter === chapter.number);
-
-// Format chapter title: "GENERAL PROVISIONS" → "General Provisions"
-function titleCase(str: string) {
-  return str
-    .toLowerCase()
-    .replace(/\b\w/g, c => c.toUpperCase())
-    .replace(/\bAi\b/g, 'AI')
-    .replace(/\bEu\b/g, 'EU')
-    .replace(/\bGpai\b/g, 'GPAI');
-}
-
-const chapterTitle = titleCase(chapter.title);
-const pageTitle = `Chapter ${chapter.roman} — ${chapterTitle}`;
+const { target } = Astro.props;
 ---
-
-<BaseLayout title={pageTitle} activeChapter={chapter.number}>
-  <Sidebar slot="sidebar" activeChapter={chapter.number} />
-
-  <!-- Chapter bar -->
-  <div class="chapter-bar">
-    <h1>Chapter {chapter.roman} — {chapterTitle}</h1>
-  </div>
-
-  <!-- Articles in continuous scroll -->
-  {articles.map((article, index) => (
-    <>
-      <ArticleBlock article={article} />
-      {index < articles.length - 1 && <hr class="article-separator" />}
-    </>
-  ))}
-</BaseLayout>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content={`0; url=${target}`} />
+  <link rel="canonical" href={target} />
+  <meta name="robots" content="noindex,follow" />
+  <title>Redirecting…</title>
+</head>
+<body><a href={target}>{target}</a></body>
+</html>

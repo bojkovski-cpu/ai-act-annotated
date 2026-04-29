@@ -115,6 +115,34 @@ body {
 .topbar-nav a.active { color: var(--blue-dark); border-bottom: 2px solid var(--blue-dark); }
 .topbar-nav-sep { color: var(--gray-300); padding: 0 16px; font-size: 13px; user-select: none; }
 
+/* ── Language toggle (EN/NL) ──
+   Adapted from gdpr-site-snapshot/src/styles/global.css:1457-1467.
+   GDPR variables remapped to AI Act palette:
+     --border-strong → --gray-300       --fg-muted → --gray-500
+     --radius-md     → 3px (matches search input)
+     --font-ui       → --sans            --surface-sunk → --gray-50
+     --fg            → --gray-800        --accent → --red-accent
+   Sits in .topbar-upper immediately after .topbar-search.
+*/
+.lang-toggle {
+  display: inline-flex;
+  margin-left: 12px;
+  border: 1px solid var(--gray-300);
+  border-radius: 3px;
+  overflow: hidden;
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.lang-toggle a {
+  padding: 5px 12px;
+  color: var(--gray-500);
+  text-decoration: none;
+  font-weight: 600;
+}
+.lang-toggle a:hover { background: var(--gray-50); color: var(--gray-800); }
+.lang-toggle a[aria-current="true"] { background: var(--red-accent); color: #fff; }
+
 /* ── Layout ── */
 .layout {
   display: flex;
@@ -502,4 +530,73 @@ body {
   .article-id { font-size: 17px; }
   .article-tabs { overflow-x: auto; }
   .article-tab { padding: 8px 12px; font-size: 12px; }
+}
+
+/* ── Article references (4.9b) ── */
+.article-ref {
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+  transition: color 0.15s, background 0.15s;
+}
+.article-ref-internal {
+  color: var(--red-accent);
+}
+.article-ref-internal:hover {
+  background: var(--red-light, #fef2f2);
+}
+.article-ref-gdpr {
+  color: #2563eb;
+}
+.article-ref-gdpr:hover {
+  background: #eff6ff;
+}
+.article-ref-external {
+  color: #6b7280;
+}
+.article-ref-external:hover {
+  color: var(--gray-800);
+  background: var(--gray-50);
+}
+.ref-external-mark {
+  font-size: 0.75em;
+  vertical-align: super;
+  margin-left: 1px;
+  color: var(--gray-400);
+}
+
+/* ── Referenced-by block ── */
+.referenced-by {
+  margin-top: 18px;
+  padding: 12px 16px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-left: 3px solid var(--gray-400);
+  border-radius: 0 6px 6px 0;
+  font-family: var(--sans, system-ui, sans-serif);
+}
+.referenced-by-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: 6px;
+}
+.referenced-by-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+}
+.referenced-by-list li {
+  font-size: 12px;
+}
+.referenced-by-list a {
+  color: var(--red-accent);
+  text-decoration: none;
+}
+.referenced-by-list a:hover {
+  text-decoration: underline;
 }

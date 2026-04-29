@@ -1,0 +1,113 @@
+---
+/**
+ * /[lang]/history/[version]/recitals/recital-N/ — per-stage recital snapshot detail.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import {
+  getDraftingSnapshotPagePaths,
+  getDraftingSnapshotsForRecital,
+  getDraftingHistoryGaps,
+  getDraftingStages,
+  getRecital,
+} from '@/lib/loader';
+import type { Lang } from '@/types/aiact';
+
+export function getStaticPaths() {
+  return getDraftingSnapshotPagePaths('recitals');
+}
+
+const { lang, version } = Astro.params as { lang: Lang; version: string; number: string };
+const { snapshot } = Astro.props;
+
+const stages = getDraftingStages(lang);
+const stage = stages.find((s) => s.id === version)!;
+const stageLabel = lang === 'nl' ? stage.label_nl : stage.label_en;
+
+const liveRecital = getRecital(lang, snapshot.number);
+const siblings = getDraftingSnapshotsForRecital(snapshot.number, lang)
+  .filter((s) => s.stage !== version);
+const gaps = getDraftingHistoryGaps(snapshot.number, 'recitals');
+
+const T = lang === 'nl'
+  ? {
+      home: 'Home', history: 'Totstandkomingsgeschiedenis',
+      compareTitle: 'Versies vergelijken',
+      finalLink: 'Definitief vastgestelde tekst',
+      altLangPrefix: 'Engelse versie',
+      pageTitle: `Overweging ${snapshot.number} — ${stageLabel}`,
+      labelRec: 'Overweging',
+    }
+  : {
+      home: 'Home', history: 'Drafting History',
+      compareTitle: 'Compare versions',
+      finalLink: 'Final adopted text',
+      altLangPrefix: 'Dutch version',
+      pageTitle: `Recital ${snapshot.number} — ${stageLabel}`,
+      labelRec: 'Recital',
+    };
+
+const altLang: Lang = lang === 'nl' ? 'en' : 'nl';
+
+// Hreflang gap awareness: for history-snapshot pages, the alt-language page
+// only exists when no gap is recorded for this (stage, content_type, number).
+// Without this, `<link rel="alternate" hreflang="..." href=...>` would point
+// at a 404, leaking the catalogued asymmetry into broken SEO metadata.
+const altMissingHere = gaps.some((g) => g.stage === version && g.missing_in === altLang);
+const availableLangs = (altMissingHere ? [lang] : ['en', 'nl']) as readonly Lang[];
+---
+
+<BaseLayout title={T.pageTitle} availableLangs={availableLangs}>
+  <Sidebar slot="sidebar" lang={lang} activeSection="history" />
+
+  <div class="chapter-bar" style="background: var(--blue-dark);">
+    <h1>{T.labelRec} {snapshot.number}</h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{T.home}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/history/`} style="color: var(--blue-accent); text-decoration: none;">{T.history}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/history/${version}/`} style="color: var(--blue-accent); text-decoration: none;">{stageLabel}</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>{T.labelRec} {snapshot.number}</span>
+  </div>
+
+  <div style="font-family: var(--sans); margin-bottom: 20px; padding: 12px 16px; background: #fffbeb; border: 1px solid #fbbf24; border-left: 3px solid #d97706; border-radius: 0 6px 6px 0; font-size: 13px; color: #92400e;">
+    <strong>{stageLabel}</strong> · {stage.date} · <span style="font-family: var(--serif); font-style: italic;">{stage.source_label}</span>
+  </div>
+
+  <div class="article-block">
+    <div class="article-body">
+      <pre style="white-space: pre-wrap; font-family: var(--serif); font-size: 15px; line-height: 1.7; color: var(--gray-800); margin: 0;">{snapshot.text}</pre>
+    </div>
+  </div>
+
+  <div style="margin-top: 32px; padding: 16px 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px; font-family: var(--sans);">
+    <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; font-weight: 700; color: var(--gray-500); margin-bottom: 10px;">{T.compareTitle}</div>
+    {liveRecital && (
+      <a href={`/${lang}/recitals/recital-${liveRecital.number}/`} style="display: block; padding: 8px 0; color: var(--red-accent); text-decoration: none; font-size: 13px;">
+        &rarr; {T.finalLink} — {T.labelRec} {liveRecital.number}
+      </a>
+    )}
+    {siblings.map((s) => {
+      const stageRow = stages.find((x) => x.id === s.stage)!;
+      const sLabel = lang === 'nl' ? stageRow.label_nl : stageRow.label_en;
+      return (
+        <a href={`/${lang}/history/${s.stage}/recitals/recital-${s.number}/`} style="display: block; padding: 8px 0; color: #d97706; text-decoration: none; font-size: 13px;">
+          &rarr; {sLabel} ({stageRow.date})
+        </a>
+      );
+    })}
+    {gaps.filter((g) => g.missing_in === lang).map((g) => {
+      const gStage = stages.find((x) => x.id === g.stage)!;
+      const gLabel = lang === 'nl' ? gStage.label_nl : gStage.label_en;
+      return (
+        <a href={`/${altLang}/history/${g.stage}/recitals/recital-${snapshot.number}/`} style="display: block; padding: 8px 0; color: var(--gray-500); text-decoration: none; font-size: 13px; font-style: italic;">
+          &rarr; {gLabel} ({gStage.date}) — {T.altLangPrefix}
+        </a>
+      );
+    })}
+  </div>
+</BaseLayout>

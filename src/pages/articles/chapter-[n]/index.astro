@@ -1,64 +1,27 @@
 ---
-// Alias for the arabic-numbered chapter URL.
-// /articles/chapter-1/ lists that chapter's articles with per-article links.
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Sidebar from '@components/Sidebar.astro';
-import ArticleBlock from '@components/ArticleBlock.astro';
-import data from '@data/ai_act_structured.json';
+/**
+ * Legacy redirect — /articles/chapter-N/ → /en/articles/chapter-N/.
+ * One stub per chapter.
+ */
+import { getChapters } from '@/lib/loader';
 
 export function getStaticPaths() {
-  return data.chapters.map(ch => ({
+  return getChapters('en').map((ch) => ({
     params: { n: String(ch.number) },
-    props: { chapter: ch },
+    props: { target: `/en/articles/chapter-${ch.number}/` },
   }));
 }
 
-const { chapter } = Astro.props;
-
-function titleCase(str: string) {
-  return str
-    .toLowerCase()
-    .replace(/\b\w/g, c => c.toUpperCase())
-    .replace(/\bAi\b/g, 'AI')
-    .replace(/\bEu\b/g, 'EU')
-    .replace(/\bGpai\b/g, 'GPAI');
-}
-
-const articles = data.articles.filter(a => a.chapter === chapter.number);
-const chapterTitle = titleCase(chapter.title);
-const pageTitle = `Chapter ${chapter.roman} — ${chapterTitle}`;
+const { target } = Astro.props;
 ---
-
-<BaseLayout title={pageTitle} activeChapter={chapter.number}>
-  <Sidebar slot="sidebar" activeChapter={chapter.number} />
-
-  <div class="chapter-bar">
-    <h1>Chapter {chapter.roman} — {chapterTitle}</h1>
-  </div>
-
-  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
-    <a href="/" style="color: var(--blue-accent); text-decoration: none;">Home</a>
-    <span style="margin: 0 6px;">/</span>
-    <span>Chapter {chapter.roman}</span>
-  </div>
-
-  <!-- Article list with per-article permalinks -->
-  <div style="font-family: var(--sans); margin-bottom: 24px; padding: 16px 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px;">
-    <div style="font-size: 12px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 10px;">Articles in this chapter</div>
-    <div style="display: flex; flex-direction: column; gap: 6px;">
-      {articles.map(a => (
-        <a href={`/articles/chapter-${chapter.number}/article-${a.number}/`} style="color: var(--blue-accent); text-decoration: none; font-size: 14px;">
-          <strong style="color: var(--red-accent); margin-right: 8px;">Art. {a.number}</strong>{a.title}
-        </a>
-      ))}
-    </div>
-  </div>
-
-  <!-- All articles rendered inline below (preserves existing chapter-reading behavior) -->
-  {articles.map((article, index) => (
-    <>
-      <ArticleBlock article={article} />
-      {index < articles.length - 1 && <hr class="article-separator" />}
-    </>
-  ))}
-</BaseLayout>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content={`0; url=${target}`} />
+  <link rel="canonical" href={target} />
+  <meta name="robots" content="noindex,follow" />
+  <title>Redirecting…</title>
+</head>
+<body><a href={target}>{target}</a></body>
+</html>

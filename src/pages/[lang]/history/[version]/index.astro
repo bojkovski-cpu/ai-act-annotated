@@ -1,0 +1,144 @@
+---
+/**
+ * /[lang]/history/[version]/ — per-stage index page.
+ *
+ * Lists every snapshot in this stage in this language, grouped by
+ * content_type. commission-2021 has articles+recitals+annexes (NL only for
+ * annexes). parliament-2023 has 771 amendments.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import {
+  getDraftingStagePagePaths,
+  getDraftingHistory,
+} from '@/lib/loader';
+import type { Lang, DraftingSnapshot } from '@/types/aiact';
+
+export const getStaticPaths = getDraftingStagePagePaths;
+
+const { lang, version } = Astro.params as { lang: Lang; version: string };
+const { stage } = Astro.props;
+
+const blob = getDraftingHistory(lang);
+const stageSnaps = blob.snapshots.filter((s) => s.stage === version);
+const articles    = stageSnaps.filter((s) => s.content_type === 'articles');
+const recitals    = stageSnaps.filter((s) => s.content_type === 'recitals');
+const annexes     = stageSnaps.filter((s) => s.content_type === 'annexes');
+const amendments  = stageSnaps.filter((s) => s.content_type === 'amendments');
+
+function num(s: string): number {
+  const m = /^(\d+)/.exec(s);
+  return m ? parseInt(m[1], 10) : 0;
+}
+articles.sort((a, b) => num(a.number) - num(b.number));
+recitals.sort((a, b) => num(a.number) - num(b.number));
+amendments.sort((a, b) => num(a.number) - num(b.number));
+
+const ROMAN: Record<string, number> = { I:1, II:2, III:3, IV:4, V:5, VI:6, VII:7, VIII:8, IX:9, X:10, XI:11, XII:12, XIII:13 };
+annexes.sort((a, b) => (ROMAN[a.number] ?? 99) - (ROMAN[b.number] ?? 99));
+
+const stageLabel = lang === 'nl' ? stage.label_nl : stage.label_en;
+const T = lang === 'nl'
+  ? {
+      title: 'Totstandkomingsgeschiedenis',
+      home: 'Home',
+      source: 'Bron',
+      preserved: {
+        articles: 'Artikelen', recitals: 'Overwegingen', annexes: 'Bijlagen', amendments: 'Amendementen',
+      },
+      slugs: {
+        articles: 'Art.', recitals: 'Overw.', annexes: 'Bijl.', amendments: 'Am.',
+      },
+      pageTitle: `${stageLabel} — Totstandkomingsgeschiedenis`,
+    }
+  : {
+      title: 'Drafting History',
+      home: 'Home',
+      source: 'Source',
+      preserved: {
+        articles: 'Articles', recitals: 'Recitals', annexes: 'Annexes', amendments: 'Amendments',
+      },
+      slugs: {
+        articles: 'Art.', recitals: 'Rec.', annexes: 'Annex', amendments: 'Am.',
+      },
+      pageTitle: `${stageLabel} — Drafting History`,
+    };
+---
+
+<BaseLayout title={T.pageTitle}>
+  <Sidebar slot="sidebar" lang={lang} activeSection="history" />
+
+  <div class="chapter-bar">
+    <h1>{stageLabel} <span style="font-weight: 400; opacity: 0.85; font-size: 14px; margin-left: 10px;">{stage.date}</span></h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{T.home}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/history/`} style="color: var(--blue-accent); text-decoration: none;">{T.title}</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>{stageLabel}</span>
+  </div>
+
+  <div style="font-family: var(--sans); margin-bottom: 24px; padding: 16px 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px; font-size: 13px; color: var(--gray-600);">
+    <div><strong>{T.source}:</strong> {stage.source_label}</div>
+    {articles.length   > 0 && <div style="margin-top: 4px;"><strong>{T.preserved.articles}:</strong> {articles.length}</div>}
+    {recitals.length   > 0 && <div><strong>{T.preserved.recitals}:</strong> {recitals.length}</div>}
+    {annexes.length    > 0 && <div><strong>{T.preserved.annexes}:</strong> {annexes.length}</div>}
+    {amendments.length > 0 && <div><strong>{T.preserved.amendments}:</strong> {amendments.length}</div>}
+  </div>
+
+  {articles.length > 0 && (
+    <div style="margin-bottom: 32px;">
+      <h2 style="font-family: var(--sans); font-size: 14px; font-weight: 700; color: var(--red-accent); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--gray-200);">{T.preserved.articles}</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; font-family: var(--sans);">
+        {articles.map((s: DraftingSnapshot) => (
+          <a href={`/${lang}/history/${version}/articles/article-${s.number}/`} style="display: flex; gap: 8px; padding: 8px 12px; background: #fff; border: 1px solid var(--gray-200); border-radius: 4px; text-decoration: none; font-size: 13px;">
+            <strong style="color: #d97706; flex-shrink: 0;">{T.slugs.articles} {s.number}</strong>
+            <span style="color: var(--gray-700);">{s.title}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {recitals.length > 0 && (
+    <div style="margin-bottom: 32px;">
+      <h2 style="font-family: var(--sans); font-size: 14px; font-weight: 700; color: var(--blue-dark); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--gray-200);">{T.preserved.recitals}</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 6px; font-family: var(--sans);">
+        {recitals.map((s: DraftingSnapshot) => (
+          <a href={`/${lang}/history/${version}/recitals/recital-${s.number}/`} style="padding: 6px 10px; background: #fff; border: 1px solid var(--gray-200); border-radius: 4px; text-decoration: none; font-size: 12px; color: var(--blue-dark);">
+            {T.slugs.recitals} {s.number}
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {annexes.length > 0 && (
+    <div style="margin-bottom: 32px;">
+      <h2 style="font-family: var(--sans); font-size: 14px; font-weight: 700; color: var(--gray-700); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--gray-200);">{T.preserved.annexes}</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; font-family: var(--sans);">
+        {annexes.map((s: DraftingSnapshot) => (
+          <a href={`/${lang}/history/${version}/annexes/annex-${s.number.toLowerCase()}/`} style="display: flex; gap: 8px; padding: 8px 12px; background: #fff; border: 1px solid var(--gray-200); border-radius: 4px; text-decoration: none; font-size: 13px;">
+            <strong style="color: var(--gray-700); flex-shrink: 0;">{T.slugs.annexes} {s.number}</strong>
+            <span style="color: var(--gray-700);">{s.title}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {amendments.length > 0 && (
+    <div>
+      <h2 style="font-family: var(--sans); font-size: 14px; font-weight: 700; color: var(--gray-700); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--gray-200);">{T.preserved.amendments}</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 6px; font-family: var(--sans);">
+        {amendments.map((s: DraftingSnapshot) => (
+          <a href={`/${lang}/history/${version}/amendments/amendment-${s.number}/`} style="padding: 6px 10px; background: #fff; border: 1px solid var(--gray-200); border-radius: 4px; text-decoration: none; font-size: 12px; color: var(--gray-700);">
+            {T.slugs.amendments} {s.number}
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+</BaseLayout>

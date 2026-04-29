@@ -1,0 +1,91 @@
+---
+/**
+ * TopBar — site-wide masthead. Step 5.2: bilingual nav chrome + GUIDANCE entry.
+ */
+import LanguageToggle from './LanguageToggle.astro';
+import type { Lang } from '../types/aiact';
+
+type TopNavSection = 'articles' | 'recitals' | 'annexes' | 'history' | 'guidance' | 'about';
+
+interface Props {
+  lang: Lang;
+  currentPath: string;
+  activeTopNav?: TopNavSection;
+  availableLangs?: readonly Lang[];
+}
+
+const { lang, currentPath, activeTopNav, availableLangs } = Astro.props;
+
+const noLang = currentPath.replace(/^\/(en|nl)(\/|$)/, '/');
+const topNav: TopNavSection = activeTopNav
+  ?? (noLang.startsWith('/recitals') ? 'recitals'
+    : noLang.startsWith('/annexes') ? 'annexes'
+    : noLang.startsWith('/history') ? 'history'
+    : noLang.startsWith('/guidance') ? 'guidance'
+    : noLang.startsWith('/about') ? 'about'
+    : 'articles');
+
+const langPrefix = '/' + lang;
+const articlesHref = langPrefix + '/articles/';
+const recitalsHref = langPrefix + '/recitals/';
+const annexesHref = langPrefix + '/annexes/';
+const historyHref = langPrefix + '/history/';
+const guidanceHref = langPrefix + '/guidance/';
+const aboutHref = langPrefix + '/about/';
+
+const NAV_LABELS: Record<Lang, Record<TopNavSection, string>> = {
+  en: {
+    articles: 'ARTICLES',
+    recitals: 'RECITALS',
+    annexes: 'ANNEXES',
+    history: 'DRAFTING HISTORY',
+    guidance: 'GUIDANCE',
+    about: 'ABOUT',
+  },
+  nl: {
+    articles: 'ARTIKELEN',
+    recitals: 'OVERWEGINGEN',
+    annexes: 'BIJLAGEN',
+    history: 'TOTSTANDKOMINGSGESCHIEDENIS',
+    guidance: 'RICHTSNOEREN',
+    about: 'OVER',
+  },
+};
+
+const SEARCH_PLACEHOLDER: Record<Lang, string> = {
+  en: 'Search articles, recitals…',
+  nl: 'Zoek artikelen, overwegingen…',
+};
+const SEARCH_BTN_LABEL: Record<Lang, string> = { en: 'SEARCH', nl: 'ZOEKEN' };
+const BRAND_SUB: Record<Lang, string> = {
+  en: 'Annotated Edition',
+  nl: 'Geannoteerde editie',
+};
+
+const labels = NAV_LABELS[lang];
+---
+
+<div class="topbar">
+  <div class="topbar-upper">
+    <div class="topbar-brand">EU AI Act<span>{BRAND_SUB[lang]}</span></div>
+    <div class="topbar-search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" placeholder={SEARCH_PLACEHOLDER[lang]} id="search-input" />
+      <button class="topbar-search-btn">{SEARCH_BTN_LABEL[lang]}</button>
+    </div>
+    <LanguageToggle lang={lang} currentPath={currentPath} availableLangs={availableLangs} />
+  </div>
+  <nav class="topbar-nav">
+    <a href={articlesHref} class={topNav === 'articles' ? 'active' : ''}>{labels.articles}</a>
+    <span class="topbar-nav-sep">|</span>
+    <a href={recitalsHref} class={topNav === 'recitals' ? 'active' : ''}>{labels.recitals}</a>
+    <span class="topbar-nav-sep">|</span>
+    <a href={annexesHref} class={topNav === 'annexes' ? 'active' : ''}>{labels.annexes}</a>
+    <span class="topbar-nav-sep">|</span>
+    <a href={historyHref} class={topNav === 'history' ? 'active' : ''}>{labels.history}</a>
+    <span class="topbar-nav-sep">|</span>
+    <a href={guidanceHref} class={topNav === 'guidance' ? 'active' : ''}>{labels.guidance}</a>
+    <span class="topbar-nav-sep">|</span>
+    <a href={aboutHref} class={topNav === 'about' ? 'active' : ''}>{labels.about}</a>
+  </nav>
+</div>

@@ -1,0 +1,92 @@
+---
+/**
+ * Article detail — /en/articles/chapter-N/article-M/ and /nl/...
+ *
+ * Step 4.3b: every (lang, article) pair gets its own static page.
+ * 113 articles × 2 languages = 226 static article pages.
+ *
+ * Decision 3 fallback rule: regulation text never falls back silently
+ * between languages. Both per-language blobs have full coverage (113
+ * each, verified by the bridge scripts), so a missing article is a data
+ * bug rather than a translation gap — we let Astro 404 naturally rather
+ * than silently rendering EN content on a /nl/ URL.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import ArticleBlock from '@components/ArticleBlock.astro';
+import {
+  getArticles,
+  getChapters,
+  getArticlePagePaths,
+} from '@/lib/loader';
+import type { Article, Lang } from '@/types/aiact';
+
+export function getStaticPaths() {
+  return getArticlePagePaths();
+}
+
+interface Props {
+  article: Article;
+}
+
+const lang = Astro.params.lang as Lang;
+const { article } = Astro.props;
+
+function titleCase(str: string) {
+  return str
+    .toLowerCase()
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .replace(/\bAi\b/g, 'AI')
+    .replace(/\bEu\b/g, 'EU')
+    .replace(/\bGpai\b/g, 'GPAI');
+}
+
+const allArticles = getArticles(lang);
+const idx = allArticles.findIndex((a) => a.number === article.number);
+const prev = idx > 0 ? allArticles[idx - 1] : null;
+const next = idx < allArticles.length - 1 ? allArticles[idx + 1] : null;
+
+const chapter = getChapters(lang).find((c) => c.number === article.chapter);
+const chapterTitle = chapter ? titleCase(chapter.title) : '';
+const pageTitle = `Article ${article.number} — ${article.title}`;
+---
+
+<BaseLayout title={pageTitle} activeChapter={article.chapter}>
+  <Sidebar slot="sidebar" lang={lang} activeChapter={article.chapter} activeArticle={article.number} />
+
+  <div class="chapter-bar">
+    <h1>
+      <a href={`/${lang}/articles/chapter-${article.chapter}/`} style="color: inherit; text-decoration: none; opacity: 0.85;">Chapter {chapter?.roman ?? article.chapter} — {chapterTitle}</a>
+    </h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">Home</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/articles/chapter-${article.chapter}/`} style="color: var(--blue-accent); text-decoration: none;">Chapter {chapter?.roman}</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>Article {article.number}</span>
+  </div>
+
+  <ArticleBlock article={article} lang={lang} />
+
+  <!-- Prev/next navigation -->
+  <nav style="display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 2px solid #111; font-family: var(--sans);">
+    {prev ? (
+      <a href={`/${lang}/articles/chapter-${prev.chapter}/article-${prev.number}/`}
+         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 3px solid var(--red-accent); border-radius: 0 6px 6px 0; text-decoration: none; color: inherit;">
+        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">&larr; Previous</div>
+        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">Article {prev.number}</div>
+        <div style="font-size: 13px; color: var(--gray-600); margin-top: 2px;">{prev.title}</div>
+      </a>
+    ) : <div style="flex: 1;"></div>}
+    {next ? (
+      <a href={`/${lang}/articles/chapter-${next.chapter}/article-${next.number}/`}
+         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-right: 3px solid var(--red-accent); border-radius: 6px 0 0 6px; text-decoration: none; color: inherit; text-align: right;">
+        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">Next &rarr;</div>
+        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">Article {next.number}</div>
+        <div style="font-size: 13px; color: var(--gray-600); margin-top: 2px;">{next.title}</div>
+      </a>
+    ) : <div style="flex: 1;"></div>}
+  </nav>
+</BaseLayout>

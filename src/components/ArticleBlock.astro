@@ -1,33 +1,185 @@
 ---
-import data from '@data/ai_act_structured.json';
+/**
+ * ArticleBlock — per-article render with tabs (Recitals / Drafting History
+ * / AI Omnibus / Case Law / Guidance).
+ *
+ * Step 4.3b: takes a `lang` prop and consumes the loader. Internal links
+ * are locale-prefixed. House principle: AI Act class names + JSX
+ * structure preserved verbatim from the pre-i18n version.
+ *
+ * Omnibus on /nl/: EN body + Dutch chrome tag ("Bron: COM(2025) 836 —
+ * beschikbaar in het Engels") per the 4.3b decision recorded with Pavle.
+ * UI chrome strings (tab labels) stay English on both locales.
+ *
+ * Step 5.3 (2026-04-28): the Guidance tab is wired to real data from
+ * `getGuidanceCitationsForArticle`. The tab and panel are both hidden when
+ * the article has zero citations in the current language — same convention
+ * as the Recitals / History / Omnibus tabs. Cards aggregate by
+ * (guidance_id, language); multiple pin-cites within the same article
+ * collapse into a single card with the pin-cites listed inside it. Sort:
+ * adoption_date desc, canonical_id asc tie-break (deterministic for
+ * byte-identical re-builds). Decision 4-D (Brontaal: source language
+ * label) is delegated to GuidanceCard's title fallback. The i18n metadata
+ * silent-fallback case (multi-lang doc, target title not yet ingested)
+ * lives in `getGuidanceTitleFor` and is also surfaced via the same card.
+ * The two cases differ in whether the doc has the page language in
+ * `doc.languages`; comments at the call site describe the distinction.
+ */
+import {
+  getRelatedRecitals,
+  getOmnibusAmendmentsForArticle,
+  getDraftingSnapshotsForArticle,
+  getDraftingHistoryGaps,
+  getDraftingStages,
+  getGuidanceCitationsForArticle,
+  getGuidanceDoc,
+  getInternalReferencesFor,
+  getExternalReferencesFor,
+  getArticlesReferencing,
+  getChapterForArticle,
+} from '@/lib/loader';
+import { wrapReferences } from '@/lib/references';
+import type { Article, GuidanceCitation, GuidanceDoc, Lang } from '@/types/aiact';
+import DraftingHistory from '@/components/DraftingHistory.astro';
+import GuidanceCard from '@/components/GuidanceCard.astro';
 
 interface Props {
-  article: any;
+  article: Article;
+  lang: Lang;
 }
 
-const { article } = Astro.props;
-const base = import.meta.env.BASE_URL;
+const { article, lang } = Astro.props;
 
-// Resolve related recitals
-const relatedRecitals = (article.related_recitals || [])
-  .map((rNum: number) => data.recitals.find(r => r.number === rNum))
-  .filter(Boolean);
+// Resolve related recitals — language-resolved via loader.
+const relatedRecitals = getRelatedRecitals(article.number, lang).map((rec) => ({
+  number: rec.number,
+  text: rec.text,
+  href: '/' + lang + '/recitals/recital-' + rec.number + '/',
+}));
 
-// Drafting history entries
-const draftingHistory = article.drafting_history || {};
-const draftingVersions = Object.entries(draftingHistory).filter(([_, text]) => text);
+// Drafting history — bilingual via loader (4.4). Snapshots in this article's
+// language at every stage that covers it; gaps surface where the alternate
+// language has coverage but this one does not (Decision 3, bidirectional).
+const draftingSnapshots = getDraftingSnapshotsForArticle(article.number, lang);
+const draftingGaps = getDraftingHistoryGaps(article.number, 'articles');
+const draftingStages = getDraftingStages(lang);
 
-// Omnibus amendments
-const omnibusAmendments = article.omnibus_amendments || [];
+// Omnibus amendments — EN data; on /nl/ render with NL chrome tag.
+const omnibusAmendments = getOmnibusAmendmentsForArticle(article.number);
 
-// Tab counts
+// Guidance — 5.3: aggregate per (guidance_id, language) and sort by
+// adoption_date desc with canonical_id tie-break.
+//
+// The loader's `getGuidanceCitationsForArticle(articleNumber, lang)` already
+// filters to the current language. This means the (guidance_id, language)
+// aggregation key is effectively (guidance_id) per page render. The language
+// is kept in the key for defensive symmetry against a future loader change
+// that returns mixed-language entries (e.g. "show fallback" semantics).
+type PinCiteEntry = {
+  pin_cite: GuidanceCitation['pin_cite'];
+  location_in_doc: GuidanceCitation['location_in_doc'];
+};
+type GuidanceCardData = {
+  doc: GuidanceDoc;
+  pinCites: PinCiteEntry[];
+};
+
+const guidanceCitations = getGuidanceCitationsForArticle(article.number, lang);
+const guidanceAggregated = new Map<string, GuidanceCardData>();
+for (const cit of guidanceCitations) {
+  const key = `${cit.guidance_id}::${cit.language}`;
+  let entry = guidanceAggregated.get(key);
+  if (!entry) {
+    const doc = getGuidanceDoc(cit.guidance_id);
+    if (!doc) {
+      // Dangling citation — should be impossible after 4.6's verifier ran.
+      // Skip silently so the rest of the page still renders. 5.4's reverse-
+      // link audit will pick this up if it does happen.
+      continue;
+    }
+    entry = { doc, pinCites: [] };
+    guidanceAggregated.set(key, entry);
+  }
+  entry.pinCites.push({
+    pin_cite: cit.pin_cite,
+    location_in_doc: cit.location_in_doc,
+  });
+}
+
+// Decision 4 fallback semantics — applied at the card level inside
+// GuidanceCard via `getGuidanceTitleFor`:
+//   - Decision 4-D (single-language source, e.g. an EN-only doc on /nl/):
+//     `doc.languages` does NOT include current `lang`. Title resolves to the
+//     other language and the card renders an explicit "Brontaal: …" /
+//     "Source language: …" label. The aggregated tab itself only contains
+//     this case if a future loader change starts surfacing other-language
+//     citations on the matching page; today it cannot, because the loader
+//     filters citations to current language.
+//   - i18n Decision 3 metadata rule (multi-lang doc, current-lang title not
+//     yet ingested): `doc.languages` DOES include current `lang`, but
+//     `doc.title[lang]` is null. `getGuidanceTitleFor` silently falls back
+//     to EN — no label. The 5.2 EZ guide carries both titles so this branch
+//     never fires for the current corpus; first single-lang doc in 5.6+
+//     exercises Decision 4-D, and an asymmetric ingestion gap exercises the
+//     silent-fallback path.
+//
+// Both branches resolve through the same component property, but the two
+// cases are conceptually distinct — keep this comment if the rendering
+// diverges.
+const guidanceCards: GuidanceCardData[] = Array.from(guidanceAggregated.values()).sort((a, b) => {
+  const da = (a.doc.adoption_date ?? '').replace(/-/g, '');
+  const db = (b.doc.adoption_date ?? '').replace(/-/g, '');
+  if (da !== db) return db.localeCompare(da);
+  return (a.doc.canonical_id ?? '').localeCompare(b.doc.canonical_id ?? '');
+});
+
+// Article references (4.9b). The structured indexes are language-agnostic;
+// the URL composition for external EUR-Lex links is language-aware via the
+// LANG querystring parameter inside `wrapReferences`. Internal Astro routes
+// pick up the current `lang` directly. Empty arrays are fine — the wrapper
+// returns the original text untouched when there's nothing to annotate.
+const internalRefs = getInternalReferencesFor(article.number, lang);
+const externalRefs = getExternalReferencesFor(article.number, lang);
+const referencedBy = getArticlesReferencing(article.number, lang);
+
+// Pre-compute hrefs for the Referenced-by block — getChapterForArticle
+// returns null only for unknown numbers; the parser's reverse index only
+// names valid source articles, so the null branch is defensive.
+const referencedByEntries = referencedBy.map((r) => {
+  const ch = getChapterForArticle(r.source_article);
+  const href = ch === null
+    ? '#'
+    : `/${lang}/articles/chapter-${ch}/article-${r.source_article}/`;
+  // Build the pin-cite suffix only when the source paragraph is known.
+  let pin = '';
+  if (r.paragraph) {
+    pin = `(${r.paragraph})`;
+    if (r.letter) pin += `(${r.letter})`;
+  }
+  return {
+    source_article: r.source_article,
+    href,
+    pin,
+  };
+});
+
 const recitalCount = relatedRecitals.length;
-const historyCount = draftingVersions.length;
+// Tab count: stages where THIS language has a snapshot, plus stages where
+// THIS language has a Decision-3 gap disclosure (so the user is told something
+// at every stage where it's relevant). Final-2024 always exists (live
+// regulation) so we add 1.
+const historyStageCardCount = draftingStages.filter((stage) => {
+  const hasSnap = draftingSnapshots.some((s) => s.stage === stage.id);
+  const hasGap = draftingGaps.some((g) => g.stage === stage.id && g.missing_in === lang);
+  return hasSnap || hasGap;
+}).length;
+const historyCount = historyStageCardCount + 1; // +1 for final-2024 card
 const omnibusCount = omnibusAmendments.length;
+const guidanceCount = guidanceCards.length;
 
-// Parse paragraph text into sub-points
+const articleHref = '/' + lang + '/articles/chapter-' + article.chapter + '/article-' + article.number + '/';
+
 function parseSubPoints(text: string) {
-  // Split on (a), (b), etc. patterns at start of line
   const parts: { marker?: string; text: string }[] = [];
   const lines = text.split('\n');
   let currentText = '';
@@ -51,12 +203,6 @@ function parseSubPoints(text: string) {
   return parts;
 }
 
-// Timeline ordering for drafting history
-const timelineOrder = [
-  { key: 'Commission Proposal (2021)', year: 'April 2021', label: 'European Commission Proposal — COM(2021) 206', isCurrent: false },
-  { key: 'Council General Approach (2022)', year: 'November 2022', label: 'Council General Approach — ST 14954/2022', isCurrent: false },
-  { key: 'EP Mandate (2023)', year: 'June 2023', label: 'European Parliament Position', isCurrent: false },
-];
 ---
 
 <div class="article-block" id={`article-${article.number}`}>
@@ -67,29 +213,35 @@ const timelineOrder = [
     </div>
     <div class="article-badges">
       <div class="article-tools">
-        <a class="article-tool-btn" href={`/articles/chapter-${article.chapter}/article-${article.number}/`} title="Permalink to Article">&#x1f517;</a>
+        <a class="article-tool-btn" href={articleHref} title="Permalink to Article">&#x1f517;</a>
       </div>
     </div>
   </div>
 
-  <!-- Article body -->
   <div class="article-body">
     {article.paragraphs.map((para: any) => {
       const parts = parseSubPoints(para.text);
       const hasNumber = para.number && para.number !== '0';
 
+      // Wrap recognised reference patterns in <a> tags. The wrapper does
+      // its own substring search per chunk — see lib/references.ts.
+      const annotated = parts.map((part) => ({
+        ...part,
+        html: wrapReferences(part.text, internalRefs, externalRefs, lang).replace(/\n/g, '<br/>'),
+      }));
+
       return (
         <div class="para-row">
           {hasNumber && <div class="para-num">{para.number}.</div>}
           <div class={`para-text${!hasNumber ? ' para-text-full' : ''}`}>
-            {parts.map((part, i) => (
+            {annotated.map((part, i) => (
               part.marker ? (
                 <div class="sub-para">
                   <div class="sub-para-marker">{part.marker}</div>
-                  <div set:html={part.text.replace(/\n/g, '<br/>')} />
+                  <div set:html={part.html} />
                 </div>
               ) : (
-                <span set:html={part.text.replace(/\n/g, '<br/>')} />
+                <span set:html={part.html} />
               )
             ))}
           </div>
@@ -98,8 +250,7 @@ const timelineOrder = [
     })}
   </div>
 
-  <!-- Per-article tab bar -->
-  {(recitalCount > 0 || historyCount > 0 || omnibusCount > 0) && (
+  {(recitalCount > 0 || historyCount > 0 || omnibusCount > 0 || guidanceCount > 0) && (
     <div class="article-tabs" data-article={String(article.number)}>
       {recitalCount > 0 && (
         <div class="article-tab" data-tab="recitals" onclick="switchTab(this)">
@@ -119,19 +270,20 @@ const timelineOrder = [
       <div class="article-tab" data-tab="caselaw" onclick="switchTab(this)">
         Case Law <span class="tab-count">0</span> <span class="tab-chevron">&#x25be;</span>
       </div>
-      <div class="article-tab" data-tab="guidance" onclick="switchTab(this)">
-        Guidance <span class="tab-count">0</span> <span class="tab-chevron">&#x25be;</span>
-      </div>
+      {guidanceCount > 0 && (
+        <div class="article-tab" data-tab="guidance" onclick="switchTab(this)">
+          Guidance <span class="tab-count">{guidanceCount}</span> <span class="tab-chevron">&#x25be;</span>
+        </div>
+      )}
     </div>
   )}
 
-  <!-- Recitals panel -->
   {recitalCount > 0 && (
     <div class="tab-panel" data-panel="recitals" data-article={String(article.number)}>
-      {relatedRecitals.map((rec: any) => (
+      {relatedRecitals.map((rec) => (
         <div class="recital-card">
           <div class="recital-card-header">
-            <a href={`/recitals/recital-${rec.number}/`}>Recital {rec.number}</a>
+            <a href={rec.href}>Recital {rec.number}</a>
           </div>
           <p>{rec.text.length > 300 ? rec.text.substring(0, 300) + '…' : rec.text}</p>
         </div>
@@ -139,46 +291,22 @@ const timelineOrder = [
     </div>
   )}
 
-  <!-- Drafting History panel -->
   {historyCount > 0 && (
     <div class="tab-panel" data-panel="history" data-article={String(article.number)}>
-      <div class="timeline">
-        {timelineOrder.map(entry => {
-          const text = draftingHistory[entry.key];
-          if (!text) return null;
-          const preview = text.length > 200 ? text.substring(0, 200) + '…' : text;
-          const paraCount = (text.match(/\n\d+\.\s/g) || []).length || 1;
-          return (
-            <div class="timeline-entry">
-              <div class="timeline-dot"></div>
-              <div class="timeline-year">{entry.year}</div>
-              <div class="timeline-label">{entry.label}</div>
-              <div class="timeline-card">
-                <div class="timeline-card-title">Article {article.number} — {article.title}</div>
-                <div class="timeline-card-meta">~{paraCount} paragraph(s) · Click to expand</div>
-                <div class="timeline-card-text">
-                  <pre style="white-space: pre-wrap; font-family: inherit; font-size: 13px; line-height: 1.55; margin: 0;">{text}</pre>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-
-        <!-- Final text marker -->
-        <div class="timeline-entry current">
-          <div class="timeline-dot"></div>
-          <div class="timeline-year">July 2024</div>
-          <div class="timeline-label">Final Adopted Text — Regulation (EU) 2024/1689</div>
-          <div class="timeline-card" style="border-color: #d97706; background: #fffbeb;">
-            <div class="timeline-card-title">Article {article.number} — {article.title}</div>
-            <div class="timeline-card-meta">{article.paragraphs.length} paragraph(s) · Current text shown above</div>
-          </div>
-        </div>
-      </div>
+      <DraftingHistory
+        snapshots={draftingSnapshots}
+        gaps={draftingGaps}
+        stages={draftingStages}
+        lang={lang}
+        number={article.number}
+        contentType="articles"
+        currentText={article.paragraphs.map((p: any) => p.text).join('\n\n')}
+        currentParaCount={article.paragraphs.length}
+        currentTitle={article.title}
+      />
     </div>
   )}
 
-  <!-- Omnibus amendments panel -->
   {omnibusCount > 0 && (
     <div class="tab-panel" data-panel="omnibus" data-article={String(article.number)}>
       {omnibusAmendments.map((amend: any) => (
@@ -189,12 +317,16 @@ const timelineOrder = [
           </div>
           <p>{amend.summary}</p>
           <div class="relevance" style="color: #d97706;">COM(2025) 836 final — AI Omnibus Regulation</div>
+          {lang === 'nl' && (
+            <div style="margin-top: 6px; font-family: var(--sans); font-size: 11px; color: var(--gray-500); font-style: italic;">
+              Bron: COM(2025) 836 — beschikbaar in het Engels
+            </div>
+          )}
         </div>
       ))}
     </div>
   )}
 
-  <!-- Case Law panel (placeholder) -->
   <div class="tab-panel" data-panel="caselaw" data-article={String(article.number)}>
     <div class="caselaw-empty">
       <div class="caselaw-empty-icon">&#x2696;</div>
@@ -203,12 +335,26 @@ const timelineOrder = [
     </div>
   </div>
 
-  <!-- Guidance panel (placeholder) -->
-  <div class="tab-panel" data-panel="guidance" data-article={String(article.number)}>
-    <div class="caselaw-empty">
-      <div class="caselaw-empty-icon">&#x1f4d6;</div>
-      No guidance documents linked to Article {article.number} yet.
-      <p>Commission guidelines, AI Office FAQs, and standardisation references will appear here as they are published.</p>
+  {guidanceCount > 0 && (
+    <div class="tab-panel" data-panel="guidance" data-article={String(article.number)}>
+      {guidanceCards.map(({ doc, pinCites }) => (
+        <GuidanceCard doc={doc} lang={lang} showPinCites={pinCites} />
+      ))}
     </div>
-  </div>
+  )}
+
+  {referencedByEntries.length > 0 && (
+    <div class="referenced-by">
+      <div class="referenced-by-label">
+        {lang === 'nl' ? 'Aangehaald door' : 'Referenced by'}
+      </div>
+      <ul class="referenced-by-list">
+        {referencedByEntries.map((entry) => (
+          <li>
+            <a href={entry.href}>Article {entry.source_article}{entry.pin}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
 </div>

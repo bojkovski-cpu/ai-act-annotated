@@ -1,56 +1,20 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Sidebar from '@components/Sidebar.astro';
-import data from '@data/ai_act_structured.json';
-import history from '@data/drafting_history.json';
-
-const stats = history.stats as Record<string, {articles: number; recitals: number}>;
-const totalHistory = Object.values(stats).reduce((s, x) => s + x.articles + x.recitals, 0);
-const withOmnibus = data.articles.filter(a => Array.isArray(a.omnibus_amendments) && a.omnibus_amendments.length > 0).length;
+/**
+ * Legacy redirect — pre-i18n /about/ → /en/about/.
+ *
+ * Step 4.3b retired the flat /about/ URL in favour of the [lang]/ tree.
+ * This stub stays in place for SEO continuity until the Caddy redirect
+ * block (Phase 3.4 / 4.7) ships. After that, this file is deletable.
+ */
 ---
-
-<BaseLayout title="About — EU AI Act Annotated">
-  <Sidebar slot="sidebar" activeSection="articles" />
-
-  <div class="chapter-bar">
-    <h1>About This Edition</h1>
-  </div>
-
-  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
-    <a href="/" style="color: var(--blue-accent); text-decoration: none;">Home</a>
-    <span style="margin: 0 6px;">/</span>
-    <span>About</span>
-  </div>
-
-  <div style="font-family: var(--serif); color: var(--gray-800); line-height: 1.75; font-size: 16px;">
-    <p style="margin-bottom: 18px;">
-      This is an annotated edition of <strong>Regulation (EU) 2024/1689</strong> — the Artificial Intelligence Act — covering all {data.articles.length} articles, {data.recitals.length} recitals, and {(data.annexes || []).length} annexes.
-    </p>
-
-    <h2 style="font-family: var(--sans); font-size: 18px; font-weight: 700; color: var(--red-accent); margin-top: 28px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.4px; border-bottom: 2px solid #111; padding-bottom: 6px;">What's in it</h2>
-
-    <p style="margin-bottom: 14px;"><strong>Recital cross-references.</strong> Every article with mapped recitals ({data.articles.filter(a => a.related_recitals?.length > 0).length} of {data.articles.length}) shows the recitals that support its interpretation, based on the Kai Zenner article-to-recital mapping. Recitals link back to the articles that reference them.</p>
-
-    <p style="margin-bottom: 14px;"><strong>Legislative drafting history.</strong> {totalHistory} preserved article and recital texts across three stages — the European Commission's 2021 proposal, the European Parliament's 2023 mandate (partial), and the final adopted 2024 text. Comparing versions reveals where contested provisions were strengthened, softened, or reframed during trilogue negotiations.</p>
-
-    <p style="margin-bottom: 14px;"><strong>AI Omnibus amendment tracking.</strong> {withOmnibus} articles carry amendments from the 2025 AI Omnibus package (COM(2025) 836), flagged with the action taken (replaced, inserted, deleted, amended) and a summary of the change.</p>
-
-    <h2 style="font-family: var(--sans); font-size: 18px; font-weight: 700; color: var(--red-accent); margin-top: 28px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.4px; border-bottom: 2px solid #111; padding-bottom: 6px;">Sources</h2>
-    <ul style="padding-left: 24px; margin-bottom: 18px;">
-      <li style="margin-bottom: 6px;"><strong>Consolidated regulation text:</strong> <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" style="color: var(--blue-accent);">EUR-Lex</a> (OJ L, 12.7.2024).</li>
-      <li style="margin-bottom: 6px;"><strong>Article-to-recital mapping:</strong> Kai Zenner's cross-reference work.</li>
-      <li style="margin-bottom: 6px;"><strong>Drafting history:</strong> four-column mandate comparison documents (Commission / Council / Parliament / Final).</li>
-      <li style="margin-bottom: 6px;"><strong>AI Omnibus amendments:</strong> COM(2025) 836 final.</li>
-    </ul>
-
-    <h2 style="font-family: var(--sans); font-size: 18px; font-weight: 700; color: var(--red-accent); margin-top: 28px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.4px; border-bottom: 2px solid #111; padding-bottom: 6px;">Who made this</h2>
-    <p style="margin-bottom: 14px;">
-      Published by <a href="https://abacuslegal.nl" target="_blank" rel="noopener" style="color: var(--blue-accent);">Abacus Legal</a> (Amsterdam), an independent legal practice specialising in IT law, GDPR, AI compliance (EU AI Act, NIS2, DORA, DSA), and cloud/XaaS contracting.
-    </p>
-
-    <h2 style="font-family: var(--sans); font-size: 18px; font-weight: 700; color: var(--red-accent); margin-top: 28px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.4px; border-bottom: 2px solid #111; padding-bottom: 6px;">Not legal advice</h2>
-    <p style="margin-bottom: 14px; color: var(--gray-600);">
-      This edition is a research and reference tool. Nothing here constitutes legal advice. For advice on how the AI Act applies to a specific situation, consult qualified counsel.
-    </p>
-  </div>
-</BaseLayout>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="0; url=/en/about/" />
+  <link rel="canonical" href="/en/about/" />
+  <meta name="robots" content="noindex,follow" />
+  <title>Redirecting…</title>
+</head>
+<body><a href="/en/about/">/en/about/</a></body>
+</html>

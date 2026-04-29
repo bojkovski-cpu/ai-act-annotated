@@ -1,91 +1,24 @@
 ---
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Sidebar from '@components/Sidebar.astro';
-import data from '@data/ai_act_structured.json';
+/** Legacy redirect — /recitals/recital-N/ → /en/recitals/recital-N/. */
+import { getRecitals } from '@/lib/loader';
 
 export function getStaticPaths() {
-  return data.recitals.map(r => ({
+  return getRecitals('en').map((r) => ({
     params: { recital: `recital-${r.number}` },
-    props: { recital: r },
+    props: { target: `/en/recitals/recital-${r.number}/` },
   }));
 }
 
-const { recital } = Astro.props;
-
-// Find articles that reference this recital
-const referencingArticles = data.articles.filter(a =>
-  Array.isArray(a.related_recitals) && a.related_recitals.includes(recital.number)
-);
-
-// Prev/next
-const sorted = [...data.recitals].sort((a, b) => a.number - b.number);
-const idx = sorted.findIndex(r => r.number === recital.number);
-const prev = idx > 0 ? sorted[idx - 1] : null;
-const next = idx < sorted.length - 1 ? sorted[idx + 1] : null;
+const { target } = Astro.props;
 ---
-
-<BaseLayout title={`Recital ${recital.number} — EU AI Act Annotated`}>
-  <Sidebar slot="sidebar" activeSection="recitals" />
-
-  <div class="chapter-bar">
-    <h1>Recital {recital.number}</h1>
-  </div>
-
-  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
-    <a href="/" style="color: var(--blue-accent); text-decoration: none;">Home</a>
-    <span style="margin: 0 6px;">/</span>
-    <a href="/recitals/" style="color: var(--blue-accent); text-decoration: none;">Recitals</a>
-    <span style="margin: 0 6px;">/</span>
-    <span>Recital {recital.number}</span>
-  </div>
-
-  <div class="article-block" id={`recital-${recital.number}`}>
-    <div class="article-header" style="background: #e8f0f8; border-left-color: #2563eb;">
-      <div>
-        <span class="article-id" style="color: var(--blue-dark);">Recital {recital.number}</span>
-      </div>
-      <div class="article-badges">
-        <div class="article-tools">
-          <a class="article-tool-btn" href={`/recitals/recital-${recital.number}/`} title="Permalink">&#x1f517;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="article-body">
-      <p style="white-space: pre-wrap; font-size: 15px; line-height: 1.7; color: var(--gray-800);">{recital.text}</p>
-    </div>
-
-    {referencingArticles.length > 0 && (
-      <div style="margin-top: 20px; padding: 16px 20px; background: var(--red-light); border-left: 3px solid var(--red-accent); border-radius: 0 6px 6px 0;">
-        <div style="font-family: var(--sans); font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; font-weight: 700; color: var(--red-accent); margin-bottom: 10px;">
-          Referenced by {referencingArticles.length} article{referencingArticles.length !== 1 ? 's' : ''}
-        </div>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-          {referencingArticles.map(a => (
-            <a href={`/articles/chapter-${a.chapter}/article-${a.number}/`} style="font-family: var(--sans); font-size: 13px; padding: 4px 10px; background: #fff; border: 1px solid var(--gray-300); border-radius: 3px; text-decoration: none; color: var(--red-accent);">
-              Art. {a.number} — <span style="color: var(--gray-600);">{a.title}</span>
-            </a>
-          ))}
-        </div>
-      </div>
-    )}
-  </div>
-
-  <!-- Prev/next navigation -->
-  <nav style="display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 2px solid #111; font-family: var(--sans);">
-    {prev ? (
-      <a href={`/recitals/recital-${prev.number}/`}
-         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; text-decoration: none; color: inherit;">
-        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">&larr; Previous</div>
-        <div style="font-weight: 700; color: var(--blue-dark); font-size: 14px;">Recital {prev.number}</div>
-      </a>
-    ) : <div style="flex: 1;"></div>}
-    {next ? (
-      <a href={`/recitals/recital-${next.number}/`}
-         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-right: 3px solid #2563eb; border-radius: 6px 0 0 6px; text-decoration: none; color: inherit; text-align: right;">
-        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">Next &rarr;</div>
-        <div style="font-weight: 700; color: var(--blue-dark); font-size: 14px;">Recital {next.number}</div>
-      </a>
-    ) : <div style="flex: 1;"></div>}
-  </nav>
-</BaseLayout>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content={`0; url=${target}`} />
+  <link rel="canonical" href={target} />
+  <meta name="robots" content="noindex,follow" />
+  <title>Redirecting…</title>
+</head>
+<body><a href={target}>{target}</a></body>
+</html>

@@ -1,0 +1,127 @@
+---
+/**
+ * /[lang]/history/[version]/amendments/amendment-N/ — per-amendment detail page.
+ *
+ * parliament-2023 only. 771 amendments × 2 langs = 1542 pages, post-4.3c.
+ *
+ * The amendment body_md contains the four-column EUR-Lex layout; we render it
+ * as a fenced code block to preserve column structure.
+ *
+ * Cross-link to the targeted entity's live page (Article N, Recital N, Annex N)
+ * when classify_amendment() identified one.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import {
+  getDraftingAmendmentPagePaths,
+  getDraftingStages,
+  getArticle,
+  getRecital,
+  getAnnex,
+} from '@/lib/loader';
+import type { Lang } from '@/types/aiact';
+
+export const getStaticPaths = getDraftingAmendmentPagePaths;
+
+const { lang, version } = Astro.params as { lang: Lang; version: string; number: string };
+const { snapshot } = Astro.props;
+
+const stages = getDraftingStages(lang);
+const stage = stages.find((s) => s.id === version)!;
+const stageLabel = lang === 'nl' ? stage.label_nl : stage.label_en;
+
+// Resolve cross-link to the live entity targeted by this amendment.
+let targetLink: { href: string; label: string } | null = null;
+if (snapshot.amends_kind === 'article' && snapshot.amends_number) {
+  const a = getArticle(lang, snapshot.amends_number);
+  if (a) {
+    targetLink = {
+      href: `/${lang}/articles/chapter-${a.chapter}/article-${a.number}/`,
+      label: lang === 'nl'
+        ? `Artikel ${a.number} — ${a.title}`
+        : `Article ${a.number} — ${a.title}`,
+    };
+  }
+} else if (snapshot.amends_kind === 'recital' && snapshot.amends_number) {
+  const r = getRecital(lang, snapshot.amends_number);
+  if (r) {
+    targetLink = {
+      href: `/${lang}/recitals/recital-${r.number}/`,
+      label: lang === 'nl' ? `Overweging ${r.number}` : `Recital ${r.number}`,
+    };
+  }
+} else if (snapshot.amends_kind === 'annex' && snapshot.amends_number) {
+  const ax = getAnnex(lang, snapshot.amends_number);
+  if (ax) {
+    targetLink = {
+      href: `/${lang}/annexes/annex-${ax.id.toLowerCase()}/`,
+      label: lang === 'nl'
+        ? `Bijlage ${ax.id} — ${ax.title}`
+        : `Annex ${ax.id} — ${ax.title}`,
+    };
+  }
+}
+
+const altLang: Lang = lang === 'nl' ? 'en' : 'nl';
+const altHref = `/${altLang}/history/${version}/amendments/amendment-${snapshot.number}/`;
+
+const T = lang === 'nl'
+  ? {
+      home: 'Home',
+      history: 'Totstandkomingsgeschiedenis',
+      label: 'Amendement',
+      target: 'Doel',
+      seeFinalText: 'Bekijk de definitieve tekst',
+      altLangLink: 'Engelse versie van dit amendement',
+      pageTitle: `Amendement ${snapshot.number} — ${stageLabel}`,
+    }
+  : {
+      home: 'Home',
+      history: 'Drafting History',
+      label: 'Amendment',
+      target: 'Target',
+      seeFinalText: 'See the final adopted text',
+      altLangLink: 'Dutch version of this amendment',
+      pageTitle: `Amendment ${snapshot.number} — ${stageLabel}`,
+    };
+---
+
+<BaseLayout title={T.pageTitle}>
+  <Sidebar slot="sidebar" lang={lang} activeSection="history" />
+
+  <div class="chapter-bar" style="background: var(--gray-700);">
+    <h1>{T.label} {snapshot.number}</h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{T.home}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/history/`} style="color: var(--blue-accent); text-decoration: none;">{T.history}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/history/${version}/`} style="color: var(--blue-accent); text-decoration: none;">{stageLabel}</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>{T.label} {snapshot.number}</span>
+  </div>
+
+  <div style="font-family: var(--sans); margin-bottom: 20px; padding: 12px 16px; background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 3px solid var(--gray-700); border-radius: 0 6px 6px 0; font-size: 13px; color: var(--gray-700);">
+    <div><strong>{T.target}:</strong> {snapshot.amends_target_text ?? snapshot.title}</div>
+    <div style="margin-top: 4px; font-size: 12px; color: var(--gray-500); font-family: var(--serif); font-style: italic;">{stage.source_label} · {stage.date}</div>
+  </div>
+
+  <div class="article-block">
+    <div class="article-body">
+      <pre style="white-space: pre-wrap; font-family: var(--serif); font-size: 14px; line-height: 1.7; color: var(--gray-800); margin: 0;">{snapshot.text}</pre>
+    </div>
+  </div>
+
+  <div style="margin-top: 32px; padding: 16px 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px; font-family: var(--sans);">
+    {targetLink && (
+      <a href={targetLink.href} style="display: block; padding: 8px 0; color: var(--red-accent); text-decoration: none; font-size: 13px;">
+        &rarr; {T.seeFinalText} — {targetLink.label}
+      </a>
+    )}
+    <a href={altHref} style="display: block; padding: 8px 0; color: var(--gray-500); text-decoration: none; font-size: 13px; font-style: italic;">
+      &rarr; {T.altLangLink}
+    </a>
+  </div>
+</BaseLayout>
