@@ -122,7 +122,28 @@ function switchTab(tabEl) {
   if (panel) panel.classList.add('active');
 }
 
+// Deep-link: pre-select an article-block tab from a URL fragment.
+// Recognised fragments: #recitals, #history, #omnibus, #caselaw, #guidance.
+// Used by the guidance detail page's "Cited articles" sidebar so a click on
+// an article anchor lands the reader on /{lang}/articles/.../article-N/ with
+// the Guidance tab already open. Browser scrolls to an element whose id
+// matches the hash; no element has these tab-name ids, so the page stays
+// at top while the JS activates the tab.
+const TAB_FRAGMENTS = ['recitals', 'history', 'omnibus', 'caselaw', 'guidance'];
+function activateTabFromHash() {
+  const hash = (location.hash || '').replace(/^#/, '');
+  if (!TAB_FRAGMENTS.includes(hash)) return;
+  const tab = document.querySelector('.article-tab[data-tab="' + hash + '"]');
+  if (tab && !tab.classList.contains('active')) {
+    switchTab(tab);
+    tab.scrollIntoView({ behavior: 'auto', block: 'start' });
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  activateTabFromHash();
+  window.addEventListener('hashchange', activateTabFromHash);
+
   document.querySelectorAll('.nav-chapter-header').forEach(header => {
     header.addEventListener('click', () => {
       header.parentElement.classList.toggle('open');
