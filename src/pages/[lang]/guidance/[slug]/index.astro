@@ -243,45 +243,32 @@ const allLangs: Lang[] = ['en', 'nl'];
     </div>
   )}
 
-  <div class="guidance-detail">
-    <aside class="guidance-detail-sidebar">
-      <section class="gd-section">
-        <h3>{t.sb_source}</h3>
-        <div class="gd-meta">{sourceLabel}</div>
-        {externalUrl && (
-          <a class="gd-link" href={externalUrl} target="_blank" rel="noopener">{t.sb_open} ↗</a>
-        )}
-      </section>
-      <section class="gd-section">
-        <h3>{t.sb_adoption}</h3>
-        <div class="gd-meta">{formatDate(doc.adoption_date)}</div>
-      </section>
+  <Fragment slot="about-resource">
+    <div class="rs-section">
+      <h3>{t.sb_source}</h3>
+      <div class="rs-meta">{sourceLabel}</div>
+      {externalUrl && (
+        <a href={externalUrl} target="_blank" rel="noopener">{t.sb_open} ↗</a>
+      )}
+      <div class="rs-meta" style="margin-top: 8px; padding-top: 6px; border-top: 1px solid var(--gray-100);">
+        <strong>{t.sb_adoption}:</strong> {formatDate(doc.adoption_date)}
+      </div>
       {doc.entry_into_force && (
-        <section class="gd-section">
-          <h3>{t.sb_entry}</h3>
-          <div class="gd-meta">{formatDate(doc.entry_into_force)}</div>
-        </section>
+        <div class="rs-meta"><strong>{t.sb_entry}:</strong> {formatDate(doc.entry_into_force)}</div>
       )}
       {doc.end_of_validity && (
-        <section class="gd-section">
-          <h3>{t.sb_validity}</h3>
-          <div class="gd-meta">{formatDate(doc.end_of_validity)}</div>
-        </section>
+        <div class="rs-meta"><strong>{t.sb_validity}:</strong> {formatDate(doc.end_of_validity)}</div>
       )}
       {doc.endorsement_status && (
-        <section class="gd-section">
-          <h3>{t.sb_endorsement}</h3>
-          <div class="gd-meta">{doc.endorsement_status === 'endorsed' ? t.sb_endorsed : t.sb_historical}</div>
-        </section>
+        <div class="rs-meta"><strong>{t.sb_endorsement}:</strong> {doc.endorsement_status === 'endorsed' ? t.sb_endorsed : t.sb_historical}</div>
       )}
       {editorialNote && (
-        <section class="gd-section gd-editorial">
-          <h3>{t.sb_editorial}</h3>
-          <p>{editorialNote}</p>
-        </section>
+        <div class="rs-meta gd-editorial" style="margin-top: 8px; font-style: italic;">{editorialNote}</div>
       )}
-    </aside>
+    </div>
+  </Fragment>
 
+  <div class="guidance-detail">
     <div class="guidance-detail-body">
       <h2 class="guidance-detail-body-h">{t.body_h}</h2>
       {Content ? (
@@ -307,30 +294,8 @@ const allLangs: Lang[] = ['en', 'nl'];
     margin-bottom: 14px;
   }
   .guidance-detail {
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: 28px;
-    align-items: start;
-  }
-  @media (max-width: 900px) {
-    .guidance-detail {
-      grid-template-columns: 1fr;
-    }
-  }
-  .guidance-detail-sidebar {
-    font-family: var(--sans);
-    font-size: 13px;
-    border-right: 1px solid var(--gray-200);
-    padding-right: 18px;
-  }
-  @media (max-width: 900px) {
-    .guidance-detail-sidebar {
-      border-right: none;
-      border-bottom: 1px solid var(--gray-200);
-      padding-right: 0;
-      padding-bottom: 18px;
-      margin-bottom: 18px;
-    }
+    /* Single-column body now that the aside has moved into the right sidebar. */
+    display: block;
   }
   .gd-section {
     margin-bottom: 18px;
