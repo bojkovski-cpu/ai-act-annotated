@@ -253,10 +253,6 @@ const allLangs: Lang[] = ['en', 'nl'];
         )}
       </section>
       <section class="gd-section">
-        <h3>{t.sb_doctype}</h3>
-        <div class="gd-meta">{docTypeLabel}</div>
-      </section>
-      <section class="gd-section">
         <h3>{t.sb_adoption}</h3>
         <div class="gd-meta">{formatDate(doc.adoption_date)}</div>
       </section>
@@ -278,43 +274,12 @@ const allLangs: Lang[] = ['en', 'nl'];
           <div class="gd-meta">{doc.endorsement_status === 'endorsed' ? t.sb_endorsed : t.sb_historical}</div>
         </section>
       )}
-      <section class="gd-section">
-        <h3>{t.sb_lang_avail}</h3>
-        <div class="gd-langs">
-          {allLangs.map(l => (
-            <span class={`gd-lang-chip ${doc.languages.includes(l) ? 'gd-lang-on' : 'gd-lang-off'}`}>
-              {l.toUpperCase()}
-            </span>
-          ))}
-        </div>
-      </section>
       {editorialNote && (
         <section class="gd-section gd-editorial">
           <h3>{t.sb_editorial}</h3>
           <p>{editorialNote}</p>
         </section>
       )}
-      <section class="gd-section">
-        <h3>{t.sb_citations}</h3>
-        <div class="gd-meta">{t.sb_citations_count(citationsCount)}</div>
-      </section>
-      <section class="gd-section">
-        <h3>{t.sb_cited_articles}</h3>
-        {citedArticleEntries.length === 0 ? (
-          <div class="gd-meta gd-meta-muted">{t.sb_cited_none}</div>
-        ) : (
-          <ul class="gd-cited-list">
-            {citedArticleEntries.map(a => (
-              <li>
-                <a href={a.href} class="gd-cited-link">
-                  <span class="gd-cited-num">Art. {a.number}</span>
-                  <span class="gd-cited-title">{a.title}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
     </aside>
 
     <div class="guidance-detail-body">

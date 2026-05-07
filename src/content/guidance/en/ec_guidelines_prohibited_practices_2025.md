@@ -1,7 +1,5 @@
 # Commission Guidelines on prohibited artificial intelligence practices established by Regulation (EU) 2024/1689 (AI Act)
 
-_Intermediate parse — source: ec_guidelines_prohibited_practices_2025 — not for publication._
-
 <!-- Frontmatter (pre-Step 1) — page 1 -->
 
 ## Frontmatter

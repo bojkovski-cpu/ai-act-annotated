@@ -708,8 +708,6 @@ def render_markdown(sections: list[Section], footnotes: dict[int, Footnote], met
     lines: list[str] = []
     lines.append(f"# {meta['title']['en']}")
     lines.append("")
-    lines.append(f"_Intermediate parse — source: {meta['canonical_id']} — not for publication._")
-    lines.append("")
 
     for s in sections:
         if s.id == "frontmatter":
