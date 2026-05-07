@@ -42,5 +42,49 @@
       "nl": "Gids AI-verordening"
     },
     "url": "https://www.rijksoverheid.nl/"
+  },
+  {
+    "adoption_date": "2025-07-29",
+    "body_paths": {
+      "en": "guidance/en/ec_guidelines_prohibited_practices_2025.md",
+      "nl": "guidance/nl/ec_guidelines_prohibited_practices_2025.md"
+    },
+    "by_language": {
+      "en": {
+        "citations_found": 347,
+        "footnote_count": 106,
+        "page_count": 134,
+        "paragraph_count": 254,
+        "section_count": 94,
+        "source_file": "ec_guidelines_prohibited_practices_2025_en.pdf",
+        "source_file_checksum": "sha256:298bf8677884b333fae6d5f84aac947f45a59dff6027ca038ba08615092fd82f"
+      },
+      "nl": {
+        "citations_found": 461,
+        "footnote_count": 112,
+        "page_count": 158,
+        "paragraph_count": 267,
+        "section_count": 93,
+        "source_file": "ec_guidelines_prohibited_practices_2025_nl.pdf",
+        "source_file_checksum": "sha256:8c1e65bdaa31722aac964b9c17503c80ea5fdfc9988e4d46dfc34b2846c5a429"
+      }
+    },
+    "canonical_id": "ec_guidelines_prohibited_practices_2025",
+    "document_type": "guideline",
+    "editorial_note": null,
+    "end_of_validity": null,
+    "endorsement_status": null,
+    "entry_into_force": null,
+    "languages": [
+      "en",
+      "nl"
+    ],
+    "source": "commission",
+    "supersedes": null,
+    "title": {
+      "en": "Commission Guidelines on prohibited artificial intelligence practices established by Regulation (EU) 2024/1689 (AI Act)",
+      "nl": "Richtsnoeren van de Commissie betreffende verboden artificiële-intelligentiepraktijken zoals vastgesteld bij Verordening (EU) 2024/1689 (AI-verordening)"
+    },
+    "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-08/guidelines_on_prohibited_artificial_intelligence_practices_established_by_regulation_eu_20241689_ai_act_english_ied3r5nwo50xggpcfmwckm3nuc_112367-1.PDF"
   }
 ]

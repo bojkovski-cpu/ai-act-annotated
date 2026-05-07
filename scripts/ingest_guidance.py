@@ -133,6 +133,14 @@ def extract_pages(pdf_path: Path) -> list[Page]:
             # Two-pass: first drop running headers, then split body vs footnotes.
             cleaned = [ln for ln in lines if not _RUNNING_HEADER_RE.match(ln)]
 
+            # Trim trailing lone page-number lines (e.g. "15", "126") so the
+            # backward footnote scan below isn't broken by a footer that sits
+            # below the footnote block. The EZ guide didn't have these; the
+            # Commission's Article 96 guidelines do (PDF CoDe layout).
+            footer_lines: list[str] = []
+            while cleaned and re.match(r"^\s*\d{1,4}\s*$", cleaned[-1]):
+                footer_lines.append(cleaned.pop())
+
             # Split body vs footnotes: heuristic — footnotes are a tail block of
             # lines where the first line starts with a footnote number. We look
             # for the LAST contiguous block at the end of the page that matches
@@ -791,6 +799,23 @@ def main() -> int:
     by_lang[args.lang] = per_lang
     final["by_language"] = by_lang
     final["languages"] = sorted(by_lang.keys())
+
+    manifest_path.write_text(
+        json.dumps(final, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+    print(f"[ok] wrote {out_root} (lang={args.lang})")
+    print(
+        f"     pages={len(pages)} sections={len(sections)} "
+        f"footnotes={len(footnotes)} citations={len(refs_payload)} paragraphs={paragraph_count}"
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+sorted(by_lang.keys())
 
     manifest_path.write_text(
         json.dumps(final, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
