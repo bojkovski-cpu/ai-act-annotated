@@ -1,7 +1,5 @@
 # AI Act Guide
 
-_Intermediate parse — source: nl_ez_aiact_guide_2025_v1_1 — not for publication._
-
 <!-- Frontmatter (pre-Step 1) — page 1 -->
 
 ## Frontmatter

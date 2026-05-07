@@ -66,13 +66,15 @@ const xDefaultHref = enAvailable ? enHref : nlHref;
   </main>
 
   <aside class="right-sidebar">
-    <div class="rs-section">
-      <h3>About This Resource</h3>
-      <div class="rs-meta">Regulation (EU) 2024/1689</div>
-      <div class="rs-meta">OJ L, 12.7.2024</div>
-      <div class="rs-meta">Entry into force: 1 August 2024</div>
-      <div class="rs-meta" style="margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--gray-100);">Last updated: April 2026</div>
-    </div>
+    <slot name="about-resource">
+      <div class="rs-section">
+        <h3>About This Resource</h3>
+        <div class="rs-meta">Regulation (EU) 2024/1689</div>
+        <div class="rs-meta">OJ L, 12.7.2024</div>
+        <div class="rs-meta">Entry into force: 1 August 2024</div>
+        <div class="rs-meta" style="margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--gray-100);">Last updated: April 2026</div>
+      </div>
+    </slot>
     <div class="rs-section">
       <h3>Quick Links</h3>
       <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">Full text on EUR-Lex</a>

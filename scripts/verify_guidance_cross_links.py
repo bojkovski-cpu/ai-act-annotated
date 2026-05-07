@@ -263,47 +263,26 @@ class Verifier:
         )
 
     def check_reverse_links(self) -> None:
-        """Guidance detail "Cited articles" sidebar contains every cited article."""
-        expected: Dict[Tuple[str, str], Set[int]] = defaultdict(set)
-        for art_str, entries in self.index.items():
-            try:
-                art_num = int(art_str)
-            except ValueError:
-                continue
-            for e in entries:
-                if isinstance(e, dict):
-                    gid = e.get("guidance_id")
-                    lang = e.get("language")
-                    if gid and lang in LANGS:
-                        expected[(gid, lang)].add(art_num)
+        """Guidance detail "Cited articles" sidebar contains every cited article.
 
-        missing: List[Tuple[str, str, int]] = []
-        checked = 0
-        for (gid, lang), arts in expected.items():
-            page = self._guidance_page_path(lang, gid)
-            if page is None:
-                missing.extend((gid, lang, n) for n in sorted(arts))
-                continue
-            html = self._read_text(page)
-            if html is None:
-                missing.extend((gid, lang, n) for n in sorted(arts))
-                continue
-            for n in arts:
-                checked += 1
-                # The cited-articles sidebar emits anchors of shape
-                # <a class="gd-cited-link" href="/{lang}/articles/chapter-{C}/article-{N}/">
-                # The 5.4 deep-link work appended an optional fragment
-                # (#guidance) so the article page opens with the Guidance tab
-                # pre-selected; the fragment is allowed but not required.
-                if not re.search(
-                    rf'href="/{lang}/articles/chapter-\d+/article-{n}/(?:#[a-z-]+)?"',
-                    html,
-                ):
-                    missing.append((gid, lang, n))
+        DEACTIVATED in step 5.6 v8 (2026-05-07).
+
+        v7 dropped the "Cited articles" aside section from the guidance detail
+        page; v8 dropped the entire .guidance-detail-sidebar. The gd-cited-link
+        anchors this check looks for therefore no longer exist in the rendered
+        HTML — the failure is structural, not a regression.
+
+        Step 5.7 will rebuild this cross-link surface as per-chapter sub-pages
+        with a "References to AI Act" list keyed off the
+        article_references_<lang>.json `location_in_doc.section` field. When
+        that lands, restore the body of this method (or replace it with a check
+        against whatever new anchor shape 5.7 emits) and re-enable the
+        assertion in `check_symmetric_back`.
+        """
         self._add(
             "dist:reverse_links",
-            "PASS" if not missing else "FAIL",
-            f"checked={checked}; missing={len(missing)}; sample={missing[:5]}",
+            "SKIP",
+            "deactivated in 5.6 v8 — feature removed; pending 5.7 per-chapter cross-link rebuild",
         )
 
     def check_symmetric_back(self) -> None:
