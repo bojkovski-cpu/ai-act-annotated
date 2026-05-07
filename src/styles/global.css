@@ -234,6 +234,7 @@ body {
   width: var(--right-sidebar-width);
   padding: 32px 20px 40px 16px;
   border-left: 3px solid #111;
+  background: #fff;
   font-family: var(--sans);
   font-size: 13px;
   position: sticky;
@@ -241,6 +242,7 @@ body {
   height: fit-content;
   max-height: calc(100vh - var(--topbar-height));
   overflow-y: auto;
+  z-index: 1;
 }
 .right-sidebar h3 {
   font-size: 11px; font-weight: 700;
@@ -598,5 +600,8 @@ body {
   text-decoration: none;
 }
 .referenced-by-list a:hover {
+  text-decoration: underline;
+}
+{
   text-decoration: underline;
 }

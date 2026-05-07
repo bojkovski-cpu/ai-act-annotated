@@ -9,7 +9,7 @@
  *
  * UI chrome strings stay English on both locales per the 4.3b decision.
  */
-import { getArticles, getChapters, getRecitals, getAnnexes } from '@/lib/loader';
+import { getArticles, getChapters, getRecitals, getAnnexes, getGuidanceDocs, getGuidanceTitleFor } from '@/lib/loader';
 import type { Lang } from '@/types/aiact';
 
 interface Props {
@@ -19,9 +19,10 @@ interface Props {
   activeRecital?: string;
   activeAnnex?: string;
   activeSection?: 'articles' | 'recitals' | 'annexes' | 'history' | 'guidance' | 'about';
+  activeGuidanceSlug?: string;
 }
 
-const { lang, activeChapter, activeArticle, activeSection = 'articles' } = Astro.props;
+const { lang, activeChapter, activeArticle, activeSection = 'articles', activeGuidanceSlug } = Astro.props;
 
 // Build chapter nav from the loader. Hrefs precomputed in script.
 const allArticles = getArticles(lang);
@@ -70,10 +71,14 @@ const historyHref = '/' + lang + '/history/';
   </div>
 
   <div class="sidebar-sections">
-    <a href={articlesHref} class={`sidebar-section-link${activeSection === 'articles' ? ' active' : ''}`}>Articles <span class="tab-count">{totalArticles}</span></a>
-    <a href={recitalsHref} class={`sidebar-section-link${activeSection === 'recitals' ? ' active' : ''}`}>Recitals <span class="tab-count">{totalRecitals}</span></a>
-    <a href={annexesHref} class={`sidebar-section-link${activeSection === 'annexes' ? ' active' : ''}`}>Annexes <span class="tab-count">{totalAnnexes}</span></a>
-    <a href={historyHref} class={`sidebar-section-link${activeSection === 'history' ? ' active' : ''}`}>Drafting History</a>
+    {activeSection === 'guidance' ? (
+      <a href={articlesHref} class="sidebar-section-link">← AI Act regulation</a>
+    ) : (<>
+      <a href={articlesHref} class={`sidebar-section-link${activeSection === 'articles' ? ' active' : ''}`}>Articles <span class="tab-count">{totalArticles}</span></a>
+      <a href={recitalsHref} class={`sidebar-section-link${activeSection === 'recitals' ? ' active' : ''}`}>Recitals <span class="tab-count">{totalRecitals}</span></a>
+      <a href={annexesHref} class={`sidebar-section-link${activeSection === 'annexes' ? ' active' : ''}`}>Annexes <span class="tab-count">{totalAnnexes}</span></a>
+      <a href={historyHref} class={`sidebar-section-link${activeSection === 'history' ? ' active' : ''}`}>Drafting History</a>
+    </>)}
   </div>
 
   {activeSection === 'articles' && (
@@ -127,5 +132,39 @@ const historyHref = '/' + lang + '/history/';
       <a href={`${historyHref}parliament-2023/`} style="color: var(--blue-accent); text-decoration: none; display: block; padding: 4px 0;">Parliament Mandate (2023)</a>
       {/* final-2024 deliberately omitted — see step-4.4-completion-notes.md §2 (Q B). The "Final Adopted Text" card is rendered per-page from the live regulation. */}
     </div>
+  )}
+
+  {activeSection === 'guidance' && (
+    <>
+      {getGuidanceDocs().map(doc => {
+        const isActive = doc.canonical_id === activeGuidanceSlug;
+        const titleResolved = getGuidanceTitleFor(doc, lang);
+        const docHref = `/${lang}/guidance/${doc.canonical_id}/`;
+        const chapters = (doc.chapters && doc.chapters[lang]) || [];
+        const sourceLabel = doc.source === 'commission' ? 'Commission'
+          : doc.source === 'ai_office' ? 'AI Office'
+          : doc.source === 'edpb' ? 'EDPB'
+          : doc.source === 'member_state' ? 'Member State'
+          : 'Other';
+        return (
+          <div class={`nav-chapter${isActive ? ' open' : ''}`}>
+            <div class={`nav-chapter-header${isActive ? ' active' : ''}`}>
+              <div class="nav-toggle">&#x25b8;</div>
+              <div>
+                <a href={docHref} class="nav-chapter-title" style="color: inherit; text-decoration: none;">{titleResolved.value}</a>
+                <span class="nav-chapter-subtitle">{sourceLabel}{chapters.length ? ` · ${chapters.length} chapters` : ''}</span>
+              </div>
+            </div>
+            {chapters.length > 0 && (
+              <div class="nav-articles">
+                {chapters.map(ch => (
+                  <a class="nav-article-link" href={`${docHref}#${ch.anchor}`}>{ch.title}</a>
+                ))}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </>
   )}
 </nav>

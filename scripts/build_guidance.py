@@ -109,6 +109,7 @@ deployable tree).
 from __future__ import annotations
 
 import argparse
+import re
 import json
 import shutil
 import sys
@@ -120,6 +121,38 @@ from typing import Any
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT_DEFAULT = SCRIPT_DIR.parent
 INTERMEDIATE_DEFAULT = REPO_ROOT_DEFAULT.parent / "guidance-intermediate"
+
+
+# ─── Slug helper (mirrors rehype-slug / github-slugger output) ─────────
+
+_CHAPTER_HEADING_RE = re.compile(r"^##\s+((?:(?:Step|Stap)\s+)?\d+\.\s+.+?)\s*$")
+
+def github_slug(text: str) -> str:
+    """Mirror github-slugger: lowercase, strip ASCII punctuation, spaces → '-'.
+    Em-dashes/ellipses become nothing, surrounding spaces collapse to hyphens
+    (which can produce '--' runs — that matches what rehype-slug emits)."""
+    s = text.lower()
+    # Keep word chars, whitespace, and existing hyphens; strip everything else.
+    s = re.sub(r"[^\w\s-]", "", s, flags=re.UNICODE)
+    s = re.sub(r"\s+", "-", s.strip())
+    return s
+
+
+def extract_chapter_outline(md_path: Path) -> list[dict[str, str]]:
+    """Return a list of {title, anchor} for chapter-level (## N.) headings.
+    Skips ## Frontmatter and ## Footnotes."""
+    out: list[dict[str, str]] = []
+    try:
+        text = md_path.read_text(encoding="utf-8")
+    except OSError:
+        return out
+    for line in text.split("\n"):
+        m = _CHAPTER_HEADING_RE.match(line)
+        if not m:
+            continue
+        title = m.group(1).strip()
+        out.append({"title": title, "anchor": github_slug(title)})
+    return out
 
 
 def parse_args() -> argparse.Namespace:
@@ -198,6 +231,7 @@ def process_manifest(
     refs_dir = doc_dir / "references"
 
     body_paths: dict[str, str | None] = {"en": None, "nl": None}
+    chapters: dict[str, list[dict[str, str]]] = {"en": [], "nl": []}
     citations: list[tuple[str, dict[str, Any]]] = []
 
     for lang in languages:
@@ -216,6 +250,9 @@ def process_manifest(
         shutil.copyfile(body_src, body_dst_abs)
         # Path is stored relative to src/content/ for use by the loader.
         body_paths[lang] = str(body_dst_rel).replace("\\", "/")
+
+        # Extract chapter outline (## N. headings) for the guidance sidebar.
+        chapters[lang] = extract_chapter_outline(body_src)
 
         # 3. Validate references file exists.
         refs_path = refs_dir / f"article_references_{lang}.json"
@@ -263,6 +300,7 @@ def process_manifest(
         "by_language": manifest.get("by_language") or {},
         "url": manifest.get("url"),
         "body_paths": body_paths,
+        "chapters": chapters,
         "editorial_note": manifest.get("editorial_note"),
     }
 

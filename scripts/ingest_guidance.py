@@ -165,6 +165,66 @@ def extract_pages(pdf_path: Path) -> list[Page]:
             body = cleaned[:split_idx]
             footnotes = cleaned[split_idx:]
 
+            # TOC pre-pass: drop TOC entries from body.
+            # If the page has 3+ TOC-leader lines (lines ending with `.... <N>`),
+            # treat the span between the first and last leader as TOC and drop
+            # everything in that span — which sweeps up wrapped continuations,
+            # bare page-number leftovers (like a lone "64" between TOC entries
+            # for a wrapped chapter-5 heading), and other TOC artifacts that the
+            # per-line regex can't catch.
+            toc_idxs: set[int] = set()
+            n = len(body)
+            leader_idxs = [k for k, ln in enumerate(body) if _TOC_LEADER_RE.search(ln)]
+            if len(leader_idxs) >= 1:
+                lo, hi = leader_idxs[0], leader_idxs[-1]
+                for k in range(lo, hi + 1):
+                    toc_idxs.add(k)
+                # Extend forward across any trailing wrap continuations / bare
+                # page-number lines / Roman-numeral dividers.
+                m = hi + 1
+                while m < n:
+                    s = body[m].strip()
+                    if not s:
+                        m += 1
+                        continue
+                    if re.match(r"^[IVXLCDM]{1,5}$", s):
+                        toc_idxs.add(m); m += 1; continue
+                    if re.match(r"^\d{1,4}\s*$", s):
+                        toc_idxs.add(m); m += 1; continue
+                    # Wrapped TOC continuation: short heading-like line that
+                    # ends without a sentence-final marker.
+                    if (
+                        len(s) <= 100
+                        and re.match(r"^\d+(?:\.\d+)*\.?\s+", s)
+                        and not s.rstrip().endswith((".", ":", "?", "!"))
+                    ):
+                        toc_idxs.add(m); m += 1; continue
+                    break
+                # Extend backward similarly.
+                m = lo - 1
+                while m >= 0:
+                    s = body[m].strip()
+                    if not s:
+                        m -= 1
+                        continue
+                    if re.match(r"^[IVXLCDM]{1,5}$", s):
+                        toc_idxs.add(m); m -= 1; continue
+                    if re.match(r"^\d{1,4}\s*$", s):
+                        toc_idxs.add(m); m -= 1; continue
+                    if (
+                        len(s) <= 100
+                        and re.match(r"^\d+(?:\.\d+)*\.?\s+", s)
+                        and not s.rstrip().endswith((".", ":", "?", "!"))
+                    ):
+                        toc_idxs.add(m); m -= 1; continue
+                    break
+            # Standalone Roman-numeral page-section dividers anywhere on the
+            # page (e.g. "IV" alone) are page chrome — drop.
+            for idx, ln in enumerate(body):
+                if re.match(r"^[IVXLCDM]{1,5}$", ln.strip()):
+                    toc_idxs.add(idx)
+            body = [ln for idx, ln in enumerate(body) if idx not in toc_idxs]
+
             pages.append(Page(number=i, lines=body, footnote_lines=footnotes))
     return pages
 

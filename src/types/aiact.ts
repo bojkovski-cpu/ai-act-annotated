@@ -327,6 +327,10 @@ export interface GuidanceDoc {
   by_language: Record<string, GuidanceLanguageBlock>;
   url: string | BilingualText;
   body_paths: Record<Lang, string | null>;
+  // Doc-internal chapter outline per language, populated by build_guidance.py
+  // from the parsed body's `## N. …` headings (skipping Frontmatter/Footnotes).
+  // Drives the doc-specific left-sidebar nav on /{lang}/guidance/<slug>/.
+  chapters?: Record<Lang, Array<{ title: string; anchor: string }>>;
   editorial_note: BilingualText | null;
 }
 

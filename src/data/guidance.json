@@ -26,6 +26,44 @@
       }
     },
     "canonical_id": "nl_ez_aiact_guide_2025_v1_1",
+    "chapters": {
+      "en": [
+        {
+          "anchor": "step-1-risk-is-our-ai-system-covered-by-one-of-the-risk-categories",
+          "title": "Step 1. (Risk) Is our (AI) system covered by one of the risk categories?"
+        },
+        {
+          "anchor": "step-2-is-our-system-ai-classified-according-to-the-ai-act",
+          "title": "Step 2. Is our system 'AI' classified according to the AI Act?"
+        },
+        {
+          "anchor": "step-3-are-we-the-provider-or-deployer-of-the-ai-system",
+          "title": "Step 3. Are we the provider or deployer of the AI system?"
+        },
+        {
+          "anchor": "step-4-what-obligations-must-we-comply-with",
+          "title": "Step 4. What obligations must we comply with?"
+        }
+      ],
+      "nl": [
+        {
+          "anchor": "stap-1-risico-valt-ons-ai-systeem-binnen",
+          "title": "Stap 1. (Risico) Valt ons (AI-)systeem binnen"
+        },
+        {
+          "anchor": "stap-2-is-ons-systeem-ai-volgens-de-ai-verordening",
+          "title": "Stap 2. Is ons systeem 'AI' volgens de AI-verordening?"
+        },
+        {
+          "anchor": "stap-3-zijn-wij-de-aanbieder-of-gebruiks--verantwoordelijke-van-het-ai-systeem",
+          "title": "Stap 3. Zijn wij de aanbieder of gebruiks- verantwoordelijke van het AI-systeem?"
+        },
+        {
+          "anchor": "stap-4-aan-welke-verplichtingen-moeten-wij-ons-houden",
+          "title": "Stap 4. Aan welke verplichtingen moeten wij ons houden?"
+        }
+      ]
+    },
     "document_type": "guide",
     "editorial_note": null,
     "end_of_validity": null,
@@ -51,25 +89,127 @@
     },
     "by_language": {
       "en": {
-        "citations_found": 347,
+        "citations_found": 336,
         "footnote_count": 106,
         "page_count": 134,
-        "paragraph_count": 234,
+        "paragraph_count": 224,
         "section_count": 60,
         "source_file": "ec_guidelines_prohibited_practices_2025_en.pdf",
         "source_file_checksum": "sha256:298bf8677884b333fae6d5f84aac947f45a59dff6027ca038ba08615092fd82f"
       },
       "nl": {
-        "citations_found": 461,
+        "citations_found": 452,
         "footnote_count": 112,
         "page_count": 158,
-        "paragraph_count": 245,
+        "paragraph_count": 234,
         "section_count": 59,
         "source_file": "ec_guidelines_prohibited_practices_2025_nl.pdf",
         "source_file_checksum": "sha256:8c1e65bdaa31722aac964b9c17503c80ea5fdfc9988e4d46dfc34b2846c5a429"
       }
     },
     "canonical_id": "ec_guidelines_prohibited_practices_2025",
+    "chapters": {
+      "en": [
+        {
+          "anchor": "1-background-and-objectives",
+          "title": "1. BACKGROUND AND OBJECTIVES"
+        },
+        {
+          "anchor": "2-overview-of-prohibited-ai-practices",
+          "title": "2. OVERVIEW OF PROHIBITED AI PRACTICES"
+        },
+        {
+          "anchor": "3-article-51a-and-b-ai-act---harmful-manipulation-deception-and-exploitation",
+          "title": "3. ARTICLE 5(1)(A) AND (B) AI ACT - HARMFUL MANIPULATION DECEPTION AND EXPLOITATION"
+        },
+        {
+          "anchor": "4-article-51c-ai-act---social-scoring",
+          "title": "4. ARTICLE 5(1)(C) AI ACT - SOCIAL SCORING"
+        },
+        {
+          "anchor": "5-article-51d-ai-act---individual-risk-assessment-and-prediction-of-criminal-offences",
+          "title": "5. ARTICLE 5(1)(D) AI ACT - INDIVIDUAL RISK ASSESSMENT AND PREDICTION OF CRIMINAL OFFENCES"
+        },
+        {
+          "anchor": "6-article-51e-ai-act---untargeted-scraping-of-facial-images",
+          "title": "6. ARTICLE 5(1)(E) AI ACT - UNTARGETED SCRAPING OF FACIAL IMAGES"
+        },
+        {
+          "anchor": "7-article-51f-ai-act-emotion-recognition",
+          "title": "7. ARTICLE 5(1)(F) AI ACT EMOTION RECOGNITION"
+        },
+        {
+          "anchor": "8-article-51g-ai-act-biometric-categorisation-for-certain",
+          "title": "8. ARTICLE 5(1)(G) AI ACT: BIOMETRIC CATEGORISATION FOR CERTAIN"
+        },
+        {
+          "anchor": "9-article-51h-ai-act---real-time-remote-biometric-identification-rbi-systems-for-law-enforcement-purposes",
+          "title": "9. ARTICLE 5(1)(H) AI ACT - REAL-TIME REMOTE BIOMETRIC IDENTIFICATION (RBI) SYSTEMS FOR LAW ENFORCEMENT PURPOSES"
+        },
+        {
+          "anchor": "10-safeguards-and-conditions-for-the-exceptions-article-52-",
+          "title": "10. SAFEGUARDS AND CONDITIONS FOR THE EXCEPTIONS (ARTICLE 5(2)-"
+        },
+        {
+          "anchor": "11-entry-into-application",
+          "title": "11. ENTRY INTO APPLICATION"
+        },
+        {
+          "anchor": "12-review-and-update-of-the-commission-guidelines",
+          "title": "12. REVIEW AND UPDATE OF THE COMMISSION GUIDELINES"
+        }
+      ],
+      "nl": [
+        {
+          "anchor": "1-achtergrond-en-doelstellingen",
+          "title": "1. ACHTERGROND EN DOELSTELLINGEN"
+        },
+        {
+          "anchor": "2-overzicht-van-verboden-ai-praktijken",
+          "title": "2. OVERZICHT VAN VERBODEN AI-PRAKTIJKEN"
+        },
+        {
+          "anchor": "3-artikel-5-lid-1-punten-a-en-b-van-de-ai-verordening-schadelijke-manipulatie-misleiding-en-uitbuiting",
+          "title": "3. ARTIKEL 5, LID 1, PUNTEN A) EN B), VAN DE AI-VERORDENING — SCHADELIJKE MANIPULATIE, MISLEIDING EN UITBUITING"
+        },
+        {
+          "anchor": "4-artikel-5-lid-1-punt-c-van-de-ai-verordening-social-scoring",
+          "title": "4. ARTIKEL 5, LID 1, PUNT C), VAN DE AI-VERORDENING — SOCIAL SCORING"
+        },
+        {
+          "anchor": "5-artikel-5-lid-1-punt-d-van-de-ai-verordening-individuele-risicobeoordeling-en-voorspelling-van-strafbare-feiten",
+          "title": "5. ARTIKEL 5, LID 1, PUNT D), VAN DE AI-VERORDENING — INDIVIDUELE RISICOBEOORDELING EN VOORSPELLING VAN STRAFBARE FEITEN"
+        },
+        {
+          "anchor": "6-artikel-5-lid-1-punt-e-van-de-ai-verordening-ongerichte-scraping-van-gezichtsafbeeldingen",
+          "title": "6. ARTIKEL 5, LID 1, PUNT E), VAN DE AI-VERORDENING — ONGERICHTE SCRAPING VAN GEZICHTSAFBEELDINGEN"
+        },
+        {
+          "anchor": "7-artikel-5-lid-1-punt-f-van-de-ai-verordening-emotieherkenning",
+          "title": "7. ARTIKEL 5, LID 1, PUNT F), VAN DE AI-VERORDENING — EMOTIEHERKENNING"
+        },
+        {
+          "anchor": "8-artikel-5-lid-1-punt-g-van-de-ai-verordening-biometrische-categorisering-op-basis-van-bepaalde",
+          "title": "8. ARTIKEL 5, LID 1, PUNT G), VAN DE AI-VERORDENING — BIOMETRISCHE CATEGORISERING OP BASIS VAN BEPAALDE"
+        },
+        {
+          "anchor": "9-artikel-5-lid-1-punt-h-van-de-ai-verordening-systemen-voor-biometrische-identificatie-op-afstand-rbi-in-real",
+          "title": "9. ARTIKEL 5, LID 1, PUNT H), VAN DE AI-VERORDENING — SYSTEMEN VOOR BIOMETRISCHE IDENTIFICATIE OP AFSTAND (RBI) IN REAL"
+        },
+        {
+          "anchor": "10-waarborgen-en-voorwaarden-voor-de-uitzonderingen",
+          "title": "10. WAARBORGEN EN VOORWAARDEN VOOR DE UITZONDERINGEN"
+        },
+        {
+          "anchor": "11-datum-van-toepassing",
+          "title": "11. DATUM VAN TOEPASSING"
+        },
+        {
+          "anchor": "12-evaluatie-en-actualisering-van-de-richtsnoeren-van-de-commissie",
+          "title": "12. EVALUATIE EN ACTUALISERING VAN DE RICHTSNOEREN VAN DE COMMISSIE"
+        }
+      ]
+    },
     "document_type": "guideline",
     "editorial_note": null,
     "end_of_validity": null,

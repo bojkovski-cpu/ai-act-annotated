@@ -223,7 +223,7 @@ const allLangs: Lang[] = ['en', 'nl'];
   activeTopNav="guidance"
   availableLangs={doc.languages}
 >
-  <Sidebar slot="sidebar" lang={lang} activeSection="guidance" />
+  <Sidebar slot="sidebar" lang={lang} activeSection="guidance" activeGuidanceSlug={slug} />
 
   <div class="chapter-bar">
     <h1>{titleResolved.value}</h1>
