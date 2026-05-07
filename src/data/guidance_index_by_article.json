@@ -6,7 +6,7 @@
       "location_in_doc": {
         "footnote": 2,
         "page": 6,
-        "section": "10.8"
+        "section": "1"
       },
       "pin_cite": {
         "letter": null,
@@ -36,7 +36,7 @@
       "location_in_doc": {
         "footnote": 2,
         "page": 7,
-        "section": "10.8"
+        "section": "1"
       },
       "pin_cite": {
         "letter": null,
@@ -113,7 +113,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 8,
-        "section": "10.8"
+        "section": "2"
       },
       "pin_cite": {
         "letter": null,
@@ -267,7 +267,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 8,
-        "section": "10.8"
+        "section": "2"
       },
       "pin_cite": {
         "letter": null,
@@ -312,7 +312,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 114,
-        "section": "8.4"
+        "section": "9"
       },
       "pin_cite": {
         "letter": null,
@@ -327,7 +327,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 114,
-        "section": "8.4"
+        "section": "9"
       },
       "pin_cite": {
         "letter": null,
@@ -374,7 +374,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 133,
-        "section": "10.8"
+        "section": "12"
       },
       "pin_cite": {
         "letter": null,
@@ -389,7 +389,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 133,
-        "section": "10.8"
+        "section": "12"
       },
       "pin_cite": {
         "letter": null,
@@ -404,7 +404,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 157,
-        "section": "10.8"
+        "section": "11"
       },
       "pin_cite": {
         "letter": null,
@@ -421,7 +421,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 133,
-        "section": "10.8"
+        "section": "12"
       },
       "pin_cite": {
         "letter": null,
@@ -436,7 +436,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 133,
-        "section": "10.8"
+        "section": "12"
       },
       "pin_cite": {
         "letter": "a",
@@ -451,7 +451,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 157,
-        "section": "10.8"
+        "section": "11"
       },
       "pin_cite": {
         "letter": null,
@@ -466,7 +466,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 157,
-        "section": "10.8"
+        "section": "11"
       },
       "pin_cite": {
         "letter": null,
@@ -543,7 +543,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 8,
-        "section": "10.8"
+        "section": "2"
       },
       "pin_cite": {
         "letter": null,
@@ -1821,7 +1821,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 8,
-        "section": "10.8"
+        "section": "2"
       },
       "pin_cite": {
         "letter": null,
@@ -1853,7 +1853,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 8,
-        "section": "10.8"
+        "section": "2"
       },
       "pin_cite": {
         "letter": null,
@@ -1900,7 +1900,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 8,
-        "section": "10.8"
+        "section": "2"
       },
       "pin_cite": {
         "letter": null,
@@ -3993,6 +3993,21 @@
       "language": "en",
       "location_in_doc": {
         "footnote": null,
+        "page": 6,
+        "section": "1"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": null,
+        "raw": "Article 5",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "en",
+      "location_in_doc": {
+        "footnote": null,
         "page": 111,
         "section": "10.1"
       },
@@ -4623,51 +4638,6 @@
       "language": "en",
       "location_in_doc": {
         "footnote": null,
-        "page": 5,
-        "section": "10.8"
-      },
-      "pin_cite": {
-        "letter": "h",
-        "paragraph": "1",
-        "raw": "Article 5(1)(h)",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "en",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 5,
-        "section": "10.8"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": "2",
-        "raw": "Article 5(2)",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "en",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 6,
-        "section": "10.8"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": null,
-        "raw": "Article 5",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "en",
-      "location_in_doc": {
-        "footnote": null,
         "page": 132,
         "section": "10.8"
       },
@@ -4684,7 +4654,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 133,
-        "section": "10.8"
+        "section": "12"
       },
       "pin_cite": {
         "letter": null,
@@ -4699,7 +4669,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 133,
-        "section": "10.8"
+        "section": "12"
       },
       "pin_cite": {
         "letter": "h",
@@ -5373,51 +5343,6 @@
       "language": "en",
       "location_in_doc": {
         "footnote": null,
-        "page": 2,
-        "section": "3.4"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": null,
-        "raw": "Article 5",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "en",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 2,
-        "section": "3.4"
-      },
-      "pin_cite": {
-        "letter": "a",
-        "paragraph": "1",
-        "raw": "Article 5(1)(a)",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "en",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 2,
-        "section": "3.4"
-      },
-      "pin_cite": {
-        "letter": "b",
-        "paragraph": "1",
-        "raw": "Article 5(1)(b)",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "en",
-      "location_in_doc": {
-        "footnote": null,
         "page": 45,
         "section": "3.4"
       },
@@ -6034,7 +5959,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 66,
-        "section": "4.4"
+        "section": "5"
       },
       "pin_cite": {
         "letter": "D",
@@ -6049,7 +5974,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 66,
-        "section": "4.4"
+        "section": "5"
       },
       "pin_cite": {
         "letter": "c",
@@ -6235,51 +6160,6 @@
         "letter": "d",
         "paragraph": "1",
         "raw": "Article 5(1)(d)",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "en",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 3,
-        "section": "6.2"
-      },
-      "pin_cite": {
-        "letter": "c",
-        "paragraph": "1",
-        "raw": "Article 5(1)(c)",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "en",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 3,
-        "section": "6.2"
-      },
-      "pin_cite": {
-        "letter": "d",
-        "paragraph": "1",
-        "raw": "Article 5(1)(d)",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "en",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 3,
-        "section": "6.2"
-      },
-      "pin_cite": {
-        "letter": "e",
-        "paragraph": "1",
-        "raw": "Article 5(1)(e)",
         "subparagraph": null
       }
     },
@@ -6828,51 +6708,6 @@
       "language": "en",
       "location_in_doc": {
         "footnote": null,
-        "page": 4,
-        "section": "9.3"
-      },
-      "pin_cite": {
-        "letter": "f",
-        "paragraph": "1",
-        "raw": "Article 5(1)(f)",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "en",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 4,
-        "section": "9.3"
-      },
-      "pin_cite": {
-        "letter": "g",
-        "paragraph": "1",
-        "raw": "Article 5(1)(g)",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "en",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 4,
-        "section": "9.3"
-      },
-      "pin_cite": {
-        "letter": "h",
-        "paragraph": "1",
-        "raw": "Article 5(1)(h)",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "en",
-      "location_in_doc": {
-        "footnote": null,
         "page": 104,
         "section": "9.3"
       },
@@ -7045,6 +6880,186 @@
         "letter": "h",
         "paragraph": "1",
         "raw": "Article 5(1)(h)",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "en",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 2,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": null,
+        "raw": "Article 5",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "en",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 2,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": "a",
+        "paragraph": "1",
+        "raw": "Article 5(1)(a)",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "en",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 2,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": "b",
+        "paragraph": "1",
+        "raw": "Article 5(1)(b)",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "en",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 3,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": "c",
+        "paragraph": "1",
+        "raw": "Article 5(1)(c)",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "en",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 3,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": "d",
+        "paragraph": "1",
+        "raw": "Article 5(1)(d)",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "en",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 3,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": "e",
+        "paragraph": "1",
+        "raw": "Article 5(1)(e)",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "en",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 4,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": "f",
+        "paragraph": "1",
+        "raw": "Article 5(1)(f)",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "en",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 4,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": "g",
+        "paragraph": "1",
+        "raw": "Article 5(1)(g)",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "en",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 4,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": "h",
+        "paragraph": "1",
+        "raw": "Article 5(1)(h)",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "en",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 5,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": "h",
+        "paragraph": "1",
+        "raw": "Article 5(1)(h)",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "en",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 5,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": "2",
+        "raw": "Article 5(2)",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "nl",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 7,
+        "section": "1"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": null,
+        "raw": "artikel 5",
         "subparagraph": null
       }
     },
@@ -7983,81 +7998,6 @@
       "language": "nl",
       "location_in_doc": {
         "footnote": null,
-        "page": 5,
-        "section": "10.8"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": null,
-        "raw": "artikel 5",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "nl",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 5,
-        "section": "10.8"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": "1",
-        "raw": "artikel 5, lid 1",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "nl",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 5,
-        "section": "10.8"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": "2",
-        "raw": "artikel 5, lid 2",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "nl",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 7,
-        "section": "10.8"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": null,
-        "raw": "artikel 5",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "nl",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 8,
-        "section": "10.8"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": null,
-        "raw": "artikel 5",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "nl",
-      "location_in_doc": {
-        "footnote": null,
         "page": 156,
         "section": "10.8"
       },
@@ -8074,7 +8014,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 157,
-        "section": "10.8"
+        "section": "11"
       },
       "pin_cite": {
         "letter": null,
@@ -8089,7 +8029,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 157,
-        "section": "10.8"
+        "section": "11"
       },
       "pin_cite": {
         "letter": null,
@@ -8104,7 +8044,22 @@
       "location_in_doc": {
         "footnote": null,
         "page": 158,
-        "section": "10.8"
+        "section": "12"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": null,
+        "raw": "artikel 5",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "nl",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 8,
+        "section": "2"
       },
       "pin_cite": {
         "letter": null,
@@ -8988,36 +8943,6 @@
       "language": "nl",
       "location_in_doc": {
         "footnote": null,
-        "page": 2,
-        "section": "3.3"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": "1",
-        "raw": "Artikel 5, lid 1",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "nl",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 2,
-        "section": "3.3"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": null,
-        "raw": "artikel 5",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "nl",
-      "location_in_doc": {
-        "footnote": null,
         "page": 43,
         "section": "3.3"
       },
@@ -10039,7 +9964,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 79,
-        "section": "4.4"
+        "section": "5"
       },
       "pin_cite": {
         "letter": null,
@@ -10054,7 +9979,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 79,
-        "section": "4.4"
+        "section": "5"
       },
       "pin_cite": {
         "letter": null,
@@ -10069,7 +9994,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 79,
-        "section": "4.4"
+        "section": "5"
       },
       "pin_cite": {
         "letter": null,
@@ -10280,36 +10205,6 @@
         "footnote": null,
         "page": 87,
         "section": "5.2"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": "1",
-        "raw": "artikel 5, lid 1",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "nl",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 3,
-        "section": "5.3"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": null,
-        "raw": "artikel 5",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "nl",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 3,
-        "section": "5.3"
       },
       "pin_cite": {
         "letter": null,
@@ -11014,7 +10909,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 114,
-        "section": "8.4"
+        "section": "9"
       },
       "pin_cite": {
         "letter": null,
@@ -11029,7 +10924,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 114,
-        "section": "8.4"
+        "section": "9"
       },
       "pin_cite": {
         "letter": null,
@@ -11044,42 +10939,12 @@
       "location_in_doc": {
         "footnote": null,
         "page": 114,
-        "section": "8.4"
+        "section": "9"
       },
       "pin_cite": {
         "letter": null,
         "paragraph": "5",
         "raw": "artikel 5, lid 5",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "nl",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 4,
-        "section": "9.2"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": null,
-        "raw": "Artikel 5",
-        "subparagraph": null
-      }
-    },
-    {
-      "guidance_id": "ec_guidelines_prohibited_practices_2025",
-      "language": "nl",
-      "location_in_doc": {
-        "footnote": null,
-        "page": 4,
-        "section": "9.2"
-      },
-      "pin_cite": {
-        "letter": null,
-        "paragraph": "1",
-        "raw": "Artikel 5, lid 1",
         "subparagraph": null
       }
     },
@@ -11534,6 +11399,141 @@
       }
     },
     {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "nl",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 2,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": "1",
+        "raw": "Artikel 5, lid 1",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "nl",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 2,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": null,
+        "raw": "artikel 5",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "nl",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 3,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": null,
+        "raw": "artikel 5",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "nl",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 3,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": "1",
+        "raw": "artikel 5, lid 1",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "nl",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 4,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": null,
+        "raw": "Artikel 5",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "nl",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 4,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": "1",
+        "raw": "Artikel 5, lid 1",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "nl",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 5,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": null,
+        "raw": "artikel 5",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "nl",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 5,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": "1",
+        "raw": "artikel 5, lid 1",
+        "subparagraph": null
+      }
+    },
+    {
+      "guidance_id": "ec_guidelines_prohibited_practices_2025",
+      "language": "nl",
+      "location_in_doc": {
+        "footnote": null,
+        "page": 5,
+        "section": "frontmatter"
+      },
+      "pin_cite": {
+        "letter": null,
+        "paragraph": "2",
+        "raw": "artikel 5, lid 2",
+        "subparagraph": null
+      }
+    },
+    {
       "guidance_id": "nl_ez_aiact_guide_2025_v1_1",
       "language": "en",
       "location_in_doc": {
@@ -11631,7 +11631,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 6,
-        "section": "10.8"
+        "section": "1"
       },
       "pin_cite": {
         "letter": null,
@@ -11796,7 +11796,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 7,
-        "section": "10.8"
+        "section": "1"
       },
       "pin_cite": {
         "letter": null,
@@ -12379,8 +12379,8 @@
       "language": "en",
       "location_in_doc": {
         "footnote": null,
-        "page": 130,
-        "section": "10.7"
+        "page": 6,
+        "section": "1"
       },
       "pin_cite": {
         "letter": null,
@@ -12394,8 +12394,8 @@
       "language": "en",
       "location_in_doc": {
         "footnote": null,
-        "page": 6,
-        "section": "10.8"
+        "page": 130,
+        "section": "10.7"
       },
       "pin_cite": {
         "letter": null,
@@ -12514,8 +12514,8 @@
       "language": "nl",
       "location_in_doc": {
         "footnote": null,
-        "page": 154,
-        "section": "10.7"
+        "page": 7,
+        "section": "1"
       },
       "pin_cite": {
         "letter": null,
@@ -12529,8 +12529,8 @@
       "language": "nl",
       "location_in_doc": {
         "footnote": null,
-        "page": 7,
-        "section": "10.8"
+        "page": 154,
+        "section": "10.7"
       },
       "pin_cite": {
         "letter": null,
@@ -12960,7 +12960,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 8,
-        "section": "10.8"
+        "section": "2"
       },
       "pin_cite": {
         "letter": null,
@@ -13259,7 +13259,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 8,
-        "section": "10.8"
+        "section": "2"
       },
       "pin_cite": {
         "letter": null,
@@ -13494,7 +13494,7 @@
       "location_in_doc": {
         "footnote": 3,
         "page": 7,
-        "section": "10.8"
+        "section": "1"
       },
       "pin_cite": {
         "letter": null,
@@ -13511,7 +13511,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 6,
-        "section": "10.8"
+        "section": "1"
       },
       "pin_cite": {
         "letter": "b",
@@ -13526,7 +13526,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 7,
-        "section": "10.8"
+        "section": "1"
       },
       "pin_cite": {
         "letter": null,
@@ -13541,7 +13541,7 @@
       "location_in_doc": {
         "footnote": null,
         "page": 7,
-        "section": "10.8"
+        "section": "1"
       },
       "pin_cite": {
         "letter": null,

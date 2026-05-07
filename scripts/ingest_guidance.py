@@ -178,6 +178,15 @@ _STEP_HEADING_RE = re.compile(r"^(?:Step|Stap)\s+(\d+)\.\s+(.+?)\s*$")
 _STEP_LABEL_BY_LANG = {"en": "Step", "nl": "Stap"}
 # Sub-section heading like "1.3. General purpose AI models and AI systems"
 _SUBSECTION_RE = re.compile(r"^(\d+\.\d+)\.\s+(.+?)\s*$")
+# Top-level chapter heading: "1. BACKGROUND AND OBJECTIVES", "3. ARTICLE 5(1)(A) AND (B)…"
+# Used for Commission Article 96 guidelines (and similar EU-institution layouts) which use
+# ALL-CAPS chapter titles. Matches a single-digit (or two-digit, 10–99) prefix, period,
+# then a string that is at least 70% uppercase letters. Restrictive enough to avoid
+# matching numbered list items in body ("1. The following AI practices…").
+_CHAPTER_HEADING_RE = re.compile(r"^(\d{1,2})\.\s+([A-Z][A-Z0-9 (,)\-—'’`:.]{4,140})\s*$")
+# TOC entry signature: a line whose visible text ends with leader dots and a page number,
+# e.g. "2.1. Prohibitions listed in Article 5 AI Act ........................ 2".
+_TOC_LEADER_RE = re.compile(r"\.{3,}\s*\d{1,3}\s*$")
 # Dutch forward-reference marker (inline cross-references in body text)
 _FORWARD_REF_MARKERS = (" on page ", " op pagina ")
 # "Requirements for high-risk AI systems", "Obligations for deployers of ..."
@@ -228,8 +237,25 @@ def build_sections(pages: list[Page], lang: str = "en") -> list[Section]:
         i = 0
         while i < len(p.lines):
             ln = p.lines[i]
+            m_chap = _CHAPTER_HEADING_RE.match(ln)
             m_step = _STEP_HEADING_RE.match(ln)
             m_sub = _SUBSECTION_RE.match(ln)
+
+            # TOC detection: a heading-shaped line is part of the TOC if it has
+            # trailing leader dots + page number on the same line, OR if the next
+            # non-empty line wraps it and ends with leader dots + page number.
+            def _is_toc_entry(idx: int) -> bool:
+                this = p.lines[idx]
+                if _TOC_LEADER_RE.search(this):
+                    return True
+                # Look at next non-empty line for wrapped TOC continuation.
+                j = idx + 1
+                while j < len(p.lines) and not p.lines[j].strip():
+                    j += 1
+                if j < len(p.lines) and _TOC_LEADER_RE.search(p.lines[j]):
+                    # Wrapped TOC: next line's tail has leaders + page no.
+                    return True
+                return False
 
             # Reject inline forward-references like:
             #   "4.3. General purpose AI models and systems on page 18"
@@ -245,8 +271,14 @@ def build_sections(pages: list[Page], lang: str = "en") -> list[Section]:
                 # the body_part will contain another numbered section reference.
                 elif re.search(r"\b\d+\.\d+\.\s+", body_part):
                     sub_is_real = False
+                # TOC entry — has leader dots + page number on same or wrapped line.
+                elif _is_toc_entry(i):
+                    sub_is_real = False
                 else:
                     sub_is_real = True
+
+            # Chapter heading is a real heading only if it is NOT a TOC entry.
+            chap_is_real = bool(m_chap) and not _is_toc_entry(i)
 
             # Reject inline forward-references to step headings like:
             #   "Stap 3. Zijn wij de aanbieder of gebruiksverantwoordelijke ... op pagina 12"
@@ -259,7 +291,31 @@ def build_sections(pages: list[Page], lang: str = "en") -> list[Section]:
                 else:
                     step_is_real = True
 
-            if m_step and step_is_real:
+            if chap_is_real:
+                flush()
+                num = m_chap.group(1)
+                title = m_chap.group(2).strip().rstrip(",")
+                # Look ahead for wrapped chapter heading continuation. Chapter
+                # heading lines may end with comma/hyphen and continue on the
+                # next line in ALL-CAPS (e.g. "5. ARTICLE 5(1)(D) … RISK
+                # ASSESSMENT AND" → "PREDICTION OF CRIMINAL OFFENCES").
+                if i + 1 < len(p.lines):
+                    nxt = p.lines[i + 1].strip()
+                    # Treat as continuation if all uppercase letters/short
+                    # AND not itself a heading or paragraph marker.
+                    if (
+                        nxt
+                        and len(nxt) <= 100
+                        and not nxt.startswith(("(", "•", "- ", "*"))
+                        and re.match(r"^[A-Z][A-Z0-9 (,)\-—'’`:.]+$", nxt)
+                    ):
+                        title = (title + " " + nxt).strip().rstrip(",")
+                        i += 1
+                current = Section(
+                    id=f"chap-{num}-{slugify(title)}"[:100],
+                    level=1, number=num, title=f"{num}. {title}", page=p.number,
+                )
+            elif m_step and step_is_real:
                 flush()
                 num = m_step.group(1)
                 title = m_step.group(2).strip()
@@ -799,23 +855,6 @@ def main() -> int:
     by_lang[args.lang] = per_lang
     final["by_language"] = by_lang
     final["languages"] = sorted(by_lang.keys())
-
-    manifest_path.write_text(
-        json.dumps(final, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
-        encoding="utf-8",
-    )
-
-    print(f"[ok] wrote {out_root} (lang={args.lang})")
-    print(
-        f"     pages={len(pages)} sections={len(sections)} "
-        f"footnotes={len(footnotes)} citations={len(refs_payload)} paragraphs={paragraph_count}"
-    )
-    return 0
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
-sorted(by_lang.keys())
 
     manifest_path.write_text(
         json.dumps(final, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
