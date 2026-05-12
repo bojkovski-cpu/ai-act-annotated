@@ -1,5 +1,5 @@
 {
-  "FF_CANONICAL_IDS":          false,
+  "FF_CANONICAL_IDS":          true,
   "FF_UNIFIED_REFERENCES":     false,
   "FF_BILINGUAL_PINCITE":      false,
   "FF_NEW_ENTITY_TYPES":       false,
