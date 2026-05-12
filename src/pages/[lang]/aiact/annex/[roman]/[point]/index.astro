@@ -1,0 +1,121 @@
+---
+/**
+ * Annex point detail — canonical path /[lang]/aiact/annex/[roman]/[point]/.
+ *
+ * Phase 1 new affordance. URL-addressable annex points for Pattern A
+ * annexes (III, IV, V, VI, VII, IX, X, XII, XIII per annex-point-grain-
+ * aiact-2026-05-12.md). Pattern B + C annexes have points=[] so no
+ * routes are generated for them.
+ *
+ * Lists letter sub-points when the point has them (Annex III, IV, VII,
+ * X, XII per the migration script).
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import { getAnnexes } from '@/lib/loader';
+import type { Annex, AnnexPoint, Lang } from '@/types/aiact';
+
+export function getStaticPaths() {
+  const langs: Lang[] = ['en', 'nl'];
+  const out: Array<{
+    params: { lang: Lang; roman: string; point: string };
+    props: { annex: Annex; point: AnnexPoint; lang: Lang };
+  }> = [];
+  for (const lang of langs) {
+    for (const annex of getAnnexes(lang)) {
+      for (const point of annex.points) {
+        out.push({
+          params: { lang, roman: annex.id.toLowerCase(), point: point.position },
+          props: { annex, point, lang },
+        });
+      }
+    }
+  }
+  return out;
+}
+
+interface Props {
+  annex: Annex;
+  point: AnnexPoint;
+  lang: Lang;
+}
+
+const { annex, point, lang } = Astro.props;
+
+const pointIdx = annex.points.findIndex((p) => p.position === point.position);
+const prevPoint = pointIdx > 0 ? annex.points[pointIdx - 1] : null;
+const nextPoint = pointIdx < annex.points.length - 1 ? annex.points[pointIdx + 1] : null;
+
+const pageTitle = lang === 'nl'
+  ? `Bijlage ${annex.id}, punt ${point.position} — EU AI Act`
+  : `Annex ${annex.id}, point ${point.position} — EU AI Act Annotated`;
+---
+
+<BaseLayout title={pageTitle}>
+  <Sidebar slot="sidebar" lang={lang} activeSection="annexes" />
+
+  <div class="chapter-bar">
+    <h1>{lang === 'nl' ? 'Bijlage' : 'Annex'} {annex.id}, {lang === 'nl' ? 'punt' : 'point'} {point.position}</h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{lang === 'nl' ? 'Start' : 'Home'}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/aiact/annex/`} style="color: var(--blue-accent); text-decoration: none;">{lang === 'nl' ? 'Bijlagen' : 'Annexes'}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/aiact/annex/${annex.id.toLowerCase()}/`} style="color: var(--blue-accent); text-decoration: none;">{annex.id}</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>{point.position}</span>
+  </div>
+
+  <div style="margin: 8px 0 20px; font-family: var(--mono, var(--sans)); font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px;">
+    {point.canonical_id} · v{annex.version_id}
+  </div>
+
+  <div class="article-block">
+    <div class="article-body">
+      <pre style="white-space: pre-wrap; font-family: var(--serif); font-size: 16px; line-height: 1.7; color: var(--gray-800); margin: 0 0 16px;">{point.body}</pre>
+
+      {point.letters.length > 0 && (
+        <ul style="list-style: none; padding: 0; margin: 24px 0; font-family: var(--sans);">
+          {point.letters.map((letter) => (
+            <li style="padding: 10px 0; border-bottom: 1px solid var(--gray-200);">
+              <a href={`/${lang}/aiact/annex/${annex.id.toLowerCase()}/${point.position}/${letter.letter}/`} style="text-decoration: none; color: inherit; display: block;">
+                <div style="font-size: 11px; color: var(--gray-500); font-family: var(--mono, var(--sans)); letter-spacing: 0.5px;">
+                  {letter.canonical_id}
+                </div>
+                <div style="font-size: 15px; color: var(--gray-800); margin-top: 4px;">
+                  <span style="font-weight: 600; color: var(--red-accent); margin-right: 6px;">({letter.letter})</span>
+                  {letter.text.split('\n')[0].slice(0, 200)}{letter.text.length > 200 && '…'}
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </div>
+
+  <nav style="display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 2px solid #111; font-family: var(--sans);">
+    {prevPoint ? (
+      <a href={`/${lang}/aiact/annex/${annex.id.toLowerCase()}/${prevPoint.position}/`}
+         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 3px solid var(--red-accent); border-radius: 0 6px 6px 0; text-decoration: none; color: inherit;">
+        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">&larr; {lang === 'nl' ? 'Vorig punt' : 'Previous point'}</div>
+        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">{lang === 'nl' ? 'Punt' : 'Point'} {prevPoint.position}</div>
+      </a>
+    ) : (
+      <a href={`/${lang}/aiact/annex/${annex.id.toLowerCase()}/`}
+         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 3px solid var(--red-accent); border-radius: 0 6px 6px 0; text-decoration: none; color: inherit;">
+        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">&larr; {lang === 'nl' ? 'Terug naar' : 'Back to'}</div>
+        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">{lang === 'nl' ? 'Bijlage' : 'Annex'} {annex.id}</div>
+      </a>
+    )}
+    {nextPoint ? (
+      <a href={`/${lang}/aiact/annex/${annex.id.toLowerCase()}/${nextPoint.position}/`}
+         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-right: 3px solid var(--red-accent); border-radius: 6px 0 0 6px; text-decoration: none; color: inherit; text-align: right;">
+        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">{lang === 'nl' ? 'Volgend punt' : 'Next point'} &rarr;</div>
+        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">{lang === 'nl' ? 'Punt' : 'Point'} {nextPoint.position}</div>
+      </a>
+    ) : <div style="flex: 1;"></div>}
+  </nav>
+</BaseLayout>

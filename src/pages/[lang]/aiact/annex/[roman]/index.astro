@@ -1,0 +1,108 @@
+---
+/**
+ * Annex detail — canonical path /[lang]/aiact/annex/[roman]/.
+ *
+ * Phase 1 fork of /[lang]/annexes/[annex].astro under the new URL contract
+ * (canonical-id paths, 2026-05-12). Reads annex.points (Phase 1 schema
+ * field) and lists them when the annex is Pattern A. Pattern B + C
+ * annexes render the full text only.
+ *
+ * Visual treatment minimal — Phase 5 lands the GDPR design swap.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import { getAnnexes } from '@/lib/loader';
+import type { Annex, Lang } from '@/types/aiact';
+
+export function getStaticPaths() {
+  const langs: Lang[] = ['en', 'nl'];
+  const out: Array<{ params: { lang: Lang; roman: string }; props: { annex: Annex; lang: Lang } }> = [];
+  for (const lang of langs) {
+    for (const annex of getAnnexes(lang)) {
+      out.push({
+        params: { lang, roman: annex.id.toLowerCase() },
+        props: { annex, lang },
+      });
+    }
+  }
+  return out;
+}
+
+interface Props {
+  annex: Annex;
+  lang: Lang;
+}
+
+const { annex, lang } = Astro.props;
+
+const sorted = getAnnexes(lang);
+const idx = sorted.findIndex((a) => a.id === annex.id);
+const prev = idx > 0 ? sorted[idx - 1] : null;
+const next = idx < sorted.length - 1 ? sorted[idx + 1] : null;
+---
+
+<BaseLayout title={`${annex.title} — EU AI Act Annotated`}>
+  <Sidebar slot="sidebar" lang={lang} activeSection="annexes" />
+
+  <div class="chapter-bar">
+    <h1>{lang === 'nl' ? 'Bijlage' : 'Annex'} {annex.id} — {annex.title}</h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{lang === 'nl' ? 'Start' : 'Home'}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/aiact/annex/`} style="color: var(--blue-accent); text-decoration: none;">{lang === 'nl' ? 'Bijlagen' : 'Annexes'}</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>{lang === 'nl' ? 'Bijlage' : 'Annex'} {annex.id}</span>
+  </div>
+
+  <div style="margin: 8px 0 20px; font-family: var(--mono, var(--sans)); font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px;">
+    {annex.canonical_id} · v{annex.version_id}
+  </div>
+
+  {annex.points.length === 0 ? (
+    <div class="article-block">
+      <div class="article-body">
+        <pre style="white-space: pre-wrap; font-family: var(--serif); font-size: 15px; line-height: 1.7; color: var(--gray-800); margin: 0;">{annex.text}</pre>
+      </div>
+    </div>
+  ) : (
+    <ul style="list-style: none; padding: 0; margin: 24px 0; font-family: var(--sans);">
+      {annex.points.map((p) => (
+        <li style="padding: 12px 0; border-bottom: 1px solid var(--gray-200);">
+          <a href={`/${lang}/aiact/annex/${annex.id.toLowerCase()}/${p.position}/`} style="text-decoration: none; color: inherit; display: block;">
+            <div style="font-size: 11px; color: var(--gray-500); font-family: var(--mono, var(--sans)); text-transform: uppercase; letter-spacing: 0.5px;">
+              {p.canonical_id}
+            </div>
+            <div style="font-size: 16px; color: var(--gray-900); margin-top: 4px;">
+              <span style="font-weight: 600; color: var(--red-accent); margin-right: 6px;">{p.position}.</span>
+              {p.body.split('\n')[0].slice(0, 150)}{p.body.length > 150 && '…'}
+            </div>
+            {p.letters.length > 0 && (
+              <div style="font-size: 12px; color: var(--gray-600); margin-top: 4px;">
+                {p.letters.length} {lang === 'nl' ? 'subpunten' : 'sub-points'} ({p.letters.map((l) => `(${l.letter})`).join(' ')})
+              </div>
+            )}
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+
+  <nav style="display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 2px solid #111; font-family: var(--sans);">
+    {prev ? (
+      <a href={`/${lang}/aiact/annex/${prev.id.toLowerCase()}/`}
+         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 3px solid var(--red-accent); border-radius: 0 6px 6px 0; text-decoration: none; color: inherit;">
+        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">&larr; {lang === 'nl' ? 'Vorige' : 'Previous'}</div>
+        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">{lang === 'nl' ? 'Bijlage' : 'Annex'} {prev.id} — {prev.title}</div>
+      </a>
+    ) : <div style="flex: 1;"></div>}
+    {next ? (
+      <a href={`/${lang}/aiact/annex/${next.id.toLowerCase()}/`}
+         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-right: 3px solid var(--red-accent); border-radius: 6px 0 0 6px; text-decoration: none; color: inherit; text-align: right;">
+        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">{lang === 'nl' ? 'Volgende' : 'Next'} &rarr;</div>
+        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">{lang === 'nl' ? 'Bijlage' : 'Annex'} {next.id} — {next.title}</div>
+      </a>
+    ) : <div style="flex: 1;"></div>}
+  </nav>
+</BaseLayout>
