@@ -132,6 +132,7 @@ function switchTab(tabEl) {
   if (tabEl.classList.contains('active')) {
     tabEl.classList.remove('active');
     panels.forEach(p => p.classList.remove('active'));
+    updateSuppUrl(getCurrentSuppState());
     return;
   }
   tabBar.querySelectorAll('[data-tab]').forEach(t => t.classList.remove('active'));
@@ -139,28 +140,117 @@ function switchTab(tabEl) {
   tabEl.classList.add('active');
   const panel = document.querySelector(`[data-panel="${tabName}"][data-article="${articleId}"]`);
   if (panel) panel.classList.add('active');
+  updateSuppUrl(getCurrentSuppState());
 }
 
-// Deep-link: pre-select an article-block tab from a URL fragment.
-// Phase 5.5a slug set: recitals · history · guidance (the three tabs
-// the current AI Act content surfaces). Legacy fragments #omnibus and
-// #caselaw stay listed so old deep-links don't 404 — the query just
-// fails to find a matching tab and the page stays at the top. The
-// proper hash→query-param migration is 5.5c work.
+// Phase 5.5c (2026-05-12): URL query-param state for the
+// supplementary surface, locked at OQ-3. Grammar for AI Act today:
 //
-// Used by the guidance detail page's "Cited articles" sidebar so a click on
-// an article anchor lands the reader on /{lang}/articles/.../article-N/ with
-// the Guidance tab already open. Browser scrolls to an element whose id
-// matches the hash; no element has these tab-name ids, so the page stays
-// at top while the JS activates the tab.
-const TAB_FRAGMENTS = ['recitals', 'history', 'omnibus', 'caselaw', 'guidance'];
-function activateTabFromHash() {
-  const hash = (location.hash || '').replace(/^#/, '');
-  if (!TAB_FRAGMENTS.includes(hash)) return;
-  const tab = document.querySelector('[data-tab="' + hash + '"]');
-  if (tab && !tab.classList.contains('active')) {
-    switchTab(tab);
-    tab.scrollIntoView({ behavior: 'auto', block: 'start' });
+//   ?tab=<slug>            currently-active Browse tab
+//   ?mode=research         when Research mode is on (browse default omitted)
+//   ?chips=<slug>,<slug>   chip filter selection (empty = "All")
+//
+// Species and entry params from OQ-3's full grammar
+// (?tab=decisions&species=court&entry={id}) light up when Decisions
+// content lands — they're inert on AI Act today.
+//
+// URL writes use history.replaceState — no back-button pollution, no
+// scroll jolt. URL state beats sessionStorage on page load; both are
+// written on every in-page action so the URL is shareable and the
+// per-session preference still carries across navigations within a
+// tab.
+//
+// Legacy hash fragments (#recitals/#history/#omnibus/#caselaw/#guidance)
+// get a one-shot redirect to the equivalent ?tab= query on DOM ready.
+// #omnibus and #caselaw retire silently — they no longer map to a
+// visible Browse-mode tab. The guidance detail page's "Cited articles"
+// sidebar that used to deep-link via `#guidance` is now naturally
+// served by the migrated `?tab=guidance` URL after one round-trip.
+const LEGACY_HASH_TO_TAB = {
+  recitals: 'recitals',
+  history:  'history',
+  guidance: 'guidance',
+  omnibus:  null,   // retired from tab strip in 5.5a; drop silently
+  caselaw:  null,   // never had AI Act data; drop silently
+};
+
+function readSuppUrlState() {
+  const params = new URLSearchParams(location.search);
+  const rawChips = params.get('chips');
+  return {
+    tab: params.get('tab') || null,
+    mode: params.get('mode') === 'research' ? 'research' : null,
+    chips: rawChips === null
+      ? null  // signals "no chips param in URL — fall back to storage"
+      : rawChips.split(',').map(s => s.trim()).filter(Boolean),
+  };
+}
+
+function updateSuppUrl(state) {
+  const params = new URLSearchParams(location.search);
+  if (state.tab) params.set('tab', state.tab); else params.delete('tab');
+  if (state.mode === 'research') params.set('mode', 'research'); else params.delete('mode');
+  if (state.chips && state.chips.length) {
+    params.set('chips', state.chips.join(','));
+  } else {
+    params.delete('chips');
+  }
+  const qs = params.toString();
+  const newUrl = location.pathname + (qs ? '?' + qs : '') + (location.hash || '');
+  try { history.replaceState(null, '', newUrl); } catch (_) {}
+}
+
+function getCurrentSuppState() {
+  const root = document.querySelector('.supp-root');
+  if (!root) return { tab: null, mode: null, chips: [] };
+  const isResearch = root.getAttribute('data-supp-mode') === 'research';
+  const activeTab = root.querySelector('[data-tab].active');
+  const chips = Array.from(root.querySelectorAll('.supp-chip.active'))
+    .map(c => c.dataset.chip)
+    .filter(s => s && s !== 'all');
+  return {
+    tab: activeTab ? activeTab.dataset.tab : null,
+    mode: isResearch ? 'research' : null,
+    chips,
+  };
+}
+
+function migrateLegacyHash() {
+  const hash = (location.hash || '').replace(/^#/, '').toLowerCase();
+  if (!(hash in LEGACY_HASH_TO_TAB)) return;
+  const newTab = LEGACY_HASH_TO_TAB[hash];
+  const params = new URLSearchParams(location.search);
+  if (newTab) params.set('tab', newTab); else params.delete('tab');
+  const qs = params.toString();
+  const newUrl = location.pathname + (qs ? '?' + qs : '');  // hash dropped
+  try { history.replaceState(null, '', newUrl); } catch (_) {}
+}
+
+function applySupplementaryStateFromUrl() {
+  const urlState = readSuppUrlState();
+
+  // Mode: URL beats storage. Absence falls back to storage default.
+  const mode = urlState.mode || readSuppMode();
+  applySuppMode(mode);
+
+  // Chips: URL beats storage. urlState.chips is null when no chips=
+  // param exists at all — fall back to storage. An empty array means
+  // chips= was present and empty ("All").
+  const chips = urlState.chips !== null ? urlState.chips : readSuppChips();
+  applyResearchChips(chips);
+
+  // Tab: URL-only state (no sessionStorage). Activate matching button
+  // in every .supp-root scope so multi-surface pages stay in sync.
+  if (urlState.tab) {
+    document.querySelectorAll('.supp-root').forEach((root) => {
+      const tab = root.querySelector('[data-tab="' + urlState.tab + '"]');
+      if (tab && !tab.classList.contains('active')) {
+        // switchTab will call updateSuppUrl back — it's a no-op since
+        // the URL already has this state. Cheaper than threading a
+        // silent flag through the public API.
+        switchTab(tab);
+      }
+    });
   }
 }
 
@@ -206,6 +296,7 @@ function applySuppMode(mode) {
 function switchMode(buttonEl, mode) {
   applySuppMode(mode);
   writeSuppMode(mode);
+  updateSuppUrl(getCurrentSuppState());
 }
 
 function applyResearchChips(activeChips) {
@@ -243,6 +334,7 @@ function toggleResearchChip(chipEl) {
   }
   writeSuppChips(active);
   applyResearchChips(active);
+  updateSuppUrl(getCurrentSuppState());
 }
 
 function suppKeyboardR(ev) {
@@ -257,17 +349,21 @@ function suppKeyboardR(ev) {
   const next = readSuppMode() === 'research' ? 'browse' : 'research';
   applySuppMode(next);
   writeSuppMode(next);
+  updateSuppUrl(getCurrentSuppState());
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  activateTabFromHash();
-  window.addEventListener('hashchange', activateTabFromHash);
-
-  // Apply persisted supplementary surface state (mode + chips). Runs
-  // once at DOM-ready — every .supp-root on the page picks up the
-  // same global session state.
-  applySuppMode(readSuppMode());
-  applyResearchChips(readSuppChips());
+  // Phase 5.5c: legacy hash → query-param migration runs once before
+  // the URL-state apply. After migration, every code path reads from
+  // the URL (?tab=…&mode=…&chips=…) or falls back to sessionStorage.
+  migrateLegacyHash();
+  applySupplementaryStateFromUrl();
+  // hashchange still fires for in-page anchor clicks that use the
+  // legacy fragment scheme — migrate + reapply on the fly.
+  window.addEventListener('hashchange', () => {
+    migrateLegacyHash();
+    applySupplementaryStateFromUrl();
+  });
   document.addEventListener('keydown', suppKeyboardR);
 
   document.querySelectorAll('.nav-chapter-header').forEach(header => {
