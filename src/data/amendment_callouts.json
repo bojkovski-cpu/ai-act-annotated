@@ -1,0 +1,582 @@
+[
+  {
+    "id": "f5f9c49c9542dffc",
+    "affectedArticle": "aiact/art/1",
+    "affectedParagraphId": "1",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Reframes innovation support focus to include SMCs and SMEs, including start-ups"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "1(2), point (g)"
+  },
+  {
+    "id": "057a973ce27240da",
+    "affectedArticle": "aiact/art/2",
+    "affectedParagraphId": "2",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Limits applicability for high-risk AI in products covered by Annex I Section B harmonisation legislation to Article 6(1), Article 60a, Articles 102-109, 111, 112 only; Article 57 applies only insofar as requirements have been integrated"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "2(2)"
+  },
+  {
+    "id": "0c09299fbef36d97",
+    "affectedArticle": "aiact/art/3",
+    "affectedParagraphId": "3",
+    "status": "proposed",
+    "redline": {
+      "kind": "insert",
+      "summary": {
+        "en": "Adds definitions for 'SME' (per Commission Recommendation 2003/361/EC) and 'SMC' (per Commission Recommendation 2025/1099)"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "3 — new points (14a) and (14b)"
+  },
+  {
+    "id": "d7e869369e10073f",
+    "affectedArticle": "aiact/art/4",
+    "affectedParagraphId": "4",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "AI literacy obligation changed from mandatory to 'encourage' — Commission and Member States shall encourage providers and deployers; training obligations for high-risk deployers remain"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "Article 4 (full replacement)"
+  },
+  {
+    "id": "d901b84156ac4d32",
+    "affectedArticle": "aiact/art/6",
+    "affectedParagraphId": "6",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Providers who consider Annex III AI system is not high-risk must document assessment and provide to national authorities on request"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "6(4)"
+  },
+  {
+    "id": "50f391c005d4dcd8",
+    "affectedArticle": "aiact/art/10",
+    "affectedParagraphId": "7",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Para 1: references new Article 4a(1) for data quality; Para 5: deleted; Para 6: references Article 4a(1) for non-training-technique systems"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "10(1), 10(5) deleted, 10(6)"
+  },
+  {
+    "id": "7fc7280db1275301",
+    "affectedArticle": "aiact/art/11",
+    "affectedParagraphId": "8",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "SMCs and SMEs (including start-ups) may use simplified technical documentation form established by Commission"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "11(1), second subparagraph"
+  },
+  {
+    "id": "b112681a66a9d6f2",
+    "affectedArticle": "aiact/art/17",
+    "affectedParagraphId": "9",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "QMS implementation proportionate to provider size, especially SMCs/SMEs including start-ups"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "17(2)"
+  },
+  {
+    "id": "21ae3633d2442f51",
+    "affectedArticle": "aiact/art/28",
+    "affectedParagraphId": "10",
+    "status": "proposed",
+    "redline": {
+      "kind": "insert",
+      "summary": {
+        "en": "Single application and assessment procedure for notifying authorities under both AI Act and Union harmonisation legislation in Annex I Section A"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "28 — new paragraph 8"
+  },
+  {
+    "id": "bdaadb26adf3ae2b",
+    "affectedArticle": "aiact/art/29",
+    "affectedParagraphId": "11",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Notified bodies designated under other harmonisation legislation may use documents/certificates to support AI Act designation; single assessment procedure for Annex I Section A bodies"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "29(4)"
+  },
+  {
+    "id": "2e78dc7c6d4fbc07",
+    "affectedArticle": "aiact/art/30",
+    "affectedParagraphId": "12",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Notification based on codes/categories/types in new Annex XIV; Commission delegated acts power to amend Annex XIV"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "30(2)"
+  },
+  {
+    "id": "a114c975feeff40a",
+    "affectedArticle": "aiact/art/43",
+    "affectedParagraphId": "13",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "High-risk AI systems covered by Annex I Section A follow relevant harmonisation legislation conformity assessment; notified bodies under that legislation can assess; transition period 18 months; dual-classification systems follow harmonisation legislation procedure"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "43(3)"
+  },
+  {
+    "id": "40214bf6e2f67137",
+    "affectedArticle": "aiact/art/49",
+    "affectedParagraphId": "14",
+    "status": "proposed",
+    "redline": {
+      "kind": "delete",
+      "summary": {
+        "en": "Registration obligation for Article 6(3) AI systems in EU database removed"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "49(2)"
+  },
+  {
+    "id": "0387d7ba65a6203e",
+    "affectedArticle": "aiact/art/50",
+    "affectedParagraphId": "15",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "AI Office codes of practice for transparency obligations; Commission may assess adequacy and adopt implementing act if inadequate"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "50(7)"
+  },
+  {
+    "id": "3d2f2d6430f86805",
+    "affectedArticle": "aiact/art/56",
+    "affectedParagraphId": "16",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Commission publishes assessment of codes of practice adequacy"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "56(6), first subparagraph"
+  },
+  {
+    "id": "a33fc9fad161649f",
+    "affectedArticle": "aiact/art/57",
+    "affectedParagraphId": "17",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "AI Office may establish EU-level sandbox for Article 75(1) AI systems; sandbox plans incorporate real-world testing in single document"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "57 — new 3a, amended 5"
+  },
+  {
+    "id": "537e30d2e2805dee",
+    "affectedArticle": "aiact/art/58",
+    "affectedParagraphId": "18",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Commission implementing acts for detailed sandbox arrangements including governance, coordination, common principles"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "58(1)"
+  },
+  {
+    "id": "663c744a9bca35ff",
+    "affectedArticle": "aiact/art/60",
+    "affectedParagraphId": "19",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Real-world testing scope extended to Annex I Section A covered systems; broader testing by providers/prospective providers"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "60(1) first subpara, 60(2)"
+  },
+  {
+    "id": "f066a194db96eb99",
+    "affectedArticle": "aiact/art/63",
+    "affectedParagraphId": "21",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Simplified QMS compliance extended from microenterprises to all SMEs including start-ups"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "63(1)"
+  },
+  {
+    "id": "2f77acfd3b42c54c",
+    "affectedArticle": "aiact/art/69",
+    "affectedParagraphId": "22",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Scientific panel fee structure simplified; Member States can consult experts directly without Commission involvement"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "69(2) replaced, 69(3) deleted"
+  },
+  {
+    "id": "c3dc42a1e3d14854",
+    "affectedArticle": "aiact/art/70",
+    "affectedParagraphId": "23",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "National competent authorities guidance to SMCs/SMEs/start-ups; consultation with other competent authorities on cross-domain matters"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "70(8)"
+  },
+  {
+    "id": "d862c023c9c5dafc",
+    "affectedArticle": "aiact/art/72",
+    "affectedParagraphId": "24",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Post-market monitoring plan part of technical documentation; Commission to adopt guidance (not harmonised template)"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "72(3)"
+  },
+  {
+    "id": "6518c6af8e5f16d8",
+    "affectedArticle": "aiact/art/75",
+    "affectedParagraphId": "25",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Title changed to 'Market surveillance and control of AI systems and mutual assistance'; AI Office exclusively competent for GPAI-based AI systems on same-provider basis and VLOP/VLOSE systems; enforcement powers via implementing acts; procedural safeguards (Reg 2019/1020 Art 18 mutatis mutandis); pre-market conformity assessments by Commission"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "75 heading, 75(1), new 75(1a-1c)"
+  },
+  {
+    "id": "d6d087fd39d8994d",
+    "affectedArticle": "aiact/art/77",
+    "affectedParagraphId": "26",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Title changed to 'Powers of authorities protecting fundamental rights and cooperation with market surveillance authorities'; scope clarified; mutual assistance obligation added between market surveillance and fundamental rights authorities"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "77 heading, 77(1), new 77(1a-1b)"
+  },
+  {
+    "id": "b281b2bd03f76756",
+    "affectedArticle": "aiact/art/95",
+    "affectedParagraphId": "27",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Codes of conduct to account for SMC/SME/start-up needs"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "95(4)"
+  },
+  {
+    "id": "ce17e3b0f2c1b594",
+    "affectedArticle": "aiact/art/96",
+    "affectedParagraphId": "28",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Commission guidelines to pay particular attention to SMC/SME/start-up needs"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "96(1), second subparagraph"
+  },
+  {
+    "id": "c0933e89e94ad315",
+    "affectedArticle": "aiact/art/99",
+    "affectedParagraphId": "29",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Penalties may include warnings and non-monetary measures; SMC/SME fines capped at lower of percentage or amount thresholds"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "99(1), 99(6)"
+  },
+  {
+    "id": "ce6b1e632a7a6d56",
+    "affectedArticle": "aiact/art/111",
+    "affectedParagraphId": "30",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Grace period for existing high-risk systems clarified (type and model basis); new transitional period for Art 50(2) marking obligations (6 months for systems placed on market before 2 Aug 2026)"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "111(2), new 111(4)"
+  },
+  {
+    "id": "7de75e52bef766ea",
+    "affectedArticle": "aiact/art/113",
+    "affectedParagraphId": "31",
+    "status": "proposed",
+    "redline": {
+      "kind": "replace",
+      "summary": {
+        "en": "Chapter III application linked to Commission decision confirming adequate compliance measures; fallback dates: 2 Dec 2027 for Art 6(2)/Annex III, 2 Aug 2028 for Art 6(1)/Annex I; Articles 102-110 apply from entry into application of this amending Regulation"
+      }
+    },
+    "amendingInstrument": {
+      "canonicalId": "aiact-omnibus-2025",
+      "shortTitle": {
+        "en": "AI Omnibus Package (COM(2025) 836)",
+        "nl": "AI Omnibus-pakket (COM(2025) 836)"
+      }
+    },
+    "affectedSubparagraphId": "113, third paragraph points (d) and (e)"
+  }
+]

@@ -23,6 +23,24 @@
  * src/data/references.json as Reference[] derived from the legacy maps.
  * FF_UNIFIED_REFERENCES gates which shape the loader exposes.
  *
+ * Phase 3 (2026-05-12, Option 1+ per step-3.1 § 7.1) introduces locale
+ * plurality: open `Locale` type, `LocaleInfo` registry interface, and
+ * `LocalizedText` = Partial<Record<Locale, string>>. The closed `Lang =
+ * 'en' | 'nl'` stays as a backward-compat alias for the current AI Act
+ * locale set; new entity types in Phase 4 (CourtJudgement, SADecision,
+ * ImplementingLaw) use LocalizedText from day one. Existing per-language
+ * file storage (articles_en.json + articles_nl.json + …) is unchanged.
+ *
+ * Phase 4 (2026-05-12) adds new entity types per step-3.2 § B/§C/§A.3 and
+ * step-3.3 § C: CourtJudgement, SADecision (renamed from DPADecision per
+ * step-3.3 § C edge note — AI Act has supervisory authorities / MSAs,
+ * not DPAs), ImplementingLaw, AmendmentInstrument, AmendmentCallout.
+ * Empty JSON stubs in src/data/{court_judgements,sa_decisions,
+ * implementing_law}.json; AmendmentInstrument + AmendmentCallout
+ * populated from omnibus_amendments_en.json via
+ * scripts/migrate_amendment_instruments.py. FF_NEW_ENTITY_TYPES gates
+ * which components consume the new schemas.
+ *
  * Number normalisation: all entity numbers (article.number, recital.number,
  * paragraph.number) are STRINGS at the data layer. EN data was numeric in
  * the legacy ai_act_structured.json blob; the bridge scripts normalise to
@@ -30,6 +48,53 @@
  * suffixed numbers (e.g. Omnibus's new Article 4a / 60a, when those land).
  */
 
+/**
+ * Locale identifier — the open form. Runtime-validates against the
+ * instrument's declared locale list (see AIACT_LOCALES in src/lib/locales.ts;
+ * generalises to InstrumentConfig.locales in Phase 4).
+ *
+ * Open string for forward-compatibility per step-3.1 § 7.1: every new
+ * locale lands by editing the registry, not the type system.
+ */
+export type Locale = string;
+
+/**
+ * Per-locale metadata in an instrument's locale registry.
+ *
+ *   `isCanonical`  — exactly one locale per instrument is canonical (the
+ *                    source-of-truth language; usually the language the
+ *                    instrument was originally drafted in).
+ *   `fallback`     — locale to fall back to when a field is missing in this
+ *                    locale (e.g. NL fields fall back to EN). The canonical
+ *                    locale typically has no fallback.
+ */
+export interface LocaleInfo {
+  code: Locale;
+  name: string;
+  isCanonical: boolean;
+  fallback?: Locale;
+}
+
+/**
+ * Open-locale text shape replacing the closed `BilingualText { en; nl? }`
+ * for new entity types. Keys are Locale codes; values are the localised
+ * string. Missing locales fall back per `LocaleInfo.fallback`, then to the
+ * canonical locale.
+ *
+ *   { en: "Lawfulness…", nl: "Rechtmatigheid…", fr: "Licéité…" }
+ *
+ * Phase 4 entity types (CourtJudgement, SADecision, ImplementingLaw, etc.)
+ * use this from day one. Existing entities (Article, Recital, Annex) keep
+ * the per-language-file storage architecture.
+ */
+export type LocalizedText = Partial<Record<Locale, string>>;
+
+/**
+ * Closed locale union for the AI Act's current state (English + Dutch).
+ * Kept as a backward-compat alias for `Locale`; existing consumers don't
+ * change. New consumers that want to be locale-list-agnostic should type
+ * against `Locale` directly.
+ */
 export type Lang = 'en' | 'nl';
 
 // ─── Canonical identifiers (Phase 1) ─────────────────────────────────
@@ -510,5 +575,265 @@ export interface GuidanceCitation {
     page?: number | null;
     footnote?: number | null;
     paragraph?: number | null;
+  };
+}
+
+
+// ─── Phase 4 — new entity types ─────────────────────────────────────
+//
+// Per step-3.2 § B/§C/§A.3 and step-3.3 § C: CourtJudgement, SADecision,
+// ImplementingLaw, AmendmentInstrument, AmendmentCallout.
+//
+// AI Act note: the supervisory body is the AI Office + national market-
+// surveillance authorities (MSAs), not data-protection authorities.
+// step-3.3 § C renames DPADecisionRow → SADecisionRow ("Supervisory
+// Authority") for the unified family; the shape is identical.
+
+/** ISO 3166-1 alpha-2 country code; 'EU' for CJEU + EGC. */
+export type ISO3166Alpha2 = string;
+
+/** ISO 8601 date string, YYYY-MM-DD. */
+export type ISODate = string;
+
+/** Court level taxonomy per step-3.2 § B.3. */
+export type CourtLevel = 'CJEU' | 'EGC' | 'national' | 'arbitral';
+
+/**
+ * Per-instrument court registry entry. Mirrors the per-instrument MSA
+ * registry pattern (OQ-C.1). Phase 4 ships a placeholder list; content
+ * ops populates as court cases on AI Act emerge.
+ */
+export interface Court {
+  /** Stable slug, e.g. 'cjeu', 'bverwg-de', 'rb-den-haag'. */
+  canonicalId: string;
+  shortName: LocalizedText;
+  level: CourtLevel;
+}
+
+/**
+ * CURIA-aligned outcome vocabulary per OQ-B.1. Phase 4 ships the broad
+ * five-state placeholder; the data pipeline will map to CURIA terms when
+ * the first case lands. National-court rows map to the nearest CURIA-
+ * equivalent term.
+ */
+export type CourtOutcome =
+  | 'judgement'
+  | 'order'
+  | 'opinion'
+  | 'view'
+  | 'pending';
+
+/**
+ * One court judgement applying or interpreting AI Act articles. Step-3.2
+ * § B.3. Phase 4 schema is empty (no AI Act case law yet); content ops
+ * fills as preliminary references and national rulings arrive.
+ */
+export interface CourtJudgement {
+  id: string;
+  ecli: string;
+  court: Court;
+  jurisdiction: ISO3166Alpha2;
+  date: ISODate;
+  /** Anonymised parties per source convention. */
+  parties: string;
+  caseNumber: string;
+  outcome: CourtOutcome;
+  /** ISO 639-1 of the authentic text. */
+  language: string;
+  pinCites: PinCite[];
+  /** 1-2 sentence editorial summary. */
+  holdingSnippet: LocalizedText;
+  /** Verbatim quote, Research mode only. */
+  holdingExtract?: LocalizedText;
+  /** Canonical case-law page URL (cross-article aggregation). */
+  fullCasePageUrl?: string;
+}
+
+/**
+ * Per-instrument supervisory-authority registry entry. AI Act = national
+ * market-surveillance authorities (MSAs) + the AI Office. The
+ * `canonicalId` is the slug used in SADecision.authority.canonicalId.
+ *
+ * OQ-C.1: flat lookup table per instrument; no central registry.
+ */
+export interface SupervisoryAuthority {
+  canonicalId: string;
+  acronym: string;
+  fullName: LocalizedText;
+  country: ISO3166Alpha2;
+}
+
+/**
+ * Remedy taxonomy for an SADecision. Combined = fine + order.
+ */
+export type SARemedy =
+  | 'fine'
+  | 'warning'
+  | 'order-to-comply'
+  | 'order-to-cease'
+  | 'processing-ban'
+  | 'no-action'
+  | 'combined';
+
+/**
+ * Monetary fine amount in a SADecision.
+ */
+export interface SAFine {
+  amount: number;
+  currency: string;
+}
+
+/**
+ * Appeal disposition (v0 placeholder per OQ-C.2). The expanded schema
+ * (substantive appeal chain + parallel interim-measures procedure) is
+ * deferred to a follow-on schema-design session.
+ */
+export interface SAAppealOutcome {
+  status: 'upheld' | 'reduced' | 'overturned' | 'pending';
+  modifiedFine?: SAFine;
+  /** ECLI of the appeal court judgement, if one exists. Cross-link to a
+   *  CourtJudgement row. */
+  appealCaseEcli?: string;
+  appealDate?: ISODate;
+}
+
+/**
+ * One supervisory-authority enforcement decision. Step-3.2 § C.4 (renamed
+ * from DPADecision per step-3.3 § C). Phase 4 schema is empty; content
+ * ops fills when MSAs start enforcing the AI Act (2026+).
+ *
+ * Schema version note: `schemaVersion: '0.1'` flags this as the v0
+ * placeholder per Risk H.5 in step-3.3. When OQ-C.2 resolves (expanded
+ * appeal model), records bump to v0.2 and the `appealOutcome` field
+ * generalises to an appeal chain + parallel interim-measures track.
+ */
+export interface SADecision {
+  id: string;
+  schemaVersion: '0.1';
+  decisionNumber: string;
+  authority: SupervisoryAuthority;
+  country: ISO3166Alpha2;
+  date: ISODate;
+  /** The regulated entity, not the complainant. */
+  controller: string;
+  remedy: SARemedy;
+  fine?: SAFine;
+  appealOutcome?: SAAppealOutcome;
+  pinCites: PinCite[];
+  holdingSnippet: LocalizedText;
+  /** ISO 639-1 of the authentic text. */
+  language: string;
+  fullDecisionPageUrl?: string;
+}
+
+/**
+ * Citation to a Member-State implementing or transposing instrument that
+ * operationalises an AI Act provision. Phase 4 schema is empty; AI Act
+ * Member-State implementing acts start arriving 2026+ (Art. 70
+ * designations).
+ *
+ * Schema sourced from step-3.0 inventory DAT-11 (provisional).
+ */
+export interface ImplementingLaw {
+  id: string;
+  jurisdiction: ISO3166Alpha2;
+  /** Short citation form, e.g. 'UAVG' (Dutch GDPR transposition shorthand). */
+  instrumentShort: string;
+  /** Full official title. */
+  instrumentFull: LocalizedText;
+  /** The article number within the implementing instrument. */
+  article: string;
+  /** Verbatim body of the implementing-article text, where available. */
+  body?: LocalizedText;
+  url?: string;
+}
+
+/**
+ * Top-level amendment instrument — an EU regulation or directive that
+ * amends the AI Act. Phase 4 migrates the existing AI Omnibus
+ * (COM(2025) 836) into this shape.
+ *
+ * Step-3.3 § C.
+ *
+ *   kind: 'omnibus' — broad multi-provision package, like COM(2025) 836
+ *   kind: 'targeted' — narrow single-issue amendment
+ *   kind: 'corrigendum' — drafting fix from the EU institutions
+ */
+export type AmendmentInstrumentKind = 'omnibus' | 'targeted' | 'corrigendum';
+export type AmendmentInstrumentStatus = 'proposed' | 'adopted-not-in-force' | 'in-force';
+
+export interface AmendmentInstrument {
+  canonicalId: CanonicalId;
+  kind: AmendmentInstrumentKind;
+  shortTitle: LocalizedText;
+  /** Long official title, optional. */
+  longTitle?: LocalizedText;
+  /** Provenance label, e.g. 'COM(2025) 836 final'. */
+  sourceLabel?: string;
+  status: AmendmentInstrumentStatus;
+  adoptedDate?: ISODate;
+  entryIntoForceDate?: ISODate;
+  /** Canonical IDs of every article / annex this instrument amends. */
+  affects: CanonicalId[];
+}
+
+/**
+ * Per-paragraph amendment as it renders inline on the article page.
+ * Step-3.2 § A. Phase 4 migrates the 29 omnibus records into this shape;
+ * Phase 6 lights up the inline AmendmentCallout component that renders
+ * them.
+ *
+ * Status lifecycle (OQ-A.2):
+ *   proposed | adopted-not-in-force — inline callout + "Amendment history" appendix
+ *   in-force-current   — body shows new text, callout cites the previous
+ *                        wording (transitional handoff)
+ *   in-force-superseded — historical, lives in the History tab as a
+ *                          `superseded-version` species
+ *
+ * Redline kinds (OQ-A.2):
+ *   replace → both oldText and newText
+ *   insert  → only newText
+ *   delete  → only oldText
+ *
+ * For the AI Omnibus initial migration, `redline.oldText` and
+ * `redline.newText` are mostly undefined — only the `summary` was
+ * captured by the original parser. Phase 4 ships the structural records
+ * with summary as a fallback; content ops fills oldText/newText later.
+ */
+export type AmendmentCalloutStatus =
+  | 'proposed'
+  | 'adopted-not-in-force'
+  | 'in-force-current'
+  | 'in-force-superseded';
+
+export type AmendmentRedlineKind = 'replace' | 'insert' | 'delete';
+
+export interface AmendmentRedline {
+  kind: AmendmentRedlineKind;
+  oldText?: LocalizedText;
+  newText?: LocalizedText;
+  /** Fallback editorial summary when oldText/newText aren't captured. */
+  summary?: LocalizedText;
+}
+
+export interface AmendmentCallout {
+  id: string;
+  /** Article being amended. */
+  affectedArticle: CanonicalId;
+  /** Paragraph id within the article, e.g. '1', '2'. */
+  affectedParagraphId: string;
+  /** Sub-provision (point, letter, sentence) within the paragraph. */
+  affectedSubparagraphId?: string;
+  status: AmendmentCalloutStatus;
+  effectiveDate?: ISODate;
+  adoptedDate?: ISODate;
+  redline: AmendmentRedline;
+  /** Reference to the AmendmentInstrument this callout belongs to. */
+  amendingInstrument: {
+    canonicalId: CanonicalId;
+    shortTitle: LocalizedText;
+    /** Article of the amending instrument that makes the change,
+     *  e.g. 'Art. 14' of the Omnibus. */
+    sourceArticle?: string;
   };
 }

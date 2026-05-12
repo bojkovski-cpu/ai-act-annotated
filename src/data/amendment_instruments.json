@@ -1,0 +1,46 @@
+[
+  {
+    "canonicalId": "aiact-omnibus-2025",
+    "kind": "omnibus",
+    "shortTitle": {
+      "en": "AI Omnibus Package (COM(2025) 836)",
+      "nl": "AI Omnibus-pakket (COM(2025) 836)"
+    },
+    "longTitle": {
+      "en": "Proposal for a Regulation of the European Parliament and of the Council amending Regulation (EU) 2024/1689 (the AI Act) and other Union acts"
+    },
+    "sourceLabel": "COM(2025) 836 final",
+    "status": "proposed",
+    "affects": [
+      "aiact/art/1",
+      "aiact/art/2",
+      "aiact/art/3",
+      "aiact/art/4",
+      "aiact/art/6",
+      "aiact/art/10",
+      "aiact/art/11",
+      "aiact/art/17",
+      "aiact/art/28",
+      "aiact/art/29",
+      "aiact/art/30",
+      "aiact/art/43",
+      "aiact/art/49",
+      "aiact/art/50",
+      "aiact/art/56",
+      "aiact/art/57",
+      "aiact/art/58",
+      "aiact/art/60",
+      "aiact/art/63",
+      "aiact/art/69",
+      "aiact/art/70",
+      "aiact/art/72",
+      "aiact/art/75",
+      "aiact/art/77",
+      "aiact/art/95",
+      "aiact/art/96",
+      "aiact/art/99",
+      "aiact/art/111",
+      "aiact/art/113"
+    ]
+  }
+]

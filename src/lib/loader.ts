@@ -33,6 +33,12 @@ import type {
   PinCite,
   InstrumentId,
   CanonicalId,
+  CourtJudgement,
+  SADecision,
+  SupervisoryAuthority,
+  ImplementingLaw,
+  AmendmentInstrument,
+  AmendmentCallout,
 } from '@/types/aiact';
 
 // ─── Build-time JSON imports ───────────────────────────────────────
@@ -45,6 +51,15 @@ import annexes_en from '@data/annexes_en.json';
 import annexes_nl from '@data/annexes_nl.json';
 import cross_references_data from '@data/cross_references.json';
 import references_data from '@data/references.json';
+
+// Phase 4 — new entity types. Empty stubs for the three that content ops
+// fills later; populated callouts for the migrated AI Omnibus.
+import court_judgements_data from '@data/court_judgements.json';
+import sa_decisions_data from '@data/sa_decisions.json';
+import implementing_law_data from '@data/implementing_law.json';
+import sa_registry_data from '@data/sa_registry.json';
+import amendment_instruments_data from '@data/amendment_instruments.json';
+import amendment_callouts_data from '@data/amendment_callouts.json';
 import omnibus_amendments_en from '@data/omnibus_amendments_en.json';
 import drafting_history_en from '@data/drafting_history_en.json';
 import drafting_history_nl from '@data/drafting_history_nl.json';
@@ -702,4 +717,179 @@ export function getInternalReferencesFromCanonical(canonicalId: CanonicalId): Re
 export function getExternalReferencesFromCanonical(canonicalId: CanonicalId): Reference[] {
   const fromInstrument = canonicalId.split('/')[0];
   return getReferencesFrom(canonicalId).filter((r) => r.targetInstrument !== fromInstrument);
+}
+
+
+// ─── Phase 3 — paragraph-grain Reference helpers (FF_BILINGUAL_PINCITE) ──
+//
+// ParagraphCitations (Step 3.1 § 3, lit up by Phase 5) wants per-paragraph
+// counts: "how many court / DPA / guidance / implementation references
+// point at THIS paragraph of THIS article?". The unified references.json
+// carries paragraph-grain targetPin info; these helpers expose it.
+
+/**
+ * All references whose target's pin-cite matches the given paragraph.
+ * Used by ParagraphCitations to render counts per paragraph.
+ *
+ *   getReferencedByParagraph('aiact/art/6', '1')
+ *   → Reference[] of all edges citing Article 6 paragraph 1
+ */
+export function getReferencedByParagraph(
+  canonicalId: CanonicalId,
+  paragraph: string,
+): Reference[] {
+  return getReferencedBy(canonicalId).filter(
+    (r) => r.targetPin?.paragraph === paragraph,
+  );
+}
+
+/**
+ * Paragraph-grain reference counts for an entity, keyed by paragraph
+ * number. Returns Record<paragraph, count> where count is the number of
+ * inbound references whose targetPin.paragraph matches.
+ *
+ *   getReferenceCountsByParagraph('aiact/art/6')
+ *   → { '1': 12, '2': 7, '3': 4, ... }
+ *
+ * Paragraphs with zero references are omitted from the result.
+ */
+export function getReferenceCountsByParagraph(
+  canonicalId: CanonicalId,
+): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const r of getReferencedBy(canonicalId)) {
+    const p = r.targetPin?.paragraph;
+    if (!p) continue;
+    counts[p] = (counts[p] ?? 0) + 1;
+  }
+  return counts;
+}
+
+/**
+ * Same as getReferenceCountsByParagraph but further broken down by the
+ * source instrument. Useful for ParagraphCitations' species-aware chips:
+ *
+ *   getReferenceCountsByParagraphAndInstrument('aiact/art/6')
+ *   → { '1': { aiact: 8, gdpr: 4 }, '2': { aiact: 7 }, ... }
+ */
+export function getReferenceCountsByParagraphAndInstrument(
+  canonicalId: CanonicalId,
+): Record<string, Record<InstrumentId, number>> {
+  const out: Record<string, Record<InstrumentId, number>> = {};
+  for (const r of getReferencedBy(canonicalId)) {
+    const p = r.targetPin?.paragraph;
+    if (!p) continue;
+    if (!out[p]) out[p] = {};
+    out[p][r.sourceInstrument] = (out[p][r.sourceInstrument] ?? 0) + 1;
+  }
+  return out;
+}
+
+
+// ─── Phase 4 — new entity accessors (FF_NEW_ENTITY_TYPES) ────────────
+//
+// Empty for Court / SA / Implementing in Phase 4 — content ops fills as
+// data lands. AmendmentInstrument + AmendmentCallout populated from the
+// AI Omnibus migration (scripts/migrate_amendment_instruments.py).
+
+const allCourtJudgements = court_judgements_data as unknown as CourtJudgement[];
+const allSADecisions = sa_decisions_data as unknown as SADecision[];
+const allImplementingLaw = implementing_law_data as unknown as ImplementingLaw[];
+const allSARegistry = sa_registry_data as unknown as SupervisoryAuthority[];
+const allAmendmentInstruments = amendment_instruments_data as unknown as AmendmentInstrument[];
+const allAmendmentCallouts = amendment_callouts_data as unknown as AmendmentCallout[];
+
+// Pre-built indexes — one pass at module load.
+const calloutsByAffectedArticle = new Map<CanonicalId, AmendmentCallout[]>();
+for (const c of allAmendmentCallouts) {
+  if (!calloutsByAffectedArticle.has(c.affectedArticle)) {
+    calloutsByAffectedArticle.set(c.affectedArticle, []);
+  }
+  calloutsByAffectedArticle.get(c.affectedArticle)!.push(c);
+}
+
+const amendmentInstrumentById = new Map<CanonicalId, AmendmentInstrument>();
+for (const i of allAmendmentInstruments) {
+  amendmentInstrumentById.set(i.canonicalId, i);
+}
+
+const saByCanonical = new Map<string, SupervisoryAuthority>();
+for (const a of allSARegistry) {
+  saByCanonical.set(a.canonicalId, a);
+}
+
+/**
+ * All court judgements applying or interpreting AI Act articles. Phase 4
+ * ships an empty list; content ops fills as preliminary references and
+ * national rulings arrive.
+ */
+export function getCourtJudgements(): CourtJudgement[] {
+  return allCourtJudgements;
+}
+
+/**
+ * All supervisory-authority decisions (MSAs + AI Office) under the AI Act.
+ * Empty in Phase 4; populated once national enforcement actions start.
+ */
+export function getSADecisions(): SADecision[] {
+  return allSADecisions;
+}
+
+/**
+ * All Member-State implementing acts that operationalise AI Act provisions.
+ * Empty in Phase 4; AI Act Member-State implementing acts arrive 2026+
+ * (Art. 70 designations).
+ */
+export function getImplementingLaw(): ImplementingLaw[] {
+  return allImplementingLaw;
+}
+
+/**
+ * The MSA / supervisory-authority registry for AI Act. Lookup table used
+ * to resolve SADecision.authority.canonicalId to a full SupervisoryAuthority
+ * record. Phase 4 placeholder; populated as the national-MSA list is
+ * compiled.
+ */
+export function getSupervisoryAuthorities(): SupervisoryAuthority[] {
+  return allSARegistry;
+}
+
+export function getSupervisoryAuthority(canonicalId: string): SupervisoryAuthority | undefined {
+  return saByCanonical.get(canonicalId);
+}
+
+/**
+ * All AmendmentInstrument records affecting the AI Act. Phase 4 ships
+ * with one: the AI Omnibus Package (COM(2025) 836), proposed.
+ */
+export function getAmendmentInstruments(): AmendmentInstrument[] {
+  return allAmendmentInstruments;
+}
+
+export function getAmendmentInstrument(canonicalId: CanonicalId): AmendmentInstrument | undefined {
+  return amendmentInstrumentById.get(canonicalId);
+}
+
+/**
+ * All inline amendment callouts (per-paragraph redline records) for the
+ * given article. Phase 6 renders these as AmendmentCallout components on
+ * the article page; the loader index makes lookup O(1).
+ *
+ *   getAmendmentCalloutsForArticle('aiact/art/6')
+ *   → AmendmentCallout[] of all proposed/adopted/in-force changes to Art. 6
+ *
+ * Phase 4 populates these from the AI Omnibus migration; phase-6 surface
+ * lights them up.
+ */
+export function getAmendmentCalloutsForArticle(canonicalId: CanonicalId): AmendmentCallout[] {
+  return calloutsByAffectedArticle.get(canonicalId) ?? [];
+}
+
+/**
+ * Convenience: do any amendments affect this article? Cheap pre-flight
+ * check for components that want to conditionally render an amendment
+ * indicator chip on the paragraph.
+ */
+export function hasAmendmentCallouts(canonicalId: CanonicalId): boolean {
+  return calloutsByAffectedArticle.has(canonicalId);
 }
