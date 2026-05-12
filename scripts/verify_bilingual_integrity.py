@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+# Phase 1 (2026-05-12) update: dist/ path resolution rewritten to use the
+# canonical-id URL shapes per url-contract-aiact-2026-05-12.md. Legacy
+# /[lang]/articles/chapter-N/article-M/ paths now serve redirect HTML, so
+# the verifier looks at /[lang]/aiact/art/{n}/ where actual content lives.
+# History snapshots: /[lang]/aiact/history/{stage}/{kind}/{n}/.
 """
 verify_bilingual_integrity.py - Step 4.8, v1.1.
 
@@ -179,7 +184,7 @@ _META_RE = re.compile(r'<meta\s[^>]*http-equiv="refresh"[^>]*content="[^"]*url=(
 
 def classify_broken(href: str, src: str) -> str:
     h = href.split("#", 1)[0].split("?", 1)[0]
-    if re.match(r"^/(en|nl)/history/commission-2021/(articles|recitals|annexes)/", h):
+    if re.match(r"^/(en|nl)/(articles|recitals|annexes|history)/", h):
         return "catalogued_dh"
     if h == "/history/final-2024/" or h.startswith("/history/final-2024/"):
         return "final_2024_sidebar"
@@ -261,10 +266,12 @@ def check_internal_404s() -> None:
 # Check 2 — hreflang round-trips
 
 def is_catalogued_history_detail(rel_path: str, en_missing, nl_missing) -> Optional[str]:
-    m = re.match(r"^(en|nl)/history/([^/]+)/(articles|recitals|annexes)/(article|recital|annex)-([^/]+)/index\.html$", rel_path)
+    m = re.match(r"^(en|nl)/aiact/history/([^/]+)/(art|rec|annex)/([^/]+)/index\.html$", rel_path)
     if not m:
         return None
-    page_lang, stage, ctype, _kind, slug = m.groups()
+    page_lang, stage, kind, slug = m.groups()
+    # Phase 1: 'kind' is now art/rec/annex; old 'ctype' was articles/recitals/annexes.
+    ctype = {'art': 'articles', 'rec': 'recitals', 'annex': 'annexes'}.get(kind, kind)
     number = slug.upper() if ctype == "annexes" else slug
     key = (stage, ctype, number)
     if key in en_missing and page_lang == "nl":
@@ -342,7 +349,7 @@ def check_decision_3_disclosures(catalogue) -> None:
         if chapter is None:
             failures.append("article " + number + " (stage " + stage + "): chapter not found")
             continue
-        page = DIST / "en" / "articles" / ("chapter-" + chapter) / ("article-" + number) / "index.html"
+        page = DIST / "en" / "aiact" / "art" / number / "index.html"
         if not page.exists():
             failures.append(str(page.relative_to(DIST)) + ": page missing")
             continue
@@ -350,11 +357,11 @@ def check_decision_3_disclosures(catalogue) -> None:
         if not parser.dh_gap_links:
             failures.append(str(page.relative_to(DIST)) + ": no disclosure link")
             continue
-        expected_path = "/nl/history/" + stage + "/articles/article-" + number + "/"
+        expected_path = "/nl/aiact/history/" + stage + "/art/" + number + "/"
         if not any(expected_path in href for href in parser.dh_gap_links):
             failures.append(str(page.relative_to(DIST)) + ": disclosure link wrong (expected " + expected_path + ")")
             continue
-        target = DIST / "nl" / "history" / stage / "articles" / ("article-" + number) / "index.html"
+        target = DIST / "nl" / "aiact" / "history" / stage / "art" / number / "index.html"
         if not target.exists():
             failures.append(str(page.relative_to(DIST)) + ": disclosure target missing on disk")
             continue
@@ -398,7 +405,7 @@ def check_internal_reference_wraps() -> None:
         if chapter is None:
             failures.append("article " + str(article_n) + ": chapter not found")
             continue
-        page = DIST / "en" / "articles" / ("chapter-" + chapter) / ("article-" + str(article_n)) / "index.html"
+        page = DIST / "en" / "aiact" / "art" / str(article_n) / "index.html"
         if not page.exists():
             failures.append("article " + str(article_n) + ": page missing")
             continue
@@ -408,13 +415,13 @@ def check_internal_reference_wraps() -> None:
         # right anchor pool per target_kind so annex refs (Roman-numeral
         # target_article) don't generate false-positive misses against the
         # article-only pool. target_kind absent or 'article' → article wrap.
-        rendered_articles = [h for h in parser.anchors if "/en/articles/" in h]
-        rendered_annexes = [h for h in parser.anchors if "/en/annexes/" in h]
+        rendered_articles = [h for h in parser.anchors if "/en/aiact/art/" in h]
+        rendered_annexes = [h for h in parser.anchors if "/en/aiact/annex/" in h]
         for ref in expected:
             ref_target = ref.get("target_article") if isinstance(ref, dict) else ref
             ref_kind = ref.get("target_kind") if isinstance(ref, dict) else None
             if ref_kind == "annex":
-                pat = "/annex-" + str(ref_target).lower() + "/"
+                pat = "/aiact/annex/" + str(ref_target).lower() + "/"
                 pool = rendered_annexes
                 kind_label = "annex"
             else:
