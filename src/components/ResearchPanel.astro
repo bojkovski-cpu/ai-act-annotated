@@ -60,6 +60,10 @@ interface CategorySpec {
   label: string;
   /** Entry count for the chip badge. Zero-count chips are hidden. */
   count: number;
+  /** Phase 5.5d (OQ-10): hover/focus tooltip. Copy lives at instrument
+   *  level in InstrumentConfig.speciesTooltips. When omitted, no
+   *  tooltip renders for this chip. */
+  tooltip?: string;
 }
 
 interface Props {
@@ -68,9 +72,13 @@ interface Props {
   /** Categories in display order. Zero-count categories are filtered
    *  out at render time. */
   categories: CategorySpec[];
+  /** Phase 5.5d (OQ-10): tooltip for the "All" chip. Sourced from
+   *  InstrumentConfig.speciesTooltips.all when wired through
+   *  ArticleBlock. */
+  allTooltip?: string;
 }
 
-const { articleNumber, entries, categories } = Astro.props;
+const { articleNumber, entries, categories, allTooltip } = Astro.props;
 const visibleCategories = categories.filter((c) => c.count > 0);
 ---
 
@@ -80,22 +88,24 @@ const visibleCategories = categories.filter((c) => c.count > 0);
       <span class="supp-research-chips-label">View:</span>
       <button
         type="button"
-        class="supp-chip active"
+        class={allTooltip ? 'supp-chip has-tip active' : 'supp-chip active'}
         data-chip="all"
         data-article={articleNumber}
         onclick="toggleResearchChip(this)"
       >
         All <span class="supp-chip-count">{entries.length}</span>
+        {allTooltip && <span class="tip" role="tooltip">{allTooltip}</span>}
       </button>
       {visibleCategories.map((cat) => (
         <button
           type="button"
-          class="supp-chip"
+          class={cat.tooltip ? 'supp-chip has-tip' : 'supp-chip'}
           data-chip={cat.slug}
           data-article={articleNumber}
           onclick="toggleResearchChip(this)"
         >
           {cat.label} <span class="supp-chip-count">{cat.count}</span>
+          {cat.tooltip && <span class="tip" role="tooltip">{cat.tooltip}</span>}
         </button>
       ))}
       <span class="supp-research-chips-spacer"></span>

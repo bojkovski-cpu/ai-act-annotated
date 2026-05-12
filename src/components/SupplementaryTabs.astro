@@ -37,6 +37,10 @@ interface TabSpec {
   label: string;
   /** Entry count for the badge. Tabs with `count <= 0` are hidden. */
   count: number;
+  /** Phase 5.5d (OQ-10): hover/focus tooltip. Copy lives at instrument
+   *  level in InstrumentConfig.categoryTooltips. When omitted, no
+   *  tooltip renders for this tab. */
+  tooltip?: string;
 }
 
 interface Props {
@@ -59,7 +63,7 @@ const visibleTabs = tabs.filter((t) => t.count > 0);
     {visibleTabs.map((t) => (
       <button
         type="button"
-        class="supp-tab"
+        class={t.tooltip ? 'supp-tab has-tip' : 'supp-tab'}
         role="tab"
         aria-selected="false"
         data-tab={t.slug}
@@ -68,6 +72,7 @@ const visibleTabs = tabs.filter((t) => t.count > 0);
       >
         {t.label}
         <span class="supp-tab-count">{t.count}</span>
+        {t.tooltip && <span class="tip" role="tooltip">{t.tooltip}</span>}
       </button>
     ))}
   </div>
@@ -124,12 +129,69 @@ const visibleTabs = tabs.filter((t) => t.count > 0);
     color: var(--stone-700, #3a382f);
   }
 
+  /* ── Hover tooltips (Phase 5.5d, OQ-10) ───────────────────────
+     Shared by .supp-tab and .supp-chip — both attach .has-tip on
+     the trigger element and render a .tip span inside. Dark
+     stone-900 pill above the trigger, with a downward-pointing
+     arrow, fade-in on hover/focus. The whole block is loaded
+     globally because both SupplementaryTabs and ResearchPanel
+     render `.has-tip` / `.tip` — keeping the CSS in one place
+     avoids duplicating selectors across components. */
+  .has-tip { position: relative; }
+  .has-tip .tip {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-3px);
+    background: var(--stone-900, #15140f);
+    color: #fff;
+    padding: 0.5rem 0.7rem;
+    border-radius: 4px;
+    font-size: 11.5px;
+    line-height: 1.45;
+    font-family: var(--font-ui, sans-serif);
+    font-weight: 400;
+    letter-spacing: 0;
+    max-width: 260px;
+    width: max-content;
+    white-space: normal;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--dur-2, 180ms) var(--ease, ease),
+                transform var(--dur-2, 180ms) var(--ease, ease);
+    z-index: 30;
+    text-align: left;
+    text-transform: none;
+  }
+  .has-tip .tip::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 8px;
+    height: 8px;
+    background: var(--stone-900, #15140f);
+  }
+  .has-tip:hover .tip,
+  .has-tip:focus-visible .tip,
+  .has-tip:focus-within .tip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
   /* Mobile: keep tab labels visible by allowing wrap (already on
-     parent), shrink padding to fit narrower viewports. */
+     parent), shrink padding to fit narrower viewports. Tooltips
+     stay rendered but hover is unreliable on touch; focus-within
+     still fires on tap. */
   @media (max-width: 600px) {
     .supp-tab {
       padding: 0.5rem 0.7rem 0.45rem;
       font-size: 13px;
+    }
+    .has-tip .tip {
+      max-width: 200px;
+      font-size: 11px;
     }
   }
 </style>

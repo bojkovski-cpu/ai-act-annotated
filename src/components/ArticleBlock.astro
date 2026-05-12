@@ -48,6 +48,7 @@ import SupplementaryTabs from '@/components/SupplementaryTabs.astro';
 import SupplementaryPanel from '@/components/SupplementaryPanel.astro';
 import SupplementaryHeader from '@/components/SupplementaryHeader.astro';
 import ResearchPanel from '@/components/ResearchPanel.astro';
+import { aiActInstrumentConfig } from '@/lib/instrumentConfig';
 
 interface Props {
   article: Article;
@@ -192,12 +193,20 @@ const articleHref = '/' + lang + '/aiact/art/' + article.number + '/';
 // and surfaces in an interim placeholder block above the tabs until
 // Phase 6 lights up the proper AmendmentCallout / VersionBanner / sidebar
 // surface.
+// Phase 5.5d (OQ-10): tooltip copy for tabs and chips sourced from
+// InstrumentConfig (instrument-level, not per-article). The lookup
+// silently returns undefined for slugs without copy, which makes
+// SupplementaryTabs / ResearchPanel skip the tooltip render — useful
+// for future categories that don't get explicit copy.
+const catTips = aiActInstrumentConfig.categoryTooltips;
+const speciesTips = aiActInstrumentConfig.speciesTooltips;
+
 const supplementaryTabs = [
-  { slug: 'history',        label: 'History',        count: historyCount },
-  { slug: 'implementation', label: 'Implementation', count: 0 },
-  { slug: 'recitals',       label: 'Recitals',       count: recitalCount },
-  { slug: 'decisions',      label: 'Decisions',      count: 0 },
-  { slug: 'guidance',       label: 'Guidance',       count: guidanceCount },
+  { slug: 'history',        label: 'History',        count: historyCount,  tooltip: catTips.history },
+  { slug: 'implementation', label: 'Implementation', count: 0,             tooltip: catTips.implementation },
+  { slug: 'recitals',       label: 'Recitals',       count: recitalCount,  tooltip: catTips.recitals },
+  { slug: 'decisions',      label: 'Decisions',      count: 0,             tooltip: catTips.decisions },
+  { slug: 'guidance',       label: 'Guidance',       count: guidanceCount, tooltip: catTips.guidance },
 ];
 
 // Phase 5.5b: Research mode — flat cross-source entry list. Same data
@@ -308,9 +317,9 @@ const researchEntries: ResearchEntry[] = [
 });
 
 const researchCategories = [
-  { slug: 'history',  label: 'History',  count: historyCount },
-  { slug: 'recitals', label: 'Recitals', count: recitalCount },
-  { slug: 'guidance', label: 'Guidance', count: guidanceCount },
+  { slug: 'history',  label: 'History',  count: historyCount,  tooltip: speciesTips.history },
+  { slug: 'recitals', label: 'Recitals', count: recitalCount,  tooltip: speciesTips.recitals },
+  { slug: 'guidance', label: 'Guidance', count: guidanceCount, tooltip: speciesTips.guidance },
 ];
 
 const totalSupplementaryEntries = researchEntries.length;
@@ -488,6 +497,7 @@ function parseSubPoints(text: string) {
         articleNumber={String(article.number)}
         entries={researchEntries}
         categories={researchCategories}
+        allTooltip={speciesTips.all}
       />
     </section>
   )}
