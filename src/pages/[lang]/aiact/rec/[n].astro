@@ -6,7 +6,7 @@
  */
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Sidebar from '@components/Sidebar.astro';
-import { getArticles, getRecitals, getCrossReferences } from '@/lib/loader';
+import { getArticles, getRecitals, getReferencedBy } from '@/lib/loader';
 import type { Lang, Recital } from '@/types/aiact';
 
 export function getStaticPaths() {
@@ -23,8 +23,12 @@ export function getStaticPaths() {
 interface Props { recital: Recital; lang: Lang }
 const { recital, lang } = Astro.props;
 
-const cr = getCrossReferences();
-const articleNums = (cr.recital_to_articles[recital.number] ?? []).map((n) => String(n));
+// Phase 2 (FF_UNIFIED_REFERENCES): articles that reference this recital
+// via the unified references table. Filter to article sources only —
+// matches the legacy recital_to_articles semantic. Language-agnostic.
+const articleNums = getReferencedBy(`aiact/rec/${recital.number}`)
+  .filter((ref) => ref.source.startsWith('aiact/art/'))
+  .map((ref) => ref.source.replace('aiact/art/', ''));
 const allArticles = getArticles(lang);
 const referencingArticles = articleNums
   .map((n) => allArticles.find((a) => a.number === n))
