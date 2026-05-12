@@ -1,4 +1,10 @@
 ---
+// Phase 5.1: load family-wide design tokens (stone + deep-legal-blue,
+// Source Serif 4 + Inter + JetBrains Mono, 8-callout palette, dark mode)
+// BEFORE the legacy global.css. Legacy red/Mondrian styles continue to win
+// on overlapping selectors; new components in Phase 5.2+ consume the tokens
+// directly.
+import '@/styles/tokens.css';
 import '@/styles/global.css';
 import TopBar from '@/components/TopBar.astro';
 import type { Lang } from '@/types/aiact';
