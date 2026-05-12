@@ -54,7 +54,7 @@ const { article, lang } = Astro.props;
 const relatedRecitals = getRelatedRecitals(article.number, lang).map((rec) => ({
   number: rec.number,
   text: rec.text,
-  href: '/' + lang + '/recitals/recital-' + rec.number + '/',
+  href: '/' + lang + '/aiact/rec/' + rec.number + '/',
 }));
 
 // Drafting history — bilingual via loader (4.4). Snapshots in this article's
@@ -149,7 +149,7 @@ const referencedByEntries = referencedBy.map((r) => {
   const ch = getChapterForArticle(r.source_article);
   const href = ch === null
     ? '#'
-    : `/${lang}/articles/chapter-${ch}/article-${r.source_article}/`;
+    : `/${lang}/aiact/art/${r.source_article}/`;
   // Build the pin-cite suffix only when the source paragraph is known.
   let pin = '';
   if (r.paragraph) {
@@ -177,7 +177,7 @@ const historyCount = historyStageCardCount + 1; // +1 for final-2024 card
 const omnibusCount = omnibusAmendments.length;
 const guidanceCount = guidanceCards.length;
 
-const articleHref = '/' + lang + '/articles/chapter-' + article.chapter + '/article-' + article.number + '/';
+const articleHref = '/' + lang + '/aiact/art/' + article.number + '/';
 
 function parseSubPoints(text: string) {
   const parts: { marker?: string; text: string }[] = [];

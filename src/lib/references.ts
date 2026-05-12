@@ -9,8 +9,8 @@
  *
  * URL composition:
  *
- *   internal article : /{lang}/articles/chapter-{N}/article-{NUM}/
- *   internal annex   : /{lang}/annexes/annex-{id_lower}/
+ *   internal article : /{lang}/aiact/art/{NUM}/                  (Phase 1 canonical)
+ *   internal annex   : /{lang}/aiact/annex/{id_lower}/             (Phase 1 canonical)
  *   external_gdpr    : https://gdpr.annotated.nl/{lang}/article/{N}/
  *   external_other   : https://eur-lex.europa.eu/legal-content/{LANG}/TXT/?uri=CELEX:{celex}
  *
@@ -44,11 +44,13 @@ import { getChapterForArticle } from './loader';
 
 export function internalHref(lang: Lang, ref: InternalReference): string {
   if (ref.target_kind === 'annex') {
-    return `/${lang}/annexes/annex-${ref.target_article.toLowerCase()}/`;
+    return `/${lang}/aiact/annex/${ref.target_article.toLowerCase()}/`;
   }
-  const chapter = getChapterForArticle(ref.target_article);
-  if (chapter === null) return '#';
-  return `/${lang}/articles/chapter-${chapter}/article-${ref.target_article}/`;
+  // Existence check via the chapter lookup — chapter number itself is no
+  // longer needed in the canonical URL (Phase 1 contract drops the chapter
+  // anchor; chapter still appears as the rubric on the article page).
+  if (getChapterForArticle(ref.target_article) === null) return '#';
+  return `/${lang}/aiact/art/${ref.target_article}/`;
 }
 
 export function externalHref(lang: Lang, ref: ExternalReference): string {
