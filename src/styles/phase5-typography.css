@@ -1,0 +1,115 @@
+/* ─────────────────────────────────────────────────────────────────
+   Phase 5.2 — canonical-text typography overlay.
+
+   Loaded AFTER src/styles/global.css so it selectively overrides
+   the legacy paragraph styling with the family-wide design tokens:
+   Source Serif 4 + Inter + canonical leading + muted paragraph
+   markers. Rollback path: drop the import from BaseLayout.
+
+   No HTML changes required — the existing .article-body / .para-row /
+   .para-num / .para-text markup from ArticleBlock.astro is retargeted
+   via the selectors below.
+   ───────────────────────────────────────────────────────────────── */
+
+/* Canonical regulation text container. */
+.article-body {
+  font-family: var(--font-canonical);
+  font-size: var(--canonical-body);
+  line-height: var(--canonical-leading);
+  color: var(--fg);
+  font-feature-settings: "kern", "liga", "onum", "pnum";
+}
+
+/* Paragraph row — hanging-indent shape via CSS grid. */
+.article-body .para-row {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0;
+  margin: 0 0 var(--space-5);
+  align-items: baseline;
+}
+
+/* Paragraph marker (the "1." in the margin). UI font, tabular numerals,
+   muted colour — replaces the legacy red/blue accent bold. */
+.article-body .para-num {
+  font-family: var(--font-ui);
+  font-size: var(--text-base);
+  font-feature-settings: "tnum";
+  font-weight: 500;
+  color: var(--fg-muted);
+  padding-top: 0.18rem;
+  flex-shrink: 0;
+}
+
+/* Paragraph body. Canonical typography inherits from .article-body;
+   this rule retunes the colour off of the legacy gray-700. */
+.article-body .para-text {
+  color: var(--fg);
+  flex: initial;
+}
+
+/* Inline xref links inside paragraph body — dotted underline pattern
+   per the bundle's design-system spec (replaces the legacy red-on-hover
+   underline). */
+.article-body .para-text .xref,
+.article-body .para-text a.article-ref,
+.article-body .para-text a.article-ref-internal,
+.article-body .para-text a.article-ref-gdpr,
+.article-body .para-text a.article-ref-external {
+  color: var(--fg);
+  text-decoration: underline dotted var(--border-strong);
+  text-underline-offset: 3px;
+  border-bottom: none; /* override legacy border-bottom underlines */
+  transition: color var(--dur-1) var(--ease), text-decoration-color var(--dur-1) var(--ease);
+}
+
+.article-body .para-text .xref:hover,
+.article-body .para-text a.article-ref:hover,
+.article-body .para-text a.article-ref-internal:hover,
+.article-body .para-text a.article-ref-gdpr:hover,
+.article-body .para-text a.article-ref-external:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+/* Sub-points (a, b, c …). Same hanging-indent shape, one indent deeper. */
+.article-body .sub-para {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0;
+  margin: var(--space-3) 0;
+  padding-left: 0.5rem;
+  align-items: baseline;
+}
+
+.article-body .sub-para-marker {
+  font-family: var(--font-ui);
+  font-size: var(--text-base);
+  color: var(--fg-muted);
+  padding-top: 0.18rem;
+}
+
+.article-body .sub-para-text {
+  color: var(--fg);
+  font-family: var(--font-canonical);
+  line-height: var(--canonical-leading);
+}
+
+/* Articles without numbered paragraphs (e.g. Article 3 Definitions) —
+   .para-text-full spans the full width. */
+.article-body .para-text-full {
+  grid-column: 1 / -1;
+  color: var(--fg);
+  font-family: var(--font-canonical);
+  font-size: var(--canonical-body);
+  line-height: var(--canonical-leading);
+}
+
+/* Anchor highlight on :target — Phase 5.2 introduces this for paragraph
+   deep-links. tokens.css already defines @keyframes target-flash; this
+   rule scopes its trigger to paragraph-level IDs inside the article body. */
+.article-body .para-row:target,
+.article-body .sub-para:target {
+  animation: target-flash 1.8s var(--ease) 1;
+  scroll-margin-top: 2rem;
+}

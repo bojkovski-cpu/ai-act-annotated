@@ -1,0 +1,357 @@
+/* ─────────────────────────────────────────────────────────────────
+   Annotated.nl — Design Tokens (family-wide; AI Act + GDPR + future).
+
+   Sourced from control-room/reference/design-bundle/assets/colors_and_type.css
+   (Phase 3 design bundle, locked 2026-05-11). Phase 5.1 (2026-05-12) drops
+   this into the AI Act repo as src/styles/tokens.css; subsequent Phase 5
+   sub-steps migrate components to consume these variables.
+
+   Typography: Inter (UI / editorial) + Source Serif 4 (canonical regulation
+   text only) + JetBrains Mono (ECLI, CELEX, fine amounts).
+   Palette:    Stone neutrals + Deep Legal Blue accent. Red retires.
+   Borders:    Thin 1px stone rules + depth gradient. Mondrian 3-4px
+               black borders retire.
+   Depth:      Light at the surface, darker as hierarchy goes deeper.
+   Callouts:   Eight semantic variants (recital, commentary, implementation,
+               caution, caselaw, dpa, guidance, quote).
+   Dark mode:  Per [data-theme="dark"] block at the bottom.
+
+   Loaded BEFORE src/styles/global.css in BaseLayout so existing component
+   styles (the legacy red/Mondrian layer) win on matching selectors during
+   Phase 5.1. Subsequent sub-phases replace those component styles, at
+   which point this file becomes authoritative.
+
+   Font loading: Phase 5.1 uses Google Fonts via @import below. Phase 5.1b
+   migrates to self-hosted fonts (@fontsource-variable/inter etc.) per the
+   bundle's design intent.
+   ───────────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* ── Font stacks ─────────────────────────────────────────────── */
+  --font-ui:          'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-canonical:   'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+  --font-mono:        'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* ── Base (stone) palette ────────────────────────────────────── */
+  --stone-50:  #fafaf8;
+  --stone-75:  #f5f4f0;
+  --stone-100: #eeede7;
+  --stone-150: #e4e2da;
+  --stone-200: #d8d5cb;
+  --stone-300: #bdb9ac;
+  --stone-400: #8e8a7d;
+  --stone-500: #6a6658;
+  --stone-600: #504d42;
+  --stone-700: #3a382f;
+  --stone-800: #26241e;
+  --stone-900: #15140f;
+
+  /* ── Accent: deep legal blue ─────────────────────────────────── */
+  --blue-50:   #eef2f8;
+  --blue-100:  #dbe3f0;
+  --blue-200:  #b4c2db;
+  --blue-400:  #4e6b9b;
+  --blue-600:  #1f3c6e;
+  --blue-700:  #162c52;
+  --blue-800:  #0e1f3b;
+
+  /* ── Semantic callout colours (for eight variants) ───────────── */
+  /* 1. Recital (cross-reference within the regulation)   */
+  --callout-recital-fg:  #1f3c6e;
+  --callout-recital-bg:  #eef2f8;
+  --callout-recital-rail:#4e6b9b;
+
+  /* 2. Commentary (editorial note from the annotator)    */
+  --callout-commentary-fg:  #3a382f;
+  --callout-commentary-bg:  #f5f4f0;
+  --callout-commentary-rail:#6a6658;
+
+  /* 3. Implementation (national transposition, UAVG)     */
+  --callout-implementation-fg:  #5a4520;
+  --callout-implementation-bg:  #f5efe1;
+  --callout-implementation-rail:#8a6a2a;
+
+  /* 4. Caution / warning                                 */
+  --callout-caution-fg:  #7a2a1a;
+  --callout-caution-bg:  #f8ebe5;
+  --callout-caution-rail:#b74a2a;
+
+  /* 5. Case-law pull (CJEU / national)                   */
+  --callout-caselaw-fg:  #5a2d5c;
+  --callout-caselaw-bg:  #f3ecf4;
+  --callout-caselaw-rail:#8a4a8c;
+
+  /* 6. DPA pull (enforcement decision)                   */
+  --callout-dpa-fg:  #7a1a3a;
+  --callout-dpa-bg:  #f7e8ee;
+  --callout-dpa-rail:#b3366a;
+
+  /* 7. EDPB / WP29 guidance pull                         */
+  --callout-guidance-fg:  #1a5a50;
+  --callout-guidance-bg:  #e5f1ec;
+  --callout-guidance-rail:#2f8a78;
+
+  /* 8. Recital quote (verbatim excerpt from a recital)   */
+  --callout-quote-fg:  #3a382f;
+  --callout-quote-bg:  #faf7ef;
+  --callout-quote-rail:#bdb9ac;
+
+  /* ── Status pills (Kluwer-style) ─────────────────────────────── */
+  --status-in-force-fg:  #0f5132;
+  --status-in-force-bg:  #d7ecdf;
+  --status-proposed-fg:  #7a4a00;
+  --status-proposed-bg:  #f6e6c7;
+  --status-historical-fg:#504d42;
+  --status-historical-bg:#e4e2da;
+
+  /* ── Tag pills (category semantics, AI Act style) ────────────── */
+  --tag-rights-fg:       #1f3c6e;
+  --tag-rights-bg:       #dbe3f0;
+  --tag-basis-fg:        #1a5a50;
+  --tag-basis-bg:        #d9ead9;
+  --tag-enforcement-fg:  #7a1a3a;
+  --tag-enforcement-bg:  #f4dae3;
+  --tag-transfer-fg:     #5a4520;
+  --tag-transfer-bg:     #efe2c2;
+  --tag-governance-fg:   #5a2d5c;
+  --tag-governance-bg:   #ecd9ed;
+  --tag-security-fg:     #3a382f;
+  --tag-security-bg:     #e4e2da;
+
+  /* ── Depth gradient (light at surface → darker deeper) ───────── */
+  --depth-chrome:     #ffffff;          /* site chrome, header, nav */
+  --depth-page:       var(--stone-50);  /* page background          */
+  --depth-chapter:    var(--stone-75);  /* chapter heading band     */
+  --depth-section:    var(--stone-100); /* section heading band     */
+  --depth-article:    var(--stone-150); /* article metadata band    */
+  --depth-callout:    var(--stone-75);  /* callout surface (under paragraph)  */
+
+  /* Left-rail darkening, matched to depth */
+  --rail-chapter:  transparent;                         /* no rail   */
+  --rail-section:  1px solid var(--stone-200);          /* thin rule */
+  --rail-article:  2px solid var(--stone-400);          /* 2px rail  */
+  --rail-callout:  3px solid var(--blue-600);           /* 3px saturated */
+
+  /* ── Semantic foreground / surface ───────────────────────────── */
+  --bg:           var(--stone-50);
+  --surface:      #ffffff;
+  --surface-sunk: var(--stone-75);
+  --fg:           var(--stone-900);
+  --fg-muted:     var(--stone-600);
+  --fg-subtle:    var(--stone-500);
+  --border:       var(--stone-150);
+  --border-strong:var(--stone-300);
+
+  --accent:        var(--blue-600);
+  --accent-hover:  var(--blue-700);
+  --accent-contrast:#ffffff;
+  --accent-soft-bg:var(--blue-50);
+  --accent-soft-fg:var(--blue-700);
+
+  /* ── Spacing scale ───────────────────────────────────────────── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10:4rem;
+
+  /* ── Layout ─────────────────────────────────────────────────── */
+  --content-width: 44rem;      /* narrower than before, better for serif */
+  --nav-width:     19rem;
+  --meta-width:    15rem;
+
+  /* ── Radii / shadows ────────────────────────────────────────── */
+  --radius-sm: 3px;
+  --radius-md: 5px;
+  --radius-lg: 8px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(21, 20, 15, 0.05);
+  --shadow-md: 0 3px 12px -2px rgba(21, 20, 15, 0.08), 0 1px 3px rgba(21, 20, 15, 0.04);
+  --shadow-lg: 0 20px 50px -10px rgba(21, 20, 15, 0.20);
+
+  /* ── Type scale (sans UI) ────────────────────────────────────── */
+  --text-xs:   0.72rem;  /* meta, chapter labels, badges */
+  --text-sm:   0.82rem;  /* nav, toolbar, pill           */
+  --text-base: 0.94rem;  /* body UI                      */
+  --text-md:   1.05rem;  /* subheading                   */
+  --text-lg:   1.25rem;  /* section heading              */
+  --text-xl:   1.6rem;   /* article number               */
+  --text-2xl:  2.0rem;   /* masthead                     */
+
+  /* ── Type scale (canonical serif) ────────────────────────────── */
+  --canonical-body:    1.0625rem; /* 17px equivalent          */
+  --canonical-leading: 1.68;
+  --canonical-title:   1.375rem;
+
+  /* ── Motion ──────────────────────────────────────────────────── */
+  --ease:   cubic-bezier(0.2, 0.0, 0.0, 1.0);
+  --dur-1:  120ms;
+  --dur-2:  180ms;
+  --dur-3:  320ms;
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   Dark mode
+   ───────────────────────────────────────────────────────────────── */
+[data-theme="dark"] {
+  --bg:           #100f0b;
+  --surface:      #181712;
+  --surface-sunk: #1f1e17;
+  --fg:           #ebe8df;
+  --fg-muted:     #a8a396;
+  --fg-subtle:    #807b6e;
+  --border:       #2a2822;
+  --border-strong:#3a382f;
+
+  --accent:        #8fa8d4;
+  --accent-hover:  #a8bde3;
+  --accent-contrast:#0e1f3b;
+  --accent-soft-bg:#1a2338;
+  --accent-soft-fg:#b4c2db;
+
+  --depth-chrome:  #181712;
+  --depth-page:    #100f0b;
+  --depth-chapter: #181712;
+  --depth-section: #1c1a14;
+  --depth-article: #211e17;
+  --depth-callout: #1c1a14;
+
+  --rail-section:  1px solid #2a2822;
+  --rail-article:  2px solid #4a463c;
+  --rail-callout:  3px solid #8fa8d4;
+
+  --callout-recital-fg:  #b4c2db;
+  --callout-recital-bg:  #182138;
+  --callout-recital-rail:#4e6b9b;
+  --callout-commentary-fg:#d8d5cb;
+  --callout-commentary-bg:#1f1e17;
+  --callout-commentary-rail:#6a6658;
+  --callout-implementation-fg:#e6c88c;
+  --callout-implementation-bg:#26200f;
+  --callout-implementation-rail:#b89256;
+  --callout-caution-fg:  #f0b8a2;
+  --callout-caution-bg:  #2e160f;
+  --callout-caution-rail:#d47656;
+  --callout-caselaw-fg:  #d8b0d9;
+  --callout-caselaw-bg:  #26152a;
+  --callout-caselaw-rail:#a36ba5;
+  --callout-dpa-fg:      #e69db0;
+  --callout-dpa-bg:      #2a1221;
+  --callout-dpa-rail:    #c25682;
+  --callout-guidance-fg: #8bc8b8;
+  --callout-guidance-bg: #0f241f;
+  --callout-guidance-rail:#47a38f;
+  --callout-quote-fg:    #d8d5cb;
+  --callout-quote-bg:    #1b1a14;
+  --callout-quote-rail:  #504d42;
+
+  --status-in-force-fg:  #8ed1a8;
+  --status-in-force-bg:  #122a1c;
+  --status-proposed-fg:  #e9c37e;
+  --status-proposed-bg:  #2a1f0d;
+  --status-historical-fg:#a8a396;
+  --status-historical-bg:#1f1e17;
+
+  --tag-rights-fg:       #b4c2db;
+  --tag-rights-bg:       #182138;
+  --tag-basis-fg:        #8bc8b8;
+  --tag-basis-bg:        #0f241f;
+  --tag-enforcement-fg:  #e69db0;
+  --tag-enforcement-bg:  #2a1221;
+  --tag-transfer-fg:     #e6c88c;
+  --tag-transfer-bg:     #26200f;
+  --tag-governance-fg:   #d8b0d9;
+  --tag-governance-bg:   #26152a;
+  --tag-security-fg:     #d8d5cb;
+  --tag-security-bg:     #1f1e17;
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   Semantic defaults — ready-to-use element styles
+   ───────────────────────────────────────────────────────────────── */
+html { font-size: 16px; }
+
+body {
+  font-family: var(--font-ui);
+  font-size: var(--text-base);
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* UI headings (sans) */
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-ui); font-weight: 600; line-height: 1.25; color: var(--fg); }
+h1 { font-size: var(--text-2xl); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: var(--text-xl); }
+h3 { font-size: var(--text-lg); }
+h4 { font-size: var(--text-md); }
+h5 { font-size: var(--text-base); text-transform: uppercase; letter-spacing: 0.05em; color: var(--fg-muted); }
+h6 { font-size: var(--text-xs);  text-transform: uppercase; letter-spacing: 0.05em; color: var(--fg-subtle); }
+
+/* Canonical block — the official regulation text */
+.official-text {
+  font-family: var(--font-canonical);
+  font-size: var(--canonical-body);
+  line-height: var(--canonical-leading);
+  font-feature-settings: "kern", "liga", "onum", "pnum";
+  color: var(--fg);
+}
+
+p { margin: 0 0 var(--space-4); }
+p + p { margin-top: var(--space-4); }
+
+code, kbd, samp {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: var(--surface-sunk);
+  padding: 0.08em 0.35em;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 2px; }
+
+/* Cross-reference link style (dotted underline, AI Act pattern) */
+a.xref {
+  color: var(--fg);
+  text-decoration: underline dotted var(--border-strong);
+  text-underline-offset: 3px;
+  transition: color var(--dur-1) var(--ease), text-decoration-color var(--dur-1) var(--ease);
+}
+a.xref:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+/* :target highlight animation (AI Act pattern) */
+@keyframes target-flash {
+  0%   { background-color: var(--accent-soft-bg); }
+  100% { background-color: transparent; }
+}
+:target {
+  animation: target-flash 1.8s var(--ease) 1;
+  scroll-margin-top: 2rem;
+}
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: var(--space-6) 0;
+}
