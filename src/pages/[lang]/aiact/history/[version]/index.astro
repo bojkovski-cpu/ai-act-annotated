@@ -1,0 +1,77 @@
+---
+/**
+ * Per-stage history index — /[lang]/aiact/history/[version]/.
+ * Phase 1 fork.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import { getDraftingStages, getDraftingHistory } from '@/lib/loader';
+import type { Lang, DraftingSnapshot, DraftingStage } from '@/types/aiact';
+
+export function getStaticPaths() {
+  const langs: Lang[] = ['en', 'nl'];
+  const out: Array<{ params: { lang: Lang; version: string }; props: { stage: DraftingStage; lang: Lang } }> = [];
+  for (const lang of langs) {
+    for (const stage of getDraftingStages(lang)) {
+      out.push({ params: { lang, version: stage.id }, props: { stage, lang } });
+    }
+  }
+  return out;
+}
+
+interface Props { stage: DraftingStage; lang: Lang }
+const { stage, lang } = Astro.props;
+const blob = getDraftingHistory(lang);
+const snaps = blob.snapshots.filter((s) => s.stage === stage.id);
+const articles = snaps.filter((s) => s.content_type === 'articles');
+const recitals = snaps.filter((s) => s.content_type === 'recitals');
+const annexes  = snaps.filter((s) => s.content_type === 'annexes');
+const amendments = snaps.filter((s) => s.content_type === 'amendments');
+
+function num(s: string): number { const m = /^(\d+)/.exec(s); return m ? parseInt(m[1], 10) : 0; }
+articles.sort((a, b) => num(a.number) - num(b.number));
+recitals.sort((a, b) => num(a.number) - num(b.number));
+amendments.sort((a, b) => num(a.number) - num(b.number));
+const ROMAN: Record<string, number> = { I:1, II:2, III:3, IV:4, V:5, VI:6, VII:7, VIII:8, IX:9, X:10, XI:11, XII:12, XIII:13 };
+annexes.sort((a, b) => (ROMAN[a.number] ?? 99) - (ROMAN[b.number] ?? 99));
+
+const stageLabel = lang === 'nl' ? stage.label_nl : stage.label_en;
+const T = lang === 'nl' ? { home: 'Start', hist: 'Geschiedenis', a: 'Artikelen', r: 'Overwegingen', x: 'Bijlagen', m: 'Amendementen' } : { home: 'Home', hist: 'History', a: 'Articles', r: 'Recitals', x: 'Annexes', m: 'Amendments' };
+
+function section(title: string, items: DraftingSnapshot[], kind: string) {
+  return items.length === 0 ? null : { title, items, kind };
+}
+const sections = [
+  section(T.a, articles, 'art'),
+  section(T.r, recitals, 'rec'),
+  section(T.x, annexes, 'annex'),
+  section(T.m, amendments, 'amendments'),
+].filter((s): s is { title: string; items: DraftingSnapshot[]; kind: string } => s !== null);
+---
+<BaseLayout title={`${stageLabel} — ${T.hist} — EU AI Act Annotated`}>
+  <Sidebar slot="sidebar" lang={lang} activeSection="history" />
+  <div class="chapter-bar"><h1>{stageLabel}</h1></div>
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{T.home}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/aiact/history/`} style="color: var(--blue-accent); text-decoration: none;">{T.hist}</a>
+    <span style="margin: 0 6px;">/</span><span>{stageLabel}</span>
+  </div>
+  <div style="margin: 8px 0 20px; font-family: var(--mono, var(--sans)); font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px;">
+    aiact/history/{stage.id} · {stage.date} · {stage.source_label}
+  </div>
+  {sections.map(({ title, items, kind }) => (
+    <section style="margin: 24px 0 32px; font-family: var(--sans);">
+      <h2 style="font-size: 16px; font-weight: 700; color: var(--gray-900); margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--gray-200);">{title} <span style="color: var(--gray-500); font-weight: 400;">({items.length})</span></h2>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        {items.map((snap) => (
+          <li style="padding: 6px 0;">
+            <a href={`/${lang}/aiact/history/${stage.id}/${kind}/${snap.number}/`} style="text-decoration: none; color: var(--blue-accent);">
+              {snap.number}{snap.title ? ` — ${snap.title}` : ''}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</BaseLayout>

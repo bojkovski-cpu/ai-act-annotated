@@ -1,0 +1,73 @@
+---
+/**
+ * Amendment snapshot detail — /[lang]/aiact/history/[version]/amendments/[n]/.
+ * Phase 1 retains the legacy 'amendments' plural per url-contract spec.
+ * Phase 4+ moves amendments to first-class AmendmentInstrument records.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import { getDraftingHistory, getDraftingStages } from '@/lib/loader';
+import type { Lang, DraftingSnapshot } from '@/types/aiact';
+
+export function getStaticPaths() {
+  const langs: Lang[] = ['en', 'nl'];
+  const out: Array<{
+    params: { lang: Lang; version: string; n: string };
+    props: { snapshot: DraftingSnapshot; lang: Lang };
+  }> = [];
+  for (const lang of langs) {
+    const blob = getDraftingHistory(lang);
+    for (const snap of blob.snapshots) {
+      if (snap.content_type !== 'amendments') continue;
+      out.push({ params: { lang, version: snap.stage, n: snap.number }, props: { snapshot: snap, lang } });
+    }
+  }
+  return out;
+}
+
+interface Props { snapshot: DraftingSnapshot; lang: Lang }
+const { snapshot, lang } = Astro.props;
+const stages = getDraftingStages(lang);
+const stage = stages.find((s) => s.id === snapshot.stage)!;
+const stageLabel = lang === 'nl' ? stage.label_nl : stage.label_en;
+
+const T = lang === 'nl'
+  ? { home: 'Start', hist: 'Geschiedenis', amend: 'Amendement', amends: 'Wijzigt', kind_article: 'artikel', kind_recital: 'overweging', kind_annex: 'bijlage', kind_structural: 'structureel' }
+  : { home: 'Home', hist: 'History', amend: 'Amendment', amends: 'Amends', kind_article: 'article', kind_recital: 'recital', kind_annex: 'annex', kind_structural: 'structural' };
+
+function kindLabel(k: string | undefined) {
+  if (!k) return '';
+  return ({ article: T.kind_article, recital: T.kind_recital, annex: T.kind_annex, structural: T.kind_structural } as Record<string, string>)[k] ?? k;
+}
+---
+<BaseLayout title={`${T.amend} ${snapshot.number} — ${stageLabel} — EU AI Act`}>
+  <Sidebar slot="sidebar" lang={lang} activeSection="history" />
+  <div class="chapter-bar"><h1>{T.amend} {snapshot.number} — {stageLabel}</h1></div>
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{T.home}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/aiact/history/`} style="color: var(--blue-accent); text-decoration: none;">{T.hist}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/aiact/history/${stage.id}/`} style="color: var(--blue-accent); text-decoration: none;">{stageLabel}</a>
+    <span style="margin: 0 6px;">/</span><span>{T.amend} {snapshot.number}</span>
+  </div>
+  <div style="margin: 8px 0 20px; font-family: var(--mono, var(--sans)); font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px;">
+    aiact/history/{stage.id}/amendments/{snapshot.number} · {stage.date}
+  </div>
+  {snapshot.amends_kind && (
+    <div style="margin-bottom: 16px; padding: 12px 16px; background: var(--gray-50); border-left: 3px solid #d97706; border-radius: 0 6px 6px 0; font-family: var(--sans); font-size: 14px;">
+      <strong>{T.amends}:</strong> {kindLabel(snapshot.amends_kind)}
+      {snapshot.amends_number && ` ${snapshot.amends_number}`}
+      {snapshot.amends_suffix && `${snapshot.amends_suffix}`}
+      {snapshot.amends_paragraph && `, ¶${snapshot.amends_paragraph}`}
+      {snapshot.amends_paragraph_suffix && `${snapshot.amends_paragraph_suffix}`}
+      {snapshot.amends_target_text && <div style="margin-top: 6px; font-size: 13px; color: var(--gray-600); font-style: italic;">{snapshot.amends_target_text}</div>}
+    </div>
+  )}
+  {snapshot.title && <h2 style="font-family: var(--serif); font-size: 20px; margin: 0 0 16px; color: var(--gray-900);">{snapshot.title}</h2>}
+  <div class="article-block">
+    <div class="article-body">
+      <pre style="white-space: pre-wrap; font-family: var(--serif); font-size: 15px; line-height: 1.7; color: var(--gray-800); margin: 0;">{snapshot.text}</pre>
+    </div>
+  </div>
+</BaseLayout>
