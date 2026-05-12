@@ -1,0 +1,7933 @@
+[
+  {
+    "id": "1077ea4acee9379e",
+    "source": "aiact/art/1",
+    "sourcePin": {},
+    "target": "aiact/rec/1",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "543ead20848def6f",
+    "source": "aiact/art/1",
+    "sourcePin": {},
+    "target": "aiact/rec/2",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "738c3f878a971736",
+    "source": "aiact/art/1",
+    "sourcePin": {},
+    "target": "aiact/rec/3",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e24079fc231e7d80",
+    "source": "aiact/art/1",
+    "sourcePin": {},
+    "target": "aiact/rec/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ed5548b08e9d49f2",
+    "source": "aiact/art/1",
+    "sourcePin": {},
+    "target": "aiact/rec/7",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f8c9dd9de2770b27",
+    "source": "aiact/art/1",
+    "sourcePin": {},
+    "target": "aiact/rec/8",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "da8fc1cb41818401",
+    "source": "aiact/art/10",
+    "sourcePin": {
+      "paragraph": "5",
+      "letter": "f"
+    },
+    "target": "32016L0680",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "b30391300dd06838",
+    "source": "aiact/art/10",
+    "sourcePin": {},
+    "target": "aiact/rec/66",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "bdf51b34cfa63754",
+    "source": "aiact/art/10",
+    "sourcePin": {},
+    "target": "aiact/rec/67",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0aea7193f81680d0",
+    "source": "aiact/art/10",
+    "sourcePin": {},
+    "target": "aiact/rec/68",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2e4f177846c72fb9",
+    "source": "aiact/art/10",
+    "sourcePin": {},
+    "target": "aiact/rec/69",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5fd266221be5c2b8",
+    "source": "aiact/art/10",
+    "sourcePin": {},
+    "target": "aiact/rec/70",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "97dd19e3f4fbdad2",
+    "source": "aiact/art/100",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b30f86998d8a1174",
+    "source": "aiact/art/100",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7c16baeec1788c30",
+    "source": "aiact/art/100",
+    "sourcePin": {},
+    "target": "aiact/rec/168",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4b63c21bb519d232",
+    "source": "aiact/art/101",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/art/91",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "33b904f3c2e49148",
+    "source": "aiact/art/101",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "d"
+    },
+    "target": "aiact/art/92",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a74ff57bad124cc9",
+    "source": "aiact/art/101",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "c"
+    },
+    "target": "aiact/art/93",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "1b6c63b4d6ab457b",
+    "source": "aiact/art/101",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/98",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "d53641b04c367f12",
+    "source": "aiact/art/101",
+    "sourcePin": {},
+    "target": "aiact/rec/169",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2a55a8d25dd37c12",
+    "source": "aiact/art/102",
+    "sourcePin": {},
+    "target": "32008R0300/art/4",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32008R0300",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "22adebe6b409108b",
+    "source": "aiact/art/103",
+    "sourcePin": {},
+    "target": "32013R0167/art/17",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32013R0167",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "da37a56844fe76d8",
+    "source": "aiact/art/104",
+    "sourcePin": {},
+    "target": "32013R0168/art/22",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32013R0168",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "7c4634cdb6ea9eb0",
+    "source": "aiact/art/11",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4f76d604cab09aaf",
+    "source": "aiact/art/11",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/iv",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4f76d604cab09aaf",
+    "source": "aiact/art/11",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/iv",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4f76d604cab09aaf",
+    "source": "aiact/art/11",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/iv",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "fe90da9cde33a190",
+    "source": "aiact/art/11",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/iv",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "abe708363de60329",
+    "source": "aiact/art/11",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/97",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "11c252f14f48cb89",
+    "source": "aiact/art/11",
+    "sourcePin": {},
+    "target": "aiact/rec/71",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7786e564f8c19c37",
+    "source": "aiact/art/110",
+    "sourcePin": {},
+    "target": "32020L1828",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32020L1828"
+  },
+  {
+    "id": "0b18bf8109a291a2",
+    "source": "aiact/art/110",
+    "sourcePin": {},
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "dda5fc4c09698b93",
+    "source": "aiact/art/111",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/x",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "dda5fc4c09698b93",
+    "source": "aiact/art/111",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/x",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ee3be49769cb3a24",
+    "source": "aiact/art/111",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/113",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "d04654d91e299a79",
+    "source": "aiact/art/111",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/113",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "7bf1c25cee5262ea",
+    "source": "aiact/art/111",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3d39e3c087b65fe0",
+    "source": "aiact/art/111",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0581042555e52446",
+    "source": "aiact/art/111",
+    "sourcePin": {},
+    "target": "aiact/rec/177",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9e6966a2e2df0046",
+    "source": "aiact/art/112",
+    "sourcePin": {
+      "paragraph": "12"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "8d59e1d3354fea0d",
+    "source": "aiact/art/112",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "366a83370dfcfcaf",
+    "source": "aiact/art/112",
+    "sourcePin": {
+      "paragraph": "11",
+      "letter": "a"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7a8d164c3a92bbbe",
+    "source": "aiact/art/112",
+    "sourcePin": {
+      "paragraph": "2",
+      "letter": "a"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "39fa020674e42375",
+    "source": "aiact/art/112",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5a5491cc92dcb793",
+    "source": "aiact/art/112",
+    "sourcePin": {
+      "paragraph": "11",
+      "letter": "b"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f1611f306a28a062",
+    "source": "aiact/art/112",
+    "sourcePin": {
+      "paragraph": "11",
+      "letter": "c"
+    },
+    "target": "aiact/art/50",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "97137bfaa913387a",
+    "source": "aiact/art/112",
+    "sourcePin": {
+      "paragraph": "2",
+      "letter": "b"
+    },
+    "target": "aiact/art/50",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "793382e6e7c0f092",
+    "source": "aiact/art/112",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/97",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "70c9114bcbfae5cc",
+    "source": "aiact/art/112",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "b"
+    },
+    "target": "aiact/art/99",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "ffb5062ebb277efd",
+    "source": "aiact/art/112",
+    "sourcePin": {},
+    "target": "aiact/rec/174",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3643d55196d3e3ab",
+    "source": "aiact/art/113",
+    "sourcePin": {},
+    "target": "aiact/art/101",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4ba7eeaea8eac0ee",
+    "source": "aiact/art/113",
+    "sourcePin": {},
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "e116d3166dcf3d4f",
+    "source": "aiact/art/113",
+    "sourcePin": {},
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "16552194a2d4e709",
+    "source": "aiact/art/113",
+    "sourcePin": {},
+    "target": "aiact/rec/178",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b471193b095c0c17",
+    "source": "aiact/art/113",
+    "sourcePin": {},
+    "target": "aiact/rec/179",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "84acdf5dcb54f280",
+    "source": "aiact/art/12",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "c"
+    },
+    "target": "32016L0680",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "4275b5e635d24746",
+    "source": "aiact/art/12",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "d"
+    },
+    "target": "aiact/art/14",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "944d1da8da930719",
+    "source": "aiact/art/12",
+    "sourcePin": {
+      "paragraph": "2",
+      "letter": "c"
+    },
+    "target": "aiact/art/26",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "e55951500fcf100c",
+    "source": "aiact/art/12",
+    "sourcePin": {
+      "paragraph": "2",
+      "letter": "b"
+    },
+    "target": "aiact/art/72",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a6d1bda468e64e0a",
+    "source": "aiact/art/12",
+    "sourcePin": {
+      "paragraph": "2",
+      "letter": "a"
+    },
+    "target": "aiact/art/79",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "5d4c5d3e09f1bccf",
+    "source": "aiact/art/12",
+    "sourcePin": {},
+    "target": "aiact/rec/71",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4d31ca49dc3791fb",
+    "source": "aiact/art/13",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "f"
+    },
+    "target": "aiact/art/12",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "540e972dc7f24871",
+    "source": "aiact/art/13",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "d"
+    },
+    "target": "aiact/art/14",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4039a97e4d608268",
+    "source": "aiact/art/13",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "b"
+    },
+    "target": "aiact/art/15",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9af05e84763c76c1",
+    "source": "aiact/art/13",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "ii"
+    },
+    "target": "aiact/art/15",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9af05e84763c76c1",
+    "source": "aiact/art/13",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "ii"
+    },
+    "target": "aiact/art/15",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "529f9cc2c83f96d7",
+    "source": "aiact/art/13",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "b"
+    },
+    "target": "aiact/art/9",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "c99745ddb80746af",
+    "source": "aiact/art/13",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "iii"
+    },
+    "target": "aiact/art/9",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "c99745ddb80746af",
+    "source": "aiact/art/13",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "iii"
+    },
+    "target": "aiact/art/9",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "a48570aa3ddd5ead",
+    "source": "aiact/art/13",
+    "sourcePin": {},
+    "target": "aiact/rec/72",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a8770799cb1f689b",
+    "source": "aiact/art/14",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "06ab95da8b103cc0",
+    "source": "aiact/art/14",
+    "sourcePin": {},
+    "target": "aiact/rec/73",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b5493f9950521016",
+    "source": "aiact/art/15",
+    "sourcePin": {},
+    "target": "aiact/rec/74",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4cd2d8e08142db22",
+    "source": "aiact/art/15",
+    "sourcePin": {},
+    "target": "aiact/rec/75",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4e25ab343f9df735",
+    "source": "aiact/art/15",
+    "sourcePin": {},
+    "target": "aiact/rec/76",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "6a8a8e7e1ddf45d0",
+    "source": "aiact/art/15",
+    "sourcePin": {},
+    "target": "aiact/rec/77",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "54194eb063bb5554",
+    "source": "aiact/art/15",
+    "sourcePin": {},
+    "target": "aiact/rec/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "fdd4ea00a667ce35",
+    "source": "aiact/art/16",
+    "sourcePin": {},
+    "target": "aiact/art/17",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3b28be535e1f8607",
+    "source": "aiact/art/16",
+    "sourcePin": {},
+    "target": "aiact/art/18",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e2de76a44c65f7e5",
+    "source": "aiact/art/16",
+    "sourcePin": {},
+    "target": "aiact/art/19",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "aff9d82c19f44716",
+    "source": "aiact/art/16",
+    "sourcePin": {},
+    "target": "aiact/art/20",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e5df00b16c94086c",
+    "source": "aiact/art/16",
+    "sourcePin": {},
+    "target": "aiact/art/43",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "960e40a46e8263c9",
+    "source": "aiact/art/16",
+    "sourcePin": {},
+    "target": "aiact/art/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "85402795670f55b0",
+    "source": "aiact/art/16",
+    "sourcePin": {},
+    "target": "aiact/art/48",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "182649c34e916440",
+    "source": "aiact/art/16",
+    "sourcePin": {},
+    "target": "aiact/art/49",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "4d90393e42906832",
+    "source": "aiact/art/16",
+    "sourcePin": {},
+    "target": "aiact/rec/145",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "88080f4ecf5cb18a",
+    "source": "aiact/art/16",
+    "sourcePin": {},
+    "target": "aiact/rec/79",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3a0b7a55cca590be",
+    "source": "aiact/art/16",
+    "sourcePin": {},
+    "target": "aiact/rec/80",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0d1776c0c570a407",
+    "source": "aiact/art/16",
+    "sourcePin": {},
+    "target": "aiact/rec/81",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f1022562465c8343",
+    "source": "aiact/art/17",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/40",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "138b1e75ec6eec16",
+    "source": "aiact/art/17",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "h"
+    },
+    "target": "aiact/art/72",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "10e063b971f53567",
+    "source": "aiact/art/17",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "i"
+    },
+    "target": "aiact/art/73",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "11d4d01e3ee503ef",
+    "source": "aiact/art/17",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "g"
+    },
+    "target": "aiact/art/9",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ca1a762b34da2fc8",
+    "source": "aiact/art/18",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/11",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7e4cd88fe334fd02",
+    "source": "aiact/art/18",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/art/17",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4d6165b9e3ef2ab7",
+    "source": "aiact/art/18",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "e"
+    },
+    "target": "aiact/art/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3a77edd04f250a68",
+    "source": "aiact/art/19",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/12",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "8aeb9efb1c15bc5a",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "32002L0058",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32002L0058"
+  },
+  {
+    "id": "067dd1156df6058c",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "32022R2065",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32022R2065"
+  },
+  {
+    "id": "78d4632916a49a5d",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "abdba6b90521b89f",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "b1b7ee64d4dc1b4e",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/102",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "44a6f02aa1b74acb",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/103",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "82cd7c091dac8dc3",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/104",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "872b99dfb5529a49",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/105",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "207df54acdb78c08",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/106",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2b4baff30e1bce7b",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/107",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "048ef81da35c6069",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/108",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d32edec47192dd52",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/109",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "99fcdcc6dc8535dc",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/112",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "17a700b25ced8aaa",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "12"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a72004cb3b25636e",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/57",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9bdd0d5521b07203",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/59",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "1087dfdaba35a15b",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "1087dfdaba35a15b",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "fffab3fe91f4de21",
+    "source": "aiact/art/2",
+    "sourcePin": {},
+    "target": "aiact/rec/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5ca7ac08e51607b0",
+    "source": "aiact/art/2",
+    "sourcePin": {},
+    "target": "aiact/rec/11",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f93c82b459e68ae2",
+    "source": "aiact/art/2",
+    "sourcePin": {},
+    "target": "aiact/rec/166",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "255792c3762de657",
+    "source": "aiact/art/2",
+    "sourcePin": {},
+    "target": "aiact/rec/21",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "49fe82cbcac58867",
+    "source": "aiact/art/2",
+    "sourcePin": {},
+    "target": "aiact/rec/22",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a3fc6d42ac243dc9",
+    "source": "aiact/art/2",
+    "sourcePin": {},
+    "target": "aiact/rec/23",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "616d50604be4b815",
+    "source": "aiact/art/2",
+    "sourcePin": {},
+    "target": "aiact/rec/24",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2c1fe3b7845bd4d9",
+    "source": "aiact/art/2",
+    "sourcePin": {},
+    "target": "aiact/rec/25",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "589f47f62a61276c",
+    "source": "aiact/art/2",
+    "sourcePin": {},
+    "target": "aiact/rec/9",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4e494343f0245f25",
+    "source": "aiact/art/2",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "gdpr",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "gdpr"
+  },
+  {
+    "id": "88bba75040b9a17d",
+    "source": "aiact/art/20",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/44",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "003f16ac5f7fe1b3",
+    "source": "aiact/art/20",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/79",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "86f2b45d55909b40",
+    "source": "aiact/art/21",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/12",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "569d1dfc238648bd",
+    "source": "aiact/art/21",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "1e3e95d7c04eb107",
+    "source": "aiact/art/22",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "e"
+    },
+    "target": "aiact/annex/viii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "57e4abbe11fcc9b6",
+    "source": "aiact/art/22",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "a"
+    },
+    "target": "aiact/art/11",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "df9b975618d16b3d",
+    "source": "aiact/art/22",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "c"
+    },
+    "target": "aiact/art/12",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "7d0923a5cda09bd1",
+    "source": "aiact/art/22",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "a"
+    },
+    "target": "aiact/art/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "8e68b17e2a498a12",
+    "source": "aiact/art/22",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "b"
+    },
+    "target": "aiact/art/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7437f9c76d18f16d",
+    "source": "aiact/art/22",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "e"
+    },
+    "target": "aiact/art/49",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "6e418a95d4bffb3c",
+    "source": "aiact/art/22",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "b"
+    },
+    "target": "aiact/art/74",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "10"
+    }
+  },
+  {
+    "id": "211c64e928c3fbd2",
+    "source": "aiact/art/22",
+    "sourcePin": {},
+    "target": "aiact/rec/82",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f891410969199fd3",
+    "source": "aiact/art/22",
+    "sourcePin": {},
+    "target": "aiact/rec/83",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0c17dd89b1158181",
+    "source": "aiact/art/23",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/annex/iv",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "dd744bbd6c9b85aa",
+    "source": "aiact/art/23",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/art/11",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ee7d1cbf3682ff9b",
+    "source": "aiact/art/23",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "d"
+    },
+    "target": "aiact/art/22",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "d88554e86dbaaf54",
+    "source": "aiact/art/23",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/43",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ff8e49fc318d5587",
+    "source": "aiact/art/23",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "c"
+    },
+    "target": "aiact/art/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "369180545283b107",
+    "source": "aiact/art/23",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/art/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0f0e47006651f253",
+    "source": "aiact/art/23",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/79",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "9b58518124ee99d6",
+    "source": "aiact/art/24",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/16",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "643b750512560a12",
+    "source": "aiact/art/24",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/23",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "b06617cb256e28eb",
+    "source": "aiact/art/24",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "11527557df138234",
+    "source": "aiact/art/24",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/79",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "56ca4fb2886a3386",
+    "source": "aiact/art/24",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/79",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "fb4f4dd91631acdb",
+    "source": "aiact/art/25",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "6bf78928511bb1e4",
+    "source": "aiact/art/25",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "c"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "dee28ce250394940",
+    "source": "aiact/art/25",
+    "sourcePin": {},
+    "target": "aiact/rec/84",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "716ca00eca76bbbd",
+    "source": "aiact/art/25",
+    "sourcePin": {},
+    "target": "aiact/rec/85",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b4cbb0926e317488",
+    "source": "aiact/art/25",
+    "sourcePin": {},
+    "target": "aiact/rec/86",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5e8ad2d1869aaf39",
+    "source": "aiact/art/25",
+    "sourcePin": {},
+    "target": "aiact/rec/87",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "79efce649cfb961d",
+    "source": "aiact/art/25",
+    "sourcePin": {},
+    "target": "aiact/rec/88",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f0d7a0404d567143",
+    "source": "aiact/art/25",
+    "sourcePin": {},
+    "target": "aiact/rec/89",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7eb6e8d967631cdf",
+    "source": "aiact/art/25",
+    "sourcePin": {},
+    "target": "aiact/rec/90",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d1e629b1d56c0d63",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "10"
+    },
+    "target": "32016L0680",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "d1e629b1d56c0d63",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "10"
+    },
+    "target": "32016L0680",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "4137cef776fa7eaa",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "10"
+    },
+    "target": "32016L0680/art/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "26fd26c05a332a20",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "11"
+    },
+    "target": "32016L0680/art/13",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "5a41cd20f9797bb3",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "9"
+    },
+    "target": "32016L0680/art/27",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "dd287306d6606571",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "11"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "6c40f8287fb772d8",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "9"
+    },
+    "target": "aiact/art/13",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "02f30a542b13e288",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "aiact/art/49",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "18f98c0ada45fa08",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "11"
+    },
+    "target": "aiact/art/50",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b79a13557cc726d5",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "aiact/art/71",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "6045c957ad274fb2",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/art/72",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9d5bfe31dfdca6f3",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/art/73",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "cb9161faf280d734",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/art/79",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "821ca5a981a9b351",
+    "source": "aiact/art/26",
+    "sourcePin": {},
+    "target": "aiact/rec/91",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "40c33025adbb106d",
+    "source": "aiact/art/26",
+    "sourcePin": {},
+    "target": "aiact/rec/92",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "1a395f77b6a235f1",
+    "source": "aiact/art/26",
+    "sourcePin": {},
+    "target": "aiact/rec/93",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f5b57e33170778cd",
+    "source": "aiact/art/26",
+    "sourcePin": {},
+    "target": "aiact/rec/94",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b9118c23ed08a19d",
+    "source": "aiact/art/26",
+    "sourcePin": {},
+    "target": "aiact/rec/95",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2152c4853a8e0523",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "9"
+    },
+    "target": "gdpr/art/35",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "gdpr"
+  },
+  {
+    "id": "28bf11be24c59f54",
+    "source": "aiact/art/26",
+    "sourcePin": {
+      "paragraph": "10"
+    },
+    "target": "gdpr/art/9",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "gdpr"
+  },
+  {
+    "id": "d3ce0a97d9f0e4d8",
+    "source": "aiact/art/27",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "32016L0680/art/27",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "70cd54c93841a86b",
+    "source": "aiact/art/27",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "d"
+    },
+    "target": "aiact/art/13",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3886f9270c097330",
+    "source": "aiact/art/27",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/46",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "5e5b589822d7ca0a",
+    "source": "aiact/art/27",
+    "sourcePin": {},
+    "target": "aiact/rec/93",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3d4d7d7482a4417e",
+    "source": "aiact/art/27",
+    "sourcePin": {},
+    "target": "aiact/rec/96",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b2bd865e62bdda5a",
+    "source": "aiact/art/27",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "gdpr/art/35",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "gdpr"
+  },
+  {
+    "id": "1680035fb2c720af",
+    "source": "aiact/art/28",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "32008R0765",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32008R0765"
+  },
+  {
+    "id": "a7a29f967fb5043b",
+    "source": "aiact/art/28",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "39a6ac307e514c54",
+    "source": "aiact/art/29",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9ae2363c06c4bcb9",
+    "source": "aiact/art/29",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f66134e87165e7ab",
+    "source": "aiact/art/29",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "505e1b4e74b8b251",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "32012R1025",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025"
+  },
+  {
+    "id": "505e1b4e74b8b251",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "32012R1025",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025"
+  },
+  {
+    "id": "a8b62f84687b3b3b",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "32016L0680/art/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "9dc1ee8635fbae49",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "32018R1725/art/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32018R1725",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "1bf47514d90a99c6",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "32019R1020",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "697f7f6db18af7ec",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "32022L2557",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32022L2557"
+  },
+  {
+    "id": "4eb59b59ebfa9352",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/art/2",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4eb59b59ebfa9352",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/art/2",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "87ab8485b0176b7d",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/art/2",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "4cdb6ee1acfb8cbe",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/art/4",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4cdb6ee1acfb8cbe",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/art/4",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4cdb6ee1acfb8cbe",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/art/4",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "56f3b9bec5971eba",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/art/57",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e083cec4e1a2f7d2",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/100",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5cfa2c3cdad83aae",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/110",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e465ef9b7eae2c0f",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/12",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c3e66ab378707cc3",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/128",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "34038cc42b694b97",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/13",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "53f1c62c5a11df32",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/14",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "67ec5e732877c3b0",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/15",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "dad13b0a5b031730",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/16",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "957539263f5f99f6",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/17",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "657f4c9ef4f09edf",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/18",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "412d143b8cd1a4aa",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/19",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "14f8d912ac6ad91a",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/97",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c34d0e600361d17a",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/98",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b9289cac24a37e0e",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "aiact/rec/99",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "1ac94d3ca7cfad2d",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "gdpr",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "gdpr"
+  },
+  {
+    "id": "1ac94d3ca7cfad2d",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "gdpr",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "gdpr"
+  },
+  {
+    "id": "1ac94d3ca7cfad2d",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "gdpr",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "gdpr"
+  },
+  {
+    "id": "541715099025dc06",
+    "source": "aiact/art/3",
+    "sourcePin": {},
+    "target": "gdpr/art/9",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "gdpr",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "4e288d9691fc342b",
+    "source": "aiact/art/30",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/29",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "5d3270420fc143b8",
+    "source": "aiact/art/30",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/29",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "d61190355cb906df",
+    "source": "aiact/art/30",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/29",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "b4862177836d32bf",
+    "source": "aiact/art/30",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5ad99800df1de9ac",
+    "source": "aiact/art/30",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4d3189fce4b02266",
+    "source": "aiact/art/31",
+    "sourcePin": {
+      "paragraph": "12"
+    },
+    "target": "aiact/art/38",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ec65323a104d5dde",
+    "source": "aiact/art/31",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5aa87ceb3c8eb608",
+    "source": "aiact/art/31",
+    "sourcePin": {},
+    "target": "aiact/rec/145",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f957b35239718fb4",
+    "source": "aiact/art/32",
+    "sourcePin": {},
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b2c1d58b86020847",
+    "source": "aiact/art/33",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "97e2a7a0a672f936",
+    "source": "aiact/art/33",
+    "sourcePin": {},
+    "target": "aiact/rec/126",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "645b433dc79025aa",
+    "source": "aiact/art/34",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/28",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ac333b5fc30d85eb",
+    "source": "aiact/art/34",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/43",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c363e939fff6d3ba",
+    "source": "aiact/art/36",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/29",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "90abd2727f2c1fa6",
+    "source": "aiact/art/36",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/30",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "fa1825fdfcd62142",
+    "source": "aiact/art/36",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/30",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3fcec01208162337",
+    "source": "aiact/art/36",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3fcec01208162337",
+    "source": "aiact/art/36",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0d0949c42a17196b",
+    "source": "aiact/art/37",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "811dd7a061777d04",
+    "source": "aiact/art/37",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f3c5b4bde8d9f8dc",
+    "source": "aiact/art/37",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/98",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "486304577634816a",
+    "source": "aiact/art/39",
+    "sourcePin": {},
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "abe7fbdf9501cac7",
+    "source": "aiact/art/39",
+    "sourcePin": {},
+    "target": "aiact/rec/127",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a7393c975086d6d3",
+    "source": "aiact/art/4",
+    "sourcePin": {},
+    "target": "aiact/rec/20",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "df80eadb4c4415c9",
+    "source": "aiact/art/40",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "32012R1025",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025"
+  },
+  {
+    "id": "bca3af5a4c2f3901",
+    "source": "aiact/art/40",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "32012R1025",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025"
+  },
+  {
+    "id": "1393bc052114518d",
+    "source": "aiact/art/40",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "32012R1025/art/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025"
+  },
+  {
+    "id": "2154075c79377875",
+    "source": "aiact/art/40",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "32012R1025/art/24",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025"
+  },
+  {
+    "id": "938c1ecd9cb2f395",
+    "source": "aiact/art/40",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "bebba1249fb97fb5",
+    "source": "aiact/art/40",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "04ab3a914e81a245",
+    "source": "aiact/art/40",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "bb4956ed92489ccc",
+    "source": "aiact/art/40",
+    "sourcePin": {},
+    "target": "aiact/rec/121",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4069e50a4ced0ff7",
+    "source": "aiact/art/41",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "32012R1025",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025"
+  },
+  {
+    "id": "5ec52642725b54e9",
+    "source": "aiact/art/41",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "32012R1025",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025"
+  },
+  {
+    "id": "91a2a72d6939aa4b",
+    "source": "aiact/art/41",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "32012R1025/art/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "91a2a72d6939aa4b",
+    "source": "aiact/art/41",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "32012R1025/art/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "a8b038adbb4d5fbf",
+    "source": "aiact/art/41",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "ii"
+    },
+    "target": "32012R1025/art/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "a8b038adbb4d5fbf",
+    "source": "aiact/art/41",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "ii"
+    },
+    "target": "32012R1025/art/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "bdb32f749c0cd6ad",
+    "source": "aiact/art/41",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "32012R1025/art/22",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025"
+  },
+  {
+    "id": "84621ed39a8d0cde",
+    "source": "aiact/art/41",
+    "sourcePin": {},
+    "target": "aiact/rec/121",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b1c727d45f23d623",
+    "source": "aiact/art/42",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "32019R0881",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R0881"
+  },
+  {
+    "id": "68c73d04d5b5d7c3",
+    "source": "aiact/art/42",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "7a06b7b2476968be",
+    "source": "aiact/art/42",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/15",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "25b810d0bf9a42e1",
+    "source": "aiact/art/42",
+    "sourcePin": {},
+    "target": "aiact/rec/122",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "acc56478d0aea4d2",
+    "source": "aiact/art/42",
+    "sourcePin": {},
+    "target": "aiact/rec/77",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5638b971d4acf2ee",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5638b971d4acf2ee",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "886eee1f74ad2cb0",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f1ef3f6b8e6dc43d",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "1dd2530ccda330d0",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/annex/iv",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3fb669b926c93fe8",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/annex/vi",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2c08932d0ff9f1ff",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/vi",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "47e99a53a4a55a0f",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/annex/vi",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c3d66dcb9c072ca5",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/annex/vi",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "13fb8074da351b2f",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/annex/vii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f513c591668b07a3",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/vii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3bfe43bb38a99492",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/annex/vii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4e556c1917f21f4f",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/annex/vii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "79dfdeaa31c943cc",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "c8d6d3a2e38a41ee",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/40",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "96f47c1de1a44e57",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/41",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d9725a2385905729",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/41",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "618cc69d663fcd9b",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/art/97",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5fc2e22f53e94e67",
+    "source": "aiact/art/43",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/97",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "34a0fada3576b051",
+    "source": "aiact/art/43",
+    "sourcePin": {},
+    "target": "aiact/rec/123",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3613e5bae5c7037a",
+    "source": "aiact/art/43",
+    "sourcePin": {},
+    "target": "aiact/rec/124",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e8a1e276727d6f7b",
+    "source": "aiact/art/43",
+    "sourcePin": {},
+    "target": "aiact/rec/125",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a5029464af3d8c54",
+    "source": "aiact/art/43",
+    "sourcePin": {},
+    "target": "aiact/rec/126",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "28debaea7820af35",
+    "source": "aiact/art/43",
+    "sourcePin": {},
+    "target": "aiact/rec/128",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "8d487601412a5a25",
+    "source": "aiact/art/43",
+    "sourcePin": {},
+    "target": "aiact/rec/147",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "427a39a6f2589c3d",
+    "source": "aiact/art/44",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "427a39a6f2589c3d",
+    "source": "aiact/art/44",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3b8193a33ba2c72d",
+    "source": "aiact/art/44",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3b8193a33ba2c72d",
+    "source": "aiact/art/44",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "99c9c6cadc82b03a",
+    "source": "aiact/art/44",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/vii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "8fa1ecd4f1a28231",
+    "source": "aiact/art/45",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/annex/vii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "8acd157773c05593",
+    "source": "aiact/art/45",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/annex/vii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "879d3e4d730ea0fb",
+    "source": "aiact/art/45",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "39047fb4e673069f",
+    "source": "aiact/art/46",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3c031266323f95c4",
+    "source": "aiact/art/46",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/43",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "37718beadb2993ec",
+    "source": "aiact/art/46",
+    "sourcePin": {},
+    "target": "aiact/rec/130",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c9d0d66347726ac4",
+    "source": "aiact/art/47",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/v",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "cdb15eeb8e1d1db5",
+    "source": "aiact/art/47",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/annex/v",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "658fe05c0d600be0",
+    "source": "aiact/art/47",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/art/97",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "8c662e980baa15b3",
+    "source": "aiact/art/48",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "32008R0765/art/30",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32008R0765"
+  },
+  {
+    "id": "b1e91e073ec6d003",
+    "source": "aiact/art/48",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/43",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "224fdd3681e86846",
+    "source": "aiact/art/48",
+    "sourcePin": {},
+    "target": "aiact/rec/129",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5b876f4cdf3d4994",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5b876f4cdf3d4994",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2d2ad8592e06e440",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2d2ad8592e06e440",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "bc095ada973ec56d",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b5a23e4949114f8b",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "d"
+    },
+    "target": "aiact/annex/ix",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2a542116ecf10f0a",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "a"
+    },
+    "target": "aiact/annex/viii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2045b6f9ee41a68e",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "b"
+    },
+    "target": "aiact/annex/viii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4636a53db3e096e9",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "c"
+    },
+    "target": "aiact/annex/viii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "540b9bd6c370cc91",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "2b84a304227de27f",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/71",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "81f741a37b5d2356",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/71",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "dce38a6c92b4fe17",
+    "source": "aiact/art/49",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/71",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "39cca9540ebaeaea",
+    "source": "aiact/art/49",
+    "sourcePin": {},
+    "target": "aiact/rec/131",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4e63872809c28467",
+    "source": "aiact/art/5",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "h"
+    },
+    "target": "aiact/annex/ii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "46b63f5da5b42971",
+    "source": "aiact/art/5",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "iii"
+    },
+    "target": "aiact/annex/ii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "46b63f5da5b42971",
+    "source": "aiact/art/5",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "iii"
+    },
+    "target": "aiact/annex/ii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a9abcc07754fe668",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/28",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "47bdf48d58a515b7",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/29",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ed23563c80c5e552",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/3",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "08e8509c859184fb",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/30",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "cff97a5bf9073096",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2f5b15aeba32c379",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/32",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "6cb60c1461d71125",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/33",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e96f0ef5f4cc7760",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/34",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5851042b516bb7c8",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/35",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "40dd5dc3050aec40",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/36",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "80004af90442898e",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/37",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "749293dad38c208d",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/38",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "25f305461ed80ad6",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/39",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d2db2039633fb05a",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/40",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "413f4c7fb804025e",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/41",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "600a4de81d981790",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/42",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d904737279b90040",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/43",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "51ee9069efd15f1c",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/44",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "6c46a12a8f0a17bf",
+    "source": "aiact/art/5",
+    "sourcePin": {},
+    "target": "aiact/rec/45",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3b18211e7175ba8e",
+    "source": "aiact/art/50",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "32016L0680",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "775d5a36e8cc7d12",
+    "source": "aiact/art/50",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/56",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "6"
+    }
+  },
+  {
+    "id": "f0288d830e1b8765",
+    "source": "aiact/art/50",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/98",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "2b1e26f3d5e67d2b",
+    "source": "aiact/art/50",
+    "sourcePin": {},
+    "target": "aiact/rec/132",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "44e6eb3d18527858",
+    "source": "aiact/art/50",
+    "sourcePin": {},
+    "target": "aiact/rec/133",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "38b72fc53e69259c",
+    "source": "aiact/art/50",
+    "sourcePin": {},
+    "target": "aiact/rec/134",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "46d83f636d18d2e2",
+    "source": "aiact/art/50",
+    "sourcePin": {},
+    "target": "aiact/rec/135",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "1be43d467abab180",
+    "source": "aiact/art/50",
+    "sourcePin": {},
+    "target": "aiact/rec/136",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ddbb962f433c8c7a",
+    "source": "aiact/art/50",
+    "sourcePin": {},
+    "target": "aiact/rec/137",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "81033bdeb1bcfbb9",
+    "source": "aiact/art/51",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/annex/xiii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d9fb9f44014b4927",
+    "source": "aiact/art/51",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/97",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5a35d72472789cad",
+    "source": "aiact/art/51",
+    "sourcePin": {},
+    "target": "aiact/rec/110",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "83460607b7f2c6b3",
+    "source": "aiact/art/51",
+    "sourcePin": {},
+    "target": "aiact/rec/111",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5fcb27868ee8e8da",
+    "source": "aiact/art/52",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/annex/xiii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5fcb27868ee8e8da",
+    "source": "aiact/art/52",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/annex/xiii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7f0f53e3322d1904",
+    "source": "aiact/art/52",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/annex/xiii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "da1d565e1b1377e8",
+    "source": "aiact/art/52",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/51",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "062a516f6b78c743",
+    "source": "aiact/art/52",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/51",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "039f5323dc73c438",
+    "source": "aiact/art/52",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/90",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "dcc1b814d7c757fc",
+    "source": "aiact/art/52",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/97",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d4a4e9bbe942e83c",
+    "source": "aiact/art/52",
+    "sourcePin": {},
+    "target": "aiact/rec/112",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "15aa8b3e1b18907d",
+    "source": "aiact/art/52",
+    "sourcePin": {},
+    "target": "aiact/rec/113",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "85b737f5c125c531",
+    "source": "aiact/art/53",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "c"
+    },
+    "target": "32019L0790/art/4",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019L0790",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "a28927d007774394",
+    "source": "aiact/art/53",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/annex/xi",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c3fcd3e3c2e6f9c1",
+    "source": "aiact/art/53",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/annex/xi",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4f39eac9991e6e88",
+    "source": "aiact/art/53",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/annex/xi",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c5fee69a62d7243d",
+    "source": "aiact/art/53",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/annex/xii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7b166fabaa467003",
+    "source": "aiact/art/53",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "ii"
+    },
+    "target": "aiact/annex/xii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7b166fabaa467003",
+    "source": "aiact/art/53",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "ii"
+    },
+    "target": "aiact/annex/xii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e531b6cd9713f1d1",
+    "source": "aiact/art/53",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/annex/xii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3fd49cc536c01c75",
+    "source": "aiact/art/53",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/56",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "47f941d7ef9e18a0",
+    "source": "aiact/art/53",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "6ac73820489b871a",
+    "source": "aiact/art/53",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/art/97",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "24ad897662cb8abc",
+    "source": "aiact/art/53",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/97",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "ba4d640983d743fc",
+    "source": "aiact/art/53",
+    "sourcePin": {},
+    "target": "aiact/rec/101",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4d26095ad0679353",
+    "source": "aiact/art/53",
+    "sourcePin": {},
+    "target": "aiact/rec/102",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "bf02215791898fa9",
+    "source": "aiact/art/53",
+    "sourcePin": {},
+    "target": "aiact/rec/103",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5ec9364cd320ac14",
+    "source": "aiact/art/53",
+    "sourcePin": {},
+    "target": "aiact/rec/104",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "777edd229c99e465",
+    "source": "aiact/art/53",
+    "sourcePin": {},
+    "target": "aiact/rec/105",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "da120a5fb0cb7282",
+    "source": "aiact/art/53",
+    "sourcePin": {},
+    "target": "aiact/rec/106",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "cb68da3050417296",
+    "source": "aiact/art/53",
+    "sourcePin": {},
+    "target": "aiact/rec/107",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "09c2e8753bef0199",
+    "source": "aiact/art/53",
+    "sourcePin": {},
+    "target": "aiact/rec/108",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b024ccd86c1caf72",
+    "source": "aiact/art/53",
+    "sourcePin": {},
+    "target": "aiact/rec/109",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f4f0df2e0ee40054",
+    "source": "aiact/art/54",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "a"
+    },
+    "target": "aiact/annex/xi",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "fc7ee47175529421",
+    "source": "aiact/art/54",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "b"
+    },
+    "target": "aiact/annex/xi",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "36800a9b1ef29828",
+    "source": "aiact/art/54",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "a"
+    },
+    "target": "aiact/art/53",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "552c68470919d99a",
+    "source": "aiact/art/54",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "a"
+    },
+    "target": "aiact/art/55",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "fb677f7fcacb7e9d",
+    "source": "aiact/art/55",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/56",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "09c85603cda19e63",
+    "source": "aiact/art/55",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "bbe5560b01c4dad6",
+    "source": "aiact/art/55",
+    "sourcePin": {},
+    "target": "aiact/rec/114",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "53b8ff5cc22a1c76",
+    "source": "aiact/art/55",
+    "sourcePin": {},
+    "target": "aiact/rec/115",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "373369d9b875de41",
+    "source": "aiact/art/56",
+    "sourcePin": {
+      "paragraph": "2",
+      "letter": "a"
+    },
+    "target": "aiact/art/53",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "e0fee6ce27018eec",
+    "source": "aiact/art/56",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/53",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ce7799f7f65e60dd",
+    "source": "aiact/art/56",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/53",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5bedffe43b718736",
+    "source": "aiact/art/56",
+    "sourcePin": {
+      "paragraph": "9"
+    },
+    "target": "aiact/art/53",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "25922f914699fde5",
+    "source": "aiact/art/56",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/55",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "338093ecd44e16e4",
+    "source": "aiact/art/56",
+    "sourcePin": {
+      "paragraph": "9"
+    },
+    "target": "aiact/art/55",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "611fb151003f76a4",
+    "source": "aiact/art/56",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/98",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "b38bffece163f778",
+    "source": "aiact/art/56",
+    "sourcePin": {
+      "paragraph": "9"
+    },
+    "target": "aiact/art/98",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "31766a305ade8ffc",
+    "source": "aiact/art/56",
+    "sourcePin": {},
+    "target": "aiact/rec/116",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "aaeeeaa16a58dfb8",
+    "source": "aiact/art/56",
+    "sourcePin": {},
+    "target": "aiact/rec/117",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "440e45f13e815480",
+    "source": "aiact/art/57",
+    "sourcePin": {
+      "paragraph": "17"
+    },
+    "target": "aiact/art/62",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "e5202a0ab4aba0a1",
+    "source": "aiact/art/57",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "10e79e6c288726c4",
+    "source": "aiact/art/57",
+    "sourcePin": {},
+    "target": "aiact/rec/138",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "933bc7cf86008244",
+    "source": "aiact/art/57",
+    "sourcePin": {},
+    "target": "aiact/rec/139",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f57d82768e04aa4f",
+    "source": "aiact/art/58",
+    "sourcePin": {
+      "paragraph": "2",
+      "letter": "e"
+    },
+    "target": "aiact/art/95",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b9bfb3f864eb6c90",
+    "source": "aiact/art/58",
+    "sourcePin": {},
+    "target": "aiact/rec/139",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "95f2e60bae334140",
+    "source": "aiact/art/59",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "c"
+    },
+    "target": "32018R1725/art/39",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32018R1725"
+  },
+  {
+    "id": "fd259d120aab2cf8",
+    "source": "aiact/art/59",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "i"
+    },
+    "target": "aiact/annex/iv",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "cf9f4a38237c3ba9",
+    "source": "aiact/art/59",
+    "sourcePin": {},
+    "target": "aiact/rec/140",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d6e9dee99db7a54d",
+    "source": "aiact/art/59",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "c"
+    },
+    "target": "gdpr/art/35",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "gdpr"
+  },
+  {
+    "id": "5fc7979a3a3cc04b",
+    "source": "aiact/art/6",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "23be508d8384fd96",
+    "source": "aiact/art/6",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ce3396cbeb972073",
+    "source": "aiact/art/6",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ccdc9a72f7bdf480",
+    "source": "aiact/art/6",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "d"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "8b1514be4b330591",
+    "source": "aiact/art/6",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3798f492344da4f8",
+    "source": "aiact/art/6",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "051fa462a2b66fce",
+    "source": "aiact/art/6",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/49",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "a4667b08eadbca21",
+    "source": "aiact/art/6",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "aiact/art/7",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "4ac62d7689a847dc",
+    "source": "aiact/art/6",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/art/96",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "98a5181538a2f83c",
+    "source": "aiact/art/6",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/97",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d7cfd02c05039c6f",
+    "source": "aiact/art/6",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/97",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3d16849aaf64c291",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/46",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "6f3f2084aa7c1db2",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ae75490bfe5f1142",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/48",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7c26a6606fefe600",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/50",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "812d741188304a43",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/51",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7d213414044ae5e7",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/52",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4e7090e789db14a8",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/53",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d71f65fcf66bc9f9",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/54",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2a073b077eaf611f",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/55",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "695647b6746d40b2",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/56",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4623c940a7cdd5bd",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/57",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "6878d99191278bf6",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/58",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "315d5706aa90e68d",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/59",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "fcedf1a9a08fa2cb",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/60",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "8d6b576423893f75",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/61",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "1a486053386bb391",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/62",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "6e51922f2ceb3e4c",
+    "source": "aiact/art/6",
+    "sourcePin": {},
+    "target": "aiact/rec/63",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e75658ba9836417d",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "21a6fedc6e0da542",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2093650a88fecc38",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d7f9c0acb170b234",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "c"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d7f9c0acb170b234",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "c"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d7f9c0acb170b234",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "c"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d7f9c0acb170b234",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "c"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d2d16efdc48fc207",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "c"
+    },
+    "target": "aiact/annex/ix",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "299aa7ea6aa1b248",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "h"
+    },
+    "target": "aiact/art/13",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f2aacd43f5fac146",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "c"
+    },
+    "target": "aiact/art/49",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "dae194fd1dc3e3bc",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "c"
+    },
+    "target": "aiact/art/49",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "9961843b5ebe97f9",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "aa627e31319217d7",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "i"
+    },
+    "target": "aiact/art/61",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3714b68601aa42e4",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "c"
+    },
+    "target": "aiact/art/71",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "b48e62e0cb4d9e44",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/73",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "30e5ca32dd54eabb",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/75",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "feb452bc59636c9f",
+    "source": "aiact/art/60",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/98",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "3a06b077ed4d513d",
+    "source": "aiact/art/60",
+    "sourcePin": {},
+    "target": "aiact/rec/141",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d1f3414930127d8a",
+    "source": "aiact/art/61",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "e"
+    },
+    "target": "aiact/art/60",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "581c45a77c6a1da5",
+    "source": "aiact/art/61",
+    "sourcePin": {},
+    "target": "aiact/rec/141",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7a167edc2be3d4bc",
+    "source": "aiact/art/62",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/43",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0b7bda8564545f09",
+    "source": "aiact/art/62",
+    "sourcePin": {},
+    "target": "aiact/rec/143",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ba3ad4cc225205cc",
+    "source": "aiact/art/63",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5bece6233f2ace85",
+    "source": "aiact/art/63",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/11",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d1812f3c0dca231b",
+    "source": "aiact/art/63",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/12",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0ea14bebbb5f3475",
+    "source": "aiact/art/63",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/13",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3fad098099d2dd66",
+    "source": "aiact/art/63",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/14",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "fe0c191818d90ab7",
+    "source": "aiact/art/63",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/15",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "64b46edd485185aa",
+    "source": "aiact/art/63",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/17",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "baa6a0de74f404ab",
+    "source": "aiact/art/63",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/72",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "1fa62851fa67c066",
+    "source": "aiact/art/63",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/73",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "055387b445467e96",
+    "source": "aiact/art/63",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/9",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "665562ad1490c854",
+    "source": "aiact/art/63",
+    "sourcePin": {},
+    "target": "aiact/rec/146",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3779959b707610b6",
+    "source": "aiact/art/65",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "32019R1020/art/30",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "d171e3bc24fcf567",
+    "source": "aiact/art/65",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "a"
+    },
+    "target": "aiact/art/66",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "accf0d4f6813625d",
+    "source": "aiact/art/65",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/67",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "dad70b5479f95192",
+    "source": "aiact/art/65",
+    "sourcePin": {},
+    "target": "aiact/rec/149",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ad8a9bc1bb772a0c",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5476eb7e0207cfa1",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "187c7289c98ed0c0",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/112",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "187c7289c98ed0c0",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/112",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d8297fb3c8225c0b",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/40",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f03c7cc2dc165a61",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/41",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b8243b25dae08c22",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/46",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "28bea8933ffa1165",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "130a252a19b6f17c",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/57",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7efd74992a783a81",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/59",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "067928689631990e",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/60",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0dd4333e3fa86e54",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/7",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "67127d940a005402",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/71",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f3c77f0ecc7d091c",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/73",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "aad02ffb03cb283d",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/art/74",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "11"
+    }
+  },
+  {
+    "id": "1338081fd0de7808",
+    "source": "aiact/art/66",
+    "sourcePin": {},
+    "target": "aiact/rec/149",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "cd64613b5ea6cd89",
+    "source": "aiact/art/67",
+    "sourcePin": {},
+    "target": "aiact/rec/150",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "62679a82aaf79e45",
+    "source": "aiact/art/68",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "c"
+    },
+    "target": "aiact/art/74",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "11"
+    }
+  },
+  {
+    "id": "54dd3cd825d34a46",
+    "source": "aiact/art/68",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "d"
+    },
+    "target": "aiact/art/81",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "834995a05c213b34",
+    "source": "aiact/art/68",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "a"
+    },
+    "target": "aiact/art/90",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f7f60e1b9cef820b",
+    "source": "aiact/art/68",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "i"
+    },
+    "target": "aiact/art/90",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f7f60e1b9cef820b",
+    "source": "aiact/art/68",
+    "sourcePin": {
+      "paragraph": "3",
+      "letter": "i"
+    },
+    "target": "aiact/art/90",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c1e31a6b5da9e022",
+    "source": "aiact/art/68",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/98",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "bd136f67145dae54",
+    "source": "aiact/art/68",
+    "sourcePin": {},
+    "target": "aiact/rec/151",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "379250dbdebe0958",
+    "source": "aiact/art/69",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/68",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "e6a67ed1fbcf2d5e",
+    "source": "aiact/art/69",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/84",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b12375fc3421f5cb",
+    "source": "aiact/art/69",
+    "sourcePin": {},
+    "target": "aiact/rec/151",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "16bedae0ac7749f5",
+    "source": "aiact/art/7",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4b132cdfd5842feb",
+    "source": "aiact/art/7",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "68df4946ee58d339",
+    "source": "aiact/art/70",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0973ad26c6ed82a9",
+    "source": "aiact/art/70",
+    "sourcePin": {},
+    "target": "aiact/rec/153",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c7f2de996237e6f3",
+    "source": "aiact/art/70",
+    "sourcePin": {},
+    "target": "aiact/rec/154",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9f9b8fc922eadb4a",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/viii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c647ea8b9041622a",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/viii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "33d5f229264d8bd4",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/49",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "33d5f229264d8bd4",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/49",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4279d5dbc337b917",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/49",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "ad66629c644d95b3",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/49",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "cb3aed66bed4672e",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/49",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "54456aa1e73a50f2",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "178289c5432cc162",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "df5fb01d608ea2c3",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "11d2bdf473476425",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/60",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "fd442e4b24c8c76b",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/60",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ae68d353f2ea2c12",
+    "source": "aiact/art/71",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/60",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "16bf91a54ded4579",
+    "source": "aiact/art/71",
+    "sourcePin": {},
+    "target": "aiact/rec/131",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7d5cd32347f3a801",
+    "source": "aiact/art/72",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "53fb7be0c0a16b39",
+    "source": "aiact/art/72",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "784f20b3d5e0a330",
+    "source": "aiact/art/72",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/iv",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7c24fe00bcb6102c",
+    "source": "aiact/art/72",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/98",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "ee5764d159c7b4d8",
+    "source": "aiact/art/72",
+    "sourcePin": {},
+    "target": "aiact/rec/155",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e3cb3769dada43f8",
+    "source": "aiact/art/73",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "32019R1020/art/19",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "400d2f22d67ef330",
+    "source": "aiact/art/73",
+    "sourcePin": {
+      "paragraph": "11"
+    },
+    "target": "32019R1020/art/20",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "3400d18ad8f45435",
+    "source": "aiact/art/73",
+    "sourcePin": {
+      "paragraph": "9"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d50d92306546ef6f",
+    "source": "aiact/art/73",
+    "sourcePin": {
+      "paragraph": "10"
+    },
+    "target": "aiact/art/3",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "62313ed450e74255",
+    "source": "aiact/art/73",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/3",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "5d2758bdfac3b99e",
+    "source": "aiact/art/73",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/3",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "26d21d14c6b61db4",
+    "source": "aiact/art/73",
+    "sourcePin": {
+      "paragraph": "9"
+    },
+    "target": "aiact/art/3",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "8b7d2bbfa711fb25",
+    "source": "aiact/art/73",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/77",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "0d4d8fb32215e007",
+    "source": "aiact/art/73",
+    "sourcePin": {},
+    "target": "aiact/rec/155",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "1313d5061ad4cbd8",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "32013L0036",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32013L0036"
+  },
+  {
+    "id": "8829a5be1613fcc1",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "32013R1024",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32013R1024"
+  },
+  {
+    "id": "2ce737ab35a26fe1",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "32016L0680",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "f46274a810711e2b",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "32016L0680/art/41",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "364111f8f52133a8",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "32016L0680/art/42",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "e5e3410c572f429b",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "32016L0680/art/43",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "fff633842ee1cf6a",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "32016L0680/art/44",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0680"
+  },
+  {
+    "id": "3e231030ad16edd9",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "32019R1020",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "d94bdc53a4987438",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "32019R1020",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "e14eef901356ea7f",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "12"
+    },
+    "target": "32019R1020",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "b88b6003df738080",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "32019R1020/art/14",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "c789ab6ae9e9b6b0",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "32019R1020/art/34",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "de04a760c55192a9",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "11"
+    },
+    "target": "32019R1020/art/9",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "3d4cb64f2bbdd4d0",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "10"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f17a6aed4e11b4be",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f17a6aed4e11b4be",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e06ef98ab492587d",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0589acfe4d03d6fb",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "10"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3d2efd2667c1904f",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3d2efd2667c1904f",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a0ac34c4f11ecaed",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "5"
+    },
+    "target": "aiact/art/14",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "7c9ec7892afcade3",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/2",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "9f9e30871553c554",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "14"
+    },
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d13fa861bbbfa1a4",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/79",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "1fe53837b643de0f",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/80",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "02c5ed691397f35f",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/81",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "eaa34217ddf9c921",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/82",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "82b69342a31e0f8c",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/83",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a226e2d68ec24167",
+    "source": "aiact/art/74",
+    "sourcePin": {},
+    "target": "aiact/rec/156",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "40e46b8d23c6b2f4",
+    "source": "aiact/art/74",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "gdpr",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "gdpr"
+  },
+  {
+    "id": "c4d374bc60a516ce",
+    "source": "aiact/art/75",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "32019R1020",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "23d63922319fdbaf",
+    "source": "aiact/art/75",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "32019R1020",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "69157b0a8b43cfa6",
+    "source": "aiact/art/75",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a9ca0e51d7f1a67b",
+    "source": "aiact/art/75",
+    "sourcePin": {},
+    "target": "aiact/rec/161",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "247e4cbaccdac87e",
+    "source": "aiact/art/76",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/58",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "fc0232d1a92d4a2b",
+    "source": "aiact/art/76",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/60",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "373b49fe68ff89ae",
+    "source": "aiact/art/76",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/60",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "7fc5471bdec32a0c",
+    "source": "aiact/art/76",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/60",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "c275d82dff9d5913",
+    "source": "aiact/art/77",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9deab29b2b156b26",
+    "source": "aiact/art/77",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/78",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "eddec8d5bd0234b5",
+    "source": "aiact/art/77",
+    "sourcePin": {},
+    "target": "aiact/rec/157",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "927b0ecb8f7f499e",
+    "source": "aiact/art/78",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "32016L0943/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32016L0943"
+  },
+  {
+    "id": "a8cbd269f41d0d28",
+    "source": "aiact/art/78",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "32019R1020",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "9bad3edc26580846",
+    "source": "aiact/art/78",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9bad3edc26580846",
+    "source": "aiact/art/78",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c37c8a54bf656408",
+    "source": "aiact/art/78",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/annex/iv",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2da7463774715577",
+    "source": "aiact/art/78",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/74",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "8"
+    }
+  },
+  {
+    "id": "a6bc923a51a1a6b7",
+    "source": "aiact/art/78",
+    "sourcePin": {},
+    "target": "aiact/rec/167",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2dc820d95a8ccc1f",
+    "source": "aiact/art/79",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "32019R1020",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "6af0eedb18cf8926",
+    "source": "aiact/art/79",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "32019R1020/art/18",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "2dc56fe4375a3f96",
+    "source": "aiact/art/79",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "32019R1020/art/18",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "76b4bf4d84dadc3c",
+    "source": "aiact/art/79",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/3",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ecd631760d5134e9",
+    "source": "aiact/art/79",
+    "sourcePin": {
+      "paragraph": "6",
+      "letter": "c"
+    },
+    "target": "aiact/art/40",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "83034fc17412c73b",
+    "source": "aiact/art/79",
+    "sourcePin": {
+      "paragraph": "6",
+      "letter": "c"
+    },
+    "target": "aiact/art/41",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3c8e7fc045f0ad00",
+    "source": "aiact/art/79",
+    "sourcePin": {
+      "paragraph": "6",
+      "letter": "a"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "28bda14d7ab6ce36",
+    "source": "aiact/art/79",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "cdbe66b8445cfec3",
+    "source": "aiact/art/79",
+    "sourcePin": {
+      "paragraph": "6",
+      "letter": "d"
+    },
+    "target": "aiact/art/50",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "55f7af34ef4a2e78",
+    "source": "aiact/art/79",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/77",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "55f7af34ef4a2e78",
+    "source": "aiact/art/79",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/77",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "55f7af34ef4a2e78",
+    "source": "aiact/art/79",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/77",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "85a3de3f5f102295",
+    "source": "aiact/art/8",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "85a3de3f5f102295",
+    "source": "aiact/art/8",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "b2f66096f95ee1b2",
+    "source": "aiact/art/8",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/9",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0fd2d68cc4edfb80",
+    "source": "aiact/art/8",
+    "sourcePin": {},
+    "target": "aiact/rec/46",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "390cb46df7b015a4",
+    "source": "aiact/art/8",
+    "sourcePin": {},
+    "target": "aiact/rec/64",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4d8862bdb683aaa2",
+    "source": "aiact/art/80",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "32019R1020/art/11",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "e2288dc2ca4a217a",
+    "source": "aiact/art/80",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "e2288dc2ca4a217a",
+    "source": "aiact/art/80",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "b9b05d79f26cab3f",
+    "source": "aiact/art/80",
+    "sourcePin": {
+      "paragraph": "8"
+    },
+    "target": "aiact/art/71",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "fc13bc97df328ae5",
+    "source": "aiact/art/80",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/79",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "b1ddfc0c8d0f3f35",
+    "source": "aiact/art/80",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/99",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "bc0d815ff250e8b0",
+    "source": "aiact/art/80",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/99",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "48920557c9e9ac91",
+    "source": "aiact/art/81",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "32012R1025/art/11",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32012R1025"
+  },
+  {
+    "id": "9617bca898699249",
+    "source": "aiact/art/81",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/40",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "280700bd36be1230",
+    "source": "aiact/art/81",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/41",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "bdfb74bda284242c",
+    "source": "aiact/art/81",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "bdfb74bda284242c",
+    "source": "aiact/art/81",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "28cb4a6e7d4cb839",
+    "source": "aiact/art/81",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/79",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "28cb4a6e7d4cb839",
+    "source": "aiact/art/81",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/79",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "94dccd016858c467",
+    "source": "aiact/art/82",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/77",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "b269c20a444554b4",
+    "source": "aiact/art/82",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/79",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7bf8f2d1d40d47ff",
+    "source": "aiact/art/83",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "c"
+    },
+    "target": "aiact/art/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3d817c1d0980d67d",
+    "source": "aiact/art/83",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "d"
+    },
+    "target": "aiact/art/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c2b41b76e082ee69",
+    "source": "aiact/art/83",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/48",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c828c2706a7cf88d",
+    "source": "aiact/art/83",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "e"
+    },
+    "target": "aiact/art/71",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ee4b628e7d3c6a83",
+    "source": "aiact/art/84",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "32019R1020/art/21",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020",
+    "targetPin": {
+      "paragraph": "6"
+    }
+  },
+  {
+    "id": "e213d314b5a2bf36",
+    "source": "aiact/art/84",
+    "sourcePin": {},
+    "target": "aiact/rec/152",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "27652890571130ae",
+    "source": "aiact/art/85",
+    "sourcePin": {},
+    "target": "32019R1020",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "fe71a87ef9169a47",
+    "source": "aiact/art/85",
+    "sourcePin": {},
+    "target": "aiact/rec/170",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "00724c7aedb9df08",
+    "source": "aiact/art/86",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/annex/iii",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e739ba7ae58c63e8",
+    "source": "aiact/art/86",
+    "sourcePin": {},
+    "target": "aiact/rec/171",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9cdea8d1c13862e4",
+    "source": "aiact/art/87",
+    "sourcePin": {},
+    "target": "32019L1937",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019L1937"
+  },
+  {
+    "id": "bdf266d7e6b32f38",
+    "source": "aiact/art/87",
+    "sourcePin": {},
+    "target": "aiact/rec/172",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ccd666094fcfa27e",
+    "source": "aiact/art/88",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/75",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "72ec6aa543a514ac",
+    "source": "aiact/art/88",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/94",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7f388c7843667dea",
+    "source": "aiact/art/88",
+    "sourcePin": {},
+    "target": "aiact/rec/162",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ae373f339f16ec25",
+    "source": "aiact/art/89",
+    "sourcePin": {},
+    "target": "aiact/rec/164",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "396d1c509d948e75",
+    "source": "aiact/art/9",
+    "sourcePin": {
+      "paragraph": "5",
+      "letter": "c"
+    },
+    "target": "aiact/art/13",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "da7901cda5477058",
+    "source": "aiact/art/9",
+    "sourcePin": {
+      "paragraph": "7"
+    },
+    "target": "aiact/art/60",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3dc74a7b8ee1dae2",
+    "source": "aiact/art/9",
+    "sourcePin": {
+      "paragraph": "2",
+      "letter": "c"
+    },
+    "target": "aiact/art/72",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a3d63b425019498d",
+    "source": "aiact/art/9",
+    "sourcePin": {},
+    "target": "aiact/rec/65",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ebfdf7f7ed69f5c0",
+    "source": "aiact/art/90",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/art/51",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "75b887738646fbc5",
+    "source": "aiact/art/90",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/91",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4c1a4583b5940af2",
+    "source": "aiact/art/90",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/92",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e40f9833632d74a1",
+    "source": "aiact/art/90",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/93",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2215e310a0ea1e7f",
+    "source": "aiact/art/90",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/94",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "defcb9e4f17b1a8a",
+    "source": "aiact/art/90",
+    "sourcePin": {},
+    "target": "aiact/rec/163",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "140ae1fd1e7be69c",
+    "source": "aiact/art/91",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/101",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "3dff4f8436f188ca",
+    "source": "aiact/art/91",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/53",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "fed1a762b3f59dff",
+    "source": "aiact/art/91",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/55",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7b5e77cbf35ed1f3",
+    "source": "aiact/art/91",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/68",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "39627fbed462913b",
+    "source": "aiact/art/91",
+    "sourcePin": {},
+    "target": "aiact/rec/164",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "ece06a5bfce2ba1a",
+    "source": "aiact/art/92",
+    "sourcePin": {
+      "paragraph": "4"
+    },
+    "target": "aiact/art/101",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "890c17726a7f15e7",
+    "source": "aiact/art/92",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/68",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "fc5f59ebb84b369b",
+    "source": "aiact/art/92",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/68",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "185336823337f67b",
+    "source": "aiact/art/92",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/art/90",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "2acde7d9e381301c",
+    "source": "aiact/art/92",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/91",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "98f6b453c8312fc4",
+    "source": "aiact/art/92",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/98",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "2"
+    }
+  },
+  {
+    "id": "c43cebb8291f9519",
+    "source": "aiact/art/93",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/53",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "234b4960c176ee10",
+    "source": "aiact/art/93",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/54",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "0d47d5a6348a0384",
+    "source": "aiact/art/93",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/art/92",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9ca72e903e31cbb6",
+    "source": "aiact/art/94",
+    "sourcePin": {},
+    "target": "32019R1020/art/18",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32019R1020"
+  },
+  {
+    "id": "d9ad376f43966b8a",
+    "source": "aiact/art/94",
+    "sourcePin": {},
+    "target": "aiact/rec/164",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "7efb5e606e4882b5",
+    "source": "aiact/art/95",
+    "sourcePin": {},
+    "target": "aiact/rec/165",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f1acc71910f45972",
+    "source": "aiact/art/95",
+    "sourcePin": {},
+    "target": "aiact/rec/166",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a50009ba7c6abd37",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "e"
+    },
+    "target": "aiact/annex/i",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f5a89dc39f9220f1",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/10",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "bfa3182ad6ca50d9",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/11",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "2a24ba7c5e779209",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/12",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e61894b3f8a32295",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/13",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "09460df1176dfcf5",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/14",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "60e6ee7256ddb060",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/15",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "16c01072f793f1bf",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/25",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "4d84578cfc75835a",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "f"
+    },
+    "target": "aiact/art/3",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "6b59480e3e062b36",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "b"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c42e06607c848cbc",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "d"
+    },
+    "target": "aiact/art/50",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "c74680855c3b89b0",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/8",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9e4cfa901450d9b8",
+    "source": "aiact/art/96",
+    "sourcePin": {
+      "paragraph": "1",
+      "letter": "a"
+    },
+    "target": "aiact/art/9",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "e2be2cd8b352b7bd",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/11",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "251f86d6b1fc6ecd",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/11",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "65e8aa088fc35fa0",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/11",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "a6e4eb42e44360d5",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/43",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "25770a255ec89e1e",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/43",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "1becbef6575aaec9",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/43",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "4559bd27ed247fbb",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "9376b6826cf18d5d",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "7cff630df7c1ca83",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/47",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "b259366db73ad58b",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/51",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "3eceeeeb476907d4",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/51",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "73c3aa4a683ef7ba",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/51",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "3"
+    }
+  },
+  {
+    "id": "d452ba2931fb1067",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/52",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "0c0c58d926239f35",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/52",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "279dc5b1aefbc36c",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/52",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "4"
+    }
+  },
+  {
+    "id": "4b742750aabe4dbd",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/53",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "8d9756949707696d",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/53",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "a12957d54249e01b",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/53",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "5"
+    }
+  },
+  {
+    "id": "c5c91274c446cdd3",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "6"
+    }
+  },
+  {
+    "id": "cfb3e80996f9193a",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "6"
+    }
+  },
+  {
+    "id": "ba3cb51ccd2a826d",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/6",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "6"
+    }
+  },
+  {
+    "id": "83237e3b1fbd00a6",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "aiact/art/7",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "9212551727969fa5",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/7",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "96906d47d15390c3",
+    "source": "aiact/art/97",
+    "sourcePin": {
+      "paragraph": "6"
+    },
+    "target": "aiact/art/7",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "7da464cbd7a576bd",
+    "source": "aiact/art/97",
+    "sourcePin": {},
+    "target": "aiact/rec/173",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "cc7565121945042a",
+    "source": "aiact/art/98",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "32011R0182",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32011R0182"
+  },
+  {
+    "id": "aff4389372fcdd5d",
+    "source": "aiact/art/98",
+    "sourcePin": {
+      "paragraph": "2"
+    },
+    "target": "32011R0182/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "32011R0182"
+  },
+  {
+    "id": "4a09dd60971fb146",
+    "source": "aiact/art/98",
+    "sourcePin": {},
+    "target": "aiact/rec/175",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "9236cb7f422557f4",
+    "source": "aiact/art/99",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "a"
+    },
+    "target": "aiact/art/16",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "8ad6ef63eeb993bb",
+    "source": "aiact/art/99",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "b"
+    },
+    "target": "aiact/art/22",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "65005be9825c9bd6",
+    "source": "aiact/art/99",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "c"
+    },
+    "target": "aiact/art/23",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "a038d451718be79d",
+    "source": "aiact/art/99",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "d"
+    },
+    "target": "aiact/art/24",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "8cc5539d4ccb8f65",
+    "source": "aiact/art/99",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "e"
+    },
+    "target": "aiact/art/26",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "6c79360aad256199",
+    "source": "aiact/art/99",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "f"
+    },
+    "target": "aiact/art/31",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "f236558f8142ad5a",
+    "source": "aiact/art/99",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "f"
+    },
+    "target": "aiact/art/33",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact",
+    "targetPin": {
+      "paragraph": "1"
+    }
+  },
+  {
+    "id": "ae0e68cbefc85986",
+    "source": "aiact/art/99",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "f"
+    },
+    "target": "aiact/art/34",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "1238404424008805",
+    "source": "aiact/art/99",
+    "sourcePin": {
+      "paragraph": "3"
+    },
+    "target": "aiact/art/5",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d9bdb22da447e241",
+    "source": "aiact/art/99",
+    "sourcePin": {
+      "paragraph": "4",
+      "letter": "g"
+    },
+    "target": "aiact/art/50",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "d7b977169494935b",
+    "source": "aiact/art/99",
+    "sourcePin": {
+      "paragraph": "1"
+    },
+    "target": "aiact/art/96",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  },
+  {
+    "id": "08ef86648bf77474",
+    "source": "aiact/art/99",
+    "sourcePin": {},
+    "target": "aiact/rec/168",
+    "kind": "cite",
+    "sourceInstrument": "aiact",
+    "targetInstrument": "aiact"
+  }
+]

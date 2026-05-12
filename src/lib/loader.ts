@@ -29,6 +29,10 @@ import type {
   InternalReference,
   ExternalReference,
   InternalReverseReference,
+  Reference,
+  PinCite,
+  InstrumentId,
+  CanonicalId,
 } from '@/types/aiact';
 
 // ─── Build-time JSON imports ───────────────────────────────────────
@@ -40,6 +44,7 @@ import recitals_nl from '@data/recitals_nl.json';
 import annexes_en from '@data/annexes_en.json';
 import annexes_nl from '@data/annexes_nl.json';
 import cross_references_data from '@data/cross_references.json';
+import references_data from '@data/references.json';
 import omnibus_amendments_en from '@data/omnibus_amendments_en.json';
 import drafting_history_en from '@data/drafting_history_en.json';
 import drafting_history_nl from '@data/drafting_history_nl.json';
@@ -630,4 +635,71 @@ export function getCitedArticlesForGuidance(
     }
   }
   return [...set].sort((a, b) => numericKey(a) - numericKey(b));
+}
+
+
+// ─── Phase 2 — unified references API (FF_UNIFIED_REFERENCES) ───────
+//
+// `references_data` (src/data/references.json) is the flat Reference[] emitted
+// by scripts/migrate_unified_references.py from the legacy cross_references.json.
+// Loader exposes it as-is via getReferences() and via per-entity helpers that
+// compute forward + reverse lookups at module load (one-shot indexing).
+//
+// The flag FF_UNIFIED_REFERENCES gates whether NEW consumers should use this
+// API or the legacy getCrossReferences()/getInternalReferencesFor() pair.
+// Legacy callers continue to work because the legacy cross_references.json
+// data is untouched. When the flag flips, components migrate one by one.
+
+const allReferences = references_data as unknown as Reference[];
+
+// Pre-built inverse indexes — one pass at module load, O(1) lookups thereafter.
+const referencesBySource = new Map<CanonicalId, Reference[]>();
+const referencesByTarget = new Map<CanonicalId, Reference[]>();
+for (const ref of allReferences) {
+  if (!referencesBySource.has(ref.source)) referencesBySource.set(ref.source, []);
+  referencesBySource.get(ref.source)!.push(ref);
+  if (!referencesByTarget.has(ref.target as CanonicalId)) referencesByTarget.set(ref.target as CanonicalId, []);
+  referencesByTarget.get(ref.target as CanonicalId)!.push(ref);
+}
+
+/**
+ * All edges in the unified references table. 718 entries at Phase 2 (~456
+ * internal article-to-article + 184 article-to-recital + 78 article-to-external).
+ */
+export function getReferences(): Reference[] {
+  return allReferences;
+}
+
+/**
+ * Forward edges from a given source. Useful for "this article cites X, Y, Z".
+ */
+export function getReferencesFrom(canonicalId: CanonicalId): Reference[] {
+  return referencesBySource.get(canonicalId) ?? [];
+}
+
+/**
+ * Reverse edges into a given target. Powers the "Referenced-from" sidebar
+ * block (Step 3.2 §D). Auto-mirrored from forward edges at build time per
+ * OQ-9.
+ */
+export function getReferencedBy(canonicalId: CanonicalId): Reference[] {
+  return referencesByTarget.get(canonicalId) ?? [];
+}
+
+/**
+ * Convenience: forward edges where the target is in the same instrument
+ * (internal references). Excludes cross-instrument edges (gdpr/CELEX targets).
+ */
+export function getInternalReferencesFromCanonical(canonicalId: CanonicalId): Reference[] {
+  const fromInstrument = canonicalId.split('/')[0];
+  return getReferencesFrom(canonicalId).filter((r) => r.targetInstrument === fromInstrument);
+}
+
+/**
+ * Convenience: forward edges where the target is in a DIFFERENT instrument
+ * (cross-instrument refs — gdpr, CELEX-keyed externals, etc.).
+ */
+export function getExternalReferencesFromCanonical(canonicalId: CanonicalId): Reference[] {
+  const fromInstrument = canonicalId.split('/')[0];
+  return getReferencesFrom(canonicalId).filter((r) => r.targetInstrument !== fromInstrument);
 }

@@ -17,6 +17,12 @@
  * entry into force). Annex points decomposed into structured AnnexPoint records
  * for Pattern A annexes per annex-point-grain-aiact-2026-05-12.md.
  *
+ * Phase 2 (2026-05-12) adds the unified Reference / PinCite / InstrumentId
+ * types per step-3.3 § C. The legacy cross_references.json (5 junction maps)
+ * stays in place; scripts/migrate_unified_references.py emits a new
+ * src/data/references.json as Reference[] derived from the legacy maps.
+ * FF_UNIFIED_REFERENCES gates which shape the loader exposes.
+ *
  * Number normalisation: all entity numbers (article.number, recital.number,
  * paragraph.number) are STRINGS at the data layer. EN data was numeric in
  * the legacy ai_act_structured.json blob; the bridge scripts normalise to
@@ -48,6 +54,67 @@ export type CanonicalId = string;
  * amendments; until then there is exactly one version per entity.
  */
 export type VersionId = string;
+
+/**
+ * Instrument identifier — the slug segment of a CanonicalId. Phase 2 known
+ * values are `'aiact'` and `'gdpr'`. Future instruments (DSA, NIS2, DORA, etc.)
+ * add their own slugs as they onboard the registry. External EU instruments
+ * that aren't in the registry are identified by their CELEX number directly
+ * (e.g. `'32016L0680'` for Directive (EU) 2016/680).
+ *
+ * Open string for forward-compatibility — the registry validates at build time.
+ */
+export type InstrumentId = string;
+
+/**
+ * Pin-cite into an entity. Paragraph + letter are the common grain in legal
+ * citations ("Article 6(1)(a)"); subparagraph + sentence cover sub-letter
+ * specificity; annex + annexPoint exist for AI Act references to annexes
+ * with structured points (Annex III(3)(a)).
+ *
+ * All fields optional — a bare {} represents an instrument-level citation.
+ */
+export interface PinCite {
+  article?: string;
+  paragraph?: string;
+  letter?: string;
+  subparagraph?: string;
+  sentence?: number;
+  annex?: string;
+  annexPoint?: string;
+}
+
+/**
+ * One reference edge in the unified table per step-3.3 § C. Replaces the
+ * four `article_to_*` junction maps in the legacy cross_references.json.
+ *
+ * `source` and `target` are canonical_ids; for known-registry instruments
+ * (`aiact`, `gdpr`) they follow `{instrument}/{kind}/{number}`. For external
+ * EU instruments without a registry entry, the canonical_id form uses the
+ * target instrument's CELEX as the slug, e.g. `32016L0680/art/4`.
+ *
+ * `sourcePin` is always present (the parser knows where in the source the
+ * citation appears). `targetPin` is present only when the citation pin-cites
+ * a specific point inside the target.
+ *
+ * `kind` is always `'cite'` at v1; the unified schema reserves `'replaces'`,
+ * `'implements'`, `'interprets'` for later phases (predecessor/transposition
+ * relationships, judicial interpretations, etc.).
+ *
+ * `id` is a stable deterministic hash of source + sourcePin + target +
+ * targetPin + kind, used as a primary key when the inverse-lookup index is
+ * built at build time.
+ */
+export interface Reference {
+  id: string;
+  source: CanonicalId;
+  sourcePin: PinCite;
+  target: CanonicalId | string;
+  targetPin?: PinCite;
+  kind: 'cite' | 'replaces' | 'implements' | 'interprets';
+  sourceInstrument: InstrumentId;
+  targetInstrument: InstrumentId;
+}
 
 // ─── Paragraph ────────────────────────────────────────────────────────
 
