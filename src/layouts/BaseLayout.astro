@@ -11,7 +11,6 @@ import '@/styles/global.css';
 // markers. Loads AFTER global.css so it wins on overlapping selectors.
 import '@/styles/phase5-typography.css';
 import TopBar from '@/components/TopBar.astro';
-import SearchModal from '@/components/SearchModal.astro';
 import type { Lang } from '@/types/aiact';
 
 interface Props {
@@ -144,35 +143,13 @@ function switchTab(tabEl) {
   updateSuppUrl(getCurrentSuppState());
 }
 
-// Phase 5.5c (2026-05-12): URL query-param state for the
-// supplementary surface, locked at OQ-3. Grammar for AI Act today:
-//
-//   ?tab=<slug>            currently-active Browse tab
-//   ?mode=research         when Research mode is on (browse default omitted)
-//   ?chips=<slug>,<slug>   chip filter selection (empty = "All")
-//
-// Species and entry params from OQ-3's full grammar
-// (?tab=decisions&species=court&entry={id}) light up when Decisions
-// content lands — they're inert on AI Act today.
-//
-// URL writes use history.replaceState — no back-button pollution, no
-// scroll jolt. URL state beats sessionStorage on page load; both are
-// written on every in-page action so the URL is shareable and the
-// per-session preference still carries across navigations within a
-// tab.
-//
-// Legacy hash fragments (#recitals/#history/#omnibus/#caselaw/#guidance)
-// get a one-shot redirect to the equivalent ?tab= query on DOM ready.
-// #omnibus and #caselaw retire silently — they no longer map to a
-// visible Browse-mode tab. The guidance detail page's "Cited articles"
-// sidebar that used to deep-link via `#guidance` is now naturally
-// served by the migrated `?tab=guidance` URL after one round-trip.
+// Phase 5.5c: URL query-param state for the supplementary surface.
 const LEGACY_HASH_TO_TAB = {
   recitals: 'recitals',
   history:  'history',
   guidance: 'guidance',
-  omnibus:  null,   // retired from tab strip in 5.5a; drop silently
-  caselaw:  null,   // never had AI Act data; drop silently
+  omnibus:  null,
+  caselaw:  null,
 };
 
 function readSuppUrlState() {
@@ -182,7 +159,7 @@ function readSuppUrlState() {
     tab: params.get('tab') || null,
     mode: params.get('mode') === 'research' ? 'research' : null,
     chips: rawChips === null
-      ? null  // signals "no chips param in URL — fall back to storage"
+      ? null
       : rawChips.split(',').map(s => s.trim()).filter(Boolean),
   };
 }
@@ -223,42 +200,27 @@ function migrateLegacyHash() {
   const params = new URLSearchParams(location.search);
   if (newTab) params.set('tab', newTab); else params.delete('tab');
   const qs = params.toString();
-  const newUrl = location.pathname + (qs ? '?' + qs : '');  // hash dropped
+  const newUrl = location.pathname + (qs ? '?' + qs : '');
   try { history.replaceState(null, '', newUrl); } catch (_) {}
 }
 
 function applySupplementaryStateFromUrl() {
   const urlState = readSuppUrlState();
-
-  // Mode: URL beats storage. Absence falls back to storage default.
   const mode = urlState.mode || readSuppMode();
   applySuppMode(mode);
-
-  // Chips: URL beats storage. urlState.chips is null when no chips=
-  // param exists at all — fall back to storage. An empty array means
-  // chips= was present and empty ("All").
   const chips = urlState.chips !== null ? urlState.chips : readSuppChips();
   applyResearchChips(chips);
-
-  // Tab: URL-only state (no sessionStorage). Activate matching button
-  // in every .supp-root scope so multi-surface pages stay in sync.
   if (urlState.tab) {
     document.querySelectorAll('.supp-root').forEach((root) => {
       const tab = root.querySelector('[data-tab="' + urlState.tab + '"]');
       if (tab && !tab.classList.contains('active')) {
-        // switchTab will call updateSuppUrl back — it's a no-op since
-        // the URL already has this state. Cheaper than threading a
-        // silent flag through the public API.
         switchTab(tab);
       }
     });
   }
 }
 
-// Phase 5.5b (2026-05-12): supplementary surface mode + chip-filter
-// state. Global per session — switching one article block into
-// Research mode persists to all article blocks on subsequent
-// navigations within the same tab. URL contract is 5.5c work.
+// Phase 5.5b: supplementary surface mode + chip-filter state.
 const SUPP_MODE_KEY = 'aiact-supp-mode';
 const SUPP_CHIPS_KEY = 'aiact-supp-chips';
 
@@ -301,7 +263,6 @@ function switchMode(buttonEl, mode) {
 }
 
 function applyResearchChips(activeChips) {
-  // Empty array ⇒ "All" — every entry shows, no filter attribute.
   document.querySelectorAll('.supp-research').forEach((panel) => {
     if (activeChips.length === 0) {
       panel.removeAttribute('data-supp-chips-active');
@@ -340,103 +301,127 @@ function toggleResearchChip(chipEl) {
 
 function suppKeyboardR(ev) {
   if (ev.key !== 'r' && ev.key !== 'R') return;
-  // Skip when the user is typing in any input surface.
   const t = ev.target;
   if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
-  // Skip when modifier keys are held — preserve browser shortcuts like Cmd-R reload.
   if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
-  // Skip if there's no supplementary surface on the page.
   if (!document.querySelector('.supp-root')) return;
-  // Skip if the search modal is open — R is editorial mode toggle, not text.
-  if (document.querySelector('.search-modal[data-search-open="true"]')) return;
   const next = readSuppMode() === 'research' ? 'browse' : 'research';
   applySuppMode(next);
   writeSuppMode(next);
   updateSuppUrl(getCurrentSuppState());
 }
 
-// Phase 5.6 (2026-05-12): Pagefind search modal. The default UI ships
-// in /pagefind/ after `pagefind --site dist` runs as part of `npm run
-// build`. We lazy-load the CSS + JS bundle on first modal open so
-// readers who never search pay no bytes for the search index.
-//
-// Cmd-K (Mac) / Ctrl-K (others) opens the modal; Esc closes;
-// click-on-backdrop closes. The TopBar's search input is a click-
-// trigger (data-search-trigger) wired to openSearchModal.
-let _pagefindLoaded = false;
-let _pagefindUI = null;
+// Phase 5.6.1 (2026-05-12): inline search via raw Pagefind API.
+// The modal pattern from 5.6 obscured article content; reverted to a
+// dropdown panel anchored below the topbar search input so the reader
+// can keep their place while searching. Pagefind module loaded lazily
+// on first non-empty query; debounced at 180ms.
+let _pf = null;
+let _pfLoadFailed = false;
+let _searchTimer = null;
 
-function loadPagefindOnce() {
-  if (_pagefindLoaded) return Promise.resolve();
-  _pagefindLoaded = true;
-  // CSS — fire-and-forget; modal renders without it briefly otherwise.
-  const link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.href = '/pagefind/pagefind-ui.css';
-  document.head.appendChild(link);
-  // JS — wait for it before initialising PagefindUI.
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = '/pagefind/pagefind-ui.js';
-    script.onload = () => resolve();
-    script.onerror = () => {
-      // Build-time pagefind output missing — likely dev. Surface the
-      // hint in the modal so the user knows search is disabled here.
-      const hint = document.querySelector('[data-search-dev-hint]');
-      if (hint) hint.hidden = false;
-      reject(new Error('pagefind-ui.js failed to load'));
-    };
-    document.head.appendChild(script);
-  });
+async function loadPagefind() {
+  if (_pf) return _pf;
+  if (_pfLoadFailed) return null;
+  try {
+    const mod = await import('/pagefind/pagefind.js');
+    _pf = mod;
+    return _pf;
+  } catch (err) {
+    _pfLoadFailed = true;
+    return null;
+  }
 }
 
-function initPagefindUI() {
-  if (_pagefindUI) return;
-  if (typeof window.PagefindUI !== 'function') return;
-  _pagefindUI = new window.PagefindUI({
-    element: '#search-modal-mount',
-    showImages: false,
-    showSubResults: true,
-    resetStyles: false,
-    autofocus: true,
-  });
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+  })[c]);
 }
 
-function openSearchModal() {
-  const modal = document.querySelector('.search-modal');
-  if (!modal) return;
-  modal.setAttribute('data-search-open', 'true');
-  modal.hidden = false;
-  document.body.setAttribute('data-search-locked', 'true');
-  loadPagefindOnce().then(initPagefindUI).then(() => {
-    // PagefindUI handles its own focus when autofocus=true; nothing else
-    // to do here. If load failed we silently leave the modal open with
-    // the dev hint surfaced.
-  }).catch(() => { /* dev-hint already surfaced */ });
-}
-
-function closeSearchModal() {
-  const modal = document.querySelector('.search-modal');
-  if (!modal) return;
-  modal.setAttribute('data-search-open', 'false');
-  modal.hidden = true;
-  document.body.removeAttribute('data-search-locked');
-}
-
-function searchKeyboardHandler(ev) {
-  // Cmd-K / Ctrl-K opens the modal.
-  if ((ev.metaKey || ev.ctrlKey) && (ev.key === 'k' || ev.key === 'K')) {
-    ev.preventDefault();
-    openSearchModal();
+function renderSearchResults(panel, results, total, query) {
+  if (!results.length) {
+    panel.innerHTML = '<div class="topbar-search-panel-empty">No results for &quot;' + escapeHtml(query) + '&quot;.</div>';
+    panel.hidden = false;
     return;
   }
-  // Esc closes the modal (only if it's open).
-  if (ev.key === 'Escape') {
-    const modal = document.querySelector('.search-modal[data-search-open="true"]');
-    if (modal) {
-      ev.preventDefault();
-      closeSearchModal();
+  const meta =
+    '<div class="topbar-search-panel-meta"><b>' + total + '</b> result' +
+    (total === 1 ? '' : 's') + ' for &quot;' + escapeHtml(query) + '&quot;</div>';
+  const list = '<ul>' + results.map((r) => {
+    const title = escapeHtml((r.meta && r.meta.title) || r.url);
+    return '<li><a href="' + escapeHtml(r.url) + '">' +
+      '<div class="topbar-search-panel-title">' + title + '</div>' +
+      '<div class="topbar-search-panel-url">' + escapeHtml(r.url) + '</div>' +
+      '<div class="topbar-search-panel-excerpt">' + r.excerpt + '</div>' +
+      '</a></li>';
+  }).join('') + '</ul>';
+  panel.innerHTML = meta + list;
+  panel.hidden = false;
+}
+
+function handleSearchInput(ev) {
+  const q = (ev.target.value || '').trim();
+  const panel = document.getElementById('search-results-panel');
+  if (!panel) return;
+  clearTimeout(_searchTimer);
+  if (!q) {
+    panel.hidden = true;
+    panel.innerHTML = '';
+    return;
+  }
+  _searchTimer = setTimeout(async () => {
+    const pf = await loadPagefind();
+    if (!pf) {
+      panel.innerHTML = '<div class="topbar-search-panel-empty">Search index unavailable in this environment.</div>';
+      panel.hidden = false;
+      return;
     }
+    const search = await pf.search(q);
+    const total = search.results.length;
+    const top = await Promise.all(search.results.slice(0, 10).map((r) => r.data()));
+    renderSearchResults(panel, top, total, q);
+  }, 180);
+}
+
+function closeSearchPanel() {
+  const panel = document.getElementById('search-results-panel');
+  if (panel) panel.hidden = true;
+}
+
+function handleSearchKeydown(ev) {
+  if ((ev.metaKey || ev.ctrlKey) && (ev.key === 'k' || ev.key === 'K')) {
+    ev.preventDefault();
+    const input = document.getElementById('search-input');
+    if (input) {
+      input.focus();
+      input.select();
+    }
+    return;
+  }
+  if (ev.key === 'Escape') {
+    const input = document.getElementById('search-input');
+    const panel = document.getElementById('search-results-panel');
+    if (input && document.activeElement === input) {
+      ev.preventDefault();
+      input.value = '';
+      input.blur();
+      closeSearchPanel();
+    } else if (panel && !panel.hidden) {
+      ev.preventDefault();
+      closeSearchPanel();
+    }
+  }
+}
+
+function handleClickOutsideSearch(ev) {
+  const root = document.querySelector('[data-search-root]');
+  if (root && !root.contains(ev.target)) {
+    closeSearchPanel();
   }
 }
 
@@ -448,37 +433,29 @@ function applyPlatformKbdLabel() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Phase 5.5c: legacy hash → query-param migration runs once before
-  // the URL-state apply. After migration, every code path reads from
-  // the URL (?tab=…&mode=…&chips=…) or falls back to sessionStorage.
+  // Phase 5.5c: legacy hash → query migration runs once before apply.
   migrateLegacyHash();
   applySupplementaryStateFromUrl();
-  // hashchange still fires for in-page anchor clicks that use the
-  // legacy fragment scheme — migrate + reapply on the fly.
   window.addEventListener('hashchange', () => {
     migrateLegacyHash();
     applySupplementaryStateFromUrl();
   });
   document.addEventListener('keydown', suppKeyboardR);
 
-  // Phase 5.6: search modal triggers + global keyboard shortcut.
+  // Phase 5.6.1: inline search wiring.
   applyPlatformKbdLabel();
-  document.querySelectorAll('[data-search-trigger]').forEach((el) => {
-    el.addEventListener('click', openSearchModal);
-    el.addEventListener('keydown', (ev) => {
-      if (ev.key === 'Enter' || ev.key === ' ') {
-        ev.preventDefault();
-        openSearchModal();
+  const searchInput = document.getElementById('search-input');
+  if (searchInput) {
+    searchInput.addEventListener('input', handleSearchInput);
+    searchInput.addEventListener('focus', () => {
+      const panel = document.getElementById('search-results-panel');
+      if (panel && panel.innerHTML.trim()) {
+        panel.hidden = false;
       }
     });
-  });
-  document.querySelectorAll('[data-search-close]').forEach((el) => {
-    el.addEventListener('click', closeSearchModal);
-  });
-  document.querySelectorAll('[data-search-backdrop]').forEach((el) => {
-    el.addEventListener('click', closeSearchModal);
-  });
-  document.addEventListener('keydown', searchKeyboardHandler);
+  }
+  document.addEventListener('keydown', handleSearchKeydown);
+  document.addEventListener('mousedown', handleClickOutsideSearch);
 
   document.querySelectorAll('.nav-chapter-header').forEach(header => {
     header.addEventListener('click', () => {
@@ -508,8 +485,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
-
-<SearchModal lang={lang} />
 
 </body>
 </html>

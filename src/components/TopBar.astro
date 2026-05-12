@@ -1,6 +1,13 @@
 ---
 /**
  * TopBar — site-wide masthead. Step 5.2: bilingual nav chrome + GUIDANCE entry.
+ *
+ * Phase 5.6.1 (2026-05-12): search field is the primary input (no modal,
+ * no backdrop). Typing in the field triggers a debounced Pagefind query;
+ * results render in a dropdown panel anchored below the topbar so the
+ * underlying article stays visible. The search JS lives in
+ * BaseLayout's inline script. ⌘K / Ctrl-K focus the input (the listener
+ * is in BaseLayout too).
  */
 import LanguageToggle from './LanguageToggle.astro';
 import type { Lang } from '../types/aiact';
@@ -56,12 +63,9 @@ const SEARCH_PLACEHOLDER: Record<Lang, string> = {
   en: 'Search articles, recitals…',
   nl: 'Zoek artikelen, overwegingen…',
 };
-// Phase 5.6: SEARCH button retires — the input is now a click-trigger
-// for the Pagefind modal, and the right-side affordance is a keyboard
-// hint chip. Bilingual label kept in case a future variant surfaces it.
-const SEARCH_KBD_HINT_LABEL: Record<Lang, string> = {
-  en: 'Open search',
-  nl: 'Zoeken openen',
+const SEARCH_LABEL: Record<Lang, string> = {
+  en: 'Search the AI Act',
+  nl: 'Doorzoek de AI-verordening',
 };
 const BRAND_SUB: Record<Lang, string> = {
   en: 'Annotated Edition',
@@ -74,17 +78,24 @@ const labels = NAV_LABELS[lang];
 <div class="topbar">
   <div class="topbar-upper">
     <div class="topbar-brand">EU AI Act<span>{BRAND_SUB[lang]}</span></div>
-    <div
-      class="topbar-search"
-      role="button"
-      tabindex="0"
-      aria-haspopup="dialog"
-      aria-label={SEARCH_KBD_HINT_LABEL[lang]}
-      data-search-trigger
-    >
+    <div class="topbar-search" data-search-root>
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-      <input type="text" placeholder={SEARCH_PLACEHOLDER[lang]} id="search-input" readonly tabindex="-1" />
+      <input
+        type="text"
+        placeholder={SEARCH_PLACEHOLDER[lang]}
+        id="search-input"
+        aria-label={SEARCH_LABEL[lang]}
+        autocomplete="off"
+        spellcheck="false"
+      />
       <kbd class="topbar-search-kbd" aria-hidden="true" data-search-kbd>⌘K</kbd>
+      <div
+        id="search-results-panel"
+        class="topbar-search-panel"
+        role="listbox"
+        aria-label="Search results"
+        hidden
+      ></div>
     </div>
     <LanguageToggle lang={lang} currentPath={currentPath} availableLangs={availableLangs} />
   </div>
@@ -104,17 +115,14 @@ const labels = NAV_LABELS[lang];
 </div>
 
 <style is:global>
-  /* Phase 5.6 additions — the existing .topbar-search rules in global.css
-     still govern layout / colours; this block only adds the click-trigger
-     affordances and the keyboard-hint chip. 5.7 chrome flip rewrites the
-     topbar visual, at which point this stylesheet section can retire. */
-  .topbar-search[data-search-trigger] {
-    cursor: pointer;
-    user-select: none;
-  }
-  .topbar-search[data-search-trigger] input {
-    cursor: pointer;
-    pointer-events: none;
+  /* Phase 5.6.1 — search field is a live input + a dropdown panel
+     anchored below it. No modal, no backdrop. The dropdown overlays
+     the topbar-nav and the article column below the topbar; content
+     behind it stays visible. 5.7 chrome flip will reskin the whole
+     topbar, at which point this section converges with the new
+     palette. */
+  .topbar-search {
+    position: relative;
   }
   .topbar-search-kbd {
     font-family: var(--font-mono, monospace);
@@ -126,5 +134,93 @@ const labels = NAV_LABELS[lang];
     color: var(--stone-600, #504d42);
     margin-left: 0.5rem;
     letter-spacing: 0.02em;
+    pointer-events: none;
+  }
+  .topbar-search-panel {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    width: min(520px, 92vw);
+    max-height: 70vh;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid var(--stone-200, #d8d5cb);
+    border-radius: 6px;
+    box-shadow: var(--shadow-lg, 0 20px 50px -10px rgba(21, 20, 15, 0.20));
+    z-index: 200;
+    font-family: var(--font-ui, sans-serif);
+    font-size: 13px;
+    color: var(--stone-800, #26241e);
+  }
+  .topbar-search-panel[hidden] {
+    display: none;
+  }
+  .topbar-search-panel-meta {
+    padding: 0.55rem 0.8rem;
+    font-size: 11.5px;
+    color: var(--stone-500, #6a6658);
+    border-bottom: 1px solid var(--stone-150, #e4e2da);
+    background: var(--stone-50, #fafaf8);
+    border-radius: 6px 6px 0 0;
+  }
+  .topbar-search-panel-meta b {
+    color: var(--stone-700, #3a382f);
+    font-weight: 600;
+  }
+  .topbar-search-panel-empty {
+    padding: 1rem;
+    color: var(--stone-500, #6a6658);
+    font-size: 12.5px;
+    text-align: center;
+  }
+  .topbar-search-panel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .topbar-search-panel li + li {
+    border-top: 1px solid var(--stone-150, #e4e2da);
+  }
+  .topbar-search-panel li a {
+    display: block;
+    padding: 0.7rem 0.9rem;
+    color: inherit;
+    text-decoration: none;
+    transition: background var(--dur-1, 120ms) var(--ease, ease);
+  }
+  .topbar-search-panel li a:hover,
+  .topbar-search-panel li a:focus-visible {
+    background: var(--stone-50, #fafaf8);
+    outline: none;
+  }
+  .topbar-search-panel-title {
+    color: var(--stone-900, #15140f);
+    font-weight: 600;
+    font-size: 13.5px;
+    margin: 0 0 0.2rem;
+    line-height: 1.35;
+  }
+  .topbar-search-panel-url {
+    color: var(--stone-500, #6a6658);
+    font-size: 11px;
+    font-family: var(--font-mono, monospace);
+    margin: 0 0 0.3rem;
+  }
+  .topbar-search-panel-excerpt {
+    color: var(--stone-700, #3a382f);
+    font-size: 12.5px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .topbar-search-panel-excerpt mark {
+    background: #fdf6e3;
+    color: var(--stone-900, #15140f);
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+  body[data-search-locked="true"] {
+    /* Phase 5.6 leftover — no longer applied, but defensive in case
+       any stale state lingers from a prior page render. */
+    overflow: visible;
   }
 </style>
