@@ -12,6 +12,14 @@
  * detail pages where the target language doesn't carry a body on disk,
  * render the alternate-language link as a disabled span with a tooltip
  * instead of an active anchor.
+ *
+ * Phase 1 addition (2026-05-12 per url-contract-aiact-2026-05-12.md
+ * §"Behaviour invariants"): preserve query parameters (`?tab=`, `?species=`,
+ * `?entry=`, `?mode=research`) and pin-cite anchors (#art-6-p-1-a) across
+ * the language swap. The server doesn't know about `location.search` or
+ * `location.hash` at render time, so the preservation is implemented as a
+ * tiny click-intercept script (below) that appends the live values at
+ * navigation time.
  */
 import type { Lang } from '../types/aiact';
 
@@ -55,6 +63,35 @@ const nlUnavailableTooltip = 'Niet beschikbaar in het Nederlands';
     ? <a href={nlHref} aria-current={lang === 'nl' ? 'true' : undefined}>NL</a>
     : <span class="lang-toggle-disabled" aria-disabled="true" title={nlUnavailableTooltip}>NL</span>}
 </div>
+
+<script is:inline>
+  /**
+   * Preserve query + pin-cite anchor across the language swap (Phase 1).
+   *
+   * The server-rendered href contains only the path. The live values of
+   * `location.search` and `location.hash` are appended at click time so
+   * deep links like `/en/aiact/art/6/?tab=decisions#par-2` survive a
+   * toggle to `/nl/aiact/art/6/?tab=decisions#par-2`.
+   *
+   * If there's no query or hash to preserve, the listener does nothing
+   * and the anchor's default href fires.
+   */
+  (function () {
+    var anchors = document.querySelectorAll('.lang-toggle a');
+    for (var i = 0; i < anchors.length; i++) {
+      anchors[i].addEventListener('click', function (e) {
+        var suffix = window.location.search + window.location.hash;
+        if (!suffix) return;
+        // Modifier keys (open-in-new-tab etc.) keep default browser behaviour.
+        if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+        var href = this.getAttribute('href');
+        if (!href) return;
+        e.preventDefault();
+        window.location.assign(href + suffix);
+      });
+    }
+  })();
+</script>
 
 <style is:global>
   .lang-toggle .lang-toggle-disabled {

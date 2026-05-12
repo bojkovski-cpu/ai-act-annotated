@@ -1,0 +1,65 @@
+---
+/**
+ * History landing — /[lang]/aiact/history/.
+ * Phase 1 fork of /[lang]/history/index.astro with new URL emission.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import { getDraftingStages, getDraftingHistory } from '@/lib/loader';
+import type { Lang } from '@/types/aiact';
+
+export function getStaticPaths() {
+  const langs: Lang[] = ['en', 'nl'];
+  return langs.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+
+const stages = getDraftingStages(lang);
+const blob = getDraftingHistory(lang);
+const counts: Record<string, { articles: number; recitals: number; annexes: number; amendments: number }> = {};
+for (const s of stages) counts[s.id] = { articles: 0, recitals: 0, annexes: 0, amendments: 0 };
+for (const snap of blob.snapshots) {
+  if (counts[snap.stage]) counts[snap.stage][snap.content_type] = (counts[snap.stage][snap.content_type] ?? 0) + 1;
+}
+
+const T = lang === 'nl'
+  ? { title: 'Totstandkomingsgeschiedenis', home: 'Start', cl: { articles: 'artikelen', recitals: 'overwegingen', annexes: 'bijlagen', amendments: 'amendementen' } }
+  : { title: 'Drafting History', home: 'Home', cl: { articles: 'articles', recitals: 'recitals', annexes: 'annexes', amendments: 'amendments' } };
+
+function summary(c: { articles: number; recitals: number; annexes: number; amendments: number }) {
+  const p: string[] = [];
+  if (c.articles) p.push(`${c.articles} ${T.cl.articles}`);
+  if (c.recitals) p.push(`${c.recitals} ${T.cl.recitals}`);
+  if (c.annexes) p.push(`${c.annexes} ${T.cl.annexes}`);
+  if (c.amendments) p.push(`${c.amendments} ${T.cl.amendments}`);
+  return p.join(' · ');
+}
+---
+<BaseLayout title={`${T.title} — EU AI Act Annotated`}>
+  <Sidebar slot="sidebar" lang={lang} activeSection="history" />
+  <div class="chapter-bar"><h1>{T.title}</h1></div>
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{T.home}</a>
+    <span style="margin: 0 6px;">/</span><span>{T.title}</span>
+  </div>
+  <div style="font-family: var(--sans); display: flex; flex-direction: column; gap: 14px; margin-top: 24px;">
+    {stages.map((stage) => {
+      const label = lang === 'nl' ? stage.label_nl : stage.label_en;
+      return (
+        <a href={`/${lang}/aiact/history/${stage.id}/`} style="display: block; padding: 18px 22px; background: #fff; border: 1px solid var(--gray-200); border-left: 4px solid #d97706; border-radius: 0 6px 6px 0; text-decoration: none; color: inherit;">
+          <div style="font-family: var(--mono, var(--sans)); font-size: 11px; color: var(--gray-500); margin-bottom: 4px;">aiact/history/{stage.id}</div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <div>
+              <span style="font-weight: 700; color: #d97706; font-size: 15px;">{label}</span>
+              <span style="color: var(--gray-500); font-size: 13px; margin-left: 10px;">{stage.date}</span>
+            </div>
+            <span style="font-size: 12px; color: var(--gray-500); font-family: var(--serif); font-style: italic;">{stage.source_label}</span>
+          </div>
+          <div style="font-size: 12px; color: var(--gray-500); margin-top: 6px;">{summary(counts[stage.id])}</div>
+        </a>
+      );
+    })}
+  </div>
+</BaseLayout>

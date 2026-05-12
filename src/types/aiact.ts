@@ -11,6 +11,12 @@
  * canonical_ids, validity windows). The AI Act stays on a flat one-version
  * shape until 4.4 introduces drafting-history snapshots.
  *
+ * Phase 1 (2026-05-12, Path A schema-first migration) introduces canonical_id
+ * and version_id on Article / Recital / Annex. Backfilled in src/data/*.json
+ * by scripts/migrate_canonical_ids.py with version_id = '2024-08-01' (regulation
+ * entry into force). Annex points decomposed into structured AnnexPoint records
+ * for Pattern A annexes per annex-point-grain-aiact-2026-05-12.md.
+ *
  * Number normalisation: all entity numbers (article.number, recital.number,
  * paragraph.number) are STRINGS at the data layer. EN data was numeric in
  * the legacy ai_act_structured.json blob; the bridge scripts normalise to
@@ -19,6 +25,29 @@
  */
 
 export type Lang = 'en' | 'nl';
+
+// ─── Canonical identifiers (Phase 1) ─────────────────────────────────
+
+/**
+ * Stable, version-independent identifier for any entity in the Annotated.nl
+ * family. Format: `{instrument}/{kind}/{number}` — e.g. `aiact/art/6`,
+ * `aiact/rec/47`, `aiact/annex/iii`, `aiact/annex/iii/3`, `aiact/annex/iii/3/a`,
+ * `aiact/chapter/ii`. Lowercase throughout. Roman numerals lowercase for
+ * annex + chapter identifiers (`iii`, not `III`). Cross-instrument refs use
+ * the target instrument's slug (`gdpr/art/6`, `dsa/art/14`).
+ *
+ * See control-room/reference/url-contract-aiact-2026-05-12.md for the URL-shape
+ * derivation rule and the redirect map from legacy paths.
+ */
+export type CanonicalId = string;
+
+/**
+ * The version of an entity in the unified schema. Phase 1 backfills every
+ * record with the regulation's entry-into-force date (`2024-08-01` for the
+ * AI Act). Phase 6 introduces forward-dated versions for forthcoming Omnibus
+ * amendments; until then there is exactly one version per entity.
+ */
+export type VersionId = string;
 
 // ─── Paragraph ────────────────────────────────────────────────────────
 
@@ -40,6 +69,10 @@ export interface Paragraph {
 // ─── Article ──────────────────────────────────────────────────────────
 
 export interface Article {
+  /** `aiact/art/{number}`. Stable, version-independent identifier. Phase 1. */
+  canonical_id: CanonicalId;
+  /** ISO date of the version's entry into force. Phase 1 backfill: '2024-08-01'. */
+  version_id: VersionId;
   number: string;
   label: string;
   title: string;
@@ -150,17 +183,69 @@ export interface DraftingHistoryGap {
 // ─── Recital ──────────────────────────────────────────────────────────
 
 export interface Recital {
+  /** `aiact/rec/{number}`. Phase 1. */
+  canonical_id: CanonicalId;
+  /** ISO date of the version's entry into force. Phase 1 backfill: '2024-08-01'. */
+  version_id: VersionId;
   number: string;
   text: string;
 }
 
 // ─── Annex ────────────────────────────────────────────────────────────
 
+/**
+ * One letter sub-point under a numbered point in a Pattern A annex with letter
+ * sub-points (Annex III, IV, X, XII per annex-point-grain-aiact-2026-05-12.md).
+ * Emitted by scripts/migrate_canonical_ids.py from the source text; not present
+ * before Phase 1. Sub-letters get their own canonical IDs (Option canonical,
+ * decided 2026-05-12) so cross-references at letter grain are URL-addressable.
+ */
+export interface AnnexLetter {
+  /** `aiact/annex/{roman}/{point}/{letter}`. Lowercase letter. */
+  canonical_id: CanonicalId;
+  /** Single lowercase letter, e.g. 'a', 'b'. */
+  letter: string;
+  /** Body text of this letter. */
+  text: string;
+}
+
+/**
+ * One top-level structural unit inside an annex — a numbered point in Pattern A
+ * annexes with numeric enumeration (III, IV, V, VI, VII, IX, X, XII), or a
+ * lettered point in Pattern A annexes with letter-only enumeration (XIII).
+ *
+ * `points: []` for Pattern B annexes (I, VIII, XI — sectioned, deferred to
+ * Phase 4) and Pattern C annexes (II — no list structure).
+ */
+export interface AnnexPoint {
+  /** `aiact/annex/{roman}/{position}`. */
+  canonical_id: CanonicalId;
+  /** Top-level enumeration as it appears in the source. Numeric for most
+   *  Pattern A annexes (`'1'`, `'2'`, …); lowercase letter for Annex XIII
+   *  (`'a'`, `'b'`, …). String to allow both shapes. */
+  position: string;
+  /** Body text of this point (excluding sub-letters when those exist as
+   *  structured `letters` rows). */
+  body: string;
+  /** Letter sub-points under this numbered point, when the annex has them
+   *  (Annex III / IV / X / XII). Empty array when the point is flat. */
+  letters: AnnexLetter[];
+}
+
 export interface Annex {
-  /** Roman-numeral identifier, e.g. "I", "II", "XIII". */
+  /** `aiact/annex/{id.toLowerCase()}`. Phase 1. */
+  canonical_id: CanonicalId;
+  /** ISO date of the version's entry into force. Phase 1 backfill: '2024-08-01'. */
+  version_id: VersionId;
+  /** Roman-numeral identifier, e.g. "I", "II", "XIII". Preserved as-uppercased
+   *  for backward compatibility with existing renderers. */
   id: string;
   title: string;
   text: string;
+  /** Top-level structural points. Populated for Pattern A annexes (III, IV,
+   *  V, VI, VII, IX, X, XII, XIII); empty for Pattern B (I, VIII, XI) and
+   *  Pattern C (II) until Phase 4. See annex-point-grain-aiact-2026-05-12.md. */
+  points: AnnexPoint[];
 }
 
 // ─── Chapter ──────────────────────────────────────────────────────────

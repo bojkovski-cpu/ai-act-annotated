@@ -1,0 +1,102 @@
+---
+/**
+ * Recital detail — /en/aiact/rec/N/ and /nl/aiact/rec/N/.
+ *
+ * Phase 1 fork of /[lang]/recitals/[recital].astro.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import { getArticles, getRecitals, getCrossReferences } from '@/lib/loader';
+import type { Lang, Recital } from '@/types/aiact';
+
+export function getStaticPaths() {
+  const langs: Lang[] = ['en', 'nl'];
+  const out: Array<{ params: { lang: Lang; n: string }; props: { recital: Recital; lang: Lang } }> = [];
+  for (const lang of langs) {
+    for (const recital of getRecitals(lang)) {
+      out.push({ params: { lang, n: recital.number }, props: { recital, lang } });
+    }
+  }
+  return out;
+}
+
+interface Props { recital: Recital; lang: Lang }
+const { recital, lang } = Astro.props;
+
+const cr = getCrossReferences();
+const articleNums = (cr.recital_to_articles[recital.number] ?? []).map((n) => String(n));
+const allArticles = getArticles(lang);
+const referencingArticles = articleNums
+  .map((n) => allArticles.find((a) => a.number === n))
+  .filter((a): a is NonNullable<typeof a> => Boolean(a));
+
+const sorted = getRecitals(lang);
+const idx = sorted.findIndex((r) => r.number === recital.number);
+const prev = idx > 0 ? sorted[idx - 1] : null;
+const next = idx < sorted.length - 1 ? sorted[idx + 1] : null;
+
+const pageTitle = lang === 'nl' ? `Overweging ${recital.number} — EU AI Act` : `Recital ${recital.number} — EU AI Act Annotated`;
+---
+
+<BaseLayout title={pageTitle}>
+  <Sidebar slot="sidebar" lang={lang} activeSection="recitals" />
+
+  <div class="chapter-bar">
+    <h1>{lang === 'nl' ? 'Overweging' : 'Recital'} {recital.number}</h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{lang === 'nl' ? 'Start' : 'Home'}</a>
+    <span style="margin: 0 6px;">/</span>
+    <a href={`/${lang}/aiact/rec/`} style="color: var(--blue-accent); text-decoration: none;">{lang === 'nl' ? 'Overwegingen' : 'Recitals'}</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>({recital.number})</span>
+  </div>
+
+  <div style="margin: 8px 0 20px; font-family: var(--mono, var(--sans)); font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px;">
+    {recital.canonical_id} · v{recital.version_id}
+  </div>
+
+  <div class="article-block">
+    <div class="article-body">
+      <p style="font-family: var(--serif); font-size: 17px; line-height: 1.7; color: var(--gray-800); margin: 0;">
+        <span style="font-weight: 700; color: var(--red-accent); margin-right: 6px;">({recital.number})</span>
+        {recital.text}
+      </p>
+    </div>
+  </div>
+
+  {referencingArticles.length > 0 && (
+    <section style="margin-top: 32px; padding: 20px; background: var(--gray-50); border-left: 3px solid var(--blue-accent); border-radius: 0 6px 6px 0;">
+      <h3 style="margin: 0 0 12px; font-family: var(--sans); font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray-700);">
+        {lang === 'nl' ? 'Verwezen in artikelen' : 'Referenced in articles'}
+      </h3>
+      <ul style="list-style: none; padding: 0; margin: 0; font-family: var(--sans); font-size: 14px;">
+        {referencingArticles.map((art) => (
+          <li style="padding: 4px 0;">
+            <a href={`/${lang}/aiact/art/${art.number}/`} style="color: var(--blue-accent); text-decoration: none;">
+              {lang === 'nl' ? 'Artikel' : 'Article'} {art.number} — {art.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <nav style="display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 2px solid #111; font-family: var(--sans);">
+    {prev ? (
+      <a href={`/${lang}/aiact/rec/${prev.number}/`}
+         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 3px solid var(--red-accent); border-radius: 0 6px 6px 0; text-decoration: none; color: inherit;">
+        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">&larr; {lang === 'nl' ? 'Vorige' : 'Previous'}</div>
+        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">{lang === 'nl' ? 'Overweging' : 'Recital'} {prev.number}</div>
+      </a>
+    ) : <div style="flex: 1;"></div>}
+    {next ? (
+      <a href={`/${lang}/aiact/rec/${next.number}/`}
+         style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-right: 3px solid var(--red-accent); border-radius: 6px 0 0 6px; text-decoration: none; color: inherit; text-align: right;">
+        <div style="font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;">{lang === 'nl' ? 'Volgende' : 'Next'} &rarr;</div>
+        <div style="font-weight: 700; color: var(--red-accent); font-size: 14px;">{lang === 'nl' ? 'Overweging' : 'Recital'} {next.number}</div>
+      </a>
+    ) : <div style="flex: 1;"></div>}
+  </nav>
+</BaseLayout>

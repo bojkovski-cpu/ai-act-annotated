@@ -1,0 +1,48 @@
+---
+/**
+ * Recitals index — /en/aiact/rec/ and /nl/aiact/rec/.
+ *
+ * Phase 1 canonical-URL contract. 180 recitals, listed in order.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import { getRecitals } from '@/lib/loader';
+import type { Lang } from '@/types/aiact';
+
+export function getStaticPaths() {
+  const langs: Lang[] = ['en', 'nl'];
+  return langs.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const recitals = getRecitals(lang);
+---
+
+<BaseLayout title={lang === 'nl' ? 'Alle overwegingen — EU AI Act' : 'All Recitals — EU AI Act Annotated'}>
+  <Sidebar slot="sidebar" lang={lang} activeSection="recitals" />
+
+  <div class="chapter-bar">
+    <h1>{lang === 'nl' ? 'Alle overwegingen' : 'All Recitals'}</h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{lang === 'nl' ? 'Start' : 'Home'}</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>{lang === 'nl' ? 'Overwegingen' : 'Recitals'}</span>
+  </div>
+
+  <ul style="list-style: none; padding: 0; margin: 24px 0;">
+    {recitals.map((r) => (
+      <li style="padding: 10px 0; border-bottom: 1px solid var(--gray-200);">
+        <a href={`/${lang}/aiact/rec/${r.number}/`} style="text-decoration: none; color: inherit; display: block;">
+          <div style="font-family: var(--mono, var(--sans)); font-size: 11px; color: var(--gray-500); margin-bottom: 4px;">{r.canonical_id}</div>
+          <div>
+            <span style="font-weight: 600; color: var(--red-accent); margin-right: 8px;">({r.number})</span>
+            <span style="color: var(--gray-800);">{r.text.slice(0, 220)}{r.text.length > 220 && '…'}</span>
+          </div>
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

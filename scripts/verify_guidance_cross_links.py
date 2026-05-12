@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Phase 1 (2026-05-12) update: dist/ path resolution + the gd-cited-link
+# regex updated for the canonical-id URL shape per url-contract-aiact-
+# 2026-05-12.md. Article anchors now read /[lang]/aiact/art/{n}/...
 """
 verify_guidance_cross_links.py — Bi-directional integrity verifier for
 guidance ↔ article cross-links.
@@ -13,7 +16,7 @@ registry (`guidance.json`), and the rendered `dist/` output, and asserts:
      populated pin_cite, and a populated location_in_doc.
   2. Forward direction (article → guidance): for each (guidance_id, article,
      lang) tuple in the index, the rendered article page at
-     /dist/{lang}/articles/chapter-{C}/article-{N}/index.html contains a
+     /dist/{lang}/aiact/art/{N}/index.html contains a
      guidance card linking back to /{lang}/guidance/<canonical_id>/.
   3. Reverse direction (guidance → article): for each guidance doc, the
      rendered detail page at /dist/{lang}/guidance/<canonical_id>/index.html
@@ -197,7 +200,7 @@ class Verifier:
         if chapter is None or self.dist_dir is None:
             return None
         return (self.dist_dir / lang / "articles"
-                / f"chapter-{chapter}" / f"article-{article_num}" / "index.html")
+                / "aiact" / "art" / f"{article_num}" / "index.html")
 
     def _guidance_page_path(self, lang: str, canonical_id: str) -> Optional[Path]:
         if self.dist_dir is None:
@@ -292,8 +295,8 @@ class Verifier:
         # Match either attribute order: class then href, or href then class.
         # Allow an optional #fragment (5.4 deep-link work appends #guidance).
         cited_link_re = re.compile(
-            r'(?:class="gd-cited-link"\s+href="/(en|nl)/articles/chapter-\d+/article-(\d+)/(?:#[a-z-]+)?"|'
-            r'href="/(en|nl)/articles/chapter-\d+/article-(\d+)/(?:#[a-z-]+)?"\s+class="gd-cited-link")'
+            r'(?:class="gd-cited-link"\s+href="/(en|nl)/aiact/art/(\d+)/(?:#[a-z-]+)?"|'
+            r'href="/(en|nl)/aiact/art/(\d+)/(?:#[a-z-]+)?"\s+class="gd-cited-link")'
         )
 
         expected: Dict[Tuple[str, str], Set[int]] = defaultdict(set)

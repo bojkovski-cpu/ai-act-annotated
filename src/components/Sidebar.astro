@@ -27,13 +27,13 @@ const { lang, activeChapter, activeArticle, activeSection = 'articles', activeGu
 // Build chapter nav from the loader. Hrefs precomputed in script.
 const allArticles = getArticles(lang);
 const chapters = getChapters(lang).map(ch => {
-  const chapterHref = '/' + lang + '/articles/chapter-' + ch.number + '/';
+  const chapterHref = '/' + lang + '/aiact/chapter/' + ch.roman.toLowerCase() + '/';
   const articles = allArticles
     .filter(a => a.chapter === ch.number)
     .map(a => ({
       number: a.number,
       title: a.title,
-      href: '/' + lang + '/articles/chapter-' + ch.number + '/article-' + a.number + '/',
+      href: '/' + lang + '/aiact/art/' + a.number + '/',
     }));
 
   const artNums = articles.map(a => a.number);

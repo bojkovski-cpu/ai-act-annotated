@@ -98,8 +98,8 @@ const citedArticleEntries = citedArticles.map(num => {
     // BaseLayout.astro). Falls back to the articles index if the article
     // can't be resolved (defensive — shouldn't happen with valid data).
     href: a
-      ? `/${lang}/articles/chapter-${a.chapter}/article-${a.number}/#guidance`
-      : `/${lang}/articles/`,
+      ? `/${lang}/aiact/art/${a.number}/#guidance`
+      : `/${lang}/aiact/art/`,
   };
 });
 

@@ -1,0 +1,67 @@
+---
+/**
+ * Articles index — /en/aiact/art/ and /nl/aiact/art/.
+ *
+ * Phase 1 canonical-URL contract (2026-05-12). 113 articles grouped by
+ * chapter. Forked from /[lang]/articles/index.astro with new URL emission.
+ */
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Sidebar from '@components/Sidebar.astro';
+import { getArticles, getChapters } from '@/lib/loader';
+import type { Lang } from '@/types/aiact';
+
+export function getStaticPaths() {
+  const langs: Lang[] = ['en', 'nl'];
+  return langs.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+
+function titleCase(str: string) {
+  return str.toLowerCase()
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .replace(/\bAi\b/g, 'AI').replace(/\bEu\b/g, 'EU').replace(/\bGpai\b/g, 'GPAI');
+}
+
+const articles = getArticles(lang);
+const chapters = getChapters(lang).map((ch) => ({
+  ...ch,
+  articles: articles.filter((a) => a.chapter === ch.number),
+}));
+---
+
+<BaseLayout title={lang === 'nl' ? 'Alle artikelen — EU AI Act' : 'All Articles — EU AI Act Annotated'}>
+  <Sidebar slot="sidebar" lang={lang} activeSection="articles" />
+
+  <div class="chapter-bar">
+    <h1>{lang === 'nl' ? 'Alle artikelen' : 'All Articles'}</h1>
+  </div>
+
+  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+    <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{lang === 'nl' ? 'Start' : 'Home'}</a>
+    <span style="margin: 0 6px;">/</span>
+    <span>{lang === 'nl' ? 'Artikelen' : 'Articles'}</span>
+  </div>
+
+  {chapters.map((ch) => (
+    <section style="margin: 24px 0 32px;">
+      <h2 style="font-family: var(--sans); font-size: 18px; font-weight: 700; color: var(--gray-900); margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--gray-200);">
+        <a href={`/${lang}/aiact/chapter/${ch.roman.toLowerCase()}/`} style="color: inherit; text-decoration: none;">
+          {lang === 'nl' ? 'Hoofdstuk' : 'Chapter'} {ch.roman} — {titleCase(ch.title)}
+        </a>
+      </h2>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        {ch.articles.map((art) => (
+          <li style="padding: 8px 0;">
+            <a href={`/${lang}/aiact/art/${art.number}/`} style="text-decoration: none; color: inherit; display: block;">
+              <span style="font-family: var(--mono, var(--sans)); font-size: 12px; color: var(--gray-500); margin-right: 8px;">{art.canonical_id}</span>
+              <span style="font-weight: 600; color: var(--red-accent); margin-right: 6px;">{lang === 'nl' ? 'Artikel' : 'Article'} {art.number}</span>
+              <span style="color: var(--gray-800);">{art.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</BaseLayout>

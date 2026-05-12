@@ -1,10 +1,10 @@
 [
   {
-    "chapter": 1,
-    "chapter_roman": "I",
-    "chapter_title": "ALGEMENE BEPALINGEN",
-    "label": "Artikel 1",
+    "canonical_id": "aiact/art/1",
+    "version_id": "2024-08-01",
     "number": "1",
+    "label": "Artikel 1",
+    "title": "Onderwerp",
     "paragraphs": [
       {
         "id": "001.001",
@@ -17,14 +17,16 @@
         "text": "2.   Bij deze verordening worden vastgesteld:\n\n(a)\ngeharmoniseerde regels voor het in de handel brengen, in gebruik stellen en gebruiken van AI-systemen in de Unie;\n\n(b)\neen verbod op bepaalde AI-praktijken;\n\n(c)\nspecifieke eisen voor AI-systemen met een hoog risico en verplichtingen voor de operatoren van dergelijke systemen;\n\n(d)\ngeharmoniseerde transparantievoorschriften voor bepaalde AI-systemen;\n\n(e)\ngeharmoniseerde regels voor het in de handel brengen van AI-modellen voor algemene doeleinden;\n\n(f)\nregels inzake marktmonitoring, markttoezicht, governance en handhaving van die regels;\n\n(g)\nmaatregelen ter ondersteuning van innovatie, met bijzondere nadruk op kmo’s, waaronder start-ups."
       }
     ],
-    "title": "Onderwerp"
-  },
-  {
     "chapter": 1,
     "chapter_roman": "I",
-    "chapter_title": "ALGEMENE BEPALINGEN",
-    "label": "Artikel 2",
+    "chapter_title": "ALGEMENE BEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/2",
+    "version_id": "2024-08-01",
     "number": "2",
+    "label": "Artikel 2",
+    "title": "Toepassingsgebied",
     "paragraphs": [
       {
         "id": "002.001",
@@ -87,14 +89,16 @@
         "text": "12.   Deze verordening is niet van toepassing op AI-systemen die worden vrijgegeven onder vrije en opensource licenties, tenzij zij in de handel worden gebracht of in gebruik worden gesteld als AI-systemen met een hoog risico of als een AI-systeem dat onder artikel 5 of artikel 50 valt."
       }
     ],
-    "title": "Toepassingsgebied"
-  },
-  {
     "chapter": 1,
     "chapter_roman": "I",
-    "chapter_title": "ALGEMENE BEPALINGEN",
-    "label": "Artikel 3",
+    "chapter_title": "ALGEMENE BEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/3",
+    "version_id": "2024-08-01",
     "number": "3",
+    "label": "Artikel 3",
+    "title": "Definities",
     "paragraphs": [
       {
         "id": null,
@@ -102,14 +106,16 @@
         "text": "Voor de toepassing van deze verordening wordt verstaan onder:\n\n(1)\n“AI-systeem”: een op een machine gebaseerd systeem dat is ontworpen om met verschillende niveaus van autonomie te werken en dat na het inzetten ervan aanpassingsvermogen kan vertonen, en dat, voor expliciete of impliciete doelstellingen, uit de ontvangen input afleidt hoe output te genereren zoals voorspellingen, inhoud, aanbevelingen of beslissingen die van invloed kunnen zijn op fysieke of virtuele omgevingen;\n\n(2)\n“risico”: de combinatie van de kans op schade en de ernst van die schade;\n\n(3)\n“aanbieder”: een natuurlijke of rechtspersoon, overheidsinstantie, agentschap of ander orgaan die/dat een AI-systeem of een AI-model voor algemene doeleinden ontwikkelt of laat ontwikkelen en dat systeem of model in de handel brengt of het AI-systeem in gebruik stelt onder de eigen naam of merk, al dan niet tegen betaling;\n\n(4)\n“gebruiksverantwoordelijke”: een natuurlijke of rechtspersoon, overheidsinstantie, agentschap of ander orgaan die/dat een AI-systeem onder eigen verantwoordelijkheid gebruikt, tenzij het AI-systeem wordt gebruikt in het kader van een persoonlijke niet-beroepsactiviteit;\n\n(5)\n“gemachtigde”: een natuurlijke of rechtspersoon die zich bevindt of gevestigd is in de Unie die een schriftelijke machtiging heeft gekregen en aanvaard van een aanbieder van een AI-systeem of een AI-model voor algemene doeleinden om namens die aanbieder de verplichtingen en procedures van deze verordening respectievelijk na te komen en uit te voeren;\n\n(6)\n“importeur”: een natuurlijke of rechtspersoon die zich bevindt of gevestigd is in de Unie die een AI-systeem in de handel brengt dat de naam of het merk van een in een derde land gevestigde natuurlijke of rechtspersoon draagt;\n\n(7)\n“distributeur”: een andere natuurlijke persoon of rechtspersoon in de toeleveringsketen dan de aanbieder of de importeur, die een AI-systeem in de Unie op de markt aanbiedt;\n\n(8)\n“operator”: een aanbieder, productfabrikant, gebruiksverantwoordelijke, gemachtigde, importeur of distributeur;\n\n(9)\n“in de handel brengen”: het voor het eerst in de Unie op de markt aanbieden van een AI-systeem of een AI-model voor algemene doeleinden;\n\n(10)\n“op de markt aanbieden”: het in het kader van een handelsactiviteit, al dan niet tegen betaling, verstrekken van een AI-systeem of een AI-model voor algemene doeleinden met het oog op distributie of gebruik op de markt van de Unie;\n\n(11)\n“in gebruik stellen”: de directe levering van een AI-systeem aan de gebruiksverantwoordelijke voor het eerste gebruik of voor eigen gebruik in de Unie voor het beoogde doel;\n\n(12)\n“beoogd doel”: het gebruik waarvoor een AI-systeem door de aanbieder is bedoeld, met inbegrip van de specifieke context en voorwaarden van het gebruik, zoals gespecificeerd in de informatie die door de aanbieder in de gebruiksinstructies, reclame- of verkoopmaterialen en verklaringen, alsook in de technische documentatie is verstrekt;\n\n(13)\n“redelijkerwijs te voorzien misbruik”: het gebruik van een AI-systeem op een wijze die niet in overeenstemming is met het beoogde doel, maar die kan voortvloeien uit redelijkerwijs te voorzien menselijk gedrag of redelijkerwijs te voorziene interactie met andere systemen, waaronder andere AI-systemen;\n\n(14)\n“veiligheidscomponent”: een component van een product of van een AI-systeem die een veiligheids-functie voor dat product of AI-systeem vervult of waarvan het falen of gebrekkig functioneren de gezondheid en veiligheid van personen of eigendom in gevaar brengt;\n\n(15)\n“gebruiksinstructies”: de door de aanbieder verstrekte informatie om de gebruiksverantwoordelijke te informeren over met name het beoogde doel en juiste gebruik van een AI-systeem;\n\n(16)\n“terugroepen van een AI-systeem”: een maatregel gericht op het retourneren aan de aanbieder, het buiten gebruik stellen of het onbruikbaar maken van een AI-systeem dat aan gebruiksverantwoordelijken ter beschikking is gesteld;\n\n(17)\n“uit de handel nemen van een AI-systeem”: een maatregel waarmee wordt beoogd te voorkomen dat een AI-systeem dat zich in de toeleveringsketen bevindt, op de markt wordt aangeboden;\n\n(18)\n“prestaties van een AI-systeem”: het vermogen van een AI-systeem om het beoogde doel te verwezenlijken;\n\n(19)\n“aanmeldende autoriteit”: de nationale autoriteit die verantwoordelijk is voor het opzetten en uitvoeren van de noodzakelijke procedures voor de beoordeling, aanwijzing en kennisgeving van de conformiteitsbeoordelingsinstanties en de monitoring hiervan;\n\n(20)\n“conformiteitsbeoordeling”: het proces waarbij de naleving wordt aangetoond van de voorschriften van hoofdstuk III, afdeling 2, in verband met een AI-systeem met een hoog risico;\n\n(21)\n“conformiteitsbeoordelingsinstantie”: een instantie die als derde partij conformiteits-beoordelingsactiviteiten verricht, zoals onder meer testen, certificeren en inspecteren;\n\n(22)\n“aangemelde instantie”: een conformiteitsbeoordelingsinstantie die overeenkomstig deze verordening en andere relevante harmonisatiewetgeving van de Unie, is aangemeld;\n\n(23)\n“substantiële wijziging”: een verandering van een AI-systeem nadat dit in de handel is gebracht of in gebruik is gesteld, die door de aanbieder niet is voorzien of gepland in de initiële conformiteitsbeoordeling en als gevolg waarvan de overeenstemming van het AI-systeem met de voorschriften van hoofdstuk III, afdeling 2, wordt beïnvloed, of die leidt tot een wijziging van het beoogde doel waarvoor het AI-systeem is beoordeeld;\n\n(24)\n“CE-markering”: een markering waarmee een aanbieder aangeeft dat een AI-systeem in overeenstemming is met de voorschriften van hoofdstuk III, afdeling 2, en andere toepasselijke harmonisatiewetgeving van de Unie, die in het aanbrengen ervan voorzien;\n\n(25)\n“systeem voor monitoring na het in de handel brengen”: alle door aanbieders van AI-systemen verrichte activiteiten voor het verzamelen en evalueren van ervaringen met door hen in de handel gebrachte of in gebruik gestelde AI-systemen, teneinde te kunnen vaststellen of er onmiddellijk corrigerende dan wel preventieve maatregelen nodig zijn;\n\n(26)\n“markttoezichtautoriteit”: de nationale autoriteit die de activiteiten verricht en maatregelen neemt als bedoeld in Verordening (EU) 2019/1020;\n\n(27)\n“geharmoniseerde norm”: een geharmoniseerde norm zoals gedefinieerd in artikel 2, lid 1, punt c), van Verordening (EU) nr. 1025/2012;\n\n(28)\n“gemeenschappelijke specificatie”: een reeks technische specificaties zoals gedefinieerd in artikel 2, punt 4, van Verordening (EU) nr. 1025/2012, om te voldoen aan bepaalde voorschriften zoals vastgelegd in deze verordening;\n\n(29)\n“trainingsdata”: data die worden gebruikt voor het trainen van een AI-systeem door de leerbare parameters hiervan aan te passen;\n\n(30)\n“validatiedata”: data die worden gebruikt voor het verrichten van een evaluatie van het getrainde AI-systeem en voor het afstemmen van onder andere de niet-leerbare parameters en het leerproces ervan, om underfitting of overfitting te voorkomen;\n\n(31)\n“validatiedataset”: een afzonderlijke dataset of deel van de trainingsdataset, als vaste of variabele opdeling;\n\n(32)\n“testdata”: data die worden gebruikt voor het verrichten van een onafhankelijke evaluatie van het AI-systeem om de verwachte prestaties van dat systeem te bevestigen voordat het in de handel wordt gebracht of in gebruik wordt gesteld;\n\n(33)\n“inputdata”: data die in een AI-systeem worden ingevoerd of direct door een AI-systeem worden verworven en op basis waarvan het systeem een output genereert;\n\n(34)\n“biometrische gegevens”: persoonsgegevens die het resultaat zijn van een specifieke technische verwerking met betrekking tot de fysieke, fysiologische of gedragsgerelateerde kenmerken van een natuurlijk persoon, zoals gezichtsafbeeldingen of vingerafdrukgegevens;\n\n(35)\n“biometrische identificatie”: de geautomatiseerde herkenning van fysieke, fysiologische, gedragsgerelateerde of psychologische menselijke kenmerken om de identiteit van een natuurlijk persoon vast te stellen door biometrische gegevens van die persoon te vergelijken met in een databank opgeslagen biometrische gegevens van personen;\n\n(36)\n“biometrische verificatie”: de geautomatiseerde één-op-éénverificatie, met inbegrip van de authenticatie, van de identiteit van natuurlijke personen door hun biometrische gegevens te vergelijken met eerder verstrekte biometrische gegevens;\n\n(37)\n“bijzondere categorieën persoonsgegevens”: de categorieën persoonsgegevens als bedoeld in artikel 9, lid 1, van Verordening (EU) 2016/679, artikel 10 van Richtlijn (EU) 2016/680 en artikel 10, lid 1, van Verordening (EU) 2018/1725;\n\n(38)\n“gevoelige operationele gegevens”: operationele gegevens met betrekking tot activiteiten op het gebied van preventie, opsporing, onderzoek of vervolging van strafbare feiten waarvan de openbaarmaking de integriteit van strafprocedures in het gedrang zou kunnen brengen;\n\n(39)\n“systeem voor het herkennen van emoties”: een AI-systeem dat is bedoeld voor het vaststellen of afleiden van de emoties of intenties van natuurlijke personen op basis van hun biometrische gegevens;\n\n(40)\n“systeem voor biometrische categorisering” een AI-systeem dat is bedoeld voor het indelen van natuurlijke personen in specifieke categorieën op basis van hun biometrische gegevens, tenzij dit een aanvulling vormt op een andere commerciële dienst en om objectieve technische redenen strikt noodzakelijk is;\n\n(41)\n“systeem voor biometrische identificatie op afstand”: een AI-systeem dat is bedoeld voor het identificeren van natuurlijke personen, zonder dat zij daar actief bij betrokken zijn en doorgaans van een afstand, door middel van vergelijking van de biometrische gegevens van een persoon met de biometrische gegevens die zijn opgenomen in een referentiedatabank;\n\n(42)\n“systeem voor biometrische identificatie op afstand in real time”: een systeem voor biometrische identificatie op afstand, waarbij het vastleggen van biometrische gegevens, de vergelijking en de identificatie zonder significante vertraging plaatsvinden, zowel wanneer de identificatie niet enkel onmiddellijk plaatsvindt, maar ook wanneer de identificatie met beperkte korte vertragingen plaatsvindt, om omzeiling te voorkomen;\n\n(43)\n“systeem voor biometrische identificatie op afstand achteraf”: een ander biometrisch systeem voor de identificatie op afstand dan een systeem voor biometrische identificatie op afstand in real time;\n\n(44)\n“openbare ruimte”: een fysieke plek die in publieke of private handen is en toegankelijk is voor een onbepaald aantal natuurlijke personen, ongeacht of bepaalde voorwaarden voor de toegang van toepassing zijn, en ongeacht eventuele capaciteitsbeperkingen;\n\n(45)\n“rechtshandhavingsinstantie”:\n\n  - a) iedere overheidsinstantie die bevoegd is voor de voorkoming van, het onderzoek naar, de opsporing en de vervolging van strafbare feiten of de uitvoering van straffen, met inbegrip van de bescherming tegen en de voorkoming van gevaren voor de openbare veiligheid, of\n\n  - b) ieder ander orgaan dat of iedere andere entiteit die krachtens het recht van de lidstaten is gemachtigd openbaar gezag en openbare bevoegdheden uit te oefenen met het oog op de voorkoming van, het onderzoek naar, de opsporing en de vervolging van strafbare feiten of de uitvoering van straffen, met inbegrip van de bescherming tegen en de voorkoming van gevaren voor de openbare veiligheid;\n\n(46)\n“rechtshandhaving”: activiteiten die worden verricht door of namens rechtshandhavings-instanties met het oog op de voorkoming van, het onderzoek naar, de opsporing of de vervolging van strafbare feiten of de uitvoering van straffen, met inbegrip van de bescherming tegen en de voorkoming van gevaren voor de openbare veiligheid;\n\n(47)\n“AI-bureau”: de taak van de Commissie waarbij zij bijdraagt aan de uitvoering van, de monitoring van en het toezicht op AI-systemen en AI-modellen voor algemene doeleinden, en AI-governance, als bepaald in het besluit van de Commissie van 24 januari 2024; verwijzingen in deze verordening naar het AI-bureau worden begrepen als verwijzingen naar de Commissie;\n\n(48)\n“nationale bevoegde autoriteit”: een aanmeldende autoriteit of een de markttoezichtautoriteit; wat betreft AI-systemen die door instellingen, organen en instanties van de EU in gebruik worden gesteld of worden gebruikt, worden verwijzingen naar nationale bevoegde autoriteiten of markttoezichtautoriteiten in deze verordening begrepen als verwijzingen naar de Europese Toezichthouder voor gegevensbescherming;\n\n(49)\n“ernstig incident”: een incident of gebrekkig functioneren van een AI-systeem dat direct of indirect leidt tot:\n\n  - a) het overlijden van een persoon of ernstige schade voor de gezondheid van een persoon;\n\n  - b) een ernstige en onomkeerbare verstoring van het beheer of de exploitatie van kritieke infrastructuur;\n\n  - c) een schending van de uit het recht van de Unie voortvloeiende verplichtingen ter bescherming van de grondrechten;\n\n  - d) ernstige schade aan eigendommen of het milieu;\n\n(50)\n“persoonsgegevens”: persoonsgegevens zoals gedefinieerd in artikel 4, punt 1, van Verordening (EU) 2016/679;\n\n(51)\n“niet-persoonsgebonden gegevens”: andere gegevens dan persoonsgegevens zoals gedefinieerd in artikel 4, punt 1, van Verordening (EU) 2016/679;\n\n(52)\n“profilering”: profilering zoals gedefinieerd in artikel 4, punt 4, van Verordening (EU) 2016/679;\n\n(53)\n“plan voor testen onder reële omstandigheden”: een document waarin de doelstellingen, methode, geografische reikwijdte, betrokken personen, duur, monitoring, organisatie en wijze van uitvoering van een test onder reële omstandigheden worden omschreven;\n\n(54)\n“testomgevingsplan”: tussen de deelnemende aanbieder en de bevoegde autoriteit overeengekomen document waarin de doelstellingen, de voorwaarden, het tijdschema, de methode en de vereisten voor de in de testomgeving uitgevoerde activiteiten worden beschreven;\n\n(55)\n“AI-testomgeving voor regelgeving”: een door een bevoegde autoriteit opgezet gecontroleerd kader dat aanbieders of toekomstige aanbieders van AI-systemen de mogelijkheid biedt een innovatief AI-systeem te ontwikkelen, trainen, valideren en testen, zo nodig onder reële omstandigheden, volgens een testomgevingsplan, voor een beperkte periode en onder begeleiding van een toezichthouder;\n\n(56)\n“AI-geletterdheid”: vaardigheden, kennis en begrip die aanbieders, gebruiksverantwoordelijken en betrokken personen, rekening houdend met hun respectieve rechten en plichten in het kader van deze verordening, in staat stellen geïnformeerd AI-systemen in te zetten en zich bewuster te worden van de kansen en risico’s van AI en de mogelijke schade die zij kan veroorzaken;\n\n(57)\n“testen onder reële omstandigheden”: het tijdelijk testen van een AI-systeem voor zijn beoogde doel onder reële omstandigheden buiten een laboratorium of anderszins gesimuleerde omgeving teneinde betrouwbare en robuuste gegevens te verkrijgen, en te beoordelen en te verifiëren of het AI-systeem overeenstemt met de voorschriften van deze verordening en het wordt niet aangemerkt als het in de handel brengen of in gebruik stellen van het AI-systeem in de zin van deze verordening, mits aan alle in artikel 57 of artikel 60 vastgestelde voorwaarden is voldaan;\n\n(58)\n“proefpersoon” in het kader van tests onder reële omstandigheden: een natuurlijk persoon die deelneemt aan een test onder reële omstandigheden;\n\n(59)\n“geïnformeerde toestemming”: de vrijelijk gegeven, specifieke, ondubbelzinnige en vrijwillige uiting door een proefpersoon van zijn of haar bereidheid deel te nemen aan een bepaalde test onder reële omstandigheden, na geïnformeerd te zijn over alle aspecten van de test die van belang zijn voor zijn of haar beslissing om deel te nemen;\n\n(60)\n“deepfake”: door AI gegenereerd of gemanipuleerd beeld-, audio- of videomateriaal dat een gelijkenis vertoont met bestaande personen, voorwerpen, plaatsen, entiteiten of gebeurtenissen, en door een persoon ten onrechte voor authentiek of waarheidsgetrouw zou worden aangezien;\n\n(61)\n“wijdverbreide inbreuk”: alle handelingen of omissies die in strijd zijn met het Unierecht ter bescherming van de belangen van natuurlijke personen, waarbij:\n\n  - a) schade is veroorzaakt of waarschijnlijk zal worden veroorzaakt aan de collectieve belangen van natuurlijke personen met verblijfplaats in ten minste twee andere lidstaten dan de lidstaat waar:\n\n    - i) de handeling of omissie haar oorsprong vond of plaatshad;\n\n    - ii) de betrokken aanbieder of, waar van toepassing, diens gemachtigde zich bevindt of is gevestigd, of\n\n    - iii) de gebruiksverantwoordelijke is gevestigd, indien de inbreuk door de gebruiksverantwoordelijke is gepleegd;\n\n  - b) schade is veroorzaakt, wordt veroorzaakt of waarschijnlijk zal worden veroorzaakt aan de collectieve belangen van natuurlijke personen, en die gemeenschappelijke kenmerken hebben, waaronder dezelfde onrechtmatige praktijk of een inbreuk op hetzelfde belang, en die zich gelijktijdig voordoen en door dezelfde operator worden begaan in ten minste drie lidstaten;\n\n(62)\n“kritieke infrastructuur”: kritieke infrastructuur zoals gedefinieerd in artikel 2, punt 4, van Richtlijn (EU) 2022/2557;\n\n(63)\n“AI-model voor algemene doeleinden”: een AI-model, ook wanneer het is getraind met een grote hoeveelheid data met behulp van self-supervision op grote schaal, dat een aanzienlijk algemeen karakter vertoont en in staat is op competente wijze een breed scala aan verschillende taken uit te voeren, ongeacht de wijze waarop het model in de handel wordt gebracht, en dat kan worden geïntegreerd in een verscheidenheid aan systemen verder in de AI-waardeketen of toepassingen verder in de AI-waardeketen, met uitzondering van AI-modellen die worden gebruikt voor onderzoek, ontwikkeling of prototypingactiviteiten alvorens zij in de handel worden gebracht;\n\n(64)\n“capaciteiten met een grote impact”: capaciteiten die overeenkomen met of groter zijn dan de capaciteiten die worden opgetekend bij de meest geavanceerde AI-modellen voor algemene doeleinden;\n\n(65)\n“systeemrisico”: een risico dat specifiek is voor de capaciteiten met een grote impact van AI-modellen voor algemene doeleinden, die aanzienlijke gevolgen hebben voor de markt van de Unie vanwege hun bereik, of vanwege feitelijke of redelijkerwijs te voorziene negatieve gevolgen voor de gezondheid, de veiligheid, de openbare veiligheid, de grondrechten of de samenleving als geheel, en dat op grote schaal in de hele waardeketen kan worden verspreid;\n\n(66)\n“AI-systeem voor algemene doeleinden”: een AI-systeem dat is gebaseerd op een AI-model voor algemene doeleinden en dat verschillende doeleinden kan dienen, zowel voor direct gebruik als voor integratie in andere AI-systemen;\n\n(67)\nzwevendekommabewerking of “floating-point operation (FLOP)”: elke wiskundige bewerking of toewijzing met zwevendekommagetallen, die een subset vormen van de reële getallen die gewoonlijk op computers worden gerepresenteerd door een geheel getal met een vaste precisie, geschaald door een gehele exponent van een vaste basis;\n\n(68)\n“aanbieder verder in de AI-waardeketen”: een aanbieder van een AI-systeem, met inbegrip van een AI-systeem voor algemene doeleinden, waarin een AI-model is geïntegreerd, ongeacht of het AI-model door hemzelf wordt verstrekt en verticaal geïntegreerd is of door een andere entiteit wordt aangeboden op basis van contractuele betrekkingen."
       }
     ],
-    "title": "Definities"
-  },
-  {
     "chapter": 1,
     "chapter_roman": "I",
-    "chapter_title": "ALGEMENE BEPALINGEN",
-    "label": "Artikel 4",
+    "chapter_title": "ALGEMENE BEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/4",
+    "version_id": "2024-08-01",
     "number": "4",
+    "label": "Artikel 4",
+    "title": "AI-geletterdheid",
     "paragraphs": [
       {
         "id": null,
@@ -117,14 +123,16 @@
         "text": "Aanbieders en gebruiksverantwoordelijken van AI-systemen nemen maatregelen om, zoveel als mogelijk, te zorgen voor een toereikend niveau van AI-geletterdheid bij hun personeel en andere personen die namens hen AI-systemen exploiteren en gebruiken, en houden daarbij rekening met hun technische kennis, ervaring, onderwijs en opleiding en de context waarin de AI-systemen zullen worden gebruikt, evenals met de personen of groepen personen ten aanzien van wie de AI-systemen zullen worden gebruikt."
       }
     ],
-    "title": "AI-geletterdheid"
+    "chapter": 1,
+    "chapter_roman": "I",
+    "chapter_title": "ALGEMENE BEPALINGEN"
   },
   {
-    "chapter": 2,
-    "chapter_roman": "II",
-    "chapter_title": "VERBODEN AI-PRAKTIJKEN",
-    "label": "Artikel 5",
+    "canonical_id": "aiact/art/5",
+    "version_id": "2024-08-01",
     "number": "5",
+    "label": "Artikel 5",
+    "title": "Verboden AI-praktijken",
     "paragraphs": [
       {
         "id": "005.001",
@@ -167,14 +175,16 @@
         "text": "8.   Dit artikel doet geen afbreuk aan de verbodsbepalingen die van toepassing zijn wanneer een AI-praktijk een inbreuk vormt op het Unierecht."
       }
     ],
-    "title": "Verboden AI-praktijken"
+    "chapter": 2,
+    "chapter_roman": "II",
+    "chapter_title": "VERBODEN AI-PRAKTIJKEN"
   },
   {
-    "chapter": 3,
-    "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 6",
+    "canonical_id": "aiact/art/6",
+    "version_id": "2024-08-01",
     "number": "6",
+    "label": "Artikel 6",
+    "title": "Classificatieregels voor AI-systemen met een hoog risico",
     "paragraphs": [
       {
         "id": "006.001",
@@ -217,14 +227,16 @@
         "text": "8.   Overeenkomstig de leden 6 en 7 van dit artikel vastgestelde wijzigingen van de in lid 3, tweede alinea, vastgelegde voorwaarden doen geen afbreuk aan het in deze verordening bepaalde algemene niveau van bescherming van de gezondheid, de veiligheid en de grondrechten, en zorgen voor samenhang met de op grond van artikel 7, lid 1, vastgestelde gedelegeerde handelingen en houdenrekening met markt- en technologische ontwikkelingen."
       }
     ],
-    "title": "Classificatieregels voor AI-systemen met een hoog risico"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 7",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/7",
+    "version_id": "2024-08-01",
     "number": "7",
+    "label": "Artikel 7",
+    "title": "Wijzigingen in bijlage III",
     "paragraphs": [
       {
         "id": "007.001",
@@ -242,14 +254,16 @@
         "text": "3.   De Commissie is bevoegd overeenkomstig artikel 97 gedelegeerde handelingen vast te stellen tot wijziging van bijlage III door AI-systemen met een hoog risico te schrappen wanneer aan beide van de volgende voorwaarden is voldaan:\n\n(a)\nhet betrokken AI-systeem met een hoog risico vormt, rekening houdend met de in lid 2 vermelde criteria, geen significant risico voor de grondrechten, de gezondheid of de veiligheid;\n\n(b)\nde schrapping leidt niet tot een lager algeheel beschermingsniveau wat betreft de gezondheid, de veiligheid en de grondrechten uit hoofde van het Unierecht."
       }
     ],
-    "title": "Wijzigingen in bijlage III"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 8",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/8",
+    "version_id": "2024-08-01",
     "number": "8",
+    "label": "Artikel 8",
+    "title": "Naleving van de eisen",
     "paragraphs": [
       {
         "id": "008.001",
@@ -262,14 +276,16 @@
         "text": "2.   Indien een product een AI-systeem omvat waarop zowel de vereisten van deze verordening als die van de in bijlage I, afdeling A, vermelde harmonisatiewetgeving van de Unie van toepassing zijn, zijn aanbieders ervoor verantwoordelijk te waarborgen dat hun product volledig voldoet aan alle toepasselijke vereisten uit hoofde van de toepasselijke harmonisatiewetgeving van de Unie. Om te waarborgen dat de in lid 1 bedoelde AI-systemen met een hoog risico voldoen aan de eisen van deze afdeling en om te zorgen voor consistentie, dubbel werk te voorkomen en de extra lasten tot een minimum te beperken, hebben aanbieders de keuze om in voorkomend geval de nodige test- en rapportageprocessen en door hen verstrekte informatie en documentatie over hun product op te nemen in de reeds bestaande documentatie en procedures die vereist zijn uit hoofde van de in bijlage I, afdeling A, bedoelde harmonisatiewetgeving van de Unie."
       }
     ],
-    "title": "Naleving van de eisen"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 9",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/9",
+    "version_id": "2024-08-01",
     "number": "9",
+    "label": "Artikel 9",
+    "title": "Systeem voor risicobeheer",
     "paragraphs": [
       {
         "id": "009.001",
@@ -322,14 +338,16 @@
         "text": "10.   Voor aanbieders van AI-systemen met een hoog risico die onderworpen zijn aan eisen met betrekking tot interne risicobeheerprocessen uit hoofde van andere relevante bepalingen van het Unierecht, kunnen de in de leden 1 tot en met 9 bepaalde aspecten deel uitmaken van of gecombineerd worden met de op grond van dat recht vastgestelde risicobeheerprocedures."
       }
     ],
-    "title": "Systeem voor risicobeheer"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 10",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/10",
+    "version_id": "2024-08-01",
     "number": "10",
+    "label": "Artikel 10",
+    "title": "Data en datagovernance",
     "paragraphs": [
       {
         "id": "010.001",
@@ -362,14 +380,16 @@
         "text": "6.   Voor de ontwikkeling van AI-systemen met een hoog risico die geen technieken voor de training van modellen gebruiken, zijn de leden 2 tot en met 5 uitsluitend van toepassing op de datasets voor tests."
       }
     ],
-    "title": "Data en datagovernance"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 11",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/11",
+    "version_id": "2024-08-01",
     "number": "11",
+    "label": "Artikel 11",
+    "title": "Technische documentatie",
     "paragraphs": [
       {
         "id": "011.001",
@@ -387,14 +407,16 @@
         "text": "3.   De Commissie is bevoegd overeenkomstig artikel 97 gedelegeerde handelingen vast te stellen om, waar nodig, bijlage IV te wijzigen om, in het licht van de technische vooruitgang, te waarborgen dat in de technische documentatie alle noodzakelijke informatie wordt verstrekt om de overeenstemming van het systeem met de eisen van deze afdeling te kunnen beoordelen."
       }
     ],
-    "title": "Technische documentatie"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 12",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/12",
+    "version_id": "2024-08-01",
     "number": "12",
+    "label": "Artikel 12",
+    "title": "Registratie",
     "paragraphs": [
       {
         "id": "012.001",
@@ -412,14 +434,16 @@
         "text": "3.   Voor AI-systemen met een hoog risico als bedoeld in punt 1, a), van bijlage III voorzien de loggingcapaciteiten ten minste in:\n\n(a)\nde registratie van de duur van elk gebruik van het systeem (begindatum en -tijd en einddatum en -tijd van elk gebruik);\n\n(b)\nde referentiedatabank aan de hand waarvan de inputdata zijn gecontroleerd door het systeem;\n\n(c)\nde inputdata ten aanzien waarvan de zoekopdracht een match heeft opgeleverd;\n\n(d)\nde identificatie van de natuurlijke personen die betrokken zijn bij de verificatie van de resultaten, zoals bedoeld in artikel 14, lid 5."
       }
     ],
-    "title": "Registratie"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 13",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/13",
+    "version_id": "2024-08-01",
     "number": "13",
+    "label": "Artikel 13",
+    "title": "Transparantie en informatieverstrekking aan gebruiksverantwoordelijken",
     "paragraphs": [
       {
         "id": "013.001",
@@ -437,14 +461,16 @@
         "text": "3.   De gebruiksinstructies bevatten ten minste de volgende gegevens:\n\n(a)\nde identiteit en de contactgegevens van de aanbieder en, in voorkomend geval, van zijn gemachtigde;\n\n(b)\nde kenmerken, capaciteiten en beperkingen van de prestaties van het AI-systeem met een hoog risico, waaronder:\n\n  - i) het beoogde doel;\n\n  - ii) de mate van nauwkeurigheid, waaronder de beoordelingsmaatstaven, robuustheid en cyberbeveiliging als bedoeld in artikel 15 waarop het AI-systeem met een hoog risico is getest en gevalideerd en die kan worden verwacht, en eventuele bekende en te voorziene omstandigheden die een effect kunnen hebben op die verwachte mate van nauwkeurigheid, robuustheid en cyberbeveiliging;\n\n  - iii) eventuele bekende of te voorziene omstandigheden in verband met het gebruik van het AI-systeem met een hoog risico in overeenstemming met het beoogde doel ervan of in een situatie van redelijkerwijs te voorzien misbruik, die kunnen leiden tot risico’s voor de gezondheid en veiligheid of de grondrechten als bedoeld in artikel 9, lid 2;\n\n  - iv) in voorkomend geval, de technische capaciteiten en kenmerken van het AI-systeem met een hoog risico om informatie te verstrekken die relevant is om de output ervan toe te lichten;\n\n  - v) in voorkomend geval, zijn prestaties met betrekking tot specifieke personen of groepen personen voor wie het systeem moet worden gebruikt;\n\n  - vi) in voorkomend geval, specificaties voor de inputdata of eventuele andere relevante informatie met betrekking tot de gebruikte datasets voor training, validatie en tests, rekening houdend met het beoogde doel van het AI-systeem met een hoog risico;\n\n  - vii) in voorkomend geval, informatie om de gebruiksverantwoordelijken in staat te stellen de output van het AI-systeem met een hoog risico te interpreteren en op passende wijze te gebruiken;\n\n(c)\nde wijzigingen van het AI-systeem met een hoog risico en de prestaties ervan die vooraf door de aanbieder zijn bepaald op het moment van de eerste conformiteitsbeoordeling, indien van toepassing;\n\n(d)\nde in artikel 14 bedoelde maatregelen voor menselijk toezicht, met inbegrip van de technische maatregelen die zijn getroffen om de interpretatie van de output van de AI-systemen met een hoog risico door gebruiksverantwoordelijken te vergemakkelijken;\n\n(e)\nde benodigde rekenkracht en hardware, de verwachte levensduur van het AI-systeem met een hoog risico en eventuele noodzakelijke maatregelen — en de frequentie daarvan — voor onderhoud en verzorging ter waarborging van de goede werking van dat AI-systeem, ook in verband met software-updates;\n\n(f)\nin voorkomend geval, een beschrijving van de mechanismen in het AI-systeem met een hoog risico die gebruiksverantwoordelijken in staat stellen de logs naar behoren te verzamelen, op te slaan en te interpreteren overeenkomstig artikel 12."
       }
     ],
-    "title": "Transparantie en informatieverstrekking aan gebruiksverantwoordelijken"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 14",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/14",
+    "version_id": "2024-08-01",
     "number": "14",
+    "label": "Artikel 14",
+    "title": "Menselijk toezicht",
     "paragraphs": [
       {
         "id": "014.001",
@@ -472,14 +498,16 @@
         "text": "5.   Voor AI-systemen met een hoog risico als bedoeld in bijlage III, punt 1, a), zijn de maatregelen als bedoeld in lid 3 van dit artikel zodanig dat zij waarborgen dat daarnaast door de gebruiksverantwoordelijke geen maatregelen worden getroffen of beslissingen worden genomen op basis van de identificatie door het systeem, tenzij deze identificatie door ten minste twee natuurlijke personen met de nodige bekwaamheid, opleiding en bevoegdheid apart zijn geverifieerd en bevestigd.\n\nHet vereiste van een afzonderlijke verificatie door ten minste twee natuurlijke personen is niet van toepassing op AI-systemen met een hoog risico die gebruikt worden voor rechtshandhaving, migratie, grenstoezicht of asiel, in gevallen waarin het Unierecht of het nationale recht de toepassing van dit vereiste onevenredig acht."
       }
     ],
-    "title": "Menselijk toezicht"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 15",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/15",
+    "version_id": "2024-08-01",
     "number": "15",
+    "label": "Artikel 15",
+    "title": "Nauwkeurigheid, robuustheid en cyberbeveiliging",
     "paragraphs": [
       {
         "id": "015.001",
@@ -507,14 +535,16 @@
         "text": "5.   AI-systemen met een hoog risico zijn bestand tegen pogingen van ongeautoriseerde derden om het gebruik, de outputs of de prestaties ervan te wijzigen door gebruik te maken van de kwetsbaarheden van het systeem.\n\nDe technische oplossingen die gericht zijn op het waarborgen van de cyberbeveiliging van AI-systemen met een hoog risico sluiten aan op de relevante omstandigheden en risico’s.\n\nDe technische oplossingen voor het aanpakken van AI-specifieke kwetsbaarheden omvatten, waar passend, maatregelen voor het voorkomen, traceren, reageren op, oplossen en beheersen van aanvallen waarmee een poging wordt gedaan tot het manipuleren van de dataset voor de training (de zogenaamde “datavervuiling”), van vooraf getrainde componenten die in de training zijn gebruikt (de zogenaamde “modelvervuiling”), van input die is gecreëerd om fouten van het model te veroorzaken (zogenaamde “vijandige voorbeelden” of “modelontwijking”), van aanvallen om vertrouwelijke gegevens te bemachtigen of van tekortkomingen van het model."
       }
     ],
-    "title": "Nauwkeurigheid, robuustheid en cyberbeveiliging"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 16",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/16",
+    "version_id": "2024-08-01",
     "number": "16",
+    "label": "Artikel 16",
+    "title": "Verplichtingen van aanbieders van AI-systemen met een hoog risico",
     "paragraphs": [
       {
         "id": null,
@@ -522,14 +552,16 @@
         "text": "Aanbieders van AI-systemen met een hoog risico:\n\n(a)\nzorgen ervoor dat hun AI-systemen met een hoog risico in overeenstemming zijn met de eisen van afdeling 2;\n\n(b)\nvermelden op het AI-systeem met een hoog risico of, wanneer dit niet mogelijk is, op de verpakking of in de bij het product gevoegde documentatie, naargelang het geval, hun naam, geregistreerde handelsnaam of geregistreerd merk en hun contactadres;\n\n(c)\nbeschikken over een systeem voor kwaliteitsbeheer dat in overeenstemming is met artikel 17;\n\n(d)\nbewaren de in artikel 18 bedoelde documentatie;\n\n(e)\nbewaren de in artikel 19 bedoelde logs die automatisch door hun AI-systemen met een hoog risico zijn gegenereerd, wanneer zij hierover de controle hebben;\n\n(f)\nzorgen ervoor dat voor het AI-systeem met een hoog risico de desbetreffende in artikel 43 bedoelde conformiteitsbeoordelingsprocedure wordt uitgevoerd voordat dit systeem in de handel wordt gebracht of in gebruik wordt gesteld;\n\n(g)\nstellen een EU-conformiteitsverklaring op, in overeenstemming met artikel 47;\n\n(h)\nbrengen de CE-markering aan op het AI-systeem met een hoog risico of, wanneer dit niet mogelijk is, op de verpakking of in de bij het product gevoegde documentatie, om aan te geven dat aan deze verordening is voldaan, overeenkomstig artikel 48;\n\n(i)\nleven de registratieverplichtingen als bedoeld in artikel 49, lid 1, na;\n\n(j)\nnemen de noodzakelijke corrigerende maatregelen en verstrekken de uit hoofde van artikel 20 vereiste informatie;\n\n(k)\ntonen op een met redenen omkleed verzoek van een nationale bevoegde autoriteit de overeenstemming aan van het AI-systeem met een hoog risico met de eisen van afdeling 2;\n\n(l)\nzorgen ervoor dat het AI-systeem met een hoog risico voldoet aan de toegankelijkheidseisen overeenkomstig de Richtlijnen (EU) 2016/2102 en (EU) 2019/882."
       }
     ],
-    "title": "Verplichtingen van aanbieders van AI-systemen met een hoog risico"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 17",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/17",
+    "version_id": "2024-08-01",
     "number": "17",
+    "label": "Artikel 17",
+    "title": "Systeem voor kwaliteitsbeheer",
     "paragraphs": [
       {
         "id": "017.001",
@@ -552,14 +584,16 @@
         "text": "4.   Voor aanbieders die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het desbetreffende Unierecht inzake financiële diensten, wordt met uitzondering van lid 1, punten g), h) en i), van dit artikel de verplichting een systeem voor kwaliteitsbeheer in te voeren geacht te zijn vervuld door te voldoen aan de regels inzake interne governance, regelingen of processen uit hoofde van het desbetreffende Unierecht inzake financiële diensten. Daartoe wordt rekening gehouden met eventuele geharmoniseerde normen als bedoeld in artikel 40."
       }
     ],
-    "title": "Systeem voor kwaliteitsbeheer"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 18",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/18",
+    "version_id": "2024-08-01",
     "number": "18",
+    "label": "Artikel 18",
+    "title": "Bewaring van documentatie",
     "paragraphs": [
       {
         "id": "018.001",
@@ -577,14 +611,16 @@
         "text": "3.   Aanbieders die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het Unierecht voor financiële diensten, bewaren de technische documentatie als onderdeel van de documentatie die bewaard wordt krachtens het desbetreffende Unierecht inzake financiële diensten."
       }
     ],
-    "title": "Bewaring van documentatie"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 19",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/19",
+    "version_id": "2024-08-01",
     "number": "19",
+    "label": "Artikel 19",
+    "title": "Automatisch gegenereerde logs",
     "paragraphs": [
       {
         "id": "019.001",
@@ -597,14 +633,16 @@
         "text": "2.   Aanbieders die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het Unierecht inzake financiële diensten, bewaren de automatisch door hun AI-systemen met een hoog risico gegenereerde logs, als onderdeel van de documentatie die bewaard wordt krachtens het desbetreffende recht inzake financiële diensten."
       }
     ],
-    "title": "Automatisch gegenereerde logs"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 20",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/20",
+    "version_id": "2024-08-01",
     "number": "20",
+    "label": "Artikel 20",
+    "title": "Corrigerende maatregelen en mededelingsverplichting",
     "paragraphs": [
       {
         "id": "020.001",
@@ -617,14 +655,16 @@
         "text": "2.   Wanneer het AI-systeem met een hoog risico een risico vormt in de zin van artikel 79, lid 1, en de aanbieder kennis neemt van dat risico, onderzoekt hij onmiddellijk de oorzaken in samenwerking met, in voorkomend geval, de gebruiksverantwoordelijke die het risico heeft gemeld, informeert hij de markttoezichtautoriteiten die bevoegd zijn voor het betrokken AI-systeem met een hoog risico en, in voorkomend geval, de aangemelde instantie die een certificaat voor het AI-systeem met een hoog risico heeft afgegeven overeenkomstig artikel 44, met name over de aard van de non-conformiteit en over eventuele relevante getroffen corrigerende maatregelen."
       }
     ],
-    "title": "Corrigerende maatregelen en mededelingsverplichting"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 21",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/21",
+    "version_id": "2024-08-01",
     "number": "21",
+    "label": "Artikel 21",
+    "title": "Samenwerking met bevoegde autoriteiten",
     "paragraphs": [
       {
         "id": "021.001",
@@ -642,14 +682,16 @@
         "text": "3.   De door de bevoegde autoriteit krachtens dit artikel verkregen informatie en documentatie worden verwerkt overeenkomstig de in artikel 78 vastgestelde vertrouwelijkheidsverplichtingen."
       }
     ],
-    "title": "Samenwerking met bevoegde autoriteiten"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 22",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/22",
+    "version_id": "2024-08-01",
     "number": "22",
+    "label": "Artikel 22",
+    "title": "Gemachtigden van aanbieders van AI-systemen met een hoog risico",
     "paragraphs": [
       {
         "id": "022.001",
@@ -672,14 +714,16 @@
         "text": "4.   De gemachtigde beëindigt het mandaat indien hij van mening is of redenen heeft om aan te nemen dat de aanbieder in strijd met zijn verplichtingen op grond van deze verordening handelt. Hij stelt daar dan, met opgave van redenen, de relevante markttoezichtautoriteit onmiddellijk van in kennis, alsmede, in voorkomend geval, de relevante aangemelde instantie."
       }
     ],
-    "title": "Gemachtigden van aanbieders van AI-systemen met een hoog risico"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 23",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/23",
+    "version_id": "2024-08-01",
     "number": "23",
+    "label": "Artikel 23",
+    "title": "Verplichtingen van importeurs",
     "paragraphs": [
       {
         "id": "023.001",
@@ -717,14 +761,16 @@
         "text": "7.   Importeurs werken met de relevante bevoegde autoriteiten samen met betrekking tot alle maatregelen die door deze autoriteiten worden getroffen in verband met het AI-systeem met een hoog risico dat door de importeurs in de handel is gebracht, met name om de risico’s van dat systeem te verminderen en te beperken."
       }
     ],
-    "title": "Verplichtingen van importeurs"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 24",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/24",
+    "version_id": "2024-08-01",
     "number": "24",
+    "label": "Artikel 24",
+    "title": "Verplichtingen van distributeurs",
     "paragraphs": [
       {
         "id": "024.001",
@@ -757,14 +803,16 @@
         "text": "6.   Distributeurs werken met de relevante bevoegde autoriteiten samen met betrekking tot alle maatregelen die door deze autoriteiten worden getroffen in verband met het AI-systeem met een hoog risico dat door de distributeurs op de markt is aangeboden, met name om de risico’s van dat systeem te verminderen of te beperken."
       }
     ],
-    "title": "Verplichtingen van distributeurs"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 25",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/25",
+    "version_id": "2024-08-01",
     "number": "25",
+    "label": "Artikel 25",
+    "title": "Verantwoordelijkheden in de AI-waardeketen",
     "paragraphs": [
       {
         "id": "025.001",
@@ -792,14 +840,16 @@
         "text": "5.   De leden 2 en 3 doen geen afbreuk aan de noodzaak om intellectuele-eigendomsrechten, vertrouwelijke bedrijfsinformatie en bedrijfsgeheimen te eerbiedigen en te beschermen overeenkomstig het Unierecht en het nationale recht."
       }
     ],
-    "title": "Verantwoordelijkheden in de AI-waardeketen"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 26",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/26",
+    "version_id": "2024-08-01",
     "number": "26",
+    "label": "Artikel 26",
+    "title": "Verplichtingen van gebruiksverantwoordelijken van AI-systemen met een hoog risico",
     "paragraphs": [
       {
         "id": "026.001",
@@ -862,14 +912,16 @@
         "text": "12.   Gebruiksverantwoordelijken werken samen met de relevante bevoegde autoriteiten bij alle door deze autoriteiten genomen maatregelen met betrekking tot een AI-systeem met een hoog risico met het oog op de uitvoering van deze verordening."
       }
     ],
-    "title": "Verplichtingen van gebruiksverantwoordelijken van AI-systemen met een hoog risico"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 27",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/27",
+    "version_id": "2024-08-01",
     "number": "27",
+    "label": "Artikel 27",
+    "title": "Beoordeling van de gevolgen voor de grondrechten van AI-systemen met een hoog risico",
     "paragraphs": [
       {
         "id": "027.001",
@@ -897,14 +949,16 @@
         "text": "5.   Het AI-bureau ontwikkelt een sjabloon voor een vragenlijst, onder meer via een geautomatiseerd instrument, om gebruiksverantwoordelijken te helpen hun verplichtingen uit hoofde van dit artikel op vereenvoudigde wijze na te komen."
       }
     ],
-    "title": "Beoordeling van de gevolgen voor de grondrechten van AI-systemen met een hoog risico"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 28",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/28",
+    "version_id": "2024-08-01",
     "number": "28",
+    "label": "Artikel 28",
+    "title": "Aanmeldende autoriteiten",
     "paragraphs": [
       {
         "id": "028.001",
@@ -942,14 +996,16 @@
         "text": "7.   Aanmeldende autoriteiten beschikken over een toereikend aantal bekwame personeelsleden om hun taken naar behoren uit te voeren. Bekwame personeelsleden beschikken, indien van toepassing, over de nodige deskundigheid voor hun functies op gebieden als informatietechnologie, AI en recht, met inbegrip van het toezicht op de grondrechten."
       }
     ],
-    "title": "Aanmeldende autoriteiten"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 29",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/29",
+    "version_id": "2024-08-01",
     "number": "29",
+    "label": "Artikel 29",
+    "title": "Verzoek om aanmelding van een conformiteitsbeoordelingsinstantie",
     "paragraphs": [
       {
         "id": "029.001",
@@ -972,14 +1028,16 @@
         "text": "4.   Voor aangemelde instanties die uit hoofde van andere harmonisatiewetgeving van de Unie zijn aangewezen, kunnen waar passend alle documenten en certificaten met betrekking tot die aanwijzingen worden gebruikt om hun aanwijzingsprocedure krachtens deze verordening te ondersteunen. Om de voor aangemelde instanties verantwoordelijke autoriteit in staat te stellen de continue naleving van alle eisen van artikel 31 te monitoren en te verifiëren, werkt de aangemelde instantie de in de leden 2 en 3 bij dit artikel bedoelde documentatie telkens bij wanneer relevante veranderingen plaatsvinden."
       }
     ],
-    "title": "Verzoek om aanmelding van een conformiteitsbeoordelingsinstantie"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 30",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/30",
+    "version_id": "2024-08-01",
     "number": "30",
+    "label": "Artikel 30",
+    "title": "Aanmeldingsprocedure",
     "paragraphs": [
       {
         "id": "030.001",
@@ -1007,14 +1065,16 @@
         "text": "5.   Indien er bezwaar wordt ingediend, treedt de Commissie onverwijld in overleg met de betrokken lidstaten en de conformiteitsbeoordelingsinstantie. Met het oog daarop besluit de Commissie of de toelating gerechtvaardigd is. De Commissie richt haar besluit aan de betrokken lidstaat en aan de relevante conformiteitsbeoordelingsinstantie."
       }
     ],
-    "title": "Aanmeldingsprocedure"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 31",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/31",
+    "version_id": "2024-08-01",
     "number": "31",
+    "label": "Artikel 31",
+    "title": "Voorschriften in verband met aangemelde instanties",
     "paragraphs": [
       {
         "id": "031.001",
@@ -1077,14 +1137,16 @@
         "text": "12.   Aangemelde instanties nemen deel aan coördinatieactiviteiten als bedoeld in artikel 38. Zij nemen ook rechtstreeks deel aan of worden vertegenwoordigd in Europese normalisatie-instellingen of zorgen ervoor op de hoogte te zijn van actuele relevante normen."
       }
     ],
-    "title": "Voorschriften in verband met aangemelde instanties"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 32",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/32",
+    "version_id": "2024-08-01",
     "number": "32",
+    "label": "Artikel 32",
+    "title": "Vermoeden van conformiteit met voorschriften met betrekking tot aangemelde instanties",
     "paragraphs": [
       {
         "id": null,
@@ -1092,14 +1154,16 @@
         "text": "Wanneer een conformiteitsbeoordelingsinstantie aantoont dat zij voldoet aan de criteria in de ter zake doende geharmoniseerde normen of delen ervan, waarvan de referentienummers in het Publicatieblad van de Europese Unie zijn bekendgemaakt, wordt zij geacht aan de eisen van artikel 31 te voldoen, op voorwaarde dat de van toepassing zijnde geharmoniseerde normen deze eisen dekken."
       }
     ],
-    "title": "Vermoeden van conformiteit met voorschriften met betrekking tot aangemelde instanties"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 33",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/33",
+    "version_id": "2024-08-01",
     "number": "33",
+    "label": "Artikel 33",
+    "title": "Dochterondernemingen van aangemelde instanties en onderaanneming",
     "paragraphs": [
       {
         "id": "033.001",
@@ -1122,14 +1186,16 @@
         "text": "4.   De relevante documenten betreffende de beoordeling van de kwalificaties van de onderaannemer of dochteronderneming en de door hen uit hoofde van deze verordening uitgevoerde werkzaamheden worden gedurende een periode van vijf jaar vanaf de einddatum van de onderaanneming ter beschikking van de aanmeldende autoriteit gehouden."
       }
     ],
-    "title": "Dochterondernemingen van aangemelde instanties en onderaanneming"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 34",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/34",
+    "version_id": "2024-08-01",
     "number": "34",
+    "label": "Artikel 34",
+    "title": "Operationele verplichtingen van aangemelde instanties",
     "paragraphs": [
       {
         "id": "034.001",
@@ -1147,14 +1213,16 @@
         "text": "3.   Aangemelde instanties stellen alle relevante documentatie, waaronder de documentatie van de aanbieder, ter beschikking van de in artikel 28 bedoelde aanmeldende autoriteit, en verstrekken die aan haar op verzoek, teneinde haar in staat te stellen haar beoordelings-, aanwijzings-, kennisgevings- en monitoringsactiviteiten te verrichten, en de in deze afdeling beschreven beoordeling te vergemakkelijken."
       }
     ],
-    "title": "Operationele verplichtingen van aangemelde instanties"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 35",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/35",
+    "version_id": "2024-08-01",
     "number": "35",
+    "label": "Artikel 35",
+    "title": "Identificatienummers en lijsten van aangemelde instanties",
     "paragraphs": [
       {
         "id": "035.001",
@@ -1167,14 +1235,16 @@
         "text": "2.   De Commissie maakt de lijst van krachtens deze verordening aangemelde instanties openbaar, onder vermelding van hun identificatienummers en de activiteiten waarvoor zij zijn aangemeld. De Commissie zorgt ervoor dat de lijst actueel blijft."
       }
     ],
-    "title": "Identificatienummers en lijsten van aangemelde instanties"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 36",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/36",
+    "version_id": "2024-08-01",
     "number": "36",
+    "label": "Artikel 36",
+    "title": "Wijzigingen in de aanmelding",
     "paragraphs": [
       {
         "id": "036.001",
@@ -1222,14 +1292,16 @@
         "text": "9.   Met uitzondering van onterecht afgegeven certificaten en indien een aanwijzing is ingetrokken, blijven de certificaten in de volgende omstandigheden negen maanden geldig:\n\n(a)\nde nationale bevoegde autoriteit van de lidstaat waar de aanbieder van het onder het certificaat vallende AI-systeem met een hoog risico zijn geregistreerde vestigingsplaats heeft, bevestigd heeft dat de betreffende AI-systemen met een hoog risico geen risico voor de gezondheid, veiligheid of grondrechten inhouden, en\n\n(b)\neen andere aangemelde instantie schriftelijk heeft bevestigd dat zij de onmiddellijke verantwoordelijkheid voor deze AI-systemen op zich neemt en haar beoordeling binnen twaalf maanden na intrekking van de aanwijzing afrondt.\n\nOnder de in de eerste alinea bedoelde omstandigheden kan de nationale bevoegde autoriteit van de lidstaat waarin de aanbieder van het systeem waarop het certificaat betrekking heeft, zijn vestigingsplaats heeft, de voorlopige geldigheidsduur van de certificaten verlengen met perioden van drie maanden, die samen niet meer dan twaalf maanden mogen bedragen.\n\nDe nationale bevoegde autoriteit of de aangemelde instantie die de functies van de door de wijziging van de aanwijzing getroffen aangemelde instantie vervult, stelt de Commissie, de andere lidstaten en de andere aangemelde instanties hiervan onmiddellijk in kennis."
       }
     ],
-    "title": "Wijzigingen in de aanmelding"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 37",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/37",
+    "version_id": "2024-08-01",
     "number": "37",
+    "label": "Artikel 37",
+    "title": "Betwisting van de bekwaamheid van aangemelde instanties",
     "paragraphs": [
       {
         "id": "037.001",
@@ -1252,14 +1324,16 @@
         "text": "4.   Wanneer de Commissie vaststelt dat een aangemelde instantie niet of niet meer aan de aanmeldingseisen voldoet, brengt zij de aanmeldende lidstaat daarvan op de hoogte en verzoekt zij deze lidstaat de nodige corrigerende maatregelen te nemen, en zo nodig de aanmelding te schorsen of in te trekken. Indien de lidstaat niet de nodige corrigerende actie onderneemt, kan de Commissie door middel van een uitvoeringshandeling de aanwijzing schorsen, beperken of intrekken. De uitvoeringshandeling wordt vastgesteld volgens de in artikel 98, lid 2, bedoelde onderzoeksprocedure."
       }
     ],
-    "title": "Betwisting van de bekwaamheid van aangemelde instanties"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 38",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/38",
+    "version_id": "2024-08-01",
     "number": "38",
+    "label": "Artikel 38",
+    "title": "Coördinatie van aangemelde instanties",
     "paragraphs": [
       {
         "id": "038.001",
@@ -1277,14 +1351,16 @@
         "text": "3.   De Commissie voorziet in de uitwisseling van kennis en beste praktijken tussen aanmeldende autoriteiten."
       }
     ],
-    "title": "Coördinatie van aangemelde instanties"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 39",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/39",
+    "version_id": "2024-08-01",
     "number": "39",
+    "label": "Artikel 39",
+    "title": "Conformiteitsbeoordelingsinstanties van derde landen",
     "paragraphs": [
       {
         "id": null,
@@ -1292,14 +1368,16 @@
         "text": "Conformiteitsbeoordelingsinstanties die zijn opgericht naar het recht van een derde land waarmee de Unie een overeenkomst heeft gesloten, kunnen worden gemachtigd de activiteiten van aangemelde instanties krachtens deze verordening te verrichten, mits zij aan de in artikel 31 vastgelegde voorschriften voldoen of een gelijkwaardig nalevingsniveau waarborgen."
       }
     ],
-    "title": "Conformiteitsbeoordelingsinstanties van derde landen"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 40",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/40",
+    "version_id": "2024-08-01",
     "number": "40",
+    "label": "Artikel 40",
+    "title": "Geharmoniseerde normen en normalisatieproducten",
     "paragraphs": [
       {
         "id": "040.001",
@@ -1317,14 +1395,16 @@
         "text": "3.   De deelnemers aan het normalisatieproces streven naar het bevorderen van investeringen en innovatie in AI, onder andere door voor meer rechtszekerheid te zorgen, en het concurrentievermogen en de groei van de markt van de Unie, naar het bijdragen aan de versterking van de wereldwijde samenwerking op het gebied van normalisatie, rekening houdend met bestaande internationale normen op het gebied van AI die in overeenstemming zijn met de waarden, grondrechten en belangen van de Unie, en naar het verbeteren van de multistakeholdergovernance door te zorgen voor een evenwichtige vertegenwoordiging van de belangen en de effectieve deelname van alle relevante belanghebbenden overeenkomstig de artikelen 5, 6 en 7 van Verordening (EU) nr. 1025/2012."
       }
     ],
-    "title": "Geharmoniseerde normen en normalisatieproducten"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 41",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/41",
+    "version_id": "2024-08-01",
     "number": "41",
+    "label": "Artikel 41",
+    "title": "Gemeenschappelijke specificaties",
     "paragraphs": [
       {
         "id": "041.001",
@@ -1357,14 +1437,16 @@
         "text": "6.   Wanneer een lidstaat van oordeel is dat een gemeenschappelijke specificatie niet volledig aan de eisen van afdeling 2 van dit hoofdstuk of, in voorkomend geval, de verplichtingen van hoofdstuk V, afdelingen 2 en 3, voldoet, stelt deze lidstaat de Commissie daarvan in kennis met een gedetailleerde toelichting. De Commissie beoordeelt die informatie en wijzigt de uitvoeringshandeling tot vaststelling van de betrokken gemeenschappelijke specificatie zo nodig."
       }
     ],
-    "title": "Gemeenschappelijke specificaties"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 42",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/42",
+    "version_id": "2024-08-01",
     "number": "42",
+    "label": "Artikel 42",
+    "title": "Vermoeden van conformiteit met bepaalde eisen",
     "paragraphs": [
       {
         "id": "042.001",
@@ -1377,14 +1459,16 @@
         "text": "2.   AI-systemen met een hoog risico die zijn gecertificeerd of waarvoor een conformiteitsverklaring is verstrekt volgens een cyberbeveiligingsregeling krachtens Verordening (EU) 2019/881 en waarvan de referenties in het Publicatieblad van de Europese Unie zijn bekendgemaakt, worden geacht te voldoen aan de in artikel 15 van deze verordening beschreven cyberbeveiligingseisen, voor zover die eisen door het cyberbeveiligingscertificaat of de conformiteitsverklaring of delen daarvan worden bestreken."
       }
     ],
-    "title": "Vermoeden van conformiteit met bepaalde eisen"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 43",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/43",
+    "version_id": "2024-08-01",
     "number": "43",
+    "label": "Artikel 43",
+    "title": "Conformiteitsbeoordeling",
     "paragraphs": [
       {
         "id": "043.001",
@@ -1417,14 +1501,16 @@
         "text": "6.   De Commissie is bevoegd overeenkomstig artikel 97 gedelegeerde handelingen vast te stellen om de leden 1 en 2 te wijzigen, teneinde AI-systemen met een hoog risico als bedoeld in de punten 2 tot en met 8 van bijlage III te onderwerpen aan de conformiteitsbeoordelingsprocedure als bedoeld in bijlage VII of delen daarvan. De Commissie stelt zulke gedelegeerde handelingen vast rekening houdend met de doeltreffendheid van de conformiteitsbeoordelingsprocedure op basis van interne controle als bedoeld in bijlage VI bij het voorkomen of minimaliseren van de risico’s voor de gezondheid en veiligheid en de bescherming van grondrechten die zulke systemen inhouden alsook met de beschikbaarheid van voldoende capaciteit en personeel onder aangemelde instanties."
       }
     ],
-    "title": "Conformiteitsbeoordeling"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 44",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/44",
+    "version_id": "2024-08-01",
     "number": "44",
+    "label": "Artikel 44",
+    "title": "Certificaten",
     "paragraphs": [
       {
         "id": "044.001",
@@ -1442,14 +1528,16 @@
         "text": "3.   Indien een aangemelde instantie vaststelt dat een AI-systeem niet meer aan de in afdeling 2 beschreven voorschriften voldoet, gaat zij, rekening houdend met het evenredigheidsbeginsel, over tot schorsing of intrekking van het afgegeven certificaat of legt zij beperkingen op, tenzij de aanbieder van het systeem, met het oog op de naleving van deze voorschriften, binnen een door de aangemelde instantie vastgestelde passende termijn adequate corrigerende actie onderneemt. De aangemelde instantie geeft de redenen voor haar besluit op.\n\nEr wordt voorzien in een beroepsprocedure tegen besluiten van de aangemelde instanties, ook inzake afgegeven conformiteitscertificaten."
       }
     ],
-    "title": "Certificaten"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 45",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/45",
+    "version_id": "2024-08-01",
     "number": "45",
+    "label": "Artikel 45",
+    "title": "Informatieverplichtingen voor aangemelde instanties",
     "paragraphs": [
       {
         "id": "045.001",
@@ -1472,14 +1560,16 @@
         "text": "4.   Aanmeldende autoriteiten waarborgen dat de door hen verkregen informatie overeenkomstig artikel 78 vertrouwelijk wordt behandeld."
       }
     ],
-    "title": "Informatieverplichtingen voor aangemelde instanties"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 46",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/46",
+    "version_id": "2024-08-01",
     "number": "46",
+    "label": "Artikel 46",
+    "title": "Afwijking van de conformiteitsbeoordelingsprocedure",
     "paragraphs": [
       {
         "id": "046.001",
@@ -1517,14 +1607,16 @@
         "text": "7.   Voor AI-systemen met een hoog risico die verband houden met producten die onder de in afdeling A van bijlage I vermelde harmonisatiewetgeving van de Unie vallen, zijn alleen de in die harmonisatiewetgeving van de Unie vastgestelde afwijkingen van de conformiteitsbeoordeling van toepassing."
       }
     ],
-    "title": "Afwijking van de conformiteitsbeoordelingsprocedure"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 47",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/47",
+    "version_id": "2024-08-01",
     "number": "47",
+    "label": "Artikel 47",
+    "title": "EU-conformiteitsverklaring",
     "paragraphs": [
       {
         "id": "047.001",
@@ -1552,14 +1644,16 @@
         "text": "5.   De Commissie is bevoegd overeenkomstig artikel 97 gedelegeerde handelingen vast te stellen om bijlage V te wijzigen door het actualiseren van de in die bijlage beschreven inhoud van de EU-conformiteitsverklaring, teneinde elementen in te voeren die noodzakelijk worden in het licht van de technische vooruitgang."
       }
     ],
-    "title": "EU-conformiteitsverklaring"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 48",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/48",
+    "version_id": "2024-08-01",
     "number": "48",
+    "label": "Artikel 48",
+    "title": "CE-markering",
     "paragraphs": [
       {
         "id": "048.001",
@@ -1587,14 +1681,16 @@
         "text": "5.   Indien AI-systemen met een hoog risico onder andere Uniewetgeving vallen die ook betrekking heeft op het aanbrengen van de CE-markering, vermeldt de CE-markering dat de AI-systemen met een hoog risico tevens aan de voorschriften van die andere wetgeving voldoen."
       }
     ],
-    "title": "CE-markering"
-  },
-  {
     "chapter": 3,
     "chapter_roman": "III",
-    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 49",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
+  },
+  {
+    "canonical_id": "aiact/art/49",
+    "version_id": "2024-08-01",
     "number": "49",
+    "label": "Artikel 49",
+    "title": "Registratie",
     "paragraphs": [
       {
         "id": "049.001",
@@ -1622,14 +1718,16 @@
         "text": "5.   AI-systemen met een hoog risico als bedoeld in punt 2 van bijlage III worden op nationaal niveau geregistreerd."
       }
     ],
-    "title": "Registratie"
+    "chapter": 3,
+    "chapter_roman": "III",
+    "chapter_title": "AI-SYSTEMEN MET EEN HOOG RISICO"
   },
   {
-    "chapter": 4,
-    "chapter_roman": "IV",
-    "chapter_title": "TRANSPARANTIEVERPLICHTINGEN VOOR AANBIEDERS EN GEBRUIKSVERANTWOORDELIJKEN VAN BEPAALDE AI-SYSTEMEN",
-    "label": "Artikel 50",
+    "canonical_id": "aiact/art/50",
+    "version_id": "2024-08-01",
     "number": "50",
+    "label": "Artikel 50",
+    "title": "Transparantieverplichtingen voor aanbieders en gebruiksverantwoordelijken van bepaalde AI-systemen",
     "paragraphs": [
       {
         "id": "050.001",
@@ -1667,14 +1765,16 @@
         "text": "7.   Het AI-bureau stimuleert en faciliteert de opstelling van praktijkcodes op het niveau van de Unie om de doeltreffende uitvoering van de verplichtingen met betrekking tot de opsporing en het labelen van kunstmatig gegenereerde of bewerkte content te vergemakkelijken. De Commissie kan uitvoeringshandelingen vaststellen om die praktijkcodes overeenkomstig de procedure van artikel 56, lid 6, goed te keuren. Indien zij de code ontoereikend acht, kan de Commissie volgens de onderzoeksprocedure van artikel 98, lid 2, een uitvoeringshandeling vaststellen waarin gemeenschappelijke regels voor de uitvoering van die verplichtingen worden gespecificeerd."
       }
     ],
-    "title": "Transparantieverplichtingen voor aanbieders en gebruiksverantwoordelijken van bepaalde AI-systemen"
+    "chapter": 4,
+    "chapter_roman": "IV",
+    "chapter_title": "TRANSPARANTIEVERPLICHTINGEN VOOR AANBIEDERS EN GEBRUIKSVERANTWOORDELIJKEN VAN BEPAALDE AI-SYSTEMEN"
   },
   {
-    "chapter": 5,
-    "chapter_roman": "V",
-    "chapter_title": "AI-MODELLEN VOOR ALGEMENE DOELEINDEN",
-    "label": "Artikel 51",
+    "canonical_id": "aiact/art/51",
+    "version_id": "2024-08-01",
     "number": "51",
+    "label": "Artikel 51",
+    "title": "Classificatie van AI-modellen voor algemene doeleinden als AI-modellen voor algemene doeleinden met een systeemrisico",
     "paragraphs": [
       {
         "id": "051.001",
@@ -1692,14 +1792,16 @@
         "text": "3.   De Commissie stelt overeenkomstig artikel 97 gedelegeerde handelingen vast om de in de leden 1 en 2 van dit artikel genoemde drempelwaarden te wijzigen en benchmarks en indicatoren zo nodig aan te vullen in het licht van veranderende technologische ontwikkelingen, zoals algoritmische verbeteringen of verhoogde efficiëntie van de hardware, zodat deze drempels de stand van de techniek weerspiegelen."
       }
     ],
-    "title": "Classificatie van AI-modellen voor algemene doeleinden als AI-modellen voor algemene doeleinden met een systeemrisico"
-  },
-  {
     "chapter": 5,
     "chapter_roman": "V",
-    "chapter_title": "AI-MODELLEN VOOR ALGEMENE DOELEINDEN",
-    "label": "Artikel 52",
+    "chapter_title": "AI-MODELLEN VOOR ALGEMENE DOELEINDEN"
+  },
+  {
+    "canonical_id": "aiact/art/52",
+    "version_id": "2024-08-01",
     "number": "52",
+    "label": "Artikel 52",
+    "title": "Procedure",
     "paragraphs": [
       {
         "id": "052.001",
@@ -1732,14 +1834,16 @@
         "text": "6.   De Commissie zorgt ervoor dat er een lijst met AI-modellen voor algemene doeleinden met een systeemrisico wordt gepubliceerd en houdt die lijst actueel, onverminderd de noodzaak om intellectuele-eigendomsrechten en vertrouwelijke bedrijfsinformatie of bedrijfsgeheimen te eerbiedigen en te beschermen overeenkomstig het Unierecht en het nationale recht."
       }
     ],
-    "title": "Procedure"
-  },
-  {
     "chapter": 5,
     "chapter_roman": "V",
-    "chapter_title": "AI-MODELLEN VOOR ALGEMENE DOELEINDEN",
-    "label": "Artikel 53",
+    "chapter_title": "AI-MODELLEN VOOR ALGEMENE DOELEINDEN"
+  },
+  {
+    "canonical_id": "aiact/art/53",
+    "version_id": "2024-08-01",
     "number": "53",
+    "label": "Artikel 53",
+    "title": "Verplichtingen voor aanbieders van AI-modellen voor algemene doeleinden",
     "paragraphs": [
       {
         "id": "053.001",
@@ -1777,14 +1881,16 @@
         "text": "7.   Uit hoofde van dit artikel verkregen informatie of documentatie, met inbegrip van bedrijfsgeheimen, worden verwerkt overeenkomstig de in artikel 78 vastgelegde vertrouwelijkheidsverplichtingen."
       }
     ],
-    "title": "Verplichtingen voor aanbieders van AI-modellen voor algemene doeleinden"
-  },
-  {
     "chapter": 5,
     "chapter_roman": "V",
-    "chapter_title": "AI-MODELLEN VOOR ALGEMENE DOELEINDEN",
-    "label": "Artikel 54",
+    "chapter_title": "AI-MODELLEN VOOR ALGEMENE DOELEINDEN"
+  },
+  {
+    "canonical_id": "aiact/art/54",
+    "version_id": "2024-08-01",
     "number": "54",
+    "label": "Artikel 54",
+    "title": "Gemachtigden van aanbieders van AI-modellen voor algemene doeleinden",
     "paragraphs": [
       {
         "id": "054.001",
@@ -1817,14 +1923,16 @@
         "text": "6.   De in dit artikel genoemde verplichting geldt niet voor aanbieders van AI-modellen die worden vrijgegeven in het kader van een vrije en opensource licentie die de raadpleging, het gebruik, de wijziging en distributie van het model mogelijk maakt en waarvan de parameters, met inbegrip van de wegingen, de informatie over de modelarchitectuur en de informatie over het gebruik van het model, openbaar worden gemaakt, tenzij de AI-modellen voor algemene doeleinden systeemrisico’s vertonen."
       }
     ],
-    "title": "Gemachtigden van aanbieders van AI-modellen voor algemene doeleinden"
-  },
-  {
     "chapter": 5,
     "chapter_roman": "V",
-    "chapter_title": "AI-MODELLEN VOOR ALGEMENE DOELEINDEN",
-    "label": "Artikel 55",
+    "chapter_title": "AI-MODELLEN VOOR ALGEMENE DOELEINDEN"
+  },
+  {
+    "canonical_id": "aiact/art/55",
+    "version_id": "2024-08-01",
     "number": "55",
+    "label": "Artikel 55",
+    "title": "Verplichtingen van aanbieders van AI-modellen voor algemene doeleinden met een systeemrisico",
     "paragraphs": [
       {
         "id": "055.001",
@@ -1842,14 +1950,16 @@
         "text": "3.   Uit hoofde van dit artikel verkregen informatie of documentatie, met inbegrip van bedrijfsgeheimen, worden verwerkt overeenkomstig de in artikel 78 vastgelegde vertrouwelijkheidsverplichtingen."
       }
     ],
-    "title": "Verplichtingen van aanbieders van AI-modellen voor algemene doeleinden met een systeemrisico"
-  },
-  {
     "chapter": 5,
     "chapter_roman": "V",
-    "chapter_title": "AI-MODELLEN VOOR ALGEMENE DOELEINDEN",
-    "label": "Artikel 56",
+    "chapter_title": "AI-MODELLEN VOOR ALGEMENE DOELEINDEN"
+  },
+  {
+    "canonical_id": "aiact/art/56",
+    "version_id": "2024-08-01",
     "number": "56",
+    "label": "Artikel 56",
+    "title": "Praktijkcodes",
     "paragraphs": [
       {
         "id": "056.001",
@@ -1897,14 +2007,16 @@
         "text": "9.   De praktijkcodes moeten uiterlijk op 2 mei 2025 gereed zijn. Het AI-bureau neemt de nodige stappen, met inbegrip van het uitnodigen van aanbieders op grond van lid 7.\n\nAls er uiterlijk op 2 augustus 2025 nog geen praktijkcode tot stand is gebracht, of indien het AI-bureau deze na zijn beoordeling uit hoofde van lid 6 van dit artikel ontoereikend acht, kan de Commissie door middel van uitvoeringshandelingen gemeenschappelijke regels vaststellen voor de uitvoering van de verplichtingen waarin de artikelen 53 en 55 voorzien, met inbegrip van de in lid 2 van dit artikel genoemde zaken. Die uitvoeringshandelingen worden vastgesteld volgens de in artikel 98, lid 2, bedoelde onderzoeksprocedure."
       }
     ],
-    "title": "Praktijkcodes"
+    "chapter": 5,
+    "chapter_roman": "V",
+    "chapter_title": "AI-MODELLEN VOOR ALGEMENE DOELEINDEN"
   },
   {
-    "chapter": 6,
-    "chapter_roman": "VI",
-    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE",
-    "label": "Artikel 57",
+    "canonical_id": "aiact/art/57",
+    "version_id": "2024-08-01",
     "number": "57",
+    "label": "Artikel 57",
+    "title": "AI-testomgevingen voor regelgeving",
     "paragraphs": [
       {
         "id": "057.001",
@@ -1992,14 +2104,16 @@
         "text": "17.   De Commissie ontwikkelt één specifieke interface met alle relevante informatie over AI-testomgevingen voor regelgeving waar belanghebbenden kunnen te communiceren met de AI-testomgevingen voor regelgeving, vragen kunnen stellen aan de bevoegde autoriteiten en niet-bindend advies kunnen krijgen over de conformiteit van innovatieve producten, diensten of bedrijfsmodellen waarin AI-technologieën zijn verwerkt, in overeenstemming met artikel 62, lid 1, punt c). De Commissie draagt in voorkomend geval zorg voor proactieve coördinatie met de nationale bevoegde autoriteiten."
       }
     ],
-    "title": "AI-testomgevingen voor regelgeving"
-  },
-  {
     "chapter": 6,
     "chapter_roman": "VI",
-    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE",
-    "label": "Artikel 58",
+    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE"
+  },
+  {
+    "canonical_id": "aiact/art/58",
+    "version_id": "2024-08-01",
     "number": "58",
+    "label": "Artikel 58",
+    "title": "Gedetailleerde regelingen voor, en werking van, AI-testomgevingen voor regelgeving",
     "paragraphs": [
       {
         "id": "058.001",
@@ -2022,14 +2136,16 @@
         "text": "4.   Indien nationale bevoegde autoriteiten overwegen toestemming te geven voor het testen onder reële omstandigheden, onder toezicht in het kader van een op grond van dit artikel op te richten AI-testomgeving voor regelgeving, komen zij specifiek met de deelnemers de voorwaarden voor die tests overeen, en met name de passende waarborgen ter bescherming van de grondrechten, de gezondheid en de veiligheid. In voorkomend geval werken zij samen met andere nationale bevoegde autoriteiten om de praktijken in de hele Unie consistent te houden."
       }
     ],
-    "title": "Gedetailleerde regelingen voor, en werking van, AI-testomgevingen voor regelgeving"
-  },
-  {
     "chapter": 6,
     "chapter_roman": "VI",
-    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE",
-    "label": "Artikel 59",
+    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE"
+  },
+  {
+    "canonical_id": "aiact/art/59",
+    "version_id": "2024-08-01",
     "number": "59",
+    "label": "Artikel 59",
+    "title": "Verdere verwerking van persoonsgegevens voor het ontwikkelen van bepaalde AI-systemen in het algemeen belang in de AI-testomgeving voor regelgeving",
     "paragraphs": [
       {
         "id": "059.001",
@@ -2047,14 +2163,16 @@
         "text": "3.   Lid 1 doet geen afbreuk aan het Unie- of nationale recht waarin verwerking voor andere doeleinden dan die uitdrukkelijk vermeld in die wetgeving wordt uitgesloten, noch aan het Unie- of nationale recht tot vaststelling van de grondslag voor de verwerking van persoonsgegevens die noodzakelijk is voor het ontwikkelen, testen of trainen van innovatieve AI-systemen of een andere rechtsgrondslag, met naleving van het Unierecht inzake de bescherming van persoonsgegevens."
       }
     ],
-    "title": "Verdere verwerking van persoonsgegevens voor het ontwikkelen van bepaalde AI-systemen in het algemeen belang in de AI-testomgeving voor regelgeving"
-  },
-  {
     "chapter": 6,
     "chapter_roman": "VI",
-    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE",
-    "label": "Artikel 60",
+    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE"
+  },
+  {
+    "canonical_id": "aiact/art/60",
+    "version_id": "2024-08-01",
     "number": "60",
+    "label": "Artikel 60",
+    "title": "Testen van AI-systemen met een hoog risico onder reële omstandigheden buiten AI-testomgevingen voor regelgeving",
     "paragraphs": [
       {
         "id": "060.001",
@@ -2102,14 +2220,16 @@
         "text": "9.   De aanbieder of potentiële aanbieder zijn aansprakelijk op grond van het toepasselijke Unie- en nationale aansprakelijkheidsrecht voor schade die tijdens het testen onder reële omstandigheden wordt veroorzaakt."
       }
     ],
-    "title": "Testen van AI-systemen met een hoog risico onder reële omstandigheden buiten AI-testomgevingen voor regelgeving"
-  },
-  {
     "chapter": 6,
     "chapter_roman": "VI",
-    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE",
-    "label": "Artikel 61",
+    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE"
+  },
+  {
+    "canonical_id": "aiact/art/61",
+    "version_id": "2024-08-01",
     "number": "61",
+    "label": "Artikel 61",
+    "title": "Geïnformeerde toestemming om deel te nemen aan het testen onder reële omstandigheden buiten AI-testomgevingen voor regelgeving",
     "paragraphs": [
       {
         "id": "061.001",
@@ -2122,14 +2242,16 @@
         "text": "2.   De geïnformeerde toestemming wordt gedateerd en gedocumenteerd en er wordt een kopie verstrekt aan de proefpersonen of hun wettelijke vertegenwoordiger."
       }
     ],
-    "title": "Geïnformeerde toestemming om deel te nemen aan het testen onder reële omstandigheden buiten AI-testomgevingen voor regelgeving"
-  },
-  {
     "chapter": 6,
     "chapter_roman": "VI",
-    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE",
-    "label": "Artikel 62",
+    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE"
+  },
+  {
+    "canonical_id": "aiact/art/62",
+    "version_id": "2024-08-01",
     "number": "62",
+    "label": "Artikel 62",
+    "title": "Maatregelen voor aanbieders en gebruiksverantwoordelijken, met name kmo’s, met inbegrip van start-ups",
     "paragraphs": [
       {
         "id": "062.001",
@@ -2147,14 +2269,16 @@
         "text": "3.   Het AI-bureau onderneemt de volgende acties:\n\n(a)\nhet verstrekken van gestandaardiseerde sjablonen voor de gebieden die onder deze verordening vallen, zoals gespecificeerd door de AI-board in zijn verzoek;\n\n(b)\nhet ontwikkelen en in stand houden van een centraal informatieplatform dat gemakkelijk te gebruiken informatie met betrekking tot deze verordening biedt aan alle operatoren in de hele Unie;\n\n(c)\nhet organiseren van passende voorlichtingscampagnes om meer bekendheid te geven aan de uit deze verordening voortvloeiende verplichtingen;\n\n(d)\nhet evalueren en bevorderen van de convergentie van beste praktijken bij openbare aanbestedingsprocedures met betrekking tot AI-systemen."
       }
     ],
-    "title": "Maatregelen voor aanbieders en gebruiksverantwoordelijken, met name kmo’s, met inbegrip van start-ups"
-  },
-  {
     "chapter": 6,
     "chapter_roman": "VI",
-    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE",
-    "label": "Artikel 63",
+    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE"
+  },
+  {
+    "canonical_id": "aiact/art/63",
+    "version_id": "2024-08-01",
     "number": "63",
+    "label": "Artikel 63",
+    "title": "Afwijkingen voor specifieke operatoren",
     "paragraphs": [
       {
         "id": "063.001",
@@ -2167,14 +2291,16 @@
         "text": "2.   Lid 1 van dit artikel wordt niet zodanig geïnterpreteerd dat die operatoren worden vrijgesteld van de naleving van andere in deze verordening vastgelegde eisen of verplichtingen, met inbegrip van die welke zijn vastgelegd in de artikelen 9, 10, 11, 12, 13, 14, 15, 72 en 73."
       }
     ],
-    "title": "Afwijkingen voor specifieke operatoren"
+    "chapter": 6,
+    "chapter_roman": "VI",
+    "chapter_title": "MAATREGELEN TER ONDERSTEUNING VAN INNOVATIE"
   },
   {
-    "chapter": 7,
-    "chapter_roman": "VII",
-    "chapter_title": "GOVERNANCE",
-    "label": "Artikel 64",
+    "canonical_id": "aiact/art/64",
+    "version_id": "2024-08-01",
     "number": "64",
+    "label": "Artikel 64",
+    "title": "AI-bureau",
     "paragraphs": [
       {
         "id": "064.001",
@@ -2187,14 +2313,16 @@
         "text": "2.   De lidstaten faciliteren de aan het AI-bureau toevertrouwde taken, zoals weergegeven in deze verordening."
       }
     ],
-    "title": "AI-bureau"
-  },
-  {
     "chapter": 7,
     "chapter_roman": "VII",
-    "chapter_title": "GOVERNANCE",
-    "label": "Artikel 65",
+    "chapter_title": "GOVERNANCE"
+  },
+  {
+    "canonical_id": "aiact/art/65",
+    "version_id": "2024-08-01",
     "number": "65",
+    "label": "Artikel 65",
+    "title": "Oprichting en structuur van de Europese raad voor artificiële intelligentie",
     "paragraphs": [
       {
         "id": "065.001",
@@ -2237,14 +2365,16 @@
         "text": "8.   De AI-board wordt voorgezeten door een van de vertegenwoordigers van de lidstaten. Het AI-bureau verzorgt het secretariaat van de AI-board, roept op verzoek van de voorzitter de vergaderingen bijeen en stelt de agenda op overeenkomstig de taken van de AI-board krachtens deze verordening en overeenkomstig zijn reglement."
       }
     ],
-    "title": "Oprichting en structuur van de Europese raad voor artificiële intelligentie"
-  },
-  {
     "chapter": 7,
     "chapter_roman": "VII",
-    "chapter_title": "GOVERNANCE",
-    "label": "Artikel 66",
+    "chapter_title": "GOVERNANCE"
+  },
+  {
+    "canonical_id": "aiact/art/66",
+    "version_id": "2024-08-01",
     "number": "66",
+    "label": "Artikel 66",
+    "title": "Taken van de AI-board",
     "paragraphs": [
       {
         "id": null,
@@ -2252,14 +2382,16 @@
         "text": "De AI-board adviseert en assisteert de Commissie en de lidstaten teneinde de consistente en doeltreffende toepassing van deze verordening te vergemakkelijken. Daartoe kan de AI-board met name:\n\n(a)\nbijdragen aan de coördinatie tussen de nationale bevoegde autoriteiten die verantwoordelijk zijn voor de toepassing van deze verordening en, in samenwerking met en met instemming van de betrokken markttoezichtautoriteiten, de in artikel 74, lid 11, bedoelde gezamenlijke activiteiten van de markttoezichtautoriteiten ondersteunen;\n\n(b)\ntechnische en regelgevingsexpertise en beste praktijken onder de lidstaten verzamelen en delen;\n\n(c)\nadvies verstrekken over de uitvoering van deze verordening, met name wat betreft de handhaving van de regels inzake AI-modellen voor algemene doeleinden;\n\n(d)\nbijdragen tot de harmonisatie van de administratieve praktijken in de lidstaten, onder meer met betrekking tot de in artikel 46 bedoelde afwijking van de conformiteits-beoordelingsprocedures, de werking van AI-testomgevingen voor regelgeving en het testen onder reële omstandigheden als bedoeld in de artikelen 57, 59 en 60;\n\n(e)\nop verzoek van de Commissie of op eigen initiatief aanbevelingen en schriftelijke adviezen uitbrengen over alle relevante aangelegenheden in verband met de uitvoering van deze verordening en de consistente en doeltreffende toepassing ervan, waaronder:\n\n  - i) over de ontwikkeling en toepassing van praktijkcodes en praktijkcodes op grond van deze verordening, alsmede van de richtsnoeren van de Commissie;\n\n  - ii) over de evaluatie en toetsing van deze verordening op grond van artikel 112, onder meer met betrekking tot de in artikel 73 bedoelde meldingen van ernstige incidenten en de werking van de in artikel 71 bedoelde EU-databank, de voorbereiding van de gedelegeerde of uitvoeringshandelingen, en met betrekking tot mogelijke afstemming van deze verordening op de in bijlage I vermelde harmonisatiewetgeving van de Unie;\n\n  - iii) over technische specificaties of bestaande normen ten aanzien van de in hoofdstuk III, afdeling 2, beschreven eisen;\n\n  - iv) over het gebruik van geharmoniseerde normen of gemeenschappelijke specificaties als bedoeld in de artikelen 40 en 41;\n\n  - v) over trends, bijvoorbeeld met betrekking tot het Europese mondiale concurrentievermogen op het gebied van AI, de invoering van AI in de Unie en de ontwikkeling van digitale vaardigheden;\n\n  - vi) over trends met betrekking tot de steeds veranderende typologie van AI-waardeketens, met name wat de daaruit voortvloeiende gevolgen voor de verantwoordingsplicht betreft;\n\n  - vii) over de eventuele noodzaak van een wijziging van bijlage III overeenkomstig artikel 7, en over de eventuele noodzaak van een mogelijke herziening van artikel 5 op grond van artikel 112, rekening houdend met de op dat gebied beschikbare gegevens en de meest recente technologische ontwikkelingen;\n\n(f)\nde Commissie ondersteunen bij het promoten van AI-geletterdheid en het brede publiek beter bekendmaken met en meer inzicht verschaffen in de voordelen, de risico’s, de waarborgen en de rechten en plichten in verband met het gebruik van AI-systemen;\n\n(g)\nde ontwikkeling bevorderen van gemeenschappelijke criteria en een gedeeld begrip tussen marktdeelnemers en bevoegde autoriteiten met betrekking tot de relevante concepten waarin deze verordening voorziet, onder meer door bij te dragen aan de ontwikkeling van benchmarks;\n\n(h)\nwaar passend samenwerken met andere instellingen, organen en instanties van de Unie, alsook relevante deskundigengroepen en -netwerken van de Unie, met name op het gebied van productveiligheid, cyberbeveiliging, mededinging, digitale en mediadiensten, financiële diensten, consumentenbescherming, gegevensbescherming en bescherming van de grondrechten;\n\n(i)\nbijdragen aan doeltreffende samenwerking met de bevoegde autoriteiten van derde landen en met internationale organisaties;\n\n(j)\nde nationale bevoegde autoriteiten en de Commissie bijstaan bij de ontwikkeling van de organisatorische en technische deskundigheid die nodig zijn voor de uitvoering van deze verordening, onder meer door bij te dragen aan de beoordeling van de opleidingsbehoeften voor personeel van de lidstaten dat betrokken is bij de uitvoering van deze verordening;\n\n(k)\nhet AI-bureau bijstaan bij het ondersteunen van nationale bevoegde autoriteiten bij het opzetten en ontwikkelen van AI-testomgevingen voor regelgeving, en samenwerking en informatie-uitwisseling tussen AI-testomgevingen voor regelgeving vergemakkelijken;\n\n(l)\nbijdragen aan of relevant advies verstrekken over de ontwikkeling van richtsnoeren;\n\n(m)\nde Commissie adviseren over internationale aangelegenheden op het gebied van AI;\n\n(n)\nadviezen verstrekken aan de Commissie over de gekwalificeerde waarschuwingen met betrekking tot AI-modellen voor algemene doeleinden;\n\n(o)\nadviezen van de lidstaten ontvangen over gekwalificeerde waarschuwingen met betrekking tot AI-modellen voor algemene doeleinden, en over nationale ervaringen en praktijken met betrekking tot de monitoring en handhaving van AI-systemen, met name systemen waarin de AI-modellen voor algemene doeleinden zijn geïntegreerd."
       }
     ],
-    "title": "Taken van de AI-board"
-  },
-  {
     "chapter": 7,
     "chapter_roman": "VII",
-    "chapter_title": "GOVERNANCE",
-    "label": "Artikel 67",
+    "chapter_title": "GOVERNANCE"
+  },
+  {
+    "canonical_id": "aiact/art/67",
+    "version_id": "2024-08-01",
     "number": "67",
+    "label": "Artikel 67",
+    "title": "Adviesforum",
     "paragraphs": [
       {
         "id": "067.001",
@@ -2312,14 +2444,16 @@
         "text": "10.   Het adviesforum stelt een jaarverslag over zijn activiteiten op. Dat verslag wordt openbaar gemaakt."
       }
     ],
-    "title": "Adviesforum"
-  },
-  {
     "chapter": 7,
     "chapter_roman": "VII",
-    "chapter_title": "GOVERNANCE",
-    "label": "Artikel 68",
+    "chapter_title": "GOVERNANCE"
+  },
+  {
+    "canonical_id": "aiact/art/68",
+    "version_id": "2024-08-01",
     "number": "68",
+    "label": "Artikel 68",
+    "title": "Wetenschappelijk panel van onafhankelijke deskundigen",
     "paragraphs": [
       {
         "id": "068.001",
@@ -2347,14 +2481,16 @@
         "text": "5.   De in lid 1 bedoelde uitvoeringshandeling bevat bepalingen over de voorwaarden, procedures en gedetailleerde regelingen voor het wetenschappelijk panel en de leden daarvan om waarschuwingen af te geven en om het AI-bureau om bijstand te verzoeken voor de uitvoering van de taken van het wetenschappelijk panel."
       }
     ],
-    "title": "Wetenschappelijk panel van onafhankelijke deskundigen"
-  },
-  {
     "chapter": 7,
     "chapter_roman": "VII",
-    "chapter_title": "GOVERNANCE",
-    "label": "Artikel 69",
+    "chapter_title": "GOVERNANCE"
+  },
+  {
+    "canonical_id": "aiact/art/69",
+    "version_id": "2024-08-01",
     "number": "69",
+    "label": "Artikel 69",
+    "title": "Toegang tot de pool van deskundigen door de lidstaten",
     "paragraphs": [
       {
         "id": "069.001",
@@ -2372,14 +2508,16 @@
         "text": "3.   De Commissie vergemakkelijkt de tijdige toegang van de lidstaten tot de deskundigen, voor zover nodig, en zorgt ervoor dat de combinatie van ondersteunende activiteiten door Europese ondersteunende structuren voor AI-testen op grond van artikel 84 en deskundigen uit hoofde van dit artikel uitvoeren, efficiënt wordt georganiseerd en de best mogelijke toegevoegde waarde oplevert."
       }
     ],
-    "title": "Toegang tot de pool van deskundigen door de lidstaten"
-  },
-  {
     "chapter": 7,
     "chapter_roman": "VII",
-    "chapter_title": "GOVERNANCE",
-    "label": "Artikel 70",
+    "chapter_title": "GOVERNANCE"
+  },
+  {
+    "canonical_id": "aiact/art/70",
+    "version_id": "2024-08-01",
     "number": "70",
+    "label": "Artikel 70",
+    "title": "Aanwijzing van nationale bevoegde autoriteiten en centrale contactpunten",
     "paragraphs": [
       {
         "id": "070.001",
@@ -2427,14 +2565,16 @@
         "text": "9.   Indien instellingen, organen of instanties van de Unie binnen het toepassingsgebied van deze verordening vallen, treedt de Europese Toezichthouder voor gegevensbescherming op als de bevoegde autoriteit voor het toezicht daarop."
       }
     ],
-    "title": "Aanwijzing van nationale bevoegde autoriteiten en centrale contactpunten"
+    "chapter": 7,
+    "chapter_roman": "VII",
+    "chapter_title": "GOVERNANCE"
   },
   {
-    "chapter": 8,
-    "chapter_roman": "VIII",
-    "chapter_title": "EU-DATABANK VOOR AI-SYSTEMEN MET EEN HOOG RISICO",
-    "label": "Artikel 71",
+    "canonical_id": "aiact/art/71",
+    "version_id": "2024-08-01",
     "number": "71",
+    "label": "Artikel 71",
+    "title": "EU-databank voor in bijlage III vermelde AI-systemen met een hoog risico",
     "paragraphs": [
       {
         "id": "071.001",
@@ -2467,14 +2607,16 @@
         "text": "6.   De Commissie is voor de EU-databank de verantwoordelijke voor de verwerking. Zij stelt adequate technische en administratieve ondersteuning ter beschikking van aanbieders, potentiële aanbieders en gebruiksverantwoordelijken. De EU-databank voldoet aan de toepasselijke toegankelijkheidseisen."
       }
     ],
-    "title": "EU-databank voor in bijlage III vermelde AI-systemen met een hoog risico"
+    "chapter": 8,
+    "chapter_roman": "VIII",
+    "chapter_title": "EU-DATABANK VOOR AI-SYSTEMEN MET EEN HOOG RISICO"
   },
   {
-    "chapter": 9,
-    "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 72",
+    "canonical_id": "aiact/art/72",
+    "version_id": "2024-08-01",
     "number": "72",
+    "label": "Artikel 72",
+    "title": "Monitoring door aanbieders na het in de handel brengen en plan voor monitoring na het in de handel brengen voor AI-systemen met een hoog risico",
     "paragraphs": [
       {
         "id": "072.001",
@@ -2497,14 +2639,16 @@
         "text": "4.   Voor AI-systemen met een hoog risico die onder de in afdeling A van bijlage I vermelde harmonisatiewetgeving van de Unie vallen, hebben aanbieders, indien er krachtens die wetgeving reeds een systeem en een plan voor monitoring na het in de handel brengen zijn vastgesteld, ten behoeve van de consistentie, ter vermijding van doublures en om extra lasten tot een minimum te beperken, de keuze om de noodzakelijke in de leden 1, 2 en 3 beschreven elementen te integreren, met gebruikmaking van het in lid 3 bedoelde model, in systemen en plannen die reeds bestaan op grond van die wetgeving, mits dat een gelijkwaardig beschermingsniveau garandeert.\n\nDe eerste alinea van dit lid is ook van toepassing op in punt 5 van bijlage III bedoelde aI-systemen met een hoog risico die in de handel worden gebracht of in gebruik worden gesteld door financiële instellingen waarvoor krachtens het Unierecht inzake financiële diensten vereisten met betrekking tot hun interne governance, regelingen of processen gelden."
       }
     ],
-    "title": "Monitoring door aanbieders na het in de handel brengen en plan voor monitoring na het in de handel brengen voor AI-systemen met een hoog risico"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 73",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/73",
+    "version_id": "2024-08-01",
     "number": "73",
+    "label": "Artikel 73",
+    "title": "Melding van ernstige incidenten",
     "paragraphs": [
       {
         "id": "073.001",
@@ -2562,14 +2706,16 @@
         "text": "11.   De nationale bevoegde autoriteiten stellen de Commissie onmiddellijk in kennis van elk ernstig incident, ongeacht of zij al dan niet maatregelen hebben getroffen, overeenkomstig artikel 20 van Verordening (EU) 2019/1020."
       }
     ],
-    "title": "Melding van ernstige incidenten"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 74",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/74",
+    "version_id": "2024-08-01",
     "number": "74",
+    "label": "Artikel 74",
+    "title": "Markttoezicht op en controle van AI-systemen op de markt van de Unie",
     "paragraphs": [
       {
         "id": "074.001",
@@ -2642,14 +2788,16 @@
         "text": "14.   De door de markttoezichtautoriteiten verkregen informatie of documentatie worden verwerkt overeenkomstig de in artikel 78 vastgelegde vertrouwelijkheidsverplichtingen."
       }
     ],
-    "title": "Markttoezicht op en controle van AI-systemen op de markt van de Unie"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 75",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/75",
+    "version_id": "2024-08-01",
     "number": "75",
+    "label": "Artikel 75",
+    "title": "Wederzijdse bijstand, markttoezicht en controle van AI-systemen voor algemene doeleinden",
     "paragraphs": [
       {
         "id": "075.001",
@@ -2667,14 +2815,16 @@
         "text": "3.   Indien een markttoezichtautoriteit haar onderzoek naar het AI-systeem met een hoog risico niet kan afronden omdat zij geen toegang heeft tot bepaalde informatie met betrekking tot het AI-model voor algemene doeleinden, hoewel zij al het nodige heeft gedaan om die informatie te verkrijgen, kan zij een met redenen omkleed verzoek indienen bij het AI-bureau, waarmee de toegang tot die informatie wordt afgedwongen. In dat geval verstrekt het AI-bureau de verzoekende autoriteit onverwijld, en in ieder geval binnen dertig dagen, alle informatie die het relevant acht om vast te stellen of een AI-systeem met een hoog risico non-conform is. Markttoezichtautoriteiten waarborgen dat de door hen verkregen informatie overeenkomstig artikel 78 van deze verordening vertrouwelijk wordt behandeld. De procedure van hoofdstuk VI van Verordening (EU) 2019/1020 is van overeenkomstige toepassing."
       }
     ],
-    "title": "Wederzijdse bijstand, markttoezicht en controle van AI-systemen voor algemene doeleinden"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 76",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/76",
+    "version_id": "2024-08-01",
     "number": "76",
+    "label": "Artikel 76",
+    "title": "Toezicht op tests onder reële omstandigheden door markttoezichtautoriteiten",
     "paragraphs": [
       {
         "id": "076.001",
@@ -2702,14 +2852,16 @@
         "text": "5.   Indien, in voorkomend geval, een markttoezichtautoriteit een besluit als bedoeld in lid 3 heeft genomen, deelt zij de redenen daarvoor mee aan de markttoezichtautoriteiten van de andere lidstaten waar het AI-systeem overeenkomstig het testplan is getest."
       }
     ],
-    "title": "Toezicht op tests onder reële omstandigheden door markttoezichtautoriteiten"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 77",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/77",
+    "version_id": "2024-08-01",
     "number": "77",
+    "label": "Artikel 77",
+    "title": "Bevoegdheden van de autoriteiten voor de bescherming van de grondrechten",
     "paragraphs": [
       {
         "id": "077.001",
@@ -2732,14 +2884,16 @@
         "text": "4.   Informatie of documentatie die op grond van dit artikel door de in lid 1 van dit artikel bedoelde overheidsinstanties of -organen wordt verkregen, wordt verwerkt overeenkomstig de in artikel 78 beschreven vertrouwelijkheidsverplichtingen."
       }
     ],
-    "title": "Bevoegdheden van de autoriteiten voor de bescherming van de grondrechten"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 78",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/78",
+    "version_id": "2024-08-01",
     "number": "78",
+    "label": "Artikel 78",
+    "title": "Vertrouwelijkheid",
     "paragraphs": [
       {
         "id": "078.001",
@@ -2767,14 +2921,16 @@
         "text": "5.   De Commissie en de lidstaten kunnen zo nodig en met inachtneming van de relevante bepalingen van internationale overeenkomsten en handelsakkoorden vertrouwelijke informatie uitwisselen met regelgevingsinstanties van derde landen waarmee zij bilaterale of multilaterale vertrouwelijkheidsovereenkomsten hebben gesloten die een passend niveau van vertrouwelijkheid waarborgen."
       }
     ],
-    "title": "Vertrouwelijkheid"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 79",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/79",
+    "version_id": "2024-08-01",
     "number": "79",
+    "label": "Artikel 79",
+    "title": "Procedure op nationaal niveau voor de omgang met AI-systemen die een risico vormen",
     "paragraphs": [
       {
         "id": "079.001",
@@ -2822,14 +2978,16 @@
         "text": "9.   De markttoezichtautoriteiten zorgen ervoor dat ten aanzien van het betrokken product of AI-systeem zonder onnodige vertraging de passende beperkende maatregelen worden genomen, zoals het uit de handel nemen van het product of het AI-systeem op hun markt."
       }
     ],
-    "title": "Procedure op nationaal niveau voor de omgang met AI-systemen die een risico vormen"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 80",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/80",
+    "version_id": "2024-08-01",
     "number": "80",
+    "label": "Artikel 80",
+    "title": "Procedure voor de omgang met AI-systemen die conform bijlage III door de aanbieder zijn ingedeeld als systemen die geen hoog risico met zich meebrengen",
     "paragraphs": [
       {
         "id": "080.001",
@@ -2872,14 +3030,16 @@
         "text": "8.   Bij de uitoefening van hun bevoegdheid om op de toepassing van dit artikel toe te zien, en overeenkomstig artikel 11 van Verordening (EU) 2019/1020, kunnen markttoezichtautoriteiten passende controles verrichten waarbij zij met name informatie die is opgeslagen in de in artikel 71 van deze verordening bedoelde EU-databank in aanmerking nemen."
       }
     ],
-    "title": "Procedure voor de omgang met AI-systemen die conform bijlage III door de aanbieder zijn ingedeeld als systemen die geen hoog risico met zich meebrengen"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 81",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/81",
+    "version_id": "2024-08-01",
     "number": "81",
+    "label": "Artikel 81",
+    "title": "Vrijwaringsprocedure van de Unie",
     "paragraphs": [
       {
         "id": "081.001",
@@ -2897,14 +3057,16 @@
         "text": "3.   Indien de nationale maatregel gerechtvaardigd wordt geacht en de non-conformiteit van het AI-systeem wordt toegeschreven aan tekortkomingen in de in de artikelen 40 en 41 van deze verordening bedoelde geharmoniseerde normen of gemeenschappelijke specificaties, past de Commissie de procedure van artikel 11 van Verordening (EU) nr. 1025/2012 toe."
       }
     ],
-    "title": "Vrijwaringsprocedure van de Unie"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 82",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/82",
+    "version_id": "2024-08-01",
     "number": "82",
+    "label": "Artikel 82",
+    "title": "Conforme AI-systemen die een risico inhouden",
     "paragraphs": [
       {
         "id": "082.001",
@@ -2932,14 +3094,16 @@
         "text": "5.   De Commissie deelt haar besluit onmiddellijk aan de betrokken lidstaat en de betrokken operators mee. Zij licht ook de andere lidstaten in."
       }
     ],
-    "title": "Conforme AI-systemen die een risico inhouden"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 83",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/83",
+    "version_id": "2024-08-01",
     "number": "83",
+    "label": "Artikel 83",
+    "title": "Formele non-conformiteit",
     "paragraphs": [
       {
         "id": "083.001",
@@ -2952,14 +3116,16 @@
         "text": "2.   Indien de in lid 1 bedoelde non-conformiteit voortduurt, neemt de markttoezichtautoriteit van de betrokken lidstaat passende en evenredige maatregelen om het op de markt aanbieden van het AI-systeem met een hoog risico te beperken of te verbieden, of het AI-systeem onverwijld terug te roepen of uit de handel te nemen."
       }
     ],
-    "title": "Formele non-conformiteit"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 84",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/84",
+    "version_id": "2024-08-01",
     "number": "84",
+    "label": "Artikel 84",
+    "title": "Ondersteunende AI-teststructuren van de Unie",
     "paragraphs": [
       {
         "id": "084.001",
@@ -2972,14 +3138,16 @@
         "text": "2.   Onverminderd de in lid 1 bedoelde taken, verstrekken de ondersteunende AI-teststructuren van de Unie ook onafhankelijk technisch of wetenschappelijk advies op verzoek van de AI-board, de Commissie of markttoezichtautoriteiten."
       }
     ],
-    "title": "Ondersteunende AI-teststructuren van de Unie"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 85",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/85",
+    "version_id": "2024-08-01",
     "number": "85",
+    "label": "Artikel 85",
+    "title": "Recht om een klacht in te dienen bij een markttoezichtautoriteit",
     "paragraphs": [
       {
         "id": null,
@@ -2987,14 +3155,16 @@
         "text": "Onverminderd andere administratieve of gerechtelijke rechtsmiddelen kan elke natuurlijke of rechtspersoon die redenen heeft om van mening te zijn dat er inbreuk is gepleegd op de bepalingen van deze verordening, klachten indienen bij de relevante markttoezichtautoriteit.\n\nOvereenkomstig Verordening (EU) 2019/1020 worden dergelijke klachten in aanmerking genomen ter uitvoering van markttoezichtactiviteiten en worden zij behandeld in overeenstemming met de specifieke procedures die de markttoezichtautoriteiten daartoe hebben vastgesteld."
       }
     ],
-    "title": "Recht om een klacht in te dienen bij een markttoezichtautoriteit"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 86",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/86",
+    "version_id": "2024-08-01",
     "number": "86",
+    "label": "Artikel 86",
+    "title": "Recht op uitleg bij individuele besluitvorming",
     "paragraphs": [
       {
         "id": "086.001",
@@ -3012,14 +3182,16 @@
         "text": "3.   Dit artikel is enkel van toepassing voor zover het Unierecht niet anderszins in het in lid 1 bedoelde recht voorziet."
       }
     ],
-    "title": "Recht op uitleg bij individuele besluitvorming"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 87",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/87",
+    "version_id": "2024-08-01",
     "number": "87",
+    "label": "Artikel 87",
+    "title": "Melding van inbreuken en bescherming van melders",
     "paragraphs": [
       {
         "id": null,
@@ -3027,14 +3199,16 @@
         "text": "Richtlijn (EU) 2019/1937 is van toepassing op het melden van inbreuken op deze verordening en op de bescherming van personen die dergelijke inbreuken melden."
       }
     ],
-    "title": "Melding van inbreuken en bescherming van melders"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 88",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/88",
+    "version_id": "2024-08-01",
     "number": "88",
+    "label": "Artikel 88",
+    "title": "Handhaving van de verplichtingen van aanbieders van AI-modellen voor algemene doeleinden",
     "paragraphs": [
       {
         "id": "088.001",
@@ -3047,14 +3221,16 @@
         "text": "2.   Onverminderd artikel 75, lid 3, kunnen markttoezichtautoriteiten de Commissie verzoeken de in deze afdeling vastgestelde bevoegdheden uit te oefenen indien dat noodzakelijk en evenredig is om te helpen bij de uitvoering van hun taken krachtens deze verordening."
       }
     ],
-    "title": "Handhaving van de verplichtingen van aanbieders van AI-modellen voor algemene doeleinden"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 89",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/89",
+    "version_id": "2024-08-01",
     "number": "89",
+    "label": "Artikel 89",
+    "title": "Monitoringmaatregelen",
     "paragraphs": [
       {
         "id": "089.001",
@@ -3067,14 +3243,16 @@
         "text": "2.   Aanbieders verder in de AI-waardeketen hebben het recht een klacht in te dienen wegens inbreuk op deze verordening. Klachten moeten terdege worden gemotiveerd en moeten ten minste het volgende vermelden of bevatten:\n\n(a)\nhet contactpunt van de aanbieder van het betrokken AI-model voor algemene doeleinden;\n\n(b)\neen beschrijving van de relevante feiten, de desbetreffende bepalingen van deze verordening en de reden waarom de aanbieder verder in de AI-waardeketen van mening is dat de aanbieder van het betrokken AI-model voor algemene doeleinden inbreuk op deze verordening heeft gemaakt;\n\n(c)\nalle overige informatie die de aanbieder verder in de AI-waardeketen die het verzoek heeft ingediend, relevant acht, in voorkomend geval ook op eigen initiatief verzamelde informatie."
       }
     ],
-    "title": "Monitoringmaatregelen"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 90",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/90",
+    "version_id": "2024-08-01",
     "number": "90",
+    "label": "Artikel 90",
+    "title": "Waarschuwingen voor systeemrisico’s door het wetenschappelijk panel",
     "paragraphs": [
       {
         "id": "090.001",
@@ -3092,14 +3270,16 @@
         "text": "3.   Gekwalificeerde waarschuwingen moeten terdege worden gemotiveerd en ten minste het volgende vermelden of bevatten:\n\n(a)\nhet contactpunt van de aanbieder van het betrokken AI-model voor algemene doeleinden dat een systeemrisico vormt;\n\n(b)\neen beschrijving van de relevante feiten en de redenen voor de waarschuwing door het wetenschappelijk panel;\n\n(c)\nalle overige informatie die het wetenschappelijk panel relevant acht, in voorkomend geval ook op eigen initiatief verzamelde informatie."
       }
     ],
-    "title": "Waarschuwingen voor systeemrisico’s door het wetenschappelijk panel"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 91",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/91",
+    "version_id": "2024-08-01",
     "number": "91",
+    "label": "Artikel 91",
+    "title": "Bevoegdheid om documentatie en informatie op te vragen",
     "paragraphs": [
       {
         "id": "091.001",
@@ -3127,14 +3307,16 @@
         "text": "5.   De aanbieders van het betrokken AI-model voor algemene doeleinden of hun vertegenwoordiger verstrekken de gevraagde informatie. In het geval van rechtspersonen, bedrijven of firma’s, of indien de aanbieder geen rechtspersoonlijkheid heeft, verstrekken de personen die krachtens de wet of hun statuten gemachtigd zijn om hen te vertegenwoordigen, de gevraagde informatie namens de aanbieder van het betrokken AI-model voor algemene doeleinden. De informatie kan door naar behoren gemachtigde advocaten namens hun cliënten worden verstrekt. De cliënten blijven niettemin volledig verantwoordelijk indien de verstrekte informatie onvolledig, onjuist of misleidend is."
       }
     ],
-    "title": "Bevoegdheid om documentatie en informatie op te vragen"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 92",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/92",
+    "version_id": "2024-08-01",
     "number": "92",
+    "label": "Artikel 92",
+    "title": "Bevoegdheid voor het verrichten van evaluaties",
     "paragraphs": [
       {
         "id": "092.001",
@@ -3172,14 +3354,16 @@
         "text": "7.   Alvorens om toegang tot het betrokken AI-model voor algemene doeleinden te verzoeken, kan het AI-bureau een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan om meer informatie te verzamelen over de interne tests van het model, de interne waarborgen ter voorkoming van systeemrisico’s en andere interne procedures en maatregelen die de aanbieder heeft genomen om dergelijke risico’s te beperken."
       }
     ],
-    "title": "Bevoegdheid voor het verrichten van evaluaties"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 93",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/93",
+    "version_id": "2024-08-01",
     "number": "93",
+    "label": "Artikel 93",
+    "title": "Bevoegdheid voor het verzoeken om maatregelen",
     "paragraphs": [
       {
         "id": "093.001",
@@ -3197,14 +3381,16 @@
         "text": "3.   Indien de aanbieder van het AI-model voor algemene doeleinden dat een systeemrisico vormt, tijdens de in lid 2 bedoelde gestructureerde dialoog toezeggingen doet om risicobeperkende maatregelen uit te voeren om een systeemrisico op Unieniveau aan te pakken, kan de Commissie die toezeggingen bij besluit bindend maken en verklaren dat er geen verdere gronden voor actie zijn."
       }
     ],
-    "title": "Bevoegdheid voor het verzoeken om maatregelen"
-  },
-  {
     "chapter": 9,
     "chapter_roman": "IX",
-    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT",
-    "label": "Artikel 94",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
+  },
+  {
+    "canonical_id": "aiact/art/94",
+    "version_id": "2024-08-01",
     "number": "94",
+    "label": "Artikel 94",
+    "title": "Procedurele rechten van marktdeelnemers die het AI-model voor algemene doeleinden aanbieden",
     "paragraphs": [
       {
         "id": null,
@@ -3212,14 +3398,16 @@
         "text": "Artikel 18 van Verordening (EU) 2019/1020 is van overeenkomstige toepassing op de aanbieders van het AI-model voor algemene doeleinden, onverminderd specifiekere procedurele rechten waarin deze verordening voorziet."
       }
     ],
-    "title": "Procedurele rechten van marktdeelnemers die het AI-model voor algemene doeleinden aanbieden"
+    "chapter": 9,
+    "chapter_roman": "IX",
+    "chapter_title": "MONITORING NA HET IN DE HANDEL BRENGEN, INFORMATIE-UITWISSELING EN MARKTTOEZICHT"
   },
   {
-    "chapter": 10,
-    "chapter_roman": "X",
-    "chapter_title": "GEDRAGSCODES EN RICHTSNOEREN",
-    "label": "Artikel 95",
+    "canonical_id": "aiact/art/95",
+    "version_id": "2024-08-01",
     "number": "95",
+    "label": "Artikel 95",
+    "title": "Gedragscodes voor vrijwillige toepassing van specifieke voorschriften",
     "paragraphs": [
       {
         "id": "095.001",
@@ -3242,14 +3430,16 @@
         "text": "4.   Het AI-bureau en de lidstaten houden rekening met de specifieke belangen en behoeften van kmo’s, waaronder start-ups, bij het stimuleren en faciliteren van het opstellen van gedragscodes."
       }
     ],
-    "title": "Gedragscodes voor vrijwillige toepassing van specifieke voorschriften"
-  },
-  {
     "chapter": 10,
     "chapter_roman": "X",
-    "chapter_title": "GEDRAGSCODES EN RICHTSNOEREN",
-    "label": "Artikel 96",
+    "chapter_title": "GEDRAGSCODES EN RICHTSNOEREN"
+  },
+  {
+    "canonical_id": "aiact/art/96",
+    "version_id": "2024-08-01",
     "number": "96",
+    "label": "Artikel 96",
+    "title": "Richtsnoeren van de Commissie over de uitvoering van deze verordening",
     "paragraphs": [
       {
         "id": "096.001",
@@ -3262,14 +3452,16 @@
         "text": "2.   Op verzoek van de lidstaten of het AI-bureau of op eigen initiatief actualiseert de Commissie eerder vastgestelde richtsnoeren wanneer dit nodig wordt geacht."
       }
     ],
-    "title": "Richtsnoeren van de Commissie over de uitvoering van deze verordening"
+    "chapter": 10,
+    "chapter_roman": "X",
+    "chapter_title": "GEDRAGSCODES EN RICHTSNOEREN"
   },
   {
-    "chapter": 11,
-    "chapter_roman": "XI",
-    "chapter_title": "BEVOEGDHEIDSDELEGATIE EN COMITÉPROCEDURE",
-    "label": "Artikel 97",
+    "canonical_id": "aiact/art/97",
+    "version_id": "2024-08-01",
     "number": "97",
+    "label": "Artikel 97",
+    "title": "Uitoefening van de bevoegdheidsdelegatie",
     "paragraphs": [
       {
         "id": "097.001",
@@ -3302,14 +3494,16 @@
         "text": "6.   Een op grond van artikel 6, lid 6 of lid 7, artikel 7, lid 1 of lid 3, artikel 11, lid 3, artikel 43, lid 5 of lid 6, artikel 47, lid 5, artikel 51, lid 3, artikel 52, lid 4, of artikel 53, lid 5 of lid 6, vastgestelde gedelegeerde handeling treedt alleen in werking indien het Europees Parlement noch de Raad daartegen binnen een termijn van drie maanden na de kennisgeving van de handeling aan het Europees Parlement en de Raad bezwaar heeft gemaakt, of indien zowel het Europees Parlement als de Raad voor het verstrijken van die termijn de Commissie hebben meegedeeld dat zij daartegen geen bezwaar zullen maken. Die termijn wordt op initiatief van het Europees Parlement of de Raad met drie maanden verlengd."
       }
     ],
-    "title": "Uitoefening van de bevoegdheidsdelegatie"
-  },
-  {
     "chapter": 11,
     "chapter_roman": "XI",
-    "chapter_title": "BEVOEGDHEIDSDELEGATIE EN COMITÉPROCEDURE",
-    "label": "Artikel 98",
+    "chapter_title": "BEVOEGDHEIDSDELEGATIE EN COMITÉPROCEDURE"
+  },
+  {
+    "canonical_id": "aiact/art/98",
+    "version_id": "2024-08-01",
     "number": "98",
+    "label": "Artikel 98",
+    "title": "Comitéprocedure",
     "paragraphs": [
       {
         "id": "098.001",
@@ -3322,14 +3516,16 @@
         "text": "2.   Wanneer naar dit lid wordt verwezen, is artikel 5 van Verordening (EU) nr. 182/2011 van toepassing."
       }
     ],
-    "title": "Comitéprocedure"
+    "chapter": 11,
+    "chapter_roman": "XI",
+    "chapter_title": "BEVOEGDHEIDSDELEGATIE EN COMITÉPROCEDURE"
   },
   {
-    "chapter": 12,
-    "chapter_roman": "XII",
-    "chapter_title": "SANCTIES",
-    "label": "Artikel 99",
+    "canonical_id": "aiact/art/99",
+    "version_id": "2024-08-01",
     "number": "99",
+    "label": "Artikel 99",
+    "title": "Sancties",
     "paragraphs": [
       {
         "id": "099.001",
@@ -3387,14 +3583,16 @@
         "text": "11.   De lidstaten brengen jaarlijks verslag uit aan de Commissie over de administratieve geldboeten die zij in de loop van dat jaar overeenkomstig dit artikel hebben opgelegd, en over alle daarmee verband houdende geschil- of gerechtelijke procedures."
       }
     ],
-    "title": "Sancties"
-  },
-  {
     "chapter": 12,
     "chapter_roman": "XII",
-    "chapter_title": "SANCTIES",
-    "label": "Artikel 100",
+    "chapter_title": "SANCTIES"
+  },
+  {
+    "canonical_id": "aiact/art/100",
+    "version_id": "2024-08-01",
     "number": "100",
+    "label": "Artikel 100",
+    "title": "Administratieve geldboeten voor instellingen, organen en instanties van de Unie",
     "paragraphs": [
       {
         "id": "100.001",
@@ -3432,14 +3630,16 @@
         "text": "7.   De Europese Toezichthouder voor gegevensbescherming stelt de Commissie jaarlijks in kennis van de administratieve geldboeten die hij op grond van dit artikel heeft opgelegd en van alle geschil- of gerechtelijke procedures die hij heeft ingeleid."
       }
     ],
-    "title": "Administratieve geldboeten voor instellingen, organen en instanties van de Unie"
-  },
-  {
     "chapter": 12,
     "chapter_roman": "XII",
-    "chapter_title": "SANCTIES",
-    "label": "Artikel 101",
+    "chapter_title": "SANCTIES"
+  },
+  {
+    "canonical_id": "aiact/art/101",
+    "version_id": "2024-08-01",
     "number": "101",
+    "label": "Artikel 101",
+    "title": "Geldboeten voor aanbieders van AI-systemen voor algemene doeleinden",
     "paragraphs": [
       {
         "id": "101.001",
@@ -3472,14 +3672,16 @@
         "text": "6.   De Commissie stelt uitvoeringshandelingen vast met gedetailleerde regelingen en procedurele waarborgen voor procedures met het oog op de eventuele vaststelling van besluiten op grond van lid 1 van dit artikel. Die uitvoeringshandelingen worden vastgesteld volgens de in artikel 98, lid 2, bedoelde onderzoeksprocedure."
       }
     ],
-    "title": "Geldboeten voor aanbieders van AI-systemen voor algemene doeleinden"
+    "chapter": 12,
+    "chapter_roman": "XII",
+    "chapter_title": "SANCTIES"
   },
   {
-    "chapter": 13,
-    "chapter_roman": "XIII",
-    "chapter_title": "SLOTBEPALINGEN",
-    "label": "Artikel 102",
+    "canonical_id": "aiact/art/102",
+    "version_id": "2024-08-01",
     "number": "102",
+    "label": "Artikel 102",
+    "title": "Wijziging van Verordening (EG) nr. 300/2008",
     "paragraphs": [
       {
         "id": null,
@@ -3487,14 +3689,16 @@
         "text": "Aan artikel 4, lid 3, van Verordening (EG) nr. 300/2008 wordt de volgende alinea toegevoegd:\n\n“Bij het vaststellen van gedetailleerde maatregelen met betrekking tot technische specificaties en procedures voor de goedkeuring en het gebruik van veiligheidsuitrusting betreffende artificiële-intelligentiesystemen in de zin van Verordening (EU) 2024/1689 van het Europees Parlement en de Raad ( * ) , worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen."
       }
     ],
-    "title": "Wijziging van Verordening (EG) nr. 300/2008"
-  },
-  {
     "chapter": 13,
     "chapter_roman": "XIII",
-    "chapter_title": "SLOTBEPALINGEN",
-    "label": "Artikel 103",
+    "chapter_title": "SLOTBEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/103",
+    "version_id": "2024-08-01",
     "number": "103",
+    "label": "Artikel 103",
+    "title": "Wijziging van Verordening (EU) nr. 167/2013",
     "paragraphs": [
       {
         "id": null,
@@ -3502,14 +3706,16 @@
         "text": "Aan artikel 17, lid 5, van Verordening (EU) nr. 167/2013 wordt de volgende alinea toegevoegd:\n\n“Bij het vaststellen van gedelegeerde handelingen krachtens de eerste alinea betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689 van het Europees Parlement en de Raad ( * ) , worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen."
       }
     ],
-    "title": "Wijziging van Verordening (EU) nr. 167/2013"
-  },
-  {
     "chapter": 13,
     "chapter_roman": "XIII",
-    "chapter_title": "SLOTBEPALINGEN",
-    "label": "Artikel 104",
+    "chapter_title": "SLOTBEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/104",
+    "version_id": "2024-08-01",
     "number": "104",
+    "label": "Artikel 104",
+    "title": "Wijziging van Verordening (EU) nr. 168/2013",
     "paragraphs": [
       {
         "id": null,
@@ -3517,14 +3723,16 @@
         "text": "Aan artikel 22, lid 5, van Verordening (EU) nr. 168/2013 wordt de volgende alinea toegevoegd:\n\n“Bij het vaststellen van gedelegeerde handelingen krachtens de eerste alinea betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689 van het Europees Parlement en de Raad ( * ) , worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen."
       }
     ],
-    "title": "Wijziging van Verordening (EU) nr. 168/2013"
-  },
-  {
     "chapter": 13,
     "chapter_roman": "XIII",
-    "chapter_title": "SLOTBEPALINGEN",
-    "label": "Artikel 105",
+    "chapter_title": "SLOTBEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/105",
+    "version_id": "2024-08-01",
     "number": "105",
+    "label": "Artikel 105",
+    "title": "Wijziging van Richtlijn 2014/90/EU",
     "paragraphs": [
       {
         "id": null,
@@ -3532,14 +3740,16 @@
         "text": "Aan artikel 8 van Richtlijn 2014/90/EU wordt het volgende lid toegevoegd:\n\n“5. Voor artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689 van het Europees Parlement en de Raad ( * ) , neemt de Commissie bij het uitvoeren van haar activiteiten krachtens lid 1 en bij het vaststellen van technische specificaties en testnormen overeenkomstig de leden 2 en 3 de eisen van hoofdstuk III, hoofdstuk 2, van die verordening in aanmerking."
       }
     ],
-    "title": "Wijziging van Richtlijn 2014/90/EU"
-  },
-  {
     "chapter": 13,
     "chapter_roman": "XIII",
-    "chapter_title": "SLOTBEPALINGEN",
-    "label": "Artikel 106",
+    "chapter_title": "SLOTBEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/106",
+    "version_id": "2024-08-01",
     "number": "106",
+    "label": "Artikel 106",
+    "title": "Wijziging van Richtlijn (EU) 2016/797",
     "paragraphs": [
       {
         "id": null,
@@ -3547,14 +3757,16 @@
         "text": "Aan artikel 5 van Richtlijn (EU) 2016/797 wordt het volgende lid toegevoegd:\n\n“12. Bij het vaststellen van gedelegeerde handelingen krachtens lid 1 en uitvoeringshandelingen krachtens lid 11 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689 van het Europees Parlement en de Raad ( * ) , worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen."
       }
     ],
-    "title": "Wijziging van Richtlijn (EU) 2016/797"
-  },
-  {
     "chapter": 13,
     "chapter_roman": "XIII",
-    "chapter_title": "SLOTBEPALINGEN",
-    "label": "Artikel 107",
+    "chapter_title": "SLOTBEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/107",
+    "version_id": "2024-08-01",
     "number": "107",
+    "label": "Artikel 107",
+    "title": "Wijziging van Verordening (EU) 2018/858",
     "paragraphs": [
       {
         "id": null,
@@ -3562,14 +3774,16 @@
         "text": "Aan artikel 5 van Verordening (EU) 2018/858 wordt het volgende lid toegevoegd:\n\n“4. Bij het vaststellen van gedelegeerde handelingen krachtens lid 3 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689 van het Europees Parlement en de Raad ( * ) , worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen."
       }
     ],
-    "title": "Wijziging van Verordening (EU) 2018/858"
-  },
-  {
     "chapter": 13,
     "chapter_roman": "XIII",
-    "chapter_title": "SLOTBEPALINGEN",
-    "label": "Artikel 108",
+    "chapter_title": "SLOTBEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/108",
+    "version_id": "2024-08-01",
     "number": "108",
+    "label": "Artikel 108",
+    "title": "Wijzigingen van Verordening (EU) 2018/1139",
     "paragraphs": [
       {
         "id": null,
@@ -3577,14 +3791,16 @@
         "text": "Verordening (EU) 2018/1139 wordt als volgt gewijzigd:\n\n(1)\nAan artikel 17 wordt het volgende lid toegevoegd:\n\n  “3. Onverminderd lid 2 worden bij het vaststellen van uitvoeringshandelingen krachtens lid 1 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689 van het Europees Parlement en de Raad ( * ) , de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen.\n\n  ( * ) Verordening (EU) 2024/1689 van het Europees Parlement en de Raad van 13 juni 2024 tot vaststelling van geharmoniseerde regels betreffende artificiële intelligentie en tot wijziging van de Verordeningen (EG) nr. 300/2008, (EU) nr. 167/2013, (EU) nr. 168/2013, (EU) 2018/858, (EU) 2018/1139 en (EU) 2019/2144 en de Richtlijnen 2014/90/EU, (EU) 2016/797 en (EU) 2020/1828 (verordening artificiële intelligentie) ( PB L, 2024/1689, 12.7.2024, ELI: http://data.europa.eu/eli/reg/2024/1689/oj ).”.\"\n\n(2)\nAan artikel 19 wordt het volgende lid toegevoegd:\n\n  “4. Bij het vaststellen van gedelegeerde handelingen krachtens de leden 1 en 2 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689, worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen.”.\n\n(3)\nAan artikel 43 wordt het volgende lid toegevoegd:\n\n  “4. Bij het vaststellen van uitvoeringshandelingen krachtens lid 1 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689, worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen.”.\n\n(4)\nAan artikel 47 wordt het volgende lid toegevoegd:\n\n  “3. Bij het vaststellen van gedelegeerde handelingen krachtens de leden 1 en 2 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689, worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen.”.\n\n(5)\nAan artikel 57 wordt de volgende alinea toegevoegd:\n\n  “Bij het vaststellen van die uitvoeringshandelingen betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689, worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen.”.\n\n(6)\nAan artikel 58 wordt het volgende lid toegevoegd:\n\n  “3. Bij het vaststellen van gedelegeerde handelingen krachtens de leden 1 en 2 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689, worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen.”."
       }
     ],
-    "title": "Wijzigingen van Verordening (EU) 2018/1139"
-  },
-  {
     "chapter": 13,
     "chapter_roman": "XIII",
-    "chapter_title": "SLOTBEPALINGEN",
-    "label": "Artikel 109",
+    "chapter_title": "SLOTBEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/109",
+    "version_id": "2024-08-01",
     "number": "109",
+    "label": "Artikel 109",
+    "title": "Wijziging van Verordening (EU) 2019/2144",
     "paragraphs": [
       {
         "id": null,
@@ -3592,14 +3808,16 @@
         "text": "Aan artikel 11 van Verordening (EU) 2019/2144 wordt het volgende lid toegevoegd:\n\n“3. Bij het vaststellen van de uitvoeringshandelingen krachtens lid 2 betreffende artificiële-intelligentiesystemen die veiligheidscomponenten zijn in de zin van Verordening (EU) 2024/1689 van het Europees Parlement en de Raad ( * ) , worden de eisen van hoofdstuk III, afdeling 2, van die verordening in aanmerking genomen."
       }
     ],
-    "title": "Wijziging van Verordening (EU) 2019/2144"
-  },
-  {
     "chapter": 13,
     "chapter_roman": "XIII",
-    "chapter_title": "SLOTBEPALINGEN",
-    "label": "Artikel 110",
+    "chapter_title": "SLOTBEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/110",
+    "version_id": "2024-08-01",
     "number": "110",
+    "label": "Artikel 110",
+    "title": "Wijziging van Richtlijn (EU) 2020/1828",
     "paragraphs": [
       {
         "id": null,
@@ -3607,14 +3825,16 @@
         "text": "In bijlage I bij Richtlijn (EU) 2020/1828 van het Europees Parlement en de Raad ( 58 ) wordt het volgende punt toegevoegd:\n\n- “68) Verordening (EU) 2024/1689 van het Europees Parlement en de Raad van 13 juni 2024 tot vaststelling van geharmoniseerde regels betreffende artificiële intelligentie en tot wijziging van de Verordeningen (EG) nr. 300/2008, (EU) nr. 167/2013, (EU) nr. 168/2013, (EU) 2018/858, (EU) 2018/1139 en (EU) 2019/2144 en de Richtlijnen 2014/90/EU, (EU) 2016/797 en (EU) 2020/1828 (verordening artificiële intelligentie) ( PB L, 2024/1689, 12.7.2024, ELI: http://data.europa.eu/eli/reg/2024/1689/oj ).”."
       }
     ],
-    "title": "Wijziging van Richtlijn (EU) 2020/1828"
-  },
-  {
     "chapter": 13,
     "chapter_roman": "XIII",
-    "chapter_title": "SLOTBEPALINGEN",
-    "label": "Artikel 111",
+    "chapter_title": "SLOTBEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/111",
+    "version_id": "2024-08-01",
     "number": "111",
+    "label": "Artikel 111",
+    "title": "Reeds in de handel gebrachte of in gebruik gestelde AI-systemen",
     "paragraphs": [
       {
         "id": "111.001",
@@ -3632,14 +3852,16 @@
         "text": "3.   Aanbieders van AI-modellen voor algemene doeleinden die vóór 2 augustus 2025 in de handel zijn gebracht, ondernemen de nodige stappen om uiterlijk op 2 augustus 2027 aan de verplichtingen van deze verordening te voldoen."
       }
     ],
-    "title": "Reeds in de handel gebrachte of in gebruik gestelde AI-systemen"
-  },
-  {
     "chapter": 13,
     "chapter_roman": "XIII",
-    "chapter_title": "SLOTBEPALINGEN",
-    "label": "Artikel 112",
+    "chapter_title": "SLOTBEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/112",
+    "version_id": "2024-08-01",
     "number": "112",
+    "label": "Artikel 112",
+    "title": "Evaluatie en toetsing",
     "paragraphs": [
       {
         "id": "112.001",
@@ -3707,14 +3929,16 @@
         "text": "13.   Uiterlijk op 2 augustus 2031 voert de Commissie een beoordeling uit van de handhaving van deze verordening en brengt hierover verslag uit aan het Europees Parlement, de Raad en het Europees Economisch en Sociaal Comité, waarbij de eerste jaren van toepassing van deze verordening worden meegenomen. Op basis van de bevindingen gaat dit verslag, indien van toepassing, vergezeld van een voorstel tot wijziging van deze verordening met betrekking tot de handhavingsstructuur en de behoefte aan een agentschap van de Unie om eventueel vastgestelde tekortkomingen op te lossen."
       }
     ],
-    "title": "Evaluatie en toetsing"
-  },
-  {
     "chapter": 13,
     "chapter_roman": "XIII",
-    "chapter_title": "SLOTBEPALINGEN",
-    "label": "Artikel 113",
+    "chapter_title": "SLOTBEPALINGEN"
+  },
+  {
+    "canonical_id": "aiact/art/113",
+    "version_id": "2024-08-01",
     "number": "113",
+    "label": "Artikel 113",
+    "title": "Inwerkingtreding en toepassing",
     "paragraphs": [
       {
         "id": null,
@@ -3722,6 +3946,8 @@
         "text": "Deze verordening treedt in werking op de twintigste dag na die van de bekendmaking ervan in het Publicatieblad van de Europese Unie .\n\nZij is van toepassing met ingang van 2 augustus 2026.\n\nEvenwel zijn:\n\n(a)\nde hoofdstukken I en II van toepassing met ingang van 2 februari 2025;\n\n(b)\nhoofdstuk III, afdeling 4, hoofdstuk V, hoofdstuk VII en hoofdstuk XII en artikel 78 van toepassing met ingang van 2 augustus 2025, met uitzondering van artikel 101;\n\n(c)\nartikel 6, lid 1, en de overeenkomstige verplichtingen van deze verordening van toepassing met ingang van 2 augustus 2027."
       }
     ],
-    "title": "Inwerkingtreding en toepassing"
+    "chapter": 13,
+    "chapter_roman": "XIII",
+    "chapter_title": "SLOTBEPALINGEN"
   }
 ]
