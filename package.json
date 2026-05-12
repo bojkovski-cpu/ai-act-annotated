@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
     "test": "vitest run",
     "test:watch": "vitest"
@@ -17,6 +17,8 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.2",
     "@astrojs/sitemap": "^3.7.2",
+    "@pagefind/default-ui": "^1.5.2",
+    "pagefind": "^1.5.2",
     "typescript": "^5.9.3",
     "vitest": "^4.1.6"
   }

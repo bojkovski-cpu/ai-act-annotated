@@ -11,6 +11,7 @@ import '@/styles/global.css';
 // markers. Loads AFTER global.css so it wins on overlapping selectors.
 import '@/styles/phase5-typography.css';
 import TopBar from '@/components/TopBar.astro';
+import SearchModal from '@/components/SearchModal.astro';
 import type { Lang } from '@/types/aiact';
 
 interface Props {
@@ -346,10 +347,104 @@ function suppKeyboardR(ev) {
   if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
   // Skip if there's no supplementary surface on the page.
   if (!document.querySelector('.supp-root')) return;
+  // Skip if the search modal is open — R is editorial mode toggle, not text.
+  if (document.querySelector('.search-modal[data-search-open="true"]')) return;
   const next = readSuppMode() === 'research' ? 'browse' : 'research';
   applySuppMode(next);
   writeSuppMode(next);
   updateSuppUrl(getCurrentSuppState());
+}
+
+// Phase 5.6 (2026-05-12): Pagefind search modal. The default UI ships
+// in /pagefind/ after `pagefind --site dist` runs as part of `npm run
+// build`. We lazy-load the CSS + JS bundle on first modal open so
+// readers who never search pay no bytes for the search index.
+//
+// Cmd-K (Mac) / Ctrl-K (others) opens the modal; Esc closes;
+// click-on-backdrop closes. The TopBar's search input is a click-
+// trigger (data-search-trigger) wired to openSearchModal.
+let _pagefindLoaded = false;
+let _pagefindUI = null;
+
+function loadPagefindOnce() {
+  if (_pagefindLoaded) return Promise.resolve();
+  _pagefindLoaded = true;
+  // CSS — fire-and-forget; modal renders without it briefly otherwise.
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = '/pagefind/pagefind-ui.css';
+  document.head.appendChild(link);
+  // JS — wait for it before initialising PagefindUI.
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = '/pagefind/pagefind-ui.js';
+    script.onload = () => resolve();
+    script.onerror = () => {
+      // Build-time pagefind output missing — likely dev. Surface the
+      // hint in the modal so the user knows search is disabled here.
+      const hint = document.querySelector('[data-search-dev-hint]');
+      if (hint) hint.hidden = false;
+      reject(new Error('pagefind-ui.js failed to load'));
+    };
+    document.head.appendChild(script);
+  });
+}
+
+function initPagefindUI() {
+  if (_pagefindUI) return;
+  if (typeof window.PagefindUI !== 'function') return;
+  _pagefindUI = new window.PagefindUI({
+    element: '#search-modal-mount',
+    showImages: false,
+    showSubResults: true,
+    resetStyles: false,
+    autofocus: true,
+  });
+}
+
+function openSearchModal() {
+  const modal = document.querySelector('.search-modal');
+  if (!modal) return;
+  modal.setAttribute('data-search-open', 'true');
+  modal.hidden = false;
+  document.body.setAttribute('data-search-locked', 'true');
+  loadPagefindOnce().then(initPagefindUI).then(() => {
+    // PagefindUI handles its own focus when autofocus=true; nothing else
+    // to do here. If load failed we silently leave the modal open with
+    // the dev hint surfaced.
+  }).catch(() => { /* dev-hint already surfaced */ });
+}
+
+function closeSearchModal() {
+  const modal = document.querySelector('.search-modal');
+  if (!modal) return;
+  modal.setAttribute('data-search-open', 'false');
+  modal.hidden = true;
+  document.body.removeAttribute('data-search-locked');
+}
+
+function searchKeyboardHandler(ev) {
+  // Cmd-K / Ctrl-K opens the modal.
+  if ((ev.metaKey || ev.ctrlKey) && (ev.key === 'k' || ev.key === 'K')) {
+    ev.preventDefault();
+    openSearchModal();
+    return;
+  }
+  // Esc closes the modal (only if it's open).
+  if (ev.key === 'Escape') {
+    const modal = document.querySelector('.search-modal[data-search-open="true"]');
+    if (modal) {
+      ev.preventDefault();
+      closeSearchModal();
+    }
+  }
+}
+
+function applyPlatformKbdLabel() {
+  const isMac = /Mac|iPhone|iPad/.test(navigator.platform || '');
+  document.querySelectorAll('[data-search-kbd]').forEach((el) => {
+    el.textContent = isMac ? '⌘K' : 'Ctrl K';
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -365,6 +460,25 @@ document.addEventListener('DOMContentLoaded', () => {
     applySupplementaryStateFromUrl();
   });
   document.addEventListener('keydown', suppKeyboardR);
+
+  // Phase 5.6: search modal triggers + global keyboard shortcut.
+  applyPlatformKbdLabel();
+  document.querySelectorAll('[data-search-trigger]').forEach((el) => {
+    el.addEventListener('click', openSearchModal);
+    el.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Enter' || ev.key === ' ') {
+        ev.preventDefault();
+        openSearchModal();
+      }
+    });
+  });
+  document.querySelectorAll('[data-search-close]').forEach((el) => {
+    el.addEventListener('click', closeSearchModal);
+  });
+  document.querySelectorAll('[data-search-backdrop]').forEach((el) => {
+    el.addEventListener('click', closeSearchModal);
+  });
+  document.addEventListener('keydown', searchKeyboardHandler);
 
   document.querySelectorAll('.nav-chapter-header').forEach(header => {
     header.addEventListener('click', () => {
@@ -394,6 +508,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
+
+<SearchModal lang={lang} />
 
 </body>
 </html>

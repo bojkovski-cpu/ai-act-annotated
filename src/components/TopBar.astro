@@ -56,7 +56,13 @@ const SEARCH_PLACEHOLDER: Record<Lang, string> = {
   en: 'Search articles, recitals…',
   nl: 'Zoek artikelen, overwegingen…',
 };
-const SEARCH_BTN_LABEL: Record<Lang, string> = { en: 'SEARCH', nl: 'ZOEKEN' };
+// Phase 5.6: SEARCH button retires — the input is now a click-trigger
+// for the Pagefind modal, and the right-side affordance is a keyboard
+// hint chip. Bilingual label kept in case a future variant surfaces it.
+const SEARCH_KBD_HINT_LABEL: Record<Lang, string> = {
+  en: 'Open search',
+  nl: 'Zoeken openen',
+};
 const BRAND_SUB: Record<Lang, string> = {
   en: 'Annotated Edition',
   nl: 'Geannoteerde editie',
@@ -68,10 +74,17 @@ const labels = NAV_LABELS[lang];
 <div class="topbar">
   <div class="topbar-upper">
     <div class="topbar-brand">EU AI Act<span>{BRAND_SUB[lang]}</span></div>
-    <div class="topbar-search">
+    <div
+      class="topbar-search"
+      role="button"
+      tabindex="0"
+      aria-haspopup="dialog"
+      aria-label={SEARCH_KBD_HINT_LABEL[lang]}
+      data-search-trigger
+    >
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-      <input type="text" placeholder={SEARCH_PLACEHOLDER[lang]} id="search-input" />
-      <button class="topbar-search-btn">{SEARCH_BTN_LABEL[lang]}</button>
+      <input type="text" placeholder={SEARCH_PLACEHOLDER[lang]} id="search-input" readonly tabindex="-1" />
+      <kbd class="topbar-search-kbd" aria-hidden="true" data-search-kbd>⌘K</kbd>
     </div>
     <LanguageToggle lang={lang} currentPath={currentPath} availableLangs={availableLangs} />
   </div>
@@ -89,3 +102,29 @@ const labels = NAV_LABELS[lang];
     <a href={aboutHref} class={topNav === 'about' ? 'active' : ''}>{labels.about}</a>
   </nav>
 </div>
+
+<style is:global>
+  /* Phase 5.6 additions — the existing .topbar-search rules in global.css
+     still govern layout / colours; this block only adds the click-trigger
+     affordances and the keyboard-hint chip. 5.7 chrome flip rewrites the
+     topbar visual, at which point this stylesheet section can retire. */
+  .topbar-search[data-search-trigger] {
+    cursor: pointer;
+    user-select: none;
+  }
+  .topbar-search[data-search-trigger] input {
+    cursor: pointer;
+    pointer-events: none;
+  }
+  .topbar-search-kbd {
+    font-family: var(--font-mono, monospace);
+    font-size: 11px;
+    padding: 2px 6px;
+    border: 1px solid var(--stone-200, #d8d5cb);
+    border-radius: 3px;
+    background: var(--stone-50, #fafaf8);
+    color: var(--stone-600, #504d42);
+    margin-left: 0.5rem;
+    letter-spacing: 0.02em;
+  }
+</style>
