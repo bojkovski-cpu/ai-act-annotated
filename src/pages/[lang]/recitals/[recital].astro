@@ -87,7 +87,7 @@ const next = idx < sorted.length - 1 ? sorted[idx + 1] : null;
   </div>
 
   <!-- Prev/next navigation -->
-  <nav style="display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 2px solid #111; font-family: var(--sans);">
+  <nav style="display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--stone-200); font-family: var(--sans);">
     {prev ? (
       <a href={`/${lang}/recitals/recital-${prev.number}/`}
          style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; text-decoration: none; color: inherit;">

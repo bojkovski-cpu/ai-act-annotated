@@ -10,6 +10,12 @@ import '@/styles/global.css';
 // + .para-row family to Source Serif 4 + canonical leading + muted UI
 // markers. Loads AFTER global.css so it wins on overlapping selectors.
 import '@/styles/phase5-typography.css';
+// Phase 5.7: chrome convergence overlay. Token redefinition retires
+// the legacy red/cool-gray palette site-wide; legacy classes like
+// .chapter-bar / .article-id / .topbar-brand get stone-toned styles
+// here too. Loads AFTER phase5-typography.css so this file wins the
+// :root cascade.
+import '@/styles/phase5-chrome.css';
 import TopBar from '@/components/TopBar.astro';
 import type { Lang } from '@/types/aiact';
 

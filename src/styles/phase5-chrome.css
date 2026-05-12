@@ -1,0 +1,172 @@
+/* ─────────────────────────────────────────────────────────────────
+   Annotated.nl — Phase 5.7 chrome convergence overlay.
+
+   Loads AFTER `global.css` and `phase5-typography.css` so this file's
+   :root values win the cascade. Strategy: redefine the legacy
+   gray/red/blue tokens to point at the new stone/blue palette
+   (defined in tokens.css). Every existing `var(--red-accent)` and
+   `var(--gray-N)` reference across the codebase — whether in
+   global.css, scoped component styles, or inline JSX `style="..."`
+   attributes — resolves to the converged colour without touching the
+   source.
+
+   This is the single point that retires the legacy Mondrian look:
+   - Red accent retires; replaced by the deep-legal-blue --accent
+     (var(--blue-600), token from tokens.css).
+   - Cool gray scale retires; replaced by the warm stone scale.
+   - The :root token redefinition also catches inline styles in
+     prev/next nav cards across articles, recitals, annexes, history
+     pages — no per-file source edit needed.
+
+   What still needs source edits (out of scope for the cascade trick):
+   - Hardcoded `border: 1px solid var(--stone-200)` Mondrian thick borders in
+     prev/next nav rows. Inline literal values; can't be overridden
+     via variable. Source-edited per-file alongside this file.
+   - Component-level styles that hardcode colours (e.g. GuidanceCard's
+     `background: var(--red-accent)` badge — works via the
+     redefinition; but any literal hex stays literal).
+
+   Phase 5.7's FF_CONVERGENT_COMPONENTS flag flip is the editorial
+   moment this overlay marks. Before the flip: legacy chrome. After:
+   stone palette across the site.
+   ───────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Legacy red palette retires ─────────────────────────────── */
+  --red-accent:    var(--accent);          /* blue-600 (deep legal blue) */
+  --red-light:     var(--accent-soft-bg);  /* blue-50 */
+
+  /* ── Legacy blue scale aliased to the new accent ─────────────── */
+  --blue-dark:     var(--blue-700);
+  --blue-mid:      var(--blue-600);
+  --blue-light:    var(--blue-50);
+  --blue-accent:   var(--accent);
+
+  /* ── Cool grays → warm stones ────────────────────────────────── */
+  --gray-50:       var(--stone-50);
+  --gray-100:      var(--stone-100);
+  --gray-200:      var(--stone-150);
+  --gray-300:      var(--stone-200);
+  --gray-400:      var(--stone-400);
+  --gray-500:      var(--stone-500);
+  --gray-600:      var(--stone-600);
+  --gray-700:      var(--stone-700);
+  --gray-800:      var(--stone-800);
+
+  /* ── Legacy font tokens → canonical / UI font stack ────────────
+     The annex Pattern B/C renders use inline `font-family: var(--serif)`.
+     Aliasing --serif to --font-canonical converts those `<pre>` blocks
+     to Source Serif 4 in one shot. */
+  --serif:         var(--font-canonical);
+  --sans:          var(--font-ui);
+  --mono:          var(--font-mono);
+
+  /* ── Badge accents stay vivid (status, not chrome) ─────────────
+     Application-date badges (Feb 2025, Aug 2025, Aug 2026) carry
+     their own semantic colour; they're not legacy chrome and don't
+     need converging. */
+  /* --green-badge, --amber-badge unchanged */
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   Shared adjacency-nav card class — used by article/annex/recital
+   prev/next links. Pages opt-in by class instead of inline `style`,
+   which also lets us style hover/focus states consistently.
+   ───────────────────────────────────────────────────────────────── */
+.adjacent-nav-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--stone-200);
+  font-family: var(--font-ui);
+}
+.adjacent-nav-card {
+  flex: 1;
+  display: block;
+  padding: 14px 18px;
+  background: var(--stone-50);
+  border: 1px solid var(--stone-200);
+  border-radius: 5px;
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--dur-1, 120ms) var(--ease, ease),
+              border-color var(--dur-1, 120ms) var(--ease, ease);
+}
+.adjacent-nav-card.adjacent-nav-card-prev {
+  border-left: 3px solid var(--accent);
+  border-radius: 0 5px 5px 0;
+}
+.adjacent-nav-card.adjacent-nav-card-next {
+  border-right: 3px solid var(--accent);
+  border-radius: 5px 0 0 5px;
+  text-align: right;
+}
+.adjacent-nav-card:hover {
+  background: var(--stone-100);
+  border-color: var(--stone-300);
+}
+.adjacent-nav-card-label {
+  font-size: 11px;
+  color: var(--stone-500);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 4px;
+}
+.adjacent-nav-card-title {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   Chapter banner — articles, annexes, recitals carry this band at
+   the top. Retires the red-fill / Mondrian-bordered legacy look for
+   a stone-toned band with a thin accent rule on the left.
+   ───────────────────────────────────────────────────────────────── */
+.chapter-bar {
+  background: var(--stone-50);
+  color: var(--stone-900);
+  border-left: 3px solid var(--accent);
+  border-top: 1px solid var(--stone-200);
+  border-right: 1px solid var(--stone-200);
+  border-bottom: 1px solid var(--stone-200);
+  border-radius: 0 5px 5px 0;
+}
+.chapter-bar h1 {
+  color: var(--stone-900);
+  font-family: var(--font-canonical, var(--font-ui));
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   Article header — chapter-bar's red bg retires; the article-id
+   chip beneath it goes blue accent.
+   ───────────────────────────────────────────────────────────────── */
+.article-header {
+  border-bottom: 1px solid var(--stone-200);
+}
+.article-id {
+  color: var(--accent);
+  font-family: var(--font-ui);
+  font-weight: 600;
+}
+.article-title-text {
+  color: var(--stone-900);
+  font-family: var(--font-canonical, var(--font-ui));
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   TopBar chrome — retires the 4px solid #111 Mondrian under-rule for
+   a thin stone-200 hairline.
+   ───────────────────────────────────────────────────────────────── */
+.topbar {
+  border-bottom: 1px solid var(--stone-200);
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   TopBar brand — red wordmark retires for stone-900 ink.
+   ───────────────────────────────────────────────────────────

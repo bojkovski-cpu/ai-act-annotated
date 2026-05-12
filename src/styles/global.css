@@ -43,9 +43,9 @@ body {
 }
 
 /* ── Mondrian structural lines ── */
-.mondrian-h { border-bottom: 3px solid #111; }
-.mondrian-h-thin { border-bottom: 2px solid #111; }
-.mondrian-v { border-right: 3px solid #111; }
+.mondrian-h { border-bottom: 2px solid var(--stone-300); }
+.mondrian-h-thin { border-bottom: 1px solid var(--stone-200); }
+.mondrian-v { border-right: 2px solid var(--stone-300); }
 
 /* ── Top bar ── */
 .topbar {
@@ -60,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 24px 6px;
-  border-bottom: 2px solid #111;
+  border-bottom: 1px solid var(--stone-200);
 }
 .topbar-brand {
   font-size: 22px;
@@ -154,7 +154,7 @@ body {
 .sidebar {
   width: var(--sidebar-width);
   background: var(--gray-50);
-  border-right: 3px solid #111;
+  border-right: 2px solid var(--stone-300);
   position: fixed;
   top: var(--topbar-height);
   bottom: 0;
@@ -169,7 +169,7 @@ body {
 
 .sidebar-header {
   padding: 8px 20px 16px;
-  border-bottom: 2px solid #111;
+  border-bottom: 1px solid var(--stone-200);
   margin-bottom: 8px;
 }
 .sidebar-header h2 { font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--blue-dark); }
@@ -233,7 +233,7 @@ body {
 .right-sidebar {
   width: var(--right-sidebar-width);
   padding: 32px 20px 40px 16px;
-  border-left: 3px solid #111;
+  border-left: 2px solid var(--stone-300);
   background: #fff;
   font-family: var(--sans);
   font-size: 13px;
@@ -265,7 +265,7 @@ body {
   background: var(--red-accent); color: #fff;
   padding: 14px 20px; margin-bottom: 8px;
   font-family: var(--sans);
-  border-bottom: 3px solid #111;
+  border-bottom: 2px solid var(--stone-300);
 }
 .chapter-bar h1 { font-size: 17px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
 
@@ -461,7 +461,7 @@ body {
   flex-direction: column;
   padding: 0 0 10px;
   margin-bottom: 8px;
-  border-bottom: 2px solid #111;
+  border-bottom: 1px solid var(--stone-200);
   font-family: var(--sans);
 }
 .sidebar-section-link {
