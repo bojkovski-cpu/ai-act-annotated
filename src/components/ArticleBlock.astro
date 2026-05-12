@@ -33,6 +33,7 @@ import {
   getDraftingStages,
   getGuidanceCitationsForArticle,
   getGuidanceDoc,
+  getGuidanceTitleFor,
   getInternalReferencesFor,
   getExternalReferencesFor,
   getReferencedBy,
@@ -45,6 +46,8 @@ import DraftingHistory from '@/components/DraftingHistory.astro';
 import GuidanceCard from '@/components/GuidanceCard.astro';
 import SupplementaryTabs from '@/components/SupplementaryTabs.astro';
 import SupplementaryPanel from '@/components/SupplementaryPanel.astro';
+import SupplementaryHeader from '@/components/SupplementaryHeader.astro';
+import ResearchPanel from '@/components/ResearchPanel.astro';
 
 interface Props {
   article: Article;
@@ -197,6 +200,121 @@ const supplementaryTabs = [
   { slug: 'guidance',       label: 'Guidance',       count: guidanceCount },
 ];
 
+// Phase 5.5b: Research mode — flat cross-source entry list. Same data
+// as Browse mode, different framing. Each entry maps onto a unified
+// shape (category, title, meta, snippet, date) so the panel renders
+// heterogeneously-sourced entries with consistent typography. Sort:
+// date desc, secondary by category then natural order.
+//
+// Date proxies per category — recital and history sorting against a
+// stable real-world date lets the reader see the temporal narrative
+// from newest interpretation to oldest drafting trace:
+//   - history → DraftingStage.date (per-stage publication date)
+//   - recitals → 2024-07-12 (OJ publication of Regulation 2024/1689,
+//     shared by all recitals — they're part of the same legislative
+//     act, so a uniform date is the most defensible proxy)
+//   - guidance → GuidanceDoc.adoption_date
+function truncateSnippet(text: string, max = 220): string {
+  const flat = text.replace(/\s+/g, ' ').trim();
+  if (flat.length <= max) return flat;
+  return flat.slice(0, max).replace(/\s+\S*$/, '') + '…';
+}
+const REGULATION_DATE = '2024-07-12';
+const stageById = new Map(draftingStages.map((s) => [s.id, s] as const));
+
+type ResearchEntry = {
+  category: string;
+  categoryLabel: string;
+  tagDetail?: string;
+  title: string;
+  metaLeft?: string;
+  metaRight?: string;
+  snippet: string;
+  date: string;
+  href?: string;
+};
+
+const historyEntries: ResearchEntry[] = draftingSnapshots.map((snap) => {
+  const stage = stageById.get(snap.stage);
+  const stageLabel = stage ? (lang === 'nl' ? stage.label_nl : stage.label_en) : snap.stage;
+  return {
+    category: 'history',
+    categoryLabel: lang === 'nl' ? 'Geschiedenis' : 'History',
+    tagDetail: stageLabel,
+    title: `Article ${snap.number} — ${stageLabel}`,
+    metaLeft: stage?.date,
+    metaRight: stage?.source_label,
+    snippet: truncateSnippet(snap.text),
+    date: stage?.date ?? '1900-01-01',
+    href: `/${lang}/aiact/history/${snap.stage}/art/${snap.number}/`,
+  };
+});
+
+const recitalEntries: ResearchEntry[] = relatedRecitals.map((rec) => ({
+  category: 'recitals',
+  categoryLabel: lang === 'nl' ? 'Overweging' : 'Recital',
+  tagDetail: `Recital ${rec.number}`,
+  title: `Recital ${rec.number}`,
+  metaLeft: 'Regulation (EU) 2024/1689',
+  snippet: truncateSnippet(rec.text),
+  date: REGULATION_DATE,
+  href: rec.href,
+}));
+
+const guidanceEntries: ResearchEntry[] = guidanceCards.map(({ doc, pinCites }) => {
+  const title = getGuidanceTitleFor(doc, lang).title;
+  // Snippet: short pin-cite locator summary. The doc body excerpts
+  // aren't in the schema today; the location_in_doc string is the
+  // best descriptive cue we have. Truncate to the first three.
+  const pinSummary = pinCites
+    .map((pc) => {
+      const para = pc.pin_cite?.paragraph;
+      const letter = pc.pin_cite?.letter;
+      const loc = pc.location_in_doc?.label;
+      const ref = para ? `Art. ${article.number}(${para}${letter ? `)(${letter}` : ''})` : `Art. ${article.number}`;
+      return loc ? `${ref} → ${loc}` : ref;
+    })
+    .slice(0, 3)
+    .join(' · ');
+  const sourceLabels: Record<string, string> = {
+    commission: 'European Commission',
+    ai_office: 'AI Office',
+    edpb: 'EDPB',
+    member_state: 'Member State',
+    other: 'Other',
+  };
+  return {
+    category: 'guidance',
+    categoryLabel: lang === 'nl' ? 'Leidraad' : 'Guidance',
+    tagDetail: sourceLabels[doc.source] ?? doc.source,
+    title,
+    metaLeft: doc.adoption_date,
+    metaRight: doc.canonical_id,
+    snippet: pinSummary || `${doc.document_type} from ${sourceLabels[doc.source] ?? doc.source}`,
+    date: doc.adoption_date ?? '1900-01-01',
+    href: `/${lang}/guidance/${doc.canonical_id.replace(/\//g, '-')}/`,
+  };
+});
+
+const researchEntries: ResearchEntry[] = [
+  ...historyEntries,
+  ...recitalEntries,
+  ...guidanceEntries,
+].sort((a, b) => {
+  const d = (b.date || '').localeCompare(a.date || '');
+  if (d !== 0) return d;
+  if (a.category !== b.category) return a.category.localeCompare(b.category);
+  return a.title.localeCompare(b.title);
+});
+
+const researchCategories = [
+  { slug: 'history',  label: 'History',  count: historyCount },
+  { slug: 'recitals', label: 'Recitals', count: recitalCount },
+  { slug: 'guidance', label: 'Guidance', count: guidanceCount },
+];
+
+const totalSupplementaryEntries = researchEntries.length;
+
 function parseSubPoints(text: string) {
   const parts: { marker?: string; text: string }[] = [];
   const lines = text.split('\n');
@@ -311,48 +429,67 @@ function parseSubPoints(text: string) {
     </section>
   )}
 
-  {/* Phase 5.5a: supplementary surface — replaces the legacy
-       `.article-tabs` strip. Tabs in chronological order (History ·
-       Implementation · Recitals · Decisions · Guidance per OQ-4);
-       SupplementaryTabs hides any tab with count <= 0. JS dispatch
-       via the same generalised `switchTab` handler in BaseLayout. */}
-  <SupplementaryTabs articleNumber={String(article.number)} tabs={supplementaryTabs} />
-
-  {historyCount > 0 && (
-    <SupplementaryPanel articleNumber={String(article.number)} slug="history">
-      <DraftingHistory
-        snapshots={draftingSnapshots}
-        gaps={draftingGaps}
-        stages={draftingStages}
-        lang={lang}
-        number={article.number}
-        contentType="articles"
-        currentText={article.paragraphs.map((p: any) => p.text).join('\n\n')}
-        currentParaCount={article.paragraphs.length}
-        currentTitle={article.title}
+  {/* Phase 5.5a/b: supplementary surface — replaces the legacy
+       `.article-tabs` strip. Wrapped in a mode-scoped root so the
+       Phase 5.5b mode toggle (Browse / Research) can show/hide the
+       two body shapes without re-fetching data. `data-supp-mode`
+       starts as 'browse'; BaseLayout's switchMode flips it on click
+       or keyboard `R`, and persists the choice per session via
+       sessionStorage. */}
+  {totalSupplementaryEntries > 0 && (
+    <section class="supp-root" data-article={String(article.number)} data-supp-mode="browse">
+      <SupplementaryHeader
+        articleNumber={String(article.number)}
+        totalEntries={totalSupplementaryEntries}
       />
-    </SupplementaryPanel>
-  )}
 
-  {recitalCount > 0 && (
-    <SupplementaryPanel articleNumber={String(article.number)} slug="recitals">
-      {relatedRecitals.map((rec) => (
-        <div class="recital-card">
-          <div class="recital-card-header">
-            <a href={rec.href}>Recital {rec.number}</a>
-          </div>
-          <p>{rec.text.length > 300 ? rec.text.substring(0, 300) + '…' : rec.text}</p>
-        </div>
-      ))}
-    </SupplementaryPanel>
-  )}
+      <div class="supp-browse">
+        <SupplementaryTabs articleNumber={String(article.number)} tabs={supplementaryTabs} />
 
-  {guidanceCount > 0 && (
-    <SupplementaryPanel articleNumber={String(article.number)} slug="guidance">
-      {guidanceCards.map(({ doc, pinCites }) => (
-        <GuidanceCard doc={doc} lang={lang} showPinCites={pinCites} />
-      ))}
-    </SupplementaryPanel>
+        {historyCount > 0 && (
+          <SupplementaryPanel articleNumber={String(article.number)} slug="history">
+            <DraftingHistory
+              snapshots={draftingSnapshots}
+              gaps={draftingGaps}
+              stages={draftingStages}
+              lang={lang}
+              number={article.number}
+              contentType="articles"
+              currentText={article.paragraphs.map((p: any) => p.text).join('\n\n')}
+              currentParaCount={article.paragraphs.length}
+              currentTitle={article.title}
+            />
+          </SupplementaryPanel>
+        )}
+
+        {recitalCount > 0 && (
+          <SupplementaryPanel articleNumber={String(article.number)} slug="recitals">
+            {relatedRecitals.map((rec) => (
+              <div class="recital-card">
+                <div class="recital-card-header">
+                  <a href={rec.href}>Recital {rec.number}</a>
+                </div>
+                <p>{rec.text.length > 300 ? rec.text.substring(0, 300) + '…' : rec.text}</p>
+              </div>
+            ))}
+          </SupplementaryPanel>
+        )}
+
+        {guidanceCount > 0 && (
+          <SupplementaryPanel articleNumber={String(article.number)} slug="guidance">
+            {guidanceCards.map(({ doc, pinCites }) => (
+              <GuidanceCard doc={doc} lang={lang} showPinCites={pinCites} />
+            ))}
+          </SupplementaryPanel>
+        )}
+      </div>
+
+      <ResearchPanel
+        articleNumber={String(article.number)}
+        entries={researchEntries}
+        categories={researchCategories}
+      />
+    </section>
   )}
 
   {referencedByEntries.length > 0 && (

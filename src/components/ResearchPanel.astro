@@ -1,0 +1,286 @@
+---
+/**
+ * ResearchPanel — Phase 5.5b.
+ *
+ * The Research-mode body for the supplementary surface. Same data
+ * as Browse mode, different framing: a cross-source flat list with
+ * snippets up-front and category chips that filter the list.
+ *
+ * Hidden by default; revealed by switchMode() when the surface root
+ * carries `data-supp-mode="research"` (CSS rule lives in
+ * SupplementaryHeader.astro).
+ *
+ * Chip selection model:
+ *   - "All" chip is active by default (OQ-5). When active, every
+ *     entry shows.
+ *   - Per-category chips are multi-select. Clicking one removes
+ *     "All" and shows only entries matching the union of active
+ *     category chips.
+ *   - Clicking the last active category chip OFF restores "All".
+ *   - Selection persists per session (sessionStorage), applied
+ *     by BaseLayout on DOMContentLoaded. The chip → sessionStorage
+ *     dispatch lives in `toggleResearchChip()` in BaseLayout.
+ *
+ * Entry shape is unified across History / Recitals / Guidance so the
+ * card grid stays consistent. The two-column layout (tag column on
+ * the left, body column on the right) is locked in the design-bundle
+ * mock — see step-3.1-mock-supplementary-surface.html, `.entry`.
+ */
+interface ResearchEntry {
+  /** Category slug — matches a category chip's data-chip. One of:
+   *  'history' | 'recitals' | 'guidance' (Implementation and
+   *  Decisions land when content ops populates Phase 4 stubs). */
+  category: string;
+  /** Display label inside the tag column (e.g. "History",
+   *  "Recital", "Guidance"). */
+  categoryLabel: string;
+  /** Sub-label inside the tag column, e.g. the stage name
+   *  ("Commission 2021"), the issuer ("AI Office"), the recital
+   *  number ("Recital 6"). */
+  tagDetail?: string;
+  /** Bold title line — article number + stage / "Recital N" /
+   *  guidance doc title. */
+  title: string;
+  /** First meta token — typically an ISO date or canonical ID. */
+  metaLeft?: string;
+  /** Second meta token — e.g. pin-cite count, source label. */
+  metaRight?: string;
+  /** Body excerpt — first ~200 chars of the relevant text, with
+   *  trailing ellipsis when truncated. */
+  snippet: string;
+  /** Optional anchor to detail. When set, the entry title becomes
+   *  a link. */
+  href?: string;
+}
+
+interface CategorySpec {
+  /** Slug used in `data-chip` and `data-category`. */
+  slug: string;
+  /** Display label on the chip. */
+  label: string;
+  /** Entry count for the chip badge. Zero-count chips are hidden. */
+  count: number;
+}
+
+interface Props {
+  articleNumber: string;
+  entries: ResearchEntry[];
+  /** Categories in display order. Zero-count categories are filtered
+   *  out at render time. */
+  categories: CategorySpec[];
+}
+
+const { articleNumber, entries, categories } = Astro.props;
+const visibleCategories = categories.filter((c) => c.count > 0);
+---
+
+{entries.length > 0 && (
+  <div class="supp-research" data-article={articleNumber}>
+    <div class="supp-research-chips" role="group" aria-label="Filter entries by category">
+      <span class="supp-research-chips-label">View:</span>
+      <button
+        type="button"
+        class="supp-chip active"
+        data-chip="all"
+        data-article={articleNumber}
+        onclick="toggleResearchChip(this)"
+      >
+        All <span class="supp-chip-count">{entries.length}</span>
+      </button>
+      {visibleCategories.map((cat) => (
+        <button
+          type="button"
+          class="supp-chip"
+          data-chip={cat.slug}
+          data-article={articleNumber}
+          onclick="toggleResearchChip(this)"
+        >
+          {cat.label} <span class="supp-chip-count">{cat.count}</span>
+        </button>
+      ))}
+      <span class="supp-research-chips-spacer"></span>
+      <span class="supp-research-chips-sort">Sort: <b>Date ↓</b></span>
+    </div>
+
+    <ul class="supp-research-entries">
+      {entries.map((e) => (
+        <li class="supp-research-entry" data-category={e.category}>
+          <div class="supp-research-entry-tag">
+            <b>{e.categoryLabel}</b>
+            {e.tagDetail && <span>{e.tagDetail}</span>}
+          </div>
+          <div class="supp-research-entry-body">
+            <div class="supp-research-entry-title">
+              {e.href ? <a href={e.href}>{e.title}</a> : e.title}
+            </div>
+            {(e.metaLeft || e.metaRight) && (
+              <div class="supp-research-entry-meta">
+                {e.metaLeft}
+                {e.metaLeft && e.metaRight && <span class="supp-research-entry-meta-sep">·</span>}
+                {e.metaRight}
+              </div>
+            )}
+            <p class="supp-research-entry-snippet">{e.snippet}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
+<style is:global>
+  /* ── Research panel (Phase 5.5b) ──────────────────────────────
+     Chip strip + flat entry list. Mirrors the mock's `.species` row
+     and `.entries`/`.entry` blocks. Stone tones, no boxy borders
+     around entries — just a hairline rule between adjacent cards. */
+
+  .supp-research-chips {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.7rem 0 0.9rem;
+    font-family: var(--font-ui);
+    font-size: 12.5px;
+    color: var(--stone-500, #6a6658);
+    border-bottom: 1px solid var(--stone-150, #e4e2da);
+    flex-wrap: wrap;
+  }
+  .supp-research-chips-label {
+    color: var(--stone-600, #504d42);
+    font-size: 12px;
+  }
+  .supp-chip {
+    appearance: none;
+    background: transparent;
+    border: 1px solid var(--stone-200, #d8d5cb);
+    border-radius: 13px;
+    padding: 0.18rem 0.65rem;
+    font-size: 12px;
+    color: var(--stone-600, #504d42);
+    cursor: pointer;
+    font-family: inherit;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.35rem;
+    transition: background var(--dur-1, 120ms) var(--ease, ease),
+                color var(--dur-1, 120ms) var(--ease, ease),
+                border-color var(--dur-1, 120ms) var(--ease, ease);
+  }
+  .supp-chip:hover {
+    background: var(--stone-50, #fafaf8);
+    color: var(--stone-900, #15140f);
+  }
+  .supp-chip.active {
+    background: var(--stone-900, #15140f);
+    color: #fff;
+    border-color: var(--stone-900, #15140f);
+  }
+  .supp-chip.active:hover {
+    background: var(--stone-900, #15140f);
+    color: #fff;
+  }
+  .supp-chip-count {
+    font-size: 11px;
+    font-variant-numeric: tabular-nums;
+    opacity: 0.85;
+  }
+  .supp-research-chips-spacer {
+    flex: 1;
+  }
+  .supp-research-chips-sort {
+    font-size: 11.5px;
+    color: var(--stone-500, #6a6658);
+  }
+  .supp-research-chips-sort b {
+    color: var(--stone-700, #3a382f);
+    font-weight: 500;
+  }
+
+  .supp-research-entries {
+    padding: 0.6rem 0 0;
+    margin: 0;
+    list-style: none;
+  }
+  .supp-research-entry {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--stone-150, #e4e2da);
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1rem;
+    font-family: var(--font-ui);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  .supp-research-entry:last-child {
+    border-bottom: 0;
+  }
+  .supp-research-entry-tag {
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--stone-500, #6a6658);
+    padding-top: 0.15rem;
+  }
+  .supp-research-entry-tag b {
+    display: block;
+    color: var(--stone-700, #3a382f);
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.15rem;
+  }
+  .supp-research-entry-body {
+    min-width: 0;
+  }
+  .supp-research-entry-title {
+    color: var(--stone-900, #15140f);
+    font-weight: 600;
+    font-size: 13.5px;
+    margin-bottom: 0.2rem;
+    line-height: 1.4;
+  }
+  .supp-research-entry-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .supp-research-entry-title a:hover {
+    color: var(--accent, #1f3c6e);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .supp-research-entry-meta {
+    color: var(--stone-500, #6a6658);
+    font-size: 11.5px;
+    margin-bottom: 0.35rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .supp-research-entry-meta-sep {
+    color: var(--stone-200, #d8d5cb);
+    margin: 0 0.4rem;
+  }
+  .supp-research-entry-snippet {
+    margin: 0;
+    color: var(--stone-700, #3a382f);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  /* Chip-filter visibility. When the surface root carries
+     `data-supp-chips="all"` (or no `data-supp-chips`), every entry
+     shows. When it carries a space-separated chip list, only entries
+     whose data-category is in the list show. Applied by
+     BaseLayout's chip-filter script. */
+  .supp-research[data-supp-chips-active] .supp-research-entry {
+    display: none;
+  }
+  .supp-research[data-supp-chips-active] .supp-research-entry[data-active="true"] {
+    display: grid;
+  }
+
+  @media (max-width: 600px) {
+    .supp-research-entry {
+      grid-template-columns: 90px 1fr;
+      gap: 0.7rem;
+    }
+  }
+</style>

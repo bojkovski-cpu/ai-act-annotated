@@ -1,0 +1,149 @@
+---
+/**
+ * SupplementaryHeader — Phase 5.5b.
+ *
+ * Header row at the top of the supplementary surface, locked in
+ * design-bundle step-3.1 mock § `supp-head`. Two elements:
+ *
+ *   1. `<h3>Annotations · N entries</h3>` — title with total entry
+ *      count (sum of visible-category counts).
+ *   2. Browse / Research mode toggle pill.
+ *
+ * The header surfaces the editorial framing ("annotations") that the
+ * supplementary surface as a whole carries; the toggle gives the
+ * reader the two reading modes locked by OQ-1.
+ *
+ * The whole header is hidden when totalEntries === 0 (which is also
+ * when SupplementaryTabs renders nothing, so the supplementary surface
+ * effectively goes dark for zero-data articles).
+ *
+ * JS: each toggle button fires `switchMode(this, '<mode>')` —
+ * implemented in BaseLayout's inline script. Mode persistence (per
+ * session, global across articles) lives there too. The keyboard `R`
+ * binding (per OQ-1 carry-forward in the 5.5 handoff) toggles between
+ * Browse and Research; the visual `<kbd>R</kbd>` chip surfaces that
+ * affordance without needing a separate help block.
+ */
+interface Props {
+  articleNumber: string;
+  totalEntries: number;
+}
+
+const { articleNumber, totalEntries } = Astro.props;
+---
+
+{totalEntries > 0 && (
+  <header class="supp-head" data-article={articleNumber}>
+    <h3 class="supp-head-title">
+      Annotations <span class="supp-head-count">· {totalEntries} entries</span>
+    </h3>
+    <div class="supp-mode-toggle" role="tablist" aria-label="Surface mode">
+      <button
+        type="button"
+        class="supp-mode-button active"
+        role="tab"
+        aria-selected="true"
+        data-mode="browse"
+        data-article={articleNumber}
+        onclick="switchMode(this, 'browse')"
+      >Browse</button>
+      <button
+        type="button"
+        class="supp-mode-button"
+        role="tab"
+        aria-selected="false"
+        data-mode="research"
+        data-article={articleNumber}
+        onclick="switchMode(this, 'research')"
+      >Research <kbd class="supp-mode-kbd">R</kbd></button>
+    </div>
+  </header>
+)}
+
+<style is:global>
+  /* ── Supplementary header (Phase 5.5b) ────────────────────────
+     h3 title + mode-toggle pill, separated by a flex spacer. Mirrors
+     the mock's `.supp-head` row. Stone tones, var(--accent) is not
+     used here — the active mode button uses stone-900 for higher
+     ink-on-ink contrast against the pill's white interior. */
+  .supp-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--stone-200, #d8d5cb);
+    font-family: var(--font-ui, sans-serif);
+  }
+  .supp-head-title {
+    margin: 0;
+    font-family: var(--font-canonical, var(--font-ui, sans-serif));
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--stone-900, #15140f);
+    line-height: 1.3;
+  }
+  .supp-head-count {
+    color: var(--stone-500, #6a6658);
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 0.4rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .supp-mode-toggle {
+    display: inline-flex;
+    border: 1px solid var(--stone-200, #d8d5cb);
+    border-radius: 18px;
+    background: #fff;
+    padding: 2px;
+    font-size: 12px;
+  }
+  .supp-mode-button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    padding: 0.28rem 0.8rem;
+    color: var(--stone-600, #504d42);
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 14px;
+    font-family: inherit;
+    letter-spacing: 0.02em;
+    transition: background var(--dur-1, 120ms) var(--ease, ease),
+                color var(--dur-1, 120ms) var(--ease, ease);
+  }
+  .supp-mode-button:hover {
+    color: var(--stone-900, #15140f);
+  }
+  .supp-mode-button.active {
+    background: var(--stone-900, #15140f);
+    color: #fff;
+  }
+  .supp-mode-button.active:hover {
+    color: #fff;
+  }
+  .supp-mode-kbd {
+    font-family: var(--font-mono, monospace);
+    font-size: 9.5px;
+    padding: 1px 3px;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+    margin-left: 0.3rem;
+    opacity: 0.7;
+    background: transparent;
+  }
+
+  /* Mode-aware visibility — switchMode adds .supp-mode-research to
+     the supplementary surface root when the user switches modes. */
+  .supp-research {
+    display: none;
+  }
+  [data-supp-mode="research"] .supp-research {
+    display: block;
+  }
+  [data-supp-mode="research"] .supp-browse {
+    display: none;
+  }
+</style>
