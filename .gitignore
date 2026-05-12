@@ -35,3 +35,6 @@ WINDOWS-CLEANUP-ME.ps1
 # Astro build cache
 .astro/
 
+
+# Local TS-to-CJS scratch (smoke tests)
+*.compiled.cjs

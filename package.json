@@ -7,12 +7,15 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "astro": "^5.0.0"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^3.7.2"
+    "@astrojs/sitemap": "^3.7.2",
+    "vitest": "^4.1.6"
   }
 }
