@@ -1,0 +1,168 @@
+---
+/**
+ * Callout — inline annotation block with 8 semantic variants per
+ * the family-wide design system. Phase 5.3 (2026-05-12).
+ *
+ * Variants and intended use (from the design bundle's step-3.1 §6.3
+ * APP-2 mapping and the assets/colors_and_type.css trios):
+ *
+ *   recital        Cross-reference to a recital of the same instrument.
+ *                  e.g. inline "Recital 47" pull beside Article 6(1)(f).
+ *   commentary     Editorial note from the annotator. Neutral stone tone.
+ *   implementation National transposition or implementing-law pointer.
+ *                  AI Act: future Member-State implementing acts.
+ *   caution        Warning / caveat about scope or interpretation.
+ *   caselaw        Court judgement pull (CJEU / national).
+ *   dpa            Supervisory-authority decision pull. For AI Act this
+ *                  is the MSA / AI Office decision body; the variant
+ *                  name 'dpa' is family-wide vocabulary.
+ *   guidance       Soft-law output (Commission, AI Office, EDPB / WP29
+ *                  in the GDPR sibling).
+ *   quote          Verbatim excerpt from a recital or other text.
+ *
+ * Usage:
+ *
+ *   <Callout variant="recital" tag="RECITAL 47">
+ *     Lawfulness of processing should be...
+ *   </Callout>
+ *
+ *   <Callout variant="caselaw" tag="CJEU C-184/20" title="OT v Vyriausioji">
+ *     Holding: Art. 6(1)(c) requires the legal obligation to be clear...
+ *   </Callout>
+ *
+ * Each variant reads {fg, bg, rail} colour tokens from tokens.css.
+ * The .callout block has a 3px left rail (in the variant's rail colour),
+ * the body background tinted to the variant's bg, and text in the
+ * variant's fg.
+ *
+ * Reference:
+ *   control-room/reference/design-bundle/assets/colors_and_type.css
+ *     (lines 32-72: Semantic callout colours)
+ *   control-room/reference/design-bundle/step-3.1-mock-supplementary-surface.html
+ *     (live mock with three variants wired)
+ */
+
+export type CalloutVariant =
+  | 'recital'
+  | 'commentary'
+  | 'implementation'
+  | 'caution'
+  | 'caselaw'
+  | 'dpa'
+  | 'guidance'
+  | 'quote';
+
+interface Props {
+  variant: CalloutVariant;
+  /** Small uppercase label rendered above the body, e.g. "RECITAL 47"
+   *  or "CJEU C-184/20". Optional. */
+  tag?: string;
+  /** Optional title rendered between the tag and body in stronger weight. */
+  title?: string;
+  /** Extra class names to append to the root element. */
+  class?: string;
+}
+
+const { variant, tag, title, class: extraClass = '' } = Astro.props;
+---
+
+<aside class={`callout c-${variant} ${extraClass}`.trim()} data-variant={variant}>
+  {tag && <span class="c-tag">{tag}</span>}
+  {title && <strong class="c-title">{title}</strong>}
+  <div class="c-body"><slot /></div>
+</aside>
+
+<style>
+  .callout {
+    border-left: 3px solid;
+    padding: 0.7rem 1rem;
+    margin: 0.6rem 0;
+    font-family: var(--font-ui);
+    font-size: var(--text-base);
+    line-height: 1.55;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    max-width: 46rem;
+  }
+
+  .callout .c-tag {
+    display: block;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    opacity: 0.85;
+  }
+
+  .callout .c-title {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    line-height: 1.35;
+  }
+
+  .callout .c-body {
+    font-size: var(--text-base);
+  }
+
+  /* Inside a callout, nested paragraph elements keep token typography
+     but lose the legacy margin (callout already has its own spacing). */
+  .callout .c-body > :first-child { margin-top: 0; }
+  .callout .c-body > :last-child  { margin-bottom: 0; }
+
+  /* Inline xref links inside a callout adopt the variant's fg colour
+     and a dotted underline. Hovering darkens to the accent. */
+  .callout a {
+    color: inherit;
+    text-decoration: underline dotted currentColor;
+    text-underline-offset: 3px;
+    transition: text-decoration-style var(--dur-1) var(--ease);
+  }
+  .callout a:hover {
+    text-decoration-style: solid;
+  }
+
+  /* ── Eight semantic variants — colours from tokens.css ── */
+
+  .c-recital {
+    background: var(--callout-recital-bg);
+    border-color: var(--callout-recital-rail);
+    color: var(--callout-recital-fg);
+  }
+  .c-commentary {
+    background: var(--callout-commentary-bg);
+    border-color: var(--callout-commentary-rail);
+    color: var(--callout-commentary-fg);
+  }
+  .c-implementation {
+    background: var(--callout-implementation-bg);
+    border-color: var(--callout-implementation-rail);
+    color: var(--callout-implementation-fg);
+  }
+  .c-caution {
+    background: var(--callout-caution-bg);
+    border-color: var(--callout-caution-rail);
+    color: var(--callout-caution-fg);
+  }
+  .c-caselaw {
+    background: var(--callout-caselaw-bg);
+    border-color: var(--callout-caselaw-rail);
+    color: var(--callout-caselaw-fg);
+  }
+  .c-dpa {
+    background: var(--callout-dpa-bg);
+    border-color: var(--callout-dpa-rail);
+    color: var(--callout-dpa-fg);
+  }
+  .c-guidance {
+    background: var(--callout-guidance-bg);
+    border-color: var(--callout-guidance-rail);
+    color: var(--callout-guidance-fg);
+  }
+  .c-quote {
+    background: var(--callout-quote-bg);
+    border-color: var(--callout-quote-rail);
+    color: var(--callout-quote-fg);
+  }
+</style>
