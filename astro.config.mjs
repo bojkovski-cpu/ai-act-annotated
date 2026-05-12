@@ -29,6 +29,12 @@ const historyNl  = readJson('src/data/drafting_history_nl.json');
 
 const redirects = {};
 
+// Bare root '/' redirects to '/en/'. Replaces the meta-refresh stub at
+// src/pages/index.astro that was deleted in 1704a6b9 (non-localised
+// legacy cleanup). The astro.config sitemap filter already excludes the
+// emitted redirect HTML from the sitemap index.
+redirects['/'] = '/en/';
+
 for (const lang of langs) {
   // Section indexes
   redirects[`/${lang}/articles/`] = `/${lang}/aiact/art/`;
