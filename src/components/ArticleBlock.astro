@@ -38,6 +38,7 @@ import {
   getReferencedBy,
   getChapterForArticle,
 } from '@/lib/loader';
+import ParagraphCitations from '@components/ParagraphCitations.astro';
 import { wrapReferences } from '@/lib/references';
 import type { Article, GuidanceCitation, GuidanceDoc, Lang } from '@/types/aiact';
 import DraftingHistory from '@/components/DraftingHistory.astro';
@@ -231,21 +232,29 @@ function parseSubPoints(text: string) {
       }));
 
       return (
-        <div class="para-row">
-          {hasNumber && <div class="para-num">{para.number}.</div>}
-          <div class={`para-text${!hasNumber ? ' para-text-full' : ''}`}>
-            {annotated.map((part, i) => (
-              part.marker ? (
-                <div class="sub-para">
-                  <div class="sub-para-marker">{part.marker}</div>
-                  <div set:html={part.html} />
-                </div>
-              ) : (
-                <span set:html={part.html} />
-              )
-            ))}
+        <>
+          <div class="para-row" id={para.id ?? undefined}>
+            {hasNumber && <div class="para-num">{para.number}.</div>}
+            <div class={`para-text${!hasNumber ? ' para-text-full' : ''}`}>
+              {annotated.map((part, i) => (
+                part.marker ? (
+                  <div class="sub-para">
+                    <div class="sub-para-marker">{part.marker}</div>
+                    <div set:html={part.html} />
+                  </div>
+                ) : (
+                  <span set:html={part.html} />
+                )
+              ))}
+            </div>
           </div>
-        </div>
+          {hasNumber && (
+            <ParagraphCitations
+              article={article.canonical_id}
+              paragraph={para.number}
+            />
+          )}
+        </>
       );
     })}
   </div>

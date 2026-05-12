@@ -1,0 +1,132 @@
+---
+/**
+ * ParagraphCitations — inline chip row beneath a paragraph showing
+ * per-paragraph reference counts. Phase 5.4 (2026-05-12).
+ *
+ * Renders as a small row of chips, one per source category, sized by
+ * count. Hidden when zero inbound references — most paragraphs in any
+ * given article have none, so don't add visual noise.
+ *
+ * Source categories derived from canonical_id prefix:
+ *   aiact/art/        → "Articles"
+ *   aiact/rec/        → "Recitals"
+ *   aiact/court/      → "Court"  (Phase 4 entities; empty today)
+ *   aiact/sa/         → "MSA"    (Phase 4 entities; empty today)
+ *   aiact/guidance/   → "Guidance"
+ *   gdpr/             → "GDPR"
+ *   {CELEX} (digits)  → "External"
+ *
+ * Data: getReferencedByParagraph(canonicalId, paragraph) from Phase 3's
+ * loader — paragraph-grain inbound references derived from the unified
+ * Reference[] table.
+ *
+ * Reference:
+ *   control-room/reference/design-bundle/step-3.1-mock-supplementary-surface.html
+ *     (the chip row beneath each paragraph in the live mock)
+ *   control-room/reference/design-bundle/step-3.1-unified-interface-spec.html § 3
+ *     (ParagraphCitations under "Convergent components")
+ */
+import { getReferencedByParagraph } from '@/lib/loader';
+import type { CanonicalId, Reference } from '@/types/aiact';
+
+interface Props {
+  /** Canonical id of the article (e.g. 'aiact/art/6'). */
+  article: CanonicalId;
+  /** Paragraph number within the article (e.g. '1'). */
+  paragraph: string;
+}
+
+const { article, paragraph } = Astro.props;
+
+const refs: Reference[] = getReferencedByParagraph(article, paragraph);
+
+function categorise(ref: Reference): string {
+  const src = ref.source;
+  if (src.startsWith('aiact/art/')) return 'Articles';
+  if (src.startsWith('aiact/rec/')) return 'Recitals';
+  if (src.startsWith('aiact/court/')) return 'Court';
+  if (src.startsWith('aiact/sa/')) return 'MSA';
+  if (src.startsWith('aiact/guidance/')) return 'Guidance';
+  if (src.startsWith('gdpr/')) return 'GDPR';
+  return 'External';
+}
+
+const counts: Record<string, number> = {};
+for (const r of refs) {
+  const cat = categorise(r);
+  counts[cat] = (counts[cat] ?? 0) + 1;
+}
+
+// Stable display order — categories that exist render in this sequence.
+const CATEGORY_ORDER = [
+  'Recitals',
+  'Articles',
+  'Court',
+  'MSA',
+  'Guidance',
+  'GDPR',
+  'External',
+];
+
+const chips = CATEGORY_ORDER
+  .filter((cat) => counts[cat] > 0)
+  .map((cat) => ({ cat, count: counts[cat] }));
+
+const total = refs.length;
+---
+
+{total > 0 && (
+  <div class="paragraph-citations" data-article={article} data-paragraph={paragraph}>
+    {chips.map(({ cat, count }) => (
+      <span class="pc-chip" data-category={cat}>
+        {cat} <span class="pc-count">{count}</span>
+      </span>
+    ))}
+  </div>
+)}
+
+<style>
+  .paragraph-citations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.4rem 0 0.6rem;
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    /* Align with the paragraph body (hanging-indent column offset). */
+    padding-left: 2.5rem;
+  }
+
+  .pc-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.18rem 0.55rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    color: var(--fg-muted);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    cursor: default;
+    transition: background var(--dur-1) var(--ease), color var(--dur-1) var(--ease);
+  }
+
+  .pc-chip:hover {
+    background: var(--depth-callout);
+    color: var(--fg);
+  }
+
+  .pc-count {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.92em;
+    color: var(--fg);
+    font-weight: 600;
+  }
+
+  /* Sub-row that lives inside .sub-para gets a narrower indent. */
+  .article-body .sub-para .paragraph-citations {
+    padding-left: 2rem;
+  }
+</style>
