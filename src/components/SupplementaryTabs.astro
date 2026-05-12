@@ -1,0 +1,135 @@
+---
+/**
+ * SupplementaryTabs — Phase 5.5a.
+ *
+ * Replaces the legacy `.article-tabs` strip with the family-wide
+ * supplementary-surface tab strip locked in the design bundle's
+ * step-3.1 § 3. Chronological order is locked in OQ-4:
+ *
+ *   History · Implementation · Recitals · Decisions · Guidance
+ *
+ * Tabs with zero data are hidden — current AI Act content surfaces
+ * History / Recitals / Guidance only; Implementation and Decisions
+ * remain hidden until content ops populates Phase 4's empty stubs.
+ *
+ * Visual: stone-toned, thin 1px stone-200 rule under the strip, single
+ * `var(--accent)` underline as the active marker. No filled active
+ * background, no top-stripe, no chunky borders. The reader's eye picks
+ * the active tab from the underline + ink-coloured text + bold weight.
+ *
+ * JS contract preserved: each tab carries `data-tab="<slug>"` and
+ * `data-article="<n>"`, fires `switchTab(this)`. BaseLayout's
+ * `switchTab` handler is generalised in this phase to query panels and
+ * sibling tabs by `[data-tab]` / `[data-panel]` rather than the legacy
+ * `.article-tab` / `.tab-panel` class names — so the same handler works
+ * for both shapes until the legacy strip is fully removed.
+ *
+ * The caller passes the tabs in render order (chronological); we filter
+ * for `count > 0` and emit the survivors. No internal reordering — if a
+ * tab needs to move, the spec moves, not the caller.
+ */
+interface TabSpec {
+  /** Slug used in `data-tab` and `data-panel`. Slugs are stable across
+   * locales; tab labels translate but slugs do not. */
+  slug: string;
+  /** Display label (currently EN on both locales per the 4.3b
+   * decision — UI chrome strings stay English). */
+  label: string;
+  /** Entry count for the badge. Tabs with `count <= 0` are hidden. */
+  count: number;
+}
+
+interface Props {
+  /** Article number — written into `data-article` on the strip and on
+   * every tab. Switchtab uses it to scope its query selectors so two
+   * sibling article blocks on the same page can each toggle their own
+   * tabs without interfering. */
+  articleNumber: string;
+  /** Tabs in chronological render order. Tabs with zero data are
+   * filtered out at render time. */
+  tabs: TabSpec[];
+}
+
+const { articleNumber, tabs } = Astro.props;
+const visibleTabs = tabs.filter((t) => t.count > 0);
+---
+
+{visibleTabs.length > 0 && (
+  <div class="supp-tabs" data-article={articleNumber} role="tablist" aria-label="Annotation categories">
+    {visibleTabs.map((t) => (
+      <button
+        type="button"
+        class="supp-tab"
+        role="tab"
+        aria-selected="false"
+        data-tab={t.slug}
+        data-article={articleNumber}
+        onclick="switchTab(this)"
+      >
+        {t.label}
+        <span class="supp-tab-count">{t.count}</span>
+      </button>
+    ))}
+  </div>
+)}
+
+<style is:global>
+  /* ── Supplementary tabs (Phase 5.5a) ──────────────────────────
+     Stone-toned, thin 1px rule under the strip, single var(--accent)
+     underline as the active marker. The negative margin-bottom on the
+     tab pushes its own bottom border down by 2px so its underline sits
+     flush ON the strip's underline (overlapping it when active). */
+  .supp-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 2rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--stone-200, #d8d5cb);
+    border-bottom: 1px solid var(--stone-200, #d8d5cb);
+    font-family: var(--font-ui, sans-serif);
+  }
+  .supp-tab {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    padding: 0.55rem 1rem 0.5rem;
+    font-family: inherit;
+    font-size: 13.5px;
+    letter-spacing: -0.005em;
+    color: var(--stone-600, #504d42);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    transition: color var(--dur-1, 120ms) var(--ease, ease),
+                border-color var(--dur-1, 120ms) var(--ease, ease);
+  }
+  .supp-tab:hover {
+    color: var(--stone-900, #15140f);
+  }
+  .supp-tab.active {
+    color: var(--stone-900, #15140f);
+    font-weight: 600;
+    border-bottom-color: var(--accent, #1f3c6e);
+  }
+  .supp-tab-count {
+    color: var(--stone-500, #6a6658);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+  }
+  .supp-tab.active .supp-tab-count {
+    color: var(--stone-700, #3a382f);
+  }
+
+  /* Mobile: keep tab labels visible by allowing wrap (already on
+     parent), shrink padding to fit narrower viewports. */
+  @media (max-width: 600px) {
+    .supp-tab {
+      padding: 0.5rem 0.7rem 0.45rem;
+      font-size: 13px;
+    }
+  }
+</style>

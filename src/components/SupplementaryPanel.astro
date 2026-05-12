@@ -1,0 +1,46 @@
+---
+/**
+ * SupplementaryPanel — Phase 5.5a.
+ *
+ * Body wrapper for a single tab inside the supplementary surface. Hidden
+ * by default; revealed when the matching `SupplementaryTabs` button is
+ * clicked. Display is toggled by the `active` class, set by
+ * BaseLayout's generalised `switchTab` handler.
+ *
+ * Layout: padded top, no surrounding box. The contents (recital cards,
+ * DraftingHistory component, GuidanceCard) bring their own visual
+ * identity; the panel is a transparent container so those don't fight
+ * with a boxy tab-panel border.
+ *
+ * `data-panel` matches the tab's `data-tab` slug; `data-article` scopes
+ * the panel to its article so two sibling article blocks on the same
+ * page can each toggle their own panels. The slug→panel binding is what
+ * `switchTab` walks.
+ */
+interface Props {
+  articleNumber: string;
+  slug: string;
+}
+
+const { articleNumber, slug } = Astro.props;
+---
+
+<div class="supp-panel" data-panel={slug} data-article={articleNumber} role="tabpanel">
+  <slot />
+</div>
+
+<style is:global>
+  /* ── Supplementary panel (Phase 5.5a) ─────────────────────────
+     Hidden by default. switchTab() flips .active to show. */
+  .supp-panel {
+    display: none;
+    padding: 1.2rem 0 0.4rem;
+    font-family: var(--font-ui, sans-serif);
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--stone-800, #26241e);
+  }
+  .supp-panel.active {
+    display: block;
+  }
+</style>

@@ -118,24 +118,36 @@ const xDefaultHref = enAvailable ? enHref : nlHref;
 </div>
 
 <script is:inline>
+// Phase 5.5a (2026-05-12): generalised to query siblings and panels by
+// the `data-tab` / `data-panel` attributes rather than the legacy
+// `.article-tab` / `.tab-panel` class names. The new SupplementaryTabs +
+// SupplementaryPanel components (which use `.supp-tab` / `.supp-panel`)
+// share the same handler — class-agnostic dispatch was the cheapest way
+// to avoid a parallel JS path.
 function switchTab(tabEl) {
   const tabBar = tabEl.parentElement;
   const articleId = tabBar.dataset.article;
   const tabName = tabEl.dataset.tab;
+  const panels = document.querySelectorAll(`[data-panel][data-article="${articleId}"]`);
   if (tabEl.classList.contains('active')) {
     tabEl.classList.remove('active');
-    document.querySelectorAll(`.tab-panel[data-article="${articleId}"]`).forEach(p => p.classList.remove('active'));
+    panels.forEach(p => p.classList.remove('active'));
     return;
   }
-  tabBar.querySelectorAll('.article-tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll(`.tab-panel[data-article="${articleId}"]`).forEach(p => p.classList.remove('active'));
+  tabBar.querySelectorAll('[data-tab]').forEach(t => t.classList.remove('active'));
+  panels.forEach(p => p.classList.remove('active'));
   tabEl.classList.add('active');
-  const panel = document.querySelector(`.tab-panel[data-panel="${tabName}"][data-article="${articleId}"]`);
+  const panel = document.querySelector(`[data-panel="${tabName}"][data-article="${articleId}"]`);
   if (panel) panel.classList.add('active');
 }
 
 // Deep-link: pre-select an article-block tab from a URL fragment.
-// Recognised fragments: #recitals, #history, #omnibus, #caselaw, #guidance.
+// Phase 5.5a slug set: recitals · history · guidance (the three tabs
+// the current AI Act content surfaces). Legacy fragments #omnibus and
+// #caselaw stay listed so old deep-links don't 404 — the query just
+// fails to find a matching tab and the page stays at the top. The
+// proper hash→query-param migration is 5.5c work.
+//
 // Used by the guidance detail page's "Cited articles" sidebar so a click on
 // an article anchor lands the reader on /{lang}/articles/.../article-N/ with
 // the Guidance tab already open. Browser scrolls to an element whose id
@@ -145,7 +157,7 @@ const TAB_FRAGMENTS = ['recitals', 'history', 'omnibus', 'caselaw', 'guidance'];
 function activateTabFromHash() {
   const hash = (location.hash || '').replace(/^#/, '');
   if (!TAB_FRAGMENTS.includes(hash)) return;
-  const tab = document.querySelector('.article-tab[data-tab="' + hash + '"]');
+  const tab = document.querySelector('[data-tab="' + hash + '"]');
   if (tab && !tab.classList.contains('active')) {
     switchTab(tab);
     tab.scrollIntoView({ behavior: 'auto', block: 'start' });
@@ -167,23 +179,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   document.querySelectorAll('.sidebar-collapse-all').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.nav-chapter').forEach(c => c.classList.remove('open'));
-    });
-  });
-  document.querySelectorAll('.timeline-card').forEach(card => {
-    card.addEventListener('click', () => card.classList.toggle('expanded'));
-  });
-  document.querySelectorAll('.timeline-compare-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const diffView = btn.nextElementSibling;
-      if (diffView && diffView.classList.contains('diff-view')) {
-        diffView.classList.toggle('active');
-      }
-    });
-  });
-});
-</script>
-
-</body>
-</html>
+    btn.addEventListen

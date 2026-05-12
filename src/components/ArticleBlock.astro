@@ -43,6 +43,8 @@ import { wrapReferences } from '@/lib/references';
 import type { Article, GuidanceCitation, GuidanceDoc, Lang } from '@/types/aiact';
 import DraftingHistory from '@/components/DraftingHistory.astro';
 import GuidanceCard from '@/components/GuidanceCard.astro';
+import SupplementaryTabs from '@/components/SupplementaryTabs.astro';
+import SupplementaryPanel from '@/components/SupplementaryPanel.astro';
 
 interface Props {
   article: Article;
@@ -180,6 +182,21 @@ const guidanceCount = guidanceCards.length;
 
 const articleHref = '/' + lang + '/aiact/art/' + article.number + '/';
 
+// Phase 5.5a: supplementary surface — tabs in locked chronological
+// order (OQ-4). Implementation and Decisions are Phase 4 empty stubs;
+// they auto-show when content ops populates them. AI Omnibus retires
+// from the tab strip (OQ-4: amendment is versioning, not a category)
+// and surfaces in an interim placeholder block above the tabs until
+// Phase 6 lights up the proper AmendmentCallout / VersionBanner / sidebar
+// surface.
+const supplementaryTabs = [
+  { slug: 'history',        label: 'History',        count: historyCount },
+  { slug: 'implementation', label: 'Implementation', count: 0 },
+  { slug: 'recitals',       label: 'Recitals',       count: recitalCount },
+  { slug: 'decisions',      label: 'Decisions',      count: 0 },
+  { slug: 'guidance',       label: 'Guidance',       count: guidanceCount },
+];
+
 function parseSubPoints(text: string) {
   const parts: { marker?: string; text: string }[] = [];
   const lines = text.split('\n');
@@ -259,49 +276,50 @@ function parseSubPoints(text: string) {
     })}
   </div>
 
-  {(recitalCount > 0 || historyCount > 0 || omnibusCount > 0 || guidanceCount > 0) && (
-    <div class="article-tabs" data-article={String(article.number)}>
-      {recitalCount > 0 && (
-        <div class="article-tab" data-tab="recitals" onclick="switchTab(this)">
-          Recitals <span class="tab-count">{recitalCount}</span> <span class="tab-chevron">&#x25be;</span>
-        </div>
-      )}
-      {historyCount > 0 && (
-        <div class="article-tab" data-tab="history" onclick="switchTab(this)">
-          Drafting History <span class="tab-count">{historyCount}</span> <span class="tab-chevron">&#x25be;</span>
-        </div>
-      )}
-      {omnibusCount > 0 && (
-        <div class="article-tab" data-tab="omnibus" onclick="switchTab(this)">
-          AI Omnibus <span class="tab-count">{omnibusCount}</span> <span class="tab-chevron">&#x25be;</span>
-        </div>
-      )}
-      <div class="article-tab" data-tab="caselaw" onclick="switchTab(this)">
-        Case Law <span class="tab-count">0</span> <span class="tab-chevron">&#x25be;</span>
-      </div>
-      {guidanceCount > 0 && (
-        <div class="article-tab" data-tab="guidance" onclick="switchTab(this)">
-          Guidance <span class="tab-count">{guidanceCount}</span> <span class="tab-chevron">&#x25be;</span>
-        </div>
-      )}
-    </div>
+  {/* Phase 5.5a: Omnibus interim placeholder block. The 29 AI Omnibus
+       amendment records used to live inside a dedicated tab; per OQ-4
+       the tab retires (amendment is versioning, not a category) and
+       the records surface here above the supplementary surface until
+       Phase 6 wires the AmendmentCallout / VersionBanner / sidebar
+       proper amendment surface. Visual treatment uses status-proposed
+       tokens — amber palette signalling a forthcoming change. */}
+  {omnibusCount > 0 && (
+    <section class="omnibus-placeholder" aria-label="Forthcoming amendments (AI Omnibus)">
+      <header class="omnibus-placeholder-head">
+        <span class="omnibus-placeholder-eyebrow">
+          {lang === 'nl' ? 'Aankomende wijzigingen' : 'Forthcoming changes'}
+        </span>
+        <span class="omnibus-placeholder-source">AI Omnibus · COM(2025) 836 final · proposed</span>
+      </header>
+      {omnibusAmendments.map((amend: any) => (
+        <article class="omnibus-placeholder-card">
+          <header class="omnibus-placeholder-card-head">
+            <span class="omnibus-placeholder-pin">Paragraph {amend.paragraph}</span>
+            <span class="omnibus-placeholder-action">{amend.action}</span>
+            {amend.sub_provision && (
+              <span class="omnibus-placeholder-sub-provision">({amend.sub_provision})</span>
+            )}
+          </header>
+          <p class="omnibus-placeholder-summary">{amend.summary}</p>
+          {lang === 'nl' && (
+            <p class="omnibus-placeholder-nl-note">
+              Bron: COM(2025) 836 — beschikbaar in het Engels
+            </p>
+          )}
+        </article>
+      ))}
+    </section>
   )}
 
-  {recitalCount > 0 && (
-    <div class="tab-panel" data-panel="recitals" data-article={String(article.number)}>
-      {relatedRecitals.map((rec) => (
-        <div class="recital-card">
-          <div class="recital-card-header">
-            <a href={rec.href}>Recital {rec.number}</a>
-          </div>
-          <p>{rec.text.length > 300 ? rec.text.substring(0, 300) + '…' : rec.text}</p>
-        </div>
-      ))}
-    </div>
-  )}
+  {/* Phase 5.5a: supplementary surface — replaces the legacy
+       `.article-tabs` strip. Tabs in chronological order (History ·
+       Implementation · Recitals · Decisions · Guidance per OQ-4);
+       SupplementaryTabs hides any tab with count <= 0. JS dispatch
+       via the same generalised `switchTab` handler in BaseLayout. */}
+  <SupplementaryTabs articleNumber={String(article.number)} tabs={supplementaryTabs} />
 
   {historyCount > 0 && (
-    <div class="tab-panel" data-panel="history" data-article={String(article.number)}>
+    <SupplementaryPanel articleNumber={String(article.number)} slug="history">
       <DraftingHistory
         snapshots={draftingSnapshots}
         gaps={draftingGaps}
@@ -313,43 +331,28 @@ function parseSubPoints(text: string) {
         currentParaCount={article.paragraphs.length}
         currentTitle={article.title}
       />
-    </div>
+    </SupplementaryPanel>
   )}
 
-  {omnibusCount > 0 && (
-    <div class="tab-panel" data-panel="omnibus" data-article={String(article.number)}>
-      {omnibusAmendments.map((amend: any) => (
-        <div class="recital-card" style="border-left-color: #d97706;">
-          <div class="recital-card-header" style="color: #92400e;">
-            Paragraph {amend.paragraph} — {amend.action}
-            {amend.sub_provision && <span style="color: var(--gray-500);"> ({amend.sub_provision})</span>}
+  {recitalCount > 0 && (
+    <SupplementaryPanel articleNumber={String(article.number)} slug="recitals">
+      {relatedRecitals.map((rec) => (
+        <div class="recital-card">
+          <div class="recital-card-header">
+            <a href={rec.href}>Recital {rec.number}</a>
           </div>
-          <p>{amend.summary}</p>
-          <div class="relevance" style="color: #d97706;">COM(2025) 836 final — AI Omnibus Regulation</div>
-          {lang === 'nl' && (
-            <div style="margin-top: 6px; font-family: var(--sans); font-size: 11px; color: var(--gray-500); font-style: italic;">
-              Bron: COM(2025) 836 — beschikbaar in het Engels
-            </div>
-          )}
+          <p>{rec.text.length > 300 ? rec.text.substring(0, 300) + '…' : rec.text}</p>
         </div>
       ))}
-    </div>
+    </SupplementaryPanel>
   )}
 
-  <div class="tab-panel" data-panel="caselaw" data-article={String(article.number)}>
-    <div class="caselaw-empty">
-      <div class="caselaw-empty-icon">&#x2696;</div>
-      No case law referencing Article {article.number} yet.
-      <p>As courts and enforcement authorities produce decisions interpreting this provision, they will appear here.</p>
-    </div>
-  </div>
-
   {guidanceCount > 0 && (
-    <div class="tab-panel" data-panel="guidance" data-article={String(article.number)}>
+    <SupplementaryPanel articleNumber={String(article.number)} slug="guidance">
       {guidanceCards.map(({ doc, pinCites }) => (
         <GuidanceCard doc={doc} lang={lang} showPinCites={pinCites} />
       ))}
-    </div>
+    </SupplementaryPanel>
   )}
 
   {referencedByEntries.length > 0 && (
@@ -367,3 +370,89 @@ function parseSubPoints(text: string) {
     </div>
   )}
 </div>
+
+<style>
+  /* ── Omnibus interim placeholder (Phase 5.5a) ─────────────────
+     Status-proposed (amber) palette. This block surfaces above the
+     supplementary surface so the reader meets the forthcoming change
+     before they reach the History / Recitals / Guidance tabs — same
+     editorial intent as the Phase 6 VersionBanner that will eventually
+     replace it. Each amendment renders as a flat card; no left-border
+     rail or boxy border, because the colour palette alone carries the
+     "forthcoming change" signal. */
+  .omnibus-placeholder {
+    margin: 1.8rem 0 0;
+    padding: 1rem 1.1rem 0.6rem;
+    background: var(--status-proposed-bg, #f6e6c7);
+    border: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 18%, transparent);
+    border-radius: 5px;
+    font-family: var(--font-ui);
+  }
+  .omnibus-placeholder-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 15%, transparent);
+  }
+  .omnibus-placeholder-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--status-proposed-fg, #7a4a00);
+    font-weight: 600;
+  }
+  .omnibus-placeholder-source {
+    font-size: 11.5px;
+    color: var(--stone-600, #504d42);
+  }
+  .omnibus-placeholder-card {
+    padding: 0.6rem 0;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--stone-800, #26241e);
+  }
+  .omnibus-placeholder-card + .omnibus-placeholder-card {
+    border-top: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 10%, transparent);
+  }
+  .omnibus-placeholder-card-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.3rem;
+  }
+  .omnibus-placeholder-pin {
+    font-family: var(--font-mono, monospace);
+    font-size: 11.5px;
+    color: var(--stone-700, #3a382f);
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 18%, transparent);
+    padding: 1px 6px;
+    border-radius: 3px;
+  }
+  .omnibus-placeholder-action {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--status-proposed-fg, #7a4a00);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .omnibus-placeholder-sub-provision {
+    font-size: 12.5px;
+    color: var(--stone-600, #504d42);
+    font-style: italic;
+  }
+  .omnibus-placeholder-summary {
+    margin: 0;
+    color: var(--stone-800, #26241e);
+  }
+  .omnibus-placeholder-nl-note {
+    margin: 0.4rem 0 0;
+    font-size: 11px;
+    font-style: italic;
+    color: var(--stone-600, #504d42);
+  }
+</style>
