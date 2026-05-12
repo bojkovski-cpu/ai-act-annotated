@@ -6,6 +6,10 @@
 // directly.
 import '@/styles/tokens.css';
 import '@/styles/global.css';
+// Phase 5.2: canonical-text typography overlay — retargets .article-body
+// + .para-row family to Source Serif 4 + canonical leading + muted UI
+// markers. Loads AFTER global.css so it wins on overlapping selectors.
+import '@/styles/phase5-typography.css';
 import TopBar from '@/components/TopBar.astro';
 import type { Lang } from '@/types/aiact';
 
