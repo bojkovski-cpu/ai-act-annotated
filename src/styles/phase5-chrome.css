@@ -169,4 +169,28 @@
 
 /* ─────────────────────────────────────────────────────────────────
    TopBar brand — red wordmark retires for stone-900 ink.
-   ───────────────────────────────────────────────────────────
+   ───────────────────────────────────────────────────────────────── */
+.topbar-brand {
+  color: var(--stone-900);
+}
+.topbar-brand span {
+  color: var(--stone-500);
+}
+
+/* Active top-nav link — underline becomes accent blue instead of legacy. */
+.topbar-nav a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   Sidebar accents — chapter headers retire from red to stone-700
+   with a thin blue accent on the active chapter.
+   ───────────────────────────────────────────────────────────────── */
+.sidebar-section-link.active {
+  color: var(--accent);
+}
+.nav-chapter-header.active,
+.nav-chapter.open > .nav-chapter-header {
+  color: var(--stone-900);
+}

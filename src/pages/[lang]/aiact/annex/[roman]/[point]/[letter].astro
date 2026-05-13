@@ -66,7 +66,7 @@ const pageTitle = lang === 'nl'
     <h1>{lang === 'nl' ? 'Bijlage' : 'Annex'} {annex.id}, {lang === 'nl' ? 'punt' : 'point'} {point.position}, ({letter.letter})</h1>
   </div>
 
-  <div style="padding: 8px 0 16px; font-family: var(--sans); font-size: 13px; color: var(--gray-500);">
+  <div style="padding: 8px 0 16px; font-size: 13px; color: var(--gray-500);">
     <a href={`/${lang}/`} style="color: var(--blue-accent); text-decoration: none;">{lang === 'nl' ? 'Start' : 'Home'}</a>
     <span style="margin: 0 6px;">/</span>
     <a href={`/${lang}/aiact/annex/`} style="color: var(--blue-accent); text-decoration: none;">{lang === 'nl' ? 'Bijlagen' : 'Annexes'}</a>
@@ -84,14 +84,14 @@ const pageTitle = lang === 'nl'
 
   <div class="article-block">
     <div class="article-body">
-      <div style="font-size: 14px; color: var(--gray-600); margin-bottom: 12px; font-family: var(--sans);">
+      <div style="font-size: 14px; color: var(--gray-600); margin-bottom: 12px;">
         {lang === 'nl' ? 'Onder punt' : 'Under point'} <a href={`/${lang}/aiact/annex/${annex.id.toLowerCase()}/${point.position}/`} style="color: var(--blue-accent);">{point.position}</a>: <em>{point.body.split('\n')[0].slice(0, 120)}{point.body.length > 120 && '…'}</em>
       </div>
-      <pre style="white-space: pre-wrap; font-family: var(--serif); font-size: 16px; line-height: 1.7; color: var(--gray-800); margin: 0;">{letter.text}</pre>
+      <pre style="white-space: pre-wrap; line-height: 1.7; color: var(--gray-800); margin: 0;">{letter.text}</pre>
     </div>
   </div>
 
-  <nav style="display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--stone-200); font-family: var(--sans);">
+  <nav style="display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--stone-200);">
     {prevLetter ? (
       <a href={`/${lang}/aiact/annex/${annex.id.toLowerCase()}/${point.position}/${prevLetter.letter}/`}
          style="flex: 1; display: block; padding: 14px 18px; background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 3px solid var(--red-accent); border-radius: 0 6px 6px 0; text-decoration: none; color: inherit;">
