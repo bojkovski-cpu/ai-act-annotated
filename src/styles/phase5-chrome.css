@@ -143,6 +143,24 @@
 }
 
 /* ─────────────────────────────────────────────────────────────────
+   Canonical body inside <pre> — annex pages render whole-text bodies
+   as <pre> elements with white-space: pre-wrap (preserves the source
+   line breaks from the EUR-Lex regulation text). The browser UA
+   stylesheet sets `pre { font-family: monospace }`, which beats
+   inheritance from .article-body. We need an explicit rule on
+   `.article-body pre` to override the UA default and pick up
+   canonical typography matching article bodies.
+   ───────────────────────────────────────────────────────────────── */
+.article-body pre {
+  font-family: var(--font-canonical);
+  font-size: var(--canonical-body);
+  line-height: var(--canonical-leading);
+  color: var(--fg);
+  font-feature-settings: "kern", "liga", "onum", "pnum";
+  white-space: pre-wrap;
+}
+
+/* ─────────────────────────────────────────────────────────────────
    Article header — chapter-bar's red bg retires; the article-id
    chip beneath it goes blue accent.
    ───────────────────────────────────────────────────────────────── */
