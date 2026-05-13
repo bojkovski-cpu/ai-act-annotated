@@ -89,10 +89,23 @@ const amendmentCallouts = getAmendmentCalloutsForArticle(`aiact/art/${article.nu
   .filter((c) => c.status === 'proposed' || c.status === 'adopted-not-in-force');
 
 const calloutsByParagraph = new Map<string, typeof amendmentCallouts>();
+const articleParaIds = new Set(article.paragraphs.map((p: any) => p.number));
+const unmatchedCallouts: typeof amendmentCallouts = [];
 for (const c of amendmentCallouts) {
-  const arr = calloutsByParagraph.get(c.affectedParagraphId) ?? [];
-  arr.push(c);
-  calloutsByParagraph.set(c.affectedParagraphId, arr);
+  if (articleParaIds.has(c.affectedParagraphId)) {
+    const arr = calloutsByParagraph.get(c.affectedParagraphId) ?? [];
+    arr.push(c);
+    calloutsByParagraph.set(c.affectedParagraphId, arr);
+  } else {
+    // Migration-data quirk (Phase 4 → Phase 6): 25 of 29 omnibus
+    // callouts have affectedParagraphId set to a sequential migration
+    // ID rather than the article's paragraph number; the real
+    // paragraph reference lives in affectedSubparagraphId. Until the
+    // data is normalised, render those at article-level below the
+    // body — the VersionBanner's anchor still jumps to them via the
+    // amend-{id} target.
+    unmatchedCallouts.push(c);
+  }
 }
 
 // Guidance — 5.3: aggregate per (guidance_id, language) and sort by
@@ -390,7 +403,7 @@ function parseSubPoints(text: string) {
   <div class="article-body">
     {article.paragraphs.map((para: any) => {
       const parts = parseSubPoints(para.text);
-      const hasNumber = para.number && para.number !== '0';
+      const hasNumber = para.number && para.number !== '0' && para.number !== 'None';
       const paraCallouts = calloutsByParagraph.get(para.number) ?? [];
 
       // Wrap recognised reference patterns in <a> tags. The wrapper does
@@ -437,6 +450,18 @@ function parseSubPoints(text: string) {
       );
     })}
   </div>
+
+  {/* Phase 6.2: article-level AmendmentCallouts — fallback when the
+       affectedParagraphId in the data doesn't match any of the
+       article's paragraph numbers (25 of 29 omnibus records sit here
+       per the migration-data quirk noted in the frontmatter). The
+       callouts still carry `id=amend-{id}` so VersionBanner +
+       sidebar-block anchors jump correctly. */}
+  {unmatchedCallouts.length > 0 && (
+    <section class="article-level-amendments" aria-label="Article-level amendments">
+      <AmendmentCallout callouts={unmatchedCallouts} lang={lang} />
+    </section>
+  )}
   {/* Phase 5.5a/b: supplementary surface — replaces the legacy
        `.article-tabs` strip. Wrapped in a mode-scoped root so the
        Phase 5.5b mode toggle (Browse / Research) can show/hide the
@@ -558,5 +583,15 @@ function parseSubPoints(text: string) {
   .amend-marker:hover {
     background: var(--status-proposed-bg, #f6e6c7);
     color: var(--status-proposed-fg, #7a4a00);
+  }
+
+  /* ── Article-level AmendmentCallout wrapper (Phase 6.2) ───────
+     Used when callouts can't be matched to a specific paragraph
+     (data-migration quirk). Section gets a top rule to separate
+     from the article body. */
+  .article-level-amendments {
+    margin-top: 1.4rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--stone-200);
   }
 </style>
