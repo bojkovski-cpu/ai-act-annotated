@@ -109,7 +109,7 @@ const xDefaultHref = enAvailable ? enHref : nlHref;
     </div>
     <div class="rs-section">
       <h3>Related Legislation</h3>
-      <a href="#">GDPR (2016/679)</a>
+      <a href="https://gdpr.annotated.nl/" target="_blank" rel="noopener">GDPR (2016/679) <span class="rs-sibling-marker" aria-label="Annotated Edition">↗</span></a>
       <a href="#">DSA (2022/2065)</a>
       <a href="#">DMA (2022/1925)</a>
       <a href="#">NIS2 (2022/2555)</a>
@@ -486,7 +486,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.querySelectorAll('.timeline-compare-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const diffView = btn.nextElementSibling;
       if (diffView && diffView.classList.contains('diff-view')) {
         diffView.classList.toggle('active');
       }
