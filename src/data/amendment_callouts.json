@@ -42,7 +42,7 @@
   {
     "id": "0c09299fbef36d97",
     "affectedArticle": "aiact/art/3",
-    "affectedParagraphId": "3",
+    "affectedParagraphId": "None",
     "status": "proposed",
     "redline": {
       "kind": "insert",
@@ -62,7 +62,7 @@
   {
     "id": "d7e869369e10073f",
     "affectedArticle": "aiact/art/4",
-    "affectedParagraphId": "4",
+    "affectedParagraphId": "None",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -102,7 +102,7 @@
   {
     "id": "50f391c005d4dcd8",
     "affectedArticle": "aiact/art/10",
-    "affectedParagraphId": "7",
+    "affectedParagraphId": "1",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -122,7 +122,7 @@
   {
     "id": "7fc7280db1275301",
     "affectedArticle": "aiact/art/11",
-    "affectedParagraphId": "8",
+    "affectedParagraphId": "1",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -142,7 +142,7 @@
   {
     "id": "b112681a66a9d6f2",
     "affectedArticle": "aiact/art/17",
-    "affectedParagraphId": "9",
+    "affectedParagraphId": "2",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -182,7 +182,7 @@
   {
     "id": "bdaadb26adf3ae2b",
     "affectedArticle": "aiact/art/29",
-    "affectedParagraphId": "11",
+    "affectedParagraphId": "4",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -202,7 +202,7 @@
   {
     "id": "2e78dc7c6d4fbc07",
     "affectedArticle": "aiact/art/30",
-    "affectedParagraphId": "12",
+    "affectedParagraphId": "2",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -222,7 +222,7 @@
   {
     "id": "a114c975feeff40a",
     "affectedArticle": "aiact/art/43",
-    "affectedParagraphId": "13",
+    "affectedParagraphId": "3",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -242,7 +242,7 @@
   {
     "id": "40214bf6e2f67137",
     "affectedArticle": "aiact/art/49",
-    "affectedParagraphId": "14",
+    "affectedParagraphId": "2",
     "status": "proposed",
     "redline": {
       "kind": "delete",
@@ -262,7 +262,7 @@
   {
     "id": "0387d7ba65a6203e",
     "affectedArticle": "aiact/art/50",
-    "affectedParagraphId": "15",
+    "affectedParagraphId": "7",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -282,7 +282,7 @@
   {
     "id": "3d2f2d6430f86805",
     "affectedArticle": "aiact/art/56",
-    "affectedParagraphId": "16",
+    "affectedParagraphId": "6",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -322,7 +322,7 @@
   {
     "id": "537e30d2e2805dee",
     "affectedArticle": "aiact/art/58",
-    "affectedParagraphId": "18",
+    "affectedParagraphId": "1",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -342,7 +342,7 @@
   {
     "id": "663c744a9bca35ff",
     "affectedArticle": "aiact/art/60",
-    "affectedParagraphId": "19",
+    "affectedParagraphId": "1",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -362,7 +362,7 @@
   {
     "id": "f066a194db96eb99",
     "affectedArticle": "aiact/art/63",
-    "affectedParagraphId": "21",
+    "affectedParagraphId": "1",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -382,7 +382,7 @@
   {
     "id": "2f77acfd3b42c54c",
     "affectedArticle": "aiact/art/69",
-    "affectedParagraphId": "22",
+    "affectedParagraphId": "2",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -402,7 +402,7 @@
   {
     "id": "c3dc42a1e3d14854",
     "affectedArticle": "aiact/art/70",
-    "affectedParagraphId": "23",
+    "affectedParagraphId": "8",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -422,7 +422,7 @@
   {
     "id": "d862c023c9c5dafc",
     "affectedArticle": "aiact/art/72",
-    "affectedParagraphId": "24",
+    "affectedParagraphId": "3",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -442,7 +442,7 @@
   {
     "id": "6518c6af8e5f16d8",
     "affectedArticle": "aiact/art/75",
-    "affectedParagraphId": "25",
+    "affectedParagraphId": "1",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -462,7 +462,7 @@
   {
     "id": "d6d087fd39d8994d",
     "affectedArticle": "aiact/art/77",
-    "affectedParagraphId": "26",
+    "affectedParagraphId": "1",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -482,7 +482,7 @@
   {
     "id": "b281b2bd03f76756",
     "affectedArticle": "aiact/art/95",
-    "affectedParagraphId": "27",
+    "affectedParagraphId": "4",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -502,7 +502,7 @@
   {
     "id": "ce17e3b0f2c1b594",
     "affectedArticle": "aiact/art/96",
-    "affectedParagraphId": "28",
+    "affectedParagraphId": "1",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -522,7 +522,7 @@
   {
     "id": "c0933e89e94ad315",
     "affectedArticle": "aiact/art/99",
-    "affectedParagraphId": "29",
+    "affectedParagraphId": "1",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -542,7 +542,7 @@
   {
     "id": "ce6b1e632a7a6d56",
     "affectedArticle": "aiact/art/111",
-    "affectedParagraphId": "30",
+    "affectedParagraphId": "2",
     "status": "proposed",
     "redline": {
       "kind": "replace",
@@ -562,7 +562,7 @@
   {
     "id": "7de75e52bef766ea",
     "affectedArticle": "aiact/art/113",
-    "affectedParagraphId": "31",
+    "affectedParagraphId": "None",
     "status": "proposed",
     "redline": {
       "kind": "replace",
