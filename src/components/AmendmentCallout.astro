@@ -216,9 +216,34 @@ function renderCallout(c: AmendmentCallout): {
     font-size: 13px;
     line-height: 1.55;
     color: var(--stone-800, #26241e);
+    scroll-margin-top: 4rem;
+    transition: box-shadow var(--dur-2, 180ms) var(--ease, ease);
   }
   .amend-callout + .amend-callout {
     margin-top: 0.5rem;
+  }
+  /* :target flash — when the user clicks the inline marker chip or the
+     VersionBanner anchor or a sidebar entry, the callout briefly pulses
+     with an accent ring so the navigation feels acknowledged.
+     Tokens.css's generic :target rule uses a subtle blue flash that
+     gets lost against the callout's amber background; we override
+     with a status-proposed-toned ring + intensified bg. */
+  .amend-callout:target {
+    animation: amend-callout-flash 1.6s ease-out 1;
+  }
+  @keyframes amend-callout-flash {
+    0% {
+      box-shadow: 0 0 0 4px var(--status-proposed-fg, #7a4a00);
+      background: color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 25%, var(--status-proposed-bg, #f6e6c7));
+    }
+    60% {
+      box-shadow: 0 0 0 4px transparent;
+      background: var(--status-proposed-bg, #f6e6c7);
+    }
+    100% {
+      box-shadow: 0 0 0 0 transparent;
+      background: var(--status-proposed-bg, #f6e6c7);
+    }
   }
 
   .ac-head {
@@ -268,6 +293,7 @@ function renderCallout(c: AmendmentCallout): {
     font-size: 11.5px;
     margin-top: 0.55rem;
   }
+  .ac-meta b {
   .ac-meta b {
     color: var(--stone-700, #3a382f);
     font-weight: 500;

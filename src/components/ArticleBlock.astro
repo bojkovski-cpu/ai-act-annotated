@@ -402,8 +402,18 @@ function parseSubPoints(text: string) {
 
   <div class="article-body">
     {article.paragraphs.map((para: any) => {
-      const parts = parseSubPoints(para.text);
       const hasNumber = para.number && para.number !== '0' && para.number !== 'None';
+      // The EUR-Lex source bakes the paragraph number into the body text
+      // (e.g. "2.   For AI systems classified..."). The renderer also emits
+      // the number via `.para-num` above the body. Without the strip the
+      // result reads "2.  2. For AI systems..." — doubled marker.
+      // Conservative regex: only strips when text actually starts with the
+      // paragraph's own number. Safe for unnumbered paragraphs (no prefix
+      // in data anyway) and for any future clean-data paragraphs.
+      const cleanText = hasNumber && para.number
+        ? para.text.replace(new RegExp(`^${para.number}\\.\\s+`), '')
+        : para.text;
+      const parts = parseSubPoints(cleanText);
       const paraCallouts = calloutsByParagraph.get(para.number) ?? [];
 
       // Wrap recognised reference patterns in <a> tags. The wrapper does
