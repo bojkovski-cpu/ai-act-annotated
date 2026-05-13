@@ -485,6 +485,7 @@ document.addEventListener('DOMContentLoaded', () => {
     card.addEventListener('click', () => card.classList.toggle('expanded'));
   });
   document.querySelectorAll('.timeline-compare-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
       const diffView = btn.nextElementSibling;
       if (diffView && diffView.classList.contains('diff-view')) {
         diffView.classList.toggle('active');
