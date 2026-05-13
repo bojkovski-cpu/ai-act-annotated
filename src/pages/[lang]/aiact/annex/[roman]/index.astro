@@ -57,7 +57,7 @@ const next = idx < sorted.length - 1 ? sorted[idx + 1] : null;
   </div>
 
   <div style="margin: 8px 0 20px; font-family: var(--mono, var(--sans)); font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px;">
-    {annex.canonical_id} · v{annex.version_id}
+    v{annex.version_id}
   </div>
 
   {annex.points.length === 0 ? (
@@ -73,9 +73,6 @@ const next = idx < sorted.length - 1 ? sorted[idx + 1] : null;
           {annex.points.map((p) => (
             <li style="padding: 14px 0; border-bottom: 1px solid var(--stone-200);">
               <a href={`/${lang}/aiact/annex/${annex.id.toLowerCase()}/${p.position}/`} style="text-decoration: none; color: inherit; display: block;">
-                <div style="font-size: 11px; color: var(--stone-500); font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.5px;">
-                  {p.canonical_id}
-                </div>
                 <div style="color: var(--stone-900); margin-top: 4px;">
                   <span style="font-weight: 600; color: var(--accent); margin-right: 6px;">{p.position}.</span>
                   {p.body.split('\n')[0].slice(0, 150)}{p.body.length > 150 && '…'}

@@ -36,7 +36,6 @@ const recitals = getRecitals(lang);
     {recitals.map((r) => (
       <li style="padding: 10px 0; border-bottom: 1px solid var(--gray-200);">
         <a href={`/${lang}/aiact/rec/${r.number}/`} style="text-decoration: none; color: inherit; display: block;">
-          <div style="font-family: var(--mono, var(--sans)); font-size: 11px; color: var(--gray-500); margin-bottom: 4px;">{r.canonical_id}</div>
           <div>
             <span style="font-weight: 600; color: var(--red-accent); margin-right: 8px;">({r.number})</span>
             <span style="color: var(--gray-800);">{r.text.slice(0, 220)}{r.text.length > 220 && '…'}</span>

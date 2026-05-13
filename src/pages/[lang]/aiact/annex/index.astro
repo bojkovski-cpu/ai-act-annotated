@@ -47,9 +47,6 @@ const annexes = getAnnexes(lang);
           href={`/${lang}/aiact/annex/${annex.id.toLowerCase()}/`}
           style="text-decoration: none; color: inherit; display: block;"
         >
-          <div style="font-size: 12px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px; font-family: var(--mono, var(--sans));">
-            {annex.canonical_id}
-          </div>
           <div style="font-size: 17px; font-weight: 600; color: var(--gray-900); margin-top: 4px;">
             {lang === 'nl' ? 'Bijlage' : 'Annex'} {annex.id} — {annex.title}
           </div>

@@ -75,7 +75,6 @@ const pageTitle = `${lang === 'nl' ? 'Hoofdstuk' : 'Chapter'} ${chapter.roman} â
     {articles.map((art) => (
       <li style="padding: 12px 0; border-bottom: 1px solid var(--gray-200);">
         <a href={`/${lang}/aiact/art/${art.number}/`} style="text-decoration: none; color: inherit; display: block;">
-          <div style="font-family: var(--mono, var(--sans)); font-size: 11px; color: var(--gray-500); margin-bottom: 4px;">{art.canonical_id}</div>
           <div>
             <span style="font-weight: 700; color: var(--red-accent); margin-right: 8px;">{lang === 'nl' ? 'Artikel' : 'Article'} {art.number}</span>
             <span style="color: var(--gray-800);">{art.title}</span>
