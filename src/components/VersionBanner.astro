@@ -1,0 +1,199 @@
+---
+/**
+ * VersionBanner — Phase 6.
+ *
+ * Top-of-article band that surfaces forthcoming amendments to the
+ * reader before they engage with the article body. Locked in
+ * step-3.1 § "Future-state surface" (OQ-4a) and the step-3.1 mock.
+ *
+ * Render rule: only callouts with status 'proposed' or
+ * 'adopted-not-in-force' surface here. Callouts with status
+ * 'in-force-current' or 'in-force-superseded' belong elsewhere
+ * (the current body and the History tab respectively, per the
+ * OQ-A.2 lifecycle).
+ *
+ * Visual: amber/status-proposed palette consistent with the design
+ * bundle. Banner is editorial-tone, not alarming — it informs the
+ * reader that the text they're about to read will change.
+ *
+ * Anchor: clicking the "See the proposed change" link jumps the
+ * reader to the first AmendmentCallout inline below
+ * (`#amend-{id}`). Multiple callouts on the same article each have
+ * their own anchor; the banner links to the first one.
+ *
+ * For AI Act today (Omnibus COM(2025) 836), every affected article
+ * has exactly one callout from one instrument, so the multi-
+ * instrument grouping logic is schema-future-proof (DSA / NIS2
+ * amending Regulations) rather than user-visible.
+ */
+import type { AmendmentCallout, Lang } from '@/types/aiact';
+
+interface Props {
+  /** Pre-filtered for the current article. The banner does its own
+   *  status filter (proposed / adopted-not-in-force only). */
+  callouts: AmendmentCallout[];
+  lang: Lang;
+}
+
+const { callouts, lang } = Astro.props;
+
+const surfaceable = callouts.filter(
+  (c) => c.status === 'proposed' || c.status === 'adopted-not-in-force',
+);
+
+// Group by amending instrument so the banner says "the Omnibus
+// proposes 3 changes" rather than repeating the instrument name
+// three times.
+type InstrumentRollup = {
+  title: string;
+  count: number;
+  firstCalloutId: string;
+  earliestEffective?: string;
+};
+const byInstrument = new Map<string, InstrumentRollup>();
+for (const c of surfaceable) {
+  const k = c.amendingInstrument.canonicalId;
+  const title =
+    (lang === 'nl' && c.amendingInstrument.shortTitle.nl) ||
+    c.amendingInstrument.shortTitle.en ||
+    c.amendingInstrument.canonicalId;
+  const existing = byInstrument.get(k);
+  if (existing) {
+    existing.count++;
+    if (
+      c.effectiveDate &&
+      (!existing.earliestEffective || c.effectiveDate < existing.earliestEffective)
+    ) {
+      existing.earliestEffective = c.effectiveDate;
+    }
+  } else {
+    byInstrument.set(k, {
+      title,
+      count: 1,
+      firstCalloutId: c.id,
+      earliestEffective: c.effectiveDate,
+    });
+  }
+}
+const instruments = Array.from(byInstrument.values());
+
+const HEAD: Record<Lang, string> = {
+  en: 'A forthcoming amendment affects this Article.',
+  nl: 'Een aankomende wijziging heeft invloed op dit artikel.',
+};
+const HEAD_PLURAL: Record<Lang, string> = {
+  en: 'Forthcoming amendments affect this Article.',
+  nl: 'Aankomende wijzigingen hebben invloed op dit artikel.',
+};
+const SEE_REDLINE: Record<Lang, string> = {
+  en: 'See the proposed change below',
+  nl: 'Bekijk de voorgestelde wijziging hieronder',
+};
+const FROM: Record<Lang, string> = { en: 'from', nl: 'vanaf' };
+const CHANGES: Record<Lang, (n: number) => string> = {
+  en: (n) => (n === 1 ? '1 change' : `${n} changes`),
+  nl: (n) => (n === 1 ? '1 wijziging' : `${n} wijzigingen`),
+};
+
+const useHead = surfaceable.length > 1 ? HEAD_PLURAL[lang] : HEAD[lang];
+const firstId = surfaceable[0]?.id;
+---
+
+{surfaceable.length > 0 && (
+  <aside class="version-banner" role="note" aria-label={useHead}>
+    <span class="version-banner-icon" aria-hidden="true">!</span>
+    <div class="version-banner-body">
+      <b class="version-banner-headline">{useHead}</b>
+      <p class="version-banner-text">
+        {instruments.map((inst, i) => (
+          <>
+            {i > 0 && <span class="version-banner-sep"> · </span>}
+            <span class="version-banner-instrument">{inst.title}</span>
+            {inst.earliestEffective && (
+              <span class="version-banner-date"> {FROM[lang]} {inst.earliestEffective}</span>
+            )}
+            <span class="version-banner-count"> · {CHANGES[lang](inst.count)}</span>
+          </>
+        ))}
+        {firstId && (
+          <>
+            {' — '}
+            <a href={`#amend-${firstId}`} class="version-banner-anchor">{SEE_REDLINE[lang]}</a>
+          </>
+        )}
+      </p>
+    </div>
+  </aside>
+)}
+
+<style>
+  /* ── VersionBanner (Phase 6) ──────────────────────────────────
+     Amber/status-proposed palette signalling a forthcoming change.
+     Single accent rule on the left, thin border around, "!" icon
+     bubble for the visual anchor. Sits above the article body. */
+  .version-banner {
+    margin: 0 0 1.6rem;
+    padding: 0.7rem 1rem;
+    background: var(--status-proposed-bg, #f6e6c7);
+    border: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 25%, transparent);
+    border-left: 4px solid var(--status-proposed-fg, #7a4a00);
+    border-radius: 5px;
+    font-family: var(--font-ui, sans-serif);
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--stone-800, #26241e);
+    display: flex;
+    gap: 0.7rem;
+    align-items: flex-start;
+  }
+  .version-banner-icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--status-proposed-fg, #7a4a00);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    margin-top: 1px;
+  }
+  .version-banner-body {
+    min-width: 0;
+  }
+  .version-banner-headline {
+    color: var(--status-proposed-fg, #7a4a00);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  .version-banner-text {
+    margin: 0;
+    color: var(--stone-800, #26241e);
+  }
+  .version-banner-instrument {
+    color: var(--status-proposed-fg, #7a4a00);
+    font-weight: 600;
+  }
+  .version-banner-date {
+    color: var(--stone-700, #3a382f);
+  }
+  .version-banner-count {
+    color: var(--stone-600, #504d42);
+    font-variant-numeric: tabular-nums;
+  }
+  .version-banner-sep {
+    color: var(--stone-400, #8e8a7d);
+  }
+  .version-banner-anchor {
+    color: var(--stone-800, #26241e);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 40%, transparent);
+    text-underline-offset: 2px;
+  }
+  .version-banner-anchor:hover {
+    color: var(--status-proposed-fg, #7a4a00);
+    text-decoration-color: var(--status-proposed-fg, #7a4a00);
+  }
+</style>

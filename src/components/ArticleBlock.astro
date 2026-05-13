@@ -28,6 +28,7 @@
 import {
   getRelatedRecitals,
   getOmnibusAmendmentsForArticle,
+  getAmendmentCalloutsForArticle,
   getDraftingSnapshotsForArticle,
   getDraftingHistoryGaps,
   getDraftingStages,
@@ -48,6 +49,8 @@ import SupplementaryTabs from '@/components/SupplementaryTabs.astro';
 import SupplementaryPanel from '@/components/SupplementaryPanel.astro';
 import SupplementaryHeader from '@/components/SupplementaryHeader.astro';
 import ResearchPanel from '@/components/ResearchPanel.astro';
+import VersionBanner from '@/components/VersionBanner.astro';
+import AmendmentCallout from '@/components/AmendmentCallout.astro';
 import { aiActInstrumentConfig } from '@/lib/instrumentConfig';
 
 interface Props {
@@ -72,7 +75,25 @@ const draftingGaps = getDraftingHistoryGaps(article.number, 'articles');
 const draftingStages = getDraftingStages(lang);
 
 // Omnibus amendments — EN data; on /nl/ render with NL chrome tag.
+// Phase 6 retires the legacy omnibusAmendments shape; the canonical
+// Phase 4 AmendmentCallout records drive the new surface below.
 const omnibusAmendments = getOmnibusAmendmentsForArticle(article.number);
+
+// Phase 6: AmendmentCallout records (unified Phase 4 shape) drive the
+// VersionBanner at the top of the article, the inline AmendmentCallout
+// under each affected paragraph, and the inline marker chip on the
+// paragraph. Only proposed / adopted-not-in-force callouts surface;
+// in-force ones live in the body (current) and History tab
+// (superseded) per OQ-A.2.
+const amendmentCallouts = getAmendmentCalloutsForArticle(`aiact/art/${article.number}`)
+  .filter((c) => c.status === 'proposed' || c.status === 'adopted-not-in-force');
+
+const calloutsByParagraph = new Map<string, typeof amendmentCallouts>();
+for (const c of amendmentCallouts) {
+  const arr = calloutsByParagraph.get(c.affectedParagraphId) ?? [];
+  arr.push(c);
+  calloutsByParagraph.set(c.affectedParagraphId, arr);
+}
 
 // Guidance — 5.3: aggregate per (guidance_id, language) and sort by
 // adoption_date desc with canonical_id tie-break.
@@ -271,7 +292,7 @@ const recitalEntries: ResearchEntry[] = relatedRecitals.map((rec) => ({
 }));
 
 const guidanceEntries: ResearchEntry[] = guidanceCards.map(({ doc, pinCites }) => {
-  const title = getGuidanceTitleFor(doc, lang).title;
+  const title = getGuidanceTitleFor(doc, lang).value;
   // Snippet: short pin-cite locator summary. The doc body excerpts
   // aren't in the schema today; the location_in_doc string is the
   // best descriptive cue we have. Truncate to the first three.
@@ -363,10 +384,14 @@ function parseSubPoints(text: string) {
     </div>
   </div>
 
+  {/* Phase 6: VersionBanner at top of article when amendments are pending. */}
+  <VersionBanner callouts={amendmentCallouts} lang={lang} />
+
   <div class="article-body">
     {article.paragraphs.map((para: any) => {
       const parts = parseSubPoints(para.text);
       const hasNumber = para.number && para.number !== '0';
+      const paraCallouts = calloutsByParagraph.get(para.number) ?? [];
 
       // Wrap recognised reference patterns in <a> tags. The wrapper does
       // its own substring search per chunk — see lib/references.ts.
@@ -390,8 +415,18 @@ function parseSubPoints(text: string) {
                   <span set:html={part.html} />
                 )
               ))}
+              {paraCallouts.length > 0 && (
+                <a class="amend-marker" href={`#amend-${paraCallouts[0].id}`}
+                   title={lang === 'nl' ? 'Voorgestelde wijziging' : 'Proposed amendment'}>
+                  {lang === 'nl' ? 'Wijziging voorgesteld' : 'Amendment proposed'}
+                  {paraCallouts[0].effectiveDate && ` · ${paraCallouts[0].effectiveDate}`}
+                </a>
+              )}
             </div>
           </div>
+          {paraCallouts.length > 0 && (
+            <AmendmentCallout callouts={paraCallouts} lang={lang} />
+          )}
           {hasNumber && (
             <ParagraphCitations
               article={article.canonical_id}
@@ -402,42 +437,6 @@ function parseSubPoints(text: string) {
       );
     })}
   </div>
-
-  {/* Phase 5.5a: Omnibus interim placeholder block. The 29 AI Omnibus
-       amendment records used to live inside a dedicated tab; per OQ-4
-       the tab retires (amendment is versioning, not a category) and
-       the records surface here above the supplementary surface until
-       Phase 6 wires the AmendmentCallout / VersionBanner / sidebar
-       proper amendment surface. Visual treatment uses status-proposed
-       tokens — amber palette signalling a forthcoming change. */}
-  {omnibusCount > 0 && (
-    <section class="omnibus-placeholder" aria-label="Forthcoming amendments (AI Omnibus)">
-      <header class="omnibus-placeholder-head">
-        <span class="omnibus-placeholder-eyebrow">
-          {lang === 'nl' ? 'Aankomende wijzigingen' : 'Forthcoming changes'}
-        </span>
-        <span class="omnibus-placeholder-source">AI Omnibus · COM(2025) 836 final · proposed</span>
-      </header>
-      {omnibusAmendments.map((amend: any) => (
-        <article class="omnibus-placeholder-card">
-          <header class="omnibus-placeholder-card-head">
-            <span class="omnibus-placeholder-pin">Paragraph {amend.paragraph}</span>
-            <span class="omnibus-placeholder-action">{amend.action}</span>
-            {amend.sub_provision && (
-              <span class="omnibus-placeholder-sub-provision">({amend.sub_provision})</span>
-            )}
-          </header>
-          <p class="omnibus-placeholder-summary">{amend.summary}</p>
-          {lang === 'nl' && (
-            <p class="omnibus-placeholder-nl-note">
-              Bron: COM(2025) 836 — beschikbaar in het Engels
-            </p>
-          )}
-        </article>
-      ))}
-    </section>
-  )}
-
   {/* Phase 5.5a/b: supplementary surface — replaces the legacy
        `.article-tabs` strip. Wrapped in a mode-scoped root so the
        Phase 5.5b mode toggle (Browse / Research) can show/hide the
@@ -519,87 +518,45 @@ function parseSubPoints(text: string) {
 </div>
 
 <style>
-  /* ── Omnibus interim placeholder (Phase 5.5a) ─────────────────
-     Status-proposed (amber) palette. This block surfaces above the
-     supplementary surface so the reader meets the forthcoming change
-     before they reach the History / Recitals / Guidance tabs — same
-     editorial intent as the Phase 6 VersionBanner that will eventually
-     replace it. Each amendment renders as a flat card; no left-border
-     rail or boxy border, because the colour palette alone carries the
-     "forthcoming change" signal. */
-  .omnibus-placeholder {
-    margin: 1.8rem 0 0;
-    padding: 1rem 1.1rem 0.6rem;
-    background: var(--status-proposed-bg, #f6e6c7);
-    border: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 18%, transparent);
-    border-radius: 5px;
+  /* ── Paragraph marker chip (Phase 6) ─────────────────────────
+     Inline non-dismissible "Amendment proposed · {date}" chip rendered
+     at the end of an affected paragraph's body text. Links to the
+     AmendmentCallout inline below via `#amend-{id}` anchor.
+
+     Per OQ-4 (carry-forward to Phase 6): the chip is non-dismissible —
+     it is the visual + accessibility anchor for the forthcoming change.
+     It goes away only when the underlying amendment goes away (status
+     transitions to in-force-current → callout retires from this surface). */
+  .amend-marker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
     font-family: var(--font-ui);
-  }
-  .omnibus-placeholder-head {
-    display: flex;
-    align-items: baseline;
-    gap: 0.8rem;
-    flex-wrap: wrap;
-    margin-bottom: 0.6rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 15%, transparent);
-  }
-  .omnibus-placeholder-eyebrow {
     font-size: 11px;
-    letter-spacing: 0.08em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--status-proposed-fg, #7a4a00);
-    font-weight: 600;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 30%, transparent);
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    margin-left: 0.6rem;
+    vertical-align: 0.18em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background var(--dur-1, 120ms) var(--ease, ease);
   }
-  .omnibus-placeholder-source {
-    font-size: 11.5px;
-    color: var(--stone-600, #504d42);
+  .amend-marker::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--status-proposed-fg, #7a4a00);
+    display: inline-block;
   }
-  .omnibus-placeholder-card {
-    padding: 0.6rem 0;
-    font-size: 13.5px;
-    line-height: 1.55;
-    color: var(--stone-800, #26241e);
-  }
-  .omnibus-placeholder-card + .omnibus-placeholder-card {
-    border-top: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 10%, transparent);
-  }
-  .omnibus-placeholder-card-head {
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    margin-bottom: 0.3rem;
-  }
-  .omnibus-placeholder-pin {
-    font-family: var(--font-mono, monospace);
-    font-size: 11.5px;
-    color: var(--stone-700, #3a382f);
-    background: rgba(255, 255, 255, 0.55);
-    border: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 18%, transparent);
-    padding: 1px 6px;
-    border-radius: 3px;
-  }
-  .omnibus-placeholder-action {
-    font-size: 12.5px;
-    font-weight: 600;
+  .amend-marker:hover {
+    background: var(--status-proposed-bg, #f6e6c7);
     color: var(--status-proposed-fg, #7a4a00);
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-  }
-  .omnibus-placeholder-sub-provision {
-    font-size: 12.5px;
-    color: var(--stone-600, #504d42);
-    font-style: italic;
-  }
-  .omnibus-placeholder-summary {
-    margin: 0;
-    color: var(--stone-800, #26241e);
-  }
-  .omnibus-placeholder-nl-note {
-    margin: 0.4rem 0 0;
-    font-size: 11px;
-    font-style: italic;
-    color: var(--stone-600, #504d42);
   }
 </style>

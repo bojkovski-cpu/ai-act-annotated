@@ -1,0 +1,308 @@
+---
+/**
+ * AmendmentCallout — Phase 6.
+ *
+ * Inline block rendered under the affected paragraph showing a
+ * forthcoming amendment. Locked in step-3.2 § A.
+ *
+ * Body branches:
+ *   - Redline (preferred): when `redline.oldText` AND `redline.newText`
+ *     are populated, render <del>oldText</del> <ins>newText</ins> for
+ *     the strikethrough/insert visual locked in the design-bundle mock.
+ *   - Summary (fallback): when only `redline.summary` is present (the
+ *     current 29 Omnibus records), render the editorial prose with a
+ *     leading kind chip (REPLACE / INSERT / DELETE).
+ *
+ * Multi-amendment paragraphs (OQ-A.1): when more than one callout
+ * targets the same paragraph, the first renders inline and any
+ * additional callouts collapse into a <details> disclosure ("+ N more
+ * amendments to this paragraph"). Native <details> = no JS required,
+ * matches Pavle's content-stays-visible preference. Reject stacking
+ * applies — additional callouts are folded, not stacked.
+ *
+ * Anchor: each callout carries `id="amend-{callout.id}"` so the
+ * VersionBanner and the inline paragraph marker chip can link to it.
+ *
+ * Status: only `proposed` and `adopted-not-in-force` reach this
+ * component. In-force callouts handed off to the body (current text)
+ * or History tab (superseded versions) per OQ-A.2 — those branches
+ * are out of scope here; the caller (ArticleBlock) filters.
+ */
+import type { AmendmentCallout, Lang } from '@/types/aiact';
+
+interface Props {
+  /** All callouts targeting a single paragraph. The first renders
+   *  inline; any extras collapse to a disclosure. */
+  callouts: AmendmentCallout[];
+  lang: Lang;
+}
+
+const { callouts, lang } = Astro.props;
+
+if (callouts.length === 0) {
+  // Caller should pre-filter; defensive early-out.
+}
+
+const [primary, ...extras] = callouts;
+
+const TAG_BY_STATUS: Record<string, Record<Lang, string>> = {
+  proposed: {
+    en: 'Forthcoming amendment · proposed',
+    nl: 'Aankomende wijziging · voorgesteld',
+  },
+  'adopted-not-in-force': {
+    en: 'Forthcoming amendment · adopted',
+    nl: 'Aankomende wijziging · vastgesteld',
+  },
+};
+const SOURCE: Record<Lang, string> = { en: 'Source', nl: 'Bron' };
+const ADOPTED: Record<Lang, string> = { en: 'adopted', nl: 'vastgesteld' };
+const EFFECTIVE: Record<Lang, string> = {
+  en: 'effective',
+  nl: 'van kracht',
+};
+const KIND_LABEL: Record<string, Record<Lang, string>> = {
+  replace: { en: 'REPLACE', nl: 'VERVANGEN' },
+  insert: { en: 'INSERT', nl: 'INVOEGEN' },
+  delete: { en: 'DELETE', nl: 'VERWIJDEREN' },
+};
+const MORE: Record<Lang, (n: number) => string> = {
+  en: (n) =>
+    n === 1
+      ? '+ 1 more amendment to this paragraph'
+      : `+ ${n} more amendments to this paragraph`,
+  nl: (n) =>
+    n === 1
+      ? '+ 1 andere wijziging op deze alinea'
+      : `+ ${n} andere wijzigingen op deze alinea`,
+};
+
+function tagText(c: AmendmentCallout): string {
+  const base = TAG_BY_STATUS[c.status]?.[lang] ?? TAG_BY_STATUS.proposed[lang];
+  if (c.effectiveDate) return `${base} · ${EFFECTIVE[lang]} ${c.effectiveDate}`;
+  return base;
+}
+
+function pickBilingual(
+  v: { en?: string | null; nl?: string | null } | undefined,
+  l: Lang,
+): string | null {
+  if (!v) return null;
+  return v[l] ?? v.en ?? null;
+}
+
+function renderCallout(c: AmendmentCallout): {
+  redline?: { oldText: string; newText: string };
+  summary?: string;
+  kind?: string;
+} {
+  const oldText = pickBilingual(c.redline.oldText, lang);
+  const newText = pickBilingual(c.redline.newText, lang);
+  if (oldText && newText) {
+    return { redline: { oldText, newText } };
+  }
+  const summary = pickBilingual(c.redline.summary, lang);
+  return {
+    summary: summary ?? '',
+    kind: KIND_LABEL[c.redline.kind]?.[lang] ?? c.redline.kind.toUpperCase(),
+  };
+}
+---
+
+{primary && (
+  <article class="amend-callout" id={`amend-${primary.id}`}>
+    <header class="ac-head">
+      <span class="ac-tag">{tagText(primary)}</span>
+    </header>
+
+    {(() => {
+      const body = renderCallout(primary);
+      if (body.redline) {
+        return (
+          <p class="ac-body ac-redline">
+            <del>{body.redline.oldText}</del>{' '}
+            <ins>{body.redline.newText}</ins>
+          </p>
+        );
+      }
+      return (
+        <p class="ac-body ac-summary">
+          {body.kind && <span class="ac-kind">{body.kind}</span>}
+          {body.summary}
+        </p>
+      );
+    })()}
+
+    <footer class="ac-meta">
+      {SOURCE[lang]}:{' '}
+      <b>
+        {(lang === 'nl' && primary.amendingInstrument.shortTitle.nl) ||
+          primary.amendingInstrument.shortTitle.en ||
+          primary.amendingInstrument.canonicalId}
+      </b>
+      {primary.amendingInstrument.sourceArticle && (
+        <> · {primary.amendingInstrument.sourceArticle}</>
+      )}
+      {primary.adoptedDate && (
+        <> · {ADOPTED[lang]} {primary.adoptedDate}</>
+      )}
+      {primary.affectedSubparagraphId && (
+        <> · {primary.affectedSubparagraphId}</>
+      )}
+    </footer>
+  </article>
+)}
+
+{extras.length > 0 && (
+  <details class="amend-callout-extras">
+    <summary class="amend-callout-extras-summary">{MORE[lang](extras.length)}</summary>
+    {extras.map((c) => (
+      <article class="amend-callout" id={`amend-${c.id}`}>
+        <header class="ac-head">
+          <span class="ac-tag">{tagText(c)}</span>
+        </header>
+        {(() => {
+          const body = renderCallout(c);
+          if (body.redline) {
+            return (
+              <p class="ac-body ac-redline">
+                <del>{body.redline.oldText}</del>{' '}
+                <ins>{body.redline.newText}</ins>
+              </p>
+            );
+          }
+          return (
+            <p class="ac-body ac-summary">
+              {body.kind && <span class="ac-kind">{body.kind}</span>}
+              {body.summary}
+            </p>
+          );
+        })()}
+        <footer class="ac-meta">
+          {SOURCE[lang]}:{' '}
+          <b>
+            {(lang === 'nl' && c.amendingInstrument.shortTitle.nl) ||
+              c.amendingInstrument.shortTitle.en ||
+              c.amendingInstrument.canonicalId}
+          </b>
+          {c.amendingInstrument.sourceArticle && (
+            <> · {c.amendingInstrument.sourceArticle}</>
+          )}
+          {c.adoptedDate && (
+            <> · {ADOPTED[lang]} {c.adoptedDate}</>
+          )}
+          {c.affectedSubparagraphId && (
+            <> · {c.affectedSubparagraphId}</>
+          )}
+        </footer>
+      </article>
+    ))}
+  </details>
+)}
+
+<style>
+  /* ── AmendmentCallout (Phase 6) ───────────────────────────────
+     Amber/status-proposed palette. Sits inline below the affected
+     paragraph. Redline body uses <del>/<ins> styled per the mock;
+     summary fallback shows a leading kind chip (REPLACE / INSERT /
+     DELETE) followed by editorial prose. */
+  .amend-callout {
+    margin: 0.6rem 0 0.4rem;
+    padding: 0.8rem 1rem;
+    background: var(--status-proposed-bg, #f6e6c7);
+    border: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 25%, transparent);
+    border-radius: 5px;
+    font-family: var(--font-ui, sans-serif);
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--stone-800, #26241e);
+  }
+  .amend-callout + .amend-callout {
+    margin-top: 0.5rem;
+  }
+
+  .ac-head {
+    margin-bottom: 0.4rem;
+  }
+  .ac-tag {
+    display: block;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--status-proposed-fg, #7a4a00);
+    font-weight: 600;
+  }
+
+  .ac-body {
+    margin: 0;
+    color: var(--stone-800, #26241e);
+  }
+  .ac-redline del {
+    color: #9b3535;
+    text-decoration: line-through;
+    text-decoration-color: #c97676;
+  }
+  .ac-redline ins {
+    background: #e9f1e3;
+    color: #3a5e21;
+    text-decoration: none;
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+  .ac-kind {
+    display: inline-block;
+    font-family: var(--font-mono, monospace);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    color: var(--status-proposed-fg, #7a4a00);
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 25%, transparent);
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-right: 0.45rem;
+    vertical-align: 0.05em;
+  }
+
+  .ac-meta {
+    color: var(--stone-600, #504d42);
+    font-size: 11.5px;
+    margin-top: 0.55rem;
+  }
+  .ac-meta b {
+    color: var(--stone-700, #3a382f);
+    font-weight: 500;
+  }
+
+  /* ── Extras disclosure (OQ-A.1 "1 of N" — no JS pager, native
+     <details> instead so the pattern works without script). */
+  .amend-callout-extras {
+    margin-top: 0.4rem;
+  }
+  .amend-callout-extras-summary {
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--font-ui, sans-serif);
+    font-size: 12px;
+    color: var(--status-proposed-fg, #7a4a00);
+    padding: 0.4rem 0.7rem;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid color-mix(in srgb, var(--status-proposed-fg, #7a4a00) 25%, transparent);
+    border-radius: 4px;
+    display: inline-block;
+    user-select: none;
+  }
+  .amend-callout-extras-summary::-webkit-details-marker {
+    display: none;
+  }
+  .amend-callout-extras-summary::before {
+    content: "▸ ";
+    color: var(--status-proposed-fg, #7a4a00);
+    font-size: 10px;
+  }
+  .amend-callout-extras[open] .amend-callout-extras-summary::before {
+    content: "▾ ";
+  }
+  .amend-callout-extras-summary:hover {
+    background: rgba(255, 255, 255, 0.85);
+  }
+</style>

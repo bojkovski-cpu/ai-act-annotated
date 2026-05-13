@@ -91,6 +91,9 @@ const xDefaultHref = enAvailable ? enHref : nlHref;
         <div class="rs-meta" style="margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--gray-100);">Last updated: April 2026</div>
       </div>
     </slot>
+    {/* Phase 6: forthcoming-changes slot — article pages fill this when
+        the article has proposed / adopted-not-in-force amendments. */}
+    <slot name="forthcoming-changes" />
     <div class="rs-section">
       <h3>Quick Links</h3>
       <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">Full text on EUR-Lex</a>
@@ -482,7 +485,6 @@ document.addEventListener('DOMContentLoaded', () => {
     card.addEventListener('click', () => card.classList.toggle('expanded'));
   });
   document.querySelectorAll('.timeline-compare-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
       const diffView = btn.nextElementSibling;
       if (diffView && diffView.classList.contains('diff-view')) {
         diffView.classList.toggle('active');
