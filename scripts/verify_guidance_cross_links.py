@@ -199,7 +199,7 @@ class Verifier:
         chapter = self.articles_chapter.get(article_num)
         if chapter is None or self.dist_dir is None:
             return None
-        return (self.dist_dir / lang / "articles"
+        return (self.dist_dir / lang
                 / "aiact" / "art" / f"{article_num}" / "index.html")
 
     def _guidance_page_path(self, lang: str, canonical_id: str) -> Optional[Path]:

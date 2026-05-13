@@ -84,6 +84,54 @@
   {
     "adoption_date": "2025-07-29",
     "body_paths": {
+      "en": "guidance/en/ec_guidelines_ai_system_definition_2025.md",
+      "nl": "guidance/nl/ec_guidelines_ai_system_definition_2025.md"
+    },
+    "by_language": {
+      "en": {
+        "citations_found": 14,
+        "footnote_count": 3,
+        "page_count": 13,
+        "paragraph_count": 10,
+        "section_count": 3,
+        "source_file": "ec_guidelines_ai_system_definition_2025_en.pdf",
+        "source_file_checksum": "sha256:fe39f41d061184a913c32f1f92aaaa30a096858fa168c6053e22a19eef58910e"
+      },
+      "nl": {
+        "citations_found": 16,
+        "footnote_count": 0,
+        "page_count": 16,
+        "paragraph_count": 10,
+        "section_count": 3,
+        "source_file": "ec_guidelines_ai_system_definition_2025_nl.pdf",
+        "source_file_checksum": "sha256:48181f91691051df4ecaf3f8ef4577e26fa33522da91f07bcc8b0ab82711a39c"
+      }
+    },
+    "canonical_id": "ec_guidelines_ai_system_definition_2025",
+    "chapters": {
+      "en": [],
+      "nl": []
+    },
+    "document_type": "guideline",
+    "editorial_note": null,
+    "end_of_validity": null,
+    "endorsement_status": null,
+    "entry_into_force": null,
+    "languages": [
+      "en",
+      "nl"
+    ],
+    "source": "commission",
+    "supersedes": null,
+    "title": {
+      "en": "Commission Guidelines on the definition of an artificial intelligence system established by Regulation (EU) 2024/1689 (AI Act)",
+      "nl": "Richtsnoeren van de Commissie betreffende de definitie van een artificiële-intelligentiesysteem zoals vastgesteld bij Verordening (EU) 2024/1689 (AI-verordening)"
+    },
+    "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-08/commission_guidelines_on_the_definition_of_an_artificial_intelligence_system_established_by_regulation_eu_20241689_ai_actenglish_nf2skcqfrtjdfggjavcodopcwz4_112455.PDF"
+  },
+  {
+    "adoption_date": "2025-07-29",
+    "body_paths": {
       "en": "guidance/en/ec_guidelines_prohibited_practices_2025.md",
       "nl": "guidance/nl/ec_guidelines_prohibited_practices_2025.md"
     },
@@ -226,5 +274,188 @@
       "nl": "Richtsnoeren van de Commissie betreffende verboden artificiële-intelligentiepraktijken zoals vastgesteld bij Verordening (EU) 2024/1689 (AI-verordening)"
     },
     "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-08/guidelines_on_prohibited_artificial_intelligence_practices_established_by_regulation_eu_20241689_ai_act_english_ied3r5nwo50xggpcfmwckm3nuc_112367-1.PDF"
+  },
+  {
+    "adoption_date": "2025-07-10",
+    "body_paths": {
+      "en": "guidance/en/ai_office_gpai_cop_copyright_2025.md",
+      "nl": null
+    },
+    "by_language": {
+      "en": {
+        "citations_found": 8,
+        "footnote_count": 0,
+        "page_count": 6,
+        "paragraph_count": 7,
+        "section_count": 7,
+        "source_file": "ai_office_gpai_cop_copyright_2025_en.pdf",
+        "source_file_checksum": "sha256:cdb3c117e8e51282ab61fad8af9d5cd1acaf1773a5eadce178c3d10498ca864a"
+      }
+    },
+    "canonical_id": "ai_office_gpai_cop_copyright_2025",
+    "chapters": {
+      "en": [
+        {
+          "anchor": "1-copyright-policy",
+          "title": "1. Copyright policy"
+        }
+      ],
+      "nl": []
+    },
+    "document_type": "code_of_practice",
+    "editorial_note": {
+      "en": "Voluntary instrument facilitated by the AI Office under Article 56 AI Act. Addresses copyright-policy obligations of providers of general-purpose AI models under Article 53(1), point (c) AI Act. Authored by Working Group 1 (Chair: Alexander Peukert; Vice-Chair: Céline Castets-Renard).",
+      "nl": null
+    },
+    "end_of_validity": null,
+    "endorsement_status": null,
+    "entry_into_force": null,
+    "languages": [
+      "en"
+    ],
+    "source": "ai_office",
+    "supersedes": null,
+    "title": {
+      "en": "General-Purpose AI Code of Practice — Copyright Chapter",
+      "nl": null
+    },
+    "url": {
+      "en": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "nl": null
+    }
+  },
+  {
+    "adoption_date": "2025-07-10",
+    "body_paths": {
+      "en": "guidance/en/ai_office_gpai_cop_safety_security_2025.md",
+      "nl": null
+    },
+    "by_language": {
+      "en": {
+        "citations_found": 27,
+        "footnote_count": 0,
+        "page_count": 43,
+        "paragraph_count": 67,
+        "section_count": 68,
+        "source_file": "ai_office_gpai_cop_safety_security_2025_en.pdf",
+        "source_file_checksum": "sha256:d879f9b54c6068aae57ebaead9d90ddaa46f2503312b9185367a724fa8da2f4a"
+      }
+    },
+    "canonical_id": "ai_office_gpai_cop_safety_security_2025",
+    "chapters": {
+      "en": [
+        {
+          "anchor": "1-safety-and-security-framework",
+          "title": "1. Safety and Security Framework"
+        },
+        {
+          "anchor": "2-systemic-risk-identification",
+          "title": "2. Systemic risk identification"
+        },
+        {
+          "anchor": "3-systemic-risk-analysis",
+          "title": "3. Systemic risk analysis"
+        },
+        {
+          "anchor": "4-systemic-risk-acceptance-determination",
+          "title": "4. Systemic risk acceptance determination"
+        },
+        {
+          "anchor": "5-safety-mitigations",
+          "title": "5. Safety mitigations"
+        },
+        {
+          "anchor": "6-security-mitigations",
+          "title": "6. Security mitigations"
+        },
+        {
+          "anchor": "7-safety-and-security-model-reports",
+          "title": "7. Safety and Security Model Reports"
+        },
+        {
+          "anchor": "8-systemic-risk-responsibility-allocation",
+          "title": "8. Systemic risk responsibility allocation"
+        },
+        {
+          "anchor": "9-serious-incident-reporting",
+          "title": "9. Serious incident reporting"
+        },
+        {
+          "anchor": "10-additional-documentation-and-transparency",
+          "title": "10. Additional documentation and transparency"
+        }
+      ],
+      "nl": []
+    },
+    "document_type": "code_of_practice",
+    "editorial_note": {
+      "en": "Voluntary instrument facilitated by the AI Office under Article 56 AI Act. Addresses systemic-risk assessment and mitigation obligations of providers of general-purpose AI models with systemic risk under Article 55 AI Act (in conjunction with Article 53). Authored by Working Groups 2, 3 and 4 (Chairs: Matthias Samwald, Yoshua Bengio, Marietje Schaake).",
+      "nl": null
+    },
+    "end_of_validity": null,
+    "endorsement_status": null,
+    "entry_into_force": null,
+    "languages": [
+      "en"
+    ],
+    "source": "ai_office",
+    "supersedes": null,
+    "title": {
+      "en": "General-Purpose AI Code of Practice — Safety and Security Chapter",
+      "nl": null
+    },
+    "url": {
+      "en": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "nl": null
+    }
+  },
+  {
+    "adoption_date": "2025-07-10",
+    "body_paths": {
+      "en": "guidance/en/ai_office_gpai_cop_transparency_2025.md",
+      "nl": null
+    },
+    "by_language": {
+      "en": {
+        "citations_found": 21,
+        "footnote_count": 2,
+        "page_count": 6,
+        "paragraph_count": 5,
+        "section_count": 5,
+        "source_file": "ai_office_gpai_cop_transparency_2025_en.pdf",
+        "source_file_checksum": "sha256:407e3a0a66327847a4bddb811fe619c8a588892ec451d23435d06485c20a4cf8"
+      }
+    },
+    "canonical_id": "ai_office_gpai_cop_transparency_2025",
+    "chapters": {
+      "en": [
+        {
+          "anchor": "1-documentation",
+          "title": "1. Documentation"
+        }
+      ],
+      "nl": []
+    },
+    "document_type": "code_of_practice",
+    "editorial_note": {
+      "en": "Voluntary instrument facilitated by the AI Office under Article 56 AI Act. Addresses transparency obligations of providers of general-purpose AI models under Article 53(1), points (a) and (b), and Annexes XI and XII AI Act. Authored by Working Group 1 (Chair: Nuria Oliver; Vice-Chair: Rishi Bommasani).",
+      "nl": null
+    },
+    "end_of_validity": null,
+    "endorsement_status": null,
+    "entry_into_force": null,
+    "languages": [
+      "en"
+    ],
+    "source": "ai_office",
+    "supersedes": null,
+    "title": {
+      "en": "General-Purpose AI Code of Practice — Transparency Chapter",
+      "nl": null
+    },
+    "url": {
+      "en": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "nl": null
+    }
   }
 ]

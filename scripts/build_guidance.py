@@ -332,9 +332,20 @@ def main() -> int:
 
     # Clear stale src/content/guidance/ entries — only the canonical_ids we
     # see this run should remain. Idempotent: same inputs → same files.
+    # The Cowork Windows mount can't unlink files; fall back to a per-file
+    # overwrite by leaving the tree in place. Stale canonical_ids will linger
+    # until the next non-mount-bound build, which is acceptable for additive
+    # runs (the bridge always overwrites the file paths it does emit).
     content_root = repo_root / "src" / "content" / "guidance"
     if content_root.exists():
-        shutil.rmtree(content_root)
+        try:
+            shutil.rmtree(content_root)
+        except (PermissionError, OSError) as exc:
+            print(
+                f"WARNING: could not clean {content_root} ({exc}); "
+                "continuing with overwrite-in-place.",
+                file=sys.stderr,
+            )
 
     seen_ids: set[str] = set()
     guidance_entries: list[dict[str, Any]] = []

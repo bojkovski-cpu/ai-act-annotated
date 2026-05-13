@@ -249,6 +249,16 @@ _CHAPTER_HEADING_RE = re.compile(r"^(\d{1,2})\.\s+([A-Z][A-Z0-9 (,)\-—'’`:.]
 _TOC_LEADER_RE = re.compile(r"\.{3,}\s*\d{1,3}\s*$")
 # Dutch forward-reference marker (inline cross-references in body text)
 _FORWARD_REF_MARKERS = (" on page ", " op pagina ")
+# Code-of-Practice heading patterns (GPAI Code, step 5.7). Distinct from the
+# Commission's ALL-CAPS chapter style and the EZ guide's "Step N." style: each
+# chapter is structured as "Commitment N <Title>" (top level) with "Measure N.M
+# <Title>" sub-sections and optional "Appendix N[.M[.P]] <Title>" reference
+# material. The `\s+([A-Z][a-z]…)` gate after the number rules out the common
+# inline-reference false positives like "Measure 4.1, estimates…" and
+# "Commitment 9); and" where the punctuation directly follows the number.
+_COMMITMENT_HEADING_RE = re.compile(r"^Commitment\s+(\d+)\s+([A-Z][a-z][a-zA-Z0-9 ,'\-.()]+?)\s*$")
+_MEASURE_HEADING_RE = re.compile(r"^Measure\s+(\d+\.\d+)\s+([A-Z][a-z][a-zA-Z0-9 ,'\-.()]+?)\s*$")
+_APPENDIX_HEADING_RE = re.compile(r"^Appendix\s+(\d+(?:\.\d+){0,2})\s+([A-Z][a-z][a-zA-Z0-9 ,'\-.()]+?)\s*$")
 # "Requirements for high-risk AI systems", "Obligations for deployers of ..."
 # etc. — these are narrative headings; detect by isolation + Title Case + short.
 
@@ -283,6 +293,27 @@ def _looks_like_heading_continuation(ln: str) -> bool:
     return bool(re.match(r"^[A-Za-z(\"'].*[\?\.]$", ln))
 
 
+def _looks_like_code_heading_continuation(ln: str) -> bool:
+    """Code-of-Practice wrapped heading continuation: short, 1-2 word lowercase
+    phrase, no leading list marker / number / heading keyword.
+
+    GPAI Code chapter titles wrap mid-noun-phrase (e.g. "Commitment 10
+    Additional documentation and" → "transparency"), which the trailing-`?`/`.`
+    heuristic in `_looks_like_heading_continuation` rejects. This sister
+    function is the Code-specific variant invoked from the Commitment / Measure
+    / Appendix dispatch branches.
+    """
+    if not ln or len(ln) > 40:
+        return False
+    if re.match(r"^(?:Commitment|Measure|Appendix)\s+\d", ln):
+        return False
+    if ln.startswith(("• ", "- ", "* ")):
+        return False
+    if re.match(r"^\d+[.):]\s", ln):
+        return False
+    return bool(re.match(r"^[a-zA-Z][a-z]+(?:\s+[a-zA-Z][a-z]+)?\s*$", ln))
+
+
 def build_sections(pages: list[Page], lang: str = "en") -> list[Section]:
     sections: list[Section] = []
     current: Section | None = None
@@ -300,6 +331,12 @@ def build_sections(pages: list[Page], lang: str = "en") -> list[Section]:
             m_chap = _CHAPTER_HEADING_RE.match(ln)
             m_step = _STEP_HEADING_RE.match(ln)
             m_sub = _SUBSECTION_RE.match(ln)
+            # Code-of-Practice heading matches (GPAI Code, step 5.7). Mutually
+            # exclusive with the regexes above: none of those start with the
+            # literal "Commitment" / "Measure" / "Appendix" keyword.
+            m_comm = _COMMITMENT_HEADING_RE.match(ln)
+            m_meas = _MEASURE_HEADING_RE.match(ln)
+            m_app = _APPENDIX_HEADING_RE.match(ln)
 
             # TOC detection: a heading-shaped line is part of the TOC if it has
             # trailing leader dots + page number on the same line, OR if the next
@@ -397,6 +434,50 @@ def build_sections(pages: list[Page], lang: str = "en") -> list[Section]:
                 current = Section(
                     id=f"sec-{num.replace('.', '-')}-{slugify(title)}"[:100],
                     level=2, number=num, title=f"{num}. {title}", page=p.number,
+                )
+            elif m_comm:
+                flush()
+                num = m_comm.group(1)
+                title = m_comm.group(2).strip()
+                if i + 1 < len(p.lines) and _looks_like_code_heading_continuation(p.lines[i + 1]):
+                    title = (title + " " + p.lines[i + 1].strip()).strip()
+                    i += 1
+                # Render as `## N. Title` so build_guidance.py's chapter
+                # outline extractor (regex `^##\s+(\d+\.\s+…)`) picks up
+                # Commitments as chapter-level entries.
+                current = Section(
+                    id=f"comm-{num}-{slugify(title)}"[:100],
+                    level=1, number=num, title=f"{num}. {title}", page=p.number,
+                )
+            elif m_meas:
+                flush()
+                num = m_meas.group(1)
+                title = m_meas.group(2).strip()
+                if i + 1 < len(p.lines) and _looks_like_code_heading_continuation(p.lines[i + 1]):
+                    title = (title + " " + p.lines[i + 1].strip()).strip()
+                    i += 1
+                # Measures are sub-sections under their parent Commitment,
+                # rendered as `### N.M. Title`. Not chapter-outline material.
+                current = Section(
+                    id=f"meas-{num.replace('.', '-')}-{slugify(title)}"[:100],
+                    level=2, number=num, title=f"{num}. {title}", page=p.number,
+                )
+            elif m_app:
+                flush()
+                num = m_app.group(1)
+                title = m_app.group(2).strip()
+                if i + 1 < len(p.lines) and _looks_like_code_heading_continuation(p.lines[i + 1]):
+                    title = (title + " " + p.lines[i + 1].strip()).strip()
+                    i += 1
+                # Appendices: top-level appendix (e.g. "Appendix 1") is level 1
+                # but rendered with `Appendix N. Title` prefix (no leading
+                # `\d+\.`), so build_guidance.py's chapter regex skips it —
+                # reference material, not chapter content. Sub-numbered
+                # appendices (e.g. "Appendix 1.2") are level 2.
+                level = 1 if "." not in num else 2
+                current = Section(
+                    id=f"app-{num.replace('.', '-')}-{slugify(title)}"[:100],
+                    level=level, number=num, title=f"Appendix {num}. {title}", page=p.number,
                 )
             else:
                 if current is None:
@@ -795,6 +876,7 @@ def main() -> int:
 
     slug = args.canonical_id
     out_root: Path = args.out.resolve() / slug
+    src_dir = out_root / "source"
     src_dir = out_root / "source"
     parsed_dir = out_root / "parsed"
     refs_dir = out_root / "references"

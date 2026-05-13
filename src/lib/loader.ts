@@ -612,7 +612,25 @@ export function getGuidanceCitationsForArticle(
   const key = String(articleNumber);
   const entries = guidanceIndex[key];
   if (!entries) return [];
-  return entries.filter((e) => e.language === lang);
+  // Default: entries in the page language.
+  const matching = entries.filter((e) => e.language === lang);
+  // Decision 4-D fallback: a guidance doc whose languages set does NOT include
+  // `lang` (single-language doc viewed from the opposite-language article
+  // page) should still surface on this article. The card carries a
+  // "Brontaal: Engels" / "Source language:" label via GuidanceCard's existing
+  // fallback handling (titleResolved.resolved_lang !== lang). We never
+  // duplicate: if the same guidance_id has any matching-lang entry, we use
+  // those exclusively. Asymmetric cases (doc bilingual but article cited only
+  // in one lang) intentionally keep strict-lang behaviour - that's the
+  // catalogued asymmetry from 4.6.
+  const matchingGuidanceIds = new Set(matching.map((e) => e.guidance_id));
+  const fallback = entries.filter((e) => {
+    if (e.language === lang) return false;
+    if (matchingGuidanceIds.has(e.guidance_id)) return false;
+    const doc = guidanceDocs.find((d) => d.canonical_id === e.guidance_id);
+    return doc != null && !doc.languages.includes(lang);
+  });
+  return [...matching, ...fallback];
 }
 
 export function getGuidancePagePaths(): Array<{
