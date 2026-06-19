@@ -4,5 +4,5 @@
   "FF_BILINGUAL_PINCITE":      true,
   "FF_NEW_ENTITY_TYPES":       true,
   "FF_CONVERGENT_COMPONENTS":  true,
-  "FF_AMENDMENT_SURFACE":      false
+  "FF_AMENDMENT_SURFACE":      true
 }
